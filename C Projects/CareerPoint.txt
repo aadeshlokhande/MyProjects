@@ -1,0 +1,43 @@
+Yash Gaikwad -- c -- 3000
+Abhinav Randai -- c -- 2500
+Sapna Rangari -- c -- 2000
+Sakshi Dhoke -- c,c++,python -- 5000 
+vivek -- c -- 1500
+Rimanshu -- c -- 2500
+Amisha nighot -- c,c++,python -- 4500
+Chaitanya -- c,c++ -- 3000
+Shrutika tarare -- c++ -- 3000
+Sejal Gomase -- c -- 00
+vinayak -- c -- 2000
+Dhirendra -- c -- 2000
+sunil -- c -- 1000
+golu -- c -- 2000
+vansh -- c -- 1500
+Harshal -- c -- 1500
+shivani there-- python -- 2000
+chaitra -- python -- 2000
+sahil Nagrade -- python -- 1000
+gaurav -- python -- 2500 -- 2500
+Himanshu Nagpure -- python -- 2000
+Nikhil Dhande -- c --
+Aachal -- c --
+pratiksha Bowade -- c --
+piyush kawale -- c,c++ -- 
+vedant shende -- c++ -- 
+sneha koparkar -- c++ -- 
+Anjali Borkute -- c++ --
+Darshan Dakhale -- c,c++ -- 
+Nikhil tonge  -- c --
+apurva -- c --
+rutika chandankar  -- c --
+umesh tonge  -- c --
+Aishwarya Nimbudkar -- c --
+yash borker -- python -- 
+sayali -- python --
+toshita khond -- python -- 
+kajal sahare - python --
+vishal - python -- 
+tejaswini yekude -- c --
+sharayu - c - 
+ruchika - c - 
+prachi - c -
