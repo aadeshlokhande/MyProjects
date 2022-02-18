@@ -136,9 +136,9 @@ int main()
 
 
 
-android development 
-java
-kotlin 
-flutter 
-swift
-kivy
+// android development 
+// java
+// kotlin 
+// flutter 
+// swift
+// kivy
