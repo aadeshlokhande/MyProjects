@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: agl
+Version: 0.0.0
+Summary: Agl is a multi purpose library
+Home-page: UNKNOWN
+Author: Aadesh Lokhande
+Author-email: aadeshlokhande11@gmail.com
+License: UNKNOWN
+Keywords: aadesh,aadesh lokhande,bigLeters,bitcoin,calculate,covid,date,emoji,googleSearch,info,instagram,mean,month,n2w,netspeed,table,time,translate,urlshort,wiki,youtube
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Its a multi purpose and useful library
+
