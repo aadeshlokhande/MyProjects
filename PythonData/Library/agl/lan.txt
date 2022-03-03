@@ -1,0 +1,27 @@
+
+LAN:- Tend to use specific connectivity technologies, like ethernet and token.	
+WAN:- WANs uses technologies like Frame Relay and X.25 for connectivity for the longer distances
+
+LAN:- LAN is a computer network that covers a small geographic area, like a home, office, or group of buildings.	
+WAN:- WAN is a computer network that covers a broad area. For example, any network whose communications links cross-regional and metropolitan boundaries over a long distance.
+
+LAN:- There is a need to set up a couple of extra devices on the network, so it is not very expensive.	
+WAN:- In WAN networks as remote areas have to be connected, hence the set-up costs are higher.
+
+LAN:- LAN has a higher data transfer rate.	
+WAN:- WAN has a lower data transfer rate as compares to LAN.
+
+LAN:- Ownership of LAN is private.	
+WAN:- WAN’s ownership can be private or public.
+
+LAN:- The speed of LAN is high.	
+WAN:- The speed of WAN is slower than LAN.
+
+LAN:- The propagation delay time is short in LAN.	
+WAN:- The propagation delay in WAN is long(longer than LAN).
+
+LAN:- It offers more fault tolerance.	
+WAN:- It offers less fault tolerance in WAN.
+
+LAN:- Its design and maintenance is easy.	
+WAN:- Its design and maintenance is difficult.

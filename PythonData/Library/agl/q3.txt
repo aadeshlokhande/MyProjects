@@ -1,0 +1,10 @@
+Random Access Memory (RAM) is used to store the programs and data being used by the CPU in real-time. The data on the random access memory can be read, written, and erased any number of times. RAM is a hardware element where the data being currently used is stored. It is a volatile memory. Types of RAM:
+
+Static RAM, or (SRAM) which stores a bit of data using the state of a six transistor memory cell.
+Dynamic RAM, or (DRAM) which stores a bit data using a pair of transistor and capacitor which constitute a DRAM memory cell.
+Read Only Memory (ROM) is a type of memory where the data has been prerecorded. Data stored in ROM is retained even after the computer is turned off ie, non-volatile. Types of ROM:
+
+Programmable ROM, where the data is written after the memory chip has been created. It is non-volatile.
+Erasable Programmable ROM, where the data on this non-volatile memory chip can be erased by exposing it to high-intensity UV light.
+Electrically Erasable Programmable ROM, where the data on this non-volatile memory chip can be electrically erased using field electron emission.
+Mask ROM, in which the data is written during the manufacturing of the memory chip.

@@ -1,0 +1,62 @@
+
+Block diagram of a computer
+we will explain the block diagram of a computer and its various components.
+With technology upgrading rapidly, now computers have now become part of our daily lives.
+From performing basic operations like watching a movie to high-level functions like manufacturing a car. The computers are doing it all.
+But have you ever thought about how does a computer works? What processes go inside it? What are the fundamentals of a computer? Just like the other machines, the computer has also a basic architecture. It comprises multiple elements. These elements process the input and produce the desired output.
+Let us look at the basic block diagram of the computer. Then, we will understand how each part contributes to its functioning.
+
+Block diagram of a computer
+
+Input
+All the data received by the computer goes through the input unit. The input unit comprises different devices. Like a mouse, keyboard, scanner, etc. In other words, each of these devices acts as a mediator between the users and the computer.
+
+The data that is to be processed is put through the input unit. The computer accepts the raw data in binary form. It then processes the data, and produces the desired output.
+
+The 3 major functions of the input unit are-
+
+Take the data to be processed by the user.
+Convert the given data into machine-readable form.
+And then, transmit the converted data into the main memory of the computer. The sole purpose is to connect the user and the computer. In addition, this creates easy communication between them.
+
+CPU – Central Processing Unit
+Central Processing Unit or the CPU, is the brain of the computer. It works the same way a human brain works. As the brain controls all human activities, the CPU too controls all tasks.
+
+Moreover, the CPU conducts all the arithmetical and logical operations in the computer.
+
+Now the CPU comprises of two units, namely – ALU (Arithmetic Logic Unit) and CU (Control Unit). Both of these units work in sync. The CPU processes the data as a whole.
+
+Let us see what particular tasks are assigned to both units.
+
+
+ALU – Arithmetic Logic Unit
+The Arithmetic Logic Unit is made of two terms, arithmetic and logic. There are two major functions that this unit performs.
+
+Data inserted through the input unit into the primary memory. Performs the basic arithmetical operation on it. Like addition, subtraction, multiplication, and division. It performs all sorts of calculations required on the data. Then sends back data to the storage.
+The unit is also responsible for performing logical operations like, AND, OR, Equal to, Less than, etc.  In addition to this it conducts merging, sorting, and selection of the given data.
+
+CU – Control Unit
+The control unit as the name suggests is the controller of all the activities/tasks and operations. All this is performed inside the computer.
+
+The memory unit sends a set of instructions to the control unit. Then the control unit in turn converts those instructions. After that these instructions are converted to control signals.
+
+These control signals help in prioritizing and scheduling the activities. Thus, the control unit coordinates the tasks inside the computer in sync with the input and output units.
+
+
+Memory Unit
+All the data that has to be processed or has been processed is stored in the memory unit. The memory unit acts as a hub of all the data. It transmits it to the required part of the computer whenever necessary.
+
+The memory unit works in sync with the CPU. This helps in faster accessing and processing of the data. Thus, making tasks easier and faster.
+
+There are two types of computer memory-
+
+Primary memory – This type of memory cannot store a vast amount of data. Therefore, it is only used to store recent data. The data stored in this is temporary. It can get erased once the power is switched off. Therefore, is also called temporary memory or the main memory.
+
+RAM stands for Random Access Memory. It is an example of primary memory. This memory is directly accessible by the CPU. It is used for reading and writing purposes. For data to be processed, it has to be first transferred to the RAM and then to the CPU.
+
+Secondary memory – As explained above, the primary memory stores temporary data. Thus it cannot be accessed in the future. For permanent storage purposes, secondary memory is used. It is also called the permanent memory or the auxiliary memory. The hard disk is an example of secondary memory. Even in a power failure data does not get erased easily.
+
+Output
+There is nothing to be amazed by what the output unit is used for. All the information sent to the computer once processed is received by the user through the output unit. Devices like printers, monitors, projector, etc. all come under the output unit.
+
+The output unit displays the data either in the form of a soft copy or hard copy. The printer is for the hard copy. The monitor is for the display. The output unit accepts the data in binary form from the computer. It then converts it into a readable form for the user.

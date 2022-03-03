@@ -1,0 +1,56 @@
+1 VER 2 VOL 3 DATE 4 TIME 5 CLS .
+1) VER : 
+This command is used to display the window's version.
+
+Process:
+step 1: Click on stoot.
+step 2: click on all program.
+step 3: Select Assessories 
+step 4: Select command prompt.
+step 5: Type "VER"
+step 6: Exit.
+
+
+2) VOL :
+This command is used to display the disk volume level or serial number.
+
+Process:
+step 1: Click on stoot.
+step 2: click on all program.
+step 3: Select Assessories 
+step 4: Select command prompt.
+step 5: Type "VOL"
+step 6: Exit.
+
+3) DATE
+This command is used to change or/and display current system date.
+
+Process:
+step 1: Click on stoot.
+step 2: click on all program.
+step 3: Select Assessories 
+step 4: Select command prompt.
+step 5: Type "DATE"
+step 6: Exit.
+
+4) TIME:
+This command is used to change or/and display current system time.
+
+Process:
+step 1: Click on stoot.
+step 2: click on all program.
+step 3: Select Assessories 
+step 4: Select command prompt.
+step 5: Type "TIME"
+step 6: Exit.
+
+5) CLS : 
+this command is used to clear command prompt.
+
+Process:
+step 1: Click on stoot.
+step 2: click on all program.
+step 3: Select Assessories 
+step 4: Select command prompt.
+step 5: Type "CLS"
+step 6: Exit.
