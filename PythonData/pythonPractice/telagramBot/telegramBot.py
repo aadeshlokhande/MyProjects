@@ -39,9 +39,9 @@ def start_command(update, context):
 def help_command(update, context):
     update.message.reply_text(help_text)
 
-def handle_command(update, context):
+def handle_command(update,context):
     text = str(update.message.text).lower()
-    response = Res.sample_responses(text)
+    response = Res.sample_responses(text,update)
     helpmsg = Res.navigat(text)
     update.message.reply_text(response+"\n"+helpmsg)
     

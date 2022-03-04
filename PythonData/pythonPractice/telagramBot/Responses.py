@@ -19,18 +19,20 @@ from translate import Translator
 def navigat(input_text):
     return "\n/help"
 
-def sample_responses(input_text):
+def sample_responses(input_text,msgSenderData):
     user_message = str(input_text).lower()
+    fname = msgSenderData['message']['chat']['first_name']
+    lname = msgSenderData['message']['chat']['last_name']
+    user_name = msgSenderData['message']['chat']['username']
+    mssg = msgSenderData['message']['text']
+
     f = open("record.txt", "a")
-    f.write(f"{user_message}\n")
+    f.write(f"{fname}, {lname}, {user_name}, {mssg}\n")
     f.close()
 
-    # if "python" in user_message:
-    #     topic = user_message[7:]
-    #     return python(topic)
 
     if user_message in ("hello", "hey", "hi","hii"):
-        return "Hey Buddy... what's going on?"
+        return f"Hey {fname} {lname}... what's going on?"
 
     if user_message in ("how are you", "how are you?"):
         return "I'm fine dude... how are you?"
@@ -39,7 +41,7 @@ def sample_responses(input_text):
         return "I am Aadesh Lokhande's bot"
     
     if user_message in ("chutiya","chutiye","lawde","lawdu","lawda","gandu","bsdk","bhosdike","madarchod","mc","bc",):
-        return "Yahi patak ke Chod Denge...\nNikal madarchod..."
+        return f"sun be {fname} {lname}\nYahi patak ke Chod Denge...\nNikal madarchod..."
 
     if user_message in ("time?", "time"):
         now = datetime.now()
