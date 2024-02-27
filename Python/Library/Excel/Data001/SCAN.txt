@@ -1,0 +1,256 @@
+Excel SCAN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SCAN Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+SCAN Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The SCAN function applies a custom LAMBDA function to each element in a given array and returns an array that contains the intermediate values created during the scan. SCAN can be used to generate running totals and other calculations that show intermediate results. 
+Purpose 
+Scan array and return intermediate results
+Return value 
+An array of results
+Arguments 
+initial_value - [optional] The initial value of the accumulator.array - The array to be scanned.lambda - The custom LAMBDA function to apply.
+Syntax 
+=SCAN([initial_value], array, lambda)
+Usage notes 
+The SCAN function applies a custom LAMBDA function to each element in a given array and returns an array that contains each intermediate value created during the scan. SCAN can be used to generate running totals and other calculations that show intermediate or incremental results. 
+The SCAN uses the LAMBDA function to apply the formula logic required. The LAMBDA is applied to each value, and the result from SCAN is an array of results with the same dimensions as the original array. Like the REDUCE function, SCAN iterates over all elements in an array and performs a calculation on each element. However, while REDUCE returns a single value, SCAN returns an array of values. 
+The SCAN function takes three arguments: initial_value, array, and lambda. Initial_value is the initial seed value to use for the first result. Initial_value is optional. Array is the array to scan and lambda is a custom LAMBDA function to perform on each element of array.
+LAMBDA structure
+The SCAN function uses the LAMBDA function to apply the formula logic needed.  The structure of the LAMBDA used inside of SCAN looks like this:
+LAMBDA(a,v,calculation)
+The first argument, a, is the accumulator used to create intermediate values. The accumulator begins as the initial_value provided to SCAN and changes as the SCAN function loops over the elements in array and applies a calculation. The v argument represents the value of each element in array. Calculation is the formula that creates the intermediate values that will appear in the final result.
+Note: SCAN returns an array of intermediate results. See the MAP function to process each element in an array individually and return an array of non-intermediate results.
+Examples
+In the formula below, SCAN is used to create a running total an array with three values:
+=SCAN(0,{1,2,3},LAMBDA(a,v,a+v)) // returns {1,3,6}
+In the LAMBDA function, a is the initial_value given to SCAN (zero), and v represents the individual elements in array. The LAMBDA runs one time for each element in array, and at each iteration the value of v is added to the accumulator. SCAN returns the array {1,3,6} as a final result. 
+In the worksheet shown above, the formula in D5 is:
+=SCAN(0,B5:B16,LAMBDA(a,v,a+v))
+The result is a running sum of values in the range B5:B16.
+Text values
+To work with text values, set the initial_value to an empty string (""). The formula below creates a running concatenation of an array:
+=SCAN("",{"a","b","c"},LAMBDA(a,v,a&v)) // returns {"a","ab","abc"}
+Notice that because the incoming array has three values, the resulting array also has three values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count unique dates ignore time 
+Calculate running total 
+Dynamic summary count 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SCAN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SCAN Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+SCAN Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The SCAN function applies a custom LAMBDA function to each element in a given array and returns an array that contains the intermediate values created during the scan. SCAN can be used to generate running totals and other calculations that show intermediate results. 
+Purpose 
+Scan array and return intermediate results
+Return value 
+An array of results
+Arguments 
+initial_value - [optional] The initial value of the accumulator.array - The array to be scanned.lambda - The custom LAMBDA function to apply.
+Syntax 
+=SCAN([initial_value], array, lambda)
+Usage notes 
+The SCAN function applies a custom LAMBDA function to each element in a given array and returns an array that contains each intermediate value created during the scan. SCAN can be used to generate running totals and other calculations that show intermediate or incremental results. 
+The SCAN uses the LAMBDA function to apply the formula logic required. The LAMBDA is applied to each value, and the result from SCAN is an array of results with the same dimensions as the original array. Like the REDUCE function, SCAN iterates over all elements in an array and performs a calculation on each element. However, while REDUCE returns a single value, SCAN returns an array of values. 
+The SCAN function takes three arguments: initial_value, array, and lambda. Initial_value is the initial seed value to use for the first result. Initial_value is optional. Array is the array to scan and lambda is a custom LAMBDA function to perform on each element of array.
+LAMBDA structure
+The SCAN function uses the LAMBDA function to apply the formula logic needed.  The structure of the LAMBDA used inside of SCAN looks like this:
+LAMBDA(a,v,calculation)
+The first argument, a, is the accumulator used to create intermediate values. The accumulator begins as the initial_value provided to SCAN and changes as the SCAN function loops over the elements in array and applies a calculation. The v argument represents the value of each element in array. Calculation is the formula that creates the intermediate values that will appear in the final result.
+Note: SCAN returns an array of intermediate results. See the MAP function to process each element in an array individually and return an array of non-intermediate results.
+Examples
+In the formula below, SCAN is used to create a running total an array with three values:
+=SCAN(0,{1,2,3},LAMBDA(a,v,a+v)) // returns {1,3,6}
+In the LAMBDA function, a is the initial_value given to SCAN (zero), and v represents the individual elements in array. The LAMBDA runs one time for each element in array, and at each iteration the value of v is added to the accumulator. SCAN returns the array {1,3,6} as a final result. 
+In the worksheet shown above, the formula in D5 is:
+=SCAN(0,B5:B16,LAMBDA(a,v,a+v))
+The result is a running sum of values in the range B5:B16.
+Text values
+To work with text values, set the initial_value to an empty string (""). The formula below creates a running concatenation of an array:
+=SCAN("",{"a","b","c"},LAMBDA(a,v,a&v)) // returns {"a","ab","abc"}
+Notice that because the incoming array has three values, the resulting array also has three values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count unique dates ignore time 
+Calculate running total 
+Dynamic summary count 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

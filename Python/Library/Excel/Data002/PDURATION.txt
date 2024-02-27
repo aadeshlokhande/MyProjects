@@ -1,0 +1,10 @@
+Summary
+The Excel PDURATION function returns the number of periods required for an investment to reach a desired value.
+Purpose 
+Get periods required to reach given value
+Return value 
+Required time in periods
+Arguments 
+rate - Interest rate per period.pv - Present value of the investment.fv - Future value of the investment.
+Syntax 
+=PDURATION(rate, pv, fv)

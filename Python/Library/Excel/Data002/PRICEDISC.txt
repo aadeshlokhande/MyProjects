@@ -1,0 +1,10 @@
+Summary
+The Excel PRICEDISC function returns the price per $100 face value of a discounted security.
+Purpose 
+Get price per $100 discounted security
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.discount - Discount rate of the security.redemption - Redemption value per $100 face value.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=PRICEDISC(sd, md, discount, redemption, [basis])

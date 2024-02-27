@@ -1,0 +1,10 @@
+Summary
+The Excel COMPLEX function creates a complex number with given real and imaginary coefficients. COMPLEX returns a text result in the form x + yi or x + yj.
+Purpose 
+Convert coefficients to complex number
+Return value 
+Complex number as text
+Arguments 
+real_num - The real number.i_num - The imaginary number.suffix - [optional] The suffix, either "i" or "j".
+Syntax 
+=COMPLEX(real_num, i_num, [suffix])

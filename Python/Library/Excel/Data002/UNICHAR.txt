@@ -1,0 +1,10 @@
+Summary
+The Excel UNICHAR function returns a Unicode character based on a given number.
+Purpose 
+Get Unicode character by number
+Return value 
+Unicode character
+Arguments 
+number - Code point for a Unicode character in decimal.
+Syntax 
+=UNICHAR(number)

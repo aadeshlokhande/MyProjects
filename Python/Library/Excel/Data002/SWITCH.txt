@@ -1,0 +1,10 @@
+Summary
+The Excel SWITCH function compares one value against a list of values, and returns a result corresponding to the first match found. When no match is found, SWITCH can return an optional default value.
+Purpose 
+Match multiple values, return first match
+Return value 
+Result corresponding with first match
+Arguments 
+expression - The value or expression to match against.val1/result1 - The first value and result pair.val2/result2 - [optional] The second value and result pair.default - [optional] The default value to use when no match is found.
+Syntax 
+=SWITCH(expression, val1/result1, [val2/result2], ..., [default])

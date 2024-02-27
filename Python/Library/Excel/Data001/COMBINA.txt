@@ -1,0 +1,236 @@
+Excel COMBINA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COMBINA Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+COMBINA Function
+Related functions 
+COMBIN
+COMBINA
+PERMUT
+PERMUTATIONA
+FACT
+Summary
+The Excel COMBINA function returns the number of combinations with repetitions allowed. To count combinations that do not allow repetitions, use the COMBIN function.
+Purpose 
+Get number of combinations with repetitions
+Return value 
+Number of combinations as an integer
+Arguments 
+number - The total number of items.number_chosen - The number of items in each combination.
+Syntax 
+=COMBINA(number, number_chosen)
+Usage notes 
+The COMBINA function returns the number of combinations for a given number of items. A combination is a group of items where order does not matter.  There are two kinds of combinations:
+Combinations that do not allow repetitions (e.g. 123)
+Combinations that do allow repetitions (e.g. 333)
+The COMBINA function allows repetitions. To count combinations that do not allow repetitions, use the COMBIN function. To count permutations (combinations where order does matter) see the PERMUT function.
+The COMBINA function takes two arguments: number, and number_chosen. Number is the number of different items available to choose from. The number_chosen argument is the number of items in each combination. Both arguments are required.
+Example
+To use COMBINA, specify the total number of items and "number_chosen", which represents the number of items in each combination. For example, to calculate total 3-number combinations of numbers between 0-9, you can use a formula like this:
+=COMBINA(10,3) // returns 220
+The number argument is 10 since there are ten numbers between 0 and 9 available. Number_chosen is 3, since there are three numbers for each combination.
+In the example shown above, the formula in cell D6, copied down, is:
+=COMBINA(B6,C6)
+At each new row, COMBINA calculates returns the number of combinations using the values in column B for number, and the values in column C for number_chosen. The results can be seen in column D.
+Notes
+A combination is a group of items in any order. If order matters, use the PERMUT function.
+Arguments that contain decimal values are truncated to integers.
+COMBINA returns a #VALUE! error value if either argument is not numeric.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions COMBIN FunctionCOMBINA FunctionPERMUT FunctionPERMUTATIONA FunctionFACT Function 
+ Links Microsoft COMBINA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel COMBINA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COMBINA Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+COMBINA Function
+Related functions 
+COMBIN
+COMBINA
+PERMUT
+PERMUTATIONA
+FACT
+Summary
+The Excel COMBINA function returns the number of combinations with repetitions allowed. To count combinations that do not allow repetitions, use the COMBIN function.
+Purpose 
+Get number of combinations with repetitions
+Return value 
+Number of combinations as an integer
+Arguments 
+number - The total number of items.number_chosen - The number of items in each combination.
+Syntax 
+=COMBINA(number, number_chosen)
+Usage notes 
+The COMBINA function returns the number of combinations for a given number of items. A combination is a group of items where order does not matter.  There are two kinds of combinations:
+Combinations that do not allow repetitions (e.g. 123)
+Combinations that do allow repetitions (e.g. 333)
+The COMBINA function allows repetitions. To count combinations that do not allow repetitions, use the COMBIN function. To count permutations (combinations where order does matter) see the PERMUT function.
+The COMBINA function takes two arguments: number, and number_chosen. Number is the number of different items available to choose from. The number_chosen argument is the number of items in each combination. Both arguments are required.
+Example
+To use COMBINA, specify the total number of items and "number_chosen", which represents the number of items in each combination. For example, to calculate total 3-number combinations of numbers between 0-9, you can use a formula like this:
+=COMBINA(10,3) // returns 220
+The number argument is 10 since there are ten numbers between 0 and 9 available. Number_chosen is 3, since there are three numbers for each combination.
+In the example shown above, the formula in cell D6, copied down, is:
+=COMBINA(B6,C6)
+At each new row, COMBINA calculates returns the number of combinations using the values in column B for number, and the values in column C for number_chosen. The results can be seen in column D.
+Notes
+A combination is a group of items in any order. If order matters, use the PERMUT function.
+Arguments that contain decimal values are truncated to integers.
+COMBINA returns a #VALUE! error value if either argument is not numeric.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions COMBIN FunctionCOMBINA FunctionPERMUT FunctionPERMUTATIONA FunctionFACT Function 
+ Links Microsoft COMBINA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

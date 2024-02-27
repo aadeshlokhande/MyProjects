@@ -1,0 +1,775 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FILTER function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FILTER Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2021
+
+
+
+
+Dynamic array
+
+
+FILTER Function
+Related functions 
+
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FILTER function filters a range of data based on supplied criteria, and extracts matching records.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Filters range with given criteria
+
+
+
+Return value 
+
+Array of filtered values
+
+
+
+Arguments 
+
+array - Range or array to filter.include - Boolean array, supplied as criteria.if_empty - [optional] Value to return when no results are returned.
+
+
+
+Syntax 
+
+=FILTER(array, include, [if_empty])
+
+
+
+Usage notes 
+
+The FILTER function "filters" a range of data based on supplied criteria. The result is an array of matching values from the original range. In plain language, the FILTER function will extract matching records from a set of data by applying one or more logical tests. Logical tests are supplied as the include argument and can include many kinds of formula criteria. For example, FILTER can match data in a certain year or month, data that contains specific text, or values greater than a certain threshold.
+The FILTER function takes three arguments: array, include, and if_empty. Array is the range or array to filter. The include argument should consist of one or more logical tests. These tests should return TRUE or FALSE based on the evaluation of values from array. The last argument, if_empty, is the result to return when FILTER finds no matching values. Typically this is a message like "No records found", but other values can be returned as well. Supply an empty string ("") to display nothing.
+The results from FILTER are dynamic. When values in the source data change, or the source data array is resized, the results from FILTER will update automatically. Results from FILTER will "spill" onto the worksheet into multiple cells.
+Video: FILTER function basic example
+Basic example
+To extract values in A1:A10 that are greater than 100:
+
+=FILTER(A1:A10,A1:A10>100)
+
+To extract rows in A1:C5 where the value in A1:A5 is greater than 100:
+
+=FILTER(A1:C5,A1:A5>100)
+
+Notice the only difference in the above formulas is that the second formula provides a multi-column range for array. The logical test used for the include argument is the same.
+Note: FILTER will return a #CALC! error if no matching data is found
+Filter for Red group
+
+In the example shown above, the formula in F5 is:
+
+=FILTER(B5:D14,D5:D14=H2,"No results")
+
+Since the value in H2 is "red", the FILTER function extracts data from array where the Group column contains "red". All matching records are returned to the worksheet starting from cell F5, where the formula exists.
+Values can be hardcoded as well. The formula below has the same result as above with "red" hardcoded into the criteria:
+
+=FILTER(B5:D14,D5:D14="red","No results")
+
+No matching data
+The value for is_empty is returned when FILTER does not find matching results. If a value for if_empty is not provided, FILTER will return a #CALC! error if no matching data is found:
+
+=FILTER(range,logic) // #CALC! error
+
+Often, is_empty is configured to provide a text message to the user:
+
+=FILTER(range,logic,"No results") // display message
+
+To display nothing when no matching data is found, supply an empty string ("") for if_empty:
+
+=FILTER(range,logic,"") // display nothing
+
+Values that contain text
+To extract data based on a logical test for values that contain specific text, you can use a formula like this:
+
+=FILTER(rng1,ISNUMBER(SEARCH("txt",rng2)))
+
+In this formula, the SEARCH function is used to look for "txt" in rng2, which would typically be a column in rng1. The ISNUMBER function is used to convert the result from SEARCH into TRUE or FALSE. Read a full explanation here.
+Filter by date
+FILTER can be used with dates by constructing logical tests appropriate for Excel dates. For example, to extract records from rng1 where the date in rng2 is in July you can use a generic formula like this:
+
+=FILTER(rng1,MONTH(rng2)=7,"No data") 
+
+This formula relies on the MONTH function to compare the month of dates in rng2 to 7.  See full explanation here.
+Multiple criteria
+At first glance, it's not obvious how to apply multiple criteria with the FILTER function. Unlike older functions like COUNTIFS and SUMIFS, which provide multiple arguments for entering multiple conditions, the FILTER function only provides a single argument, include, to target data. The trick is to create logical expressions that use Boolean algebra to target the data of interest and supply these expressions as the include argument. For example, to extract only data where one value is "A" and another is greater than 80, you can use a formula like this:
+
+=FILTER(range,(range="A")*(range>80),"No data")
+
+The math operation of addition (*) joins the two conditions with AND logic: both conditions must be TRUE in order for FILTER to retrieve the data. See a detailed explanation here.
+Complex criteria
+To filter and extract data based on multiple complex criteria, you can use the FILTER function with a chain of expressions that use boolean logic. For example, the generic formula below filters based on three separate conditions: account begins with "x" AND region is "east", and month is NOT April.
+
+=FILTER(data,(LEFT(account)="x")*(region="east")*NOT(MONTH(date)=4))
+
+See this page for a full explanation. Building criteria with logical expressions is an elegant and flexible approach that can be extended to handle many complex scenarios. See below for more examples.
+Notes
+
+FILTER can work with both vertical and horizontal arrays.
+The include argument must have dimensions compatible with the array argument, otherwise FILTER will return #VALUE!
+If the include array includes any errors, FILTER will return an error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Average if not blank 
+
+Filter by date 
+
+Sum matching columns 
+
+Sum bottom n values with criteria 
+
+Filter with multiple criteria 
+
+Basic filter example 
+
+FILTER on first or last n values 
+
+Average last 3 numeric values 
+
+FILTER last n valid entries 
+
+XLOOKUP with complex multiple criteria 
+
+
+
+Videos
+  
+FILTER function basic example 
+
+FILTER function with two criteria 
+
+New dynamic array functions in Excel 
+
+Nesting dynamic array formulas 
+
+How to count unique values 
+
+Unique values with criteria 
+
+FILTER data between two dates 
+
+FILTER with boolean logic 
+
+How to show top or bottom n results 
+
+Filter with dynamic dropdown list 
+
+
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft FILTER function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FILTER function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FILTER Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+FILTER Function
+Related functions 
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+Summary
+The Excel FILTER function filters a range of data based on supplied criteria, and extracts matching records.
+Purpose 
+Filters range with given criteria
+Return value 
+Array of filtered values
+Arguments 
+array - Range or array to filter.include - Boolean array, supplied as criteria.if_empty - [optional] Value to return when no results are returned.
+Syntax 
+=FILTER(array, include, [if_empty])
+Usage notes 
+The FILTER function "filters" a range of data based on supplied criteria. The result is an array of matching values from the original range. In plain language, the FILTER function will extract matching records from a set of data by applying one or more logical tests. Logical tests are supplied as the include argument and can include many kinds of formula criteria. For example, FILTER can match data in a certain year or month, data that contains specific text, or values greater than a certain threshold.
+The FILTER function takes three arguments: array, include, and if_empty. Array is the range or array to filter. The include argument should consist of one or more logical tests. These tests should return TRUE or FALSE based on the evaluation of values from array. The last argument, if_empty, is the result to return when FILTER finds no matching values. Typically this is a message like "No records found", but other values can be returned as well. Supply an empty string ("") to display nothing.
+The results from FILTER are dynamic. When values in the source data change, or the source data array is resized, the results from FILTER will update automatically. Results from FILTER will "spill" onto the worksheet into multiple cells.
+Video: FILTER function basic example
+Basic example
+To extract values in A1:A10 that are greater than 100:
+=FILTER(A1:A10,A1:A10>100)
+To extract rows in A1:C5 where the value in A1:A5 is greater than 100:
+=FILTER(A1:C5,A1:A5>100)
+Notice the only difference in the above formulas is that the second formula provides a multi-column range for array. The logical test used for the include argument is the same.
+Note: FILTER will return a #CALC! error if no matching data is found
+Filter for Red group
+In the example shown above, the formula in F5 is:
+=FILTER(B5:D14,D5:D14=H2,"No results")
+Since the value in H2 is "red", the FILTER function extracts data from array where the Group column contains "red". All matching records are returned to the worksheet starting from cell F5, where the formula exists.
+Values can be hardcoded as well. The formula below has the same result as above with "red" hardcoded into the criteria:
+=FILTER(B5:D14,D5:D14="red","No results")
+No matching data
+The value for is_empty is returned when FILTER does not find matching results. If a value for if_empty is not provided, FILTER will return a #CALC! error if no matching data is found:
+=FILTER(range,logic) // #CALC! error
+Often, is_empty is configured to provide a text message to the user:
+=FILTER(range,logic,"No results") // display message
+To display nothing when no matching data is found, supply an empty string ("") for if_empty:
+=FILTER(range,logic,"") // display nothing
+Values that contain text
+To extract data based on a logical test for values that contain specific text, you can use a formula like this:
+=FILTER(rng1,ISNUMBER(SEARCH("txt",rng2)))
+In this formula, the SEARCH function is used to look for "txt" in rng2, which would typically be a column in rng1. The ISNUMBER function is used to convert the result from SEARCH into TRUE or FALSE. Read a full explanation here.
+Filter by date
+FILTER can be used with dates by constructing logical tests appropriate for Excel dates. For example, to extract records from rng1 where the date in rng2 is in July you can use a generic formula like this:
+=FILTER(rng1,MONTH(rng2)=7,"No data") 
+This formula relies on the MONTH function to compare the month of dates in rng2 to 7.  See full explanation here.
+Multiple criteria
+At first glance, it's not obvious how to apply multiple criteria with the FILTER function. Unlike older functions like COUNTIFS and SUMIFS, which provide multiple arguments for entering multiple conditions, the FILTER function only provides a single argument, include, to target data. The trick is to create logical expressions that use Boolean algebra to target the data of interest and supply these expressions as the include argument. For example, to extract only data where one value is "A" and another is greater than 80, you can use a formula like this:
+=FILTER(range,(range="A")*(range>80),"No data")
+The math operation of addition (*) joins the two conditions with AND logic: both conditions must be TRUE in order for FILTER to retrieve the data. See a detailed explanation here.
+Complex criteria
+To filter and extract data based on multiple complex criteria, you can use the FILTER function with a chain of expressions that use boolean logic. For example, the generic formula below filters based on three separate conditions: account begins with "x" AND region is "east", and month is NOT April.
+=FILTER(data,(LEFT(account)="x")*(region="east")*NOT(MONTH(date)=4))
+See this page for a full explanation. Building criteria with logical expressions is an elegant and flexible approach that can be extended to handle many complex scenarios. See below for more examples.
+Notes
+FILTER can work with both vertical and horizontal arrays.
+The include argument must have dimensions compatible with the array argument, otherwise FILTER will return #VALUE!
+If the include array includes any errors, FILTER will return an error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Average if not blank 
+Filter by date 
+Sum matching columns 
+Sum bottom n values with criteria 
+Filter with multiple criteria 
+Basic filter example 
+FILTER on first or last n values 
+Average last 3 numeric values 
+FILTER last n valid entries 
+XLOOKUP with complex multiple criteria 
+Videos
+  
+FILTER function basic example 
+FILTER function with two criteria 
+New dynamic array functions in Excel 
+Nesting dynamic array formulas 
+How to count unique values 
+Unique values with criteria 
+FILTER data between two dates 
+FILTER with boolean logic 
+How to show top or bottom n results 
+Filter with dynamic dropdown list 
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft FILTER function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

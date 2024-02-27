@@ -1,0 +1,604 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel DOLLARDE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+DOLLARDE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+DOLLARDE Function
+Related functions 
+
+DOLLAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel DOLLARDE function converts a dollar price entered with a special notation to a dollar price displayed as a decimal number.  The DOLLARFR function does the opposite conversion.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Convert dollar price as fraction to decimal
+
+
+
+Return value 
+
+Equivalent decimal number
+
+
+
+Arguments 
+
+fractional_dollar - Dollar component in special fractional notation.fraction - The denominator in the fractional unit. 8 = 1/8, 16 = 1/16, 32 = 1/32, etc.
+
+
+
+Syntax 
+
+=DOLLARDE(fractional_dollar, fraction)
+
+
+
+Usage notes 
+
+The DOLLARDE function is a financial function which converts values pricing entered with a particular fractional notation into an equivalent decimal number. It can be used for securities where pricing is given to the nearest 1/8, 1/16, 1/32, etc.
+For example, to convert the price "3 and 1/16" to an equivalent decimal value, you can use the DOLLARDE function like this:
+
+=DOLLARDE(3.01,16) // returns 3.0625
+
+Notice first argument shows the whole dollar value on the left, and the decimal component is used to express the numerator (.01 = 1, .11 = 11, etc.). The second argument is the denominator.
+In the example shown, the formula column E, copied down, is:
+
+=DOLLARDE(C6,D6)
+
+On each row, the DOLLARDE function picks up the fractional dollar notation from column C and the denominator from column D.
+Notes
+
+Both fractional_dollar and fraction arguments must be numeric values.
+The value for fraction must be greater than zero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions DOLLAR Function 
+ Links Microsoft DOLLARDE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel DOLLARDE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DOLLARDE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+DOLLARDE Function
+Related functions 
+DOLLAR
+Summary
+The Excel DOLLARDE function converts a dollar price entered with a special notation to a dollar price displayed as a decimal number.  The DOLLARFR function does the opposite conversion.
+Purpose 
+Convert dollar price as fraction to decimal
+Return value 
+Equivalent decimal number
+Arguments 
+fractional_dollar - Dollar component in special fractional notation.fraction - The denominator in the fractional unit. 8 = 1/8, 16 = 1/16, 32 = 1/32, etc.
+Syntax 
+=DOLLARDE(fractional_dollar, fraction)
+Usage notes 
+The DOLLARDE function is a financial function which converts values pricing entered with a particular fractional notation into an equivalent decimal number. It can be used for securities where pricing is given to the nearest 1/8, 1/16, 1/32, etc.
+For example, to convert the price "3 and 1/16" to an equivalent decimal value, you can use the DOLLARDE function like this:
+=DOLLARDE(3.01,16) // returns 3.0625
+Notice first argument shows the whole dollar value on the left, and the decimal component is used to express the numerator (.01 = 1, .11 = 11, etc.). The second argument is the denominator.
+In the example shown, the formula column E, copied down, is:
+=DOLLARDE(C6,D6)
+On each row, the DOLLARDE function picks up the fractional dollar notation from column C and the denominator from column D.
+Notes
+Both fractional_dollar and fraction arguments must be numeric values.
+The value for fraction must be greater than zero.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DOLLAR Function 
+ Links Microsoft DOLLARDE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

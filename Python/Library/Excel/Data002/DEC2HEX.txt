@@ -1,0 +1,10 @@
+Summary
+The Excel DEC2HEX function converts a decimal number to its hexadecimal equivalent.
+Purpose 
+Converts a decimal number to hexadecimal
+Return value 
+Hexadecimal number
+Arguments 
+number - The decimal number you want to convert to hexadecimal.places - [optional] Pads the resulting number with zeros up to the specified number of digits. If omitted returns the least number of characters required to represent the number.
+Syntax 
+=DEC2HEX(number, [places])

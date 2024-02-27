@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel ISBLANK function returns TRUE when a cell is empty, and FALSE when a cell is not empty. For example, if A1 contains "apple", ISBLANK(A1) returns FALSE.', 'Purpose' : 'Test if a cell is empty', 'Return value' : 'A logical value  (TRUE or FALSE)', 'Arguments' : 'value - The value to check.', 'Syntax' : '=ISBLANK(value)' }

@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel RAND function returns a random number between 0 and 1. For example, =RAND() will generate a number like 0.422245717. RAND recalculates when a worksheet is opened or changed.', 'Purpose' : 'Get a random number between 0 and 1', 'Return value' : 'A number between 1 and 0', 'Arguments' : 'Syntax ', 'Syntax' : '' }

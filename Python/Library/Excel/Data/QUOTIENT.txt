@@ -1,0 +1,614 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel QUOTIENT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+QUOTIENT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+QUOTIENT Function
+Related functions 
+
+MOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel QUOTIENT function returns the integer portion of division without the remainder. Use QUOTIENT to discard the remainder after division.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Returns the quotient without a remainder.
+
+
+
+Return value 
+
+Integer Number
+
+
+
+Arguments 
+
+numerator - The number to be divided.denominator - The number to divide by.
+
+
+
+Syntax 
+
+=QUOTIENT(numerator, denominator)
+
+
+
+Usage notes 
+
+The QUOTIENT function returns the integer portion of division without the remainder. You can use QUOTIENT to discard the remainder after division. To perform division with a remainder, use the division operator "/". To return only the remainder, use the MOD function.
+QUOTIENT function takes two arguments, numerator and denominator. Numerator is the number that should be divided, and denominator is the number to divide numerator by.
+Examples
+The number 5 divided by 2 returns 2.5, since 2 goes into 5 two and a half times:
+
+=5/2 // returns 2.5
+
+With the QUOTIENT function, the decimal portion is discarded:
+
+=QUOTIENT(5,2) // returns 2
+
+Other examples:
+
+=QUOTIENT(3,5) // returns 0
+=QUOTIENT(25,5) // returns 5
+=QUOTIENT(10,3) // returns 3
+
+Notes
+
+If denominator is zero (0) or a reference to an empty cell, QUOTIENT returns #DIV!
+To return only the remainder, use the MOD function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions MOD Function 
+ Links Microsoft QUOTIENT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel QUOTIENT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+QUOTIENT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+QUOTIENT Function
+Related functions 
+MOD
+Summary
+The Excel QUOTIENT function returns the integer portion of division without the remainder. Use QUOTIENT to discard the remainder after division.
+Purpose 
+Returns the quotient without a remainder.
+Return value 
+Integer Number
+Arguments 
+numerator - The number to be divided.denominator - The number to divide by.
+Syntax 
+=QUOTIENT(numerator, denominator)
+Usage notes 
+The QUOTIENT function returns the integer portion of division without the remainder. You can use QUOTIENT to discard the remainder after division. To perform division with a remainder, use the division operator "/". To return only the remainder, use the MOD function.
+QUOTIENT function takes two arguments, numerator and denominator. Numerator is the number that should be divided, and denominator is the number to divide numerator by.
+Examples
+The number 5 divided by 2 returns 2.5, since 2 goes into 5 two and a half times:
+=5/2 // returns 2.5
+With the QUOTIENT function, the decimal portion is discarded:
+=QUOTIENT(5,2) // returns 2
+Other examples:
+=QUOTIENT(3,5) // returns 0
+=QUOTIENT(25,5) // returns 5
+=QUOTIENT(10,3) // returns 3
+Notes
+If denominator is zero (0) or a reference to an empty cell, QUOTIENT returns #DIV!
+To return only the remainder, use the MOD function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MOD Function 
+ Links Microsoft QUOTIENT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,652 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel RANDBETWEEN function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+RANDBETWEEN Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+RANDBETWEEN Function
+Related functions 
+
+RAND
+RANDARRAY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel RANDBETWEEN function returns a random integer between two given numbers. RANDBETWEEN recalculates each time a worksheet is opened or changed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get a random integer between two values
+
+
+
+Return value 
+
+An integer
+
+
+
+Arguments 
+
+bottom - An integer representing the lower value of the range.top - An integer representing the upper value of the range.
+
+
+
+Syntax 
+
+=RANDBETWEEN(bottom, top)
+
+
+
+Usage notes 
+
+The RANDBETWEEN function returns a random integer between two numbers. The result from RANDBETWEEN is automatic, and a new random number will be recalculated each time a worksheet is opened or changed.
+RANDBETWEEN is a volatile function, and can cause performance issues in large or complex worksheets.
+The RANDBETWEEN function takes two arguments: bottom and top. Bottom represents the lower bound for a random number, and top represents the upper bound. RANDBETWEEN includes both top and bottom values in the range of integers that may be returned. 
+Examples
+Below are basic examples of RANDBETWEEN formulas:
+
+=RANDBETWEEN(1,9) // random number between 1 and 9
+=RANDBETWEEN(10,100) // random number between 10 and 100
+=RANDBETWEEN(-10,0) // random number between -10 and zero
+
+Multiple results
+To generate multiple random numbers in multiple cells, select the target cells, enter the RANDBETWEEN function, and press control + enter to enter the same formula in all cells at once.
+Static results
+RANDBETWEEN returns a new random value each time the worksheet is recalculated, including changes made to unrelated cells in the same workbook. To stop random numbers from changing, copy the cells that contain RANDBETWEEN to the clipboard, then use Paste Special > Values to convert to text. To get a single random number that doesn't change, enter RANDBETWEEN in the formula bar, press F9 to convert the formula to a static result, and press Enter to enter the value in the cell.
+Note: in Excel 365, the RANDARRAY function is a more flexible alternative. RANDARRAY can generate random decimal numbers and random integers, and can also return more than one random value at the same time.
+Notes
+
+RANDBETWEEN recalculates whenever a worksheet is opened or changed.
+RANDBETWEEN returns integers. Use the RAND function to return random decimal values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Random text values 
+
+Random value from list or table 
+
+Random number from fixed set of options 
+
+Randomly assign data to groups 
+
+Random number between two numbers 
+
+Random date between two dates 
+
+
+
+Videos
+  
+How to convert formulas to values 
+
+How to generate random values 
+
+
+ Functions RAND FunctionRANDARRAY Function 
+ Links Microsoft RANDBETWEEN function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel RANDBETWEEN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RANDBETWEEN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+RANDBETWEEN Function
+Related functions 
+RAND
+RANDARRAY
+Summary
+The Excel RANDBETWEEN function returns a random integer between two given numbers. RANDBETWEEN recalculates each time a worksheet is opened or changed.
+Purpose 
+Get a random integer between two values
+Return value 
+An integer
+Arguments 
+bottom - An integer representing the lower value of the range.top - An integer representing the upper value of the range.
+Syntax 
+=RANDBETWEEN(bottom, top)
+Usage notes 
+The RANDBETWEEN function returns a random integer between two numbers. The result from RANDBETWEEN is automatic, and a new random number will be recalculated each time a worksheet is opened or changed.
+RANDBETWEEN is a volatile function, and can cause performance issues in large or complex worksheets.
+The RANDBETWEEN function takes two arguments: bottom and top. Bottom represents the lower bound for a random number, and top represents the upper bound. RANDBETWEEN includes both top and bottom values in the range of integers that may be returned. 
+Examples
+Below are basic examples of RANDBETWEEN formulas:
+=RANDBETWEEN(1,9) // random number between 1 and 9
+=RANDBETWEEN(10,100) // random number between 10 and 100
+=RANDBETWEEN(-10,0) // random number between -10 and zero
+Multiple results
+To generate multiple random numbers in multiple cells, select the target cells, enter the RANDBETWEEN function, and press control + enter to enter the same formula in all cells at once.
+Static results
+RANDBETWEEN returns a new random value each time the worksheet is recalculated, including changes made to unrelated cells in the same workbook. To stop random numbers from changing, copy the cells that contain RANDBETWEEN to the clipboard, then use Paste Special > Values to convert to text. To get a single random number that doesn't change, enter RANDBETWEEN in the formula bar, press F9 to convert the formula to a static result, and press Enter to enter the value in the cell.
+Note: in Excel 365, the RANDARRAY function is a more flexible alternative. RANDARRAY can generate random decimal numbers and random integers, and can also return more than one random value at the same time.
+Notes
+RANDBETWEEN recalculates whenever a worksheet is opened or changed.
+RANDBETWEEN returns integers. Use the RAND function to return random decimal values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Random text values 
+Random value from list or table 
+Random number from fixed set of options 
+Randomly assign data to groups 
+Random number between two numbers 
+Random date between two dates 
+Videos
+  
+How to convert formulas to values 
+How to generate random values 
+ Functions RAND FunctionRANDARRAY Function 
+ Links Microsoft RANDBETWEEN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

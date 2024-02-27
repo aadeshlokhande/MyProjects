@@ -1,0 +1,686 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel ROW function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+ROW Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+ROW Function
+Related functions 
+
+ROWS
+COLUMN
+COLUMNS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel ROW function returns the row number for a reference. For example, ROW(C5) returns 5, since C5 is the fifth row in the spreadsheet. When no reference is provided, ROW returns the row number of the cell which contains the formula.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the row number of a reference
+
+
+
+Return value 
+
+A number representing the row.
+
+
+
+Arguments 
+
+reference - [optional] A reference to a cell or range of cells.
+
+
+
+Syntax 
+
+=ROW([reference])
+
+
+
+Usage notes 
+
+The ROW function returns the row number for a cell or range. For example, =ROW(C3) returns 3, since C3 is the third row in the spreadsheet. When no reference is provided, ROW returns the row number of the cell which contains the formula. ROW takes just one argument, called reference, which can be empty, a cell reference, or a range. When no reference is provided, ROW returns the row number of the cell which contains the formula.
+Examples
+With a single cell reference, ROW returns the associated row number:
+
+=ROW(A1) // returns 1
+=ROW(E3) // returns 3
+
+When a reference is not provided, ROW returns the row number of the cell the formula resides in. For example, if the following formula is entered in cell D6, the result is 6:
+
+=ROW() // returns 6 in D6
+
+When ROW is given a range, it returns the row numbers for that range:
+
+=ROW(E4:G6) // returns {4,5,6}
+
+In Excel 365, which supports dynamic array formulas, the result is an array {4,5,6} that spills vertically into three cells, starting with the cell that contains the formula. In earlier Excel versions, the first item of the array (4) will display in one cell only.
+To get Excel 365 to return a single value, you can use the implicit intersection operator (@):
+
+=@ROW(E4:G6) // returns 4
+
+ This @ symbol disables array behavior and tells Excel you want a single value.
+Notes
+
+Reference can be a single cell address or a range of cells.
+Reference is optional and will default to the cell in which the ROW function exists.
+Reference cannot include multiple references or addresses.
+To get column numbers, see the COLUMN function.
+To count rows, see the ROWS function.
+To lookup a row number, see the MATCH function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Copy value from every nth row 
+
+Strip numeric characters from cell 
+
+Extract multiple matches into separate rows 
+
+Get last match 
+
+Last n rows 
+
+Get work hours between dates custom schedule 
+
+Get column totals 
+
+Count unique text values in a range 
+
+List sheet names with formula 
+
+Abbreviate names or words 
+
+
+
+Videos
+  
+How to apply a named range to an existing formula 
+
+How to use function arguments 
+
+How to create zebra stripes with conditional formatting 
+
+Shade groups of rows with conditional formatting 
+
+
+ Functions ROWS FunctionCOLUMN FunctionCOLUMNS Function 
+ Links Microsoft ROW function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel ROW function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ROW Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+ROW Function
+Related functions 
+ROWS
+COLUMN
+COLUMNS
+Summary
+The Excel ROW function returns the row number for a reference. For example, ROW(C5) returns 5, since C5 is the fifth row in the spreadsheet. When no reference is provided, ROW returns the row number of the cell which contains the formula.
+Purpose 
+Get the row number of a reference
+Return value 
+A number representing the row.
+Arguments 
+reference - [optional] A reference to a cell or range of cells.
+Syntax 
+=ROW([reference])
+Usage notes 
+The ROW function returns the row number for a cell or range. For example, =ROW(C3) returns 3, since C3 is the third row in the spreadsheet. When no reference is provided, ROW returns the row number of the cell which contains the formula. ROW takes just one argument, called reference, which can be empty, a cell reference, or a range. When no reference is provided, ROW returns the row number of the cell which contains the formula.
+Examples
+With a single cell reference, ROW returns the associated row number:
+=ROW(A1) // returns 1
+=ROW(E3) // returns 3
+When a reference is not provided, ROW returns the row number of the cell the formula resides in. For example, if the following formula is entered in cell D6, the result is 6:
+=ROW() // returns 6 in D6
+When ROW is given a range, it returns the row numbers for that range:
+=ROW(E4:G6) // returns {4,5,6}
+In Excel 365, which supports dynamic array formulas, the result is an array {4,5,6} that spills vertically into three cells, starting with the cell that contains the formula. In earlier Excel versions, the first item of the array (4) will display in one cell only.
+To get Excel 365 to return a single value, you can use the implicit intersection operator (@):
+=@ROW(E4:G6) // returns 4
+ This @ symbol disables array behavior and tells Excel you want a single value.
+Notes
+Reference can be a single cell address or a range of cells.
+Reference is optional and will default to the cell in which the ROW function exists.
+Reference cannot include multiple references or addresses.
+To get column numbers, see the COLUMN function.
+To count rows, see the ROWS function.
+To lookup a row number, see the MATCH function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Copy value from every nth row 
+Strip numeric characters from cell 
+Extract multiple matches into separate rows 
+Get last match 
+Last n rows 
+Get work hours between dates custom schedule 
+Get column totals 
+Count unique text values in a range 
+List sheet names with formula 
+Abbreviate names or words 
+Videos
+  
+How to apply a named range to an existing formula 
+How to use function arguments 
+How to create zebra stripes with conditional formatting 
+Shade groups of rows with conditional formatting 
+ Functions ROWS FunctionCOLUMN FunctionCOLUMNS Function 
+ Links Microsoft ROW function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,10 @@
+Summary
+The Excel COUNT function returns a count of values that are numbers. Numbers include negative numbers, percentages, dates, times, fractions, and formulas that return numbers. Empty cells and text values are ignored.
+Purpose 
+Count numbers
+Return value 
+Count of numeric values
+Arguments 
+value1 - An item, cell reference, or range.value2 - [optional] An item, cell reference, or range.
+Syntax 
+=COUNT(value1, [value2], ...)

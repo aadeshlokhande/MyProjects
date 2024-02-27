@@ -1,0 +1,674 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PRICE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PRICE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+PRICE Function
+Related functions 
+
+PRICE
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PRICE function returns the price per $100 face value of a security that pays periodic interest.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get price per $100 face value - periodic interest
+
+
+
+Return value 
+
+Bond price
+
+
+
+Arguments 
+
+sd - Settlement date of the security.md - Maturity date of the security.rate - Annual coupon rate.yld - Annual required rate of return.redemption - Redemption value per $100 face value.frequency - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4.basis - [optional] Day count basis (see below, default =0).
+
+
+
+Syntax 
+
+=PRICE(sd, md, rate, yld, redemption, frequency, [basis])
+
+
+
+Usage notes 
+
+The Excel PRICE function returns the price per $100 face value of a security that pays periodic interest. For example, the PRICE function can be used to determine the "clean price" of a bond (also known as the quoted price), which is the price of the bond excluding accrued interest.
+In the example shown, the formula in F5 is:
+
+=PRICE(C9,C10,C7,C8,C6,C12,C13)
+
+with these inputs, the PRICE function returns 97.56, which indicates the value of the bond is 97.56% of the face value. To get the actual dollar value, the formula in F6 is:
+
+=F5/100*C5
+
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. If you want to enter valid dates directly inside a function, the DATE function is the best approach.
+Basis
+The basis argument controls how days are counted. The PRICE function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+
+
+
+Basis
+Day count
+
+
+
+
+0 or omitted
+US (NASD) 30/360
+
+
+1
+Actual/actual
+
+
+2
+Actual/360
+
+
+3
+Actual/365
+
+
+4
+European 30/360
+
+
+
+Notes
+
+In Excel, dates are serial numbers. 
+settlement, maturity, frequency, and basis are truncated to integers
+If settlement or maturity dates are not valid, PRICE returns #VALUE!
+If basis is out-of-range, PRICE returns #NUM!
+If maturity date is not later than settlement date, PRICE returns #NUM!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Bond valuation example 
+
+
+ Functions PRICE FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft PRICE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PRICE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PRICE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PRICE Function
+Related functions 
+PRICE
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+Summary
+The Excel PRICE function returns the price per $100 face value of a security that pays periodic interest.
+Purpose 
+Get price per $100 face value - periodic interest
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.rate - Annual coupon rate.yld - Annual required rate of return.redemption - Redemption value per $100 face value.frequency - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=PRICE(sd, md, rate, yld, redemption, frequency, [basis])
+Usage notes 
+The Excel PRICE function returns the price per $100 face value of a security that pays periodic interest. For example, the PRICE function can be used to determine the "clean price" of a bond (also known as the quoted price), which is the price of the bond excluding accrued interest.
+In the example shown, the formula in F5 is:
+=PRICE(C9,C10,C7,C8,C6,C12,C13)
+with these inputs, the PRICE function returns 97.56, which indicates the value of the bond is 97.56% of the face value. To get the actual dollar value, the formula in F6 is:
+=F5/100*C5
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. If you want to enter valid dates directly inside a function, the DATE function is the best approach.
+Basis
+The basis argument controls how days are counted. The PRICE function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+settlement, maturity, frequency, and basis are truncated to integers
+If settlement or maturity dates are not valid, PRICE returns #VALUE!
+If basis is out-of-range, PRICE returns #NUM!
+If maturity date is not later than settlement date, PRICE returns #NUM!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Bond valuation example 
+ Functions PRICE FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft PRICE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

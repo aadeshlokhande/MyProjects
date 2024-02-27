@@ -1,0 +1,10 @@
+Summary
+The Excel CHOOSE function returns a value from a list using a given position or index. For example, =CHOOSE(2,"red","blue","green") returns "blue", since blue is the 2nd value listed after the index number. The values provided to CHOOSE can include references.
+Purpose 
+Get a value from a list based on position
+Return value 
+The value at the given position.
+Arguments 
+index_num - The value to choose. A number between 1 and 254.value1 - The first value from which to choose.value2 - [optional] The second value from which to choose.
+Syntax 
+=CHOOSE(index_num, value1, [value2], ...)

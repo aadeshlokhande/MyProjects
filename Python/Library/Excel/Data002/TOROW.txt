@@ -1,0 +1,10 @@
+Summary
+The Excel TOROW function transforms an array into a single row. By default, TOROW will scan values by row, but TOROW can also scan values by column.
+Purpose 
+Transform array to single row
+Return value 
+A single row of values
+Arguments 
+array - The array to transform.ignore - Control to ignore blanks and errors.scan_by_column - Scan array by column. TRUE = column, FALSE = row (default = TRUE).
+Syntax 
+=TOROW(array, ignore, scan_by_column)

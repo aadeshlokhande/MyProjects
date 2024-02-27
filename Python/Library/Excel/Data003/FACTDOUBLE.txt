@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel FACTDOUBLE function returns the double factorial of a number. A double factorial is symbolized by two exclamation marks (!!).', 'Purpose' : 'Get double factorial of a number', 'Return value' : 'Calculated doublefactorial', 'Arguments' : 'number - A number greater than or equal to -1.', 'Syntax' : '=FACTDOUBLE(number)' }

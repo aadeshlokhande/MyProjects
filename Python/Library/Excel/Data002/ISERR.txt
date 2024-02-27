@@ -1,0 +1,10 @@
+Summary
+The Excel ISERR function returns TRUE for any error type except the #N/A error. You can use the ISERR function together with the IF function to test for an error and display a custom message, or perform a different calculation if found.
+Purpose 
+Test for any error but  #N/A
+Return value 
+A logical value  (TRUE or FALSE)
+Arguments 
+value - The value to check for any error but #N/A.
+Syntax 
+=ISERR(value)

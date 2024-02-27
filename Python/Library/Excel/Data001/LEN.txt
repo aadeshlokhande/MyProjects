@@ -1,0 +1,274 @@
+Excel LEN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LEN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+LEN Function
+Related functions 
+RIGHT
+LEFT
+MID
+Summary
+The Excel LEN function returns the length of a given text string as the number of characters. LEN will also count characters in numbers, but number formatting is not included.
+Purpose 
+Get the length of text.
+Return value 
+Number of characters
+Arguments 
+text - The text for which to calculate length.
+Syntax 
+=LEN(text)
+Usage notes 
+The LEN function returns the number of characters in a given text string. LEN takes just one argument, text. LEN counts the number of characters in text, including space and punctuation, and returns a number as the result. If text is an empty string ("") or text is a reference to an empty cell, LEN returns zero. LEN will also count characters in numbers, but number formatting is not included.
+Examples
+LEN returns the count of characters in a text string:
+=LEN("apple") // returns 5
+Space characters are included in the count:
+=LEN("apple ") // returns 6
+LEN also works with numeric values, but number formatting is not included:
+=LEN(1000) // returns 4
+=LEN($1,000) // returns 4
+The LEN function often appears in other formulas that manipulate text in some way. For example, it can be used with the RIGHT and FIND functions to extract text to the right of a given character:
+=RIGHT(A1,LEN(A1)-FIND(char,A1)) // get text to right of char
+FIND returns the position of the character, which is subtracted from length, calculated with LEN. RIGHT returns the text to the right of that position.  Full explanation here.
+Notes
+LEN returns the length of text as a number.
+LEN works with numbers, but number formatting is not included.
+LEN returns zero if a value is empty.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Remove characters from right 
+Split text string at specific character 
+Count line breaks in cell 
+Highlight cells that end with 
+Extract last two words from cell 
+LAMBDA count words 
+Get middle name from full name 
+Data validation specific characters only 
+Sort text by length 
+Count total words in a range 
+Videos
+  
+How to check line length with conditional formatting 
+Excel formula error codes 
+How to use the REPT function to repeat things 
+How to count characters with the LEN function 
+How to build all-in-one formulas 
+Dynamic arrays are native 
+How to convert booleans to numbers 
+ Functions RIGHT FunctionLEFT FunctionMID Function 
+ Links Microsoft LEN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel LEN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LEN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+LEN Function
+Related functions 
+RIGHT
+LEFT
+MID
+Summary
+The Excel LEN function returns the length of a given text string as the number of characters. LEN will also count characters in numbers, but number formatting is not included.
+Purpose 
+Get the length of text.
+Return value 
+Number of characters
+Arguments 
+text - The text for which to calculate length.
+Syntax 
+=LEN(text)
+Usage notes 
+The LEN function returns the number of characters in a given text string. LEN takes just one argument, text. LEN counts the number of characters in text, including space and punctuation, and returns a number as the result. If text is an empty string ("") or text is a reference to an empty cell, LEN returns zero. LEN will also count characters in numbers, but number formatting is not included.
+Examples
+LEN returns the count of characters in a text string:
+=LEN("apple") // returns 5
+Space characters are included in the count:
+=LEN("apple ") // returns 6
+LEN also works with numeric values, but number formatting is not included:
+=LEN(1000) // returns 4
+=LEN($1,000) // returns 4
+The LEN function often appears in other formulas that manipulate text in some way. For example, it can be used with the RIGHT and FIND functions to extract text to the right of a given character:
+=RIGHT(A1,LEN(A1)-FIND(char,A1)) // get text to right of char
+FIND returns the position of the character, which is subtracted from length, calculated with LEN. RIGHT returns the text to the right of that position.  Full explanation here.
+Notes
+LEN returns the length of text as a number.
+LEN works with numbers, but number formatting is not included.
+LEN returns zero if a value is empty.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Remove characters from right 
+Split text string at specific character 
+Count line breaks in cell 
+Highlight cells that end with 
+Extract last two words from cell 
+LAMBDA count words 
+Get middle name from full name 
+Data validation specific characters only 
+Sort text by length 
+Count total words in a range 
+Videos
+  
+How to check line length with conditional formatting 
+Excel formula error codes 
+How to use the REPT function to repeat things 
+How to count characters with the LEN function 
+How to build all-in-one formulas 
+Dynamic arrays are native 
+How to convert booleans to numbers 
+ Functions RIGHT FunctionLEFT FunctionMID Function 
+ Links Microsoft LEN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

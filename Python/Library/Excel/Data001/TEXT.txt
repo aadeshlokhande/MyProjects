@@ -1,0 +1,276 @@
+Excel TEXT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TEXT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+TEXT Function
+Related functions 
+DOLLAR
+FIXED
+Summary
+The Excel TEXT function returns a number in a given number format, as text. You can use the TEXT function to embed formatted numbers inside text.
+Purpose 
+Convert a number to text in a number format
+Return value 
+A number as text in the given format.
+Arguments 
+value - The number to convert.format_text - The number format to use.
+Syntax 
+=TEXT(value, format_text)
+Usage notes 
+The TEXT function returns a number formatted as text, using the number format provided. You can use the TEXT function to embed formatted numbers inside text.
+The TEXT function takes two arguments, value and format_text. Value is the number to be formatted as text and should be a numeric value. If value is already text, no formatting is applied. Format_text is a text string that contains the number formatting codes to apply to value. Supply format_text as a text string enclosed in double quotes ("").  To see examples of various number format codes, see Excel Custom Number Formats.
+Note: The output from TEXT is always a text string. To format a number and maintain the numeric value, apply regular number formatting.
+The TEXT function is useful when concatenating a formatted number to a text string. For example, "Sales last year increased by over $43,500", where the number 43500 has been formatted with a currency symbol and thousands separator. Without the TEXT function, the number formatting will be stripped. This is especially problematic with dates, which appear as large serial numbers. With the TEXT function, you can embed a number in text using exactly the number format needed.
+Examples
+With the date July 1, 2021 in cell A1, the TEXT function can be used like this:
+=TEXT(A1,"dd-mmm-yy") // returns"1-Jul-2021"
+=TEXT(A1,"mmmm d") // returns "July 1"
+With the number 0.537 in cell A1, TEXT can be used to apply percentage formatting like this:
+=TEXT(A1,"0.0%") // returns "53.7%"
+=TEXT(A1,"0%") // returns "54%"
+The TEXT function is especially useful when concatenating a number to a text string with formatting. For example, with the date July 1, 2021 in cell A1, concatenation causes date formatting to be removed, since dates are numeric values:
+="The date is "&A1 //  returns "The date is 44378"
+The TEXT function can be used to apply date formatting in the final result:
+="The date is "&TEXT(A1,"mmmm d") //  returns "The date is July 1"
+Notes
+Value should be a numeric value
+Format_text must appear in double quotation marks.
+The TEXT function can be used with custom number formats
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Rank values by month 
+Sort birthdays by month and day 
+Max by month 
+Average call time per month 
+Get days, hours, and minutes between dates 
+Highlight dates in same month and year 
+Happy birthday message 
+Get last entry by month and year 
+Max value on given weekday 
+Sum by weekday 
+Videos
+  
+How to calculate the number of days between dates 
+How to join text with numbers 
+How to use concatenation to clarify assumptions 
+How to test a conditional formatting formula 
+How to combine functions in a formula 
+ Functions DOLLAR FunctionFIXED Function 
+ Articles Excel custom number formats 
+ Links Microsoft TEXT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel TEXT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TEXT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+TEXT Function
+Related functions 
+DOLLAR
+FIXED
+Summary
+The Excel TEXT function returns a number in a given number format, as text. You can use the TEXT function to embed formatted numbers inside text.
+Purpose 
+Convert a number to text in a number format
+Return value 
+A number as text in the given format.
+Arguments 
+value - The number to convert.format_text - The number format to use.
+Syntax 
+=TEXT(value, format_text)
+Usage notes 
+The TEXT function returns a number formatted as text, using the number format provided. You can use the TEXT function to embed formatted numbers inside text.
+The TEXT function takes two arguments, value and format_text. Value is the number to be formatted as text and should be a numeric value. If value is already text, no formatting is applied. Format_text is a text string that contains the number formatting codes to apply to value. Supply format_text as a text string enclosed in double quotes ("").  To see examples of various number format codes, see Excel Custom Number Formats.
+Note: The output from TEXT is always a text string. To format a number and maintain the numeric value, apply regular number formatting.
+The TEXT function is useful when concatenating a formatted number to a text string. For example, "Sales last year increased by over $43,500", where the number 43500 has been formatted with a currency symbol and thousands separator. Without the TEXT function, the number formatting will be stripped. This is especially problematic with dates, which appear as large serial numbers. With the TEXT function, you can embed a number in text using exactly the number format needed.
+Examples
+With the date July 1, 2021 in cell A1, the TEXT function can be used like this:
+=TEXT(A1,"dd-mmm-yy") // returns"1-Jul-2021"
+=TEXT(A1,"mmmm d") // returns "July 1"
+With the number 0.537 in cell A1, TEXT can be used to apply percentage formatting like this:
+=TEXT(A1,"0.0%") // returns "53.7%"
+=TEXT(A1,"0%") // returns "54%"
+The TEXT function is especially useful when concatenating a number to a text string with formatting. For example, with the date July 1, 2021 in cell A1, concatenation causes date formatting to be removed, since dates are numeric values:
+="The date is "&A1 //  returns "The date is 44378"
+The TEXT function can be used to apply date formatting in the final result:
+="The date is "&TEXT(A1,"mmmm d") //  returns "The date is July 1"
+Notes
+Value should be a numeric value
+Format_text must appear in double quotation marks.
+The TEXT function can be used with custom number formats
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Rank values by month 
+Sort birthdays by month and day 
+Max by month 
+Average call time per month 
+Get days, hours, and minutes between dates 
+Highlight dates in same month and year 
+Happy birthday message 
+Get last entry by month and year 
+Max value on given weekday 
+Sum by weekday 
+Videos
+  
+How to calculate the number of days between dates 
+How to join text with numbers 
+How to use concatenation to clarify assumptions 
+How to test a conditional formatting formula 
+How to combine functions in a formula 
+ Functions DOLLAR FunctionFIXED Function 
+ Articles Excel custom number formats 
+ Links Microsoft TEXT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,300 @@
+Excel ENCODEURL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ENCODEURL Function 
+Previous 
+Next 
+ 
+Excel 2013
+Web
+ENCODEURL Function
+Related functions 
+WEBSERVICE
+FILTERXML
+Summary
+The Excel ENCODEURL function returns a URL-encoded string composed of US-ASCII characters. ENCODEURL is only available in Excel 2013 and later on Windows.
+Purpose 
+Get URL-encoded string
+Return value 
+Encoded text
+Arguments 
+text - The text to be encoded.
+Syntax 
+=ENCODEURL(text)
+Usage notes 
+The ENCODEURL function returns a URL-encoded string composed of US-ASCII characters. URL encoding, sometimes called "percent encoding" is a method of encoding characters in a URL using only legal US-ASCII characters. Some characters cannot be part of a URL and are "reserved". Only characters that are  reserved are encoded by ENCODEURL; other characters are left untouched. Common reserved characters include the space character (" "), the forward slash "/", the hash character (#) and others as shown in the example above.
+Example
+To use ENCODEURL, supply text or a cell reference that contains text. In the example below, ENCODEURL is used to encode the text "Hello World!"
+=ENCODEURL("Hello World!") // returns "Hello%20World%21"
+In the example at the top of the page, the formula in cell C5, copied down is:
+=ENCODEURL(B5)
+At each new row, ENCODEURL returns the encoded text from column B. 
+Reserved characters
+The table below shows a list of reserved characters and their url-encoded equivalent.
+Character
+Encoding
+!
+%21
+#
+%23
+$
+%24
+%
+%25
+&
+%26
+'
+%27
+(
+%28
+)
+%29
+*
+%2A
++
+%2B
+,
+%2C
+/
+%2F
+:
+%3A
+;
+%3B
+=
+%3D
+?
+%3F
+@
+%40
+[
+%5B
+]
+%5D
+ 
+%20
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions WEBSERVICE FunctionFILTERXML Function 
+ Links Microsoft ENCODEURL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ENCODEURL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ENCODEURL Function 
+Previous 
+Next 
+ 
+Excel 2013
+Web
+ENCODEURL Function
+Related functions 
+WEBSERVICE
+FILTERXML
+Summary
+The Excel ENCODEURL function returns a URL-encoded string composed of US-ASCII characters. ENCODEURL is only available in Excel 2013 and later on Windows.
+Purpose 
+Get URL-encoded string
+Return value 
+Encoded text
+Arguments 
+text - The text to be encoded.
+Syntax 
+=ENCODEURL(text)
+Usage notes 
+The ENCODEURL function returns a URL-encoded string composed of US-ASCII characters. URL encoding, sometimes called "percent encoding" is a method of encoding characters in a URL using only legal US-ASCII characters. Some characters cannot be part of a URL and are "reserved". Only characters that are  reserved are encoded by ENCODEURL; other characters are left untouched. Common reserved characters include the space character (" "), the forward slash "/", the hash character (#) and others as shown in the example above.
+Example
+To use ENCODEURL, supply text or a cell reference that contains text. In the example below, ENCODEURL is used to encode the text "Hello World!"
+=ENCODEURL("Hello World!") // returns "Hello%20World%21"
+In the example at the top of the page, the formula in cell C5, copied down is:
+=ENCODEURL(B5)
+At each new row, ENCODEURL returns the encoded text from column B. 
+Reserved characters
+The table below shows a list of reserved characters and their url-encoded equivalent.
+Character
+Encoding
+!
+%21
+#
+%23
+$
+%24
+%
+%25
+&
+%26
+'
+%27
+(
+%28
+)
+%29
+*
+%2A
++
+%2B
+,
+%2C
+/
+%2F
+:
+%3A
+;
+%3B
+=
+%3D
+?
+%3F
+@
+%40
+[
+%5B
+]
+%5D
+ 
+%20
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions WEBSERVICE FunctionFILTERXML Function 
+ Links Microsoft ENCODEURL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

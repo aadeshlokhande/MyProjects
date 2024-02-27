@@ -1,0 +1,652 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel NOW function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+NOW Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+NOW Function
+Related functions 
+
+TODAY
+TEXT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel NOW function returns the current date and time, updated continuously when a worksheet is changed or opened. The NOW function takes no arguments. You can format the value returned by NOW as a date, or as a date with time by applying a number format.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the current date and time
+
+
+
+Return value 
+
+A number representing the current date and time in Excel.
+
+
+
+Arguments 
+
+
+
+
+
+Syntax 
+
+=NOW()
+
+
+
+Usage notes 
+
+NOW takes no parameters but requires empty parentheses. The value returned by NOW will continually update each time the worksheet is updated, for example, each time a value is entered or changed. Use F9 to force the worksheet to recalculate and update the value.
+The value returned by the NOW function is a standard Excel date, including a fractional value for time. To display the result as a date, apply a date number format. Optionally customize the number format to include the time. If you want the current date without a time value, use the TODAY function.
+Examples
+The examples below show how the NOW function can be used in various ways:
+
+=NOW()  // current date and time
+=NOW()-7  // last week same time
+=NOW()+7  // next week same time
+=NOW()+90  // 90 days from now
+=MROUND(NOW()+90,"1:00")  // 90 days from now to nearest hour
+=EDATE(NOW(),3)  // 3 months from now, time removed
+=EDATE(NOW(),12)  // 12 months from now, time removed
+=EOMONTH(NOW(),-1)+1  // first day of current month
+=EDATE(NOW(),6)+MOD(NOW(),6)  // 6 months from now, time preserved
+
+Static date and time
+If you need a static date and time that won't change,  you can use the following shortcuts:
+
+Insert current date - Control + ;
+Insert current time - Control + Shift + :
+
+To enter both values in a single cell, enter the date, a space, then the time.
+Formatting results
+The result of NOW is a serial number representing an Excel date and time. You can format the value returned by TODAY using any standard date format. You can use the TEXT function to build a text message that includes the current date:
+
+="The date is "&TEXT(NOW(),"mmm d")&" and the time is "&
+TEXT(NOW(),"h:mm AM/PM")
+
+To return a text string like "The date is May 31 and the time is 6:10 PM".
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Display the current date and time 
+
+List sheet names with formula 
+
+
+
+Videos
+  
+How to display current date and time 
+
+
+ Functions TODAY FunctionTEXT Function 
+ Links Microsoft NOW function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel NOW function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NOW Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+NOW Function
+Related functions 
+TODAY
+TEXT
+Summary
+The Excel NOW function returns the current date and time, updated continuously when a worksheet is changed or opened. The NOW function takes no arguments. You can format the value returned by NOW as a date, or as a date with time by applying a number format.
+Purpose 
+Get the current date and time
+Return value 
+A number representing the current date and time in Excel.
+Arguments 
+Syntax 
+=NOW()
+Usage notes 
+NOW takes no parameters but requires empty parentheses. The value returned by NOW will continually update each time the worksheet is updated, for example, each time a value is entered or changed. Use F9 to force the worksheet to recalculate and update the value.
+The value returned by the NOW function is a standard Excel date, including a fractional value for time. To display the result as a date, apply a date number format. Optionally customize the number format to include the time. If you want the current date without a time value, use the TODAY function.
+Examples
+The examples below show how the NOW function can be used in various ways:
+=NOW()  // current date and time
+=NOW()-7  // last week same time
+=NOW()+7  // next week same time
+=NOW()+90  // 90 days from now
+=MROUND(NOW()+90,"1:00")  // 90 days from now to nearest hour
+=EDATE(NOW(),3)  // 3 months from now, time removed
+=EDATE(NOW(),12)  // 12 months from now, time removed
+=EOMONTH(NOW(),-1)+1  // first day of current month
+=EDATE(NOW(),6)+MOD(NOW(),6)  // 6 months from now, time preserved
+Static date and time
+If you need a static date and time that won't change,  you can use the following shortcuts:
+Insert current date - Control + ;
+Insert current time - Control + Shift + :
+To enter both values in a single cell, enter the date, a space, then the time.
+Formatting results
+The result of NOW is a serial number representing an Excel date and time. You can format the value returned by TODAY using any standard date format. You can use the TEXT function to build a text message that includes the current date:
+="The date is "&TEXT(NOW(),"mmm d")&" and the time is "&
+TEXT(NOW(),"h:mm AM/PM")
+To return a text string like "The date is May 31 and the time is 6:10 PM".
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Display the current date and time 
+List sheet names with formula 
+Videos
+  
+How to display current date and time 
+ Functions TODAY FunctionTEXT Function 
+ Links Microsoft NOW function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

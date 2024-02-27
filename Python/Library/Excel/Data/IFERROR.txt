@@ -1,0 +1,697 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel IFERROR function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+IFERROR Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2007
+
+
+
+
+Logical
+
+
+IFERROR Function
+Related functions 
+
+ISERROR
+IFNA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel IFERROR function returns a custom result when a formula generates an error, and a standard result when no error is detected. IFERROR is an elegant way to trap and manage errors without using more complicated nested IF statements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Trap and handle errors
+
+
+
+Return value 
+
+The value you specify for error conditions.
+
+
+
+Arguments 
+
+value - The value, reference, or formula to check for an error.value_if_error - The value to return if an error is found.
+
+
+
+Syntax 
+
+=IFERROR(value, value_if_error)
+
+
+
+Usage notes 
+
+The IFERROR function is used to catch errors and return a more friendly result or message when an error is detected. When a formula returns a normal result, the IFERROR function returns that result. When a formula returns an error, IFERROR returns an alternative result. IFERROR is an elegant way to trap and manage errors. The IFERROR function is a modern alternative to the ISERROR function.
+Use the IFERROR function to trap and handle errors produced by other formulas or functions. IFERROR checks for the following errors: #N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!.
+Example #1
+In the example shown, the formula in E5 copied down is:
+
+=IFERROR(C5/D5,0)
+
+This formula catches the #DIV/0! error that occurs when Qty is empty or zero, and replaces it with zero.
+Example #2
+For example, if A1 contains 10, B1 is blank, and C1 contains the formula =A1/B1, the following formula will catch the #DIV/0! error that results from dividing A1 by B1:
+
+=IFERROR (A1/B1,"Please enter a value in B1")
+
+As long as B1 is empty, C1 will display the message "Please enter a value in B1" if B1 is blank or zero. When a number is entered in B1, the formula will return the result of A1/B1.
+Example #3
+You can also use the IFERROR function to catch the #N/A error thrown by VLOOKUP when a lookup value isn't found. The syntax looks like this:
+
+=IFERROR(VLOOKUP(value,data,column,0),"Not found")
+
+In this example, when VLOOKUP returns a result,  IFERROR functions that result. If VLOOKUP returns #N/A error because a lookup value isn't found, IFERROR returns "Not Found". 
+IFERROR or IFNA?
+The IFERROR function is a useful function, but it is a blunt instrument since it will trap many kinds of errors. For example, if there's a typo in a formula, Excel may return the #NAME? error, but IFERROR will suppress the error and return the alternative result. This can obscure an important problem. In many cases, it makes more sense to use the IFNA function, which only traps the #N/A error.
+Other error functions
+Excel provides a number of error-related functions, each with a different behavior:
+
+The ISERR function returns TRUE for any error type except the #N/A error.
+The ISERROR function returns TRUE for any error.
+The ISNA function returns TRUE for #N/A errors only.
+The ERROR.TYPE function returns the numeric code for a given error.
+The IFERROR function traps errors and provides an alternative result.
+The IFNA function traps #N/A errors and provides an alternative result.
+
+Notes
+
+If value is empty, it is evaluated as an empty string ("") and not an error.
+If value_if_error is supplied as an empty string (""), no message is displayed when an error is detected.
+In Excel 2013+, you can use the IFNA function to trap and handle #N/A errors specifically.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Show formula text with formula 
+
+How to fix the #NUM! error 
+
+VLOOKUP with numbers and text 
+
+How to fix the #CALC! error 
+
+XLOOKUP without #N/A error 
+
+How to fix the #REF! error 
+
+How to fix the #VALUE! error 
+
+Multiple chained VLOOKUPs 
+
+How to fix the #NAME? error 
+
+Extract multiple matches into separate columns 
+
+
+
+Videos
+  
+How to trap errors in formulas 
+
+What to do when VLOOKUP returns NA 
+
+Formulas to query a table 
+
+
+ Functions ISERROR FunctionIFNA Function 
+ Links Microsoft IFERROR function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel IFERROR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+IFERROR Function 
+Previous 
+Next 
+ 
+Excel 2007
+Logical
+IFERROR Function
+Related functions 
+ISERROR
+IFNA
+Summary
+The Excel IFERROR function returns a custom result when a formula generates an error, and a standard result when no error is detected. IFERROR is an elegant way to trap and manage errors without using more complicated nested IF statements.
+Purpose 
+Trap and handle errors
+Return value 
+The value you specify for error conditions.
+Arguments 
+value - The value, reference, or formula to check for an error.value_if_error - The value to return if an error is found.
+Syntax 
+=IFERROR(value, value_if_error)
+Usage notes 
+The IFERROR function is used to catch errors and return a more friendly result or message when an error is detected. When a formula returns a normal result, the IFERROR function returns that result. When a formula returns an error, IFERROR returns an alternative result. IFERROR is an elegant way to trap and manage errors. The IFERROR function is a modern alternative to the ISERROR function.
+Use the IFERROR function to trap and handle errors produced by other formulas or functions. IFERROR checks for the following errors: #N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!.
+Example #1
+In the example shown, the formula in E5 copied down is:
+=IFERROR(C5/D5,0)
+This formula catches the #DIV/0! error that occurs when Qty is empty or zero, and replaces it with zero.
+Example #2
+For example, if A1 contains 10, B1 is blank, and C1 contains the formula =A1/B1, the following formula will catch the #DIV/0! error that results from dividing A1 by B1:
+=IFERROR (A1/B1,"Please enter a value in B1")
+As long as B1 is empty, C1 will display the message "Please enter a value in B1" if B1 is blank or zero. When a number is entered in B1, the formula will return the result of A1/B1.
+Example #3
+You can also use the IFERROR function to catch the #N/A error thrown by VLOOKUP when a lookup value isn't found. The syntax looks like this:
+=IFERROR(VLOOKUP(value,data,column,0),"Not found")
+In this example, when VLOOKUP returns a result,  IFERROR functions that result. If VLOOKUP returns #N/A error because a lookup value isn't found, IFERROR returns "Not Found". 
+IFERROR or IFNA?
+The IFERROR function is a useful function, but it is a blunt instrument since it will trap many kinds of errors. For example, if there's a typo in a formula, Excel may return the #NAME? error, but IFERROR will suppress the error and return the alternative result. This can obscure an important problem. In many cases, it makes more sense to use the IFNA function, which only traps the #N/A error.
+Other error functions
+Excel provides a number of error-related functions, each with a different behavior:
+The ISERR function returns TRUE for any error type except the #N/A error.
+The ISERROR function returns TRUE for any error.
+The ISNA function returns TRUE for #N/A errors only.
+The ERROR.TYPE function returns the numeric code for a given error.
+The IFERROR function traps errors and provides an alternative result.
+The IFNA function traps #N/A errors and provides an alternative result.
+Notes
+If value is empty, it is evaluated as an empty string ("") and not an error.
+If value_if_error is supplied as an empty string (""), no message is displayed when an error is detected.
+In Excel 2013+, you can use the IFNA function to trap and handle #N/A errors specifically.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Show formula text with formula 
+How to fix the #NUM! error 
+VLOOKUP with numbers and text 
+How to fix the #CALC! error 
+XLOOKUP without #N/A error 
+How to fix the #REF! error 
+How to fix the #VALUE! error 
+Multiple chained VLOOKUPs 
+How to fix the #NAME? error 
+Extract multiple matches into separate columns 
+Videos
+  
+How to trap errors in formulas 
+What to do when VLOOKUP returns NA 
+Formulas to query a table 
+ Functions ISERROR FunctionIFNA Function 
+ Links Microsoft IFERROR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

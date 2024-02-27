@@ -1,0 +1,328 @@
+Excel NETWORKDAYS.INTL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NETWORKDAYS.INTL Function 
+Previous 
+Next 
+ 
+Excel 2010
+Date and time
+NETWORKDAYS.INTL Function
+Related functions 
+WORKDAY
+NETWORKDAYS
+Summary
+The Excel NETWORKDAYS.INTL function calculates the number of working days between two dates. NETWORKDAYS.INTL can optionally exclude a list of holidays and provides a way to specify which days of the week are considered weekends.
+Purpose 
+Get work days between two dates
+Return value 
+A number representing days.
+Arguments 
+start_date - The start date.end_date - The end date.weekend - [optional] Setting for which days of the week should be considered weekends.holidays - [optional] A reference to dates that should be considered non-work days.
+Syntax 
+=NETWORKDAYS.INTL(start_date, end_date, [weekend], [holidays])
+Usage notes 
+The NETWORKDAYS.INTL function returns the number of working days between two dates, taking into account holidays and weekends. This function is more robust than the NETWORKDAYS function because it allows you to control which days of the week are considered weekends. 
+NETWORKDAYS.INTL takes four arguments: start_date, end_date, weekend, and holidays. The start_date, end_date and holidays arguments must be valid Excel dates. The weekend argument controls which days of the week are considered weekends, and therefore not included in the count. Holidays are also treated as non-working days and will not be included in the result.
+Both the weekend and holidays arguments are optional. By default, NETWORKDAYS.INTL will exclude Saturdays and Sundays, but this can be customized as explained below. To exclude holidays, supply a range that contains non-working dates for the holiday argument. 
+NETWORKDAYS.INTL includes both the start date and end date when calculating workdays – if you give NETWORKDAYS.INTL the same date for start_date and end_date, and the date is not a weekend or holiday, the result is 1.
+Examples
+In the example shown, the following formulas are used:
+=NETWORKDAYS.INTL(B5,C5) // result 1, default
+=NETWORKDAYS.INTL(B5,C5,1,holidays) // result 2, exclude holidays
+=NETWORKDAYS.INTL(B5,C5,"1000000") // result 3, Monday is weekend
+where "holidays" is the named range I5:I13.
+Result 1 in column E shows the default configuration, where Saturday and Sunday are treated as weekends and excluded from the count. Result 2 in column D shows the effect of excluding holidays from the working day count. Result 3 shows how the NETWORKDAYS.INTL function can be configured to define custom weekends. The text string "1000000" sets Mondays as a weekend, and all other days are considered working days. See below for more detail on configuring weekends.
+Configuring weekends
+The NETWORKDAYS.INTL function provides two options to configure weekends. The first option is to supply a number as shown in the table below.
+Weekend number
+Weekend days
+1 (default)
+Saturday, Sunday
+2
+Sunday, Monday
+3
+Monday, Tuesday
+4
+Tuesday, Wednesday
+5
+Wednesday, Thursday
+6
+Thursday, Friday
+7
+Friday, Saturday
+11
+Sunday only
+12
+Monday only
+13
+Tuesday only
+14
+Wednesday only
+15
+Thursday only
+16
+Friday only
+17
+Saturday only
+The second way to configure weekends is to provide a text string composed of 1s and 0s. This text is provided as a string of 7 characters which must be either 1 or 0. In this scheme, the number 1 means weekend and 0 means workday. Each character represents a different day of the week, starting with the first character as Monday. Below are some examples:
+NETWORKDAYS.INTL(start,end,"0101011") // workdays = M,W,F
+NETWORKDAYS.INTL(start,end,"1010111") // workdays = Tue, Thu
+NETWORKDAYS.INTL(start,end,"1111100") // workdays = Sat,Sun
+NETWORKDAYS.INTL(start,end,"0000000") // all workdays, no weekends
+Notes:
+If start_date is greater than end_date, the function returns a negative value.
+NETWORKDAYS.INTL includes both the start date and end date when calculating workdays. This means if you give NETWORKDAYS.INTL the same date for start date and end date, it will return 1.
+If start_date or end_date are out of range, NETWORKDAYS.INTL returns the #NUM! error.
+If weekend is invalid, NETWORKDAYS.INTL returns the #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Workdays per month 
+Working days in year 
+Working days left in month 
+Get work hours between dates and times 
+Get work hours between dates 
+Series of dates by workdays 
+Get workdays between dates 
+Videos
+  
+How to calculate due dates with WORKDAY 
+ Functions WORKDAY FunctionNETWORKDAYS Function 
+ Links Microsoft NETWORKDAYS.INTL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel NETWORKDAYS.INTL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NETWORKDAYS.INTL Function 
+Previous 
+Next 
+ 
+Excel 2010
+Date and time
+NETWORKDAYS.INTL Function
+Related functions 
+WORKDAY
+NETWORKDAYS
+Summary
+The Excel NETWORKDAYS.INTL function calculates the number of working days between two dates. NETWORKDAYS.INTL can optionally exclude a list of holidays and provides a way to specify which days of the week are considered weekends.
+Purpose 
+Get work days between two dates
+Return value 
+A number representing days.
+Arguments 
+start_date - The start date.end_date - The end date.weekend - [optional] Setting for which days of the week should be considered weekends.holidays - [optional] A reference to dates that should be considered non-work days.
+Syntax 
+=NETWORKDAYS.INTL(start_date, end_date, [weekend], [holidays])
+Usage notes 
+The NETWORKDAYS.INTL function returns the number of working days between two dates, taking into account holidays and weekends. This function is more robust than the NETWORKDAYS function because it allows you to control which days of the week are considered weekends. 
+NETWORKDAYS.INTL takes four arguments: start_date, end_date, weekend, and holidays. The start_date, end_date and holidays arguments must be valid Excel dates. The weekend argument controls which days of the week are considered weekends, and therefore not included in the count. Holidays are also treated as non-working days and will not be included in the result.
+Both the weekend and holidays arguments are optional. By default, NETWORKDAYS.INTL will exclude Saturdays and Sundays, but this can be customized as explained below. To exclude holidays, supply a range that contains non-working dates for the holiday argument. 
+NETWORKDAYS.INTL includes both the start date and end date when calculating workdays – if you give NETWORKDAYS.INTL the same date for start_date and end_date, and the date is not a weekend or holiday, the result is 1.
+Examples
+In the example shown, the following formulas are used:
+=NETWORKDAYS.INTL(B5,C5) // result 1, default
+=NETWORKDAYS.INTL(B5,C5,1,holidays) // result 2, exclude holidays
+=NETWORKDAYS.INTL(B5,C5,"1000000") // result 3, Monday is weekend
+where "holidays" is the named range I5:I13.
+Result 1 in column E shows the default configuration, where Saturday and Sunday are treated as weekends and excluded from the count. Result 2 in column D shows the effect of excluding holidays from the working day count. Result 3 shows how the NETWORKDAYS.INTL function can be configured to define custom weekends. The text string "1000000" sets Mondays as a weekend, and all other days are considered working days. See below for more detail on configuring weekends.
+Configuring weekends
+The NETWORKDAYS.INTL function provides two options to configure weekends. The first option is to supply a number as shown in the table below.
+Weekend number
+Weekend days
+1 (default)
+Saturday, Sunday
+2
+Sunday, Monday
+3
+Monday, Tuesday
+4
+Tuesday, Wednesday
+5
+Wednesday, Thursday
+6
+Thursday, Friday
+7
+Friday, Saturday
+11
+Sunday only
+12
+Monday only
+13
+Tuesday only
+14
+Wednesday only
+15
+Thursday only
+16
+Friday only
+17
+Saturday only
+The second way to configure weekends is to provide a text string composed of 1s and 0s. This text is provided as a string of 7 characters which must be either 1 or 0. In this scheme, the number 1 means weekend and 0 means workday. Each character represents a different day of the week, starting with the first character as Monday. Below are some examples:
+NETWORKDAYS.INTL(start,end,"0101011") // workdays = M,W,F
+NETWORKDAYS.INTL(start,end,"1010111") // workdays = Tue, Thu
+NETWORKDAYS.INTL(start,end,"1111100") // workdays = Sat,Sun
+NETWORKDAYS.INTL(start,end,"0000000") // all workdays, no weekends
+Notes:
+If start_date is greater than end_date, the function returns a negative value.
+NETWORKDAYS.INTL includes both the start date and end date when calculating workdays. This means if you give NETWORKDAYS.INTL the same date for start date and end date, it will return 1.
+If start_date or end_date are out of range, NETWORKDAYS.INTL returns the #NUM! error.
+If weekend is invalid, NETWORKDAYS.INTL returns the #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Workdays per month 
+Working days in year 
+Working days left in month 
+Get work hours between dates and times 
+Get work hours between dates 
+Series of dates by workdays 
+Get workdays between dates 
+Videos
+  
+How to calculate due dates with WORKDAY 
+ Functions WORKDAY FunctionNETWORKDAYS Function 
+ Links Microsoft NETWORKDAYS.INTL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

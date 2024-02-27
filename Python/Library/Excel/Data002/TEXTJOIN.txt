@@ -1,0 +1,10 @@
+Summary
+The Excel TEXTJOIN function concatenates multiple values together with or without a delimiter. TEXTJOIN can concatenate values provided as cell references,  ranges, or constants, and can optionally ignore empty cells
+Purpose 
+Join text values with a delimiter
+Return value 
+Concatenated text
+Arguments 
+delimiter - Separator between each text.ignore_empty - Whether to ignore empty cells or not.text1 - First text value or range.text2 - [optional] Second text value or range.
+Syntax 
+=TEXTJOIN(delimiter, ignore_empty, text1, [text2], ...)

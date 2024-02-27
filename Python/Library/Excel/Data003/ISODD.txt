@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel ISODD function returns TRUE when a value is an odd number, and FALSE when a value is an even number. ISODD will return the #VALUE error if a value is not numeric.', 'Purpose' : 'Test if a value is odd', 'Return value' : 'A logical value (TRUE or FALSE)', 'Arguments' : 'value - The numeric value to check.', 'Syntax' : '=ISODD(value)' }

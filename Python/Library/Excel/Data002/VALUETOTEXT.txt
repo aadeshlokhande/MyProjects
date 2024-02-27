@@ -1,0 +1,10 @@
+Summary
+The Excel VALUETOTEXT function converts a value to text. By default, text values pass though unaffected. However, in strict mode, text values are enclosed in double quotes (""). Numeric values are converted to text in all cases and number formatting is lost.
+Purpose 
+Converts a value to a text string
+Return value 
+Value as a text string
+Arguments 
+value - The value to convert to text.format - [optional] Output format. 0 = concise (default), and 1 = strict.
+Syntax 
+=VALUETOTEXT(value, [format])

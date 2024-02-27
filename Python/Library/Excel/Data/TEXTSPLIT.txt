@@ -1,0 +1,711 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel TEXTSPLIT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+TEXTSPLIT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+TEXTSPLIT Function
+Related functions 
+
+TEXTJOIN
+TEXTBEFORE
+TEXTAFTER
+CONCAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel TEXTSPLIT function splits text by a given delimiter to an array that spills into multiple cells. TEXTSPLIT can split text into rows or columns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Split a text string with a delimiter
+
+
+
+Return value 
+
+Text in multiple cells 
+
+
+
+Arguments 
+
+text - The text string to split.col_delimiter - The character(s) to delimit columns.row_delimiter - [optional] The character(s) to delimit rows.ignore_empty - [optional] Ignore empty values. TRUE = ignore, FALSE = preserve. Default is FALSE.match_mode - [optional] Case-sensitivity. 0 = enabled, 1 = disabled. Default is 0.pad_with - [optional] Value to pad missing values in 2d arrays.
+
+
+
+Syntax 
+
+=TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with])
+
+
+
+Usage notes 
+
+The TEXTSPLIT function splits text by a given delimiter into multiple cells. TEXTSPLIT can split text into rows or columns. The output from TEXTSPLIT is an array that will spill into multiple cells on the workbook.
+TEXTSPLIT takes five arguments, only two of which are required. The first argument, text, is the text string to split. The second argument, col_delimiter is the delimiter to use for splitting text into separate columns. The third argument, row_delimiter, is the delimiter to use for splitting text into separate rows. Either col_delimiter or row_delimiter must be supplied along with text. The fourth argument, ignore_empty, controls TEXTSPLIT's behavior with empty values (i.e. when delimiters appear together with no value in between). By default, ignore_empty is FALSE, which means TEXTSPLIT will not ignore empty values. In practice, this means you will see an empty cell on the worksheet when there is an empty value in text. Set ignore_empty to TRUE to ignore empty values. The fifth argument is match_mode, which determines case sensitivity when looking for a delimiter. By default, TEXTSPLIT is case-sensitive and match_mode is zero (0). Supply 1 to disable case sensitivity. The last argument is pad_with, which is a value that will appear when the output from TEXTSPLIT is a 2D array and a value is missing. See below for more information.
+Use TEXTBEFORE to extract text before a delimiter, TEXTAFTER to extract text after a delimiter, and TEXTSPLIT to extract all text separated by delimiters.
+Basic usage
+The result from TEXTSPLIT is an array that can be horizontal (columns) or vertical (rows). The worksheet below shows both options:
+
+The first formula in cell D3 separates the three values into separate columns:
+
+=TEXTSPLIT(B3,",") // returns {"Red","Blue","Green"}
+
+Notice a comma without space is used as the col_delimiter and enclosed in double quotes (","). The formula in cell D5 uses the same delimiter to split the text into separate rows:
+
+=TEXTSPLIT(B3,,",") // returns {"Red";"Blue";"Green"}
+
+In the second formula the delimiter (",") appears as the third argument, row_delimiter, and col_delimiter is not provided.
+Ignoring empty values
+By default, TEXTSPLIT will not ignore empty values in the text, where empty values are defined as two or more consecutive delimiters without a value in between. This behavior is controlled by the ignore_empty argument, which defaults to FALSE, as you can see in the worksheet below:
+
+The formula in cell D3 does not include a value for ignore_empty, which defaults to FALSE:
+
+=TEXTSPLIT(B3,",") // empty values not ignored
+
+Notice empty values are not ignored. TEXTSPLIT includes an empty cell in the output where the empty value appeared in text. In the second formula, ignore_empty is set to TRUE, so the missing value between Red and Green is ignored completely:
+
+=TEXTSPLIT(B3,",",,TRUE) // ignore empty values
+
+In this case, TEXTSPLIT behaves as if the missing value does not exist at all.
+Note: you can use 1 and 0 in place of TRUE and FALSE for the ignore_empty argument.
+Match mode
+The fifth argument, match_mode, determines case sensitivity when looking for a delimiter. By default, TEXTSPLIT is case-sensitive and match_mode is zero (0). Supply 1 to disable case sensitivity. In the example below the delimiter is " x " and " X ". The formula in D5 sets match mode to 1 to make TEXTSPLIT ignore case. As a result, the formula works for both cases:
+
+=TEXTSPLIT(B5," x ",,,1)
+
+
+Rows and columns
+TEXTSPLIT can split text into rows and columns at the same time, as seen below:
+
+In this case, an equal sign ("=") is provided as col_delimiter and a comma (",") is provided as row_delimiter:
+
+=TEXTSPLIT(B3,"=",",")
+
+The resulting array from TEXTSPLIT contains 3 rows and 2 columns.
+Padding
+The last argument in TEXTSPLIT is pad_with. This argument is optional and will default to #N/A. Padding is used when the output contains rows and columns and a value is missing that would affect the structure of the array. In the worksheet below, "Blue" does not contain a quantity (there is no "=" delimiter). As a result, TEXTSPLIT returns #N/A where the quantity would go, to maintain the integrity of the array.
+
+The formula in cell E3 contains does not specify a pad_with argument so the default value is returned:
+
+=TEXTSPLIT(B3,"=",",") // default padding is #N/A
+
+In cell E7, "x" is supplied for pad_with so "x" appears in cell F8 instead of #N/A.
+
+=TEXTSPLIT(B3,"=",",",,"x")
+
+Multiple delimiters
+Multiple delimiters can be supplied to TEXTSPLIT as an array constant like {"x","y"} where x and y represent delimiters:
+
+In the worksheet above, the text in B3 is delimited by both hyphens "-" and commas (","). The formula in cell F3 is:
+
+=TEXTSPLIT(B3,{"-",","})
+
+Notice also that there is an extra space separating green and purple. The TRIM function can be used to clean up extra space characters that appear in the output from TEXTSPLIT. The formula in F5 is:
+
+=TRIM(TEXTSPLIT(B3,{"-",","}))
+
+Notice the extra space that appears before purple in cell I3 is gone in cell I5.
+Array of arrays
+When using TEXTSPLIT, you might run into a limitation of the Excel formula engine where the formula will not return "arrays of arrays". When TEXTSPLIT is used on a single cell, it returns the text split by delimiter in a single array whose values spill onto the worksheet into multiple cells. However, when you call TEXTSPLIT on a range of cells, TEXTSPLIT returns an array of results where each result is itself an array, creating an "array of arrays". The result may be a truncated version of the data or in some cases an error. Example here.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sort comma separated values 
+
+Replace one delimiter with another 
+
+Text split to array 
+
+Extract nth word from text string 
+
+Split dimensions into three parts 
+
+
+ Functions TEXTJOIN FunctionTEXTBEFORE FunctionTEXTAFTER FunctionCONCAT Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel TEXTSPLIT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TEXTSPLIT Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+TEXTSPLIT Function
+Related functions 
+TEXTJOIN
+TEXTBEFORE
+TEXTAFTER
+CONCAT
+Summary
+The Excel TEXTSPLIT function splits text by a given delimiter to an array that spills into multiple cells. TEXTSPLIT can split text into rows or columns.
+Purpose 
+Split a text string with a delimiter
+Return value 
+Text in multiple cells 
+Arguments 
+text - The text string to split.col_delimiter - The character(s) to delimit columns.row_delimiter - [optional] The character(s) to delimit rows.ignore_empty - [optional] Ignore empty values. TRUE = ignore, FALSE = preserve. Default is FALSE.match_mode - [optional] Case-sensitivity. 0 = enabled, 1 = disabled. Default is 0.pad_with - [optional] Value to pad missing values in 2d arrays.
+Syntax 
+=TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with])
+Usage notes 
+The TEXTSPLIT function splits text by a given delimiter into multiple cells. TEXTSPLIT can split text into rows or columns. The output from TEXTSPLIT is an array that will spill into multiple cells on the workbook.
+TEXTSPLIT takes five arguments, only two of which are required. The first argument, text, is the text string to split. The second argument, col_delimiter is the delimiter to use for splitting text into separate columns. The third argument, row_delimiter, is the delimiter to use for splitting text into separate rows. Either col_delimiter or row_delimiter must be supplied along with text. The fourth argument, ignore_empty, controls TEXTSPLIT's behavior with empty values (i.e. when delimiters appear together with no value in between). By default, ignore_empty is FALSE, which means TEXTSPLIT will not ignore empty values. In practice, this means you will see an empty cell on the worksheet when there is an empty value in text. Set ignore_empty to TRUE to ignore empty values. The fifth argument is match_mode, which determines case sensitivity when looking for a delimiter. By default, TEXTSPLIT is case-sensitive and match_mode is zero (0). Supply 1 to disable case sensitivity. The last argument is pad_with, which is a value that will appear when the output from TEXTSPLIT is a 2D array and a value is missing. See below for more information.
+Use TEXTBEFORE to extract text before a delimiter, TEXTAFTER to extract text after a delimiter, and TEXTSPLIT to extract all text separated by delimiters.
+Basic usage
+The result from TEXTSPLIT is an array that can be horizontal (columns) or vertical (rows). The worksheet below shows both options:
+The first formula in cell D3 separates the three values into separate columns:
+=TEXTSPLIT(B3,",") // returns {"Red","Blue","Green"}
+Notice a comma without space is used as the col_delimiter and enclosed in double quotes (","). The formula in cell D5 uses the same delimiter to split the text into separate rows:
+=TEXTSPLIT(B3,,",") // returns {"Red";"Blue";"Green"}
+In the second formula the delimiter (",") appears as the third argument, row_delimiter, and col_delimiter is not provided.
+Ignoring empty values
+By default, TEXTSPLIT will not ignore empty values in the text, where empty values are defined as two or more consecutive delimiters without a value in between. This behavior is controlled by the ignore_empty argument, which defaults to FALSE, as you can see in the worksheet below:
+The formula in cell D3 does not include a value for ignore_empty, which defaults to FALSE:
+=TEXTSPLIT(B3,",") // empty values not ignored
+Notice empty values are not ignored. TEXTSPLIT includes an empty cell in the output where the empty value appeared in text. In the second formula, ignore_empty is set to TRUE, so the missing value between Red and Green is ignored completely:
+=TEXTSPLIT(B3,",",,TRUE) // ignore empty values
+In this case, TEXTSPLIT behaves as if the missing value does not exist at all.
+Note: you can use 1 and 0 in place of TRUE and FALSE for the ignore_empty argument.
+Match mode
+The fifth argument, match_mode, determines case sensitivity when looking for a delimiter. By default, TEXTSPLIT is case-sensitive and match_mode is zero (0). Supply 1 to disable case sensitivity. In the example below the delimiter is " x " and " X ". The formula in D5 sets match mode to 1 to make TEXTSPLIT ignore case. As a result, the formula works for both cases:
+=TEXTSPLIT(B5," x ",,,1)
+Rows and columns
+TEXTSPLIT can split text into rows and columns at the same time, as seen below:
+In this case, an equal sign ("=") is provided as col_delimiter and a comma (",") is provided as row_delimiter:
+=TEXTSPLIT(B3,"=",",")
+The resulting array from TEXTSPLIT contains 3 rows and 2 columns.
+Padding
+The last argument in TEXTSPLIT is pad_with. This argument is optional and will default to #N/A. Padding is used when the output contains rows and columns and a value is missing that would affect the structure of the array. In the worksheet below, "Blue" does not contain a quantity (there is no "=" delimiter). As a result, TEXTSPLIT returns #N/A where the quantity would go, to maintain the integrity of the array.
+The formula in cell E3 contains does not specify a pad_with argument so the default value is returned:
+=TEXTSPLIT(B3,"=",",") // default padding is #N/A
+In cell E7, "x" is supplied for pad_with so "x" appears in cell F8 instead of #N/A.
+=TEXTSPLIT(B3,"=",",",,"x")
+Multiple delimiters
+Multiple delimiters can be supplied to TEXTSPLIT as an array constant like {"x","y"} where x and y represent delimiters:
+In the worksheet above, the text in B3 is delimited by both hyphens "-" and commas (","). The formula in cell F3 is:
+=TEXTSPLIT(B3,{"-",","})
+Notice also that there is an extra space separating green and purple. The TRIM function can be used to clean up extra space characters that appear in the output from TEXTSPLIT. The formula in F5 is:
+=TRIM(TEXTSPLIT(B3,{"-",","}))
+Notice the extra space that appears before purple in cell I3 is gone in cell I5.
+Array of arrays
+When using TEXTSPLIT, you might run into a limitation of the Excel formula engine where the formula will not return "arrays of arrays". When TEXTSPLIT is used on a single cell, it returns the text split by delimiter in a single array whose values spill onto the worksheet into multiple cells. However, when you call TEXTSPLIT on a range of cells, TEXTSPLIT returns an array of results where each result is itself an array, creating an "array of arrays". The result may be a truncated version of the data or in some cases an error. Example here.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sort comma separated values 
+Replace one delimiter with another 
+Text split to array 
+Extract nth word from text string 
+Split dimensions into three parts 
+ Functions TEXTJOIN FunctionTEXTBEFORE FunctionTEXTAFTER FunctionCONCAT Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

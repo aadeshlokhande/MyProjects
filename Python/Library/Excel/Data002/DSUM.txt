@@ -1,0 +1,10 @@
+Summary
+The Excel DSUM function returns the sum of values from a set of records that match criteria. The values to sum are extracted from a given field in the database.
+Purpose 
+Get sum from matching records
+Return value 
+The calculated sum
+Arguments 
+database - Database range including headers.field - Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DSUM(database, field, criteria)

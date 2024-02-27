@@ -1,0 +1,10 @@
+Summary
+The Excel STDEV.P function calculates the standard deviation for a sample set of data. STDEV.P calculates standard deviation using the "n" method, ignoring logical values and text.
+Purpose 
+Get standard deviation of population
+Return value 
+Estimated standard deviation
+Arguments 
+number1 - First number or reference in the sample.number2 - [optional] Second number or reference.
+Syntax 
+=STDEV.P(number1, [number2], ...)

@@ -1,0 +1,10 @@
+Summary
+The Excel UPPER function converts a text string to all uppercase letters. Numbers, punctuation, and spaces are not affected.
+Purpose 
+Convert text to upper case
+Return value 
+Uppercase text.
+Arguments 
+text - The text thatto convert to upper case.
+Syntax 
+=UPPER(text)

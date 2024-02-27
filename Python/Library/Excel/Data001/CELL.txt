@@ -1,0 +1,406 @@
+Excel CELL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CELL Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+CELL Function
+Related functions 
+ADDRESS
+INFO
+Summary
+The Excel CELL function returns information about a cell in a worksheet. The type of information to be returned is specified as info_type. CELL can get things like address and filename, as well as detailed info about the formatting used in the cell. See below for a full list of information available.
+Purpose 
+Get information about a cell
+Return value 
+A text value
+Arguments 
+info_type - The type of information to return about the reference.reference - [optional] The reference from which to extract information.
+Syntax 
+=CELL(info_type, [reference])
+Usage notes 
+Use the CELL function to return a wide range of information about a reference. The type of information  returned is given as info_type, which must be enclosed in double quotes (""). CELL can return a cell's address, the filename and path for a workbook, and information about the formatting used in the cell. See below for a full list of info types and format codes.
+CELL is a volatile function, and can cause performance issues in large or complex worksheets.
+The CELL function takes two arguments: info_type and reference. Info_type is a text string that indicates the type of information requested. See the table below for a full list of info types. Reference is a cell reference. Reference is typically a single cell. If reference refers to more than one cell, CELL returns information about the first cell in reference. For certain kinds of information (like filename) the cell address used for reference is optional and can be omitted. However, if reference is not supplied, CELL will return the name of the current "active sheet" which may or may not be the sheet where the formula exists, and might even be in a different workbook. To avoid confusion, use A1 for reference. 
+Note: the CELL function is a volatile function and may cause performance issues in large or complex worksheets.
+Examples
+For example, to get the column number for C10:
+=CELL("col", C10) // returns 3
+To get the address of A1 as text:
+=CELL("address",A1) // returns "$A$1"
+To get the full path and workbook name for the current worksheet:
+=CELL("filename",A1) // path + filename
+CELL can also return format code information. For example, if A1 contains the number 100 with the currency number format applied, the CELL function will return "C2":
+=CELL("format",A1) // returns "C2"
+When requesting the info_type "format" or "parentheses", a set of empty parentheses "()" is appended to the format returned if the number format uses parentheses for all values or for positive values. For example, if A1 uses the custom number format (0), then:
+=CELL("format",A1) // returns "F0()"
+Info types
+The following info_types can be used with the CELL function:
+Info_type
+Description
+address
+returns the address of the first cell in reference (as text).
+col
+returns the column number of the first cell in reference.
+color
+returns the value 1 if the first cell in reference is formatted using color for negative values; or zero if not.
+contents
+returns the value of the upper-left cell in reference. Formulas are not returned. Instead, the result of the formula is returned.
+filename
+returns the file name and full path as text. If the worksheet that contains reference has not yet been saved, an empty string is returned.
+format
+returns a code that corresponds to the number format of the cell. See below for a list of number format codes. If the first cell in reference is formatted with color for values < 0, then "-" is appended to the code. If the cell is formatted with parentheses, returns "() - at the end of the code value.
+parentheses
+returns 1 if the first cell in reference is formatted with parentheses and 0 if not.
+prefix
+returns a text value that corresponds to the label prefix - of the cell:  a single quotation mark (') if the cell text is left-aligned, a double quotation mark (") if the cell text is right-aligned, a caret (^) if the cell text is centered text, a backslash () if the cell text is fill-aligned, and an empty string if the label prefix is anything else.
+protect
+returns 1 if the first cell in reference is locked or 0 if not.
+row
+returns the row number of the first cell in reference.
+type
+returns a text value that corresponds to the type of data in the first cell in reference:  "b" for blank when the cell is empty, "l"  for label if the cell contains a text constant, and "v" for value if the cell contains anything else.
+width
+returns the column width of the cell, rounded to the nearest integer. A unit of column width is equal to the width of one character in the default font size. Note: this value comes back as an array with two values {width,default} where width is the column width and default is a boolean value that indicates if the width is the default column width. 
+Format codes
+The table below shows the text codes returned by CELL when "format" is used for info_type.
+Format code returned
+Format code meaning
+G
+General
+F0
+0
+,0
+#,##0
+F2
+0
+,2
+#,##0.00
+C0
+$#,##0_);($#,##0)
+C0-
+$#,##0_);[Red]($#,##0)
+C2
+$#,##0.00_);($#,##0.00)
+C2-
+$#,##0.00_);[Red]($#,##0.00)
+P0
+0%
+P2
+0.00%
+S2
+0.00E+00
+G
+# ?/? or # ??/??
+D1
+d-mmm-yy or dd-mmm-yy
+D2
+d-mmm or dd-mmm
+D3
+mmm-yy
+D4
+m/d/yy or m/d/yy h:mm or mm/dd/yy
+D5
+mm/dd
+D6
+h:mm:ss AM/PM
+D7
+h:mm AM/PM
+D8
+h:mm:ss
+Notes
+The CELL function is a volatile function and may cause performance issues in large or complex worksheets.
+Reference is optional for some info types, but use an address like A1 to avoid unexpected behavior.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get sheet name only 
+Count visible columns 
+Address of first cell in range 
+Link to multiple sheets 
+Get workbook path only 
+Increment cell reference with INDIRECT 
+Get address of lookup result 
+Get workbook name only 
+Get full workbook name and path 
+Get workbook name and path without sheet 
+ Functions ADDRESS FunctionINFO Function 
+ Links Microsoft CELL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel CELL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CELL Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+CELL Function
+Related functions 
+ADDRESS
+INFO
+Summary
+The Excel CELL function returns information about a cell in a worksheet. The type of information to be returned is specified as info_type. CELL can get things like address and filename, as well as detailed info about the formatting used in the cell. See below for a full list of information available.
+Purpose 
+Get information about a cell
+Return value 
+A text value
+Arguments 
+info_type - The type of information to return about the reference.reference - [optional] The reference from which to extract information.
+Syntax 
+=CELL(info_type, [reference])
+Usage notes 
+Use the CELL function to return a wide range of information about a reference. The type of information  returned is given as info_type, which must be enclosed in double quotes (""). CELL can return a cell's address, the filename and path for a workbook, and information about the formatting used in the cell. See below for a full list of info types and format codes.
+CELL is a volatile function, and can cause performance issues in large or complex worksheets.
+The CELL function takes two arguments: info_type and reference. Info_type is a text string that indicates the type of information requested. See the table below for a full list of info types. Reference is a cell reference. Reference is typically a single cell. If reference refers to more than one cell, CELL returns information about the first cell in reference. For certain kinds of information (like filename) the cell address used for reference is optional and can be omitted. However, if reference is not supplied, CELL will return the name of the current "active sheet" which may or may not be the sheet where the formula exists, and might even be in a different workbook. To avoid confusion, use A1 for reference. 
+Note: the CELL function is a volatile function and may cause performance issues in large or complex worksheets.
+Examples
+For example, to get the column number for C10:
+=CELL("col", C10) // returns 3
+To get the address of A1 as text:
+=CELL("address",A1) // returns "$A$1"
+To get the full path and workbook name for the current worksheet:
+=CELL("filename",A1) // path + filename
+CELL can also return format code information. For example, if A1 contains the number 100 with the currency number format applied, the CELL function will return "C2":
+=CELL("format",A1) // returns "C2"
+When requesting the info_type "format" or "parentheses", a set of empty parentheses "()" is appended to the format returned if the number format uses parentheses for all values or for positive values. For example, if A1 uses the custom number format (0), then:
+=CELL("format",A1) // returns "F0()"
+Info types
+The following info_types can be used with the CELL function:
+Info_type
+Description
+address
+returns the address of the first cell in reference (as text).
+col
+returns the column number of the first cell in reference.
+color
+returns the value 1 if the first cell in reference is formatted using color for negative values; or zero if not.
+contents
+returns the value of the upper-left cell in reference. Formulas are not returned. Instead, the result of the formula is returned.
+filename
+returns the file name and full path as text. If the worksheet that contains reference has not yet been saved, an empty string is returned.
+format
+returns a code that corresponds to the number format of the cell. See below for a list of number format codes. If the first cell in reference is formatted with color for values < 0, then "-" is appended to the code. If the cell is formatted with parentheses, returns "() - at the end of the code value.
+parentheses
+returns 1 if the first cell in reference is formatted with parentheses and 0 if not.
+prefix
+returns a text value that corresponds to the label prefix - of the cell:  a single quotation mark (') if the cell text is left-aligned, a double quotation mark (") if the cell text is right-aligned, a caret (^) if the cell text is centered text, a backslash () if the cell text is fill-aligned, and an empty string if the label prefix is anything else.
+protect
+returns 1 if the first cell in reference is locked or 0 if not.
+row
+returns the row number of the first cell in reference.
+type
+returns a text value that corresponds to the type of data in the first cell in reference:  "b" for blank when the cell is empty, "l"  for label if the cell contains a text constant, and "v" for value if the cell contains anything else.
+width
+returns the column width of the cell, rounded to the nearest integer. A unit of column width is equal to the width of one character in the default font size. Note: this value comes back as an array with two values {width,default} where width is the column width and default is a boolean value that indicates if the width is the default column width. 
+Format codes
+The table below shows the text codes returned by CELL when "format" is used for info_type.
+Format code returned
+Format code meaning
+G
+General
+F0
+0
+,0
+#,##0
+F2
+0
+,2
+#,##0.00
+C0
+$#,##0_);($#,##0)
+C0-
+$#,##0_);[Red]($#,##0)
+C2
+$#,##0.00_);($#,##0.00)
+C2-
+$#,##0.00_);[Red]($#,##0.00)
+P0
+0%
+P2
+0.00%
+S2
+0.00E+00
+G
+# ?/? or # ??/??
+D1
+d-mmm-yy or dd-mmm-yy
+D2
+d-mmm or dd-mmm
+D3
+mmm-yy
+D4
+m/d/yy or m/d/yy h:mm or mm/dd/yy
+D5
+mm/dd
+D6
+h:mm:ss AM/PM
+D7
+h:mm AM/PM
+D8
+h:mm:ss
+Notes
+The CELL function is a volatile function and may cause performance issues in large or complex worksheets.
+Reference is optional for some info types, but use an address like A1 to avoid unexpected behavior.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get sheet name only 
+Count visible columns 
+Address of first cell in range 
+Link to multiple sheets 
+Get workbook path only 
+Increment cell reference with INDIRECT 
+Get address of lookup result 
+Get workbook name only 
+Get full workbook name and path 
+Get workbook name and path without sheet 
+ Functions ADDRESS FunctionINFO Function 
+ Links Microsoft CELL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

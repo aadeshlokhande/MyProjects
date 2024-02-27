@@ -1,0 +1,649 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel ISFORMULA function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+ISFORMULA Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Information
+
+
+ISFORMULA Function
+Related functions 
+
+FORMULATEXT
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel ISFORMULA function returns TRUE if a cell contains a formula, and FALSE if not. When a cell contains a formula ISFORMULA will return TRUE regardless of the formula's output or error conditions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Test if cell contains a formula
+
+
+
+Return value 
+
+TRUE or FALSE
+
+
+
+Arguments 
+
+reference - Reference to cell or cell range.
+
+
+
+Syntax 
+
+=ISFORMULA(reference)
+
+
+
+Usage notes 
+
+The ISFORMULA function returns TRUE if a cell contains a formula, and FALSE if not. When a cell contains a formula ISFORMULA will return TRUE regardless of the formula's output or error conditions. The ISFORMULA takes one argument, reference, which must be a cell reference.
+Examples
+If cell A1 contains the formula =2+2, the ISFORMULA function returns TRUE:
+
+=ISFORMULA(A1) // returns TRUE
+
+If cell A1 contains the text "apple", the ISFORMULA function returns FALSE:
+
+=ISFORMULA(A1) // returns FALSE
+
+Count formulas
+To count cells in a range that contain formulas, you can use the SUMPRODUCT function like this:
+
+=SUMPRODUCT(--ISFORMULA(range))
+
+The double negative coerces the TRUE and FALSE results from ISFORMULA into 1s and 0s and SUMPRODUCT returns the sum.
+Notes
+
+You can temporarily display all formulas in a worksheet with a keyboard shortcut.
+To extract and display a formula as text, use the FORMULATEXT function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Count cells that contain formulas 
+
+Sum formulas only 
+
+Show formula text with formula 
+
+
+ Functions FORMULATEXT FunctionISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISFORMULA function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel ISFORMULA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISFORMULA Function 
+Previous 
+Next 
+ 
+Excel 2013
+Information
+ISFORMULA Function
+Related functions 
+FORMULATEXT
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+Summary
+The Excel ISFORMULA function returns TRUE if a cell contains a formula, and FALSE if not. When a cell contains a formula ISFORMULA will return TRUE regardless of the formula's output or error conditions.
+Purpose 
+Test if cell contains a formula
+Return value 
+TRUE or FALSE
+Arguments 
+reference - Reference to cell or cell range.
+Syntax 
+=ISFORMULA(reference)
+Usage notes 
+The ISFORMULA function returns TRUE if a cell contains a formula, and FALSE if not. When a cell contains a formula ISFORMULA will return TRUE regardless of the formula's output or error conditions. The ISFORMULA takes one argument, reference, which must be a cell reference.
+Examples
+If cell A1 contains the formula =2+2, the ISFORMULA function returns TRUE:
+=ISFORMULA(A1) // returns TRUE
+If cell A1 contains the text "apple", the ISFORMULA function returns FALSE:
+=ISFORMULA(A1) // returns FALSE
+Count formulas
+To count cells in a range that contain formulas, you can use the SUMPRODUCT function like this:
+=SUMPRODUCT(--ISFORMULA(range))
+The double negative coerces the TRUE and FALSE results from ISFORMULA into 1s and 0s and SUMPRODUCT returns the sum.
+Notes
+You can temporarily display all formulas in a worksheet with a keyboard shortcut.
+To extract and display a formula as text, use the FORMULATEXT function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count cells that contain formulas 
+Sum formulas only 
+Show formula text with formula 
+ Functions FORMULATEXT FunctionISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISFORMULA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

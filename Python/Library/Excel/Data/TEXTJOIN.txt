@@ -1,0 +1,686 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel TEXTJOIN function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+TEXTJOIN Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2019
+
+
+
+
+Text
+
+
+TEXTJOIN Function
+Related functions 
+
+CONCATENATE
+CONCAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel TEXTJOIN function concatenates multiple values together with or without a delimiter. TEXTJOIN can concatenate values provided as cell references,  ranges, or constants, and can optionally ignore empty cells
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Join text values with a delimiter
+
+
+
+Return value 
+
+Concatenated text
+
+
+
+Arguments 
+
+delimiter - Separator between each text.ignore_empty - Whether to ignore empty cells or not.text1 - First text value or range.text2 - [optional] Second text value or range.
+
+
+
+Syntax 
+
+=TEXTJOIN(delimiter, ignore_empty, text1, [text2], ...)
+
+
+
+Usage notes 
+
+The TEXTJOIN function concatenates multiple values together with or without a delimiter. TEXTJOIN can concatenate values provided as cell references,  ranges, or constants, and can optionally ignore empty cells.
+The TEXTJOIN function takes three required arguments: delimiter, ignore_empty, and text1. Delimiter is the text to use between values that are concatenated together and should be enclosed in double-quotes (""), for example, a space (" ") or a comma with a space (", "). To use no delimiter, supply an empty string ("").  Ignore_empty is a Boolean (TRUE/FALSE) value that controls whether empty values should be ignored or added to the result. This is often set to TRUE to avoid delimiters with no content in the result from TEXTJOIN. Text1 is the first value to join together. This can be a cell reference, a range, or a hard-coded text value. Subsequent optional arguments, text2, text3, text4, etc. can be provided up to 252 values total.
+Values are concatenated in the order they appear. With "Hello" in A1 and "World" in A2, the following formula returns "Hello World":
+
+=TEXTJOIN(" ",TRUE,A1,A2) // returns "Hello World"
+
+Changing the delimiter to a comma (", ") and reversing A1 and A2, we get "World, Hello":
+
+=TEXTJOIN(", ",TRUE,A2,A1) // returns "World, Hello"
+
+Concatenating a range
+To join cells in the range A1:A3 with a comma and space, you can use TEXTJOIN like this:
+
+=TEXTJOIN(", ",TRUE,A1:A3)
+
+
+The second argument, ignore_empty, controls behavior for empty cells and text values. If set TRUE, empty values are skipped so that the delimiter is not repeated in the final result. If set to FALSE, TEXTJOIN will include empty values in the output.
+Name with title
+In the example below, TEXTJOIN is set up to concatenate names. Notice the cell reference for Title is provided first, followed by a range for First, Middle, and Last. Ignore empty is set to 1 (TRUE) to avoid adding extra space to names without Middle or Title values. The formula in F3 is:
+
+=TEXTJOIN(" ",1,E3,B3:D3)
+
+
+Number formatting
+When concatenating numbers, number formatting is lost. For example, with the date 1-Jul-2021 in cell A1, and 2-Jul-2021 in A2, the dates revert to serial numbers:
+
+=TEXTJOIN("-",1,A1,A2) // returns "44378-44379"
+
+Use the TEXT function to apply formatting during concatenation:
+
+=TEXTJOIN("-",1,TEXT(A1,"mmm d"),TEXT(A2,"mmm d")) // "Jul 1-Jul 2"
+
+The formula above returns the text "Jul 1-Jul 2".  Adjust the number formatting as desired.
+TEXTJOIN versus CONCAT
+TEXTJOIN and CONCAT are both newer functions in Excel that replace the older CONCATENATE function. Like the CONCAT function, TEXTJOIN will accept a range of cells to concatenate. The main difference is that TEXTJOIN also accepts a delimiter to use when joining values together.
+Notes
+
+To concatenate manually, use the concatenation operator (&)
+The CONCAT function also provides basic concatenation, but provides no options for delimiters or empty values.
+Numbers provided to TEXTJOIN will be converted to text values during concatenation.
+TEXTJOIN is a new function, available in Office 365 and Excel 2019.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+List holidays between two dates 
+
+Create email with display name 
+
+Abbreviate names or words 
+
+Replace one delimiter with another 
+
+Multiple matches in comma separated list 
+
+Sort comma separated values 
+
+Strip numeric characters from cell 
+
+Strip non-numeric characters 
+
+Cell contains which things 
+
+Join cells with comma 
+
+
+ Functions CONCATENATE FunctionCONCAT Function 
+ Articles How to concatenate in Excel 
+ Links Microsoft TEXTJOIN function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel TEXTJOIN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TEXTJOIN Function 
+Previous 
+Next 
+ 
+Excel 2019
+Text
+TEXTJOIN Function
+Related functions 
+CONCATENATE
+CONCAT
+Summary
+The Excel TEXTJOIN function concatenates multiple values together with or without a delimiter. TEXTJOIN can concatenate values provided as cell references,  ranges, or constants, and can optionally ignore empty cells
+Purpose 
+Join text values with a delimiter
+Return value 
+Concatenated text
+Arguments 
+delimiter - Separator between each text.ignore_empty - Whether to ignore empty cells or not.text1 - First text value or range.text2 - [optional] Second text value or range.
+Syntax 
+=TEXTJOIN(delimiter, ignore_empty, text1, [text2], ...)
+Usage notes 
+The TEXTJOIN function concatenates multiple values together with or without a delimiter. TEXTJOIN can concatenate values provided as cell references,  ranges, or constants, and can optionally ignore empty cells.
+The TEXTJOIN function takes three required arguments: delimiter, ignore_empty, and text1. Delimiter is the text to use between values that are concatenated together and should be enclosed in double-quotes (""), for example, a space (" ") or a comma with a space (", "). To use no delimiter, supply an empty string ("").  Ignore_empty is a Boolean (TRUE/FALSE) value that controls whether empty values should be ignored or added to the result. This is often set to TRUE to avoid delimiters with no content in the result from TEXTJOIN. Text1 is the first value to join together. This can be a cell reference, a range, or a hard-coded text value. Subsequent optional arguments, text2, text3, text4, etc. can be provided up to 252 values total.
+Values are concatenated in the order they appear. With "Hello" in A1 and "World" in A2, the following formula returns "Hello World":
+=TEXTJOIN(" ",TRUE,A1,A2) // returns "Hello World"
+Changing the delimiter to a comma (", ") and reversing A1 and A2, we get "World, Hello":
+=TEXTJOIN(", ",TRUE,A2,A1) // returns "World, Hello"
+Concatenating a range
+To join cells in the range A1:A3 with a comma and space, you can use TEXTJOIN like this:
+=TEXTJOIN(", ",TRUE,A1:A3)
+The second argument, ignore_empty, controls behavior for empty cells and text values. If set TRUE, empty values are skipped so that the delimiter is not repeated in the final result. If set to FALSE, TEXTJOIN will include empty values in the output.
+Name with title
+In the example below, TEXTJOIN is set up to concatenate names. Notice the cell reference for Title is provided first, followed by a range for First, Middle, and Last. Ignore empty is set to 1 (TRUE) to avoid adding extra space to names without Middle or Title values. The formula in F3 is:
+=TEXTJOIN(" ",1,E3,B3:D3)
+Number formatting
+When concatenating numbers, number formatting is lost. For example, with the date 1-Jul-2021 in cell A1, and 2-Jul-2021 in A2, the dates revert to serial numbers:
+=TEXTJOIN("-",1,A1,A2) // returns "44378-44379"
+Use the TEXT function to apply formatting during concatenation:
+=TEXTJOIN("-",1,TEXT(A1,"mmm d"),TEXT(A2,"mmm d")) // "Jul 1-Jul 2"
+The formula above returns the text "Jul 1-Jul 2".  Adjust the number formatting as desired.
+TEXTJOIN versus CONCAT
+TEXTJOIN and CONCAT are both newer functions in Excel that replace the older CONCATENATE function. Like the CONCAT function, TEXTJOIN will accept a range of cells to concatenate. The main difference is that TEXTJOIN also accepts a delimiter to use when joining values together.
+Notes
+To concatenate manually, use the concatenation operator (&)
+The CONCAT function also provides basic concatenation, but provides no options for delimiters or empty values.
+Numbers provided to TEXTJOIN will be converted to text values during concatenation.
+TEXTJOIN is a new function, available in Office 365 and Excel 2019.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+List holidays between two dates 
+Create email with display name 
+Abbreviate names or words 
+Replace one delimiter with another 
+Multiple matches in comma separated list 
+Sort comma separated values 
+Strip numeric characters from cell 
+Strip non-numeric characters 
+Cell contains which things 
+Join cells with comma 
+ Functions CONCATENATE FunctionCONCAT Function 
+ Articles How to concatenate in Excel 
+ Links Microsoft TEXTJOIN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

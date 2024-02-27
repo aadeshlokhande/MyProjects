@@ -1,0 +1,634 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel XOR function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+XOR Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Logical
+
+
+XOR Function
+Related functions 
+
+OR
+NOT
+AND
+IF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The XOR function performs what is called "exclusive OR". With two logical statements, XOR returns TRUE if either statement is TRUE, but returns FALSE if both statements are TRUE. If neither is TRUE, XOR also returns FALSE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Perform exclusive OR
+
+
+
+Return value 
+
+TRUE or FALSE
+
+
+
+Arguments 
+
+logical1 - An expression, constant, or reference that evaluates to TRUE or FALSE.logical2 - [optional] An expression, constant, or reference that evaluates to TRUE or FALSE.
+
+
+
+Syntax 
+
+=XOR(logical1, [logical2], ...)
+
+
+
+Usage notes 
+
+The XOR function performs what is called "exclusive OR", in contrast to the "inclusive OR" performed by the OR function. Whereas the OR function returns true if any input is TRUE, XOR only returns TRUE in specific cases. In the simplest case, with just two logical statements, XOR returns TRUE only if one of the logicals is TRUE. If both values are TRUE, XOR returns FALSE.
+The concept of exclusive OR is more common in the world of programming. In plain English, you can think of a sentence like this: "I'm either going to visit New York or San Francisco this summer". Nothing prevents the speaker from visiting both, but the meaning is clearly that they plan to visit only one or the other. If they visit one or the other, the original statement is TRUE. If they visit neither or both, the original statement is FALSE.
+Example #1 - two values
+In the example shown, the formula in D5, copied down, is:
+
+=XOR(B5,C5)
+
+At each row, XOR only returns TRUE when B5 and C5 contain a single TRUE or equivalent value.
+Example #2 - more than two values
+With more than 2 values, the behavior of XOR is a bit different. With three or more logicals, XOR only returns TRUE when the number of TRUE values is odd, as shown in the following example:
+
+In this example, XOR is given a range with five values in a single argument instead of five separate arguments. The formula in G6 copied down is:
+
+=XOR(B6:F6)
+
+The result is TRUE only when the number of TRUE values columns B through F is an odd number.
+Notes
+
+Logical arguments must evaluate to TRUE or FALSE, 1 or 0, or be references that contain logical values.
+XOR returns #VALUE! if no logical values are found.
+With more than two logicals, XOR returns TRUE when the number of TRUE logicals is odd, and FALSE if not.
+XOR was introduced in Excel 2013.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+One or the other not both 
+
+
+ Functions OR FunctionNOT FunctionAND FunctionIF Function 
+ Articles How to build logical formulas 
+ Links Microsoft XOR function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel XOR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+XOR Function 
+Previous 
+Next 
+ 
+Excel 2013
+Logical
+XOR Function
+Related functions 
+OR
+NOT
+AND
+IF
+Summary
+The XOR function performs what is called "exclusive OR". With two logical statements, XOR returns TRUE if either statement is TRUE, but returns FALSE if both statements are TRUE. If neither is TRUE, XOR also returns FALSE.
+Purpose 
+Perform exclusive OR
+Return value 
+TRUE or FALSE
+Arguments 
+logical1 - An expression, constant, or reference that evaluates to TRUE or FALSE.logical2 - [optional] An expression, constant, or reference that evaluates to TRUE or FALSE.
+Syntax 
+=XOR(logical1, [logical2], ...)
+Usage notes 
+The XOR function performs what is called "exclusive OR", in contrast to the "inclusive OR" performed by the OR function. Whereas the OR function returns true if any input is TRUE, XOR only returns TRUE in specific cases. In the simplest case, with just two logical statements, XOR returns TRUE only if one of the logicals is TRUE. If both values are TRUE, XOR returns FALSE.
+The concept of exclusive OR is more common in the world of programming. In plain English, you can think of a sentence like this: "I'm either going to visit New York or San Francisco this summer". Nothing prevents the speaker from visiting both, but the meaning is clearly that they plan to visit only one or the other. If they visit one or the other, the original statement is TRUE. If they visit neither or both, the original statement is FALSE.
+Example #1 - two values
+In the example shown, the formula in D5, copied down, is:
+=XOR(B5,C5)
+At each row, XOR only returns TRUE when B5 and C5 contain a single TRUE or equivalent value.
+Example #2 - more than two values
+With more than 2 values, the behavior of XOR is a bit different. With three or more logicals, XOR only returns TRUE when the number of TRUE values is odd, as shown in the following example:
+In this example, XOR is given a range with five values in a single argument instead of five separate arguments. The formula in G6 copied down is:
+=XOR(B6:F6)
+The result is TRUE only when the number of TRUE values columns B through F is an odd number.
+Notes
+Logical arguments must evaluate to TRUE or FALSE, 1 or 0, or be references that contain logical values.
+XOR returns #VALUE! if no logical values are found.
+With more than two logicals, XOR returns TRUE when the number of TRUE logicals is odd, and FALSE if not.
+XOR was introduced in Excel 2013.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+One or the other not both 
+ Functions OR FunctionNOT FunctionAND FunctionIF Function 
+ Articles How to build logical formulas 
+ Links Microsoft XOR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

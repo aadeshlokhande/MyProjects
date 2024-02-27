@@ -1,0 +1,10 @@
+Summary
+The Excel SORTBY function sorts the contents of a range or array based on the values from another range or array. The range or array used to sort does not need to appear in results.
+Purpose 
+Sorts range or array by column
+Return value 
+Sorted array
+Arguments 
+array - Range or array to sort.by_array - Range or array to sort by.sort_order - [optional] Sort order. 1 = ascending (default), -1 = descending.array/order - [optional] Additional array and sort order pairs.
+Syntax 
+=SORTBY(array, by_array, [sort_order], [array/order], ...)

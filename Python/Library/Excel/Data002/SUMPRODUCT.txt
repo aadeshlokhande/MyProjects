@@ -1,0 +1,10 @@
+Summary
+The Excel SUMPRODUCT function multiplies ranges or arrays together and returns the sum of products. This sounds boring, but SUMPRODUCT is an incredibly versatile function that can be used to count and sum like COUNTIFS or SUMIFS, but with more flexibility. Other functions can easily be used inside SUMPRODUCT to extend functionality even further.
+Purpose 
+Multiply, then sum arrays
+Return value 
+The result of multipled and summed arrays
+Arguments 
+array1 - The first array or range to multiply, then add.array2 - [optional] The second array or range to multiply, then add.
+Syntax 
+=SUMPRODUCT(array1, [array2], ...)

@@ -1,0 +1,280 @@
+Excel COUNT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUNT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+COUNT Function
+Related functions 
+COUNT
+COUNTA
+COUNTIF
+COUNTIFS
+COUNTBLANK
+Summary
+The Excel COUNT function returns a count of values that are numbers. Numbers include negative numbers, percentages, dates, times, fractions, and formulas that return numbers. Empty cells and text values are ignored.
+Purpose 
+Count numbers
+Return value 
+Count of numeric values
+Arguments 
+value1 - An item, cell reference, or range.value2 - [optional] An item, cell reference, or range.
+Syntax 
+=COUNT(value1, [value2], ...)
+Usage notes 
+The COUNT function returns the count of numeric values in the list of supplied arguments. COUNT takes multiple arguments in the form value1, value2, value3, etc. Arguments can be individual hardcoded values, cell references, or ranges up to a total of 255 arguments. All numbers are counted, including negative numbers, percentages, dates, times, fractions, and formulas that return numbers. Empty cells and text values are ignored.
+Examples
+The COUNT function counts numeric values and ignores text values:
+=COUNT(1,2,3) // returns 3
+=COUNT(1,"a","b") // returns 1
+=COUNT("apple",100,125,150,"orange") // returns 3
+Typically, the COUNT function is used on a range. For example, to count numeric values in the range A1:A10:
+=COUNT(A1:A100) // count numbers in A1:A10
+In the example shown, COUNT is set up to count numbers in the range B5:B15:
+=COUNT(B5:B15) // returns 6
+COUNT returns 6, since there are 6 numeric values in the range B5:B15. Text values and blank cells are ignored. Note that dates and times are numbers, and therefore included in the count.
+The COUNTA function works like the COUNT function, but COUNTA includes numbers and text in the count.
+Functions for counting
+To count numbers only, use the COUNT function.
+To count numbers and text, use the COUNTA function.
+To count with one condition, use the COUNTIF function
+To count with multiple conditions, use the COUNTIFS function.
+To count empty cells, use the COUNTBLANK function.
+Notes
+COUNT can handle up to 255 arguments.
+COUNT ignores the logical values TRUE and FALSE.
+COUNT ignores text values and empty cells.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Cell contains some words but not others 
+Count unique dates 
+Count numbers in text string 
+Filter values in array formula 
+Count unique dates ignore time 
+Average last n rows 
+Only calculate if not blank 
+Average last n columns 
+Count total matches in two ranges 
+Count cells that contain numbers 
+Videos
+  
+How to use the COUNT function 
+Create a dynamic reference to a named range 
+ Functions COUNT FunctionCOUNTA FunctionCOUNTIF FunctionCOUNTIFS FunctionCOUNTBLANK Function 
+ Links Microsoft COUNT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel COUNT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUNT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+COUNT Function
+Related functions 
+COUNT
+COUNTA
+COUNTIF
+COUNTIFS
+COUNTBLANK
+Summary
+The Excel COUNT function returns a count of values that are numbers. Numbers include negative numbers, percentages, dates, times, fractions, and formulas that return numbers. Empty cells and text values are ignored.
+Purpose 
+Count numbers
+Return value 
+Count of numeric values
+Arguments 
+value1 - An item, cell reference, or range.value2 - [optional] An item, cell reference, or range.
+Syntax 
+=COUNT(value1, [value2], ...)
+Usage notes 
+The COUNT function returns the count of numeric values in the list of supplied arguments. COUNT takes multiple arguments in the form value1, value2, value3, etc. Arguments can be individual hardcoded values, cell references, or ranges up to a total of 255 arguments. All numbers are counted, including negative numbers, percentages, dates, times, fractions, and formulas that return numbers. Empty cells and text values are ignored.
+Examples
+The COUNT function counts numeric values and ignores text values:
+=COUNT(1,2,3) // returns 3
+=COUNT(1,"a","b") // returns 1
+=COUNT("apple",100,125,150,"orange") // returns 3
+Typically, the COUNT function is used on a range. For example, to count numeric values in the range A1:A10:
+=COUNT(A1:A100) // count numbers in A1:A10
+In the example shown, COUNT is set up to count numbers in the range B5:B15:
+=COUNT(B5:B15) // returns 6
+COUNT returns 6, since there are 6 numeric values in the range B5:B15. Text values and blank cells are ignored. Note that dates and times are numbers, and therefore included in the count.
+The COUNTA function works like the COUNT function, but COUNTA includes numbers and text in the count.
+Functions for counting
+To count numbers only, use the COUNT function.
+To count numbers and text, use the COUNTA function.
+To count with one condition, use the COUNTIF function
+To count with multiple conditions, use the COUNTIFS function.
+To count empty cells, use the COUNTBLANK function.
+Notes
+COUNT can handle up to 255 arguments.
+COUNT ignores the logical values TRUE and FALSE.
+COUNT ignores text values and empty cells.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Cell contains some words but not others 
+Count unique dates 
+Count numbers in text string 
+Filter values in array formula 
+Count unique dates ignore time 
+Average last n rows 
+Only calculate if not blank 
+Average last n columns 
+Count total matches in two ranges 
+Count cells that contain numbers 
+Videos
+  
+How to use the COUNT function 
+Create a dynamic reference to a named range 
+ Functions COUNT FunctionCOUNTA FunctionCOUNTIF FunctionCOUNTIFS FunctionCOUNTBLANK Function 
+ Links Microsoft COUNT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

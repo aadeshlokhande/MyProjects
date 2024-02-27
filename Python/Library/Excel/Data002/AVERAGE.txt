@@ -1,0 +1,10 @@
+Summary
+The Excel AVERAGE function calculates the average (arithmetic mean) of supplied numbers. AVERAGE can handle up to 255 individual arguments, which can include numbers, cell references, ranges, arrays, and constants.
+Purpose 
+Get the average of a group of numbers
+Return value 
+A number representing the average.
+Arguments 
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+Syntax 
+=AVERAGE(number1, [number2], ...)

@@ -1,0 +1,10 @@
+Summary
+The Excel IMPRODUCT function returns the product of one or more complex numbers. The complex number must be in the form x + yi or x + yj. Use the COMPLEX function to create a complex number from real and imaginary parts.
+Purpose 
+Get product of complex numbers
+Return value 
+Product as complex number
+Arguments 
+inumber1 - Complex number 1.inumber2 - [optional] Complex number 2.
+Syntax 
+=IMPRODUCT(inumber1, [inumber2], ...)

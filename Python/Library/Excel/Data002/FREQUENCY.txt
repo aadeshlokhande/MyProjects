@@ -1,0 +1,10 @@
+Summary
+The Excel FREQUENCY function returns a frequency distribution, which is a list that shows the frequency of values at given intervals. FREQUENCY returns multiple values and must be entered as an array formula with control-shift-enter, except in Excel 365.
+Purpose 
+Get the frequency of values in a data set
+Return value 
+A vertical array of frequencies
+Arguments 
+data_array - An array of  values for which you want to get frequencies.bins_array - An array of intervals ("bins") for grouping values.
+Syntax 
+=FREQUENCY(data_array, bins_array)

@@ -1,0 +1,260 @@
+Excel DURATION function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DURATION Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+DURATION Function
+Related functions 
+MDURATION
+Summary
+The Excel DURATION function returns the annual duration of a security with periodic interest payments, calculated with the Macauley duration formula.
+Purpose 
+Get annual duration with periodic interest
+Return value 
+Duration in years
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.coupon - The security's annual coupon rate.yld - The security's annual yield.freq - Number of coupon payments per year (annual = 1, semi-annual = 2, quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=DURATION(settlement, maturity, coupon, yld, freq, [basis])
+Usage notes 
+In finance, duration is a measure of the price sensitivity to changes in interest rates for an asset that pays interest on a periodic basis, like a bond. Duration can be used by financial managers as part of a strategy to minimize the impact of interest rates changes on net worth.
+Excel's DURATION function returns the Macauley duration for an assumed par value of $100. The Macaulay duration is the weighted average term to maturity of the cash flows from a security. The weight of each cash flow is determined by dividing the present value of the cash flow by the price. Excel also provides the MDURATION function for calculating modified duration.
+Example
+In the example shown, we want to calculate the duration of a bond with an annual coupon rate of 5% and semi-annual payments. The settlement date is 15-Dec-2017, the maturity date is 15-Sep-2027, and the day count basis is US (NASD) 30/360. The formula in F5 is:
+=DURATION(C7,C8,C5,C6,C9,C10)
+and returns 7.74 years.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded, and the DATE function is used to supply each of the two required dates:
+=DURATION(DATE(2017,12,15),DATE(2027,9,15),0.05,0.05,2,0)
+Basis
+The basis argument controls how days are counted. The DISC function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, frequency, and basis are truncated to integers.
+If dates are invalid (i.e. not actually dates) DURATION returns #VALUE!
+DURATION returns #NUM when:
+		
+settlement >= maturity
+coupon < 0 or yield < 0
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MDURATION Function 
+ Links Microsoft DURATION function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DURATION function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DURATION Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+DURATION Function
+Related functions 
+MDURATION
+Summary
+The Excel DURATION function returns the annual duration of a security with periodic interest payments, calculated with the Macauley duration formula.
+Purpose 
+Get annual duration with periodic interest
+Return value 
+Duration in years
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.coupon - The security's annual coupon rate.yld - The security's annual yield.freq - Number of coupon payments per year (annual = 1, semi-annual = 2, quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=DURATION(settlement, maturity, coupon, yld, freq, [basis])
+Usage notes 
+In finance, duration is a measure of the price sensitivity to changes in interest rates for an asset that pays interest on a periodic basis, like a bond. Duration can be used by financial managers as part of a strategy to minimize the impact of interest rates changes on net worth.
+Excel's DURATION function returns the Macauley duration for an assumed par value of $100. The Macaulay duration is the weighted average term to maturity of the cash flows from a security. The weight of each cash flow is determined by dividing the present value of the cash flow by the price. Excel also provides the MDURATION function for calculating modified duration.
+Example
+In the example shown, we want to calculate the duration of a bond with an annual coupon rate of 5% and semi-annual payments. The settlement date is 15-Dec-2017, the maturity date is 15-Sep-2027, and the day count basis is US (NASD) 30/360. The formula in F5 is:
+=DURATION(C7,C8,C5,C6,C9,C10)
+and returns 7.74 years.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded, and the DATE function is used to supply each of the two required dates:
+=DURATION(DATE(2017,12,15),DATE(2027,9,15),0.05,0.05,2,0)
+Basis
+The basis argument controls how days are counted. The DISC function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, frequency, and basis are truncated to integers.
+If dates are invalid (i.e. not actually dates) DURATION returns #VALUE!
+DURATION returns #NUM when:
+		
+settlement >= maturity
+coupon < 0 or yield < 0
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MDURATION Function 
+ Links Microsoft DURATION function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

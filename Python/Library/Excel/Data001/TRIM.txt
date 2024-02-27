@@ -1,0 +1,254 @@
+Excel TRIM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRIM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+TRIM Function
+Related functions 
+CLEAN
+Summary
+The Excel TRIM function strips extra spaces from text, leaving only a single space between words and no space characters at the start or end of the text.
+Purpose 
+Remove extra spaces from text
+Return value 
+Text with extra spaces removed.
+Arguments 
+text - The text from which to remove extra space.
+Syntax 
+=TRIM(text)
+Usage notes 
+The TRIM function strips extra spaces from text, leaving only a single space between words, and removing any leading or trailing space. For example:
+=TRIM("   A stitch    in time.   ")  // returns "A stitch in time."
+The TRIM function can be used together with the CLEAN function to remove extra space and strip out other non-printing characters:
+=TRIM(CLEAN(A1)) // trim and clean
+TRIM often appears in other more advanced text formulas. For example, the formula below will count the number of words in cell A1:
+LEN(TRIM(A1))-LEN(SUBSTITUTE(A1," ",""))+1
+Because this formula depends on single spaces to get an accurate word count, TRIM is used to normalize space before the count is calculated. Full description here.
+Notes
+TRIM strips extra spaces from text, leaving only single spaces between words and no space characters at the start or end of the text.
+TRIM is useful when cleaning up text that has come from other applications or environments.
+TRIM only removes the ASCII space character (32) from text.
+Unicode text often contains a non-breaking space character (160) that appears in web pages as an HTML entity. This will not be removed with TRIM. 
+The CLEAN function strips the first 32 non-printing characters (ASCII values 0 through 31) from text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+LAMBDA count words 
+Split text with delimiter 
+Get middle name from full name 
+Extract word containing specific text 
+Normalize text 
+Get last word 
+Convert text date dd/mm/yy to mm/dd/yy 
+Extract nth word from text string 
+Extract multiple lines from a cell 
+Put names into proper case 
+Videos
+  
+How to clean text with CLEAN and TRIM 
+How to build all-in-one formulas 
+ Functions CLEAN Function 
+ Links Microsoft TRIM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel TRIM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRIM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+TRIM Function
+Related functions 
+CLEAN
+Summary
+The Excel TRIM function strips extra spaces from text, leaving only a single space between words and no space characters at the start or end of the text.
+Purpose 
+Remove extra spaces from text
+Return value 
+Text with extra spaces removed.
+Arguments 
+text - The text from which to remove extra space.
+Syntax 
+=TRIM(text)
+Usage notes 
+The TRIM function strips extra spaces from text, leaving only a single space between words, and removing any leading or trailing space. For example:
+=TRIM("   A stitch    in time.   ")  // returns "A stitch in time."
+The TRIM function can be used together with the CLEAN function to remove extra space and strip out other non-printing characters:
+=TRIM(CLEAN(A1)) // trim and clean
+TRIM often appears in other more advanced text formulas. For example, the formula below will count the number of words in cell A1:
+LEN(TRIM(A1))-LEN(SUBSTITUTE(A1," ",""))+1
+Because this formula depends on single spaces to get an accurate word count, TRIM is used to normalize space before the count is calculated. Full description here.
+Notes
+TRIM strips extra spaces from text, leaving only single spaces between words and no space characters at the start or end of the text.
+TRIM is useful when cleaning up text that has come from other applications or environments.
+TRIM only removes the ASCII space character (32) from text.
+Unicode text often contains a non-breaking space character (160) that appears in web pages as an HTML entity. This will not be removed with TRIM. 
+The CLEAN function strips the first 32 non-printing characters (ASCII values 0 through 31) from text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+LAMBDA count words 
+Split text with delimiter 
+Get middle name from full name 
+Extract word containing specific text 
+Normalize text 
+Get last word 
+Convert text date dd/mm/yy to mm/dd/yy 
+Extract nth word from text string 
+Extract multiple lines from a cell 
+Put names into proper case 
+Videos
+  
+How to clean text with CLEAN and TRIM 
+How to build all-in-one formulas 
+ Functions CLEAN Function 
+ Links Microsoft TRIM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

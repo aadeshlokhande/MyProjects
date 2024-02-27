@@ -1,0 +1,10 @@
+Summary
+The Excel ROW function returns the row number for a reference. For example, ROW(C5) returns 5, since C5 is the fifth row in the spreadsheet. When no reference is provided, ROW returns the row number of the cell which contains the formula.
+Purpose 
+Get the row number of a reference
+Return value 
+A number representing the row.
+Arguments 
+reference - [optional] A reference to a cell or range of cells.
+Syntax 
+=ROW([reference])

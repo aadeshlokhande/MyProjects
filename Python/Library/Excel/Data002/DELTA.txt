@@ -1,0 +1,10 @@
+Summary
+The Excel DELTA function will test if two numeric values are equal. When values are equal, DELTA returns 1, otherwise, DELTA returns zero.
+Purpose 
+Test two values are equal
+Return value 
+The number one or zero
+Arguments 
+number1 - The first number.number2 - [optional] The second number.
+Syntax 
+=DELTA(number1, [number2])

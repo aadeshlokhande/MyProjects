@@ -1,0 +1,10 @@
+Summary
+The Excel COSH function returns the hyperbolic cosine of a number.
+Purpose 
+Get hyperbolic cosine of a number
+Return value 
+The x-component of the hyperbolic angle.
+Arguments 
+number - The hyperbolic angle.
+Syntax 
+=COSH(number)

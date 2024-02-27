@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel PROPER function capitalizes each word in a given text string. Numbers, punctuation, and spaces are not affected.', 'Purpose' : 'Capitalize the first letter in each word', 'Return value' : 'Text in proper case.', 'Arguments' : 'text - The text that should be converted to proper case.', 'Syntax' : '=PROPER(text)' }

@@ -1,0 +1,10 @@
+Summary
+The Excel EDATE function returns a date on the same day of the month, n months in the past or future. You can use EDATE to calculate expiration dates, maturity dates, and other due dates. Use a positive value for months to get a date in the future, and a negative value for dates in the past.
+Purpose 
+Shift date n months in future or past
+Return value 
+New date as Excel serial number
+Arguments 
+start_date - Start date as a valid Excel date.months - Number of months before or after start_date.
+Syntax 
+=EDATE(start_date, months)

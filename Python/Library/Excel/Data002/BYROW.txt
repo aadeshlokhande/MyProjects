@@ -1,0 +1,11 @@
+Summary
+The Excel BYROW function applies a LAMBDA function to each row of a given array and returns one result per row in a single array. In the example shown, data is the named range C5:H9. 
+Note: BYROW is a beta function available only through the Insiders channel of Excel 365.
+Purpose 
+Apply function to row
+Return value 
+One result per row
+Arguments 
+array - The array or array to process.lambda - The lambda function to apply to each row.
+Syntax 
+=BYROW(array, lambda)

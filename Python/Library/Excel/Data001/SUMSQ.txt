@@ -1,0 +1,228 @@
+Excel SUMSQ function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUMSQ Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+SUMSQ Function
+Related functions 
+SUMSQ
+SUMX2MY2
+SUMX2PY2
+SUMXMY2
+Summary
+The Excel SUMSQ function returns the sum of the squares of the values provided. Values can be supplied as constants, cell references, or ranges.
+Purpose 
+Get sum of squares of supplied values
+Return value 
+Calculated sum of squares
+Arguments 
+number1 - The first argument containing numeric values.number2 - [optional] The first argument containing numeric values.
+Syntax 
+=SUMSQ(number1, [number2], ...)
+Usage notes 
+The SUMSQ function returns the sum of the squares of the numbers provided. SUMSQ takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. All numbers in the arguments provided are squared then summed. The SUMSQ function automatically ignores empty cells and text values.
+Examples
+=SUMSQ(1,2) // returns 5
+=SUMSQ(1,2,3) // returns 14
+=SUMSQ({1,2,3}) // returns 14
+In the worksheet shown, the formula in H5, copied down, is:
+=SUMSQ(B5:F5) // returns 5
+Notice that SUMSQ automatically ignores empty cells and text values.
+Notes
+Arguments can be a mix of constants, names, arrays, or references that contain numbers.
+Empty cells, logical values, and text values are ignored when they appear in arrays or references.
+The logical values TRUE and FALSE are evaluated as 1 and 0 respectively, but only when they are hardcoded as arguments.
+Numbers entered as text (i.e. "1", "3", etc.) are evaluated, but only when they are hardcoded as arguments.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SUMSQ FunctionSUMX2MY2 FunctionSUMX2PY2 FunctionSUMXMY2 Function 
+ Links Microsoft SUMSQ function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SUMSQ function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUMSQ Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+SUMSQ Function
+Related functions 
+SUMSQ
+SUMX2MY2
+SUMX2PY2
+SUMXMY2
+Summary
+The Excel SUMSQ function returns the sum of the squares of the values provided. Values can be supplied as constants, cell references, or ranges.
+Purpose 
+Get sum of squares of supplied values
+Return value 
+Calculated sum of squares
+Arguments 
+number1 - The first argument containing numeric values.number2 - [optional] The first argument containing numeric values.
+Syntax 
+=SUMSQ(number1, [number2], ...)
+Usage notes 
+The SUMSQ function returns the sum of the squares of the numbers provided. SUMSQ takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. All numbers in the arguments provided are squared then summed. The SUMSQ function automatically ignores empty cells and text values.
+Examples
+=SUMSQ(1,2) // returns 5
+=SUMSQ(1,2,3) // returns 14
+=SUMSQ({1,2,3}) // returns 14
+In the worksheet shown, the formula in H5, copied down, is:
+=SUMSQ(B5:F5) // returns 5
+Notice that SUMSQ automatically ignores empty cells and text values.
+Notes
+Arguments can be a mix of constants, names, arrays, or references that contain numbers.
+Empty cells, logical values, and text values are ignored when they appear in arrays or references.
+The logical values TRUE and FALSE are evaluated as 1 and 0 respectively, but only when they are hardcoded as arguments.
+Numbers entered as text (i.e. "1", "3", etc.) are evaluated, but only when they are hardcoded as arguments.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SUMSQ FunctionSUMX2MY2 FunctionSUMX2PY2 FunctionSUMXMY2 Function 
+ Links Microsoft SUMSQ function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

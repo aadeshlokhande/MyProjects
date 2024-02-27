@@ -1,0 +1,680 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel ISNA function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+ISNA Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Information
+
+
+ISNA Function
+Related functions 
+
+ISERROR
+IFERROR
+ISBLANK
+ISERR
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel ISNA function returns TRUE when a cell contains the #N/A error and FALSE for any other value, or any other error type. You can use the ISNA function with the IF function test for #N/A and display a friendly message if the error occurs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Test for the #N/A error
+
+
+
+Return value 
+
+A logical value (TRUE or FALSE)
+
+
+
+Arguments 
+
+value - The value to check if #N/A.
+
+
+
+Syntax 
+
+=ISNA(value)
+
+
+
+Usage notes 
+
+The ISNA function returns TRUE when a cell contains the #N/A error and FALSE for any other value, or any other error type. The ISNA function takes one argument, value, which is typically a cell reference.
+Examples
+If A1 contains the #N/A error, ISNA returns TRUE:
+
+=ISNA(A1) // returns TRUE
+
+ISNA returns FALSE for other values and errors:
+
+=ISNA(100) // returns FALSE
+=ISNA(5/0) // returns FALSE
+
+You can use the ISNA function with the IF function test for #N/A and display a friendly message if the error occurs. For example, to display a message if A1 contains #N/A and the value of A1 if not:
+
+=IF(ISNA(A1),"message",A1)
+
+The IFNA function is a more efficient way to trap the #N/A error. See VLOOKUP without NA error for an example.
+Return #N/A
+To explicitly return the #N/A error in a formula, you can use the NA function:
+
+=NA() // returns #N/A error
+
+The following will return true:
+
+=ISNA(NA()) // returns TRUE
+
+Count #N/A errors
+To count cells in a range that contain #N/A errors, you can use the SUMPRODUCT function like this:
+
+=SUMPRODUCT(--ISNA(range))
+
+The double negative coerces the TRUE and FALSE results from ISNA into 1s and 0s and SUMPRODUCT sums the result.
+Notes
+
+The IFNA function is a more efficient way to trap and handle the #N/A error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Count cells not equal to many things 
+
+Count not equal to multiple criteria 
+
+Find and retrieve missing values 
+
+Count missing values 
+
+VLOOKUP without #N/A error 
+
+Range contains a value not in another range 
+
+
+ Functions ISERROR FunctionIFERROR FunctionISBLANK FunctionISERR FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISNA function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel ISNA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISNA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISNA Function
+Related functions 
+ISERROR
+IFERROR
+ISBLANK
+ISERR
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+Summary
+The Excel ISNA function returns TRUE when a cell contains the #N/A error and FALSE for any other value, or any other error type. You can use the ISNA function with the IF function test for #N/A and display a friendly message if the error occurs.
+Purpose 
+Test for the #N/A error
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The value to check if #N/A.
+Syntax 
+=ISNA(value)
+Usage notes 
+The ISNA function returns TRUE when a cell contains the #N/A error and FALSE for any other value, or any other error type. The ISNA function takes one argument, value, which is typically a cell reference.
+Examples
+If A1 contains the #N/A error, ISNA returns TRUE:
+=ISNA(A1) // returns TRUE
+ISNA returns FALSE for other values and errors:
+=ISNA(100) // returns FALSE
+=ISNA(5/0) // returns FALSE
+You can use the ISNA function with the IF function test for #N/A and display a friendly message if the error occurs. For example, to display a message if A1 contains #N/A and the value of A1 if not:
+=IF(ISNA(A1),"message",A1)
+The IFNA function is a more efficient way to trap the #N/A error. See VLOOKUP without NA error for an example.
+Return #N/A
+To explicitly return the #N/A error in a formula, you can use the NA function:
+=NA() // returns #N/A error
+The following will return true:
+=ISNA(NA()) // returns TRUE
+Count #N/A errors
+To count cells in a range that contain #N/A errors, you can use the SUMPRODUCT function like this:
+=SUMPRODUCT(--ISNA(range))
+The double negative coerces the TRUE and FALSE results from ISNA into 1s and 0s and SUMPRODUCT sums the result.
+Notes
+The IFNA function is a more efficient way to trap and handle the #N/A error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count cells not equal to many things 
+Count not equal to multiple criteria 
+Find and retrieve missing values 
+Count missing values 
+VLOOKUP without #N/A error 
+Range contains a value not in another range 
+ Functions ISERROR FunctionIFERROR FunctionISBLANK FunctionISERR FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISNA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

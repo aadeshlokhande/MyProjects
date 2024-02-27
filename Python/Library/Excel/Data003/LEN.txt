@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel LEN function returns the length of a given text string as the number of characters. LEN will also count characters in numbers, but number formatting is not included.', 'Purpose' : 'Get the length of text.', 'Return value' : 'Number of characters', 'Arguments' : 'text - The text for which to calculate length.', 'Syntax' : '=LEN(text)' }

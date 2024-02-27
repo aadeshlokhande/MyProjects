@@ -1,0 +1,10 @@
+Summary
+The Excel NOT function returns the opposite of a given logical or Boolean value. When given TRUE, NOT returns FALSE. When given FALSE, NOT returns TRUE. Use the NOT function to reverse a logical value.
+Purpose 
+Reverse arguments or results
+Return value 
+A reversed logical value
+Arguments 
+logical - A value or logical expression that can be evaluated as TRUE or FALSE.
+Syntax 
+=NOT(logical)

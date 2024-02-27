@@ -1,0 +1,10 @@
+Summary
+The Excel FVSCHEDULE function returns the future value of a single sum based on a schedule of given interest rates. FVSCHEDULE can be used to find the future value of an investment with a variable or adjustable rate.
+Purpose 
+Get future value of principal compound interest
+Return value 
+Future value
+Arguments 
+principal - The initial investment sum.schedule - Schedule of interest rates, provided as range or array.
+Syntax 
+=FVSCHEDULE(principal, schedule)

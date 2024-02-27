@@ -1,0 +1,272 @@
+Excel ISODD function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISODD Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISODD Function
+Related functions 
+ISEVEN
+ISBLANK
+ISERR
+ISERROR
+ISLOGICAL
+ISNA
+ISFORMULA
+ISNONTEXT
+ISNUMBER
+ISREF
+ISTEXT
+Summary
+The Excel ISODD function returns TRUE when a value is an odd number, and FALSE when a value is an even number. ISODD will return the #VALUE error if a value is not numeric.
+Purpose 
+Test if a value is odd
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The numeric value to check.
+Syntax 
+=ISODD(value)
+Usage notes 
+The ISODD function tests for odd numbers. ISODD takes one argument, value, which should be a numeric value or a cell reference. When value is an odd number, ISODD returns TRUE. When value is an even number, ISODD returns FALSE. If value is not numeric, ISODD will return the #VALUE error. Only the integer portion of value is evaluated, decimal values are truncated.
+Examples
+The ISODD function returns TRUE or FALSE:
+=ISODD(4) // returns FALSE
+=ISODD(3) // returns TRUE
+=ISODD(0) // returns FALSE
+If cell A1 contains 11, the formula below returns TRUE:
+=ISODD(A1) //returns TRUE
+Only the integer portion of value is tested. If value is a decimal number, the decimal portion is truncated:
+=ISODD(4.1) // returns FALSE
+=ISODD(0.33) // returns FALSE
+=ISODD(7.4) // returns TRUE
+Notes
+If value is not numeric, ISODD will return the #VALUE error.
+Only the integer portion of value is tested; decimal values are truncated.
+Use the ISEVEN function to test for even numbers.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Shade alternating groups of n rows 
+Highlight every other row 
+Count cells that contain odd numbers 
+Videos
+  
+How to use a formula with conditional formatting 
+How to test a conditional formatting formula 
+How to apply conditional formatting with a formula 
+How to create zebra stripes with conditional formatting 
+Shade groups of rows with conditional formatting 
+ Functions ISEVEN FunctionISBLANK FunctionISERR FunctionISERROR FunctionISLOGICAL FunctionISNA FunctionISFORMULA FunctionISNONTEXT FunctionISNUMBER FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISODD function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ISODD function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISODD Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISODD Function
+Related functions 
+ISEVEN
+ISBLANK
+ISERR
+ISERROR
+ISLOGICAL
+ISNA
+ISFORMULA
+ISNONTEXT
+ISNUMBER
+ISREF
+ISTEXT
+Summary
+The Excel ISODD function returns TRUE when a value is an odd number, and FALSE when a value is an even number. ISODD will return the #VALUE error if a value is not numeric.
+Purpose 
+Test if a value is odd
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The numeric value to check.
+Syntax 
+=ISODD(value)
+Usage notes 
+The ISODD function tests for odd numbers. ISODD takes one argument, value, which should be a numeric value or a cell reference. When value is an odd number, ISODD returns TRUE. When value is an even number, ISODD returns FALSE. If value is not numeric, ISODD will return the #VALUE error. Only the integer portion of value is evaluated, decimal values are truncated.
+Examples
+The ISODD function returns TRUE or FALSE:
+=ISODD(4) // returns FALSE
+=ISODD(3) // returns TRUE
+=ISODD(0) // returns FALSE
+If cell A1 contains 11, the formula below returns TRUE:
+=ISODD(A1) //returns TRUE
+Only the integer portion of value is tested. If value is a decimal number, the decimal portion is truncated:
+=ISODD(4.1) // returns FALSE
+=ISODD(0.33) // returns FALSE
+=ISODD(7.4) // returns TRUE
+Notes
+If value is not numeric, ISODD will return the #VALUE error.
+Only the integer portion of value is tested; decimal values are truncated.
+Use the ISEVEN function to test for even numbers.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Shade alternating groups of n rows 
+Highlight every other row 
+Count cells that contain odd numbers 
+Videos
+  
+How to use a formula with conditional formatting 
+How to test a conditional formatting formula 
+How to apply conditional formatting with a formula 
+How to create zebra stripes with conditional formatting 
+Shade groups of rows with conditional formatting 
+ Functions ISEVEN FunctionISBLANK FunctionISERR FunctionISERROR FunctionISLOGICAL FunctionISNA FunctionISFORMULA FunctionISNONTEXT FunctionISNUMBER FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISODD function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

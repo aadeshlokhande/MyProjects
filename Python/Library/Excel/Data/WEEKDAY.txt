@@ -1,0 +1,813 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel WEEKDAY function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+WEEKDAY Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+WEEKDAY Function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel WEEKDAY function takes a date and returns a number between 1-7 representing the day of week. By default, WEEKDAY returns 1 for Sunday and 7 for Saturday, but this is configurable. You can use the WEEKDAY function inside other formulas to check the day of week.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the day of the week as a number
+
+
+
+Return value 
+
+A number between 0 and 7.
+
+
+
+Arguments 
+
+serial_number - The date for which you want to get the day of week.return_type - [optional] A number representing day of week mapping scheme. Default is 1.
+
+
+
+Syntax 
+
+=WEEKDAY(serial_number, [return_type])
+
+
+
+Usage notes 
+
+The WEEKDAY function takes a date and returns a number between 1-7 representing the day of the week. The WEEKDAY function takes two arguments: serial_number and return_type. Serial_number should be a valid Excel date in serial number format. Return_type is an optional numeric code that controls which day of the week is considered the first day. By default, WEEKDAY returns 1 for Sunday and 7 for Saturday, as seen in the table below:
+
+
+
+Result
+Meaning
+
+
+
+
+1
+Sunday
+
+
+2
+Monday
+
+
+3
+Tuesday
+
+
+4
+Wednesday
+
+
+5
+Thursday
+
+
+6
+Friday
+
+
+7
+Saturday
+
+
+
+WEEKDAY supports several numbering schemes, controlled by the return_type argument. Return_type is optional and defaults to 1. The table below shows available return_type codes, the numeric result of each code, and which day is the first day in the mapping scheme.
+
+
+
+Return type
+Numeric result
+Day mapping
+
+
+
+
+none
+1-7
+Sunday-Saturday
+
+
+1
+1-7
+Sunday-Saturday
+
+
+2
+1-7
+Monday-Sunday
+
+
+3
+0-6
+Monday-Sunday
+
+
+11
+1-7
+Monday-Sunday
+
+
+12
+1-7
+Tuesday-Monday
+
+
+13
+1-7
+Wednesday-Tuesday
+
+
+14
+1-7
+Thursday-Wednesday
+
+
+15
+1-7
+Friday-Thursday
+
+
+16
+1-7
+Saturday-Friday
+
+
+17
+1-7
+Sunday-Saturday
+
+
+
+Note: the WEEKDAY function will return a value even when the date is empty. Take care to trap this result if blank dates are possible.
+Examples
+By default and without a value fore return_type, WEEKDAY starts counting on Sunday:
+
+=WEEKDAY("3-Jan-21") // Sunday, returns 1
+=WEEKDAY("4-Jan-21") // Monday, returns 2
+
+To configure WEEKDAY to start on Monday, set return_type to 2:
+
+=WEEKDAY("3-Jan-21",2) // Sunday, returns 7
+=WEEKDAY("4-Jan-21",2) // Monday, returns 1
+
+In the example shown above, the formula in D5 (copied down) is:
+
+=WEEKDAY(B5) // Sunday start
+
+The formula in E5 (copied down) is:
+
+=WEEKDAY(B5,2) // Monday start
+
+Notes
+
+By default, WEEKDAY returns 1 for Sunday and 7 for Saturday.
+WEEKDAY returns a value (7) even if the date is empty.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum by week 
+
+Get nth day of week in month 
+
+Get next day of week 
+
+Last n weeks 
+
+Get previous Sunday 
+
+Get last working day in month 
+
+Get last weekday in month 
+
+Count day of week between dates 
+
+Gantt chart with weekends 
+
+Get Monday of the week 
+
+
+
+Videos
+  
+How to group a pivot table by day of week 
+
+
+ Links Microsoft WEEKDAY function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel WEEKDAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+WEEKDAY Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+WEEKDAY Function 
+Summary
+The Excel WEEKDAY function takes a date and returns a number between 1-7 representing the day of week. By default, WEEKDAY returns 1 for Sunday and 7 for Saturday, but this is configurable. You can use the WEEKDAY function inside other formulas to check the day of week.
+Purpose 
+Get the day of the week as a number
+Return value 
+A number between 0 and 7.
+Arguments 
+serial_number - The date for which you want to get the day of week.return_type - [optional] A number representing day of week mapping scheme. Default is 1.
+Syntax 
+=WEEKDAY(serial_number, [return_type])
+Usage notes 
+The WEEKDAY function takes a date and returns a number between 1-7 representing the day of the week. The WEEKDAY function takes two arguments: serial_number and return_type. Serial_number should be a valid Excel date in serial number format. Return_type is an optional numeric code that controls which day of the week is considered the first day. By default, WEEKDAY returns 1 for Sunday and 7 for Saturday, as seen in the table below:
+Result
+Meaning
+1
+Sunday
+2
+Monday
+3
+Tuesday
+4
+Wednesday
+5
+Thursday
+6
+Friday
+7
+Saturday
+WEEKDAY supports several numbering schemes, controlled by the return_type argument. Return_type is optional and defaults to 1. The table below shows available return_type codes, the numeric result of each code, and which day is the first day in the mapping scheme.
+Return type
+Numeric result
+Day mapping
+none
+1-7
+Sunday-Saturday
+1
+1-7
+Sunday-Saturday
+2
+1-7
+Monday-Sunday
+3
+0-6
+Monday-Sunday
+11
+1-7
+Monday-Sunday
+12
+1-7
+Tuesday-Monday
+13
+1-7
+Wednesday-Tuesday
+14
+1-7
+Thursday-Wednesday
+15
+1-7
+Friday-Thursday
+16
+1-7
+Saturday-Friday
+17
+1-7
+Sunday-Saturday
+Note: the WEEKDAY function will return a value even when the date is empty. Take care to trap this result if blank dates are possible.
+Examples
+By default and without a value fore return_type, WEEKDAY starts counting on Sunday:
+=WEEKDAY("3-Jan-21") // Sunday, returns 1
+=WEEKDAY("4-Jan-21") // Monday, returns 2
+To configure WEEKDAY to start on Monday, set return_type to 2:
+=WEEKDAY("3-Jan-21",2) // Sunday, returns 7
+=WEEKDAY("4-Jan-21",2) // Monday, returns 1
+In the example shown above, the formula in D5 (copied down) is:
+=WEEKDAY(B5) // Sunday start
+The formula in E5 (copied down) is:
+=WEEKDAY(B5,2) // Monday start
+Notes
+By default, WEEKDAY returns 1 for Sunday and 7 for Saturday.
+WEEKDAY returns a value (7) even if the date is empty.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by week 
+Get nth day of week in month 
+Get next day of week 
+Last n weeks 
+Get previous Sunday 
+Get last working day in month 
+Get last weekday in month 
+Count day of week between dates 
+Gantt chart with weekends 
+Get Monday of the week 
+Videos
+  
+How to group a pivot table by day of week 
+ Links Microsoft WEEKDAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

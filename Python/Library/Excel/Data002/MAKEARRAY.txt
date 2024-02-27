@@ -1,0 +1,10 @@
+Summary
+The Excel MAKEARRAY function returns a array with specified rows and columns, based on a custom LAMBDA calculation. MAKEARRAY can be used to create arrays with variable dimensions where values are the result of a calculation.
+Purpose 
+Create array with calculated values
+Return value 
+An array of calculated values
+Arguments 
+rows - The number of rows to create.columns - The number of columns to create.lambda - The custom LAMBDA calculation to apply.
+Syntax 
+=MAKEARRAY(rows, columns, lambda)

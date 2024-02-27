@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel BYCOL function applies a LAMBDA function to each column in a given array and returns one result per column as a single array. In the example shown, data is the named range C5:H9.', 'Purpose' : 'Purpose ', 'Return value' : 'Return value ', 'Arguments' : 'Arguments ', 'Syntax' : 'Syntax ' }

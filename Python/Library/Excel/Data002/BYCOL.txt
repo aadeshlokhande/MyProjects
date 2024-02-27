@@ -1,0 +1,11 @@
+Summary
+The Excel BYCOL function applies a LAMBDA function to each column in a given array and returns one result per column as a single array. In the example shown, data is the named range C5:H9.
+Note: BYCOL is a beta function available only through the Insiders channel of Excel 365.
+Purpose 
+Apply function to column
+Return value 
+One result per column
+Arguments 
+array - The array or array to process.lambda - The lambda function to apply to each column.
+Syntax 
+=BYCOL(array, lambda)

@@ -1,0 +1,396 @@
+Excel SUMIF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUMIF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+SUMIF Function
+Related functions 
+COUNTIF
+SUMIFS
+SUMPRODUCT
+Summary
+The Excel SUMIF function returns the sum of cells that meet a single condition. Criteria can be applied to dates, numbers, and text. The SUMIF function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Sum cells in a range that meet criteria
+Return value 
+The sum of matching cells
+Arguments 
+range - Range to apply criteria to.criteria - Criteria to apply.sum_range - [optional] Range to sum. If omitted, cells in range are summed.
+Syntax 
+=SUMIF(range, criteria, [sum_range])
+Usage notes 
+The SUMIF function sums cells in a range that meet a single condition, referred to as criteria. The SUMIF function is a common, widely used function in Excel, and can be used to sum cells based on dates, text values, and numbers. Note that SUMIF can only apply one condition. To sum cells using multiple criteria, see the SUMIFS function.
+Syntax
+The generic syntax for SUMIF looks like this:
+=SUMIF(range,criteria,[sum_range])
+The SUMIF function takes three arguments. The first argument, range, is the range of cells to apply criteria to. The second argument, criteria, is the criteria to apply, along with any logical operators. The last argument, sum_range, is the range that should be summed. Note that sum_range is optional. If sum_range is not provided, SUMIF will sum cells in the first argument, range.
+Examples: Basic Usage | Criteria in another cell | Not equal to | Blank cells | Dates | Wildcards |  Videos
+Applying criteria
+The SUMIF function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. The tricky part about using the SUMIF function is the syntax needed to apply criteria. This is because SUMIF is in a group of eight functions that split logical criteria into two parts, range and criteria. Because of this design, operators need to be enclosed in double quotes (""). The table below shows examples of the syntax needed for common criteria:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples involve concatenation with the ampersand (&) character. Any time you are using a value from another cell, or using the result of a formula in criteria with a logical operator like "<", you will need to concatenate. This is because Excel needs to evaluate cell references and formulas to get a value before that value can be joined with an operator.
+Limitations
+There are a couple of limitations with SUMIF that you should be aware of. First, SUMIF only supports a single condition. If you need to sum cells using multiple criteria, use the SUMIFS function. Second, the SUMIF function requires an actual range for the range argument; you can't substitute an array. This means you can't do things like extract the year from a range that contains dates inside the SUMIF function. If you need to manipulate values that appear in the argument before applying criteria, the SUMPRODUCT function is a flexible solution.
+Basic usage
+With numbers in the range A1:A10, you can use SUMIF to sum cells greater than 5 like this:
+=SUMIF(A1:A10,">5")
+If the range B1:B10 contains color names like "red", "blue", and "green", you can use SUMIF to sum numbers in A1:A10 when the color in B1:B10 is "red" like this:
+=SUMIF(B1:B10,"red",A1:A10)
+Notice A1:A10 is now entered as the sum_range, because it is different from range, which contains only color names. To recap: criteria is applied to cells in range. When cells in range meet criteria, corresponding cells in sum_range are summed. The sum_range argument is optional. If sum_range is omitted, the cells in range are summed instead.
+Worksheet example
+In the worksheet shown, there are three SUMIF formulas. In the first formula (G5), SUMIF returns total Sales where Name = "jim".  In the second formula (G6), SUMIF returns total Sales where State = "ca" (California).  In the third formula (G7), SUMIF returns the total of Sales > 100:
+=SUMIF(B5:B15,"jim",D5:D15) // name = "jim"
+=SUMIF(C5:C15,"ca",D5:D15) // state = "ca"
+=SUMIF(D5:D15,">100") // sales > 100
+Notice the equals sign (=) is not required when constructing "is equal to" criteria. Also notice SUMIF is not case-sensitive; you can use "jim" or "Jim". Finally, notice that the last formula does not include sum_range, so range is summed instead.
+Criteria in another cell
+A value from another cell can be included in criteria using concatenation. In the example below, SUMIF will return the sum of all sales over the value in G4.  Notice the greater than operator (>), which is text, must be enclosed in quotes. The formula in G5 is:
+=SUMIF(D5:D9,">"&G4) // sum if greater than G4
+Not equal to
+To express "not equal to" criteria, use the "<>" operator surrounded by double quotes (""):
+=SUMIF(B5:B9,"<>red",C5:C9) // not equal to "red"
+=SUMIF(B5:B9,"<>blue",C5:C9) // not equal to "blue"
+=SUMIF(B5:B9,"<>"&E7,C5:C9) // not equal to E7
+Again notice SUMIF is not case-sensitive.
+Blank cells
+SUMIF can calculate sums based on cells that are blank or not blank. In the example below,  SUMIF is used to sum the amounts in column C depending on whether column D contains "x" or is empty:
+=SUMIF(D5:D9,"",C5:C9) // blank
+=SUMIF(D5:D9,"<>",C5:C9) // not blank
+Dates
+The best way to use SUMIF with dates is to refer to a valid date in another cell, or use the DATE function. The example below shows both methods:
+=SUMIF(B5:B9,"<"&DATE(2019,3,1),C5:C9)
+=SUMIF(B5:B9,">="&DATE(2019,4,1),C5:C9)
+=SUMIF(B5:B9,">"&E9,C5:C9)
+Notice we must concatenate an operator to the date in E9. To use more advanced date criteria (i.e. all dates in a given month, or all dates between two dates) you'll want to switch to the SUMIFS function, which can handle multiple criteria.
+Wildcards
+The SUMIF function supports wildcards, as seen in the example below:
+=SUMIF(B5:B9,"mi*",C5:C9) // begins with "mi"
+=SUMIF(B5:B9,"*ota",C5:C9) // ends with "ota"
+=SUMIF(B5:B9,"????",C5:C9) // contains 4 characters
+The tilde (~) is an escape character to allow you to find literal wildcards. For example, to match a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+Average range caution
+SUMIF makes certain assumptions about the size of sum_range, essentially resizing it when necessary to match the range argument, using the upper left cell in the range as an origin. In some cases, this behavior can create a result that seems reasonable but is in fact incorrect. For an example of this problem, see this article.
+Notes
+SUMIF only supports one condition. Use the SUMIFS function for multiple criteria.
+When sum_range is omitted, the cells in range will be summed.
+Non-numeric criteria must be enclosed in double quotes (i.e. "<100",  ">32", "TX")
+Cell references in criteria are not enclosed in quotes, i.e. "<"&A1
+The wildcard characters ? and * can be used in criteria. A question mark matches any one character and an asterisk matches any sequence of characters (zero or more).
+To match a literal question mark(?) or asterisk (*), use a tilde (~) like (~?, ~*).
+SUMIF requires a range, you can't substitute an array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum time 
+Subtotal by invoice number 
+Sum by group 
+Sum if cells are equal to 
+Sum by fiscal year 
+Count numbers with leading zeros 
+Sum if ends with 
+Sum if cell contains text in another cell 
+Sum if begins with 
+Sum if cells contain an asterisk 
+Videos
+  
+How to use the SUMIF function 
+How to build a simple summary table 
+How to add a totals row to a Table 
+ Functions COUNTIF FunctionSUMIFS FunctionSUMPRODUCT Function 
+ Articles Excel's RACON functions 
+ Links Microsoft SUMIF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SUMIF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUMIF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+SUMIF Function
+Related functions 
+COUNTIF
+SUMIFS
+SUMPRODUCT
+Summary
+The Excel SUMIF function returns the sum of cells that meet a single condition. Criteria can be applied to dates, numbers, and text. The SUMIF function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Sum cells in a range that meet criteria
+Return value 
+The sum of matching cells
+Arguments 
+range - Range to apply criteria to.criteria - Criteria to apply.sum_range - [optional] Range to sum. If omitted, cells in range are summed.
+Syntax 
+=SUMIF(range, criteria, [sum_range])
+Usage notes 
+The SUMIF function sums cells in a range that meet a single condition, referred to as criteria. The SUMIF function is a common, widely used function in Excel, and can be used to sum cells based on dates, text values, and numbers. Note that SUMIF can only apply one condition. To sum cells using multiple criteria, see the SUMIFS function.
+Syntax
+The generic syntax for SUMIF looks like this:
+=SUMIF(range,criteria,[sum_range])
+The SUMIF function takes three arguments. The first argument, range, is the range of cells to apply criteria to. The second argument, criteria, is the criteria to apply, along with any logical operators. The last argument, sum_range, is the range that should be summed. Note that sum_range is optional. If sum_range is not provided, SUMIF will sum cells in the first argument, range.
+Examples: Basic Usage | Criteria in another cell | Not equal to | Blank cells | Dates | Wildcards |  Videos
+Applying criteria
+The SUMIF function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. The tricky part about using the SUMIF function is the syntax needed to apply criteria. This is because SUMIF is in a group of eight functions that split logical criteria into two parts, range and criteria. Because of this design, operators need to be enclosed in double quotes (""). The table below shows examples of the syntax needed for common criteria:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples involve concatenation with the ampersand (&) character. Any time you are using a value from another cell, or using the result of a formula in criteria with a logical operator like "<", you will need to concatenate. This is because Excel needs to evaluate cell references and formulas to get a value before that value can be joined with an operator.
+Limitations
+There are a couple of limitations with SUMIF that you should be aware of. First, SUMIF only supports a single condition. If you need to sum cells using multiple criteria, use the SUMIFS function. Second, the SUMIF function requires an actual range for the range argument; you can't substitute an array. This means you can't do things like extract the year from a range that contains dates inside the SUMIF function. If you need to manipulate values that appear in the argument before applying criteria, the SUMPRODUCT function is a flexible solution.
+Basic usage
+With numbers in the range A1:A10, you can use SUMIF to sum cells greater than 5 like this:
+=SUMIF(A1:A10,">5")
+If the range B1:B10 contains color names like "red", "blue", and "green", you can use SUMIF to sum numbers in A1:A10 when the color in B1:B10 is "red" like this:
+=SUMIF(B1:B10,"red",A1:A10)
+Notice A1:A10 is now entered as the sum_range, because it is different from range, which contains only color names. To recap: criteria is applied to cells in range. When cells in range meet criteria, corresponding cells in sum_range are summed. The sum_range argument is optional. If sum_range is omitted, the cells in range are summed instead.
+Worksheet example
+In the worksheet shown, there are three SUMIF formulas. In the first formula (G5), SUMIF returns total Sales where Name = "jim".  In the second formula (G6), SUMIF returns total Sales where State = "ca" (California).  In the third formula (G7), SUMIF returns the total of Sales > 100:
+=SUMIF(B5:B15,"jim",D5:D15) // name = "jim"
+=SUMIF(C5:C15,"ca",D5:D15) // state = "ca"
+=SUMIF(D5:D15,">100") // sales > 100
+Notice the equals sign (=) is not required when constructing "is equal to" criteria. Also notice SUMIF is not case-sensitive; you can use "jim" or "Jim". Finally, notice that the last formula does not include sum_range, so range is summed instead.
+Criteria in another cell
+A value from another cell can be included in criteria using concatenation. In the example below, SUMIF will return the sum of all sales over the value in G4.  Notice the greater than operator (>), which is text, must be enclosed in quotes. The formula in G5 is:
+=SUMIF(D5:D9,">"&G4) // sum if greater than G4
+Not equal to
+To express "not equal to" criteria, use the "<>" operator surrounded by double quotes (""):
+=SUMIF(B5:B9,"<>red",C5:C9) // not equal to "red"
+=SUMIF(B5:B9,"<>blue",C5:C9) // not equal to "blue"
+=SUMIF(B5:B9,"<>"&E7,C5:C9) // not equal to E7
+Again notice SUMIF is not case-sensitive.
+Blank cells
+SUMIF can calculate sums based on cells that are blank or not blank. In the example below,  SUMIF is used to sum the amounts in column C depending on whether column D contains "x" or is empty:
+=SUMIF(D5:D9,"",C5:C9) // blank
+=SUMIF(D5:D9,"<>",C5:C9) // not blank
+Dates
+The best way to use SUMIF with dates is to refer to a valid date in another cell, or use the DATE function. The example below shows both methods:
+=SUMIF(B5:B9,"<"&DATE(2019,3,1),C5:C9)
+=SUMIF(B5:B9,">="&DATE(2019,4,1),C5:C9)
+=SUMIF(B5:B9,">"&E9,C5:C9)
+Notice we must concatenate an operator to the date in E9. To use more advanced date criteria (i.e. all dates in a given month, or all dates between two dates) you'll want to switch to the SUMIFS function, which can handle multiple criteria.
+Wildcards
+The SUMIF function supports wildcards, as seen in the example below:
+=SUMIF(B5:B9,"mi*",C5:C9) // begins with "mi"
+=SUMIF(B5:B9,"*ota",C5:C9) // ends with "ota"
+=SUMIF(B5:B9,"????",C5:C9) // contains 4 characters
+The tilde (~) is an escape character to allow you to find literal wildcards. For example, to match a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+Average range caution
+SUMIF makes certain assumptions about the size of sum_range, essentially resizing it when necessary to match the range argument, using the upper left cell in the range as an origin. In some cases, this behavior can create a result that seems reasonable but is in fact incorrect. For an example of this problem, see this article.
+Notes
+SUMIF only supports one condition. Use the SUMIFS function for multiple criteria.
+When sum_range is omitted, the cells in range will be summed.
+Non-numeric criteria must be enclosed in double quotes (i.e. "<100",  ">32", "TX")
+Cell references in criteria are not enclosed in quotes, i.e. "<"&A1
+The wildcard characters ? and * can be used in criteria. A question mark matches any one character and an asterisk matches any sequence of characters (zero or more).
+To match a literal question mark(?) or asterisk (*), use a tilde (~) like (~?, ~*).
+SUMIF requires a range, you can't substitute an array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum time 
+Subtotal by invoice number 
+Sum by group 
+Sum if cells are equal to 
+Sum by fiscal year 
+Count numbers with leading zeros 
+Sum if ends with 
+Sum if cell contains text in another cell 
+Sum if begins with 
+Sum if cells contain an asterisk 
+Videos
+  
+How to use the SUMIF function 
+How to build a simple summary table 
+How to add a totals row to a Table 
+ Functions COUNTIF FunctionSUMIFS FunctionSUMPRODUCT Function 
+ Articles Excel's RACON functions 
+ Links Microsoft SUMIF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

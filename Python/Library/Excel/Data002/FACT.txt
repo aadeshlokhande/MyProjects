@@ -1,0 +1,10 @@
+Summary
+The Excel FACT function returns the factorial of a given number. For example, =FACT(3) returns 6, equivalent to 3 x 2 x 1.
+Purpose 
+Find the factorial of a number
+Return value 
+The factorial of a number
+Arguments 
+number - The number to get the factorial of.
+Syntax 
+=FACT(number)

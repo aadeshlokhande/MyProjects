@@ -1,0 +1,300 @@
+Excel SEQUENCE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SEQUENCE Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+SEQUENCE Function
+Related functions 
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+Summary
+The Excel SEQUENCE function generates a list of sequential numbers in an array. The array can be one dimensional, or two-dimensional, determined by rows and columns arguments. 
+Purpose 
+Get array of list of sequential numbers
+Return value 
+Array of sequential values
+Arguments 
+rows - Number of rows to return.columns - [optional] Number of columns to return.start - [optional] Starting value (defaults to 1).step - [optional] Increment between each value (defaults to 1).
+Syntax 
+=SEQUENCE(rows, [columns], [start], [step])
+Usage notes 
+The SEQUENCE function generates a list of sequential numbers in an array. The array can be one-dimensional, or two-dimensional, controlled by rows and columns arguments. SEQUENCE can be used on its own to create an array of sequential numbers that spill directly on the worksheet. It can also be used to generate a numeric array inside another formula, a requirement that comes up frequently in more advanced formulas.
+The SEQUENCE function takes four arguments: rows, columns, start, and step. All values default to 1. The rows and columns arguments control the number of rows and columns that should be generated in the output. For example, the formulas below generate numbers between 1 and 5 in rows and columns:
+=SEQUENCE(5,1) // returns {1;2;3;4;5} in 5 rows
+=SEQUENCE(1,5) // returns {1,2,3,4,5} in 5 columns
+Note the output from SEQUENCE is an array of values that will spill into adjacent cells. The syntax for SEQUENCE indicates that rows is required, but either rows or columns can be omitted:
+=SEQUENCE(5) // returns {1;2;3;4;5} in 5 rows
+=SEQUENCE(,5) // returns {1,2,3,4,5} in 5 columns
+The start argument is the starting point in the numeric sequence, and step controls the increment between each value. Both formulas below use a start value of 10 and a step value of 5:
+=SEQUENCE(3,1,10,5) // returns {10;15;20} in 3 rows
+=SEQUENCE(1,3,10,5) // returns {10,15,20} in 3 columns
+Video: The SEQUENCE function
+Examples
+In the example in the screen above, the formula in B4 is:
+=SEQUENCE(10,5,0,3)
+With this configuration, SEQUENCE returns an array of sequential numbers, 10 rows by 5 columns, starting at zero and incremented by 3. The result is 50 numbers starting at 0 and ending at 147, as shown in the screen.
+Positive and negative
+SEQUENCE can work with both positive and negative values. To count from -10 to zero in increments of 2 in rows, set rows to 6, columns to 1, start to -10, and step to 2:
+=SEQUENCE(6,1,-10,2) // returns {-10;-8;-6;-4;-2;0}
+To count down between 10 and zero:
+=SEQUENCE(11,1,10,-1) // returns {10;9;8;7;6;5;4;3;2;1;0}
+Sequence of dates
+Because Excel dates are serial numbers, you can easily use SEQUENCE to generate sequential dates. For example, to generate a list of 10 days starting today in columns, you can use SEQUENCE with the TODAY function.
+=SEQUENCE(1,10,TODAY(),1)
+More details here. To generate a list of 12 dates corresponding to the first day of the month for all months in a year (2022 in this case) you can use SEQUENCE with the DATE and EDATE functions:
+=EDATE(DATE(2022,1,1),SEQUENCE(12,1,0))
+To generate a list of twelve-month names (instead of dates) you can wrap the formulas above in the TEXT function like this:
+=TEXT(EDATE(DATE(2022,1,1),SEQUENCE(12,1,0)),"mmmm")
+More information about these formulas here.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+LAMBDA append range 
+Get row totals 
+Filter every nth row 
+Sequence of years 
+Sum every nth row 
+Random list of names 
+Average top 3 scores 
+Dynamic calendar formula 
+XLOOKUP match any column 
+FILTER last n valid entries 
+Videos
+  
+New dynamic array functions in Excel 
+The SEQUENCE function 
+SEQUENCE of dates 
+SEQUENCE of times 
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft SEQUENCE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SEQUENCE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SEQUENCE Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+SEQUENCE Function
+Related functions 
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+Summary
+The Excel SEQUENCE function generates a list of sequential numbers in an array. The array can be one dimensional, or two-dimensional, determined by rows and columns arguments. 
+Purpose 
+Get array of list of sequential numbers
+Return value 
+Array of sequential values
+Arguments 
+rows - Number of rows to return.columns - [optional] Number of columns to return.start - [optional] Starting value (defaults to 1).step - [optional] Increment between each value (defaults to 1).
+Syntax 
+=SEQUENCE(rows, [columns], [start], [step])
+Usage notes 
+The SEQUENCE function generates a list of sequential numbers in an array. The array can be one-dimensional, or two-dimensional, controlled by rows and columns arguments. SEQUENCE can be used on its own to create an array of sequential numbers that spill directly on the worksheet. It can also be used to generate a numeric array inside another formula, a requirement that comes up frequently in more advanced formulas.
+The SEQUENCE function takes four arguments: rows, columns, start, and step. All values default to 1. The rows and columns arguments control the number of rows and columns that should be generated in the output. For example, the formulas below generate numbers between 1 and 5 in rows and columns:
+=SEQUENCE(5,1) // returns {1;2;3;4;5} in 5 rows
+=SEQUENCE(1,5) // returns {1,2,3,4,5} in 5 columns
+Note the output from SEQUENCE is an array of values that will spill into adjacent cells. The syntax for SEQUENCE indicates that rows is required, but either rows or columns can be omitted:
+=SEQUENCE(5) // returns {1;2;3;4;5} in 5 rows
+=SEQUENCE(,5) // returns {1,2,3,4,5} in 5 columns
+The start argument is the starting point in the numeric sequence, and step controls the increment between each value. Both formulas below use a start value of 10 and a step value of 5:
+=SEQUENCE(3,1,10,5) // returns {10;15;20} in 3 rows
+=SEQUENCE(1,3,10,5) // returns {10,15,20} in 3 columns
+Video: The SEQUENCE function
+Examples
+In the example in the screen above, the formula in B4 is:
+=SEQUENCE(10,5,0,3)
+With this configuration, SEQUENCE returns an array of sequential numbers, 10 rows by 5 columns, starting at zero and incremented by 3. The result is 50 numbers starting at 0 and ending at 147, as shown in the screen.
+Positive and negative
+SEQUENCE can work with both positive and negative values. To count from -10 to zero in increments of 2 in rows, set rows to 6, columns to 1, start to -10, and step to 2:
+=SEQUENCE(6,1,-10,2) // returns {-10;-8;-6;-4;-2;0}
+To count down between 10 and zero:
+=SEQUENCE(11,1,10,-1) // returns {10;9;8;7;6;5;4;3;2;1;0}
+Sequence of dates
+Because Excel dates are serial numbers, you can easily use SEQUENCE to generate sequential dates. For example, to generate a list of 10 days starting today in columns, you can use SEQUENCE with the TODAY function.
+=SEQUENCE(1,10,TODAY(),1)
+More details here. To generate a list of 12 dates corresponding to the first day of the month for all months in a year (2022 in this case) you can use SEQUENCE with the DATE and EDATE functions:
+=EDATE(DATE(2022,1,1),SEQUENCE(12,1,0))
+To generate a list of twelve-month names (instead of dates) you can wrap the formulas above in the TEXT function like this:
+=TEXT(EDATE(DATE(2022,1,1),SEQUENCE(12,1,0)),"mmmm")
+More information about these formulas here.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+LAMBDA append range 
+Get row totals 
+Filter every nth row 
+Sequence of years 
+Sum every nth row 
+Random list of names 
+Average top 3 scores 
+Dynamic calendar formula 
+XLOOKUP match any column 
+FILTER last n valid entries 
+Videos
+  
+New dynamic array functions in Excel 
+The SEQUENCE function 
+SEQUENCE of dates 
+SEQUENCE of times 
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft SEQUENCE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

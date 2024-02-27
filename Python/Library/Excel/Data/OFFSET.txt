@@ -1,0 +1,729 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel OFFSET function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+OFFSET Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+OFFSET Function
+Related functions 
+
+INDEX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel OFFSET function returns a reference to a range constructed with five inputs: (1) a starting point, (2) a row offset, (3) a column offset, (4) a height in rows, (5) a width in columns. OFFSET is handy in formulas that require a dynamic range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Create a reference offset from given starting point
+
+
+
+Return value 
+
+A cell reference.
+
+
+
+Arguments 
+
+reference - The starting point, supplied as a cell reference or range.rows - The number of rows to offset below the starting reference.cols - The number of columns to offset to the right of the starting reference.height - [optional] The height in rows of the returned reference.width - [optional] The width in columns of the returned reference.
+
+
+
+Syntax 
+
+=OFFSET(reference, rows, cols, [height], [width])
+
+
+
+Usage notes 
+
+The Excel OFFSET function returns a dynamic range constructed with five inputs: (1) a starting point, (2) a row offset, (3) a column offset, (4) a height in rows, (5) a width in columns.
+OFFSET is a volatile function, and can cause performance issues in large or complex worksheets.
+The starting point (the reference argument) can be one cell or a range of cells. The rows and cols arguments are the number of cells to "offset" from the starting point. The height and width arguments are optional and determine the size of the range that is created. When height and width are omitted, they default to the height and width of reference.
+For example, to reference C5 starting at A1,  reference is A1, rows is 4 and cols is 2:
+
+=OFFSET(A1,4,2) // returns reference to C5
+
+To reference C1:C5 from A1, reference is A1, rows is 0, cols is 2, height is 5, and width is 1:
+
+=OFFSET(A1,0,2,5,1) // returns reference to C1:C5
+
+Note: width could be omitted, since it will default to 1.
+It is common to see OFFSET wrapped in another function that expects a range. For example, to SUM C1:C5, beginning at A1:
+
+=SUM(OFFSET(A1,0,2,5,1)) // SUM C1:C5
+
+The main purpose of OFFSET is to allow formulas to dynamically adjust to available data or to user input. The OFFSET function can be used to build a dynamic named range for charts or pivot tables, to ensure that source data is always up to date.
+Note: Excel documentation states height and width can't be negative, but negative values appear to have worked fine since the early 1990's. The OFFSET function in Google Sheets won't allow a negative value for height or width arguments. 
+Examples
+The examples below show how OFFSET can be configured to return different kinds of ranges. These screens were taken with Excel 365, so OFFSET returns a dynamic array when the result is more than one cell. In older versions of Excel, you can use the F9 key to check results returned from OFFSET.
+Example #1
+In the screen below, we use OFFSET to return the third value (March) in the second column (West). The formula in H4 is:
+
+=OFFSET(B3,3,2) // returns D6
+
+
+Example #2
+In the screen below, we use OFFSET to return the last value (June) in the third column (North). The formula in H4 is:
+
+=OFFSET(B3,6,3) // returns E9
+
+
+Example #3
+Below, we use OFFSET to return all values in the third column (North). The formula in H4 is:
+
+=OFFSET(B3,1,3,6) // returns E4:E9
+
+
+Example #4
+Below, we use OFFSET to return all values for May (fifth row). The formula in H4 is:
+
+=OFFSET(B3,5,1,1,4) // returns C8:F8
+
+
+Example #5
+Below, we use OFFSET to return April, May, and June values for the West region. The formula in H4 is:
+
+=OFFSET(B3,4,2,3,1) // returns D7:D9
+
+
+Example #6
+Below, we use OFFSET to return April, May, and June values for West and North. The formula in H4 is:
+
+=OFFSET(B3,4,2,3,2) // returns D7:E9
+
+
+Notes
+
+OFFSET only returns a reference, no cells are moved.
+Both rows and cols can be supplied as negative numbers to reverse their normal offset direction - negative cols offset to the left, and negative rows offset above.
+OFFSET is a "volatile function". Volatile functions can make larger and more complex workbooks run slowly.
+OFFSET will display the #REF! error value if the offset is outside the edge of the worksheet.
+When height or width is omitted, the height and width of reference is used.
+OFFSET can be used with any other function that expects to receive a reference.
+Excel documentation says height and width can't be negative, but negative values do work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum last n rows 
+
+Sum last n columns 
+
+COUNTIFS with variable range 
+
+Unwrap column into fields 
+
+Average last n columns 
+
+Moving average formula 
+
+Copy value from every nth row 
+
+Define range based on cell value 
+
+Sum every n rows 
+
+Dynamic named range with OFFSET 
+
+
+
+Videos
+  
+How to create a dynamic named range with OFFSET 
+
+
+ Functions INDEX Function 
+ Links Microsoft OFFSET function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel OFFSET function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+OFFSET Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+OFFSET Function
+Related functions 
+INDEX
+Summary
+The Excel OFFSET function returns a reference to a range constructed with five inputs: (1) a starting point, (2) a row offset, (3) a column offset, (4) a height in rows, (5) a width in columns. OFFSET is handy in formulas that require a dynamic range.
+Purpose 
+Create a reference offset from given starting point
+Return value 
+A cell reference.
+Arguments 
+reference - The starting point, supplied as a cell reference or range.rows - The number of rows to offset below the starting reference.cols - The number of columns to offset to the right of the starting reference.height - [optional] The height in rows of the returned reference.width - [optional] The width in columns of the returned reference.
+Syntax 
+=OFFSET(reference, rows, cols, [height], [width])
+Usage notes 
+The Excel OFFSET function returns a dynamic range constructed with five inputs: (1) a starting point, (2) a row offset, (3) a column offset, (4) a height in rows, (5) a width in columns.
+OFFSET is a volatile function, and can cause performance issues in large or complex worksheets.
+The starting point (the reference argument) can be one cell or a range of cells. The rows and cols arguments are the number of cells to "offset" from the starting point. The height and width arguments are optional and determine the size of the range that is created. When height and width are omitted, they default to the height and width of reference.
+For example, to reference C5 starting at A1,  reference is A1, rows is 4 and cols is 2:
+=OFFSET(A1,4,2) // returns reference to C5
+To reference C1:C5 from A1, reference is A1, rows is 0, cols is 2, height is 5, and width is 1:
+=OFFSET(A1,0,2,5,1) // returns reference to C1:C5
+Note: width could be omitted, since it will default to 1.
+It is common to see OFFSET wrapped in another function that expects a range. For example, to SUM C1:C5, beginning at A1:
+=SUM(OFFSET(A1,0,2,5,1)) // SUM C1:C5
+The main purpose of OFFSET is to allow formulas to dynamically adjust to available data or to user input. The OFFSET function can be used to build a dynamic named range for charts or pivot tables, to ensure that source data is always up to date.
+Note: Excel documentation states height and width can't be negative, but negative values appear to have worked fine since the early 1990's. The OFFSET function in Google Sheets won't allow a negative value for height or width arguments. 
+Examples
+The examples below show how OFFSET can be configured to return different kinds of ranges. These screens were taken with Excel 365, so OFFSET returns a dynamic array when the result is more than one cell. In older versions of Excel, you can use the F9 key to check results returned from OFFSET.
+Example #1
+In the screen below, we use OFFSET to return the third value (March) in the second column (West). The formula in H4 is:
+=OFFSET(B3,3,2) // returns D6
+Example #2
+In the screen below, we use OFFSET to return the last value (June) in the third column (North). The formula in H4 is:
+=OFFSET(B3,6,3) // returns E9
+Example #3
+Below, we use OFFSET to return all values in the third column (North). The formula in H4 is:
+=OFFSET(B3,1,3,6) // returns E4:E9
+Example #4
+Below, we use OFFSET to return all values for May (fifth row). The formula in H4 is:
+=OFFSET(B3,5,1,1,4) // returns C8:F8
+Example #5
+Below, we use OFFSET to return April, May, and June values for the West region. The formula in H4 is:
+=OFFSET(B3,4,2,3,1) // returns D7:D9
+Example #6
+Below, we use OFFSET to return April, May, and June values for West and North. The formula in H4 is:
+=OFFSET(B3,4,2,3,2) // returns D7:E9
+Notes
+OFFSET only returns a reference, no cells are moved.
+Both rows and cols can be supplied as negative numbers to reverse their normal offset direction - negative cols offset to the left, and negative rows offset above.
+OFFSET is a "volatile function". Volatile functions can make larger and more complex workbooks run slowly.
+OFFSET will display the #REF! error value if the offset is outside the edge of the worksheet.
+When height or width is omitted, the height and width of reference is used.
+OFFSET can be used with any other function that expects to receive a reference.
+Excel documentation says height and width can't be negative, but negative values do work.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum last n rows 
+Sum last n columns 
+COUNTIFS with variable range 
+Unwrap column into fields 
+Average last n columns 
+Moving average formula 
+Copy value from every nth row 
+Define range based on cell value 
+Sum every n rows 
+Dynamic named range with OFFSET 
+Videos
+  
+How to create a dynamic named range with OFFSET 
+ Functions INDEX Function 
+ Links Microsoft OFFSET function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

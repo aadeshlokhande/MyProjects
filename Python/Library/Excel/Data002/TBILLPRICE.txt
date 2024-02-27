@@ -1,0 +1,10 @@
+Summary
+The Excel TBILLPRICE function returns the price per $100 face value for a Treasury bill.
+Purpose 
+Get price per $100 Treasury bill
+Return value 
+Price per $100
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.discount - The discount rate for the security.
+Syntax 
+=TBILLPRICE(settlement, maturity, discount)

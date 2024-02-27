@@ -1,0 +1,258 @@
+Excel NOT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NOT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+NOT Function
+Related functions 
+AND
+OR
+Summary
+The Excel NOT function returns the opposite of a given logical or Boolean value. When given TRUE, NOT returns FALSE. When given FALSE, NOT returns TRUE. Use the NOT function to reverse a logical value.
+Purpose 
+Reverse arguments or results
+Return value 
+A reversed logical value
+Arguments 
+logical - A value or logical expression that can be evaluated as TRUE or FALSE.
+Syntax 
+=NOT(logical)
+Usage notes 
+The NOT function returns the opposite of a given logical or Boolean value. Use the NOT function to reverse a Boolean value or the result of a logical expression.
+When given FALSE, NOT returns TRUE.
+When given TRUE, NOT returns FALSE.
+Example #1 - not green or red
+In the example shown, the formula in C5, copied down, is:
+=NOT(OR(B5="green",B5="red"))
+The literal translation of this formula is "NOT green or red". At each row, the formula returns TRUE if the color in column B is not green or red, and FALSE if the color is green or red.
+Example #2 - Not blank
+A common use case for the NOT function is to reverse the behavior of another function. For example, If cell A1 is blank (empty), the ISBLANK function will return TRUE:
+=ISBLANK(A1)  // TRUE if A1 is empty
+To reverse this behavior, wrap the NOT function around the ISBLANK function:
+=NOT(ISBLANK(A1))  // TRUE if A1 is NOT empty
+By adding NOT the output from ISBLANK is reversed. This formula will return TRUE when A1 is not empty and FALSE when A1 is empty. You might use this kind of test to only run a calculation if there is a value in A1:
+=IF(NOT(ISBLANK(A1)),B1/A1,"")
+Translation: if A1 is not blank, divide B1 by A1, otherwise return an empty string (""). This is an example of nesting one function inside another.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count cells that contain formulas 
+Highlight values not between X and Y 
+If not blank multiple cells 
+XLOOKUP with complex multiple criteria 
+If cell is not blank 
+FILTER with complex multiple criteria 
+Highlight column differences 
+Show checkmark if complete 
+If NOT this or that 
+Count cells that contain text 
+Videos
+  
+How to highlight rows using multiple criteria 
+ Functions AND FunctionOR Function 
+ Links Microsoft NOT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel NOT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NOT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+NOT Function
+Related functions 
+AND
+OR
+Summary
+The Excel NOT function returns the opposite of a given logical or Boolean value. When given TRUE, NOT returns FALSE. When given FALSE, NOT returns TRUE. Use the NOT function to reverse a logical value.
+Purpose 
+Reverse arguments or results
+Return value 
+A reversed logical value
+Arguments 
+logical - A value or logical expression that can be evaluated as TRUE or FALSE.
+Syntax 
+=NOT(logical)
+Usage notes 
+The NOT function returns the opposite of a given logical or Boolean value. Use the NOT function to reverse a Boolean value or the result of a logical expression.
+When given FALSE, NOT returns TRUE.
+When given TRUE, NOT returns FALSE.
+Example #1 - not green or red
+In the example shown, the formula in C5, copied down, is:
+=NOT(OR(B5="green",B5="red"))
+The literal translation of this formula is "NOT green or red". At each row, the formula returns TRUE if the color in column B is not green or red, and FALSE if the color is green or red.
+Example #2 - Not blank
+A common use case for the NOT function is to reverse the behavior of another function. For example, If cell A1 is blank (empty), the ISBLANK function will return TRUE:
+=ISBLANK(A1)  // TRUE if A1 is empty
+To reverse this behavior, wrap the NOT function around the ISBLANK function:
+=NOT(ISBLANK(A1))  // TRUE if A1 is NOT empty
+By adding NOT the output from ISBLANK is reversed. This formula will return TRUE when A1 is not empty and FALSE when A1 is empty. You might use this kind of test to only run a calculation if there is a value in A1:
+=IF(NOT(ISBLANK(A1)),B1/A1,"")
+Translation: if A1 is not blank, divide B1 by A1, otherwise return an empty string (""). This is an example of nesting one function inside another.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count cells that contain formulas 
+Highlight values not between X and Y 
+If not blank multiple cells 
+XLOOKUP with complex multiple criteria 
+If cell is not blank 
+FILTER with complex multiple criteria 
+Highlight column differences 
+Show checkmark if complete 
+If NOT this or that 
+Count cells that contain text 
+Videos
+  
+How to highlight rows using multiple criteria 
+ Functions AND FunctionOR Function 
+ Links Microsoft NOT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

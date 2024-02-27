@@ -1,0 +1,232 @@
+Excel LCM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LCM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+LCM Function
+Related functions 
+GCD
+Summary
+The Excel LCM function returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all supplied numbers. For example, =LCM(25,40) returns 200.
+Purpose 
+Get the least common multiple of numbers
+Return value 
+The least common multiple of all numbers
+Arguments 
+number1 - The first number.number2 - [optional] The second number.
+Syntax 
+=LCM(number1, [number2], ...)
+Usage notes 
+The LCM function returns the least common multiple of two or more numbers. The least common multiple is the smallest positive integer that is a multiple of all numbers supplied. Least common multiple is also known as the "least common denominator", and the "lowest common denominator". 
+The LCM function takes one or more arguments called number1, number2, number3, etc. All numeric values are expected to be integers. Numbers with decimal values will be truncated to integers before a result is calculated. Each argument can be a hardcoded constant, a cell reference, or a range that contains multiple values. The LCM function can accept up to 255 arguments total.
+Examples
+The least common multiple of 3 and 4 is 12, since 12 is the smallest multiple of both 3 and 4:
+=LCM(3,4) // returns 12
+The least common multiple of 3, 4, and 5 is 60, since 60 is the smallest multiple of all three numbers:
+=LCM(3,4,5) // returns 60
+Worksheet example
+In the example worksheet shown above, we are using two slightly different formulas to calculate the lowest common multiple. The first formula provides two separate cell references, and the second formula uses a single range that contains three values. In rows, 5 to 10, there are two values in columns B and C, and the formula in F5:F10 (copied down) is:
+=LCM(B5,C5) // 2 cell references
+In rows 11 to 15, there are three values in columns B, C, and D. The formula in F11:F15 (copied down) is:
+=LCM(B11:D11) // range with 3 values
+Because the LCM function evaluates empty cells as zero, the result returned by LCM will be zero if any cell references are empty. Therefore, it's important not to include empty cell references.
+Notes
+LCM evaluates empty cells as zero.
+LCM works with integers; decimal values are removed before calculation.
+If arguments contain a non-numeric value. LCM returns the #VALUE! error.
+To calculate the greatest common divisor, see the GCD function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions GCD Function 
+ Links Microsoft LCM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel LCM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LCM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+LCM Function
+Related functions 
+GCD
+Summary
+The Excel LCM function returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all supplied numbers. For example, =LCM(25,40) returns 200.
+Purpose 
+Get the least common multiple of numbers
+Return value 
+The least common multiple of all numbers
+Arguments 
+number1 - The first number.number2 - [optional] The second number.
+Syntax 
+=LCM(number1, [number2], ...)
+Usage notes 
+The LCM function returns the least common multiple of two or more numbers. The least common multiple is the smallest positive integer that is a multiple of all numbers supplied. Least common multiple is also known as the "least common denominator", and the "lowest common denominator". 
+The LCM function takes one or more arguments called number1, number2, number3, etc. All numeric values are expected to be integers. Numbers with decimal values will be truncated to integers before a result is calculated. Each argument can be a hardcoded constant, a cell reference, or a range that contains multiple values. The LCM function can accept up to 255 arguments total.
+Examples
+The least common multiple of 3 and 4 is 12, since 12 is the smallest multiple of both 3 and 4:
+=LCM(3,4) // returns 12
+The least common multiple of 3, 4, and 5 is 60, since 60 is the smallest multiple of all three numbers:
+=LCM(3,4,5) // returns 60
+Worksheet example
+In the example worksheet shown above, we are using two slightly different formulas to calculate the lowest common multiple. The first formula provides two separate cell references, and the second formula uses a single range that contains three values. In rows, 5 to 10, there are two values in columns B and C, and the formula in F5:F10 (copied down) is:
+=LCM(B5,C5) // 2 cell references
+In rows 11 to 15, there are three values in columns B, C, and D. The formula in F11:F15 (copied down) is:
+=LCM(B11:D11) // range with 3 values
+Because the LCM function evaluates empty cells as zero, the result returned by LCM will be zero if any cell references are empty. Therefore, it's important not to include empty cell references.
+Notes
+LCM evaluates empty cells as zero.
+LCM works with integers; decimal values are removed before calculation.
+If arguments contain a non-numeric value. LCM returns the #VALUE! error.
+To calculate the greatest common divisor, see the GCD function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions GCD Function 
+ Links Microsoft LCM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

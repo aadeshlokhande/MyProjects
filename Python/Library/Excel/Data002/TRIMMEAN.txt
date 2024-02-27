@@ -1,0 +1,10 @@
+Summary
+The Excel TRIMMEAN function calculates mean (average) while excluding outliers. The number of data points to exclude is provided as a percentage.
+Purpose 
+Calculate mean excluding outliers
+Return value 
+Calculated mean
+Arguments 
+array - Values to trim and average.percent - The number of data points to exclude from the calculation.
+Syntax 
+=TRIMMEAN(array, percent)

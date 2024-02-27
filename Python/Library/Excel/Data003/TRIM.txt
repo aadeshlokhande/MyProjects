@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel TRIM function strips extra spaces from text, leaving only a single space between words and no space characters at the start or end of the text.', 'Purpose' : 'Remove extra spaces from text', 'Return value' : 'Text with extra spaces removed.', 'Arguments' : 'text - The text from which to remove extra space.', 'Syntax' : '=TRIM(text)' }

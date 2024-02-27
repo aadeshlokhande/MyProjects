@@ -1,0 +1,330 @@
+Excel AVERAGE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AVERAGE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+AVERAGE Function
+Related functions 
+MEDIAN
+MODE
+AVERAGEA
+AVERAGEIF
+AVERAGEIFS
+Summary
+The Excel AVERAGE function calculates the average (arithmetic mean) of supplied numbers. AVERAGE can handle up to 255 individual arguments, which can include numbers, cell references, ranges, arrays, and constants.
+Purpose 
+Get the average of a group of numbers
+Return value 
+A number representing the average.
+Arguments 
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+Syntax 
+=AVERAGE(number1, [number2], ...)
+Usage notes 
+The AVERAGE function calculates the average of numbers provided as arguments. To calculate the average, Excel sums all numeric values and divides by the count of numeric values.
+AVERAGE takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can include numbers, cell references, ranges, arrays, and constants. Empty cells, and cells that contain text or logical values are ignored. However, zero (0) values are included. You can ignore zero (0) values with the AVERAGEIFS function, as explained below.
+The AVERAGE function will ignore logical values and numbers entered as text. If you need to include these values in the average, see the AVERAGEA function.
+If the values given to AVERAGE contain errors, AVERAGE returns an error. You can use the AGGREGATE function to ignore errors.
+Basic usage
+A typical way to use the AVERAGE function is to provide a range, as seen below. The formula in F3, copied down, is:
+=AVERAGE(C3:E3)
+At each new row, AVERAGE calculates an average of the quiz scores for each person. 
+Blank cells
+The AVERAGE function automatically ignores blank cells. In the screen below, notice cell C4 is empty, and AVERAGE simply ignores it and computes an average with B4 and D4 only:
+However, note the zero (0) value in C5 is included in the average, since it is a valid numeric value. To exclude zero values, use AVERAGEIF or AVERAGEIFS instead. In the example below,  AVERAGEIF is used to exclude zero values. Like the AVERAGE function, AVERAGEIF automatically excludes empty cells.
+=AVERAGEIF(B3:D3,">0") // exclude zero
+Mixed arguments
+The numbers provided to AVERAGE can be a mix of references and constants:
+=AVERAGE(A1,A2,4) // returns 3
+Average with criteria
+To calculate an average with criteria, use AVERAGEIF or AVERAGEIFS. In the example below, AVERAGEIFS is used to calculate the average score for Red and Blue groups:
+=AVERAGEIFS(C5:C14,D5:D14,"red") // red average
+=AVERAGEIFS(C5:C14,D5:D14,"blue") // blue average
+The AVERAGEIFS function can also apply multiple criteria.
+Average top 3
+By combining the AVERAGE function with the LARGE function, you can calculate an average of top n values. In the example below, the formula in column I computes an average of the top 3 quiz scores in each row:
+Detailed explanation here.
+Weighted average
+To calculate a weighted average, you'll want to use the SUMPRODUCT function, as shown below:
+Read a complete explanation here.
+Average without #DIV/0!
+The average function automatically ignores empty cells in a set of data. However, if the range contains no numeric values, AVERAGE will return a #DIV/0! error. To avoid this problem, you can check the count of values with the COUNT function and the IF function like this:
+=IF(COUNT(range)>0,AVERAGE(range),"") // check count first
+When the count of numeric values is zero, IF returns an empty string (""). When the count is greater than zero, AVERAGE returns the average. This example explains this idea in more detail.
+Manual average
+To calculate the average, AVERAGE sums all numeric values and divides by the count of numeric values. This behavior can be replicated with the SUM and COUNT functions manually like this:
+=SUM(range)/COUNT(range) // manual average calculation
+Notes
+AVERAGE automatically ignores empty cells and cells with text values.
+AVERAGE includes zero values. Use AVERAGEIF or AVERAGEIFS to ignore zero values.
+Arguments can be supplied as constants, ranges, named ranges, or cell references.
+AVERAGE can handle up to 255 total arguments.
+To see a quick average without a formula, you can use the status bar.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Moving average formula 
+Weighted average 
+Average if not blank 
+IF with other calculations 
+Average call time per month 
+Coefficient of variation 
+Average last n rows 
+Average and ignore errors 
+Average by month 
+Average numbers ignore zero 
+Videos
+  
+Excel formula error codes 
+How to replace nested IFs with VLOOKUP 
+How to create a dynamic named range with a Table 
+What is a dynamic named range 
+How to use the AVERAGEIFs function 
+How to use the AVERAGEIF function 
+How to calculate an average value 
+Create a dynamic reference to a named range 
+Create a dynamic reference to a worksheet 
+How to create 3D references 
+ Functions MEDIAN FunctionMODE FunctionAVERAGEA FunctionAVERAGEIF FunctionAVERAGEIFS Function 
+ Links Microsoft AVERAGE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel AVERAGE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AVERAGE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+AVERAGE Function
+Related functions 
+MEDIAN
+MODE
+AVERAGEA
+AVERAGEIF
+AVERAGEIFS
+Summary
+The Excel AVERAGE function calculates the average (arithmetic mean) of supplied numbers. AVERAGE can handle up to 255 individual arguments, which can include numbers, cell references, ranges, arrays, and constants.
+Purpose 
+Get the average of a group of numbers
+Return value 
+A number representing the average.
+Arguments 
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+Syntax 
+=AVERAGE(number1, [number2], ...)
+Usage notes 
+The AVERAGE function calculates the average of numbers provided as arguments. To calculate the average, Excel sums all numeric values and divides by the count of numeric values.
+AVERAGE takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can include numbers, cell references, ranges, arrays, and constants. Empty cells, and cells that contain text or logical values are ignored. However, zero (0) values are included. You can ignore zero (0) values with the AVERAGEIFS function, as explained below.
+The AVERAGE function will ignore logical values and numbers entered as text. If you need to include these values in the average, see the AVERAGEA function.
+If the values given to AVERAGE contain errors, AVERAGE returns an error. You can use the AGGREGATE function to ignore errors.
+Basic usage
+A typical way to use the AVERAGE function is to provide a range, as seen below. The formula in F3, copied down, is:
+=AVERAGE(C3:E3)
+At each new row, AVERAGE calculates an average of the quiz scores for each person. 
+Blank cells
+The AVERAGE function automatically ignores blank cells. In the screen below, notice cell C4 is empty, and AVERAGE simply ignores it and computes an average with B4 and D4 only:
+However, note the zero (0) value in C5 is included in the average, since it is a valid numeric value. To exclude zero values, use AVERAGEIF or AVERAGEIFS instead. In the example below,  AVERAGEIF is used to exclude zero values. Like the AVERAGE function, AVERAGEIF automatically excludes empty cells.
+=AVERAGEIF(B3:D3,">0") // exclude zero
+Mixed arguments
+The numbers provided to AVERAGE can be a mix of references and constants:
+=AVERAGE(A1,A2,4) // returns 3
+Average with criteria
+To calculate an average with criteria, use AVERAGEIF or AVERAGEIFS. In the example below, AVERAGEIFS is used to calculate the average score for Red and Blue groups:
+=AVERAGEIFS(C5:C14,D5:D14,"red") // red average
+=AVERAGEIFS(C5:C14,D5:D14,"blue") // blue average
+The AVERAGEIFS function can also apply multiple criteria.
+Average top 3
+By combining the AVERAGE function with the LARGE function, you can calculate an average of top n values. In the example below, the formula in column I computes an average of the top 3 quiz scores in each row:
+Detailed explanation here.
+Weighted average
+To calculate a weighted average, you'll want to use the SUMPRODUCT function, as shown below:
+Read a complete explanation here.
+Average without #DIV/0!
+The average function automatically ignores empty cells in a set of data. However, if the range contains no numeric values, AVERAGE will return a #DIV/0! error. To avoid this problem, you can check the count of values with the COUNT function and the IF function like this:
+=IF(COUNT(range)>0,AVERAGE(range),"") // check count first
+When the count of numeric values is zero, IF returns an empty string (""). When the count is greater than zero, AVERAGE returns the average. This example explains this idea in more detail.
+Manual average
+To calculate the average, AVERAGE sums all numeric values and divides by the count of numeric values. This behavior can be replicated with the SUM and COUNT functions manually like this:
+=SUM(range)/COUNT(range) // manual average calculation
+Notes
+AVERAGE automatically ignores empty cells and cells with text values.
+AVERAGE includes zero values. Use AVERAGEIF or AVERAGEIFS to ignore zero values.
+Arguments can be supplied as constants, ranges, named ranges, or cell references.
+AVERAGE can handle up to 255 total arguments.
+To see a quick average without a formula, you can use the status bar.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Moving average formula 
+Weighted average 
+Average if not blank 
+IF with other calculations 
+Average call time per month 
+Coefficient of variation 
+Average last n rows 
+Average and ignore errors 
+Average by month 
+Average numbers ignore zero 
+Videos
+  
+Excel formula error codes 
+How to replace nested IFs with VLOOKUP 
+How to create a dynamic named range with a Table 
+What is a dynamic named range 
+How to use the AVERAGEIFs function 
+How to use the AVERAGEIF function 
+How to calculate an average value 
+Create a dynamic reference to a named range 
+Create a dynamic reference to a worksheet 
+How to create 3D references 
+ Functions MEDIAN FunctionMODE FunctionAVERAGEA FunctionAVERAGEIF FunctionAVERAGEIFS Function 
+ Links Microsoft AVERAGE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

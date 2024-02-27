@@ -1,0 +1,673 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel NETWORKDAYS function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+NETWORKDAYS Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+NETWORKDAYS Function
+Related functions 
+
+NETWORKDAYS.INTL
+WORKDAY
+WORKDAY.INTL
+DAYS
+DATEDIF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel NETWORKDAYS function calculates the number of working days between two dates. NETWORKDAYS automatically excludes weekends (Saturday and Sunday) and can optionally exclude a list of holidays supplied as dates. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the number of working days between two dates
+
+
+
+Return value 
+
+A number representing days.
+
+
+
+Arguments 
+
+start_date - The start date.end_date - The end date.holidays - [optional] A list of non-work days as dates.
+
+
+
+Syntax 
+
+=NETWORKDAYS(start_date, end_date, [holidays])
+
+
+
+Usage notes 
+
+The NETWORKDAYS function returns the number of working days between two dates, automatically excluding weekends (Saturday and Sunday) and optionally excluding holidays provided as a list of dates. NETWORKDAYS can be used to calculate employee benefits that accrue based on days worked, the number of working days available during a project, the number of working days required to resolve a customer support issue, etc.
+NETWORKDAYS takes three arguments: start_date, end_date, and holidays. All three arguments must be valid Excel dates. Holidays are optional. To exclude holidays, provide a range of valid Excel dates for the holidays argument. Holidays are treated as non-working days and will not be included in the result.
+NETWORKDAYS includes both the start date and end date when calculating workdays. If you give NETWORKDAYS the same date for start date and end date, and the date is not a weekend or holiday, it will return 1.
+Example
+The general form of a NETWORKDAYS formula is as follows:
+
+=NETWORKDAYS(start,end) // exclude weekends
+=NETWORKDAYS(start,end,holidays) // exclude weekends + holidays
+
+In the example shown, holidays is the named range H5:H13, which contains non-working days in 2021. Columns E and F show the number of working days in each month of the year. The formula in cell E5 (Result 1) contains the NETWORKDAYS function but does not take into account holidays:
+
+=NETWORKDAYS(B5,C5) // returns 21
+
+The formula in cell F5 (Result 2) does take into account holidays:
+
+=NETWORKDAYS(B5,C5,holidays) // returns 19
+
+NETWORKDAYS will automatically exclude both Saturday and Sunday. This behavior is not configurable. If you need more flexibility, the NETWORKDAYS.INTL function provides a way to treat any day of the week as a non-working day.
+Notes
+
+NETWORKDAYS calculates whole workdays, ignoring any time values.
+NETWORKDAYS will automatically exclude both Saturday and Sunday.
+NETWORKDAYS includes both the start date and end date when calculating workdays.
+To create a custom weekend schedule, see the NETWORKDAYS.INTL function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Get work hours between dates 
+
+Working days left in month 
+
+Workdays per month 
+
+Add workdays no weekends 
+
+Add workdays to date custom weekends 
+
+Add business days to date 
+
+Get workdays between dates 
+
+Working days in year 
+
+Get work hours between dates and times 
+
+
+
+Videos
+  
+How to calculate the number of days between dates 
+
+Excel formula error codes 
+
+
+ Functions NETWORKDAYS.INTL FunctionWORKDAY FunctionWORKDAY.INTL FunctionDAYS FunctionDATEDIF Function 
+ Links Microsoft NETWORKDAYS function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel NETWORKDAYS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NETWORKDAYS Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+NETWORKDAYS Function
+Related functions 
+NETWORKDAYS.INTL
+WORKDAY
+WORKDAY.INTL
+DAYS
+DATEDIF
+Summary
+The Excel NETWORKDAYS function calculates the number of working days between two dates. NETWORKDAYS automatically excludes weekends (Saturday and Sunday) and can optionally exclude a list of holidays supplied as dates. 
+Purpose 
+Get the number of working days between two dates
+Return value 
+A number representing days.
+Arguments 
+start_date - The start date.end_date - The end date.holidays - [optional] A list of non-work days as dates.
+Syntax 
+=NETWORKDAYS(start_date, end_date, [holidays])
+Usage notes 
+The NETWORKDAYS function returns the number of working days between two dates, automatically excluding weekends (Saturday and Sunday) and optionally excluding holidays provided as a list of dates. NETWORKDAYS can be used to calculate employee benefits that accrue based on days worked, the number of working days available during a project, the number of working days required to resolve a customer support issue, etc.
+NETWORKDAYS takes three arguments: start_date, end_date, and holidays. All three arguments must be valid Excel dates. Holidays are optional. To exclude holidays, provide a range of valid Excel dates for the holidays argument. Holidays are treated as non-working days and will not be included in the result.
+NETWORKDAYS includes both the start date and end date when calculating workdays. If you give NETWORKDAYS the same date for start date and end date, and the date is not a weekend or holiday, it will return 1.
+Example
+The general form of a NETWORKDAYS formula is as follows:
+=NETWORKDAYS(start,end) // exclude weekends
+=NETWORKDAYS(start,end,holidays) // exclude weekends + holidays
+In the example shown, holidays is the named range H5:H13, which contains non-working days in 2021. Columns E and F show the number of working days in each month of the year. The formula in cell E5 (Result 1) contains the NETWORKDAYS function but does not take into account holidays:
+=NETWORKDAYS(B5,C5) // returns 21
+The formula in cell F5 (Result 2) does take into account holidays:
+=NETWORKDAYS(B5,C5,holidays) // returns 19
+NETWORKDAYS will automatically exclude both Saturday and Sunday. This behavior is not configurable. If you need more flexibility, the NETWORKDAYS.INTL function provides a way to treat any day of the week as a non-working day.
+Notes
+NETWORKDAYS calculates whole workdays, ignoring any time values.
+NETWORKDAYS will automatically exclude both Saturday and Sunday.
+NETWORKDAYS includes both the start date and end date when calculating workdays.
+To create a custom weekend schedule, see the NETWORKDAYS.INTL function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get work hours between dates 
+Working days left in month 
+Workdays per month 
+Add workdays no weekends 
+Add workdays to date custom weekends 
+Add business days to date 
+Get workdays between dates 
+Working days in year 
+Get work hours between dates and times 
+Videos
+  
+How to calculate the number of days between dates 
+Excel formula error codes 
+ Functions NETWORKDAYS.INTL FunctionWORKDAY FunctionWORKDAY.INTL FunctionDAYS FunctionDATEDIF Function 
+ Links Microsoft NETWORKDAYS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

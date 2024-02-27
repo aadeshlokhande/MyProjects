@@ -1,0 +1,646 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel EXACT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+EXACT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Text
+
+
+EXACT Function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel EXACT function compares two text strings, taking into account upper and lower case characters, and returns TRUE if they are the same, and FALSE if not. EXACT is case-sensitive.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Compare two text strings
+
+
+
+Return value 
+
+A boolean value  (TRUE or FALSE)
+
+
+
+Arguments 
+
+text1 - The first text string to compare.text2 - The second text string to compare.
+
+
+
+Syntax 
+
+=EXACT(text1, text2)
+
+
+
+Usage notes 
+
+The EXACT function compares two text strings in a case-sensitive manner. If the two strings are exactly the same, EXACT returns TRUE. If the two strings are not the same (taking into account upper and lower case) EXACT returns FALSE.
+The EXACT function takes two arguments, text1 and text2, which should be valid text strings. If these values are entered directly into the function, they should be enclosed in double quotes ("").
+Examples
+Below are two examples of the EXACT function used with hardcoded strings. In the first example, the strings are identical, in the second example, the only difference is the capital "A":
+
+=EXACT("apple","apple") // returns TRUE
+=EXACT("Apple","apple") // returns FALSE
+
+In the example shown, the formula in D6, copied down the column, is:
+
+=EXACT(B6,C6)
+
+You can also use a normal equals sign (=) in a formula, but the comparison is not case sensitive:
+
+=("Apple"="apple") // returns TRUE
+
+To count cells that contain specific text, taking into account upper and lower case characters, you can combine EXACT together with the SUMPRODUCT function like this:
+
+=SUMPRODUCT(--EXACT(value,range))
+
+Detailed explanation here.
+Notes
+
+The standard equals to (=) operator is not case-sensitive.
+EXACT is meant for text values, and will convert numeric values to text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum if case-sensitive 
+
+XLOOKUP case-sensitive  
+
+Highlight column differences 
+
+Cell begins with 
+
+Multiple cells have same value case sensitive 
+
+Match long text 
+
+Case-sensitive lookup with SUMPRODUCT 
+
+Multiple cells are equal 
+
+Count cells equal to case sensitive 
+
+Data validation must begin with 
+
+
+ Links Microsoft EXACT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel EXACT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+EXACT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+EXACT Function 
+Summary
+The Excel EXACT function compares two text strings, taking into account upper and lower case characters, and returns TRUE if they are the same, and FALSE if not. EXACT is case-sensitive.
+Purpose 
+Compare two text strings
+Return value 
+A boolean value  (TRUE or FALSE)
+Arguments 
+text1 - The first text string to compare.text2 - The second text string to compare.
+Syntax 
+=EXACT(text1, text2)
+Usage notes 
+The EXACT function compares two text strings in a case-sensitive manner. If the two strings are exactly the same, EXACT returns TRUE. If the two strings are not the same (taking into account upper and lower case) EXACT returns FALSE.
+The EXACT function takes two arguments, text1 and text2, which should be valid text strings. If these values are entered directly into the function, they should be enclosed in double quotes ("").
+Examples
+Below are two examples of the EXACT function used with hardcoded strings. In the first example, the strings are identical, in the second example, the only difference is the capital "A":
+=EXACT("apple","apple") // returns TRUE
+=EXACT("Apple","apple") // returns FALSE
+In the example shown, the formula in D6, copied down the column, is:
+=EXACT(B6,C6)
+You can also use a normal equals sign (=) in a formula, but the comparison is not case sensitive:
+=("Apple"="apple") // returns TRUE
+To count cells that contain specific text, taking into account upper and lower case characters, you can combine EXACT together with the SUMPRODUCT function like this:
+=SUMPRODUCT(--EXACT(value,range))
+Detailed explanation here.
+Notes
+The standard equals to (=) operator is not case-sensitive.
+EXACT is meant for text values, and will convert numeric values to text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum if case-sensitive 
+XLOOKUP case-sensitive  
+Highlight column differences 
+Cell begins with 
+Multiple cells have same value case sensitive 
+Match long text 
+Case-sensitive lookup with SUMPRODUCT 
+Multiple cells are equal 
+Count cells equal to case sensitive 
+Data validation must begin with 
+ Links Microsoft EXACT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

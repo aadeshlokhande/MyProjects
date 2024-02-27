@@ -1,0 +1,616 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel BINOM.DIST function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+BINOM.DIST Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2010
+
+
+
+
+Statistical
+
+
+BINOM.DIST Function
+Related functions 
+
+BINOM.DIST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel BINOM.DIST function returns the individual term binomial distribution probability. You can use BINOM.DIST to calculate probabilities that an event will occur a certain number of times in a given number of trials.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get binomial distribution probability
+
+
+
+Return value 
+
+Calculated probability
+
+
+
+Arguments 
+
+number_s - The number of successes.trials - The number of independent trials.probability_s - The probability of success on each trial.cumulative - TRUE = cumulative distribution function, FALSE=probability mass function.
+
+
+
+Syntax 
+
+=BINOM.DIST(number_s, trials, probability_s, cumulative)
+
+
+
+Usage notes 
+
+The BINOM.DIST function returns the individual term binomial distribution probability. You can use BINOM.DIST to calculate probabilities that an event will occur a certain number of times in a given number of trials. BINOM.DIST returns probability as a decimal number between 0 and 1.
+Binary data occurs when an observation can be placed into only two categories. For example, when tossing a coin, the result can only be heads or tails. Or, when rolling a die, the result can either be 6 or not 6.
+Example
+In the example shown, the BINOM.DIST function is used to calculate the probability of rolling a 6 with a die. Since a die has six sides, the probability of rolling a 6 is 1/6, or 0.1667. Column B holds the number of trials, and the formula in C5, copied down, is:
+
+=BINOM.DIST(B5,10,0.1667,TRUE) // returns 0.1614
+
+which returns the probability of rolling zero 6s in 10 trials, about 16%. The probability of rolling one 6 in 10 trials is about 32%.
+The formula in D5 is the same, except the cumulative argument has been set to TRUE. This causes BINOM.DIST to calculate the probability that there are "at most" X successes in a given number of trials. The formula in D5, copied down, is:
+
+=BINOM.DIST(B5,10,0.1667,TRUE) // returns 0.1614
+
+In cell D5, the result is the same as C5 because the probability of rolling at most zero 6s is the same as the probability of rolling zero 6s. In cell D8, the result is 0.9302, which means the probability of rolling at most three 6s in 10 rolls is about 93%.
+Notes
+
+BINOM.DIST returns probability as a decimal number between 0 and 1.
+Number_s should be an integer, and will be truncated to an integer if not.
+Trials should be an integer, and will be truncated to an integer if not.
+If number_s, trials, or probability_s are not numbers, BINOM.DIST returns a #VALUE! error.
+If number_s < 0 or number_s > trials, BINOM.DIST returns a #NUM! error.
+If probability_s < 0 or probability_s > 1, BINOM.DIST returns a #NUM! error value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions BINOM.DIST Function 
+ Links Microsoft BINOM.DIST function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel BINOM.DIST function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+BINOM.DIST Function 
+Previous 
+Next 
+ 
+Excel 2010
+Statistical
+BINOM.DIST Function
+Related functions 
+BINOM.DIST
+Summary
+The Excel BINOM.DIST function returns the individual term binomial distribution probability. You can use BINOM.DIST to calculate probabilities that an event will occur a certain number of times in a given number of trials.
+Purpose 
+Get binomial distribution probability
+Return value 
+Calculated probability
+Arguments 
+number_s - The number of successes.trials - The number of independent trials.probability_s - The probability of success on each trial.cumulative - TRUE = cumulative distribution function, FALSE=probability mass function.
+Syntax 
+=BINOM.DIST(number_s, trials, probability_s, cumulative)
+Usage notes 
+The BINOM.DIST function returns the individual term binomial distribution probability. You can use BINOM.DIST to calculate probabilities that an event will occur a certain number of times in a given number of trials. BINOM.DIST returns probability as a decimal number between 0 and 1.
+Binary data occurs when an observation can be placed into only two categories. For example, when tossing a coin, the result can only be heads or tails. Or, when rolling a die, the result can either be 6 or not 6.
+Example
+In the example shown, the BINOM.DIST function is used to calculate the probability of rolling a 6 with a die. Since a die has six sides, the probability of rolling a 6 is 1/6, or 0.1667. Column B holds the number of trials, and the formula in C5, copied down, is:
+=BINOM.DIST(B5,10,0.1667,TRUE) // returns 0.1614
+which returns the probability of rolling zero 6s in 10 trials, about 16%. The probability of rolling one 6 in 10 trials is about 32%.
+The formula in D5 is the same, except the cumulative argument has been set to TRUE. This causes BINOM.DIST to calculate the probability that there are "at most" X successes in a given number of trials. The formula in D5, copied down, is:
+=BINOM.DIST(B5,10,0.1667,TRUE) // returns 0.1614
+In cell D5, the result is the same as C5 because the probability of rolling at most zero 6s is the same as the probability of rolling zero 6s. In cell D8, the result is 0.9302, which means the probability of rolling at most three 6s in 10 rolls is about 93%.
+Notes
+BINOM.DIST returns probability as a decimal number between 0 and 1.
+Number_s should be an integer, and will be truncated to an integer if not.
+Trials should be an integer, and will be truncated to an integer if not.
+If number_s, trials, or probability_s are not numbers, BINOM.DIST returns a #VALUE! error.
+If number_s < 0 or number_s > trials, BINOM.DIST returns a #NUM! error.
+If probability_s < 0 or probability_s > 1, BINOM.DIST returns a #NUM! error value.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions BINOM.DIST Function 
+ Links Microsoft BINOM.DIST function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,310 @@
+Excel SORTBY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SORTBY Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+SORTBY Function
+Related functions 
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+Summary
+The Excel SORTBY function sorts the contents of a range or array based on the values from another range or array. The range or array used to sort does not need to appear in results.
+Purpose 
+Sorts range or array by column
+Return value 
+Sorted array
+Arguments 
+array - Range or array to sort.by_array - Range or array to sort by.sort_order - [optional] Sort order. 1 = ascending (default), -1 = descending.array/order - [optional] Additional array and sort order pairs.
+Syntax 
+=SORTBY(array, by_array, [sort_order], [array/order], ...)
+Usage notes 
+The Excel SORTBY function sorts the contents of a range or array based on the values from another range or array with a formula. The result from SORTBY is a sorted copy of the data which will "spill" onto the worksheet into a range. If values in the source data change, the output from SORTBY will update automatically. 
+The SORTBY function takes three primary arguments: array, by_array, and sort_order. The first argument, array, is the range or array to be sorted. The second argument, by_array, contains the values to be used for sorting. These values can come from an existing range, or from an array created by a formula. Note that by_array values do not need to be part of the source data, and do not need to appear in the output. However, by_array must have dimensions compatible with array. For example, if array contains ten rows, by_array should also contain ten rows. Finally, the optional sort_order argument determines sort direction. Use 1 for ascending order and -1 for descending order. By default, SORTBY will sort in ascending order. To sort by more than one level, provide additional sort_by and sort_order arguments in pairs.
+Unlike the SORT function, the SORTBY function does not have an argument that explicitly controls sorting by rows versus sorting by columns. Instead, the range or array provided for the by_array argument will determine the sort orientation automatically. When by_array is a vertical range, SORTBY sorts vertically by rows. When by_array is a horizontal range, SORTBY sorts horizontally by columns.
+Basic example
+To sort range1 in ascending order using values in range2:
+=SORTBY(range1,range2// sort range1 by range2, ascending
+=SORTBY(range1,range2,1)// sort range1 by range2, ascending
+To switch the sort order to descending, use:
+=SORTBY(range1,range2,-1)// sort range1 by range2, descending
+Sort with arrays
+The SORTBY function can be used with arrays and array constants as well. In the example below, we sort the first four letters in the alphabet in a custom order using the numeric values in the second array. By default, sort order is ascending:
+=SORTBY({"a","b","c","d"},{3,4,2,1}) // returns {"d","c","a","b"}
+Using negative one (-1) for sort order will sort the letters in descending order based on the numeric values in the second array:
+=SORTBY({"a","b","c","d"},{3,4,2,1},-1) // {"b","a","c","d"}
+Ranges and arrays can be mixed. The formula below will sort the values in A1:A5 using the array constant provided:
+=SORTBY(A1:A5,{3;5;2;1;4})
+Note the dimensions or the range argument must be compatible with those of the by_array argument. In this case, both contain five rows.
+Example - sort by score
+In the example shown above, the formula in E5 is:
+=SORTBY(B5:B14,C5:C14,-1) // sort by grades descending
+The output in E5:E14 is the list of names sorted by scores in descending order. To sort by grades in ascending order use:
+=SORTBY(B5:B14,C5:C14,1) // sort by grades ascending
+Sort by two levels
+To sort a set of data by two levels, the generic formula is:
+=SORTBY(array,by_array1,sort_order1,by_array2,sort_order2)
+where array is a range that contains all data to be sorted, and by_array1 and by_array2 are compatible ranges or arrays, and sort_order1 and sort_order2 are provided as 1 (ascending) or -1 (descending). Example: sort by two columns.
+Video: Basic SORTBY function example
+Notes
+All array arguments must have compatible dimensions or SORTBY will return #VALUE!
+The by_array arguments can only be one row or one column.
+The sort_order argument can only be -1 (descending) or 1 (ascending).
+If no value is provided for sort_order, SORTBY will sort in ascending order.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sort by custom list 
+Random numbers without duplicates 
+Sort text by length 
+Random list of names 
+List upcoming birthdays 
+Sort values by columns 
+Random sort 
+Reverse a list or range 
+Sort by two columns 
+Sort birthdays by month and day 
+Videos
+  
+Basic SORTBY function example 
+New dynamic array functions in Excel 
+SORT and SORTBY with multiple columns 
+Sort by custom list with SORTBY 
+How to perform a random sort 
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft SORTBY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SORTBY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SORTBY Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+SORTBY Function
+Related functions 
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+Summary
+The Excel SORTBY function sorts the contents of a range or array based on the values from another range or array. The range or array used to sort does not need to appear in results.
+Purpose 
+Sorts range or array by column
+Return value 
+Sorted array
+Arguments 
+array - Range or array to sort.by_array - Range or array to sort by.sort_order - [optional] Sort order. 1 = ascending (default), -1 = descending.array/order - [optional] Additional array and sort order pairs.
+Syntax 
+=SORTBY(array, by_array, [sort_order], [array/order], ...)
+Usage notes 
+The Excel SORTBY function sorts the contents of a range or array based on the values from another range or array with a formula. The result from SORTBY is a sorted copy of the data which will "spill" onto the worksheet into a range. If values in the source data change, the output from SORTBY will update automatically. 
+The SORTBY function takes three primary arguments: array, by_array, and sort_order. The first argument, array, is the range or array to be sorted. The second argument, by_array, contains the values to be used for sorting. These values can come from an existing range, or from an array created by a formula. Note that by_array values do not need to be part of the source data, and do not need to appear in the output. However, by_array must have dimensions compatible with array. For example, if array contains ten rows, by_array should also contain ten rows. Finally, the optional sort_order argument determines sort direction. Use 1 for ascending order and -1 for descending order. By default, SORTBY will sort in ascending order. To sort by more than one level, provide additional sort_by and sort_order arguments in pairs.
+Unlike the SORT function, the SORTBY function does not have an argument that explicitly controls sorting by rows versus sorting by columns. Instead, the range or array provided for the by_array argument will determine the sort orientation automatically. When by_array is a vertical range, SORTBY sorts vertically by rows. When by_array is a horizontal range, SORTBY sorts horizontally by columns.
+Basic example
+To sort range1 in ascending order using values in range2:
+=SORTBY(range1,range2// sort range1 by range2, ascending
+=SORTBY(range1,range2,1)// sort range1 by range2, ascending
+To switch the sort order to descending, use:
+=SORTBY(range1,range2,-1)// sort range1 by range2, descending
+Sort with arrays
+The SORTBY function can be used with arrays and array constants as well. In the example below, we sort the first four letters in the alphabet in a custom order using the numeric values in the second array. By default, sort order is ascending:
+=SORTBY({"a","b","c","d"},{3,4,2,1}) // returns {"d","c","a","b"}
+Using negative one (-1) for sort order will sort the letters in descending order based on the numeric values in the second array:
+=SORTBY({"a","b","c","d"},{3,4,2,1},-1) // {"b","a","c","d"}
+Ranges and arrays can be mixed. The formula below will sort the values in A1:A5 using the array constant provided:
+=SORTBY(A1:A5,{3;5;2;1;4})
+Note the dimensions or the range argument must be compatible with those of the by_array argument. In this case, both contain five rows.
+Example - sort by score
+In the example shown above, the formula in E5 is:
+=SORTBY(B5:B14,C5:C14,-1) // sort by grades descending
+The output in E5:E14 is the list of names sorted by scores in descending order. To sort by grades in ascending order use:
+=SORTBY(B5:B14,C5:C14,1) // sort by grades ascending
+Sort by two levels
+To sort a set of data by two levels, the generic formula is:
+=SORTBY(array,by_array1,sort_order1,by_array2,sort_order2)
+where array is a range that contains all data to be sorted, and by_array1 and by_array2 are compatible ranges or arrays, and sort_order1 and sort_order2 are provided as 1 (ascending) or -1 (descending). Example: sort by two columns.
+Video: Basic SORTBY function example
+Notes
+All array arguments must have compatible dimensions or SORTBY will return #VALUE!
+The by_array arguments can only be one row or one column.
+The sort_order argument can only be -1 (descending) or 1 (ascending).
+If no value is provided for sort_order, SORTBY will sort in ascending order.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sort by custom list 
+Random numbers without duplicates 
+Sort text by length 
+Random list of names 
+List upcoming birthdays 
+Sort values by columns 
+Random sort 
+Reverse a list or range 
+Sort by two columns 
+Sort birthdays by month and day 
+Videos
+  
+Basic SORTBY function example 
+New dynamic array functions in Excel 
+SORT and SORTBY with multiple columns 
+Sort by custom list with SORTBY 
+How to perform a random sort 
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft SORTBY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,302 @@
+Excel ROUND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ROUND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+ROUND Function
+Related functions 
+ROUNDUP
+ROUNDDOWN
+MROUND
+CEILING
+FLOOR
+INT
+TRUNC
+Summary
+The Excel ROUND function returns a number rounded to a given number of digits. The ROUND function can round to the right or left of the decimal point.
+Purpose 
+Round a number to a given number of digits
+Return value 
+A rounded number.
+Arguments 
+number - The number to round.num_digits - The place at which number should be rounded.
+Syntax 
+=ROUND(number, num_digits)
+Usage notes 
+The ROUND function rounds a number to a given number of places. ROUND rounds up when the last significant digit is 5 or greater, and rounds down when the last significant digit is less than 5.
+ROUND takes two arguments, number and num_digits. Number is the number to be rounded, and num_digits is the place at which number should be rounded. When num_digits is greater than zero, the ROUND function rounds on the right side of the decimal point. When num_digits is less or equal to zero, the ROUND function rounds on the left side of the decimal point. Use zero (0) for num_digits to round to the nearest integer. This behavior is summarized in the table below:  
+Digits
+Behavior
+>0
+Round to nearest .1, .01, .001, etc.
+<0
+Round to nearest 10, 100, 1000, etc.
+=0
+Round to nearest 1
+Round to right
+To round values to the right of the decimal point, use a positive number for digits:  
+=ROUND(A1,1) // Round to 1 decimal place
+=ROUND(A1,2) // Round to 2 decimal places
+=ROUND(A1,3) // Round to 3 decimal places
+=ROUND(A1,4) // Round to 4 decimal places
+Round to left
+To round down values to the left of the decimal point, use zero or a negative number for digits:  
+=ROUND(A1,0) // Round to nearest whole number
+=ROUND(A1,-1) // Round to nearest 10
+=ROUND(A1,-2) // Round to nearest 100
+=ROUND(A1,-3) // Round to nearest 1000
+=ROUND(A1,-4) // Round to nearest 10000
+Nesting inside ROUND
+Other operations and functions can be nested inside the ROUND function. For example, to round down the result of A1 divided by B1, you can ROUND in a formula like this:
+=ROUND(A1/B1,0) // round result to nearest integer
+Any formula that returns a numeric result can be nested inside the ROUND function.
+Other rounding functions
+Excel provides a number of rounding functions, each with a different behavior:
+To round with standard rules, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+Notes
+The ROUND function rounds to a specified level of precision, determined by num_digits.
+If number is already rounded to the given number of places, no rounding occurs.
+If number is not numeric, ROUND returns a #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Round to nearest 1000 
+Round a number to n significant digits 
+Round a number 
+Round a price to end in .99 
+ Functions ROUNDUP FunctionROUNDDOWN FunctionMROUND FunctionCEILING FunctionFLOOR FunctionINT FunctionTRUNC Function 
+ Links Microsoft ROUND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ROUND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ROUND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+ROUND Function
+Related functions 
+ROUNDUP
+ROUNDDOWN
+MROUND
+CEILING
+FLOOR
+INT
+TRUNC
+Summary
+The Excel ROUND function returns a number rounded to a given number of digits. The ROUND function can round to the right or left of the decimal point.
+Purpose 
+Round a number to a given number of digits
+Return value 
+A rounded number.
+Arguments 
+number - The number to round.num_digits - The place at which number should be rounded.
+Syntax 
+=ROUND(number, num_digits)
+Usage notes 
+The ROUND function rounds a number to a given number of places. ROUND rounds up when the last significant digit is 5 or greater, and rounds down when the last significant digit is less than 5.
+ROUND takes two arguments, number and num_digits. Number is the number to be rounded, and num_digits is the place at which number should be rounded. When num_digits is greater than zero, the ROUND function rounds on the right side of the decimal point. When num_digits is less or equal to zero, the ROUND function rounds on the left side of the decimal point. Use zero (0) for num_digits to round to the nearest integer. This behavior is summarized in the table below:  
+Digits
+Behavior
+>0
+Round to nearest .1, .01, .001, etc.
+<0
+Round to nearest 10, 100, 1000, etc.
+=0
+Round to nearest 1
+Round to right
+To round values to the right of the decimal point, use a positive number for digits:  
+=ROUND(A1,1) // Round to 1 decimal place
+=ROUND(A1,2) // Round to 2 decimal places
+=ROUND(A1,3) // Round to 3 decimal places
+=ROUND(A1,4) // Round to 4 decimal places
+Round to left
+To round down values to the left of the decimal point, use zero or a negative number for digits:  
+=ROUND(A1,0) // Round to nearest whole number
+=ROUND(A1,-1) // Round to nearest 10
+=ROUND(A1,-2) // Round to nearest 100
+=ROUND(A1,-3) // Round to nearest 1000
+=ROUND(A1,-4) // Round to nearest 10000
+Nesting inside ROUND
+Other operations and functions can be nested inside the ROUND function. For example, to round down the result of A1 divided by B1, you can ROUND in a formula like this:
+=ROUND(A1/B1,0) // round result to nearest integer
+Any formula that returns a numeric result can be nested inside the ROUND function.
+Other rounding functions
+Excel provides a number of rounding functions, each with a different behavior:
+To round with standard rules, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+Notes
+The ROUND function rounds to a specified level of precision, determined by num_digits.
+If number is already rounded to the given number of places, no rounding occurs.
+If number is not numeric, ROUND returns a #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Round to nearest 1000 
+Round a number to n significant digits 
+Round a number 
+Round a price to end in .99 
+ Functions ROUNDUP FunctionROUNDDOWN FunctionMROUND FunctionCEILING FunctionFLOOR FunctionINT FunctionTRUNC Function 
+ Links Microsoft ROUND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

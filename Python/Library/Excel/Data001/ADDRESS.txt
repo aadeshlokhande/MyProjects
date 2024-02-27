@@ -1,0 +1,258 @@
+Excel ADDRESS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ADDRESS Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+ADDRESS Function
+Related functions 
+CELL
+INFO
+Summary
+The Excel ADDRESS function returns the address for a cell based on a given row and column number. For example, =ADDRESS(1,1) returns $A$1. ADDRESS can return an address in relative, mixed, or absolute format, and can be used to construct a cell reference inside a formula.
+Purpose 
+Create a cell address from a row and column number
+Return value 
+A cell address in the current or given worksheet.
+Arguments 
+row_num - The row number to use in the cell address.col_num - The column number to use in the cell address.abs_num - [optional] The address type (i.e. absolute, relative). Defaults to absolute.a1 - [optional] The reference style, A1 vs R1C1. Defaults to A1 style.sheet - [optional] The name of the worksheet to use. Defaults to current sheet.
+Syntax 
+=ADDRESS(row_num, col_num, [abs_num], [a1], [sheet])
+Usage notes 
+The ADDRESS function returns the address for a cell based on a given row and column number. For example, =ADDRESS(1,1) returns $A$1. ADDRESS can return a relative, mixed, or absolute reference, and can be used to construct a cell reference inside a formula. Note that ADDRESS returns a reference as a text value. If you want to use this text inside a formula reference, you will need to coerce the text to a proper reference with the INDIRECT function.
+Note: ADDRESS is a special purpose function and is not necessary in most formulas. For example, to retrieve a value at a specific row and column location, you can use INDEX and MATCH.
+The ADDRESS function takes five arguments: row, column, abs_num, a1, and sheet_text. Row and column are required, other arguments are optional. The abs_num argument controls whether the address returned is relative, mixed, or absolute, with a default value of 1 for absolute. The a1 argument is a Boolean that toggles between A1 and R1C1 style references with a default value of TRUE for A1 style references. Finally, the sheet_text argument is meant to hold a sheet name that will be prepended to the address.
+ABS options
+The table below shows the options available for the abs_num argument for returning a relative, mixed, or absolute address. 
+abs_num
+Result
+1 (or omitted)
+Absolute ($A$1)
+2
+Absolute row, relative column (A$1)
+3
+Relative row, absolute column ($A1)
+4
+Relative (A1)
+Examples
+Use ADDRESS to create an address from a given row and column number. For example:
+=ADDRESS(1,1) // returns $A$1
+=ADDRESS(1,1,4) // returns A1
+=ADDRESS(100,26,4) // returns Z100
+=ADDRESS(1,1,1,FALSE) // R1C1
+=ADDRESS(1,1,4,TRUE,"Sheet1") // returns Sheet1!A1
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get address of named range or table 
+Get cell content at given row and column 
+COUNTIFS with variable range 
+Convert column number to letter 
+Address of first cell in range 
+Address of last cell in range 
+ Functions CELL FunctionINFO Function 
+ Links Microsoft ADDRESS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ADDRESS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ADDRESS Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+ADDRESS Function
+Related functions 
+CELL
+INFO
+Summary
+The Excel ADDRESS function returns the address for a cell based on a given row and column number. For example, =ADDRESS(1,1) returns $A$1. ADDRESS can return an address in relative, mixed, or absolute format, and can be used to construct a cell reference inside a formula.
+Purpose 
+Create a cell address from a row and column number
+Return value 
+A cell address in the current or given worksheet.
+Arguments 
+row_num - The row number to use in the cell address.col_num - The column number to use in the cell address.abs_num - [optional] The address type (i.e. absolute, relative). Defaults to absolute.a1 - [optional] The reference style, A1 vs R1C1. Defaults to A1 style.sheet - [optional] The name of the worksheet to use. Defaults to current sheet.
+Syntax 
+=ADDRESS(row_num, col_num, [abs_num], [a1], [sheet])
+Usage notes 
+The ADDRESS function returns the address for a cell based on a given row and column number. For example, =ADDRESS(1,1) returns $A$1. ADDRESS can return a relative, mixed, or absolute reference, and can be used to construct a cell reference inside a formula. Note that ADDRESS returns a reference as a text value. If you want to use this text inside a formula reference, you will need to coerce the text to a proper reference with the INDIRECT function.
+Note: ADDRESS is a special purpose function and is not necessary in most formulas. For example, to retrieve a value at a specific row and column location, you can use INDEX and MATCH.
+The ADDRESS function takes five arguments: row, column, abs_num, a1, and sheet_text. Row and column are required, other arguments are optional. The abs_num argument controls whether the address returned is relative, mixed, or absolute, with a default value of 1 for absolute. The a1 argument is a Boolean that toggles between A1 and R1C1 style references with a default value of TRUE for A1 style references. Finally, the sheet_text argument is meant to hold a sheet name that will be prepended to the address.
+ABS options
+The table below shows the options available for the abs_num argument for returning a relative, mixed, or absolute address. 
+abs_num
+Result
+1 (or omitted)
+Absolute ($A$1)
+2
+Absolute row, relative column (A$1)
+3
+Relative row, absolute column ($A1)
+4
+Relative (A1)
+Examples
+Use ADDRESS to create an address from a given row and column number. For example:
+=ADDRESS(1,1) // returns $A$1
+=ADDRESS(1,1,4) // returns A1
+=ADDRESS(100,26,4) // returns Z100
+=ADDRESS(1,1,1,FALSE) // R1C1
+=ADDRESS(1,1,4,TRUE,"Sheet1") // returns Sheet1!A1
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get address of named range or table 
+Get cell content at given row and column 
+COUNTIFS with variable range 
+Convert column number to letter 
+Address of first cell in range 
+Address of last cell in range 
+ Functions CELL FunctionINFO Function 
+ Links Microsoft ADDRESS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

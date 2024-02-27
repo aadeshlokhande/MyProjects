@@ -1,0 +1,10 @@
+Summary
+The Excel PERCENTILE.INC function calculates the "kth percentile" for a set of data where k is 0 to 1, inclusive. A percentile is a value below which a given percentage of values in a data set fall. You can use PERCENTILE.INC to determine the 90th percentile, the 80th percentile, etc.
+Purpose 
+Get kth percentile
+Return value 
+Calculated percentile for k
+Arguments 
+array - Data values.k - Number representing kth percentile.
+Syntax 
+=PERCENTILE.INC(array, k)

@@ -1,0 +1,252 @@
+Excel CONCATENATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CONCATENATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+CONCATENATE Function
+Related functions 
+CONCAT
+TEXTJOIN
+Summary
+The Excel CONCATENATE function concatenates (joins) join up to 30 values together and returns the result as text. In Excel 2019 and later, the CONCAT and TEXTJOIN functions are better, more flexible alternatives.
+Purpose 
+Join text together
+Return value 
+Text joined together.
+Arguments 
+text1 - The first text value to join together.text2 - The second text value to join together.text3 - [optional] The third text value to join together.
+Syntax 
+=CONCATENATE(text1, text2, [text3], ...)
+Usage notes 
+The CONCATENATE function concatenates (joins) join up to 30 values together and returns the result as text. In Excel 2019 and later, the CONCAT function and TEXTJOIN function are better, more flexible alternatives.
+The CONCATENATE function accepts multiple arguments called text1, text2, text3, etc. up to 30 total. Values may be supplied as cell references, and hard-coded text strings. Only the first argument is required, and values are concatenated in the order they appear. For example, to concatenate the value of A1 and B1, separated by a space, you can use CONCATENATE like this:
+=CONCATENATE(A1," ",B1)
+The result of this formula is the same as using the concatenation operator (&) manually like this:
+=A1&" "&B1 // manual concatenation
+The ampersand character (&) is an alternative to CONCATENATE. The result is the same, but the ampersand is more flexible, and creates formulas that are shorter and (arguably) easier to read.
+Number formatting
+When concatenating numeric values like dates, times, percentages, etc., number formatting will be lost. For example, with the date 1-Jul-2021 in cell A1, the date reverts to a serial number during concatenation:
+=CONCATENATE("Date: ",A1) // returns "Date: 44378"
+To apply formatting during concatenation use the TEXT function :
+=CONCATENATE("The date is ",TEXT(A1,"mmmm d")) // "Date: July 1"
+The CONCATENATE function will not handle ranges:
+=CONCATENATE(A1:D1) // does not work
+To concatenate values in ranges, see the CONCAT function. To concatenate many values with a common delimiter, see the TEXTJOIN function. TEXTJOIN can do everything CONCAT can do, but can also accept a delimiter and optionally ignore empty values.
+Notes
+CONCATENATE can join up to 30 text items together.
+Text items can be text strings, numbers, or cell references that refer to one cell.
+Numbers are converted to text when joined. If you need to specify a number format for a number being joined, see the TEXT function.
+The ampersand character (&) is an alternative to CONCATENATE. The result is the same, but the ampersand is more flexible, and creates formulas that are shorter and (arguably) easier to read.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Join first and last name 
+Create email with display name 
+Videos
+  
+How to join cell values with CONCATENATE 
+ Functions CONCAT FunctionTEXTJOIN Function 
+ Articles How to concatenate in Excel 
+ Links Microsoft CONCATENATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel CONCATENATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CONCATENATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+CONCATENATE Function
+Related functions 
+CONCAT
+TEXTJOIN
+Summary
+The Excel CONCATENATE function concatenates (joins) join up to 30 values together and returns the result as text. In Excel 2019 and later, the CONCAT and TEXTJOIN functions are better, more flexible alternatives.
+Purpose 
+Join text together
+Return value 
+Text joined together.
+Arguments 
+text1 - The first text value to join together.text2 - The second text value to join together.text3 - [optional] The third text value to join together.
+Syntax 
+=CONCATENATE(text1, text2, [text3], ...)
+Usage notes 
+The CONCATENATE function concatenates (joins) join up to 30 values together and returns the result as text. In Excel 2019 and later, the CONCAT function and TEXTJOIN function are better, more flexible alternatives.
+The CONCATENATE function accepts multiple arguments called text1, text2, text3, etc. up to 30 total. Values may be supplied as cell references, and hard-coded text strings. Only the first argument is required, and values are concatenated in the order they appear. For example, to concatenate the value of A1 and B1, separated by a space, you can use CONCATENATE like this:
+=CONCATENATE(A1," ",B1)
+The result of this formula is the same as using the concatenation operator (&) manually like this:
+=A1&" "&B1 // manual concatenation
+The ampersand character (&) is an alternative to CONCATENATE. The result is the same, but the ampersand is more flexible, and creates formulas that are shorter and (arguably) easier to read.
+Number formatting
+When concatenating numeric values like dates, times, percentages, etc., number formatting will be lost. For example, with the date 1-Jul-2021 in cell A1, the date reverts to a serial number during concatenation:
+=CONCATENATE("Date: ",A1) // returns "Date: 44378"
+To apply formatting during concatenation use the TEXT function :
+=CONCATENATE("The date is ",TEXT(A1,"mmmm d")) // "Date: July 1"
+The CONCATENATE function will not handle ranges:
+=CONCATENATE(A1:D1) // does not work
+To concatenate values in ranges, see the CONCAT function. To concatenate many values with a common delimiter, see the TEXTJOIN function. TEXTJOIN can do everything CONCAT can do, but can also accept a delimiter and optionally ignore empty values.
+Notes
+CONCATENATE can join up to 30 text items together.
+Text items can be text strings, numbers, or cell references that refer to one cell.
+Numbers are converted to text when joined. If you need to specify a number format for a number being joined, see the TEXT function.
+The ampersand character (&) is an alternative to CONCATENATE. The result is the same, but the ampersand is more flexible, and creates formulas that are shorter and (arguably) easier to read.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Join first and last name 
+Create email with display name 
+Videos
+  
+How to join cell values with CONCATENATE 
+ Functions CONCAT FunctionTEXTJOIN Function 
+ Articles How to concatenate in Excel 
+ Links Microsoft CONCATENATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

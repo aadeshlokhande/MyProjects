@@ -1,0 +1,10 @@
+Summary
+The Excel AMORDEGRC function returns the depreciation for a given accounting using a depreciation coefficient determined by asset life.
+Purpose 
+Depreciation for accounting period coefficient
+Return value 
+Depreciation in given period
+Arguments 
+cost - Asset cost.purchase - Asset purchase date.first - First period end date.salvage - Asset salvage value.period - Period for which to calculate depreciation.rate - Rate of depreciation.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=AMORDEGRC(cost, purchase, first, salvage, period, rate, [basis])

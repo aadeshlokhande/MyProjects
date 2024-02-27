@@ -1,0 +1,10 @@
+Summary
+The Excel WRAPCOLS function converts a one-dimensional array into a two-dimensional array by wrapping values into separate columns. The length of each column is given as the wrap_count argument: when the count is reached, WRAPCOLS starts a new column.
+Purpose 
+Wrap array into columns
+Return value 
+Array wrapped by column
+Arguments 
+vector - The array or range to wrap.wrap_count - Max values in each column.pad_with - [optional] Value to use for unfilled places.
+Syntax 
+=WRAPCOLS(vector, wrap_count, [pad_with])

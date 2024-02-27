@@ -1,0 +1,9 @@
+Summary
+The Excel NOW function returns the current date and time, updated continuously when a worksheet is changed or opened. The NOW function takes no arguments. You can format the value returned by NOW as a date, or as a date with time by applying a number format.
+Purpose 
+Get the current date and time
+Return value 
+A number representing the current date and time in Excel.
+Arguments 
+Syntax 
+=NOW()

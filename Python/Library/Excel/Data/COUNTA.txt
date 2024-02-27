@@ -1,0 +1,731 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel COUNTA function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+COUNTA Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+COUNTA Function
+Related functions 
+
+COUNT
+COUNTA
+COUNTIF
+COUNTIFS
+COUNTBLANK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel COUNTA function returns the count of cells that contain numbers, text, logical values, error values, and empty text (""). COUNTA does not count empty cells.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Count the number of non-blank cells
+
+
+
+Return value 
+
+A number representing non-blank cells.
+
+
+
+Arguments 
+
+value1 - An item, cell reference, or range.value2 - [optional] An item, cell reference, or range.
+
+
+
+Syntax 
+
+=COUNTA(value1, [value2], ...)
+
+
+
+Usage notes 
+
+The COUNTA function counts cells that contain values, including numbers, text, logicals, errors, and empty text (""). COUNTA does not count empty cells.
+The COUNTA function returns the count of values in the list of supplied arguments. COUNTA takes multiple arguments in the form value1, value2, value3, etc. Arguments can be individual hardcoded values, cell references, or ranges up to a total of 255 arguments. All values are counted, including text, numbers, percentages, errors, dates, times, fractions, and formulas that return empty strings (""). Empty cells are ignored.
+Examples
+In the example shown, COUNTA is set up to values in the range B5:B15:
+
+=COUNTA(B5:B15) // returns 9
+
+COUNTA returns 9, since there are 9 non-empty cells in the range B5:B15. 
+The COUNTA function counts numbers and text:
+
+=COUNTA(1,2,3) // returns 3
+=COUNTA(1,"a","b") // returns 3
+=COUNTA(1,2,3,"a",5%) // returns 5
+
+To count non-empty cells in the range A1:A10:
+
+=COUNTA(A1:A10) // count non-empty cells in A1:A10
+
+To count non-empty cells in the range A1:A10 and the range C1:H2:
+
+=COUNTA(A1:A10,C1:H2) // two ranges
+
+Empty strings
+Note that COUNTA includes empty strings ("") in the count, which can be returned by formulas. For example, the formula below will return "OK" when the value in A1 is at least 10, and an empty string ("") when the value is less than 10:
+
+=IF(A1>=10,"OK","")
+
+The COUNTA function will count both results as non-empty. To ignore empty strings, this example provides a workaround.
+Invisible characters
+Be aware that COUNTA will also count cells that look empty, but actually contain invisible characters or an empty string ("") returned by a formula. You can check which cells are blank using Go To > Special > Blanks:
+
+Select a range
+Open Go To dialog (Control + G)
+Press "Special"
+Select "Blanks"
+
+Functions for counting
+
+To count numbers only, use the COUNT function.
+To count numbers and text, use the COUNTA function.
+To count with one condition, use the COUNTIF function
+To count with multiple conditions, use the COUNTIFS function.
+To count empty cells, use the COUNTBLANK function.
+
+Notes
+
+COUNTA will count cells that contain numbers, text, logical values, error values, and empty text ("").
+To count numeric values only, use the COUNT function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Random list of names 
+
+Basic outline numbering 
+
+Count sold and remaining 
+
+Count unique values with criteria 
+
+Generate random text strings 
+
+Multiple cells have same value case sensitive 
+
+Automatic row numbers 
+
+Dynamic named range with OFFSET 
+
+Running count group by n size 
+
+Cell contains all of many things 
+
+
+
+Videos
+  
+How to create a dynamic named range with OFFSET 
+
+How to create a dynamic named range with INDEX 
+
+Spilling and the spill range 
+
+How to count unique values 
+
+How to perform a random sort 
+
+How to see arrays in formulas 
+
+How to generate random text values 
+
+
+ Functions COUNT FunctionCOUNTA FunctionCOUNTIF FunctionCOUNTIFS FunctionCOUNTBLANK Function 
+ Links Microsoft COUNTA function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel COUNTA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUNTA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+COUNTA Function
+Related functions 
+COUNT
+COUNTA
+COUNTIF
+COUNTIFS
+COUNTBLANK
+Summary
+The Excel COUNTA function returns the count of cells that contain numbers, text, logical values, error values, and empty text (""). COUNTA does not count empty cells.
+Purpose 
+Count the number of non-blank cells
+Return value 
+A number representing non-blank cells.
+Arguments 
+value1 - An item, cell reference, or range.value2 - [optional] An item, cell reference, or range.
+Syntax 
+=COUNTA(value1, [value2], ...)
+Usage notes 
+The COUNTA function counts cells that contain values, including numbers, text, logicals, errors, and empty text (""). COUNTA does not count empty cells.
+The COUNTA function returns the count of values in the list of supplied arguments. COUNTA takes multiple arguments in the form value1, value2, value3, etc. Arguments can be individual hardcoded values, cell references, or ranges up to a total of 255 arguments. All values are counted, including text, numbers, percentages, errors, dates, times, fractions, and formulas that return empty strings (""). Empty cells are ignored.
+Examples
+In the example shown, COUNTA is set up to values in the range B5:B15:
+=COUNTA(B5:B15) // returns 9
+COUNTA returns 9, since there are 9 non-empty cells in the range B5:B15. 
+The COUNTA function counts numbers and text:
+=COUNTA(1,2,3) // returns 3
+=COUNTA(1,"a","b") // returns 3
+=COUNTA(1,2,3,"a",5%) // returns 5
+To count non-empty cells in the range A1:A10:
+=COUNTA(A1:A10) // count non-empty cells in A1:A10
+To count non-empty cells in the range A1:A10 and the range C1:H2:
+=COUNTA(A1:A10,C1:H2) // two ranges
+Empty strings
+Note that COUNTA includes empty strings ("") in the count, which can be returned by formulas. For example, the formula below will return "OK" when the value in A1 is at least 10, and an empty string ("") when the value is less than 10:
+=IF(A1>=10,"OK","")
+The COUNTA function will count both results as non-empty. To ignore empty strings, this example provides a workaround.
+Invisible characters
+Be aware that COUNTA will also count cells that look empty, but actually contain invisible characters or an empty string ("") returned by a formula. You can check which cells are blank using Go To > Special > Blanks:
+Select a range
+Open Go To dialog (Control + G)
+Press "Special"
+Select "Blanks"
+Functions for counting
+To count numbers only, use the COUNT function.
+To count numbers and text, use the COUNTA function.
+To count with one condition, use the COUNTIF function
+To count with multiple conditions, use the COUNTIFS function.
+To count empty cells, use the COUNTBLANK function.
+Notes
+COUNTA will count cells that contain numbers, text, logical values, error values, and empty text ("").
+To count numeric values only, use the COUNT function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Random list of names 
+Basic outline numbering 
+Count sold and remaining 
+Count unique values with criteria 
+Generate random text strings 
+Multiple cells have same value case sensitive 
+Automatic row numbers 
+Dynamic named range with OFFSET 
+Running count group by n size 
+Cell contains all of many things 
+Videos
+  
+How to create a dynamic named range with OFFSET 
+How to create a dynamic named range with INDEX 
+Spilling and the spill range 
+How to count unique values 
+How to perform a random sort 
+How to see arrays in formulas 
+How to generate random text values 
+ Functions COUNT FunctionCOUNTA FunctionCOUNTIF FunctionCOUNTIFS FunctionCOUNTBLANK Function 
+ Links Microsoft COUNTA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

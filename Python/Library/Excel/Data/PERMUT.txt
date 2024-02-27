@@ -1,0 +1,622 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PERMUT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PERMUT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+PERMUT Function
+Related functions 
+
+COMBIN
+COMBINA
+PERMUT
+PERMUTATIONA
+FACT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PERMUT function returns the number of permutations (combinations where order is significant) for a given number of items. The PERMUT function does not allow repetitions. To allow permutations with repetitions, use the PERMUTATIONA function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get number of permutations without repetitions
+
+
+
+Return value 
+
+Number of permutations as an integer
+
+
+
+Arguments 
+
+number - The total number of items.number_chosen - The number of items in each combination.
+
+
+
+Syntax 
+
+=PERMUT(number, number_chosen)
+
+
+
+Usage notes 
+
+The PERMUT function returns the number of permutations for a given number of items. A permutation is a combination where order matters. In other words, a permutation is an ordered combination.
+There are two types of permutations:
+
+Permutations where repetition is not allowed (i.e. 123)
+Permutations where repetition is allowed (i.e. 333)
+
+The PERMUT function calculates permutations where repetitions are not allowed. To calculate permutations where repetitions are allowed, use the PERMUTATIONA function.
+Example
+To use PERMUT, specify the total number of items and "number_chosen", which represents the number of items in each combination. For example, to calculate 3-number permutations for the numbers 0-9, there are 10 numbers and 3 chosen, so the formula is:
+
+=PERMUT(10,3) // returns 720
+
+This result can be seen in cell D8 in the example shown.
+Notes
+
+A permutation is a group of items in which order/sequence matters.
+If order is not significant, see the COMBIN function.
+Arguments that contain decimal values are truncated to integers.
+PERMUT returns a #VALUE! error value if either argument is not numeric.
+PERMUT returns #NUM! if number is less than number_chosen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions COMBIN FunctionCOMBINA FunctionPERMUT FunctionPERMUTATIONA FunctionFACT Function 
+ Links Microsoft PERMUT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PERMUT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PERMUT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+PERMUT Function
+Related functions 
+COMBIN
+COMBINA
+PERMUT
+PERMUTATIONA
+FACT
+Summary
+The Excel PERMUT function returns the number of permutations (combinations where order is significant) for a given number of items. The PERMUT function does not allow repetitions. To allow permutations with repetitions, use the PERMUTATIONA function.
+Purpose 
+Get number of permutations without repetitions
+Return value 
+Number of permutations as an integer
+Arguments 
+number - The total number of items.number_chosen - The number of items in each combination.
+Syntax 
+=PERMUT(number, number_chosen)
+Usage notes 
+The PERMUT function returns the number of permutations for a given number of items. A permutation is a combination where order matters. In other words, a permutation is an ordered combination.
+There are two types of permutations:
+Permutations where repetition is not allowed (i.e. 123)
+Permutations where repetition is allowed (i.e. 333)
+The PERMUT function calculates permutations where repetitions are not allowed. To calculate permutations where repetitions are allowed, use the PERMUTATIONA function.
+Example
+To use PERMUT, specify the total number of items and "number_chosen", which represents the number of items in each combination. For example, to calculate 3-number permutations for the numbers 0-9, there are 10 numbers and 3 chosen, so the formula is:
+=PERMUT(10,3) // returns 720
+This result can be seen in cell D8 in the example shown.
+Notes
+A permutation is a group of items in which order/sequence matters.
+If order is not significant, see the COMBIN function.
+Arguments that contain decimal values are truncated to integers.
+PERMUT returns a #VALUE! error value if either argument is not numeric.
+PERMUT returns #NUM! if number is less than number_chosen.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions COMBIN FunctionCOMBINA FunctionPERMUT FunctionPERMUTATIONA FunctionFACT Function 
+ Links Microsoft PERMUT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

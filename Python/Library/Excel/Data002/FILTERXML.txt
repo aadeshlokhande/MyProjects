@@ -1,0 +1,10 @@
+Summary
+The Excel FILTERXML function returns specific data from XML text using the specified XPath expression.
+Purpose 
+Get data from XML with Xpath
+Return value 
+Matching data as text
+Arguments 
+xml - Valid XML as a text string.xpath - A valid Xpath expression as a text string.
+Syntax 
+=FILTERXML(xml, xpath)

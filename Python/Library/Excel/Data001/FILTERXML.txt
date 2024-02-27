@@ -1,0 +1,226 @@
+Excel FILTERXML function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FILTERXML Function 
+Previous 
+Next 
+ 
+Excel 2013
+Web
+FILTERXML Function
+Related functions 
+WEBSERVICE
+ENCODEURL
+Summary
+The Excel FILTERXML function returns specific data from XML text using the specified XPath expression.
+Purpose 
+Get data from XML with Xpath
+Return value 
+Matching data as text
+Arguments 
+xml - Valid XML as a text string.xpath - A valid Xpath expression as a text string.
+Syntax 
+=FILTERXML(xml, xpath)
+Usage notes 
+The Excel FILTERXML function returns specific data from XML text using a specified XPath expression. 
+XML is a text format for storing and transporting data. It is not dependent on any particular hardware or software. XML is extensible and is designed to transport data, as opposed to displaying data in a particular way. XML has strict syntax rules which allows software to traverse the structure of an XML document and perform various operations.
+XPath is a special query language for selecting the elements and attributes in an XML document. The FILTERXML function uses XPath to match and extract data from text in XML format.
+FILTERXML is only available in Excel for Windows, not Excel for Mac, or Excel Online.
+Example
+In the example shown, the cell contains XML that carries information about albums published as CDs. Each CD contains the title of the album, the name of the artist, and the year the album was released. The formula in cell D5 uses FILTERXML to extract all titles:
+=FILTERXML(B5,"//cd/title")
+The xml argument is the XML in cell B5, and the xpath argument is the expression "//cd/title", which matches all title elements with the parent . In Excel 365, which supports dynamic arrays, the results spill into the range D5:D14 automatically.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sort comma separated values 
+LAMBDA split text to array 
+Parse XML with formula 
+Text split to array 
+ Functions WEBSERVICE FunctionENCODEURL Function 
+ Links Microsoft FILTERXML function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel FILTERXML function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FILTERXML Function 
+Previous 
+Next 
+ 
+Excel 2013
+Web
+FILTERXML Function
+Related functions 
+WEBSERVICE
+ENCODEURL
+Summary
+The Excel FILTERXML function returns specific data from XML text using the specified XPath expression.
+Purpose 
+Get data from XML with Xpath
+Return value 
+Matching data as text
+Arguments 
+xml - Valid XML as a text string.xpath - A valid Xpath expression as a text string.
+Syntax 
+=FILTERXML(xml, xpath)
+Usage notes 
+The Excel FILTERXML function returns specific data from XML text using a specified XPath expression. 
+XML is a text format for storing and transporting data. It is not dependent on any particular hardware or software. XML is extensible and is designed to transport data, as opposed to displaying data in a particular way. XML has strict syntax rules which allows software to traverse the structure of an XML document and perform various operations.
+XPath is a special query language for selecting the elements and attributes in an XML document. The FILTERXML function uses XPath to match and extract data from text in XML format.
+FILTERXML is only available in Excel for Windows, not Excel for Mac, or Excel Online.
+Example
+In the example shown, the cell contains XML that carries information about albums published as CDs. Each CD contains the title of the album, the name of the artist, and the year the album was released. The formula in cell D5 uses FILTERXML to extract all titles:
+=FILTERXML(B5,"//cd/title")
+The xml argument is the XML in cell B5, and the xpath argument is the expression "//cd/title", which matches all title elements with the parent . In Excel 365, which supports dynamic arrays, the results spill into the range D5:D14 automatically.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sort comma separated values 
+LAMBDA split text to array 
+Parse XML with formula 
+Text split to array 
+ Functions WEBSERVICE FunctionENCODEURL Function 
+ Links Microsoft FILTERXML function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

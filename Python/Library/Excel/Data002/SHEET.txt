@@ -1,0 +1,10 @@
+Summary
+The Excel SHEET function returns the index number of a sheet in Excel. SHEET will report the sheet number for a cell reference, named range, or Excel Table.
+Purpose 
+Get sheet index number
+Return value 
+The index number of a given sheet
+Arguments 
+value - [optional] The value to check.
+Syntax 
+=SHEET([value])

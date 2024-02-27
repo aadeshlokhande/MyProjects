@@ -1,0 +1,10 @@
+Summary
+The Excel STOCKHISTORY function retrieves historical stock price information based on a given symbol and date range. The primary purpose of STOCKHISTORY is to get the history of a financial instrument over time. The result is an array of values that spill onto the worksheet into multiple cells.
+Purpose 
+Retrieve stock price information
+Return value 
+Array of stock price information
+Arguments 
+stock - A ticker symbol in double quotes ("MSFT", "AAPL", "GOOG", etc.).start_date - The start date for data to be retrieved.end_date - [optional] The end date for data to be retrieved. Default is start_date.interval - [optional] Time interval. Daily = 0, weekly = 1, monthly = 2. Default is 0.headers - [optional] No header = 0, basic header = 1,  instrument + header = 2. Default is 1.properties - [optional] Additional data to retrieve. Default is Date and Close. See below.
+Syntax 
+=STOCKHISTORY(stock, start_date, [end_date], [interval], [headers], [properties], ...)

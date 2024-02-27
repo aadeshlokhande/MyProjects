@@ -1,0 +1,52 @@
+What is Django
+Everything you need to know before Django _ Prerequisite & Inside the Course
+What is Model View Template (MVT) in Django
+How to Install Python, PIP and Django on Windows in 10 Minutes
+Creating a New Project in Django (New Project Setup)
+What is Development Server and How it Run in Django
+How to Download & Setup Visual Studio Code (VS Code) for Django & Python
+How to Create Folder for Django Application
+Learn How to Migrate Default Migration in Django
+What is Database and How to Install Database Browser for SQLite in Windows
+What is Superuser in Django and How to Create it
+How to Use URLs & Views in Django _ Types of URLs & Views
+Learn to Create URLs & Views in Django
+Creating a Dynamic URL in Django
+How to Render an HTML Template as Response
+How to Pass Data From Django View to Template
+Using Django Template for Loop
+What is If Else Statement in Django Template
+What is CSS, JavaScript & Images in Django and How to use them
+Header and Footer in Django HTML Template (Fix Header & Footer)
+Tags of Django
+What are URL Template Tags in Django and How to Use It
+Learn to Highlight Link in Django
+What are HTTP Request Methods in Django (Get & Post)
+Implement GET Method Form in Django
+Implement POST Method Form with CSRF Token in Django
+What is Redirect and How to Redirect Page in Django
+What is HTML Action URL in Django
+FORM Tutorials in Django For Beginners
+Learn to Build a Calculator in Simple Ways in Django (Using HTML Form)
+Learn to Check Even or Odd Number Using Django Form
+Learn to Create Marksheet in Simple ways in Django
+What is Manual Form Validation in Django (Complete Logic)
+What is Model in Django Application
+How to Create a Model in Django
+Learn to Get Data from Table in Django
+Order a Query in Ascending or Descending
+What are Limiting Query Results in Django
+Implementation and Logics of Custom Template Filter in Django
+What is TinyMCE Integration with News App in Django
+What is Marquee Tag for Display News in Django
+Display News in Detail Page with Dynamic URL
+Learn How to Reset Django Admin Password
+Explain Filter Work in Django
+What is Auto SlugField _ Explained with Examples in Django
+What is Pagination and How to Add Pagination in Django Project
+Explain Last Page Pagination & Number Counter Logic in Django
+How to Save Form Data to Database
+Learn How to Upload a File with FileField in Django Model
+How to Display Uploaded Image in the Template in Django
+How to Sending Email in Django Project
+Explain HTML Content and What is Email Multi Alternatives Function

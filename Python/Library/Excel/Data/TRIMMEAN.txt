@@ -1,0 +1,598 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel TRIMMEAN function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+TRIMMEAN Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+TRIMMEAN Function
+Related functions 
+
+AVERAGE
+AVERAGEIF
+MODE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel TRIMMEAN function calculates mean (average) while excluding outliers. The number of data points to exclude is provided as a percentage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Calculate mean excluding outliers
+
+
+
+Return value 
+
+Calculated mean
+
+
+
+Arguments 
+
+array - Values to trim and average.percent - The number of data points to exclude from the calculation.
+
+
+
+Syntax 
+
+=TRIMMEAN(array, percent)
+
+
+
+Usage notes 
+
+The Excel TRIMMEAN function calculates mean (average) while excluding outliers. The number of data points to exclude is provided as a percentage.
+TRIMMEAN works by first excluding values from the top and bottom of a data set, then calculating mean. The number of data points is provided as a percentage. The percentage can be input either in decimal format or percent format:
+
+=TRIMMEAN(A1:A100,0.1) // exclude 10%
+=TRIMMEAN(A1:A100,10%) // exclude 10%
+=TRIMMEAN(A1:A100,0.2) // exclude 20%
+=TRIMMEAN(A1:A100,20%) // exclude 20%
+
+It's important to note that TRIMMEAN rounds excluded data points down to the nearest multiple of 2. For example, with 50 data points, 10% equals 5 values. In this case, TRIMMEAN will round 5 down to 4, then exclude two values from the top, of the data set, and two values from the bottom of the data set.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions AVERAGE FunctionAVERAGEIF FunctionMODE Function 
+ Links Microsoft TRIMMEAN function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel TRIMMEAN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRIMMEAN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+TRIMMEAN Function
+Related functions 
+AVERAGE
+AVERAGEIF
+MODE
+Summary
+The Excel TRIMMEAN function calculates mean (average) while excluding outliers. The number of data points to exclude is provided as a percentage.
+Purpose 
+Calculate mean excluding outliers
+Return value 
+Calculated mean
+Arguments 
+array - Values to trim and average.percent - The number of data points to exclude from the calculation.
+Syntax 
+=TRIMMEAN(array, percent)
+Usage notes 
+The Excel TRIMMEAN function calculates mean (average) while excluding outliers. The number of data points to exclude is provided as a percentage.
+TRIMMEAN works by first excluding values from the top and bottom of a data set, then calculating mean. The number of data points is provided as a percentage. The percentage can be input either in decimal format or percent format:
+=TRIMMEAN(A1:A100,0.1) // exclude 10%
+=TRIMMEAN(A1:A100,10%) // exclude 10%
+=TRIMMEAN(A1:A100,0.2) // exclude 20%
+=TRIMMEAN(A1:A100,20%) // exclude 20%
+It's important to note that TRIMMEAN rounds excluded data points down to the nearest multiple of 2. For example, with 50 data points, 10% equals 5 values. In this case, TRIMMEAN will round 5 down to 4, then exclude two values from the top, of the data set, and two values from the bottom of the data set.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions AVERAGE FunctionAVERAGEIF FunctionMODE Function 
+ Links Microsoft TRIMMEAN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

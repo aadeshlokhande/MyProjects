@@ -1,0 +1,242 @@
+Excel REPLACE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+REPLACE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+REPLACE Function
+Related functions 
+SUBSTITUTE
+FIND
+Summary
+The Excel REPLACE function replaces characters specified by location in a given text string with another text string. For example =REPLACE("XYZ123",4,3,"456") returns "XYZ456".
+Purpose 
+Replace text based on location
+Return value 
+The altered text.
+Arguments 
+old_text - The text to replace.start_num - The starting location in the text to search.num_chars - The number of characters to replace.new_text - The text to replace old_text with.
+Syntax 
+=REPLACE(old_text, start_num, num_chars, new_text)
+Usage notes 
+The REPLACE function replaces characters in a text string by position. The REPLACE function is useful when the location of the text to be replaced is known or can be easily determined.
+REPLACE function takes four separate arguments. The first argument, old_text, is the text string to be processed. The second argument, start_num is the numeric position of the text to replace. The third argument, num_chars, is the number of characters that should be replaced. The last argument, new_text, is the text to use for the replacement.
+Examples
+To replace the "C" in the path below with a "D":
+=REPLACE("C:\docs",1,1,"D") // returns "D:\docs"
+To replace 3 characters starting at the 4th character:
+=REPLACE("XYZ123",4,3,"456") // returns "XYZ456"
+You can use REPLACE to remove text by specifying an empty string ("") for new_text. The formula below uses REPLACE to remove the first character from the string "XYZ":
+=REPLACE("XYZ",1,1,"") // returns "YZ"
+The example below removes the first 4 characters:
+=REPLACE("www.google.com",1,4,"") // returns "google.com"
+Related functions
+Use the REPLACE function to replace text at a known location in a text string. Use the SUBSTITUTE function to replace text by searching when the location is not known. Use FIND or SEARCH to determine the location of specific text.
+Notes
+To remove text, use an empty string ("") for new_text.
+REPLACE returns #VALUE is start_num or num_chars is not a positive number.
+REPLACE works on numbers, but the result is text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Remove first character 
+Remove text by position 
+Remove text by variable position 
+ Functions SUBSTITUTE FunctionFIND Function 
+ Links Microsoft REPLACE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel REPLACE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+REPLACE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+REPLACE Function
+Related functions 
+SUBSTITUTE
+FIND
+Summary
+The Excel REPLACE function replaces characters specified by location in a given text string with another text string. For example =REPLACE("XYZ123",4,3,"456") returns "XYZ456".
+Purpose 
+Replace text based on location
+Return value 
+The altered text.
+Arguments 
+old_text - The text to replace.start_num - The starting location in the text to search.num_chars - The number of characters to replace.new_text - The text to replace old_text with.
+Syntax 
+=REPLACE(old_text, start_num, num_chars, new_text)
+Usage notes 
+The REPLACE function replaces characters in a text string by position. The REPLACE function is useful when the location of the text to be replaced is known or can be easily determined.
+REPLACE function takes four separate arguments. The first argument, old_text, is the text string to be processed. The second argument, start_num is the numeric position of the text to replace. The third argument, num_chars, is the number of characters that should be replaced. The last argument, new_text, is the text to use for the replacement.
+Examples
+To replace the "C" in the path below with a "D":
+=REPLACE("C:\docs",1,1,"D") // returns "D:\docs"
+To replace 3 characters starting at the 4th character:
+=REPLACE("XYZ123",4,3,"456") // returns "XYZ456"
+You can use REPLACE to remove text by specifying an empty string ("") for new_text. The formula below uses REPLACE to remove the first character from the string "XYZ":
+=REPLACE("XYZ",1,1,"") // returns "YZ"
+The example below removes the first 4 characters:
+=REPLACE("www.google.com",1,4,"") // returns "google.com"
+Related functions
+Use the REPLACE function to replace text at a known location in a text string. Use the SUBSTITUTE function to replace text by searching when the location is not known. Use FIND or SEARCH to determine the location of specific text.
+Notes
+To remove text, use an empty string ("") for new_text.
+REPLACE returns #VALUE is start_num or num_chars is not a positive number.
+REPLACE works on numbers, but the result is text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Remove first character 
+Remove text by position 
+Remove text by variable position 
+ Functions SUBSTITUTE FunctionFIND Function 
+ Links Microsoft REPLACE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

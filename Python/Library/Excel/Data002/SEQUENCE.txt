@@ -1,0 +1,10 @@
+Summary
+The Excel SEQUENCE function generates a list of sequential numbers in an array. The array can be one dimensional, or two-dimensional, determined by rows and columns arguments. 
+Purpose 
+Get array of list of sequential numbers
+Return value 
+Array of sequential values
+Arguments 
+rows - Number of rows to return.columns - [optional] Number of columns to return.start - [optional] Starting value (defaults to 1).step - [optional] Increment between each value (defaults to 1).
+Syntax 
+=SEQUENCE(rows, [columns], [start], [step])

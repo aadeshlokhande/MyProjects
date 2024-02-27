@@ -1,0 +1,634 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FIXED function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FIXED Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Text
+
+
+FIXED Function
+Related functions 
+
+TEXT
+DOLLAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FIXED function converts a number to text with fixed number of decimals, rounding as needed with the given number of decimals. The FIXED function can be useful when concatenating a formatted number text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Format number as text with fixed decimals
+
+
+
+Return value 
+
+Number formatted as text
+
+
+
+Arguments 
+
+number - The number to round and format.decimals - [optional] Number of decimals to use. Default is 2.no_commas - [optional] Suppress commas. TRUE = no commas, FALSE = commas. Default is FALSE.
+
+
+
+Syntax 
+
+=FIXED(number, [decimals], [no_commas])
+
+
+
+Usage notes 
+
+The FIXED function converts a number to text, rounding to a given number of decimals. Like the Number format available on the home tab of the ribbon, the FIXED function will round the number as needed using the given number of decimal places. The main difference between applying a number format and using FIXED is that the FIXED function converts the number to text, whereas a number format just changes the way a number is displayed.
+The FIXED function takes three arguments, number, decimals, and no_commas. Number is the number to convert. Decimals is the number of digits to which number will be rounded on the right of the decimal point. If decimals is negative, number will be rounded to the left of the decimal point. Decimals is optional and defaults to 2.
+The no_commas argument is a Boolean that controls whether commas will be added to the result. No_commas is optional and defaults to FALSE. To prevent commas, set no_commas to TRUE.
+Note: the FIXED function returns text and not a number, so the result cannot be used in a numeric calculation. If the goal is to format a number and retain its numeric property, applying a standard number format is a better option. Video: How to use number formatting.
+Examples
+In the example shown above, the formula in E5, copied down, is:
+
+=FIXED(B5,C5,D5)
+
+At each new row, FIXED returns a result based on the number in column B, the decimals in column C, and comma setting in column D.
+Number is the only required argument. By default, FIXED will round to 2 decimal places and insert commas for thousands:
+
+=FIXED(1000) // returns "1,000.00"
+=FIXED(1000,0) // returns "1,000"
+=FIXED(1000,0,FALSE) // returns "1000"
+
+The FIXED function can be useful when you want to concatenate a number with other text. The example below shows how the output from the PI function can be trimmed by FIXED:
+
+="PI is about "&PI() // returns "PI is about 3.14159265358979"
+="PI is about "&FIXED(PI()) // returns "PI is about 3.14"
+
+FIXED vs. TEXT
+The FIXED function is a specialized function to apply Number formatting only. The TEXT function is a generalized function that does the same thing in a more flexible way. TEXT can convert numeric values to many different number formats, including currency, date, time, percentage, and so on.
+Notes
+
+The output from FIXED is text. To simply format a number, apply a number format instead.
+The FIXED function converts a number to text using a number format like: 0.00 or #,##0
+The default for decimals is 2. If decimals is negative, number will be rounded to the left of the decimal point.
+The TEXT function is a more flexible way to achieve the same result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions TEXT FunctionDOLLAR Function 
+ Articles Excel custom number formats 
+ Links Microsoft FIXED function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FIXED function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FIXED Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+FIXED Function
+Related functions 
+TEXT
+DOLLAR
+Summary
+The Excel FIXED function converts a number to text with fixed number of decimals, rounding as needed with the given number of decimals. The FIXED function can be useful when concatenating a formatted number text.
+Purpose 
+Format number as text with fixed decimals
+Return value 
+Number formatted as text
+Arguments 
+number - The number to round and format.decimals - [optional] Number of decimals to use. Default is 2.no_commas - [optional] Suppress commas. TRUE = no commas, FALSE = commas. Default is FALSE.
+Syntax 
+=FIXED(number, [decimals], [no_commas])
+Usage notes 
+The FIXED function converts a number to text, rounding to a given number of decimals. Like the Number format available on the home tab of the ribbon, the FIXED function will round the number as needed using the given number of decimal places. The main difference between applying a number format and using FIXED is that the FIXED function converts the number to text, whereas a number format just changes the way a number is displayed.
+The FIXED function takes three arguments, number, decimals, and no_commas. Number is the number to convert. Decimals is the number of digits to which number will be rounded on the right of the decimal point. If decimals is negative, number will be rounded to the left of the decimal point. Decimals is optional and defaults to 2.
+The no_commas argument is a Boolean that controls whether commas will be added to the result. No_commas is optional and defaults to FALSE. To prevent commas, set no_commas to TRUE.
+Note: the FIXED function returns text and not a number, so the result cannot be used in a numeric calculation. If the goal is to format a number and retain its numeric property, applying a standard number format is a better option. Video: How to use number formatting.
+Examples
+In the example shown above, the formula in E5, copied down, is:
+=FIXED(B5,C5,D5)
+At each new row, FIXED returns a result based on the number in column B, the decimals in column C, and comma setting in column D.
+Number is the only required argument. By default, FIXED will round to 2 decimal places and insert commas for thousands:
+=FIXED(1000) // returns "1,000.00"
+=FIXED(1000,0) // returns "1,000"
+=FIXED(1000,0,FALSE) // returns "1000"
+The FIXED function can be useful when you want to concatenate a number with other text. The example below shows how the output from the PI function can be trimmed by FIXED:
+="PI is about "&PI() // returns "PI is about 3.14159265358979"
+="PI is about "&FIXED(PI()) // returns "PI is about 3.14"
+FIXED vs. TEXT
+The FIXED function is a specialized function to apply Number formatting only. The TEXT function is a generalized function that does the same thing in a more flexible way. TEXT can convert numeric values to many different number formats, including currency, date, time, percentage, and so on.
+Notes
+The output from FIXED is text. To simply format a number, apply a number format instead.
+The FIXED function converts a number to text using a number format like: 0.00 or #,##0
+The default for decimals is 2. If decimals is negative, number will be rounded to the left of the decimal point.
+The TEXT function is a more flexible way to achieve the same result.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions TEXT FunctionDOLLAR Function 
+ Articles Excel custom number formats 
+ Links Microsoft FIXED function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

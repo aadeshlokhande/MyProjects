@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel ROWS function returns the count of rows in a given reference. For example, ROWS(A1:A3) returns 3, since the range A1:A3 contains 3 rows.', 'Purpose' : 'Get the number of rows in an array or reference.', 'Return value' : 'Number of rows', 'Arguments' : 'array - A reference to a cell or range of cells.', 'Syntax' : '=ROWS(array)' }

@@ -1,0 +1,668 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FLOOR.MATH function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FLOOR.MATH Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Math
+
+
+FLOOR.MATH Function
+Related functions 
+
+MROUND
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+CEILING
+EVEN
+ODD
+INT
+TRUNC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FLOOR.MATH function rounds a number down to a specified multiple. Unlike the FLOOR function, FLOOR.MATH defaults to a multiple of 1, and provides explicit support for rounding negative numbers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Round number down to nearest multiple
+
+
+
+Return value 
+
+A rounded number
+
+
+
+Arguments 
+
+number - The number that should be rounded.significance - [optional] Multiple to use when rounding. Default is 1.mode - [optional] For rounding negative numbers toward or away from zero. Default is 0.
+
+
+
+Syntax 
+
+=FLOOR.MATH(number, [significance], [mode])
+
+
+
+Usage notes 
+
+The Excel FLOOR.MATH function rounds a number down to a given multiple, where multiple is provided as the significance argument. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The FLOOR.MATH function takes three arguments, number, significance, and mode. Number is the numeric value to round down, and is the only required argument. With no other input, FLOOR.MATH will round number down to the next integer.
+The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but FLOOR.MATH can also understand time entered as text like "0:15". The default value of significance is 1.
+The mode argument controls the direction negative values are rounded. By default, FLOOR.MATH rounds negative values away from zero. Setting mode to 1 or TRUE changes behavior so that negative values are rounded toward zero. The default value of mode is 0 or FALSE, so you can think of mode as a setting that means "round toward zero". Mode has no effect when number is positive.
+Examples
+By default, FLOOR.MATH rounds to the nearest integer, using a significance of 1.
+
+=FLOOR.MATH(5.75) // returns 5
+=FLOOR.MATH(2.55) // returns 2
+
+Provide a value for significance to round to a different multiple:
+
+=FLOOR.MATH(5.75,1) // returns 5
+=FLOOR.MATH(5.75,3) // returns 3
+=FLOOR.MATH(5.75,0.5) // returns 5.5
+
+Rounding negative numbers
+Positive numbers with decimal values are rounded down to the nearest integer, and negative numbers with decimal values are rounded away from zero:
+
+=FLOOR.MATH(6.7) // returns 6
+=FLOOR.MATH(-6.7) // returns -7
+
+Control for rounding negative numbers toward zero or away from zero is provided with the (optional) mode argument. Mode defaults to zero or FALSE. When mode is omitted, FLOOR.MATH rounds negative numbers away from zero. When mode is set to TRUE, FLOOR.MATH rounds negative numbers toward zero. Mode has no effect on positive numbers.
+
+=FLOOR.MATH(-4.1) // returns -5
+=FLOOR.MATH(-4.1,1) // returns -5
+=FLOOR.MATH(-4.1,1,TRUE) // returns -4
+
+FLOOR.MATH vs FLOOR
+The FLOOR.MATH function differs from the FLOOR function in these ways:
+
+Rounds down to the next integer by default (i.e. significance defaults to 1)
+Provides explicit control for rounding negative numbers (toward zero, away from zero)
+Changing the sign of significance has no effect on the result; use mode instead.
+
+Notes
+
+To round to the nearest multiple (up or down) see the MROUND function.
+FLOOR.MATH works like FLOOR, but provides control for rounding negative values. 
+The mode argument has no effect on positive numbers.
+If number is an exact multiple of significance, no rounding occurs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions MROUND FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionCEILING FunctionEVEN FunctionODD FunctionINT FunctionTRUNC Function 
+ Links Microsoft FLOOR.MATH function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FLOOR.MATH function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FLOOR.MATH Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+FLOOR.MATH Function
+Related functions 
+MROUND
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+CEILING
+EVEN
+ODD
+INT
+TRUNC
+Summary
+The Excel FLOOR.MATH function rounds a number down to a specified multiple. Unlike the FLOOR function, FLOOR.MATH defaults to a multiple of 1, and provides explicit support for rounding negative numbers.
+Purpose 
+Round number down to nearest multiple
+Return value 
+A rounded number
+Arguments 
+number - The number that should be rounded.significance - [optional] Multiple to use when rounding. Default is 1.mode - [optional] For rounding negative numbers toward or away from zero. Default is 0.
+Syntax 
+=FLOOR.MATH(number, [significance], [mode])
+Usage notes 
+The Excel FLOOR.MATH function rounds a number down to a given multiple, where multiple is provided as the significance argument. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The FLOOR.MATH function takes three arguments, number, significance, and mode. Number is the numeric value to round down, and is the only required argument. With no other input, FLOOR.MATH will round number down to the next integer.
+The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but FLOOR.MATH can also understand time entered as text like "0:15". The default value of significance is 1.
+The mode argument controls the direction negative values are rounded. By default, FLOOR.MATH rounds negative values away from zero. Setting mode to 1 or TRUE changes behavior so that negative values are rounded toward zero. The default value of mode is 0 or FALSE, so you can think of mode as a setting that means "round toward zero". Mode has no effect when number is positive.
+Examples
+By default, FLOOR.MATH rounds to the nearest integer, using a significance of 1.
+=FLOOR.MATH(5.75) // returns 5
+=FLOOR.MATH(2.55) // returns 2
+Provide a value for significance to round to a different multiple:
+=FLOOR.MATH(5.75,1) // returns 5
+=FLOOR.MATH(5.75,3) // returns 3
+=FLOOR.MATH(5.75,0.5) // returns 5.5
+Rounding negative numbers
+Positive numbers with decimal values are rounded down to the nearest integer, and negative numbers with decimal values are rounded away from zero:
+=FLOOR.MATH(6.7) // returns 6
+=FLOOR.MATH(-6.7) // returns -7
+Control for rounding negative numbers toward zero or away from zero is provided with the (optional) mode argument. Mode defaults to zero or FALSE. When mode is omitted, FLOOR.MATH rounds negative numbers away from zero. When mode is set to TRUE, FLOOR.MATH rounds negative numbers toward zero. Mode has no effect on positive numbers.
+=FLOOR.MATH(-4.1) // returns -5
+=FLOOR.MATH(-4.1,1) // returns -5
+=FLOOR.MATH(-4.1,1,TRUE) // returns -4
+FLOOR.MATH vs FLOOR
+The FLOOR.MATH function differs from the FLOOR function in these ways:
+Rounds down to the next integer by default (i.e. significance defaults to 1)
+Provides explicit control for rounding negative numbers (toward zero, away from zero)
+Changing the sign of significance has no effect on the result; use mode instead.
+Notes
+To round to the nearest multiple (up or down) see the MROUND function.
+FLOOR.MATH works like FLOOR, but provides control for rounding negative values. 
+The mode argument has no effect on positive numbers.
+If number is an exact multiple of significance, no rounding occurs.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MROUND FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionCEILING FunctionEVEN FunctionODD FunctionINT FunctionTRUNC Function 
+ Links Microsoft FLOOR.MATH function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

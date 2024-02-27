@@ -1,0 +1,236 @@
+Excel VALUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VALUE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+VALUE Function
+Related functions 
+N
+DATEVALUE
+TIMEVALUE
+NUMBERVALUE
+VALUETOTEXT
+Summary
+The Excel VALUE function converts text that appears in a recognized format (i.e. a number, date, or time format) into a numeric value. Normally, the VALUE function is not needed in Excel, because Excel automatically converts text to numeric values.
+Purpose 
+Convert text to a number
+Return value 
+A numeric value.
+Arguments 
+text - The text value to convert to a number.
+Syntax 
+=VALUE(text)
+Usage notes 
+The VALUE function is meant to convert a text value that represents a number into a numeric value. The text can be a date, a time, or any other number, so long as the format can be recognized by Excel. When the conversion is successful, the result is a numeric value with no number formatting. When the VALUE function is unable to convert a text value to a numeric result, the result is a #VALUE! error.
+=VALUE("July 15, 2021") // returns 44392
+=VALUE("$125.50") // returns 125.5
+=VALUE("32.5%") // returns 0.325
+In general, there is no need to use the VALUE function because Excel automatically converts text to numbers as needed. However, VALUE is provided for compatibility with other spreadsheet applications.
+Use the VALUE function to convert text input to a numeric value.
+The VALUE function converts text that appears in a recognized format (i.e. a number, date, or time format) into a numeric value.
+Normally, Excel automatically converts text to numeric values as needed, so the VALUE function is not needed.
+The VALUE function is provided for compatibility with other spreadsheet programs.
+The VALUE function returns #VALUE! when a conversion is unsuccessful.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Assign points based on late time 
+Convert text to numbers 
+Split numbers from units of measure 
+Remove characters from right 
+ Functions N FunctionDATEVALUE FunctionTIMEVALUE FunctionNUMBERVALUE FunctionVALUETOTEXT Function 
+ Links Microsoft VALUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel VALUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VALUE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+VALUE Function
+Related functions 
+N
+DATEVALUE
+TIMEVALUE
+NUMBERVALUE
+VALUETOTEXT
+Summary
+The Excel VALUE function converts text that appears in a recognized format (i.e. a number, date, or time format) into a numeric value. Normally, the VALUE function is not needed in Excel, because Excel automatically converts text to numeric values.
+Purpose 
+Convert text to a number
+Return value 
+A numeric value.
+Arguments 
+text - The text value to convert to a number.
+Syntax 
+=VALUE(text)
+Usage notes 
+The VALUE function is meant to convert a text value that represents a number into a numeric value. The text can be a date, a time, or any other number, so long as the format can be recognized by Excel. When the conversion is successful, the result is a numeric value with no number formatting. When the VALUE function is unable to convert a text value to a numeric result, the result is a #VALUE! error.
+=VALUE("July 15, 2021") // returns 44392
+=VALUE("$125.50") // returns 125.5
+=VALUE("32.5%") // returns 0.325
+In general, there is no need to use the VALUE function because Excel automatically converts text to numbers as needed. However, VALUE is provided for compatibility with other spreadsheet applications.
+Use the VALUE function to convert text input to a numeric value.
+The VALUE function converts text that appears in a recognized format (i.e. a number, date, or time format) into a numeric value.
+Normally, Excel automatically converts text to numeric values as needed, so the VALUE function is not needed.
+The VALUE function is provided for compatibility with other spreadsheet programs.
+The VALUE function returns #VALUE! when a conversion is unsuccessful.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Assign points based on late time 
+Convert text to numbers 
+Split numbers from units of measure 
+Remove characters from right 
+ Functions N FunctionDATEVALUE FunctionTIMEVALUE FunctionNUMBERVALUE FunctionVALUETOTEXT Function 
+ Links Microsoft VALUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,639 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FV function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FV Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+FV Function
+Related functions 
+
+PV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+FVSCHEDULE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FV function is a financial function that returns the future value of an investment. You can use the FV function to get the future value of an investment assuming periodic, constant payments with a constant interest rate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the future value of an investment
+
+
+
+Return value 
+
+future value
+
+
+
+Arguments 
+
+rate - The interest rate per period.nper - The total number of payment periods.pmt - The payment made each period. Must be entered as a negative number.pv - [optional] The present value of future payments. If omitted, assumed to be zero. Must be entered as a negative number.type - [optional] When payments are due. 0 = end of period, 1 = beginning of period. Default is 0.
+
+
+
+Syntax 
+
+=FV(rate, nper, pmt, [pv], [type])
+
+
+
+Usage notes 
+
+The future value (FV) function calculates the future value of an investment assuming periodic, constant payments with a constant interest rate.
+Notes:
+1. Units for rate and nper must be consistent. For example, if you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 (annual rate/12 = monthly interest rate) for rate and 4*12 (48 payments total) for nper. If you make annual payments on the same loan, use 12% (annual interest) for rate and 4 (4 payments total) for nper.
+2. If pmt is for cash out (i.e deposits to saving, etc), payment value must be negative; for cash received (income, dividends), payment value must be positive.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Present value of annuity 
+
+Calculate periods for annuity 
+
+Future value of annuity 
+
+Payment for annuity 
+
+Future value vs. Present value 
+
+Calculate compound interest 
+
+Annual compound interest schedule 
+
+Compare effect of compounding periods 
+
+Estimate mortgage payment 
+
+Bond valuation example 
+
+
+ Functions PV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT FunctionFVSCHEDULE Function 
+ Links Microsoft FV function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+FV Function
+Related functions 
+PV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+FVSCHEDULE
+Summary
+The Excel FV function is a financial function that returns the future value of an investment. You can use the FV function to get the future value of an investment assuming periodic, constant payments with a constant interest rate.
+Purpose 
+Get the future value of an investment
+Return value 
+future value
+Arguments 
+rate - The interest rate per period.nper - The total number of payment periods.pmt - The payment made each period. Must be entered as a negative number.pv - [optional] The present value of future payments. If omitted, assumed to be zero. Must be entered as a negative number.type - [optional] When payments are due. 0 = end of period, 1 = beginning of period. Default is 0.
+Syntax 
+=FV(rate, nper, pmt, [pv], [type])
+Usage notes 
+The future value (FV) function calculates the future value of an investment assuming periodic, constant payments with a constant interest rate.
+Notes:
+1. Units for rate and nper must be consistent. For example, if you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 (annual rate/12 = monthly interest rate) for rate and 4*12 (48 payments total) for nper. If you make annual payments on the same loan, use 12% (annual interest) for rate and 4 (4 payments total) for nper.
+2. If pmt is for cash out (i.e deposits to saving, etc), payment value must be negative; for cash received (income, dividends), payment value must be positive.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Present value of annuity 
+Calculate periods for annuity 
+Future value of annuity 
+Payment for annuity 
+Future value vs. Present value 
+Calculate compound interest 
+Annual compound interest schedule 
+Compare effect of compounding periods 
+Estimate mortgage payment 
+Bond valuation example 
+ Functions PV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT FunctionFVSCHEDULE Function 
+ Links Microsoft FV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

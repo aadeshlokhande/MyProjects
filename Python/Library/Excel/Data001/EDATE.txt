@@ -1,0 +1,308 @@
+Excel EDATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+EDATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+EDATE Function
+Related functions 
+EOMONTH
+WORKDAY
+Summary
+The Excel EDATE function returns a date on the same day of the month, n months in the past or future. You can use EDATE to calculate expiration dates, maturity dates, and other due dates. Use a positive value for months to get a date in the future, and a negative value for dates in the past.
+Purpose 
+Shift date n months in future or past
+Return value 
+New date as Excel serial number
+Arguments 
+start_date - Start date as a valid Excel date.months - Number of months before or after start_date.
+Syntax 
+=EDATE(start_date, months)
+Usage notes 
+The EDATE function can add or subtract whole months from a date. You can use EDATE to calculate expiration dates, contract dates, due dates, anniversary dates, retirement dates, and other dates in the future or past. The EDATE function takes two arguments: start_date and months. Start_date must be a valid Excel date. The months argument specifies how many months in the future or past to move – use a positive number to move forward in time, and a negative number to move back in time.
+EDATE will return a serial number corresponding to a date. To display the result as a date, apply a number format of your choice.
+Note: The EDATE function returns the same day of the month n months in the past or future. Use the EOMONTH function to return the last day of the month n months in the past or future. 
+Example #1 - Basic usage
+If A1 contains the date February 1, 2018, you can use EDATE like this:
+=EDATE(A1,1) // returns March 1, 2018
+=EDATE(A1,3) // returns May 1, 2018
+=EDATE(A1,-1) // returns January 1, 2018
+=EDATE(A1,-2) // returns December 1, 2017
+Example #2 - 6 months from today
+To use EDATE with today's date, you can combine it with the TODAY function. For example, to create a date exactly 6 months from today, you can use:
+=EDATE(TODAY(),6) // 6 months from today
+Example #3 - Move by years
+To use the EDATE function to move by years, multiply by 12. For example, to move a date forward 2 years, you can use either of these formulas:
+=EDATE(A1,24) // forward 2 years
+=EDATE(A1,2*12) // forward 2 years
+The second form is handy when you already have a value for years in another cell and want to convert to months inside EDATE.
+Example #4 - End of month
+EDATE is clever about rolling "end of month" dates forwards or backwards, and will adjust year, month, and day values as necessary. For example EDATE will maintain the last day of month when a day is 31:
+=EDATE("31-Jan-2019",1) // returns 28-Feb-2019
+=EDATE("31-Jan-2019",2) // returns 31-Mar-2019
+=EDATE("31-Jan-2019",3) // returns 30-Apr-2019
+=EDATE("31-Jan-2019",4) // returns 31-May-2019
+=EDATE("31-Jan-2019",5) // returns 30-Jun-2019
+EDATE will also respect leap years:
+=EDATE("31-Jan-2020",1) // returns 29-Feb-2020
+However, EDATE will not maintain an end of month when the day value is less than 31. For example:
+=EDATE("28-Feb-2019",1) // returns 28-Mar-2019
+If an end-of-month date is a requirement, the EOMONTH function is a better option.
+Example #5 - EDATE with time
+The EDATE function will strip times from dates that include time (sometimes called a "datetime"). To preserve the time in a date, you can use a formula like this:
+=EDATE(A1,n)+MOD(A1,1)
+Here, the MOD function is used to extract the time from the date in A1 and add it back to the result from EDATE.
+See below for more examples of formulas that use the EDATE function.
+Notes
+EDATE will return the  #VALUE error if the start date is not a valid date.
+If the start date has a fractional time attached, it will be removed.
+If the months argument contains a decimal value, it will be removed.
+To calculate an end of month date, see the EOMONTH function.
+EDATE returns a date serial number, which must be formatted as a date.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Summary count by month with COUNTIFS 
+Get stock price last n months 
+Average by month 
+Calculate retirement date 
+Sequence of months 
+Add months to date 
+Sum by month 
+Get same date next month 
+Get same date next year 
+Next anniversary date 
+Videos
+  
+How to use function arguments 
+ Functions EOMONTH FunctionWORKDAY Function 
+ Links Microsoft EDATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel EDATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+EDATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+EDATE Function
+Related functions 
+EOMONTH
+WORKDAY
+Summary
+The Excel EDATE function returns a date on the same day of the month, n months in the past or future. You can use EDATE to calculate expiration dates, maturity dates, and other due dates. Use a positive value for months to get a date in the future, and a negative value for dates in the past.
+Purpose 
+Shift date n months in future or past
+Return value 
+New date as Excel serial number
+Arguments 
+start_date - Start date as a valid Excel date.months - Number of months before or after start_date.
+Syntax 
+=EDATE(start_date, months)
+Usage notes 
+The EDATE function can add or subtract whole months from a date. You can use EDATE to calculate expiration dates, contract dates, due dates, anniversary dates, retirement dates, and other dates in the future or past. The EDATE function takes two arguments: start_date and months. Start_date must be a valid Excel date. The months argument specifies how many months in the future or past to move – use a positive number to move forward in time, and a negative number to move back in time.
+EDATE will return a serial number corresponding to a date. To display the result as a date, apply a number format of your choice.
+Note: The EDATE function returns the same day of the month n months in the past or future. Use the EOMONTH function to return the last day of the month n months in the past or future. 
+Example #1 - Basic usage
+If A1 contains the date February 1, 2018, you can use EDATE like this:
+=EDATE(A1,1) // returns March 1, 2018
+=EDATE(A1,3) // returns May 1, 2018
+=EDATE(A1,-1) // returns January 1, 2018
+=EDATE(A1,-2) // returns December 1, 2017
+Example #2 - 6 months from today
+To use EDATE with today's date, you can combine it with the TODAY function. For example, to create a date exactly 6 months from today, you can use:
+=EDATE(TODAY(),6) // 6 months from today
+Example #3 - Move by years
+To use the EDATE function to move by years, multiply by 12. For example, to move a date forward 2 years, you can use either of these formulas:
+=EDATE(A1,24) // forward 2 years
+=EDATE(A1,2*12) // forward 2 years
+The second form is handy when you already have a value for years in another cell and want to convert to months inside EDATE.
+Example #4 - End of month
+EDATE is clever about rolling "end of month" dates forwards or backwards, and will adjust year, month, and day values as necessary. For example EDATE will maintain the last day of month when a day is 31:
+=EDATE("31-Jan-2019",1) // returns 28-Feb-2019
+=EDATE("31-Jan-2019",2) // returns 31-Mar-2019
+=EDATE("31-Jan-2019",3) // returns 30-Apr-2019
+=EDATE("31-Jan-2019",4) // returns 31-May-2019
+=EDATE("31-Jan-2019",5) // returns 30-Jun-2019
+EDATE will also respect leap years:
+=EDATE("31-Jan-2020",1) // returns 29-Feb-2020
+However, EDATE will not maintain an end of month when the day value is less than 31. For example:
+=EDATE("28-Feb-2019",1) // returns 28-Mar-2019
+If an end-of-month date is a requirement, the EOMONTH function is a better option.
+Example #5 - EDATE with time
+The EDATE function will strip times from dates that include time (sometimes called a "datetime"). To preserve the time in a date, you can use a formula like this:
+=EDATE(A1,n)+MOD(A1,1)
+Here, the MOD function is used to extract the time from the date in A1 and add it back to the result from EDATE.
+See below for more examples of formulas that use the EDATE function.
+Notes
+EDATE will return the  #VALUE error if the start date is not a valid date.
+If the start date has a fractional time attached, it will be removed.
+If the months argument contains a decimal value, it will be removed.
+To calculate an end of month date, see the EOMONTH function.
+EDATE returns a date serial number, which must be formatted as a date.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Summary count by month with COUNTIFS 
+Get stock price last n months 
+Average by month 
+Calculate retirement date 
+Sequence of months 
+Add months to date 
+Sum by month 
+Get same date next month 
+Get same date next year 
+Next anniversary date 
+Videos
+  
+How to use function arguments 
+ Functions EOMONTH FunctionWORKDAY Function 
+ Links Microsoft EDATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

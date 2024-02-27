@@ -1,0 +1,10 @@
+Summary
+The Excel WORKDAY function takes a date and returns the nearest working day n days in the future or past. You can use the WORKDAY function to calculate things like ship dates, delivery dates, and completion dates that need to take into account working and non-working days.
+Purpose 
+Get a date n working days in the future or past
+Return value 
+A serial number representing a particular date in Excel.
+Arguments 
+start_date - The date from which to start.days - The working days before or after start_date.holidays - [optional] A list dates that should be considered non-work days.
+Syntax 
+=WORKDAY(start_date, days, [holidays])

@@ -1,0 +1,665 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MAP function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MAP Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+MAP Function
+Related functions 
+
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MAP function "maps" a custom LAMBDA function to each value in a supplied array. The LAMBDA is applied to each value, and the result from MAP is an array of results with the same dimensions as the original array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Map array to custom function
+
+
+
+Return value 
+
+Array of results
+
+
+
+Arguments 
+
+array1 - The array to be mapped.array2 - [optional] Additional arrays required by the LAMBDA.lambda - The custom LAMBDA function to apply.
+
+
+
+Syntax 
+
+=MAP(array1, [array2], ..., lambda)
+
+
+
+Usage notes 
+
+The MAP function "maps" a custom LAMBDA function to each value in a supplied array. The LAMBDA is applied to each value, and the result from MAP is an array of results with the same dimensions as the original array.
+The MAP function is useful when you want to process each item in an array individually but as an array operation that yields an array result. MAP is also useful when the formula logic is complex and would be best managed in a single location. Using a named LAMBDA function with MAP is possible to reuse the same code elsewhere.
+The MAP function takes two required arguments: array1 and lambda. Array1 is the array that should be mapped. Lambda is the custom lambda function that should be run on each item in array1. Additional arguments can be added in the form of array2, array3, etc. before lambda, which must always be the last argument provided. When additional arrays are provided to MAP, the LAMBDA function must be configured to accept additional arguments. Array1 should be the first argument in the LAMBDA, array2 should be the second argument, etc.
+Examples
+The MAP function maps each value in an array to a custom LAMBDA function. For example, the formula below maps a LAMBDA function that simply adds 1 to each item in the supplied array:
+
+=MAP({1,2,3},LAMBDA(a,a+1)) // returns {2,3,4}
+
+The variable a passed into the LAMBDA function as the first argument is array1 in the MAP function.
+Remove non-numeric values
+In the worksheet shown above, MAP is used to remove non-numeric values from the array provided (B5:D16). The formula in F5 is:
+
+=MAP(B5:D16,LAMBDA(a,IF(ISNUMBER(a),+a,"")))
+
+Because array1 has 12 rows and 3 columns, the result from MAP is a 12 x 3 array that spills into the range F5:H16.
+Note: the +a notation is used to force Excel to coerce a from a range reference to an array of values. Without the +, MAP will return a #CALC! error. This step is sometimes necessary when working with array formulas that spill.
+Additional arrays
+MAP can accept additional arrays that can be used by the LAMBDA during calculation. The formula below adds each item in array1 to the corresponding item in array2:
+
+=MAP({1,2,3},{1,2,3},LAMBDA(a,b,a+b)) // returns {2,4,6}
+
+Here, the variable a given to the LAMBDA function is array1 in  the MAP function, and b is array2.
+When to use MAP
+The dynamic array engine in Excel can handle many array operations natively without a function like MAP. For example, the formulas below both return the same result:
+
+=array+1
+=MAP(array,LAMBDA(a,a+1))
+
+As such, there is no particular reason to use MAP when a native array operation will achieve the same result. However, there are cases where MAP can be useful:
+
+To run logical tests with the AND and OR functions. These functions aggregate arrays to a single value, so normally they can be used in array operations that need to maintain multiple values.
+
+To perform certain aggregate operations on multiple arrays, i.e.
+
+=MAP(rng1,rng2,rng3,LAMBDA(a,b,c,MAX(a,b,c)))
+
+
+To make a function spill that otherwise won't.
+
+Note: The MAP function returns an array of results. See the REDUCE function if you want to process each item in an array individually but you want a single aggregated result.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+MAP with AND and OR logic 
+
+
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MAP function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MAP Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+MAP Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The Excel MAP function "maps" a custom LAMBDA function to each value in a supplied array. The LAMBDA is applied to each value, and the result from MAP is an array of results with the same dimensions as the original array.
+Purpose 
+Map array to custom function
+Return value 
+Array of results
+Arguments 
+array1 - The array to be mapped.array2 - [optional] Additional arrays required by the LAMBDA.lambda - The custom LAMBDA function to apply.
+Syntax 
+=MAP(array1, [array2], ..., lambda)
+Usage notes 
+The MAP function "maps" a custom LAMBDA function to each value in a supplied array. The LAMBDA is applied to each value, and the result from MAP is an array of results with the same dimensions as the original array.
+The MAP function is useful when you want to process each item in an array individually but as an array operation that yields an array result. MAP is also useful when the formula logic is complex and would be best managed in a single location. Using a named LAMBDA function with MAP is possible to reuse the same code elsewhere.
+The MAP function takes two required arguments: array1 and lambda. Array1 is the array that should be mapped. Lambda is the custom lambda function that should be run on each item in array1. Additional arguments can be added in the form of array2, array3, etc. before lambda, which must always be the last argument provided. When additional arrays are provided to MAP, the LAMBDA function must be configured to accept additional arguments. Array1 should be the first argument in the LAMBDA, array2 should be the second argument, etc.
+Examples
+The MAP function maps each value in an array to a custom LAMBDA function. For example, the formula below maps a LAMBDA function that simply adds 1 to each item in the supplied array:
+=MAP({1,2,3},LAMBDA(a,a+1)) // returns {2,3,4}
+The variable a passed into the LAMBDA function as the first argument is array1 in the MAP function.
+Remove non-numeric values
+In the worksheet shown above, MAP is used to remove non-numeric values from the array provided (B5:D16). The formula in F5 is:
+=MAP(B5:D16,LAMBDA(a,IF(ISNUMBER(a),+a,"")))
+Because array1 has 12 rows and 3 columns, the result from MAP is a 12 x 3 array that spills into the range F5:H16.
+Note: the +a notation is used to force Excel to coerce a from a range reference to an array of values. Without the +, MAP will return a #CALC! error. This step is sometimes necessary when working with array formulas that spill.
+Additional arrays
+MAP can accept additional arrays that can be used by the LAMBDA during calculation. The formula below adds each item in array1 to the corresponding item in array2:
+=MAP({1,2,3},{1,2,3},LAMBDA(a,b,a+b)) // returns {2,4,6}
+Here, the variable a given to the LAMBDA function is array1 in  the MAP function, and b is array2.
+When to use MAP
+The dynamic array engine in Excel can handle many array operations natively without a function like MAP. For example, the formulas below both return the same result:
+=array+1
+=MAP(array,LAMBDA(a,a+1))
+As such, there is no particular reason to use MAP when a native array operation will achieve the same result. However, there are cases where MAP can be useful:
+To run logical tests with the AND and OR functions. These functions aggregate arrays to a single value, so normally they can be used in array operations that need to maintain multiple values.
+To perform certain aggregate operations on multiple arrays, i.e.
+=MAP(rng1,rng2,rng3,LAMBDA(a,b,c,MAX(a,b,c)))
+To make a function spill that otherwise won't.
+Note: The MAP function returns an array of results. See the REDUCE function if you want to process each item in an array individually but you want a single aggregated result.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+MAP with AND and OR logic 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

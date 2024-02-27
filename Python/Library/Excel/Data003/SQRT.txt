@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel SQRT function returns the square root of a positive number. SQRT returns an error if number is negative.', 'Purpose' : 'Find the positive square root of a number', 'Return value' : 'Positive square root', 'Arguments' : 'number - The number to get the square root of.', 'Syntax' : '=SQRT(number)' }

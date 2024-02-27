@@ -1,0 +1,280 @@
+Excel TODAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TODAY Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+TODAY Function
+Related functions 
+NOW
+TEXT
+Summary
+The Excel TODAY function returns the current date, updated continuously when a worksheet is changed or opened. The TODAY function takes no arguments. You can format the value returned by TODAY with a date number format. If you need current date and time, use the NOW function.
+Purpose 
+Get the current date
+Return value 
+Excel date as a serial number
+Arguments 
+Syntax 
+=TODAY()
+Usage notes 
+The TODAY function returns the current date, and will continually update each time the worksheet is updated. Use F9 to force the worksheet to recalculate and update the value.
+The value returned by the TODAY function is a standard Excel date. To display the result as a date, apply a date number format. Optionally customize the number format as you like. If you want the current date with a time value, use the NOW function.
+Examples
+The TODAY function can be used on its own, or combined with other functions. The formulas below show how the TODAY function can be used in various ways:
+=TODAY()  // current date
+=TODAY()-7  // one week in past
+=TODAY()+7  // one week in future
+=TODAY()+90  // 90 days from today
+=EDATE(TODAY(),3)  // 3 months from today
+=EDATE(TODAY(),12)  // 1 year from today
+=EDATE(TODAY(),-12)  // 1 year in the past
+=EOMONTH(TODAY(),-1)+1  // first day of current month
+=TODAY()+TIME(18,0,0)  // today at 6:00 PM
+=TODAY()+1+TIME(12,0,0)  // tomorrow at noon
+Static date and time
+If you need a static date and time that won't change,  you can use the following shortcuts:
+Insert current date - Control + ;
+Insert current time - Control + Shift + :
+To enter both values in a single cell, enter the date, a space, then the time.
+Formatting results
+The result of TODAY is a serial number representing a valid Excel date. You can format the value returned by TODAY using any standard date format. You can use the TEXT function to build a text message that includes the current date:
+="The current date is "&TEXT(TODAY(),"mmm d")
+To return a message like "The current date is May 31".
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get stock price (latest close) 
+Dynamic calendar formula 
+Calculate days open 
+Last n days 
+Dynamic calendar grid 
+Get days before a date 
+Last n weeks 
+Range contains specific date 
+Sum last 30 days 
+Dynamic date list 
+Videos
+  
+How to check and debug a formula with F9 
+How to step through complex formulas using Evaluate 
+How to display current date and time 
+How to use function arguments 
+How to calculate and highlight expiration dates 
+ Functions NOW FunctionTEXT Function 
+ Links Microsoft TODAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel TODAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TODAY Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+TODAY Function
+Related functions 
+NOW
+TEXT
+Summary
+The Excel TODAY function returns the current date, updated continuously when a worksheet is changed or opened. The TODAY function takes no arguments. You can format the value returned by TODAY with a date number format. If you need current date and time, use the NOW function.
+Purpose 
+Get the current date
+Return value 
+Excel date as a serial number
+Arguments 
+Syntax 
+=TODAY()
+Usage notes 
+The TODAY function returns the current date, and will continually update each time the worksheet is updated. Use F9 to force the worksheet to recalculate and update the value.
+The value returned by the TODAY function is a standard Excel date. To display the result as a date, apply a date number format. Optionally customize the number format as you like. If you want the current date with a time value, use the NOW function.
+Examples
+The TODAY function can be used on its own, or combined with other functions. The formulas below show how the TODAY function can be used in various ways:
+=TODAY()  // current date
+=TODAY()-7  // one week in past
+=TODAY()+7  // one week in future
+=TODAY()+90  // 90 days from today
+=EDATE(TODAY(),3)  // 3 months from today
+=EDATE(TODAY(),12)  // 1 year from today
+=EDATE(TODAY(),-12)  // 1 year in the past
+=EOMONTH(TODAY(),-1)+1  // first day of current month
+=TODAY()+TIME(18,0,0)  // today at 6:00 PM
+=TODAY()+1+TIME(12,0,0)  // tomorrow at noon
+Static date and time
+If you need a static date and time that won't change,  you can use the following shortcuts:
+Insert current date - Control + ;
+Insert current time - Control + Shift + :
+To enter both values in a single cell, enter the date, a space, then the time.
+Formatting results
+The result of TODAY is a serial number representing a valid Excel date. You can format the value returned by TODAY using any standard date format. You can use the TEXT function to build a text message that includes the current date:
+="The current date is "&TEXT(TODAY(),"mmm d")
+To return a message like "The current date is May 31".
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get stock price (latest close) 
+Dynamic calendar formula 
+Calculate days open 
+Last n days 
+Dynamic calendar grid 
+Get days before a date 
+Last n weeks 
+Range contains specific date 
+Sum last 30 days 
+Dynamic date list 
+Videos
+  
+How to check and debug a formula with F9 
+How to step through complex formulas using Evaluate 
+How to display current date and time 
+How to use function arguments 
+How to calculate and highlight expiration dates 
+ Functions NOW FunctionTEXT Function 
+ Links Microsoft TODAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

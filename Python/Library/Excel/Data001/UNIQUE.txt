@@ -1,0 +1,316 @@
+Excel UNIQUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+UNIQUE Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+UNIQUE Function
+Related functions 
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+Summary
+The Excel UNIQUE function returns a list of unique values in a list or range. Values can be text, numbers, dates, times, etc.
+Purpose 
+Extract unique values from range
+Return value 
+Array of unique values
+Arguments 
+array - Range or array from which to extract unique values.by_col - [optional] How to compare and extract. By row = FALSE (default); by column = TRUE.exactly_once - [optional] TRUE = values that occur once, FALSE= all unique values (default).
+Syntax 
+=UNIQUE(array, [by_col], [exactly_once])
+Usage notes 
+The Excel UNIQUE function extracts a list of unique values from a range or array. The result is a dynamic array of unique values. If this array is the final result (i.e. not handed off to another function), array values will "spill" onto the worksheet into a range that automatically updates when new uniques values are added or removed from the source range.
+The UNIQUE function takes three arguments: array, by_col, and exactly_once. The first argument, array, is the array or range from which to extract unique values. This is the only required argument. The second argument, by_col, controls whether UNIQUE will extract unique values by rows or by columns. By default, UNIQUE will extract unique values in rows. To force UNIQUE to extract unique values by columns, set by_col to TRUE or 1. The last argument, exactly_once, sets behavior for values that appear more than once. By default, UNIQUE will extract all unique values, regardless of how many times they appear in array. To extract unique values that appear only once in array, set exactly_once to TRUE or 1.
+Note: the UNIQUE function is not case-sensitive. UNIQUE will treat "APPLE", "Apple", and "apple" as the same text.
+Video: The UNIQUE function
+Basic example
+The UNIQUE function extracts unique values from a range or array:
+=UNIQUE({"A";"B";"C";"A";"B"}) // returns {"A";"B";"C"}
+To return unique values from in the range A1:A10, you can use a formula like this:
+=UNIQUE(A1:A10)
+By column
+By default, UNIQUE will extract unique values in rows:
+=UNIQUE({1;1;2;2;3}) // returns {1;2;3}
+UNIQUE will not handle the same values organized in columns:
+=UNIQUE({1,1,2,2,3}) // returns {1,1,2,2,3}
+To handle the horizontal array above, set the set the by_col argument to TRUE or 1:
+=UNIQUE({1,1,2,2,3},1) // returns {1,2,3}
+To return unique values from the horizontal range A1:E1, set the by_col argument to TRUE or 1:
+=UNIQUE(A1:E1,1) // extract unique from horizontal array
+Exactly once
+The UNIQUE function has an optional argument called exactly_once that controls how the function deals with repeating values. By default, exactly_once is FALSE. This means UNIQUE will extract unique values regardless of how many times they appear in the source data:
+=UNIQUE({1;1;2;2;3}) // returns {1;2;3}
+Set exactly_once to TRUE or 1 to extract unique values that appear just once in the source data: 
+=UNIQUE({1;1;2;2;3},0,1) // returns {3}
+Notice the above formula also sets the by_col argument to zero (0), the default value. The same formula could also be written like this:
+=UNIQUE({1;1;2;2;3},,1) // returns {3}
+=UNIQUE({1;1;2;2;3},,TRUE) // returns {3}
+=UNIQUE({1;1;2;2;3},FALSE,TRUE) // returns {3}
+Unique with criteria
+To extract unique values that meet specific criteria, you can use UNIQUE together with the FILTER function. The generic formula, where rng2=A1 represents a logical test, looks like this:
+=UNIQUE(FILTER(rng1,rng2=A1))
+For more details, see the complete explanation here.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Dynamic two-way sum 
+Dynamic summary count 
+Dynamic two-way average 
+Minimum value if unique 
+Unique values with multiple criteria 
+Two-way summary count 
+Average salary by department 
+10 most common text values 
+Average by group 
+UNIQUE with non-adjacent columns 
+Videos
+  
+New dynamic array functions in Excel 
+Spilling and the spill range 
+The UNIQUE function 
+How to count unique values 
+Unique values with criteria 
+How to see arrays in formulas 
+Two-way summary with dynamic arrays 
+Filter with dynamic dropdown list 
+List duplicate values with FILTER 
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft UNIQUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel UNIQUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+UNIQUE Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+UNIQUE Function
+Related functions 
+UNIQUE
+FILTER
+SORT
+SORTBY
+RANDARRAY
+SEQUENCE
+Summary
+The Excel UNIQUE function returns a list of unique values in a list or range. Values can be text, numbers, dates, times, etc.
+Purpose 
+Extract unique values from range
+Return value 
+Array of unique values
+Arguments 
+array - Range or array from which to extract unique values.by_col - [optional] How to compare and extract. By row = FALSE (default); by column = TRUE.exactly_once - [optional] TRUE = values that occur once, FALSE= all unique values (default).
+Syntax 
+=UNIQUE(array, [by_col], [exactly_once])
+Usage notes 
+The Excel UNIQUE function extracts a list of unique values from a range or array. The result is a dynamic array of unique values. If this array is the final result (i.e. not handed off to another function), array values will "spill" onto the worksheet into a range that automatically updates when new uniques values are added or removed from the source range.
+The UNIQUE function takes three arguments: array, by_col, and exactly_once. The first argument, array, is the array or range from which to extract unique values. This is the only required argument. The second argument, by_col, controls whether UNIQUE will extract unique values by rows or by columns. By default, UNIQUE will extract unique values in rows. To force UNIQUE to extract unique values by columns, set by_col to TRUE or 1. The last argument, exactly_once, sets behavior for values that appear more than once. By default, UNIQUE will extract all unique values, regardless of how many times they appear in array. To extract unique values that appear only once in array, set exactly_once to TRUE or 1.
+Note: the UNIQUE function is not case-sensitive. UNIQUE will treat "APPLE", "Apple", and "apple" as the same text.
+Video: The UNIQUE function
+Basic example
+The UNIQUE function extracts unique values from a range or array:
+=UNIQUE({"A";"B";"C";"A";"B"}) // returns {"A";"B";"C"}
+To return unique values from in the range A1:A10, you can use a formula like this:
+=UNIQUE(A1:A10)
+By column
+By default, UNIQUE will extract unique values in rows:
+=UNIQUE({1;1;2;2;3}) // returns {1;2;3}
+UNIQUE will not handle the same values organized in columns:
+=UNIQUE({1,1,2,2,3}) // returns {1,1,2,2,3}
+To handle the horizontal array above, set the set the by_col argument to TRUE or 1:
+=UNIQUE({1,1,2,2,3},1) // returns {1,2,3}
+To return unique values from the horizontal range A1:E1, set the by_col argument to TRUE or 1:
+=UNIQUE(A1:E1,1) // extract unique from horizontal array
+Exactly once
+The UNIQUE function has an optional argument called exactly_once that controls how the function deals with repeating values. By default, exactly_once is FALSE. This means UNIQUE will extract unique values regardless of how many times they appear in the source data:
+=UNIQUE({1;1;2;2;3}) // returns {1;2;3}
+Set exactly_once to TRUE or 1 to extract unique values that appear just once in the source data: 
+=UNIQUE({1;1;2;2;3},0,1) // returns {3}
+Notice the above formula also sets the by_col argument to zero (0), the default value. The same formula could also be written like this:
+=UNIQUE({1;1;2;2;3},,1) // returns {3}
+=UNIQUE({1;1;2;2;3},,TRUE) // returns {3}
+=UNIQUE({1;1;2;2;3},FALSE,TRUE) // returns {3}
+Unique with criteria
+To extract unique values that meet specific criteria, you can use UNIQUE together with the FILTER function. The generic formula, where rng2=A1 represents a logical test, looks like this:
+=UNIQUE(FILTER(rng1,rng2=A1))
+For more details, see the complete explanation here.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Dynamic two-way sum 
+Dynamic summary count 
+Dynamic two-way average 
+Minimum value if unique 
+Unique values with multiple criteria 
+Two-way summary count 
+Average salary by department 
+10 most common text values 
+Average by group 
+UNIQUE with non-adjacent columns 
+Videos
+  
+New dynamic array functions in Excel 
+Spilling and the spill range 
+The UNIQUE function 
+How to count unique values 
+Unique values with criteria 
+How to see arrays in formulas 
+Two-way summary with dynamic arrays 
+Filter with dynamic dropdown list 
+List duplicate values with FILTER 
+ Functions UNIQUE FunctionFILTER FunctionSORT FunctionSORTBY FunctionRANDARRAY FunctionSEQUENCE Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft UNIQUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

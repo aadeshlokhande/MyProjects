@@ -1,0 +1,10 @@
+Summary
+The Excel HEX2BIN function converts a hexadecimal number to its binary equivalent.
+Purpose 
+Converts a hexadecimal number to binary
+Return value 
+Binary number
+Arguments 
+number - The hexadecimal number you want to convert to binary.places - [optional] Pads the resulting binary number with zeros up to the specified number of digits. If omitted returns the least number of characters required to represent the number.
+Syntax 
+=HEX2BIN(number, [places])

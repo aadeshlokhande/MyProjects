@@ -1,0 +1,266 @@
+Excel DCOUNT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DCOUNT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Database
+DCOUNT Function
+Related functions 
+DCOUNTA
+DMAX
+DMIN
+DSUM
+DPRODUCT
+Summary
+The Excel DCOUNT function counts matching records in a database using criteria and an optional field. When a field is provided DCOUNT will only count numeric values in the field. Use DCOUNTA to count numbers or text values in a given field.
+Purpose 
+Count matching records in a database
+Return value 
+Numeric count of matching records
+Arguments 
+database - Database range including headers.field - [optional] Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DCOUNT(database, [field], criteria)
+Usage notes 
+The Excel DCOUNT function counts matching records in a database using a specified field and criteria. The database argument is a range of cells that includes field headers, field is the name or index of the field to count, and criteria is a range of cells with headers matching those in database. 
+Using the example above, you can count records where the color is "red" and price is > 10 with these formulas:
+=DCOUNT(B7:E14,"Total",B4:E5) // field by name
+=DCOUNT(B7:E14,4,B4:E5) // field by index
+=DCOUNT(B7:E14,,B4:E5) // field omitted
+Caution: if field is provided to the DCOUNT function, it is only counted when non-blank and numeric. If field contains a text value, or if the field is blank, it will not be counted, even when criteria match.
+Criteria options
+The criteria can include a variety of expressions. The table below shows some examples:
+Criteria
+Behavior
+Red
+Match "red" or "RED"
+Re*
+Begins with "re"
+10
+Equal to 10
+>10
+Greater than 10
+<>
+Not blank
+<>100
+Not 100
+>12/19/2017
+Greater than Dec 19, 2017
+The criteria range for DCOUNT can include more than one row below the headers. When criteria includes more than one row, each row is joined with OR logic, and the expressions in a given criteria row are joined with AND logic.
+Notes:
+DCOUNT will only count numeric values in the given field when criteria match. To count either numbers or text, use DCOUNTA.
+DCOUNT supports wildcards in criteria, the support is not as good as in more modern functions like COUNTIFS.
+Criteria can include more than one row (as explained above),
+The field argument can be supplied as a name in double quotes ("") or as a number representing field index.
+The database and criteria ranges must include matching headers.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DCOUNTA FunctionDMAX FunctionDMIN FunctionDSUM FunctionDPRODUCT Function 
+ Links Microsoft DCOUNT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DCOUNT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DCOUNT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Database
+DCOUNT Function
+Related functions 
+DCOUNTA
+DMAX
+DMIN
+DSUM
+DPRODUCT
+Summary
+The Excel DCOUNT function counts matching records in a database using criteria and an optional field. When a field is provided DCOUNT will only count numeric values in the field. Use DCOUNTA to count numbers or text values in a given field.
+Purpose 
+Count matching records in a database
+Return value 
+Numeric count of matching records
+Arguments 
+database - Database range including headers.field - [optional] Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DCOUNT(database, [field], criteria)
+Usage notes 
+The Excel DCOUNT function counts matching records in a database using a specified field and criteria. The database argument is a range of cells that includes field headers, field is the name or index of the field to count, and criteria is a range of cells with headers matching those in database. 
+Using the example above, you can count records where the color is "red" and price is > 10 with these formulas:
+=DCOUNT(B7:E14,"Total",B4:E5) // field by name
+=DCOUNT(B7:E14,4,B4:E5) // field by index
+=DCOUNT(B7:E14,,B4:E5) // field omitted
+Caution: if field is provided to the DCOUNT function, it is only counted when non-blank and numeric. If field contains a text value, or if the field is blank, it will not be counted, even when criteria match.
+Criteria options
+The criteria can include a variety of expressions. The table below shows some examples:
+Criteria
+Behavior
+Red
+Match "red" or "RED"
+Re*
+Begins with "re"
+10
+Equal to 10
+>10
+Greater than 10
+<>
+Not blank
+<>100
+Not 100
+>12/19/2017
+Greater than Dec 19, 2017
+The criteria range for DCOUNT can include more than one row below the headers. When criteria includes more than one row, each row is joined with OR logic, and the expressions in a given criteria row are joined with AND logic.
+Notes:
+DCOUNT will only count numeric values in the given field when criteria match. To count either numbers or text, use DCOUNTA.
+DCOUNT supports wildcards in criteria, the support is not as good as in more modern functions like COUNTIFS.
+Criteria can include more than one row (as explained above),
+The field argument can be supplied as a name in double quotes ("") or as a number representing field index.
+The database and criteria ranges must include matching headers.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DCOUNTA FunctionDMAX FunctionDMIN FunctionDSUM FunctionDPRODUCT Function 
+ Links Microsoft DCOUNT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

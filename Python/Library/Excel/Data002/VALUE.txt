@@ -1,0 +1,10 @@
+Summary
+The Excel VALUE function converts text that appears in a recognized format (i.e. a number, date, or time format) into a numeric value. Normally, the VALUE function is not needed in Excel, because Excel automatically converts text to numeric values.
+Purpose 
+Convert text to a number
+Return value 
+A numeric value.
+Arguments 
+text - The text value to convert to a number.
+Syntax 
+=VALUE(text)

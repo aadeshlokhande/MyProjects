@@ -1,0 +1,10 @@
+Summary
+The Excel TYPE function returns a numeric code representing "type" in 5 categories: number = 1, text = 2, logical = 4, error = 16, and array = 64. Use TYPE when the operation of a formula depends on the type of value in a particular cell.
+Purpose 
+Get the type of value in a cell
+Return value 
+A numeric code representing type
+Arguments 
+value - The value to check the type of.
+Syntax 
+=TYPE(value)

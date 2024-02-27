@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel CLEAN function takes a text string and returns text that has been "cleaned" of line breaks and other non-printable characters.', 'Purpose' : 'Strip non-printable characters from text', 'Return value' : 'Text with non-printable characters removed.', 'Arguments' : 'text - The text to clean.', 'Syntax' : '=CLEAN(text)' }

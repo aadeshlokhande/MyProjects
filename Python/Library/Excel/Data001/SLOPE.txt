@@ -1,0 +1,226 @@
+Excel SLOPE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SLOPE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+SLOPE Function
+Related functions 
+INTERCEPT
+LINEST
+Summary
+The Excel SLOPE function returns the slope of a regression line based on known y values and known x values. A regression line is a "best fit" line based on known data points.
+Purpose 
+Get slope of linear regression line
+Return value 
+Calculated slope as a number
+Arguments 
+known_ys - An array or range of numeric data points (dependent values).known_xs - An array or range of numeric data points (independent values).
+Syntax 
+=SLOPE(known_ys, known_xs)
+Usage notes 
+The SLOPE function returns the slope of a regression line based on known y values and known x values. A regression line is a "best fit" line based on known data points.
+The slope of a line is a measure of steepness. Mathematically, slope is calculated as "rise over run", or change in y over the change in x. For example, if a line has a slope of 2/1 (2), then if y increases by 2 units, x increases by 1 unit.
+Example
+In the example shown, the formula in E5 is:
+=SLOPE(B5:B9,C5:C9) // returns -2
+This formula returns -2, based on known_ys in C5:C9, and known_xs in B5:B9.
+Equation
+In statistics, a best fit line does not normally lie exactly on the known x and y points. The equation used by the SLOPE function in Excel is based on the mean of known x's and y's:
+For the example shown, this formula can be manually recreated like this:
+=SUM((B5:B9-AVERAGE(B5:B9))*(C5:C9-AVERAGE(C5:C9)))/SUM((B5:B9-AVERAGE(B5:B9))^2)
+The calculated result from the SLOPE function and the manual formula are the same.
+Notes
+If there is only one set of points, SLOPE will return #DIV/0!
+If the count of known_ys is different from known_xs, SLOPE returns #N/A
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions INTERCEPT FunctionLINEST Function 
+ Links Microsoft SLOPE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SLOPE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SLOPE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+SLOPE Function
+Related functions 
+INTERCEPT
+LINEST
+Summary
+The Excel SLOPE function returns the slope of a regression line based on known y values and known x values. A regression line is a "best fit" line based on known data points.
+Purpose 
+Get slope of linear regression line
+Return value 
+Calculated slope as a number
+Arguments 
+known_ys - An array or range of numeric data points (dependent values).known_xs - An array or range of numeric data points (independent values).
+Syntax 
+=SLOPE(known_ys, known_xs)
+Usage notes 
+The SLOPE function returns the slope of a regression line based on known y values and known x values. A regression line is a "best fit" line based on known data points.
+The slope of a line is a measure of steepness. Mathematically, slope is calculated as "rise over run", or change in y over the change in x. For example, if a line has a slope of 2/1 (2), then if y increases by 2 units, x increases by 1 unit.
+Example
+In the example shown, the formula in E5 is:
+=SLOPE(B5:B9,C5:C9) // returns -2
+This formula returns -2, based on known_ys in C5:C9, and known_xs in B5:B9.
+Equation
+In statistics, a best fit line does not normally lie exactly on the known x and y points. The equation used by the SLOPE function in Excel is based on the mean of known x's and y's:
+For the example shown, this formula can be manually recreated like this:
+=SUM((B5:B9-AVERAGE(B5:B9))*(C5:C9-AVERAGE(C5:C9)))/SUM((B5:B9-AVERAGE(B5:B9))^2)
+The calculated result from the SLOPE function and the manual formula are the same.
+Notes
+If there is only one set of points, SLOPE will return #DIV/0!
+If the count of known_ys is different from known_xs, SLOPE returns #N/A
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions INTERCEPT FunctionLINEST Function 
+ Links Microsoft SLOPE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

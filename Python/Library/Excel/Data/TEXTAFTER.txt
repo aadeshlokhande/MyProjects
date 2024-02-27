@@ -1,0 +1,700 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel TEXTAFTER function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+TEXTAFTER Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+TEXTAFTER Function
+Related functions 
+
+TEXTJOIN
+TEXTSPLIT
+TEXTBEFORE
+CONCAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel TEXTAFTER function returns the text that occurs after a given substring or delimiter. In cases where multiple delimiters appear in the text, TEXTAFTER can return text after the nth occurrence of a delimiter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Extract text after delimiter
+
+
+
+Return value 
+
+Extracted text
+
+
+
+Arguments 
+
+text - The text string to extract from.delimiter - The character(s) that delimit the text.instance_num - [optional] The instance of the delimiter in text. Default is 1.match_mode - [optional] Case-sensitivity. 0 = enabled, 1 = disabled. Default is 0.match_end - [optional] Treat end of text as delimiter. 0 = disabled, 1 = enabled. Default is 0.if_not_found - [optional] Value to return when no match is found. #N/A is default.
+
+
+
+Syntax 
+
+=TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found])
+
+
+
+Usage notes 
+
+The Excel TEXTAFTER function extracts text that occurs after a given delimiter. When multiple delimiters appear in the text, TEXTAFTER can return text that occurs after the nth instance of the delimiter. Unlike the TEXTSPLIT function, the output from TEXTAFTER is a single value.
+TEXTAFTER takes six arguments; only the first two are required. The first argument, text, is the text string to process. The second argument, delimiter is the substring to use as a delimiter when extracting text. Both text and delimiter are required. The third argument, instance_num, is an integer that represents the nth instance of the delimiter in text (i.e. to extract the text after the second instance, use 2 for instance_num). If not supplied instance_num defaults to 1. The fourth argument is match_mode, which controls case sensitivity when looking for a delimiter. By default, TEXTAFTER is case-sensitive and match_mode is zero (0). Supply 1 to disable case sensitivity. The fifth argument, match_end, allows TEXTAFTER to handle the end of a text string like a delimiter. By default, match_end is 0 and TEXTAFTER will not use the end of a text string as a delimiter. Set match_end to 1 to make TEXTAFTER use the end of the text string like a delimiter. The final argument is if_not_found, a custom value to return when TEXTAFTER does not match any text. By default, TEXTAFTER will return #N/A. See below for examples.
+Use TEXTAFTER to extract text after a delimiter, TEXTBEFORE to extract text before a delimiter, and TEXTSPLIT to extract all text separated by delimiters.
+Basic usage
+To extract the text that occurs after a specific character or substring, provide the text and the character(s) to use as delimiter in double quotes (""). For example, to extract the first name from "Jones, Bob", provide a comma in double quotes (",") as delimiter:
+
+=TEXTAFTER("Jones,Bob",",") // returns "Bob"
+
+You can use more than one character for delimiter. For example to extract the second dimension in the text string "12 ft x 20 ft", use " x "for delimiter:
+
+=TEXTAFTER("12 ft x 20 ft"," x ") // returns "20 ft"
+
+Note we include a space before and after x, since all three characters function as a delimiter.
+Text after delimiter n
+To extract text after the nth occurrence of delimiter, provide a value for instance_num. The formulas below extract text after the first and second occurrence of the hyphen character ("-"):
+
+=TEXTAFTER("ABX-112-Red-Y","-",1) // returns "112-Red-Y"
+=TEXTAFTER("ABX-112-Red-Y","-",2 // returns "Red-Y"
+
+TEXTAFTER will return #N/A if the specified instance is not found.
+Text after delimiter -n
+TEXTAFTER supports negative values for instance_num, which makes it possible to return text after the last occurrence of delimiter like this:
+
+=TEXTAFTER("ABX-112-Red-Y","-",-1) // returns "Y"
+=TEXTAFTER("ABX-112-Red-Y","-",-2) // returns "Red-Y"
+
+If instance_num is out-of-range, TEXTAFTER returns an #N/A error.
+Match end of text
+Normally, TEXTAFTER does not treat the end of a text string as a delimiter. For example, the formula below asks for the text after delimiter 3, counting from the end (note the negative 3):
+
+=TEXTAFTER("ABX-123-Red-XYZ","-",-3) // returns "123-Red-XYZ"
+
+And this formula returns #N/A because there is no fourth delimiter from the end:
+
+=TEXTAFTER("ABX-123-Red-XYZ","-",-4) // returns #N/A
+
+If we enable match_end by providing 1, the formula behaves as if a delimiter exists before "ABX", which is the "end" of the string when counting backwards.
+
+=TEXTAFTER("ABX-123-Red-XYZ","-",-4,,1) // returns entire string
+
+Take care in situations where a delimiter cannot be found and match_end is enabled. If match_end is enabled and instance_num is 1, TEXTAFTER will return an empty string ("") if delimiter is not found. If match_end is enabled and instance_num is -1, TEXTAFTER will return the entire string if delimiter is not found.
+Multiple delimiters
+To provide multiple delimiters at the same time to TEXTAFTER, you can use an array constant like {"x","y"} where x and y represent different delimiters. One use of this feature is to handle inconsistent delimiters in the source text. For example, in the worksheet below, the delimiter appears as a comma with a space (", ") and a comma without space (","). By providing the array constant {", ",","} for delimiter, both variations are handled correctly:
+
+=TEXTAFTER(B4,{", ",","})
+
+
+Case-sensitivity
+By default, TEXTAFTER is case-sensitive when searching for delimiter. This behavior is controlled by the match_mode argument, a boolean value that enables and disables case-sensitivity. By default, match_mode is FALSE. In the example below, the delimiter appears as both " x " and " X " (upper and lower case "x"). The formula in D4 sets match_mode to TRUE, which disables case-sensitivity and allows TEXTAFTER to match both versions of the delimiter:
+
+=TEXTAFTER(B4," x ",,TRUE) // disable case-sensitivity
+
+
+Note: you can use 1 and 0 in place of TRUE and FALSE for the match_mode argument.
+Notes
+
+TEXTAFTER is case-sensitive by default.
+TEXTAFTER will return a #N/A! error if delimiter is not found.
+TEXTAFTER will return a #VALUE! error if text is empty
+TEXTAFTER will return #N/A if instance_num is out-of-range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum numbers with text 
+
+Split text string at specific character 
+
+Get workbook name only 
+
+Get sheet name only 
+
+
+ Functions TEXTJOIN FunctionTEXTSPLIT FunctionTEXTBEFORE FunctionCONCAT Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel TEXTAFTER function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TEXTAFTER Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+TEXTAFTER Function
+Related functions 
+TEXTJOIN
+TEXTSPLIT
+TEXTBEFORE
+CONCAT
+Summary
+The Excel TEXTAFTER function returns the text that occurs after a given substring or delimiter. In cases where multiple delimiters appear in the text, TEXTAFTER can return text after the nth occurrence of a delimiter.
+Purpose 
+Extract text after delimiter
+Return value 
+Extracted text
+Arguments 
+text - The text string to extract from.delimiter - The character(s) that delimit the text.instance_num - [optional] The instance of the delimiter in text. Default is 1.match_mode - [optional] Case-sensitivity. 0 = enabled, 1 = disabled. Default is 0.match_end - [optional] Treat end of text as delimiter. 0 = disabled, 1 = enabled. Default is 0.if_not_found - [optional] Value to return when no match is found. #N/A is default.
+Syntax 
+=TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found])
+Usage notes 
+The Excel TEXTAFTER function extracts text that occurs after a given delimiter. When multiple delimiters appear in the text, TEXTAFTER can return text that occurs after the nth instance of the delimiter. Unlike the TEXTSPLIT function, the output from TEXTAFTER is a single value.
+TEXTAFTER takes six arguments; only the first two are required. The first argument, text, is the text string to process. The second argument, delimiter is the substring to use as a delimiter when extracting text. Both text and delimiter are required. The third argument, instance_num, is an integer that represents the nth instance of the delimiter in text (i.e. to extract the text after the second instance, use 2 for instance_num). If not supplied instance_num defaults to 1. The fourth argument is match_mode, which controls case sensitivity when looking for a delimiter. By default, TEXTAFTER is case-sensitive and match_mode is zero (0). Supply 1 to disable case sensitivity. The fifth argument, match_end, allows TEXTAFTER to handle the end of a text string like a delimiter. By default, match_end is 0 and TEXTAFTER will not use the end of a text string as a delimiter. Set match_end to 1 to make TEXTAFTER use the end of the text string like a delimiter. The final argument is if_not_found, a custom value to return when TEXTAFTER does not match any text. By default, TEXTAFTER will return #N/A. See below for examples.
+Use TEXTAFTER to extract text after a delimiter, TEXTBEFORE to extract text before a delimiter, and TEXTSPLIT to extract all text separated by delimiters.
+Basic usage
+To extract the text that occurs after a specific character or substring, provide the text and the character(s) to use as delimiter in double quotes (""). For example, to extract the first name from "Jones, Bob", provide a comma in double quotes (",") as delimiter:
+=TEXTAFTER("Jones,Bob",",") // returns "Bob"
+You can use more than one character for delimiter. For example to extract the second dimension in the text string "12 ft x 20 ft", use " x "for delimiter:
+=TEXTAFTER("12 ft x 20 ft"," x ") // returns "20 ft"
+Note we include a space before and after x, since all three characters function as a delimiter.
+Text after delimiter n
+To extract text after the nth occurrence of delimiter, provide a value for instance_num. The formulas below extract text after the first and second occurrence of the hyphen character ("-"):
+=TEXTAFTER("ABX-112-Red-Y","-",1) // returns "112-Red-Y"
+=TEXTAFTER("ABX-112-Red-Y","-",2 // returns "Red-Y"
+TEXTAFTER will return #N/A if the specified instance is not found.
+Text after delimiter -n
+TEXTAFTER supports negative values for instance_num, which makes it possible to return text after the last occurrence of delimiter like this:
+=TEXTAFTER("ABX-112-Red-Y","-",-1) // returns "Y"
+=TEXTAFTER("ABX-112-Red-Y","-",-2) // returns "Red-Y"
+If instance_num is out-of-range, TEXTAFTER returns an #N/A error.
+Match end of text
+Normally, TEXTAFTER does not treat the end of a text string as a delimiter. For example, the formula below asks for the text after delimiter 3, counting from the end (note the negative 3):
+=TEXTAFTER("ABX-123-Red-XYZ","-",-3) // returns "123-Red-XYZ"
+And this formula returns #N/A because there is no fourth delimiter from the end:
+=TEXTAFTER("ABX-123-Red-XYZ","-",-4) // returns #N/A
+If we enable match_end by providing 1, the formula behaves as if a delimiter exists before "ABX", which is the "end" of the string when counting backwards.
+=TEXTAFTER("ABX-123-Red-XYZ","-",-4,,1) // returns entire string
+Take care in situations where a delimiter cannot be found and match_end is enabled. If match_end is enabled and instance_num is 1, TEXTAFTER will return an empty string ("") if delimiter is not found. If match_end is enabled and instance_num is -1, TEXTAFTER will return the entire string if delimiter is not found.
+Multiple delimiters
+To provide multiple delimiters at the same time to TEXTAFTER, you can use an array constant like {"x","y"} where x and y represent different delimiters. One use of this feature is to handle inconsistent delimiters in the source text. For example, in the worksheet below, the delimiter appears as a comma with a space (", ") and a comma without space (","). By providing the array constant {", ",","} for delimiter, both variations are handled correctly:
+=TEXTAFTER(B4,{", ",","})
+Case-sensitivity
+By default, TEXTAFTER is case-sensitive when searching for delimiter. This behavior is controlled by the match_mode argument, a boolean value that enables and disables case-sensitivity. By default, match_mode is FALSE. In the example below, the delimiter appears as both " x " and " X " (upper and lower case "x"). The formula in D4 sets match_mode to TRUE, which disables case-sensitivity and allows TEXTAFTER to match both versions of the delimiter:
+=TEXTAFTER(B4," x ",,TRUE) // disable case-sensitivity
+Note: you can use 1 and 0 in place of TRUE and FALSE for the match_mode argument.
+Notes
+TEXTAFTER is case-sensitive by default.
+TEXTAFTER will return a #N/A! error if delimiter is not found.
+TEXTAFTER will return a #VALUE! error if text is empty
+TEXTAFTER will return #N/A if instance_num is out-of-range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum numbers with text 
+Split text string at specific character 
+Get workbook name only 
+Get sheet name only 
+ Functions TEXTJOIN FunctionTEXTSPLIT FunctionTEXTBEFORE FunctionCONCAT Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

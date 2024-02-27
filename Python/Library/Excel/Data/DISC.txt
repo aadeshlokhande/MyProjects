@@ -1,0 +1,668 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel DISC function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+DISC Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+DISC Function
+Related functions 
+
+PRICEDISC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel DISC function returns the discount rate for a security.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get discount rate for a security
+
+
+
+Return value 
+
+Discount rate as percentage
+
+
+
+Arguments 
+
+settlement - Settlement date of the security.maturity - Maturity date of the security.pr - Security price per $100 face value.redemption - Security redemption value per $100 face value.basis - [optional] Day count basis (see below, default =0).
+
+
+
+Syntax 
+
+=DISC(settlement, maturity, pr, redemption, [basis])
+
+
+
+Usage notes 
+
+The Excel DISC function returns the discount rate for a security. A discounted security does not pay periodic interest, but has a specified redemption value at maturity. The return on a discounted security is the difference between the price and redemption value.
+Discount rate is based on the concept of the time value of money. The discount rate is the interest used to convert between future value and present value. A future value can be "discounted" by a given interest rate to determine the present value.
+Example
+In the example shown, we want to find the discount rate for a bond with a price of $89.50 and a redemption value of $100. The settlement date is 6-Jul-2017 and the maturity date is 15-Jan-2020. The day count basis is US (NASD) 30/360. The formula in F5 is:
+
+=DISC(C7,C8,C5,C9,C10)
+
+With these inputs, the DISC function returns 4.16%, with percentage number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded, and the DATE function is used to supply each of the two required dates:
+
+=DISC(DATE(2017,7,6),DATE(2020,1,15),89.5,100,0)
+
+Basis
+The basis argument controls how days are counted. The DISC function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+
+
+
+Basis
+Day count
+
+
+
+
+0 or omitted
+US (NASD) 30/360
+
+
+1
+Actual/actual
+
+
+2
+Actual/360
+
+
+3
+Actual/365
+
+
+4
+European 30/360
+
+
+
+Notes
+
+In Excel, dates are serial numbers. 
+All dates, and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) DISC returns #VALUE!
+DISC returns #NUM when:
+		
+settlement >= maturity
+pr <= 0 or redemption <= 0
+Basis is out-of-range
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions PRICEDISC Function 
+ Links Microsoft DISC function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel DISC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DISC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+DISC Function
+Related functions 
+PRICEDISC
+Summary
+The Excel DISC function returns the discount rate for a security.
+Purpose 
+Get discount rate for a security
+Return value 
+Discount rate as percentage
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.pr - Security price per $100 face value.redemption - Security redemption value per $100 face value.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=DISC(settlement, maturity, pr, redemption, [basis])
+Usage notes 
+The Excel DISC function returns the discount rate for a security. A discounted security does not pay periodic interest, but has a specified redemption value at maturity. The return on a discounted security is the difference between the price and redemption value.
+Discount rate is based on the concept of the time value of money. The discount rate is the interest used to convert between future value and present value. A future value can be "discounted" by a given interest rate to determine the present value.
+Example
+In the example shown, we want to find the discount rate for a bond with a price of $89.50 and a redemption value of $100. The settlement date is 6-Jul-2017 and the maturity date is 15-Jan-2020. The day count basis is US (NASD) 30/360. The formula in F5 is:
+=DISC(C7,C8,C5,C9,C10)
+With these inputs, the DISC function returns 4.16%, with percentage number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded, and the DATE function is used to supply each of the two required dates:
+=DISC(DATE(2017,7,6),DATE(2020,1,15),89.5,100,0)
+Basis
+The basis argument controls how days are counted. The DISC function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) DISC returns #VALUE!
+DISC returns #NUM when:
+		
+settlement >= maturity
+pr <= 0 or redemption <= 0
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PRICEDISC Function 
+ Links Microsoft DISC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

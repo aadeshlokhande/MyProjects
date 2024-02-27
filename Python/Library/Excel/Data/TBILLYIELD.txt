@@ -1,0 +1,601 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel TBILLYIELD function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+TBILLYIELD Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+TBILLYIELD Function
+Related functions 
+
+TBILLPRICE
+TBILLEQ
+TBILLYIELD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel TBILLYIELD function returns the yield for a Treasury bill.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get yield for a Treasury bill
+
+
+
+Return value 
+
+Yield as percentage
+
+
+
+Arguments 
+
+settlement - Settlement date of the security.maturity - Maturity date of the security.price - Price per $100.
+
+
+
+Syntax 
+
+=TBILLYIELD(settlement, maturity, price)
+
+
+
+Usage notes 
+
+The Excel TBILLYIELD function returns the yield for a Treasury bill, based on a settlement date, a maturity date, and a price per $100. In the example shown, the settlement date is 5-Feb-2019, the maturity date is 1-Feb-2020, and the price per $100 is 97.54. The formula in F5 is:
+
+=TBILLYIELD(C5,C6,C7)
+
+With these inputs, the TBILLYIELD function returns a yield of 2.51%, with percentage number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, the DATE function is the best option.
+About treasury bills
+A treasury bill (also called a T-Bill) is a short-term debt obligation issued by the US Treasury Department. T-Bills are sold in increments of $100, and have terms that range from a few days up to 52 weeks. Backed by US government, T-Bills are considered a low risk investment.
+T-Bills are typically sold at a discount from par amount (face value), and the discount rate is determined at auction. However, T-bills can also be sold at a premium, when the price is greater than the par amount.
+T-Bills do not offer regular interest payments like a coupon bond. However, when a T-Bill matures, the owner is paid it's par amount, or face value.  When the par value is greater than the purchase price, the difference is the interest earned.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions TBILLPRICE FunctionTBILLEQ FunctionTBILLYIELD Function 
+ Links Microsoft TBILLYIELD function documentationTbills at a glance (treasurydirect.gov) 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel TBILLYIELD function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TBILLYIELD Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+TBILLYIELD Function
+Related functions 
+TBILLPRICE
+TBILLEQ
+TBILLYIELD
+Summary
+The Excel TBILLYIELD function returns the yield for a Treasury bill.
+Purpose 
+Get yield for a Treasury bill
+Return value 
+Yield as percentage
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.price - Price per $100.
+Syntax 
+=TBILLYIELD(settlement, maturity, price)
+Usage notes 
+The Excel TBILLYIELD function returns the yield for a Treasury bill, based on a settlement date, a maturity date, and a price per $100. In the example shown, the settlement date is 5-Feb-2019, the maturity date is 1-Feb-2020, and the price per $100 is 97.54. The formula in F5 is:
+=TBILLYIELD(C5,C6,C7)
+With these inputs, the TBILLYIELD function returns a yield of 2.51%, with percentage number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, the DATE function is the best option.
+About treasury bills
+A treasury bill (also called a T-Bill) is a short-term debt obligation issued by the US Treasury Department. T-Bills are sold in increments of $100, and have terms that range from a few days up to 52 weeks. Backed by US government, T-Bills are considered a low risk investment.
+T-Bills are typically sold at a discount from par amount (face value), and the discount rate is determined at auction. However, T-bills can also be sold at a premium, when the price is greater than the par amount.
+T-Bills do not offer regular interest payments like a coupon bond. However, when a T-Bill matures, the owner is paid it's par amount, or face value.  When the par value is greater than the purchase price, the difference is the interest earned.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions TBILLPRICE FunctionTBILLEQ FunctionTBILLYIELD Function 
+ Links Microsoft TBILLYIELD function documentationTbills at a glance (treasurydirect.gov) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

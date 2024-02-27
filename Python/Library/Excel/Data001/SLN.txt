@@ -1,0 +1,222 @@
+Excel SLN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SLN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+SLN Function
+Related functions 
+SLN
+DB
+DDB
+SYD
+VDB
+Summary
+The Excel SLN function returns the depreciation of an asset for one period, calculated with a straight-line method. The calculated depreciation is based on initial asset cost, salvage value, and the number of periods over which the asset is depreciated.
+Purpose 
+Depreciation - straight-line
+Return value 
+Depreciation in given period
+Arguments 
+cost - Initial cost of asset.salvage - Asset value at the end of the depreciation.life - Periods over which asset is depreciated.
+Syntax 
+=SLN(cost, salvage, life)
+Usage notes 
+The Excel SLN function returns the depreciation of an asset for one period, calculated with a straight-line method. The calculated depreciation is based on initial asset cost, salvage value, and the number of periods over which the asset is depreciated.
+For example, for an asset with an initial cost of $10,000, a useful life of 5 years, and a salvage value of $2,000:
+=SLN(10000,2000,5) // returns $1600
+In the example shown, the formula in C6, copied down, is:
+=SLN(cost,salvage,life)
+where named ranges are defined as follows:
+cost = G4
+salvage = G5
+life = G6
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SLN FunctionDB FunctionDDB FunctionSYD FunctionVDB Function 
+ Links Microsoft SLN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SLN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SLN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+SLN Function
+Related functions 
+SLN
+DB
+DDB
+SYD
+VDB
+Summary
+The Excel SLN function returns the depreciation of an asset for one period, calculated with a straight-line method. The calculated depreciation is based on initial asset cost, salvage value, and the number of periods over which the asset is depreciated.
+Purpose 
+Depreciation - straight-line
+Return value 
+Depreciation in given period
+Arguments 
+cost - Initial cost of asset.salvage - Asset value at the end of the depreciation.life - Periods over which asset is depreciated.
+Syntax 
+=SLN(cost, salvage, life)
+Usage notes 
+The Excel SLN function returns the depreciation of an asset for one period, calculated with a straight-line method. The calculated depreciation is based on initial asset cost, salvage value, and the number of periods over which the asset is depreciated.
+For example, for an asset with an initial cost of $10,000, a useful life of 5 years, and a salvage value of $2,000:
+=SLN(10000,2000,5) // returns $1600
+In the example shown, the formula in C6, copied down, is:
+=SLN(cost,salvage,life)
+where named ranges are defined as follows:
+cost = G4
+salvage = G5
+life = G6
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SLN FunctionDB FunctionDDB FunctionSYD FunctionVDB Function 
+ Links Microsoft SLN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

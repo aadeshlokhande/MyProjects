@@ -1,0 +1,228 @@
+Excel STANDARDIZE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STANDARDIZE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+STANDARDIZE Function
+Related functions 
+SMALL
+LARGE
+RANK
+RANK.AVG
+STDEV.S
+STDEV.P
+Summary
+The Excel STANDARDIZE function returns a normalized value (z-score) based on the mean and standard deviation.
+Purpose 
+Calculate a normalized value (z-score)
+Return value 
+Normalized value
+Arguments 
+x - The value to normalize.mean - The arithmetic mean of the distribution.standard_dev - The standard deviation of the distribution.
+Syntax 
+=STANDARDIZE(x, mean, standard_dev)
+Usage notes 
+The Excel STANDARDIZE function returns a normalized value (z-score) based on the mean and standard deviation. To use the STANDARDIZE function, calculate the mean with the AVERAGE function, and the standard deviation with the STDEV.P function (see below).
+In the example shown, the formula in D5 is:
+=STANDARDIZE(C5,$G$4,$G$5)
+About z-scores / standard scores
+A z-score, or standard score, is a way of standardizing scores on the same scale by dividing a score's deviation by the standard deviation in a data set. The result is a standard score, or a z-score. It measures the number of standard deviations a given data point is from the mean.
+A z-score can be negative or positive. A negative z-score indicates a value less than the mean, and a positive z-score indicates a value greater than the mean. The average of every z-score for a data set is zero.
+To calculate a z-score, you need to calculate the mean and standard deviation. The formulas in G4 and G5 are, respectively:
+=AVERAGE(points)
+=STDEV.P(points)
+Where "points" is the named range C5:C12.
+If you'd like to learn more z-scores, and statistical analysis in Excel, I recommend Joseph Schmuller's book Statistical Analysis with Excel For Dummies 
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SMALL FunctionLARGE FunctionRANK FunctionRANK.AVG FunctionSTDEV.S FunctionSTDEV.P Function 
+ Links Microsoft STANDARDIZE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel STANDARDIZE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STANDARDIZE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+STANDARDIZE Function
+Related functions 
+SMALL
+LARGE
+RANK
+RANK.AVG
+STDEV.S
+STDEV.P
+Summary
+The Excel STANDARDIZE function returns a normalized value (z-score) based on the mean and standard deviation.
+Purpose 
+Calculate a normalized value (z-score)
+Return value 
+Normalized value
+Arguments 
+x - The value to normalize.mean - The arithmetic mean of the distribution.standard_dev - The standard deviation of the distribution.
+Syntax 
+=STANDARDIZE(x, mean, standard_dev)
+Usage notes 
+The Excel STANDARDIZE function returns a normalized value (z-score) based on the mean and standard deviation. To use the STANDARDIZE function, calculate the mean with the AVERAGE function, and the standard deviation with the STDEV.P function (see below).
+In the example shown, the formula in D5 is:
+=STANDARDIZE(C5,$G$4,$G$5)
+About z-scores / standard scores
+A z-score, or standard score, is a way of standardizing scores on the same scale by dividing a score's deviation by the standard deviation in a data set. The result is a standard score, or a z-score. It measures the number of standard deviations a given data point is from the mean.
+A z-score can be negative or positive. A negative z-score indicates a value less than the mean, and a positive z-score indicates a value greater than the mean. The average of every z-score for a data set is zero.
+To calculate a z-score, you need to calculate the mean and standard deviation. The formulas in G4 and G5 are, respectively:
+=AVERAGE(points)
+=STDEV.P(points)
+Where "points" is the named range C5:C12.
+If you'd like to learn more z-scores, and statistical analysis in Excel, I recommend Joseph Schmuller's book Statistical Analysis with Excel For Dummies 
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SMALL FunctionLARGE FunctionRANK FunctionRANK.AVG FunctionSTDEV.S FunctionSTDEV.P Function 
+ Links Microsoft STANDARDIZE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

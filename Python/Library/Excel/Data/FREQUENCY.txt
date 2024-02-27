@@ -1,0 +1,672 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FREQUENCY function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FREQUENCY Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+FREQUENCY Function
+Related functions 
+
+MODE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FREQUENCY function returns a frequency distribution, which is a list that shows the frequency of values at given intervals. FREQUENCY returns multiple values and must be entered as an array formula with control-shift-enter, except in Excel 365.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the frequency of values in a data set
+
+
+
+Return value 
+
+A vertical array of frequencies
+
+
+
+Arguments 
+
+data_array - An array of  values for which you want to get frequencies.bins_array - An array of intervals ("bins") for grouping values.
+
+
+
+Syntax 
+
+=FREQUENCY(data_array, bins_array)
+
+
+
+Usage notes 
+
+The FREQUENCY function counts how often numeric values occur in a set of data and returns a frequency distribution – a list that shows the frequency (count) of each value in a range at given intervals (bins).  FREQUENCY returns the distribution as a vertical array of numbers that represent a "count per bin".
+The FREQUENCY function always returns an array with one more item than bins in the bins_array. This is by design, to catch any values greater than the largest value in the bins_array. The general pattern for FREQUENCY is:
+
+=FREQUENCY(data,bins)
+
+where data_array and bins_array are typically ranges on the worksheet.
+Instructions
+To create a frequency distribution using FREQUENCY:
+
+Enter numbers that represent the bins you want to group values into
+Make a selection the same size as the range that contains bins, or one greater if want to include the extra item
+Enter the FREQUENCY function as a multi-cell array formula with control+shift+enter.
+
+In Excel 365, it is not necessary to enter FREQUENCY as an array formula. See notes below.
+Examples
+In the example shown, the formula in G5:G8 is:
+
+{=FREQUENCY(C5:C14,F5:F8)}
+
+Entered as a multi-cell array formula. 
+Note: the curly braces added by Excel automatically when entered with control + shift + enter.
+Horizontal results
+The FREQUENCY function always returns a vertical array of results. To return horizontal results, wrap the FREQUENCY function in the TRANSPOSE function:
+
+=TRANSPOSE(FREQUENCY(data,bins))
+
+Excel 365
+In Excel 365, which supports dynamic arrays natively, it is not necessary to select multiple cells before entering the FREQUENCY function. In cell G5, you can simply enter the formula below:
+
+=FREQUENCY(C5:C14,L5:L8)
+
+FREQUENCY will return an array of six counts, and these counts will spill automatically into the range G5:G9. The count in the last row (G9) is the overflow bin, the count of any values greater than the largest value in the bins_array.
+Notes
+
+FREQUENCY returns multiple values and must be entered as an array formula, except in Excel 365.
+FREQUENCY always returns an array with one more item than bins. This is by design, to catch any values greater than the largest interval in the bins_array.
+Each bin shows a count of values up to and including bin value, excluding values already accounted for.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Count unique numeric values with criteria 
+
+Count consecutive monthly orders 
+
+Longest winning streak 
+
+Count numbers by range 
+
+Count unique text values with criteria 
+
+Count unique numeric values in a range 
+
+Count unique text values in a range 
+
+Histogram with FREQUENCY 
+
+
+ Functions MODE Function 
+ Links Microsoft FREQUENCY function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FREQUENCY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FREQUENCY Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+FREQUENCY Function
+Related functions 
+MODE
+Summary
+The Excel FREQUENCY function returns a frequency distribution, which is a list that shows the frequency of values at given intervals. FREQUENCY returns multiple values and must be entered as an array formula with control-shift-enter, except in Excel 365.
+Purpose 
+Get the frequency of values in a data set
+Return value 
+A vertical array of frequencies
+Arguments 
+data_array - An array of  values for which you want to get frequencies.bins_array - An array of intervals ("bins") for grouping values.
+Syntax 
+=FREQUENCY(data_array, bins_array)
+Usage notes 
+The FREQUENCY function counts how often numeric values occur in a set of data and returns a frequency distribution – a list that shows the frequency (count) of each value in a range at given intervals (bins).  FREQUENCY returns the distribution as a vertical array of numbers that represent a "count per bin".
+The FREQUENCY function always returns an array with one more item than bins in the bins_array. This is by design, to catch any values greater than the largest value in the bins_array. The general pattern for FREQUENCY is:
+=FREQUENCY(data,bins)
+where data_array and bins_array are typically ranges on the worksheet.
+Instructions
+To create a frequency distribution using FREQUENCY:
+Enter numbers that represent the bins you want to group values into
+Make a selection the same size as the range that contains bins, or one greater if want to include the extra item
+Enter the FREQUENCY function as a multi-cell array formula with control+shift+enter.
+In Excel 365, it is not necessary to enter FREQUENCY as an array formula. See notes below.
+Examples
+In the example shown, the formula in G5:G8 is:
+{=FREQUENCY(C5:C14,F5:F8)}
+Entered as a multi-cell array formula. 
+Note: the curly braces added by Excel automatically when entered with control + shift + enter.
+Horizontal results
+The FREQUENCY function always returns a vertical array of results. To return horizontal results, wrap the FREQUENCY function in the TRANSPOSE function:
+=TRANSPOSE(FREQUENCY(data,bins))
+Excel 365
+In Excel 365, which supports dynamic arrays natively, it is not necessary to select multiple cells before entering the FREQUENCY function. In cell G5, you can simply enter the formula below:
+=FREQUENCY(C5:C14,L5:L8)
+FREQUENCY will return an array of six counts, and these counts will spill automatically into the range G5:G9. The count in the last row (G9) is the overflow bin, the count of any values greater than the largest value in the bins_array.
+Notes
+FREQUENCY returns multiple values and must be entered as an array formula, except in Excel 365.
+FREQUENCY always returns an array with one more item than bins. This is by design, to catch any values greater than the largest interval in the bins_array.
+Each bin shows a count of values up to and including bin value, excluding values already accounted for.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count unique numeric values with criteria 
+Count consecutive monthly orders 
+Longest winning streak 
+Count numbers by range 
+Count unique text values with criteria 
+Count unique numeric values in a range 
+Count unique text values in a range 
+Histogram with FREQUENCY 
+ Functions MODE Function 
+ Links Microsoft FREQUENCY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

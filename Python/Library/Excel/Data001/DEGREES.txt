@@ -1,0 +1,234 @@
+Excel DEGREES function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DEGREES Function 
+Previous 
+Next 
+ 
+Excel 2003
+Trigonometry
+DEGREES Function
+Related functions 
+RADIANS
+PI
+Summary
+The Excel DEGREES function converts angles (expressed in radians) to degrees. For example, the formula =DEGREES(PI()) returns 180.
+Purpose 
+Converts radians to degrees
+Return value 
+Degrees
+Arguments 
+angle - Angle in radians that you want to convert to degrees.
+Syntax 
+=DEGREES(angle)
+Usage notes 
+The DEGREES function takes an angle in radians and converts it to degrees. Radians measure angles using the radius of a circle, as illustrated in this image:
+To convert degrees back to radians, you can use the RADIANS function.
+Converting degrees to radians manually
+Because Pi = 180°, the general formula for degrees to radians is degrees * PI()/180. For example, to convert 45° to radians, the Excel formula would be 45*PI( )/180 which equals 0.7854 radians. More examples in the table below:
+Formula
+Degrees
+=2*PI()
+360
+=PI()
+180
+=90*PI()/180
+90
+=45*PI()/180
+45
+=30*PI()/180
+30
+=20*PI()/180
+20
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions RADIANS FunctionPI Function 
+ Links Microsoft DEGREES function documentationIllustrated article on radians (wumbo.net) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DEGREES function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DEGREES Function 
+Previous 
+Next 
+ 
+Excel 2003
+Trigonometry
+DEGREES Function
+Related functions 
+RADIANS
+PI
+Summary
+The Excel DEGREES function converts angles (expressed in radians) to degrees. For example, the formula =DEGREES(PI()) returns 180.
+Purpose 
+Converts radians to degrees
+Return value 
+Degrees
+Arguments 
+angle - Angle in radians that you want to convert to degrees.
+Syntax 
+=DEGREES(angle)
+Usage notes 
+The DEGREES function takes an angle in radians and converts it to degrees. Radians measure angles using the radius of a circle, as illustrated in this image:
+To convert degrees back to radians, you can use the RADIANS function.
+Converting degrees to radians manually
+Because Pi = 180°, the general formula for degrees to radians is degrees * PI()/180. For example, to convert 45° to radians, the Excel formula would be 45*PI( )/180 which equals 0.7854 radians. More examples in the table below:
+Formula
+Degrees
+=2*PI()
+360
+=PI()
+180
+=90*PI()/180
+90
+=45*PI()/180
+45
+=30*PI()/180
+30
+=20*PI()/180
+20
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions RADIANS FunctionPI Function 
+ Links Microsoft DEGREES function documentationIllustrated article on radians (wumbo.net) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

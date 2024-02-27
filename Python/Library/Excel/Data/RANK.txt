@@ -1,0 +1,660 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel RANK function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+RANK Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+RANK Function
+Related functions 
+
+SMALL
+LARGE
+RANK.EQ
+RANK.AVG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel RANK function returns the rank of a numeric value when compared to a list of other numeric values. RANK can rank values from largest to smallest (i.e. top sales) as well as smallest to largest (i.e. fastest time).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Rank a number against a range of numbers
+
+
+
+Return value 
+
+A number that indicates rank.
+
+
+
+Arguments 
+
+number - The number to rank.ref - The range that contains numbers to rank against.order - [optional] Whether to rank in ascending or descending order.
+
+
+
+Syntax 
+
+=RANK(number, ref, [order])
+
+
+
+Usage notes 
+
+The Excel RANK function assigns a rank to a numeric value when compared to a list of other numeric values. Use RANK when you want to display a rank for numeric values in a list. It is not necessary to sort the values in the list before using RANK.
+Controlling rank order
+The rank function has two modes of operation, controlled by the order argument. To rank values where the largest value is ranked #1, set order to zero (0). For example, with the values 1-5 in the range A1:A5:
+
+=RANK(A1,A1:A5,0) // descending, returns 5
+=RANK(A1,A1:A5,1) // ascending, returns 1
+
+Set order to zero (0) when you want to rank something like top sales, where the largest sales number should rank #1, and to set order to one (1) when you want to rank something like race results, where the shortest (fastest) time should rank #1.
+Duplicates
+The RANK function will assign duplicate values to the same rank. For example, if a certain value has a rank of 3, and there are two instances of the value in the data, the RANK function will assign both instances a rank of 3. The next rank assigned will be 5, and no value will be assigned a rank of 4. If tied ranks are a problem, one workaround is to employ a tie-breaking strategy. 
+Note: The RANK function is now classified as a compatibility function. Microsoft recommends RANK.EQ or RANK.AVG be used instead.
+Notes
+
+The default for order  is zero (0).  If order is 0 or omitted, number is ranked against the numbers sorted in descending order: smaller numbers receive a higher rank value, and the largest value in a list will be ranked #1.
+If order is 1, number is ranked against the numbers sorted in ascending order: smaller numbers receive a lower rank value, and the smallest value in a list will be ranked #1.
+It is not necessary to sort the values in the list before using the RANK function.
+In the event of a tie (i.e. the list contains duplicates) RANK will assign the same rank value to each set of duplicates.
+Some documentation suggests ref can be a range or array, but it appears ref must be a range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Basic numeric sort formula 
+
+Rank without ties 
+
+Basic text sort formula 
+
+Sort text and numbers with formula 
+
+Rank if formula 
+
+Rank function example 
+
+Rank race results 
+
+Rank and score with INDEX and MATCH 
+
+
+
+Videos
+  
+How to pick names out of a hat with Excel 
+
+How to rank values with the RANK function 
+
+
+ Functions SMALL FunctionLARGE FunctionRANK.EQ FunctionRANK.AVG Function 
+ Links Microsoft RANK function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel RANK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RANK Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+RANK Function
+Related functions 
+SMALL
+LARGE
+RANK.EQ
+RANK.AVG
+Summary
+The Excel RANK function returns the rank of a numeric value when compared to a list of other numeric values. RANK can rank values from largest to smallest (i.e. top sales) as well as smallest to largest (i.e. fastest time).
+Purpose 
+Rank a number against a range of numbers
+Return value 
+A number that indicates rank.
+Arguments 
+number - The number to rank.ref - The range that contains numbers to rank against.order - [optional] Whether to rank in ascending or descending order.
+Syntax 
+=RANK(number, ref, [order])
+Usage notes 
+The Excel RANK function assigns a rank to a numeric value when compared to a list of other numeric values. Use RANK when you want to display a rank for numeric values in a list. It is not necessary to sort the values in the list before using RANK.
+Controlling rank order
+The rank function has two modes of operation, controlled by the order argument. To rank values where the largest value is ranked #1, set order to zero (0). For example, with the values 1-5 in the range A1:A5:
+=RANK(A1,A1:A5,0) // descending, returns 5
+=RANK(A1,A1:A5,1) // ascending, returns 1
+Set order to zero (0) when you want to rank something like top sales, where the largest sales number should rank #1, and to set order to one (1) when you want to rank something like race results, where the shortest (fastest) time should rank #1.
+Duplicates
+The RANK function will assign duplicate values to the same rank. For example, if a certain value has a rank of 3, and there are two instances of the value in the data, the RANK function will assign both instances a rank of 3. The next rank assigned will be 5, and no value will be assigned a rank of 4. If tied ranks are a problem, one workaround is to employ a tie-breaking strategy. 
+Note: The RANK function is now classified as a compatibility function. Microsoft recommends RANK.EQ or RANK.AVG be used instead.
+Notes
+The default for order  is zero (0).  If order is 0 or omitted, number is ranked against the numbers sorted in descending order: smaller numbers receive a higher rank value, and the largest value in a list will be ranked #1.
+If order is 1, number is ranked against the numbers sorted in ascending order: smaller numbers receive a lower rank value, and the smallest value in a list will be ranked #1.
+It is not necessary to sort the values in the list before using the RANK function.
+In the event of a tie (i.e. the list contains duplicates) RANK will assign the same rank value to each set of duplicates.
+Some documentation suggests ref can be a range or array, but it appears ref must be a range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Basic numeric sort formula 
+Rank without ties 
+Basic text sort formula 
+Sort text and numbers with formula 
+Rank if formula 
+Rank function example 
+Rank race results 
+Rank and score with INDEX and MATCH 
+Videos
+  
+How to pick names out of a hat with Excel 
+How to rank values with the RANK function 
+ Functions SMALL FunctionLARGE FunctionRANK.EQ FunctionRANK.AVG Function 
+ Links Microsoft RANK function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

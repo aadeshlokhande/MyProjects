@@ -1,0 +1,635 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel DATEVALUE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+DATEVALUE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+DATEVALUE Function
+Related functions 
+
+TIMEVALUE
+VALUE
+NUMBERVALUE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel DATEVALUE function converts a date represented as a text string into a valid Excel date. For example, the formula =DATEVALUE("3/10/1975") returns a serial number (27463) in the Excel date system that represents March 10, 1975. Proper Excel dates are more useful than text dates since they can be directly manipulated with formulas and pivot tables .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Convert a date in text format to a valid date
+
+
+
+Return value 
+
+A valid Excel time as a serial number
+
+
+
+Arguments 
+
+date_text - A valid date in text format.
+
+
+
+Syntax 
+
+=DATEVALUE(date_text)
+
+
+
+Usage notes 
+
+Sometimes, dates in Excel appear as text values that are not recognized as proper dates. The DATEVALUE function is meant to convert a date represented as a text string into a valid Excel date. Proper Excel dates are more useful than text dates since they can be formatted as a date, and directly manipulated with other formulas.
+The DATEVALUE function takes just one argument, called date_text. If date_text is a cell address, the value of the cell must be text. If date_text is entered directly into the formula it must be enclosed in quotes.
+Examples
+To illustrate how the DATEVALUE function works, the formula below shows how the text "3/10/1975" is converted to the date serial number 27463 by DATEVALUE:
+
+=DATEVALUE("3/10/1975")  // returns 27463
+
+Note that DATEVALUE returns a serial number, 27463, which represents March 10, 1975 in Excel's date system. A date number format must be applied to display this number as a date.
+In the example shown, column B contains dates entered as text values, except for B15, which contains a valid date. The formula in C5, copied down, is:
+
+=DATEVALUE(B5)
+
+Column C shows the number returned by DATEVALUE, and column D shows the same number formatted as a date. Notice that Excel makes certain assumptions about missing day and year values. Missing days become the number 1, and the current year is used if there is no year value available.
+Alternative formula
+Notice that the DATEVALUE formula in C15 fails with a #VALUE! error, because cell B15 already contains a valid date. This is a limitation of the DATEVALUE function. If you have a mix of valid and invalid dates, you can try the simple formula below as an alternative:
+
+=A1+0
+
+The math operation of adding zero will cause Excel will try to coerce the value in A1 to a number. If Excel can parse the text into a proper date it will return a valid date serial number. If the date is already a valid Excel date (i.e. a serial number), adding zero will have no effect, and generate no error.
+Notes
+
+DATEVALUE will return a #VALUE error if date_text refers does not contain a date formatted as text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Month number from name 
+
+Convert date string to date time 
+
+Zodiac sign lookup 
+
+
+ Functions TIMEVALUE FunctionVALUE FunctionNUMBERVALUE Function 
+ Links Microsoft DATEVALUE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel DATEVALUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DATEVALUE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DATEVALUE Function
+Related functions 
+TIMEVALUE
+VALUE
+NUMBERVALUE
+Summary
+The Excel DATEVALUE function converts a date represented as a text string into a valid Excel date. For example, the formula =DATEVALUE("3/10/1975") returns a serial number (27463) in the Excel date system that represents March 10, 1975. Proper Excel dates are more useful than text dates since they can be directly manipulated with formulas and pivot tables .
+Purpose 
+Convert a date in text format to a valid date
+Return value 
+A valid Excel time as a serial number
+Arguments 
+date_text - A valid date in text format.
+Syntax 
+=DATEVALUE(date_text)
+Usage notes 
+Sometimes, dates in Excel appear as text values that are not recognized as proper dates. The DATEVALUE function is meant to convert a date represented as a text string into a valid Excel date. Proper Excel dates are more useful than text dates since they can be formatted as a date, and directly manipulated with other formulas.
+The DATEVALUE function takes just one argument, called date_text. If date_text is a cell address, the value of the cell must be text. If date_text is entered directly into the formula it must be enclosed in quotes.
+Examples
+To illustrate how the DATEVALUE function works, the formula below shows how the text "3/10/1975" is converted to the date serial number 27463 by DATEVALUE:
+=DATEVALUE("3/10/1975")  // returns 27463
+Note that DATEVALUE returns a serial number, 27463, which represents March 10, 1975 in Excel's date system. A date number format must be applied to display this number as a date.
+In the example shown, column B contains dates entered as text values, except for B15, which contains a valid date. The formula in C5, copied down, is:
+=DATEVALUE(B5)
+Column C shows the number returned by DATEVALUE, and column D shows the same number formatted as a date. Notice that Excel makes certain assumptions about missing day and year values. Missing days become the number 1, and the current year is used if there is no year value available.
+Alternative formula
+Notice that the DATEVALUE formula in C15 fails with a #VALUE! error, because cell B15 already contains a valid date. This is a limitation of the DATEVALUE function. If you have a mix of valid and invalid dates, you can try the simple formula below as an alternative:
+=A1+0
+The math operation of adding zero will cause Excel will try to coerce the value in A1 to a number. If Excel can parse the text into a proper date it will return a valid date serial number. If the date is already a valid Excel date (i.e. a serial number), adding zero will have no effect, and generate no error.
+Notes
+DATEVALUE will return a #VALUE error if date_text refers does not contain a date formatted as text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Month number from name 
+Convert date string to date time 
+Zodiac sign lookup 
+ Functions TIMEVALUE FunctionVALUE FunctionNUMBERVALUE Function 
+ Links Microsoft DATEVALUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

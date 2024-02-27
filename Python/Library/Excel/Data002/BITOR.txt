@@ -1,0 +1,10 @@
+Summary
+The Excel BITOR function returns a decimal number representing the bitwise OR of two numbers. For each corresponding bit in the binary representation of the numbers a logical OR operation is performed, and the resulting number returned.
+Purpose 
+Returns a 'Bitwise Or' of two numbers
+Return value 
+Decimal Number
+Arguments 
+number1 - A positive decimal number.number2 - A positive decimal number.
+Syntax 
+=BITOR(number1, number2)

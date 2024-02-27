@@ -1,0 +1,10 @@
+Summary
+The Excel BINOMDIST function returns the individual term binomial distribution probability. You can use BINOMDIST to calculate probabilities that an event will occur a certain number of times in a given number of trials.
+Purpose 
+Get binomial distribution probability
+Return value 
+Calculated probability
+Arguments 
+number_s - The number of successes.trials - The number of independent trials.probability_s - The probability of success on each trial.cumulative - TRUE = cumulative distribution function, FALSE=probability mass function.
+Syntax 
+=BINOMDIST(number_s, trials, probability_s, cumulative)

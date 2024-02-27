@@ -1,0 +1,10 @@
+Summary
+The Excel OFFSET function returns a reference to a range constructed with five inputs: (1) a starting point, (2) a row offset, (3) a column offset, (4) a height in rows, (5) a width in columns. OFFSET is handy in formulas that require a dynamic range.
+Purpose 
+Create a reference offset from given starting point
+Return value 
+A cell reference.
+Arguments 
+reference - The starting point, supplied as a cell reference or range.rows - The number of rows to offset below the starting reference.cols - The number of columns to offset to the right of the starting reference.height - [optional] The height in rows of the returned reference.width - [optional] The width in columns of the returned reference.
+Syntax 
+=OFFSET(reference, rows, cols, [height], [width])

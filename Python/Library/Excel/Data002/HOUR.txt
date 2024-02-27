@@ -1,0 +1,10 @@
+Summary
+The Excel HOUR function returns the hour component of a time as a number between 0-23. For example, with a time of 9:30 AM, HOUR will return 9. You can use the HOUR function to extract the hour into a cell, or feed the result into another formula, like the TIME function.
+Purpose 
+Get the hour as a number (0-23) from a Time
+Return value 
+A number between 0 and 23.
+Arguments 
+serial_number - A valid Excel time.
+Syntax 
+=HOUR(serial_number)

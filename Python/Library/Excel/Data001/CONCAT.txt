@@ -1,0 +1,244 @@
+Excel CONCAT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CONCAT Function 
+Previous 
+Next 
+ 
+Excel 2019
+Text
+CONCAT Function
+Related functions 
+CONCATENATE
+TEXTJOIN
+Summary
+The Excel CONCAT function concatenates (joins) values supplied as references or constants. Unlike the CONCATENATE function (which CONCAT replaces), CONCAT will accept a range of cells to join, in addition to individual cell references.
+Purpose 
+Join text values without delimiter
+Return value 
+Result of concatenated text
+Arguments 
+text1 - First text value, cell reference, or range.text2 - [optional] Second text value, cell reference, or range.
+Syntax 
+=CONCAT(text1, [text2], ...)
+Usage notes 
+The CONCAT function concatenates (joins) values supplied as references or constants. Unlike the CONCATENATE function (which CONCAT replaces), CONCAT will accept a range of cells to join, in addition to individual cell references. The CONCAT function automatically ignores empty cells.
+The CONCAT function accepts multiple arguments called text1, text2, text3, etc. up to 255 total. Arguments may be supplied as cell references, ranges, and hard-coded text strings. Only the first argument is required, and values are concatenated in the order they appear. For example, to concatenate the value of A1 and B1, separated by a space, you can configure CONCAT like this:
+=CONCAT(A1," ",B1)
+This is equivalent to using the concatenation operator (&) manually like this:
+=A1&" "&B1 // manual concatenation
+When concatenating numbers, number formatting is lost. For example, with the date 1-Jul-2021 in cell A1, the date reverts to a serial number:
+=CONCAT("The date is ",A1) // returns "The date is 44378"
+Use the TEXT function to apply formatting during concatenation:
+=CONCAT("The date is ",TEXT(A1,"mmmm d")) // "The date is July 1"
+The main benefit of CONCAT over the older CONCATENATION function is the ability to concatenate ranges. To concatenate the values in A1, B1, and C1, you can use a range like this:
+=CONCAT(A1:C1)
+However, the CONCAT does not provide a way to specify a delimiter to use when concatenating many values together.  To join many values with a common delimiter, see the TEXTJOIN function. TEXTJOIN can do everything CONCAT can do, but can also apply a delimiter and optionally ignore empty values.
+Notes
+CONCAT can accept ranges in addition to individual cells.
+To concatenate manually, use the concatenation operator (&).
+The CONCAT function provides no options for delimiters or empty values.
+Numbers provided to CONCAT will be converted to text values during concatenation.
+If the result is greater than 32767 characters, CONCAT returns #VALUE!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count paired items in listed combinations 
+Create email with display name 
+ Functions CONCATENATE FunctionTEXTJOIN Function 
+ Articles How to concatenate in Excel 
+ Links Microsoft CONCAT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel CONCAT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CONCAT Function 
+Previous 
+Next 
+ 
+Excel 2019
+Text
+CONCAT Function
+Related functions 
+CONCATENATE
+TEXTJOIN
+Summary
+The Excel CONCAT function concatenates (joins) values supplied as references or constants. Unlike the CONCATENATE function (which CONCAT replaces), CONCAT will accept a range of cells to join, in addition to individual cell references.
+Purpose 
+Join text values without delimiter
+Return value 
+Result of concatenated text
+Arguments 
+text1 - First text value, cell reference, or range.text2 - [optional] Second text value, cell reference, or range.
+Syntax 
+=CONCAT(text1, [text2], ...)
+Usage notes 
+The CONCAT function concatenates (joins) values supplied as references or constants. Unlike the CONCATENATE function (which CONCAT replaces), CONCAT will accept a range of cells to join, in addition to individual cell references. The CONCAT function automatically ignores empty cells.
+The CONCAT function accepts multiple arguments called text1, text2, text3, etc. up to 255 total. Arguments may be supplied as cell references, ranges, and hard-coded text strings. Only the first argument is required, and values are concatenated in the order they appear. For example, to concatenate the value of A1 and B1, separated by a space, you can configure CONCAT like this:
+=CONCAT(A1," ",B1)
+This is equivalent to using the concatenation operator (&) manually like this:
+=A1&" "&B1 // manual concatenation
+When concatenating numbers, number formatting is lost. For example, with the date 1-Jul-2021 in cell A1, the date reverts to a serial number:
+=CONCAT("The date is ",A1) // returns "The date is 44378"
+Use the TEXT function to apply formatting during concatenation:
+=CONCAT("The date is ",TEXT(A1,"mmmm d")) // "The date is July 1"
+The main benefit of CONCAT over the older CONCATENATION function is the ability to concatenate ranges. To concatenate the values in A1, B1, and C1, you can use a range like this:
+=CONCAT(A1:C1)
+However, the CONCAT does not provide a way to specify a delimiter to use when concatenating many values together.  To join many values with a common delimiter, see the TEXTJOIN function. TEXTJOIN can do everything CONCAT can do, but can also apply a delimiter and optionally ignore empty values.
+Notes
+CONCAT can accept ranges in addition to individual cells.
+To concatenate manually, use the concatenation operator (&).
+The CONCAT function provides no options for delimiters or empty values.
+Numbers provided to CONCAT will be converted to text values during concatenation.
+If the result is greater than 32767 characters, CONCAT returns #VALUE!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count paired items in listed combinations 
+Create email with display name 
+ Functions CONCATENATE FunctionTEXTJOIN Function 
+ Articles How to concatenate in Excel 
+ Links Microsoft CONCAT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,625 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel GCD function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+GCD Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+GCD Function
+Related functions 
+
+LCM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel GCD function returns the greatest common divisor of two or more integers. The greatest common divisor is the largest integer that goes into all supplied numbers without a remainder. For example, =GCD(60,36) returns 12.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the greatest common divisor of numbers
+
+
+
+Return value 
+
+The largest positive integer that divides the numbers evenly
+
+
+
+Arguments 
+
+number1 - The first number.number2 - [optional] The second number.
+
+
+
+Syntax 
+
+=GCD(number1, [number2], ...)
+
+
+
+Usage notes 
+
+The GCD function returns the greatest common divisor of two or more integers. The greatest common divisor is the largest positive integer that divides the numbers without a remainder. In other words, the largest number that goes into all numbers evenly.
+The GCD function takes one or more arguments called number1, number2, number3, etc. All numeric values are expected to be integers. Numbers with decimal values will be truncated to integers before a result is calculated. Each argument can be a hardcoded constant, a cell reference, or a range that contains multiple values. The GCD function can accept up to 255 arguments total.
+Examples
+To return the greatest common divisor of the numbers 60 and 36:
+
+=GCD(60,36) // returns 12
+
+GCD returns the number 12, since 12 is the largest factor that goes into both numbers evenly. To get the greatest common divisor of 12, 16, 48:
+
+=GCD(12,16,48) // returns 4
+
+In the example workbook shown above, the formula in F5 is:
+
+=GCD(B5:D5)
+
+As the formula is copied down, the GCD function returns a new result for each row, based on the values in columns B, C, and D. Empty cells are evaluated as zero.
+Notes
+
+GCD evaluates empty cells as zero.
+GCD works with integers; decimal values are removed before calculation.
+If arguments contain a non-numeric value. GCD returns the #VALUE! error.
+To calculate the least common multiple, see the LCM function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Calculate a ratio from two numbers 
+
+
+ Functions LCM Function 
+ Links Microsoft GCD function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel GCD function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+GCD Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+GCD Function
+Related functions 
+LCM
+Summary
+The Excel GCD function returns the greatest common divisor of two or more integers. The greatest common divisor is the largest integer that goes into all supplied numbers without a remainder. For example, =GCD(60,36) returns 12.
+Purpose 
+Get the greatest common divisor of numbers
+Return value 
+The largest positive integer that divides the numbers evenly
+Arguments 
+number1 - The first number.number2 - [optional] The second number.
+Syntax 
+=GCD(number1, [number2], ...)
+Usage notes 
+The GCD function returns the greatest common divisor of two or more integers. The greatest common divisor is the largest positive integer that divides the numbers without a remainder. In other words, the largest number that goes into all numbers evenly.
+The GCD function takes one or more arguments called number1, number2, number3, etc. All numeric values are expected to be integers. Numbers with decimal values will be truncated to integers before a result is calculated. Each argument can be a hardcoded constant, a cell reference, or a range that contains multiple values. The GCD function can accept up to 255 arguments total.
+Examples
+To return the greatest common divisor of the numbers 60 and 36:
+=GCD(60,36) // returns 12
+GCD returns the number 12, since 12 is the largest factor that goes into both numbers evenly. To get the greatest common divisor of 12, 16, 48:
+=GCD(12,16,48) // returns 4
+In the example workbook shown above, the formula in F5 is:
+=GCD(B5:D5)
+As the formula is copied down, the GCD function returns a new result for each row, based on the values in columns B, C, and D. Empty cells are evaluated as zero.
+Notes
+GCD evaluates empty cells as zero.
+GCD works with integers; decimal values are removed before calculation.
+If arguments contain a non-numeric value. GCD returns the #VALUE! error.
+To calculate the least common multiple, see the LCM function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate a ratio from two numbers 
+ Functions LCM Function 
+ Links Microsoft GCD function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

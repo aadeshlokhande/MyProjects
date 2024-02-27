@@ -1,0 +1,662 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel REPT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+REPT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Text
+
+
+REPT Function
+Related functions 
+
+FIND
+REPLACE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel REPT function repeats characters a given number of times. For example, =REPT("x",5) returns "xxxxx".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Repeat text as specified
+
+
+
+Return value 
+
+The repeated text.
+
+
+
+Arguments 
+
+text - The text to repeat.number_times - The number of times to repeat text.
+
+
+
+Syntax 
+
+=REPT(text, number_times)
+
+
+
+Usage notes 
+
+The REPT function repeats characters a specified number of times. Although REPT can repeat numbers as well as text, the result from REPT is always a text value. REPT takes two arguments, text and number_times. Text is the character(s) to repeat, and number_times is the number of times text should be repeated. 
+REPT can be used to pad values to a certain length or to build a simple in-cell histogram. To pad numeric values with zeros, a custom number format may be a better option.
+Examples
+To repeat "x" five times, you can use the following formula:
+
+=REPT("x",5) // returns "xxxxx"
+Inputs to REPT can be variable. In the example shown above, REPT is configured to repeat the values in column B using the count in column C.  The formula in D5 is:
+
+=REPT(B5,C5) // returns "-----"
+
+REPT can be combined with other functions to calculate a variable count. For example, to pad a text string with a specific character so that all strings are the same length, you can use REPT together with the LEN function like this:
+
+=A1&REPT("*",count-LEN(A1))
+
+In this formula, "count" is the desired final length in characters. Detailed explanation here.
+The REPT function appears in more advanced formulas that solve some tricky problems. See below for more examples.
+Notes
+
+REPT can repeat numbers but the result is text.
+Number_times should be zero or a positive integer, otherwise, REPT will return #VALUE!
+If number_times is zero, REPT returns an empty string ("").
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Get last word 
+
+Get page from URL 
+
+Pad text to equal length 
+
+Last row in text data 
+
+Conditional message with REPT function 
+
+Get last line in cell 
+
+Split text with delimiter 
+
+Extract word that begins with specific character 
+
+Pad a number with zeros 
+
+Count cells that contain n characters 
+
+
+
+Videos
+  
+How to use the REPT function to repeat things 
+
+
+ Functions FIND FunctionREPLACE Function 
+ Links Microsoft REPT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel REPT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+REPT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+REPT Function
+Related functions 
+FIND
+REPLACE
+Summary
+The Excel REPT function repeats characters a given number of times. For example, =REPT("x",5) returns "xxxxx".
+Purpose 
+Repeat text as specified
+Return value 
+The repeated text.
+Arguments 
+text - The text to repeat.number_times - The number of times to repeat text.
+Syntax 
+=REPT(text, number_times)
+Usage notes 
+The REPT function repeats characters a specified number of times. Although REPT can repeat numbers as well as text, the result from REPT is always a text value. REPT takes two arguments, text and number_times. Text is the character(s) to repeat, and number_times is the number of times text should be repeated. 
+REPT can be used to pad values to a certain length or to build a simple in-cell histogram. To pad numeric values with zeros, a custom number format may be a better option.
+Examples
+To repeat "x" five times, you can use the following formula:
+=REPT("x",5) // returns "xxxxx"
+Inputs to REPT can be variable. In the example shown above, REPT is configured to repeat the values in column B using the count in column C.  The formula in D5 is:
+=REPT(B5,C5) // returns "-----"
+REPT can be combined with other functions to calculate a variable count. For example, to pad a text string with a specific character so that all strings are the same length, you can use REPT together with the LEN function like this:
+=A1&REPT("*",count-LEN(A1))
+In this formula, "count" is the desired final length in characters. Detailed explanation here.
+The REPT function appears in more advanced formulas that solve some tricky problems. See below for more examples.
+Notes
+REPT can repeat numbers but the result is text.
+Number_times should be zero or a positive integer, otherwise, REPT will return #VALUE!
+If number_times is zero, REPT returns an empty string ("").
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get last word 
+Get page from URL 
+Pad text to equal length 
+Last row in text data 
+Conditional message with REPT function 
+Get last line in cell 
+Split text with delimiter 
+Extract word that begins with specific character 
+Pad a number with zeros 
+Count cells that contain n characters 
+Videos
+  
+How to use the REPT function to repeat things 
+ Functions FIND FunctionREPLACE Function 
+ Links Microsoft REPT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

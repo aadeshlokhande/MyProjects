@@ -1,0 +1,787 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel XMATCH function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+XMATCH Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2021
+
+
+
+
+Dynamic array
+
+
+XMATCH Function
+Related functions 
+
+XLOOKUP
+MATCH
+VLOOKUP
+HLOOKUP
+INDEX
+LOOKUP
+FILTER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel XMATCH function performs a lookup and returns a position in vertical or horizontal ranges. It is a more robust and flexible successor to the MATCH function. XMATCH supports approximate and exact matching, reverse search, and wildcards (* ?) for partial matches. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the position of an item in a list or table
+
+
+
+Return value 
+
+Numeric position in lookup array
+
+
+
+Arguments 
+
+lookup_value - The lookup value.lookup_array - The array or range to search.match_mode - [optional] 0 = exact match (default), -1 = exact match or next smallest, 1 = exact match or next larger, 2 = wildcard match.search_mode - [optional] 1 = search from first (default), -1 = search from last, 2 = binary search ascending, -2 = binary search descending.
+
+
+
+Syntax 
+
+=XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])
+
+
+
+Usage notes 
+
+The Excel XMATCH function performs a lookup and returns a position. XMATCH can perform lookups in vertical or horizontal ranges, and is meant to be a more flexible and powerful successor to the MATCH function.  XMATCH supports both approximate and exact matches, and wildcards (* ?) for partial matches. Like the XLOOKUP function, XMATCH can search data starting from the first value or the last value (i.e. reverse search). Finally, XMATCH can perform binary searches, which are specifically optimized for speed. 
+The XMATCH function takes four arguments: lookup_value, lookup_array, match_mode, and search_mode. Lookup_value is the value to look for, and lookup_array is the range or array to search. Both arguments are required. The match_mode argument controls what kind of match is performed (exact, next smallest, next largest, or wildcard), see match_mode below for details. Finally, search_mode controls the search direction - whether XMATCH should start at the beginning of the array, at the end of the array, or if XMATCH should perform a binary search. See search_mode below for details.
+XMATCH only supports one-dimensional arrays or ranges, either vertical and horizontal. However, you can use XMATCH to locate values in a two-dimensional range or table by giving XMATCH a single column or row that contains the lookup value (basic INDEX and MATCH example). You can also use MATCH twice in a single formula to find a matching row and column at the same time (INDEX and MATCH example).
+XMATCH vs. MATCH
+The XMATCH function works just like MATCH function, but with more capability and flexibility. In some cases, XMATCH can be a drop-in replacement for the MATCH function. For example, for exact matches, the syntax is identical:
+
+=MATCH(lookup, range, 0) // exact match
+=XMATCH(lookup, range, 0) // exact match
+
+However, for approximate matches, the behavior is different when match type is set to 1:
+
+=MATCH(lookup, range, 1) // exact match or next smallest
+=XMATCH(lookup, range, 1) // exact match or next *largest*
+
+In addition, XMATCH allows -1 for match type, which is not available with MATCH:
+
+=XMATCH(lookup, range, -1) // exact match or next smallest
+
+Note: the MATCH function does not offer the search mode argument at all.
+Match mode
+The third argument for XMATCH is match_mode. This is an optional argument that controls match behavior as follows:
+
+
+
+Match mode
+Behavior
+
+
+
+
+0 (default)
+Exact match. Will return #N/A if no match.
+
+
+-1
+Exact match or next smaller item.
+
+
+1
+Exact match or next larger item.
+
+
+2
+Wildcard match (*, ?, ~)
+
+
+
+Search mode
+The fourth argument for XMATCH is search_mode. This is an optional argument that controls search behavior as follows:
+
+
+
+Search mode
+Behavior
+
+
+
+
+1 (default)
+Search from first value
+
+
+-1
+Search from last value (reverse)
+
+
+2
+Binary search values sorted in ascending order
+
+
+-2
+Binary search values sorted in descending order
+
+
+
+Binary searches are very fast, but take care data is sorted as required. If data is not sorted properly, a binary search can return invalid results that look perfectly normal.
+Exact match
+In the example shown, XMATCH is used to retrieve the position of "Mars" in a list of planets in the range B6:B14. The formula in G6 is:
+
+=XMATCH(G5,B6:B14) // returns 4
+
+Notice XMATCH defaults to an exact match. If "Mars" G5 was misspelled "Marz", XMATCH would return #N/A.
+Match mode behavior
+The example below illustrates match mode behavior with a lookup value of 3.1 in E4, and lookup values in B5:B11.
+
+
+E6=XMATCH(E4,B5:B11) // returns #N/A
+E7=XMATCH(E4,B5:B11,-1) // returns 3
+E8=XMATCH(E4,B5:B11,1) // returns 4
+
+INDEX and XMATCH
+XMATCH can be used just like MATCH with the INDEX function. To retrieve the diameter of Mars based on the original example above, the formula is:
+
+=INDEX(C6:C14,XMATCH(G5,B6:B14)) / returns 6792
+
+XMATCH with wildcard
+When match_mode is set to 2, XMATCH can perform a match using wildcards. In the example shown below, the formula in E5 is:
+
+=XMATCH(E4,B5:B13,2) // returns 6
+
+This is equivalent to:
+
+=XMATCH("pq*",B5:B13,2)
+
+
+XMATCH locates the first code that begins with "pq" and returns 6, since PQR-121 appears in row 6 of the range B5:B13. Notice XMATCH is not case-sensitive.
+Case-sensitive match
+The MATCH function is not case-sensitive. However, MATCH can be configured to perform a case-sensitive match when combined with the EXACT function in a generic formula like this:
+
+=XMATCH(TRUE,EXACT(lookup_value,array),0))
+
+The EXACT function compares every value in array with the lookup_value in a case-sensitive manner. This formula is explained in an INDEX and MATCH example here. The example uses the MATCH function, but XMATCH can be substituted with the same result.
+Notes
+
+XMATCH can work with both vertical and horizontal arrays.
+XMATCH will return #N/A if the lookup value is not found.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+List upcoming birthdays 
+
+Nearest location with XMATCH 
+
+XMATCH reverse search 
+
+
+ Functions XLOOKUP FunctionMATCH FunctionVLOOKUP FunctionHLOOKUP FunctionINDEX FunctionLOOKUP FunctionFILTER Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft XMATCH function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel XMATCH function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+XMATCH Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+XMATCH Function
+Related functions 
+XLOOKUP
+MATCH
+VLOOKUP
+HLOOKUP
+INDEX
+LOOKUP
+FILTER
+Summary
+The Excel XMATCH function performs a lookup and returns a position in vertical or horizontal ranges. It is a more robust and flexible successor to the MATCH function. XMATCH supports approximate and exact matching, reverse search, and wildcards (* ?) for partial matches. 
+Purpose 
+Get the position of an item in a list or table
+Return value 
+Numeric position in lookup array
+Arguments 
+lookup_value - The lookup value.lookup_array - The array or range to search.match_mode - [optional] 0 = exact match (default), -1 = exact match or next smallest, 1 = exact match or next larger, 2 = wildcard match.search_mode - [optional] 1 = search from first (default), -1 = search from last, 2 = binary search ascending, -2 = binary search descending.
+Syntax 
+=XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])
+Usage notes 
+The Excel XMATCH function performs a lookup and returns a position. XMATCH can perform lookups in vertical or horizontal ranges, and is meant to be a more flexible and powerful successor to the MATCH function.  XMATCH supports both approximate and exact matches, and wildcards (* ?) for partial matches. Like the XLOOKUP function, XMATCH can search data starting from the first value or the last value (i.e. reverse search). Finally, XMATCH can perform binary searches, which are specifically optimized for speed. 
+The XMATCH function takes four arguments: lookup_value, lookup_array, match_mode, and search_mode. Lookup_value is the value to look for, and lookup_array is the range or array to search. Both arguments are required. The match_mode argument controls what kind of match is performed (exact, next smallest, next largest, or wildcard), see match_mode below for details. Finally, search_mode controls the search direction - whether XMATCH should start at the beginning of the array, at the end of the array, or if XMATCH should perform a binary search. See search_mode below for details.
+XMATCH only supports one-dimensional arrays or ranges, either vertical and horizontal. However, you can use XMATCH to locate values in a two-dimensional range or table by giving XMATCH a single column or row that contains the lookup value (basic INDEX and MATCH example). You can also use MATCH twice in a single formula to find a matching row and column at the same time (INDEX and MATCH example).
+XMATCH vs. MATCH
+The XMATCH function works just like MATCH function, but with more capability and flexibility. In some cases, XMATCH can be a drop-in replacement for the MATCH function. For example, for exact matches, the syntax is identical:
+=MATCH(lookup, range, 0) // exact match
+=XMATCH(lookup, range, 0) // exact match
+However, for approximate matches, the behavior is different when match type is set to 1:
+=MATCH(lookup, range, 1) // exact match or next smallest
+=XMATCH(lookup, range, 1) // exact match or next *largest*
+In addition, XMATCH allows -1 for match type, which is not available with MATCH:
+=XMATCH(lookup, range, -1) // exact match or next smallest
+Note: the MATCH function does not offer the search mode argument at all.
+Match mode
+The third argument for XMATCH is match_mode. This is an optional argument that controls match behavior as follows:
+Match mode
+Behavior
+0 (default)
+Exact match. Will return #N/A if no match.
+-1
+Exact match or next smaller item.
+1
+Exact match or next larger item.
+2
+Wildcard match (*, ?, ~)
+Search mode
+The fourth argument for XMATCH is search_mode. This is an optional argument that controls search behavior as follows:
+Search mode
+Behavior
+1 (default)
+Search from first value
+-1
+Search from last value (reverse)
+2
+Binary search values sorted in ascending order
+-2
+Binary search values sorted in descending order
+Binary searches are very fast, but take care data is sorted as required. If data is not sorted properly, a binary search can return invalid results that look perfectly normal.
+Exact match
+In the example shown, XMATCH is used to retrieve the position of "Mars" in a list of planets in the range B6:B14. The formula in G6 is:
+=XMATCH(G5,B6:B14) // returns 4
+Notice XMATCH defaults to an exact match. If "Mars" G5 was misspelled "Marz", XMATCH would return #N/A.
+Match mode behavior
+The example below illustrates match mode behavior with a lookup value of 3.1 in E4, and lookup values in B5:B11.
+E6=XMATCH(E4,B5:B11) // returns #N/A
+E7=XMATCH(E4,B5:B11,-1) // returns 3
+E8=XMATCH(E4,B5:B11,1) // returns 4
+INDEX and XMATCH
+XMATCH can be used just like MATCH with the INDEX function. To retrieve the diameter of Mars based on the original example above, the formula is:
+=INDEX(C6:C14,XMATCH(G5,B6:B14)) / returns 6792
+XMATCH with wildcard
+When match_mode is set to 2, XMATCH can perform a match using wildcards. In the example shown below, the formula in E5 is:
+=XMATCH(E4,B5:B13,2) // returns 6
+This is equivalent to:
+=XMATCH("pq*",B5:B13,2)
+XMATCH locates the first code that begins with "pq" and returns 6, since PQR-121 appears in row 6 of the range B5:B13. Notice XMATCH is not case-sensitive.
+Case-sensitive match
+The MATCH function is not case-sensitive. However, MATCH can be configured to perform a case-sensitive match when combined with the EXACT function in a generic formula like this:
+=XMATCH(TRUE,EXACT(lookup_value,array),0))
+The EXACT function compares every value in array with the lookup_value in a case-sensitive manner. This formula is explained in an INDEX and MATCH example here. The example uses the MATCH function, but XMATCH can be substituted with the same result.
+Notes
+XMATCH can work with both vertical and horizontal arrays.
+XMATCH will return #N/A if the lookup value is not found.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+List upcoming birthdays 
+Nearest location with XMATCH 
+XMATCH reverse search 
+ Functions XLOOKUP FunctionMATCH FunctionVLOOKUP FunctionHLOOKUP FunctionINDEX FunctionLOOKUP FunctionFILTER Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft XMATCH function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

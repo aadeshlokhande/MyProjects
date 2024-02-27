@@ -1,0 +1,667 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PRICEDISC function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PRICEDISC Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+PRICEDISC Function
+Related functions 
+
+PRICE
+DISC
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PRICEDISC function returns the price per $100 face value of a discounted security.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get price per $100 discounted security
+
+
+
+Return value 
+
+Bond price
+
+
+
+Arguments 
+
+sd - Settlement date of the security.md - Maturity date of the security.discount - Discount rate of the security.redemption - Redemption value per $100 face value.basis - [optional] Day count basis (see below, default =0).
+
+
+
+Syntax 
+
+=PRICEDISC(sd, md, discount, redemption, [basis])
+
+
+
+Usage notes 
+
+The Excel PRICEDISC function returns the price per $100 face value of a discounted security.  In the example shown, the formula in F5 is:
+
+=PRICEDISC(C6,C7,C8,C9,C10)
+
+with these inputs, PRICEDISC returns a price for the bond of $82.50.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. The same formula above using the DATE function, and with other values hardcoded looks like this:
+
+=PRICEDISC(DATE(2017,7,1),DATE(2020,1,1),7%,100,0)
+
+Basis
+The basis argument controls how days are counted. The PRICEMAT function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+
+
+
+Basis
+Day count
+
+
+
+
+0 or omitted
+US (NASD) 30/360
+
+
+1
+Actual/actual
+
+
+2
+Actual/360
+
+
+3
+Actual/365
+
+
+4
+European 30/360
+
+
+
+Notes
+
+In Excel, dates are serial numbers. 
+Settlement, maturity, and basis are truncated to integers.
+If any date is not valid, PRICEDISC returns #VALUE!
+Rate must be positive or PRICEDISC returns the #NUM!
+If basis is out-of-range, PRICEDISC returns #NUM!
+If maturity date is not later than settlement date, PRICEDISC returns #NUM!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions PRICE FunctionDISC FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft PRICEDISC function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PRICEDISC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PRICEDISC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PRICEDISC Function
+Related functions 
+PRICE
+DISC
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+Summary
+The Excel PRICEDISC function returns the price per $100 face value of a discounted security.
+Purpose 
+Get price per $100 discounted security
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.discount - Discount rate of the security.redemption - Redemption value per $100 face value.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=PRICEDISC(sd, md, discount, redemption, [basis])
+Usage notes 
+The Excel PRICEDISC function returns the price per $100 face value of a discounted security.  In the example shown, the formula in F5 is:
+=PRICEDISC(C6,C7,C8,C9,C10)
+with these inputs, PRICEDISC returns a price for the bond of $82.50.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. The same formula above using the DATE function, and with other values hardcoded looks like this:
+=PRICEDISC(DATE(2017,7,1),DATE(2020,1,1),7%,100,0)
+Basis
+The basis argument controls how days are counted. The PRICEMAT function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+Settlement, maturity, and basis are truncated to integers.
+If any date is not valid, PRICEDISC returns #VALUE!
+Rate must be positive or PRICEDISC returns the #NUM!
+If basis is out-of-range, PRICEDISC returns #NUM!
+If maturity date is not later than settlement date, PRICEDISC returns #NUM!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PRICE FunctionDISC FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft PRICEDISC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

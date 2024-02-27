@@ -1,0 +1,228 @@
+Excel PPMT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PPMT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PPMT Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel PPMT function can be used to calculate the principal portion of a given loan payment. For example, you can use PPMT to get the principal amount of a payment for the first period, the last period, or any period in between.
+Purpose 
+Get principal payment in given period
+Return value 
+The principal payment
+Arguments 
+rate - The interest rate per period.per - The payment period of interest.nper - The total number of payments for the loan.pv - The present value, or total value of all payments now.fv - [optional] The cash balance desired after last payment is made. Defaults to 0.type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.
+Syntax 
+=PPMT(rate, per, nper, pv, [fv], [type])
+Usage notes 
+The Excel PPMT function is used to calculate the principal portion of a given loan payment. For example, you can use PPMT to get the principal amount of a payment for the first period, the last period, or any period in between. The period of interest is provided with the per argument, which must be a number between 1 and the total number of payments (nper).
+Notes
+Be consistent with inputs for rate. For example, for 5-year loan with 4.5% annual interest, enter the rate as 4.5%/12.
+By convention, the loan value (pv) is entered as a negative value.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate principal for given period 
+Calculate interest for given period 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft PPMT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel PPMT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PPMT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PPMT Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel PPMT function can be used to calculate the principal portion of a given loan payment. For example, you can use PPMT to get the principal amount of a payment for the first period, the last period, or any period in between.
+Purpose 
+Get principal payment in given period
+Return value 
+The principal payment
+Arguments 
+rate - The interest rate per period.per - The payment period of interest.nper - The total number of payments for the loan.pv - The present value, or total value of all payments now.fv - [optional] The cash balance desired after last payment is made. Defaults to 0.type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.
+Syntax 
+=PPMT(rate, per, nper, pv, [fv], [type])
+Usage notes 
+The Excel PPMT function is used to calculate the principal portion of a given loan payment. For example, you can use PPMT to get the principal amount of a payment for the first period, the last period, or any period in between. The period of interest is provided with the per argument, which must be a number between 1 and the total number of payments (nper).
+Notes
+Be consistent with inputs for rate. For example, for 5-year loan with 4.5% annual interest, enter the rate as 4.5%/12.
+By convention, the loan value (pv) is entered as a negative value.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate principal for given period 
+Calculate interest for given period 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft PPMT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

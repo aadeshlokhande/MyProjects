@@ -1,0 +1,218 @@
+Excel SIN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SIN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Trigonometry
+SIN Function
+Related functions 
+COS
+TAN
+RADIANS
+Summary
+The Excel SIN function returns the sine of an angle given in radians. To supply an angle to SIN in degrees, multiply the angle by PI()/180 or use the RADIANS function to convert to radians.
+Purpose 
+Get the sine of an angle provided in radians.
+Return value 
+Sine value
+Arguments 
+number - The angle in radians for which you want the sine.
+Syntax 
+=SIN(number)
+Usage notes 
+The SIN function returns the sine of an angle provided in radians. In geometric terms, the sine of an angle returns the ratio of a right triangle's opposite side over its hypotenuse. For example, the sine of PI()/6 radians (30°) returns the ratio 0.5.
+=SIN(PI()/6) // Returns 0.5
+Using Degrees
+To supply an angle to SIN in degrees, multiply the angle by PI()/180 or use the RADIANS function to convert to radians. For example, to get the SIN of 30 degrees, you can use either formula below:
+=SIN(30*PI()/180)
+=SIN(RADIANS(30))
+Explanation
+The graph of sine, shown above, visualizes the output of the function for all angles from 0 to a full rotation. The function is periodic, so after a full rotation, the output of the function repeats. Geometrically, the function returns the y-component of the point corresponding to an angle on the unit circle. The function's output will always be in the range [-1, 1].
+Graph courtesy of wumbo.net.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions COS FunctionTAN FunctionRADIANS Function 
+ Links Microsoft SIN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SIN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SIN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Trigonometry
+SIN Function
+Related functions 
+COS
+TAN
+RADIANS
+Summary
+The Excel SIN function returns the sine of an angle given in radians. To supply an angle to SIN in degrees, multiply the angle by PI()/180 or use the RADIANS function to convert to radians.
+Purpose 
+Get the sine of an angle provided in radians.
+Return value 
+Sine value
+Arguments 
+number - The angle in radians for which you want the sine.
+Syntax 
+=SIN(number)
+Usage notes 
+The SIN function returns the sine of an angle provided in radians. In geometric terms, the sine of an angle returns the ratio of a right triangle's opposite side over its hypotenuse. For example, the sine of PI()/6 radians (30°) returns the ratio 0.5.
+=SIN(PI()/6) // Returns 0.5
+Using Degrees
+To supply an angle to SIN in degrees, multiply the angle by PI()/180 or use the RADIANS function to convert to radians. For example, to get the SIN of 30 degrees, you can use either formula below:
+=SIN(30*PI()/180)
+=SIN(RADIANS(30))
+Explanation
+The graph of sine, shown above, visualizes the output of the function for all angles from 0 to a full rotation. The function is periodic, so after a full rotation, the output of the function repeats. Geometrically, the function returns the y-component of the point corresponding to an angle on the unit circle. The function's output will always be in the range [-1, 1].
+Graph courtesy of wumbo.net.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions COS FunctionTAN FunctionRADIANS Function 
+ Links Microsoft SIN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

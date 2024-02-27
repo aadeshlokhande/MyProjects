@@ -1,0 +1,9 @@
+Summary
+The Excel TODAY function returns the current date, updated continuously when a worksheet is changed or opened. The TODAY function takes no arguments. You can format the value returned by TODAY with a date number format. If you need current date and time, use the NOW function.
+Purpose 
+Get the current date
+Return value 
+Excel date as a serial number
+Arguments 
+Syntax 
+=TODAY()

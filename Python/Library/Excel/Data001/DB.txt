@@ -1,0 +1,248 @@
+Excel DB function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DB Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+DB Function
+Related functions 
+SLN
+DB
+DDB
+SYD
+VDB
+Summary
+The Excel DB function returns the depreciation of an asset for a specified period using the fixed-declining balance method. The calculation is based on initial asset cost, salvage value, the number of periods over which the asset is depreciated and, optionally, the number of months in the first year.
+Purpose 
+Depreciation - fixed-declining balance
+Return value 
+Depreciation in given period
+Arguments 
+cost - Initial cost of asset.salvage - Asset value at the end of the depreciation.life - Periods over which asset is depreciated.period - Period to calculation depreciation for.month - [optional] Number of months in the first year. Defaults to 12.
+Syntax 
+=DB(cost, salvage, life, period, [month])
+Usage notes 
+The Excel DB function returns the depreciation of an asset for a specified period using the fixed-declining balance method. The calculated depreciation is based on initial asset cost, salvage value, the number of periods over which the asset is depreciated and, optionally, the number of months in the first year.
+In the example shown, the formula in C6, copied down, is:
+=DB(cost,salvage,life,B6)
+where named ranges are "cost" = G4, "salvage" = G5, and  "life" = G6.
+Fixed-declining balance calculation
+To get a rate to use to calculate depreciation based on fixed-declining balance, Excel uses the following formula:
+rate=1-((salvage/cost)^(1/life))
+To calculate depreciation in each year, Excel uses a formula like this:
+=(cost-prior depreciation)*rate
+However, depreciation for the first and last year is calculated differently to account for the month argument. The table below shows the calculation used to depreciate an asset over 5 years. If 3 is supplied for month, depreciation the first year is based on 3 months only, and depreciation the last year is based on 9 months.
+Year
+Depreciation Calculation
+1
+=cost * rate * month / 12
+2
+=(cost - prior depreciation) * rate
+3
+=(cost - prior depreciation) * rate
+4
+=(cost - prior depreciation) * rate
+5
+=((cost - prior depreciation) * rate * (12 - month)) / 12
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SLN FunctionDB FunctionDDB FunctionSYD FunctionVDB Function 
+ Links Microsoft DB function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DB function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DB Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+DB Function
+Related functions 
+SLN
+DB
+DDB
+SYD
+VDB
+Summary
+The Excel DB function returns the depreciation of an asset for a specified period using the fixed-declining balance method. The calculation is based on initial asset cost, salvage value, the number of periods over which the asset is depreciated and, optionally, the number of months in the first year.
+Purpose 
+Depreciation - fixed-declining balance
+Return value 
+Depreciation in given period
+Arguments 
+cost - Initial cost of asset.salvage - Asset value at the end of the depreciation.life - Periods over which asset is depreciated.period - Period to calculation depreciation for.month - [optional] Number of months in the first year. Defaults to 12.
+Syntax 
+=DB(cost, salvage, life, period, [month])
+Usage notes 
+The Excel DB function returns the depreciation of an asset for a specified period using the fixed-declining balance method. The calculated depreciation is based on initial asset cost, salvage value, the number of periods over which the asset is depreciated and, optionally, the number of months in the first year.
+In the example shown, the formula in C6, copied down, is:
+=DB(cost,salvage,life,B6)
+where named ranges are "cost" = G4, "salvage" = G5, and  "life" = G6.
+Fixed-declining balance calculation
+To get a rate to use to calculate depreciation based on fixed-declining balance, Excel uses the following formula:
+rate=1-((salvage/cost)^(1/life))
+To calculate depreciation in each year, Excel uses a formula like this:
+=(cost-prior depreciation)*rate
+However, depreciation for the first and last year is calculated differently to account for the month argument. The table below shows the calculation used to depreciate an asset over 5 years. If 3 is supplied for month, depreciation the first year is based on 3 months only, and depreciation the last year is based on 9 months.
+Year
+Depreciation Calculation
+1
+=cost * rate * month / 12
+2
+=(cost - prior depreciation) * rate
+3
+=(cost - prior depreciation) * rate
+4
+=(cost - prior depreciation) * rate
+5
+=((cost - prior depreciation) * rate * (12 - month)) / 12
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SLN FunctionDB FunctionDDB FunctionSYD FunctionVDB Function 
+ Links Microsoft DB function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

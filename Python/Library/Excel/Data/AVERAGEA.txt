@@ -1,0 +1,618 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel AVERAGEA function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+AVERAGEA Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+AVERAGEA Function
+Related functions 
+
+AVERAGE
+AVERAGEIF
+AVERAGEIFS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel AVERAGEA function returns the average of a set of supplied values. Unlike AVERAGE, AVERAGEA will also evaluate the logical values TRUE and FALSE, and numbers represented as text, whereas AVERAGE ignores these values during calculation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the average of a group of numbers and text
+
+
+
+Return value 
+
+A number representing the average.
+
+
+
+Arguments 
+
+value1 - A value or reference to a value that can be evaluated as a number.value2 - [optional] A value or reference to a value that can be evaluated as a number.
+
+
+
+Syntax 
+
+=AVERAGEA(value1, [value2], ...)
+
+
+
+Usage notes 
+
+The AVERAGEA function returns the average of a set of supplied values. AVERAGEA will include the logical values TRUE and FALSE, and numbers represented as text in the calculation. The AVERAGE function ignores these values during calculation
+AVERAGEA takes multiple arguments in the form of value1, value2, value3, etc. up to 255 total. Arguments can include numbers, cell references, ranges, arrays, and constants. Empty cells are ignored, but zero (0) values are included. 
+Examples
+To average values in the range A1:A10, including logical the logical values TRUE (1) and FALSE (0) and numbers entered as text, use AVERAGEA like this:
+
+=AVERAGEA(A1:A10) // average numbers, logicals, numbers as text
+
+One confusing aspect of the AVERAGE function compared to the AVERAGEA function is that both functions will evaluate logicals and numbers entered as text when they are hardcoded as constants in a formula:
+
+=AVERAGE(TRUE,2) // returns 1.5
+=AVERAGEA(TRUE,2) // returns 1.5
+=AVERAGE("3",2) // returns 2.5
+=AVERAGEA("3",2) // returns 2.5
+
+However, the AVERAGE function will ignore logicals or numbers entered as text when they appear in cell references. You can see this behavior in the worksheet example shown above.
+Notes
+
+Values can be supplied as numbers, ranges, named ranges, or cell references that contain values. Up to 255 arguments can be supplied.
+To calculate the average, Excel adds the numeric value of each value together and divides by the total number of values supplied.
+AVERAGEA evaluates TRUE as 1 and FALSE as zero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions AVERAGE FunctionAVERAGEIF FunctionAVERAGEIFS Function 
+ Links Microsoft AVERAGEA function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel AVERAGEA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AVERAGEA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+AVERAGEA Function
+Related functions 
+AVERAGE
+AVERAGEIF
+AVERAGEIFS
+Summary
+The Excel AVERAGEA function returns the average of a set of supplied values. Unlike AVERAGE, AVERAGEA will also evaluate the logical values TRUE and FALSE, and numbers represented as text, whereas AVERAGE ignores these values during calculation
+Purpose 
+Get the average of a group of numbers and text
+Return value 
+A number representing the average.
+Arguments 
+value1 - A value or reference to a value that can be evaluated as a number.value2 - [optional] A value or reference to a value that can be evaluated as a number.
+Syntax 
+=AVERAGEA(value1, [value2], ...)
+Usage notes 
+The AVERAGEA function returns the average of a set of supplied values. AVERAGEA will include the logical values TRUE and FALSE, and numbers represented as text in the calculation. The AVERAGE function ignores these values during calculation
+AVERAGEA takes multiple arguments in the form of value1, value2, value3, etc. up to 255 total. Arguments can include numbers, cell references, ranges, arrays, and constants. Empty cells are ignored, but zero (0) values are included. 
+Examples
+To average values in the range A1:A10, including logical the logical values TRUE (1) and FALSE (0) and numbers entered as text, use AVERAGEA like this:
+=AVERAGEA(A1:A10) // average numbers, logicals, numbers as text
+One confusing aspect of the AVERAGE function compared to the AVERAGEA function is that both functions will evaluate logicals and numbers entered as text when they are hardcoded as constants in a formula:
+=AVERAGE(TRUE,2) // returns 1.5
+=AVERAGEA(TRUE,2) // returns 1.5
+=AVERAGE("3",2) // returns 2.5
+=AVERAGEA("3",2) // returns 2.5
+However, the AVERAGE function will ignore logicals or numbers entered as text when they appear in cell references. You can see this behavior in the worksheet example shown above.
+Notes
+Values can be supplied as numbers, ranges, named ranges, or cell references that contain values. Up to 255 arguments can be supplied.
+To calculate the average, Excel adds the numeric value of each value together and divides by the total number of values supplied.
+AVERAGEA evaluates TRUE as 1 and FALSE as zero.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions AVERAGE FunctionAVERAGEIF FunctionAVERAGEIFS Function 
+ Links Microsoft AVERAGEA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,666 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel WORKDAY function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+WORKDAY Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+WORKDAY Function
+Related functions 
+
+WORKDAY.INTL
+EDATE
+NETWORKDAYS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel WORKDAY function takes a date and returns the nearest working day n days in the future or past. You can use the WORKDAY function to calculate things like ship dates, delivery dates, and completion dates that need to take into account working and non-working days.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get a date n working days in the future or past
+
+
+
+Return value 
+
+A serial number representing a particular date in Excel.
+
+
+
+Arguments 
+
+start_date - The date from which to start.days - The working days before or after start_date.holidays - [optional] A list dates that should be considered non-work days.
+
+
+
+Syntax 
+
+=WORKDAY(start_date, days, [holidays])
+
+
+
+Usage notes 
+
+The WORKDAY function returns the nearest working day n days in the future or past. WORKDAY can be used to calculate due dates, delivery dates, and other dates that should exclude non-working days.
+The WORKDAY function takes three arguments: start_date, days, and holidays. Start_date must be a valid Excel date. The days argument is the number of days in the future or past to calculate a workday. Use a positive number for days to calculate future dates, and a negative number for past dates. Holidays is an optional argument to specify non-working days. Holidays should be provided as a range that contains valid Excel dates. If holidays are not provided, WORKDAY will treat only Saturdays and Sundays as non-working days. 
+When calculating a result, WORKDAY does not include the start date as a work day. 
+Example #1 - Basic usage
+In the formula below, WORKDAY is given Friday, January 1, 2021 for start_date, 1 for days, and F5:F13 for holidays. The result is Monday, January 4, 2021 since Saturday and Sunday are excluded:
+
+=WORKDAY("1-Jan-2021",1,F5:F13)// returns 4-Jan-2021
+
+If the start date is moved back one day to Thursday, December 31, 2021, the result is the same, since January 1 is a holiday, and Saturday and Sunday are also excluded:
+
+=WORKDAY("31-Dec-2020",1,F5:F13) // returns 4-Jan-2021
+
+Example #2 - worksheet as shown
+In the worksheet shown above, Column B contains a variety of different start dates, column C contains the number of days to move, and "holidays" are the named range F5:F13. The formula in column D (copied down) is:
+
+=WORKDAY(B5,C5,holidays)
+
+At each row, WORKDAY returns the nearest workday in column D, based on the given start date and days to offset.
+Weekends
+By default, WORKDAY will exclude weekends (Saturday and Sunday) . If you need to customize which days of the week are considered weekend days, use the more robust WORKDAY.INTL function.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Next business day 6 months in future 
+
+Next working day 
+
+Get project start date 
+
+Date is workday 
+
+Random date between two dates 
+
+Series of dates by workdays 
+
+Add business days to date 
+
+Get project midpoint 
+
+Get project end date 
+
+Due date by category 
+
+
+
+Videos
+  
+How to calculate due dates with WORKDAY 
+
+How to generate random values 
+
+
+ Functions WORKDAY.INTL FunctionEDATE FunctionNETWORKDAYS Function 
+ Articles How to calculate due dates with WORKDAY 
+ Links Microsoft WORKDAY function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel WORKDAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+WORKDAY Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+WORKDAY Function
+Related functions 
+WORKDAY.INTL
+EDATE
+NETWORKDAYS
+Summary
+The Excel WORKDAY function takes a date and returns the nearest working day n days in the future or past. You can use the WORKDAY function to calculate things like ship dates, delivery dates, and completion dates that need to take into account working and non-working days.
+Purpose 
+Get a date n working days in the future or past
+Return value 
+A serial number representing a particular date in Excel.
+Arguments 
+start_date - The date from which to start.days - The working days before or after start_date.holidays - [optional] A list dates that should be considered non-work days.
+Syntax 
+=WORKDAY(start_date, days, [holidays])
+Usage notes 
+The WORKDAY function returns the nearest working day n days in the future or past. WORKDAY can be used to calculate due dates, delivery dates, and other dates that should exclude non-working days.
+The WORKDAY function takes three arguments: start_date, days, and holidays. Start_date must be a valid Excel date. The days argument is the number of days in the future or past to calculate a workday. Use a positive number for days to calculate future dates, and a negative number for past dates. Holidays is an optional argument to specify non-working days. Holidays should be provided as a range that contains valid Excel dates. If holidays are not provided, WORKDAY will treat only Saturdays and Sundays as non-working days. 
+When calculating a result, WORKDAY does not include the start date as a work day. 
+Example #1 - Basic usage
+In the formula below, WORKDAY is given Friday, January 1, 2021 for start_date, 1 for days, and F5:F13 for holidays. The result is Monday, January 4, 2021 since Saturday and Sunday are excluded:
+=WORKDAY("1-Jan-2021",1,F5:F13)// returns 4-Jan-2021
+If the start date is moved back one day to Thursday, December 31, 2021, the result is the same, since January 1 is a holiday, and Saturday and Sunday are also excluded:
+=WORKDAY("31-Dec-2020",1,F5:F13) // returns 4-Jan-2021
+Example #2 - worksheet as shown
+In the worksheet shown above, Column B contains a variety of different start dates, column C contains the number of days to move, and "holidays" are the named range F5:F13. The formula in column D (copied down) is:
+=WORKDAY(B5,C5,holidays)
+At each row, WORKDAY returns the nearest workday in column D, based on the given start date and days to offset.
+Weekends
+By default, WORKDAY will exclude weekends (Saturday and Sunday) . If you need to customize which days of the week are considered weekend days, use the more robust WORKDAY.INTL function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Next business day 6 months in future 
+Next working day 
+Get project start date 
+Date is workday 
+Random date between two dates 
+Series of dates by workdays 
+Add business days to date 
+Get project midpoint 
+Get project end date 
+Due date by category 
+Videos
+  
+How to calculate due dates with WORKDAY 
+How to generate random values 
+ Functions WORKDAY.INTL FunctionEDATE FunctionNETWORKDAYS Function 
+ Articles How to calculate due dates with WORKDAY 
+ Links Microsoft WORKDAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

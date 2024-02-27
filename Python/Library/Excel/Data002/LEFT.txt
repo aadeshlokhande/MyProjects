@@ -1,0 +1,10 @@
+Summary
+The Excel LEFT function extracts a given number of characters from the left side of a supplied text string. For example, LEFT("apple",3) returns "app".
+Purpose 
+Extract text from the left of a string
+Return value 
+One or more characters.
+Arguments 
+text - The text from which to extract characters.num_chars - [optional] The number of characters to extract, starting on the left side of text. Default = 1.
+Syntax 
+=LEFT(text, [num_chars])

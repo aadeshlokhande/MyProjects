@@ -1,0 +1,224 @@
+Excel ARRAYTOTEXT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ARRAYTOTEXT Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+ARRAYTOTEXT Function
+Related functions 
+VALUETOTEXT
+TEXT
+Summary
+The Excel ARRAYTOTEXT function converts an array or range to a text string. The result can optionally include or omit curly braces.
+Purpose 
+Converts array or range to a text string
+Return value 
+A text string showing values
+Arguments 
+array - The array or range to convert to text.format - [optional] Output format. 0 = concise (default), and 1 = strict.
+Syntax 
+=ARRAYTOTEXT(array, [format])
+Usage notes 
+The ARRAYTOTEXT function converts an array or range to a text string in a specific format that shows all values. Values are separated by either commas (,) or semicolons (;), depending on the format requested and the  structure of the array. Note that ARRAYTOTEXT will always remove number formatting applied to numeric values regardless of format.
+The ARRAYTOTEXT function takes two arguments: array and format. Array is the array or range to convert to text. Array can be provided as a range like A1:A3 or an array like {1,2,3}. The format argument controls the structure of the output. By default, format is zero and ARRAYTOTEXT will output a "concise" format that displays plain unquoted values and no curly braces. Essentially, concise format is a plain, human-readable format. When format is set to 1 (strict format), text values will be enclosed in double quotes ("") and the delimiter between items will follow the structure of the array provided, with semicolons (;) separating rows and commas (,) separating columns. When format is 1, the output from ARRAYTOTEXT can be used directly in the Excel formula bar.
+Examples
+With the values 1, 2, and 3 in cells A1:A3:
+=ARRAYTOTEXT(A1:A3) // returns "1, 2, 3"
+=ARRAYTOTEXT(A1:A3,1) // returns "{1;2;3}"
+Notice both results are text values, but in the second example values are separated by semicolons and the output is enclosed in curly braces.
+The strict format option will also wrap text values in double quotes (""). For example, with "red", "blue", and "green" in A1:A3:
+=ARRAYTOTEXT(A1:A3) // returns "red, blue, green"
+=ARRAYTOTEXT(A1:A3,1) // returns "{"red";"blue";"green"}"
+In the example shown above, the formula in E11 refers to a range that contains both text values and numbers:
+=ARRAYTOTEXT(B14:C16) // returns "Red, 3, Green, 2, Purple, 1"
+=ARRAYTOTEXT(B14:C16,1) // returns "{"Red",3;"Green",2;"Purple",1}"
+Notice only the text values in the second formula are enclosed in double quotes. In addition, rows are separated by semicolons and columns are separated by commas, following the structure of arrays in Excel.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions VALUETOTEXT FunctionTEXT Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ARRAYTOTEXT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ARRAYTOTEXT Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+ARRAYTOTEXT Function
+Related functions 
+VALUETOTEXT
+TEXT
+Summary
+The Excel ARRAYTOTEXT function converts an array or range to a text string. The result can optionally include or omit curly braces.
+Purpose 
+Converts array or range to a text string
+Return value 
+A text string showing values
+Arguments 
+array - The array or range to convert to text.format - [optional] Output format. 0 = concise (default), and 1 = strict.
+Syntax 
+=ARRAYTOTEXT(array, [format])
+Usage notes 
+The ARRAYTOTEXT function converts an array or range to a text string in a specific format that shows all values. Values are separated by either commas (,) or semicolons (;), depending on the format requested and the  structure of the array. Note that ARRAYTOTEXT will always remove number formatting applied to numeric values regardless of format.
+The ARRAYTOTEXT function takes two arguments: array and format. Array is the array or range to convert to text. Array can be provided as a range like A1:A3 or an array like {1,2,3}. The format argument controls the structure of the output. By default, format is zero and ARRAYTOTEXT will output a "concise" format that displays plain unquoted values and no curly braces. Essentially, concise format is a plain, human-readable format. When format is set to 1 (strict format), text values will be enclosed in double quotes ("") and the delimiter between items will follow the structure of the array provided, with semicolons (;) separating rows and commas (,) separating columns. When format is 1, the output from ARRAYTOTEXT can be used directly in the Excel formula bar.
+Examples
+With the values 1, 2, and 3 in cells A1:A3:
+=ARRAYTOTEXT(A1:A3) // returns "1, 2, 3"
+=ARRAYTOTEXT(A1:A3,1) // returns "{1;2;3}"
+Notice both results are text values, but in the second example values are separated by semicolons and the output is enclosed in curly braces.
+The strict format option will also wrap text values in double quotes (""). For example, with "red", "blue", and "green" in A1:A3:
+=ARRAYTOTEXT(A1:A3) // returns "red, blue, green"
+=ARRAYTOTEXT(A1:A3,1) // returns "{"red";"blue";"green"}"
+In the example shown above, the formula in E11 refers to a range that contains both text values and numbers:
+=ARRAYTOTEXT(B14:C16) // returns "Red, 3, Green, 2, Purple, 1"
+=ARRAYTOTEXT(B14:C16,1) // returns "{"Red",3;"Green",2;"Purple",1}"
+Notice only the text values in the second formula are enclosed in double quotes. In addition, rows are separated by semicolons and columns are separated by commas, following the structure of arrays in Excel.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions VALUETOTEXT FunctionTEXT Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

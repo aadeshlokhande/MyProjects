@@ -1,0 +1,595 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PDURATION function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PDURATION Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Financial
+
+
+PDURATION Function
+Related functions 
+
+NPER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PDURATION function returns the number of periods required for an investment to reach a desired value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get periods required to reach given value
+
+
+
+Return value 
+
+Required time in periods
+
+
+
+Arguments 
+
+rate - Interest rate per period.pv - Present value of the investment.fv - Future value of the investment.
+
+
+
+Syntax 
+
+=PDURATION(rate, pv, fv)
+
+
+
+Usage notes 
+
+The PDURATION function calculates how much time is needed for an initial investment (present value) to reach a given amount (future value), assuming a constant annual interest rate. PDURATION returns an amount of time in periods, which is linked to the number of compounding periods per year. With one compounding period per year, periods = years. With 4 compounding periods per year, periods = quarters, and so on.
+Note: the NPER function returns the number of periods for a series of cash flows (like a loan repayment schedule) whereas PDURATION returns the number of periods for a single sum to achieve a certain amount.
+Example
+Assume you have $5,000 to invest at an annual rate of 5%. When interest is compounded monthly, how long will it take for the initial investment of $5,000 to reach $10,000? In the example shown, the formula in F5 is:
+
+=PDURATION(C5/C6,C7,C8)
+
+Notice because rate must be provided as interest rate per period, it is given here as the annual interest rate divided by the number of compounding periods per year (12). With these inputs, PDURATION returns 166.70 periods. Since interest is compounded monthly, periods correspond to months. To convert to years, the formula in F6 is:
+
+=F5/C6
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions NPER Function 
+ Links Microsoft PDURATION function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PDURATION function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PDURATION Function 
+Previous 
+Next 
+ 
+Excel 2013
+Financial
+PDURATION Function
+Related functions 
+NPER
+Summary
+The Excel PDURATION function returns the number of periods required for an investment to reach a desired value.
+Purpose 
+Get periods required to reach given value
+Return value 
+Required time in periods
+Arguments 
+rate - Interest rate per period.pv - Present value of the investment.fv - Future value of the investment.
+Syntax 
+=PDURATION(rate, pv, fv)
+Usage notes 
+The PDURATION function calculates how much time is needed for an initial investment (present value) to reach a given amount (future value), assuming a constant annual interest rate. PDURATION returns an amount of time in periods, which is linked to the number of compounding periods per year. With one compounding period per year, periods = years. With 4 compounding periods per year, periods = quarters, and so on.
+Note: the NPER function returns the number of periods for a series of cash flows (like a loan repayment schedule) whereas PDURATION returns the number of periods for a single sum to achieve a certain amount.
+Example
+Assume you have $5,000 to invest at an annual rate of 5%. When interest is compounded monthly, how long will it take for the initial investment of $5,000 to reach $10,000? In the example shown, the formula in F5 is:
+=PDURATION(C5/C6,C7,C8)
+Notice because rate must be provided as interest rate per period, it is given here as the annual interest rate divided by the number of compounding periods per year (12). With these inputs, PDURATION returns 166.70 periods. Since interest is compounded monthly, periods correspond to months. To convert to years, the formula in F6 is:
+=F5/C6
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions NPER Function 
+ Links Microsoft PDURATION function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,672 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel TIME function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+TIME Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+TIME Function
+Related functions 
+
+DATE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel TIME function is a built-in function that allows you to create a time with individual hour, minute, and second components. The TIME function is useful when you want to assemble a proper time inside another formula.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Create a time with hours, minutes, and seconds
+
+
+
+Return value 
+
+A decimal number representing a particular time in Excel.
+
+
+
+Arguments 
+
+hour - The hour for the time you wish to create.minute - The minute for the time you wish to create.second - The second for the time you wish to create.
+
+
+
+Syntax 
+
+=TIME(hour, minute, second)
+
+
+
+Usage notes 
+
+The TIME function creates a valid Excel time based with supplied values for hour, minute, and second. Like all Excel time, the result is a number that represents a fractional day. The TIME function will only return time values up to one full day, between 0 (zero) to 0.99999999, or 0:00:00 to 23:59:59.  To see results formatted as time, apply a time-based number format. 
+Examples
+
+=TIME(3,0,0) // 3 hours
+=TIME(0,3,0) // 3 minutes
+=TIME(0,0,3) // 3 seconds
+=TIME(8,30,0) // 8.5 hours
+
+The TIME function can interpret units in larger increments. For example, both of the formulas below return a result of 2 hours:
+
+=TIME(0,120,0) // 2 hours
+=TIME(0,0,7200) // 2 hours
+
+However, when total time reaches 24 hours, the TIME function will "reset" to zero.
+
+=TIME(12,0,0) // 12 hours
+=TIME(36) // 12 hours
+
+In this way, TIME behaves like a 24 hour clock that resets when it crosses midnight. Notably, TIME will not handle numeric inputs larger 32,767. For example, even though there are 86,400 seconds in a day, the following formula (which represents 12 hours) will fail with a #NUM! error:
+
+=TIME(0,0,43200) // returns #NUM! 
+
+As a workaround, you can convert hours, minutes, and seconds directly to Excel time with a formula:
+
+=hours/24+minutes/1440+seconds/86400
+
+The result is the same as the TIME function up to 24 hours. Over 24 hours, this formula will continue to accumulate time, unlike the TIME function.
+Notes
+
+When total time reaches 24 hours, the TIME function will "reset" to zero. 
+The largest number that TIME will allow for hour, minute, or second is 32,767. Larger values will return a #NUM! error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum time over 30 minutes 
+
+Parse time string to time 
+
+Convert text timestamp into time 
+
+Sequence of times 
+
+Count times in a specific range 
+
+Add decimal minutes to time 
+
+Add decimal hours to time 
+
+Time duration with days 
+
+
+
+Videos
+  
+How to create date and time series with formulas 
+
+How to work with times  
+
+
+ Functions DATE Function 
+ Links Microsoft TIME function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel TIME function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TIME Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+TIME Function
+Related functions 
+DATE
+Summary
+The Excel TIME function is a built-in function that allows you to create a time with individual hour, minute, and second components. The TIME function is useful when you want to assemble a proper time inside another formula.
+Purpose 
+Create a time with hours, minutes, and seconds
+Return value 
+A decimal number representing a particular time in Excel.
+Arguments 
+hour - The hour for the time you wish to create.minute - The minute for the time you wish to create.second - The second for the time you wish to create.
+Syntax 
+=TIME(hour, minute, second)
+Usage notes 
+The TIME function creates a valid Excel time based with supplied values for hour, minute, and second. Like all Excel time, the result is a number that represents a fractional day. The TIME function will only return time values up to one full day, between 0 (zero) to 0.99999999, or 0:00:00 to 23:59:59.  To see results formatted as time, apply a time-based number format. 
+Examples
+=TIME(3,0,0) // 3 hours
+=TIME(0,3,0) // 3 minutes
+=TIME(0,0,3) // 3 seconds
+=TIME(8,30,0) // 8.5 hours
+The TIME function can interpret units in larger increments. For example, both of the formulas below return a result of 2 hours:
+=TIME(0,120,0) // 2 hours
+=TIME(0,0,7200) // 2 hours
+However, when total time reaches 24 hours, the TIME function will "reset" to zero.
+=TIME(12,0,0) // 12 hours
+=TIME(36) // 12 hours
+In this way, TIME behaves like a 24 hour clock that resets when it crosses midnight. Notably, TIME will not handle numeric inputs larger 32,767. For example, even though there are 86,400 seconds in a day, the following formula (which represents 12 hours) will fail with a #NUM! error:
+=TIME(0,0,43200) // returns #NUM! 
+As a workaround, you can convert hours, minutes, and seconds directly to Excel time with a formula:
+=hours/24+minutes/1440+seconds/86400
+The result is the same as the TIME function up to 24 hours. Over 24 hours, this formula will continue to accumulate time, unlike the TIME function.
+Notes
+When total time reaches 24 hours, the TIME function will "reset" to zero. 
+The largest number that TIME will allow for hour, minute, or second is 32,767. Larger values will return a #NUM! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum time over 30 minutes 
+Parse time string to time 
+Convert text timestamp into time 
+Sequence of times 
+Count times in a specific range 
+Add decimal minutes to time 
+Add decimal hours to time 
+Time duration with days 
+Videos
+  
+How to create date and time series with formulas 
+How to work with times  
+ Functions DATE Function 
+ Links Microsoft TIME function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

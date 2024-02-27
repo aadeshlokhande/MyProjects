@@ -1,0 +1,10 @@
+Summary
+The Excel TRANSPOSE function "flips" the orientation of a given range or array: TRANSPOSE flips a vertical range to a horizontal range, and flips a horizontal range to a vertical range.
+Purpose 
+Flip the orientation of a range of cells
+Return value 
+An array in a new orientation.
+Arguments 
+array - The array or range of cells to transpose.
+Syntax 
+=TRANSPOSE(array)

@@ -1,0 +1,711 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FIND function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FIND Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Text
+
+
+FIND Function
+Related functions 
+
+SEARCH
+REPLACE
+SUBSTITUTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FIND function returns the position (as a number) of one text string inside another. When the text is not found, FIND returns a #VALUE error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get location substring in a string
+
+
+
+Return value 
+
+A number representing the location of substring
+
+
+
+Arguments 
+
+find_text - The substring to find.within_text - The text to search within.start_num - [optional] The starting position in the text to search. Optional, defaults to 1.
+
+
+
+Syntax 
+
+=FIND(find_text, within_text, [start_num])
+
+
+
+Usage notes 
+
+The FIND function returns the position (as a number) of one text string inside another. If there is more than one occurrence of the search string, FIND returns the position of the first occurrence. When the text is not found, FIND returns a #VALUE error. Also note, when find_text is empty, FIND returns 1. FIND does not support wildcards, and is always case-sensitive. Use the SEARCH function to find the position of text without case-sensitivity and with wildcard support. 
+Basic Example
+The FIND function is designed to look inside a text string for a specific substring. When FIND locates the substring, it returns a position of the substring in the text as a number. If the substring is not found, FIND returns a #VALUE error. For example:
+
+=FIND("p","apple") // returns 2
+=FIND("z","apple") // returns #VALUE!
+Note that text values entered directly into FIND must be enclosed in double-quotes ("").
+Case-sensitive
+The FIND function always case-sensitive:
+
+=FIND("a","Apple") // returns #VALUE!
+=FIND("A","Apple") // returns 1
+TRUE or FALSE result
+To force a TRUE or FALSE result, nest the FIND function inside the ISNUMBER function. ISNUMBER returns TRUE for numeric values and FALSE for anything else. If FIND locates the substring, it returns the position as a number, and ISNUMBER returns TRUE:
+
+=ISNUMBER(FIND("p","apple")) // returns TRUE
+=ISNUMBER(FIND("z","apple")) // returns FALSE
+If FIND doesn't locate the substring, it returns an error, and ISNUMBER returns FALSE. 
+Start number
+The FIND function has an optional argument called start_num, that controls where FIND should begin looking for a substring. To find the first match of "the" in any combination of upper or lowercase, you can omit start_num, which defaults to 1:
+
+=FIND("x","20 x 30 x 50") // returns 4
+To start searching at character 5, enter 4 for start_num:
+
+=FIND("x","20 x 30 x 50",5) // returns 9
+
+Wildcards
+The FIND function does not support wildcards. See the SEARCH function.
+If cell contains
+To return a custom result with the SEARCH function, use the IF function like this:
+
+=IF(ISNUMBER(FIND(substring,A1)), "Yes", "No")
+
+Instead of returning TRUE or FALSE, the formula above will return "Yes" if substring is found and "No" if not.
+Notes
+
+The FIND function returns the location of the first find_text in within_text.
+The location is returned as the number of characters from the start.
+Start_num is optional and defaults to 1.
+FIND returns 1 when find_text is empty.
+FIND returns #VALUE if find_text is not found.
+FIND is case-sensitive but does not support wildcards.
+Use the SEARCH function to find a substring with wildcards.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum if cells contain specific text 
+
+Sum if cells contain either x or y 
+
+Split dimensions into two parts 
+
+Highlight cells that contain 
+
+Data validation must contain specific text 
+
+Remove last word 
+
+Get sheet name only 
+
+Lookup last file version 
+
+Convert feet and inches to inches 
+
+Get first name from name 
+
+
+
+Videos
+  
+How to create a complex formula step by step 
+
+How to find text with a formula 
+
+How to extract a first name with a helper column 
+
+
+ Functions SEARCH FunctionREPLACE FunctionSUBSTITUTE Function 
+ Links Microsoft FIND function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FIND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FIND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+FIND Function
+Related functions 
+SEARCH
+REPLACE
+SUBSTITUTE
+Summary
+The Excel FIND function returns the position (as a number) of one text string inside another. When the text is not found, FIND returns a #VALUE error.
+Purpose 
+Get location substring in a string
+Return value 
+A number representing the location of substring
+Arguments 
+find_text - The substring to find.within_text - The text to search within.start_num - [optional] The starting position in the text to search. Optional, defaults to 1.
+Syntax 
+=FIND(find_text, within_text, [start_num])
+Usage notes 
+The FIND function returns the position (as a number) of one text string inside another. If there is more than one occurrence of the search string, FIND returns the position of the first occurrence. When the text is not found, FIND returns a #VALUE error. Also note, when find_text is empty, FIND returns 1. FIND does not support wildcards, and is always case-sensitive. Use the SEARCH function to find the position of text without case-sensitivity and with wildcard support. 
+Basic Example
+The FIND function is designed to look inside a text string for a specific substring. When FIND locates the substring, it returns a position of the substring in the text as a number. If the substring is not found, FIND returns a #VALUE error. For example:
+=FIND("p","apple") // returns 2
+=FIND("z","apple") // returns #VALUE!
+Note that text values entered directly into FIND must be enclosed in double-quotes ("").
+Case-sensitive
+The FIND function always case-sensitive:
+=FIND("a","Apple") // returns #VALUE!
+=FIND("A","Apple") // returns 1
+TRUE or FALSE result
+To force a TRUE or FALSE result, nest the FIND function inside the ISNUMBER function. ISNUMBER returns TRUE for numeric values and FALSE for anything else. If FIND locates the substring, it returns the position as a number, and ISNUMBER returns TRUE:
+=ISNUMBER(FIND("p","apple")) // returns TRUE
+=ISNUMBER(FIND("z","apple")) // returns FALSE
+If FIND doesn't locate the substring, it returns an error, and ISNUMBER returns FALSE. 
+Start number
+The FIND function has an optional argument called start_num, that controls where FIND should begin looking for a substring. To find the first match of "the" in any combination of upper or lowercase, you can omit start_num, which defaults to 1:
+=FIND("x","20 x 30 x 50") // returns 4
+To start searching at character 5, enter 4 for start_num:
+=FIND("x","20 x 30 x 50",5) // returns 9
+Wildcards
+The FIND function does not support wildcards. See the SEARCH function.
+If cell contains
+To return a custom result with the SEARCH function, use the IF function like this:
+=IF(ISNUMBER(FIND(substring,A1)), "Yes", "No")
+Instead of returning TRUE or FALSE, the formula above will return "Yes" if substring is found and "No" if not.
+Notes
+The FIND function returns the location of the first find_text in within_text.
+The location is returned as the number of characters from the start.
+Start_num is optional and defaults to 1.
+FIND returns 1 when find_text is empty.
+FIND returns #VALUE if find_text is not found.
+FIND is case-sensitive but does not support wildcards.
+Use the SEARCH function to find a substring with wildcards.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum if cells contain specific text 
+Sum if cells contain either x or y 
+Split dimensions into two parts 
+Highlight cells that contain 
+Data validation must contain specific text 
+Remove last word 
+Get sheet name only 
+Lookup last file version 
+Convert feet and inches to inches 
+Get first name from name 
+Videos
+  
+How to create a complex formula step by step 
+How to find text with a formula 
+How to extract a first name with a helper column 
+ Functions SEARCH FunctionREPLACE FunctionSUBSTITUTE Function 
+ Links Microsoft FIND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

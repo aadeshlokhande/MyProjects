@@ -1,0 +1,10 @@
+Summary
+The Excel SIN function returns the sine of an angle given in radians. To supply an angle to SIN in degrees, multiply the angle by PI()/180 or use the RADIANS function to convert to radians.
+Purpose 
+Get the sine of an angle provided in radians.
+Return value 
+Sine value
+Arguments 
+number - The angle in radians for which you want the sine.
+Syntax 
+=SIN(number)

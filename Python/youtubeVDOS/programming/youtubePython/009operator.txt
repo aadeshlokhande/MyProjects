@@ -1,0 +1,81 @@
+In Python, operators are symbols or keywords that perform specific operations on one or more operands (values or variables). There are several types of operators in Python, including:
+
+Arithmetic Operators: These are used to perform mathematical operations on numeric values. The arithmetic operators in Python are + (addition), - (subtraction), * (multiplication), / (division), % (modulus), ** (exponentiation), and // (floor division).
+
+Assignment Operators: These are used to assign values to variables. The assignment operators in Python are = (simple assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment), %= (modulus assignment), **= (exponentiation assignment), and //= (floor division assignment).
+
+Comparison Operators: These are used to compare values and return a boolean result (True or False). The comparison operators in Python are == (equal to), != (not equal to), < (less than), > (greater than), <= (less than or equal to), and >= (greater than or equal to).
+
+Logical Operators: These are used to combine boolean values and return a boolean result. The logical operators in Python are and (logical AND), or (logical OR), and not (logical NOT).
+
+Bitwise Operators: These are used to perform bitwise operations on binary values. The bitwise operators in Python are & (bitwise AND), | (bitwise OR), ^ (bitwise XOR), ~ (bitwise NOT), << (left shift), and >> (right shift).
+
+Identity Operators: These are used to compare the identity of two objects (whether they refer to the same object in memory). The identity operators in Python are is (object identity) and is not (negated object identity).
+
+Membership Operators: These are used to test if a value or variable is a member of a sequence (such as a string, list, or tuple). The membership operators in Python are in (membership) and not in (negated membership).
+
+Here are some examples of how to use these operators in Python:
+
+python
+Copy code
+# Arithmetic Operators
+x = 5
+y = 3
+print(x + y)   # Output: 8
+print(x - y)   # Output: 2
+print(x * y)   # Output: 15
+print(x / y)   # Output: 1.6666666666666667
+print(x % y)   # Output: 2
+print(x ** y)  # Output: 125
+print(x // y)  # Output: 1
+
+# Assignment Operators
+x = 5
+x += 3
+print(x)  # Output: 8
+
+# Comparison Operators
+x = 5
+y = 3
+print(x == y)  # Output: False
+print(x != y)  # Output: True
+print(x > y)   # Output: True
+print(x < y)   # Output: False
+print(x >= y)  # Output: True
+print(x <= y)  # Output: False
+
+# Logical Operators
+x = 5
+y = 3
+z = 7
+print(x > y and x < z)  # Output: True
+print(x > y or x > z)   # Output: True
+print(not(x > y))
+
+
+
+Aadesh Lokhande
+continue
+Output: False
+Bitwise Operators
+x = 5 # 0101 in binary
+y = 3 # 0011 in binary
+print(x & y) # Output: 1 (0001 in binary)
+print(x | y) # Output: 7 (0111 in binary)
+print(x ^ y) # Output: 6 (0110 in binary)
+print(~x) # Output: -6 (complement of 0101 is 1010, which is -6 in two's complement)
+print(x << 1) # Output: 10 (1010 in binary)
+print(x >> 1) # Output: 2 (0010 in binary)
+
+Identity Operators
+x = [1, 2, 3]
+y = [1, 2, 3]
+print(x is y) # Output: False (x and y are different objects in memory)
+print(x is not y) # Output: True
+
+Membership Operators
+x = [1, 2, 3]
+print(2 in x) # Output: True
+print(4 not in x) # Output: True
+
+These are the basic operators in Python that you can use to perform various operations on values and variables.

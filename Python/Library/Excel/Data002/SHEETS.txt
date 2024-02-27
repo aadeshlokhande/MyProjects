@@ -1,0 +1,10 @@
+Summary
+The Excel SHEETS function returns the total number of sheets in a given reference. When no arguments are supplied SHEETS returns the total number of sheets in the workbook.
+Purpose 
+Get number of sheets in a reference
+Return value 
+Sheet count
+Arguments 
+reference - [optional] A valid Excel reference.
+Syntax 
+=SHEETS([reference])

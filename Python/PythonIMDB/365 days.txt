@@ -1,0 +1,126 @@
+original title = 365 dni
+
+localized title = 365 Days
+
+cast = [<Person id:11110971[http] name:_Anna-Maria Sieklucka_>, <Person id:9016108[http] name:_Michele Morrone_>, <Person id:0943002[http] name:_Bronislaw Wroclawski_>, <Person id:4840961[http] name:_Otar Saralidze_>, <Person id:3457470[http] name:_Magdalena Lamparska_>, <Person id:2322104[http] name:_Natasza Urbanska_>, <Person id:0843772[http] name:_Grazyna Szapolowska_>, <Person id:0830857[http] name:_Tomasz Stockinger_>, <Person id:1911818[http] name:_Gianni Parisi_>, <Person id:2911079[http] name:_Mateusz Lasowski_>, <Person id:0911333[http] name:_Agnieszka Warchulska_>, <Person id:0755645[http] name:_Przemyslaw Sadowski_>, <Person id:4660522[http] name:_Michal Mikolajczak_>, <Person id:7017771[http] name:_Andrea Batti_>, <Person id:1411206[http] name:_Mateusz Grydlik_>, <Person id:5361849[http] name:_Natalia Janoszek_>, <Person id:5541308[http] name:_Lukasz Choron_>, <Person id:9568759[http] name:_Lukasz Dabrowski_>, <Person id:3122174[http] name:_Rafal Iwaniuk_>, <Person id:4775313[http] name:_Reda Pawel Haddad_>, <Person id:9737354[http] name:_Sandra Majka_>, <Person id:11310329[http] name:_Ewelina Plizga_>, <Person id:11183163[http] name:_Gabriel Seweryn_>, <Person id:11183162[http] name:_Rafal Grabias_>, <Person id:11310330[http] name:_Marco de Lorenzo_>, <Person id:7954078[http] name:_Pawel Rucinski_>, <Person id:2273706[http] name:_Artur Kruczek_>, <Person id:0548754[http] name:_Marcin Markowski_>, <Person id:11310331[http] name:_Anna Wójcicka_>, <Person id:6222025[http] name:_Grzegorz Szczuka_>, <Person id:8468384[http] name:_Rafal Lenart_>, <Person id:11310332[http] name:_Lukasz Golus_>, <Person id:9955324[http] name:_Adrianna Bartkowska_>, <Person id:4199000[http] name:_Michal Fraczek_>, <Person id:8468478[http] name:_Tomasz Tsibre_>, <Person id:11310333[http] name:_Maciej Buzala_>, <Person id:9351290[http] name:_Anna Mackiewicz_>, <Person id:11310334[http] name:_Blazej Buzala_>, <Person id:11310335[http] name:_Dawid Baran_>, <Person id:2461351[http] name:_Stefano Terrazzino_>, <Person id:9560353[http] name:_Paulina Biernat_>, <Person id:11310336[http] name:_Klaudia Guze_>, <Person id:11310337[http] name:_Katarzyna Motloch_>, <Person id:3943323[http] name:_Bartek Cierlica_>, <Person id:10351020[http] name:_Ewa Lewandowska_>, <Person id:1372836[http] name:_Tomasz Mandes_>, <Person id:11310338[http] name:_Rafal Mandes_>, <Person id:5203261[http] name:_Jacek Mandes_>, <Person id:3114283[http] name:_Slawomir Mandes_>, <Person id:11310339[http] name:_Krzysztof Mandes_>, <Person id:11310340[http] name:_Piotr Mandes_>, <Person id:10947022[http] name:_Blanka Lipinska_>, <Person id:10802411[http] name:_Adrian Nawara_>, <Person id:10802403[http] name:_Marcin Józefowski_>, <Person id:11310341[http] name:_Wojciech Gromadzki_>, <Person id:11310342[http] name:_Marcin Sitko_>, <Person id:11310343[http] name:_Maciej Wróbel_>, <Person id:11310344[http] name:_Blazej Swieszkowski_>, <Person id:10850713[http] name:_Krystian Minda_>, <Person id:11310345[http] name:_Katarzyna Czyzak_>, <Person id:11310346[http] name:_Adam Glab_>, <Person id:11310347[http] name:_Laura Florianczyk_>, <Person id:10722315[http] name:_Michal Piotrowski_>, <Person id:13622791[http] name:_Michal Burka_>, <Person id:13419490[http] name:_Rebecca Casiraghi_>]
+
+genres = ['Drama', 'Romance']
+
+runtimes = ['114']
+
+countries = ['Poland']
+
+country codes = ['pl']
+
+language codes = ['pl', 'en', 'it']
+
+color info = ['Color']
+
+aspect ratio = 2.35 : 1
+
+sound mix = ['Stereo']
+
+box office = {'Cumulative Worldwide Gross': '$9,458,590'}
+
+certificates = ['Argentina:16', 'Australia:R18+::(self-applied)', 'Austria:18', 'Brazil:18', 'Canada:TV-MA::(self-applied)', 'Colombia:18', 'Czechia:18', 'Ecuador:16::(self-applied)', 'Egypt:18 +::(self-applied)', 'France:16::(self-applied)', 'Germany:16', 'Hong Kong:III', 'India:A', 'India:18::(self-applied)', 'Indonesia:18+::(self-applied)', 'Ireland:18', 'Israel:16::(self-applied)', 'Italy:VM18', 'Japan:18', 'Malta:18', 'Mexico:TV-MA::(self-applied)', 'Netherlands:16', 'Nigeria:18', 'Norway:18', 'Philippines:18+::(self-applied)', 'Poland:18::(self-applied)', 'Singapore:R21', 'South Africa:18::(self-applied)', 'South Korea:18', 'Spain:18', 'Sweden:16+::(self-applied)', 'Taiwan:16+::(self-applied)', 'Thailand:16 +::(self-applied)', 'Turkey:18+', 'United Kingdom:18', 'United States:TV-MA', 'United Arab Emirates:18+::(self-applied)', 'Vietnam:C18']
+
+original air date = 07 Jun 2020 (India)
+
+rating = 3.3
+
+votes = 96859
+
+cover url = https://m.media-amazon.com/images/M/MV5BMDdhYzNkOWQtYWNlNi00NDdjLWJlZDMtMjJjZDYyNjAxM2U1XkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_SY150_CR6,0,101,150_.jpg
+
+imdbID = 10886166
+
+plot outline = Massimo Torricelli, handsome young boss of a Sicilian Mafia family, has no other option but to take over after his father is assassinated. Laura is a sales director in a luxurious hotel in Warsaw. She has a successful career, but her private life lacks passion. She is taking one last shot to save her relationship. With her boneheaded boyfriend Martin and some other friends, she takes a trip to Sicily. She does not expect that Massimo, the most dangerous man on the island, will get in her way, kidnap her, hold her captive, and give her 365 days--to fall in love with him.
+
+languages = ['Polish', 'English', 'Italian']
+
+title = 365 Days
+
+year = 2020
+
+kind = movie
+
+director = [<Person id:1705578[http] name:_Barbara Bialowas_>, <Person id:1372836[http] name:_Tomasz Mandes_>]
+
+writer = [<Person id:11183123[http] name:_Tomasz Klimala_>, <Person id:None[http] name:_None_>, <Person id:1372836[http] name:_Tomasz Mandes_>, <Person id:1705578[http] name:_Barbara Bialowas_>, <Person id:10947022[http] name:_Blanka Lipinska_>, <Person id:None[http] name:_None_>, <Person id:10947022[http] name:_Blanka Lipinska_>]
+
+producer = [<Person id:10398220[http] name:_Maciej Kawulski_>, <Person id:7551049[http] name:_Robert Kijak_>, <Person id:10351020[http] name:_Ewa Lewandowska_>, <Person id:1372836[http] name:_Tomasz Mandes_>, <Person id:2931751[http] name:_Anna Wasniewska-Gill_>]
+
+composer = [<Person id:11375108[http] name:_Mateusz Sarapata_>, <Person id:9934697[http] name:_Michal Sarapata_>]
+
+cinematographer = [<Person id:3943323[http] name:_Bartek Cierlica_>]
+
+editor = [<Person id:5228424[http] name:_Marcin Drewnowski_>]
+
+editorial department = [<Person id:9105225[http] name:_Piotr Kolodziejczyk_>, <Person id:2263906[http] name:_Aleksandra Kraus_>, <Person id:5463918[http] name:_Radoslaw Matulka_>, <Person id:11111221[http] name:_Ewa Modzelewska_>, <Person id:11178113[http] name:_Karolina Nadolna_>, <Person id:9936799[http] name:_Damian Skrzypczyk_>, <Person id:9684084[http] name:_Piotr Skórka_>, <Person id:11247609[http] name:_Magdalena Surawska_>]
+
+casting director = [<Person id:10852644[http] name:_Agata Biedrzycka_>, <Person id:1372836[http] name:_Tomasz Mandes_>]
+
+production design = [<Person id:0058989[http] name:_Agnieszka Bartold_>]
+
+set decoration = [<Person id:8468391[http] name:_Dagmara Pokromska_>]
+
+costume designer = [<Person id:9724490[http] name:_Magdalena Sekrecka_>, <Person id:9384136[http] name:_Malgorzata Skorupa_>]
+
+make up = [<Person id:10359171[http] name:_Martyna Adamiec_>, <Person id:10509695[http] name:_Patrycja Andrzejewska_>, <Person id:5216551[http] name:_Zofia Gluzinska_>, <Person id:9714586[http] name:_Justyna Koczara_>, <Person id:9249389[http] name:_Anna Korzeb_>, <Person id:11375117[http] name:_Katarzyna Lewandowska_>, <Person id:6222025[http] name:_Grzegorz Szczuka_>, <Person id:11037967[http] name:_Anna Szybalska_>, <Person id:10954302[http] name:_Joanna Talar_>, <Person id:10594416[http] name:_Magdalena Trzmiel_>]
+
+production manager = [<Person id:11375157[http] name:_Alex Bordigoni_>, <Person id:11375156[http] name:_Marianna Cinque_>, <Person id:2998892[http] name:_Kaja D'Erceville_>, <Person id:9648084[http] name:_Dariusz Kardas_>, <Person id:11375158[http] name:_Agata Karlicka_>, <Person id:9709275[http] name:_Justyna Kluczewska_>, <Person id:9732512[http] name:_Sabina Lozinska_>, <Person id:11375161[http] name:_Filomena Mancinell_>, <Person id:9596107[http] name:_Dominika Niemczyk_>, <Person id:8457833[http] name:_Iwona Polak_>, <Person id:10831683[http] name:_Bartlomiej Rucinski_>, <Person id:7954078[http] name:_Pawel Rucinski_>, <Person id:10516040[http] name:_Klaudia Serewis_>, <Person id:11375155[http] name:_Malgorzata Soja_>, <Person id:2784438[http] name:_Maciej Szczygiel_>, <Person id:8468478[http] name:_Tomasz Tsibre_>, <Person id:9764995[http] name:_Anna Wójcicka_>]
+
+assistant director = [<Person id:9955324[http] name:_Adrianna Bartkowska_>, <Person id:9811549[http] name:_Anna Kwiatkowska_>, <Person id:2143075[http] name:_Marek Serdiukow_>]
+
+art department = [<Person id:11051385[http] name:_Pawel Bankowski_>, <Person id:11374978[http] name:_Klara Bartold_>, <Person id:11374984[http] name:_Danila Berencew_>, <Person id:2979271[http] name:_Maciej Bienkowski_>, <Person id:11374979[http] name:_Patryk Burkacki_>, <Person id:5903382[http] name:_Dariusz Bykowski_>, <Person id:11374980[http] name:_Czeslaw Kaluzny_>, <Person id:10660661[http] name:_Dariusz Kanclerz_>, <Person id:8468410[http] name:_Ryszard Kempa_>, <Person id:9331471[http] name:_Zbigniew Kowalski_>, <Person id:11374985[http] name:_Katarzyna Kulaga_>, <Person id:11374983[http] name:_Marta Kurek_>, <Person id:9657486[http] name:_Miroslaw Lyszkiewicz_>, <Person id:1925142[http] name:_Katarzyna Masztakow_>, <Person id:9566671[http] name:_Rafal Oryga_>, <Person id:10660662[http] name:_Piotr Palchevych_>, <Person id:11375107[http] name:_Pawel Pogoda_>, <Person id:11374986[http] name:_Olech Polishuk_>, <Person id:10660665[http] name:_Agnieszka Szreder_>, <Person id:10702549[http] name:_Maciej Szwarc_>, <Person id:10660668[http] name:_Miroslaw Szyler_>, <Person id:1311473[http] name:_Wlodzimierz Szyrle_>, <Person id:10660666[http] name:_Krzysztof Tacyn_>, <Person id:9351207[http] name:_Robert Wiewióra_>, <Person id:11374981[http] name:_Joanna Zygmunciak_>, <Person id:11374982[http] name:_Karol Zygmunciak_>]
+
+sound crew = [<Person id:8447115[http] name:_Michal Baginski_>, <Person id:10833298[http] name:_Aleksander Berezhnyi_>, <Person id:9701769[http] name:_Tomasz Dobrzeniecki_>, <Person id:2769183[http] name:_Kacper Habisiak_>, <Person id:2766723[http] name:_Marcin Kasinski_>, <Person id:3643387[http] name:_Krzysztof Klimko_>, <Person id:4596953[http] name:_Filip Krzemien_>, <Person id:7063911[http] name:_Filip Krzyzykowski_>, <Person id:8468384[http] name:_Rafal Lenart_>, <Person id:10488568[http] name:_Natalia Lubowiecka_>, <Person id:4491053[http] name:_Marcin Matlak_>, <Person id:9663742[http] name:_Michal Matlak_>, <Person id:7961495[http] name:_Filip Stefanowski_>, <Person id:8793144[http] name:_Adam Szlenda_>, <Person id:9931962[http] name:_Michal Wilczewski_>, <Person id:7063908[http] name:_Jacek Wisniewski_>]
+
+special effects = [<Person id:4496440[http] name:_Krzysztof Buczek_>, <Person id:3665285[http] name:_Piotr Krzyczmonik_>, <Person id:1825979[http] name:_Piotr Nowacki_>]
+
+visual effects = [<Person id:5566924[http] name:_Filip Kaczorek_>, <Person id:5811758[http] name:_Maciej Mika_>, <Person id:9330272[http] name:_Mariusz Swiader_>]
+
+stunt performer = [<Person id:11375146[http] name:_Alex De Silva_>, <Person id:10369136[http] name:_Safi El Masri_>, <Person id:0824936[http] name:_Marco Stefanelli_>, <Person id:11375147[http] name:_Camila Ugolili_>, <Person id:4651022[http] name:_Ramon Álvarez_>]
+
+camera and electrical department = [<Person id:11374967[http] name:_Wojciech Bakiewicz_>, <Person id:1285649[http] name:_Andrzej Bakowski_>, <Person id:9658596[http] name:_Artur Bielski_>, <Person id:4955685[http] name:_Artur Buczynski_>, <Person id:11374965[http] name:_Artur Chachira_>, <Person id:3209985[http] name:_Marek Czpak_>, <Person id:7872121[http] name:_Stanislaw de Virion-Zielinski_>, <Person id:3623364[http] name:_Robert Drabek_>, <Person id:9754188[http] name:_Piotr Dreja_>, <Person id:3622798[http] name:_Andrzej Dutkiewicz_>, <Person id:3078625[http] name:_Michal Dutkiewicz_>, <Person id:5463888[http] name:_Michal Fraczek_>, <Person id:1406702[http] name:_Slawomir Grinka_>, <Person id:11233121[http] name:_Krzysztof Janowski_>, <Person id:6017577[http] name:_Filip Jurzyk_>, <Person id:6381342[http] name:_Jaromir Kalina_>, <Person id:11374957[http] name:_Bartosz Kloc_>, <Person id:9309764[http] name:_Marcin Kukla_>, <Person id:3623159[http] name:_Adam Maczka_>, <Person id:7186972[http] name:_Waldemar Matyna_>, <Person id:10993204[http] name:_Sebastian Olszanka_>, <Person id:10488321[http] name:_Piotr Pedziszewski_>, <Person id:11374956[http] name:_Karol Piechota_>, <Person id:9900350[http] name:_Grzegorz Pilat_>, <Person id:10101286[http] name:_Malgorzata Pozarowszczyk_>, <Person id:3209466[http] name:_Marek Rolka_>, <Person id:2979723[http] name:_Jaroslaw Spodar_>, <Person id:3623360[http] name:_Sebastian Stecko_>, <Person id:7828867[http] name:_Bartlomiej Waszczuk_>, <Person id:0998332[http] name:_Marcin Wieczorek_>, <Person id:11374966[http] name:_Karol Zagajewski_>]
+
+casting department = [<Person id:11303357[http] name:_Agnieszka Bajda_>, <Person id:9608819[http] name:_Deborha Brandonisio_>, <Person id:11807510[http] name:_Reda Daabal_>, <Person id:5815036[http] name:_Iwona Guzik_>, <Person id:11326572[http] name:_Justyna Komon_>, <Person id:11303356[http] name:_Aleksandra Kucza_>, <Person id:10350929[http] name:_Ewelina Kukuczka_>, <Person id:8432815[http] name:_Malgorzata Kwater_>, <Person id:7802086[http] name:_Pawel Mlak_>, <Person id:9329882[http] name:_Joanna Rekas-Kijewska_>, <Person id:1718504[http] name:_Iza Szpilka_>, <Person id:2786743[http] name:_Michal Wiaderek_>]
+
+costume department = [<Person id:11375110[http] name:_Natalia Jeziorna_>, <Person id:10475030[http] name:_Józefina Loy_>, <Person id:11375109[http] name:_Kinga Naszkiewicz_>]
+
+location management = [<Person id:11375160[http] name:_Michal Jedynak_>]
+
+music department = [<Person id:10845676[http] name:_Roch Poliszczuk_>, <Person id:11375108[http] name:_Mateusz Sarapata_>, <Person id:9934697[http] name:_Michal Sarapata_>]
+
+script department = [<Person id:9732512[http] name:_Sabina Lozinska_>]
+
+transportation department = [<Person id:3314703[http] name:_Daniel Adamski_>, <Person id:11375151[http] name:_Michal Gawronski_>, <Person id:10831687[http] name:_Tomasz Lichanski_>, <Person id:11375133[http] name:_Jacek Lorencki_>, <Person id:7872149[http] name:_Darius Obydzynski_>, <Person id:11375150[http] name:_Przemyslaw Owczarek_>, <Person id:9709230[http] name:_Marcin Rutkowski_>, <Person id:11375153[http] name:_Robert Salwa_>, <Person id:11375148[http] name:_Marek Szabra_>, <Person id:10209233[http] name:_Roman Walesiak_>, <Person id:11375149[http] name:_Robert Wiak_>, <Person id:9351454[http] name:_Piotr Wyszomierski_>, <Person id:7872136[http] name:_Robert Zdebski_>, <Person id:11375152[http] name:_Konrad Zuchalski_>]
+
+miscellaneous crew = [<Person id:3314703[http] name:_Daniel Adamski_>, <Person id:9694403[http] name:_Krzysztof Aratyk_>, <Person id:9310216[http] name:_Zbigniew Bialek_>, <Person id:9329776[http] name:_Bartlomiej Bilski_>, <Person id:10698168[http] name:_Przemyslaw Blicharski_>, <Person id:11375138[http] name:_Piotr Bonkowski_>, <Person id:11375142[http] name:_Adam Borczynski_>, <Person id:9650675[http] name:_Marzena Derkowska_>, <Person id:11375141[http] name:_Agnieszka Domanska_>, <Person id:10350059[http] name:_Grzegorz Esz_>, <Person id:11310332[http] name:_Lukasz Golus_>, <Person id:11375143[http] name:_Dariusz Harasim_>, <Person id:9329778[http] name:_Joanna Jakubik_>, <Person id:7780456[http] name:_Aleksandra Karbowiak_>, <Person id:10351031[http] name:_Eugeniusz Kawulski_>, <Person id:7551049[http] name:_Robert Kijak_>, <Person id:10488646[http] name:_Anna Kobylarz_>, <Person id:9329777[http] name:_Cezary Kruszewski_>, <Person id:5638134[http] name:_Zuzanna Król_>, <Person id:4966408[http] name:_Maciej Kubiak_>, <Person id:11247645[http] name:_Marcin Kurowski_>, <Person id:11375140[http] name:_Sasha Latushkin_>, <Person id:11375136[http] name:_Dawid Lekszycki_>, <Person id:9684786[http] name:_Justyna Lewicka_>, <Person id:11375133[http] name:_Jacek Lorencki_>, <Person id:10885896[http] name:_Marcin Majerski_>, <Person id:11375134[http] name:_Karolina Makuch_>, <Person id:9272677[http] name:_Pawel Malko_>, <Person id:7780457[http] name:_Marta Marczak_>, <Person id:11768010[http] name:_Ofelia Mariscu_>, <Person id:11375137[http] name:_Milena Matwiejuk_>, <Person id:11375135[http] name:_Aleksandra Misiak_>, <Person id:11375139[http] name:_Pawel Myrda_>, <Person id:10252013[http] name:_Piotr Nikolajuk_>, <Person id:7872149[http] name:_Darius Obydzynski_>, <Person id:9329775[http] name:_Kamila Ostrowska_>, <Person id:9737067[http] name:_Agnieszka Roman_>, <Person id:10594455[http] name:_Agnieszka Rossa_>, <Person id:9627017[http] name:_Kinga Rybarczyk_>, <Person id:10488647[http] name:_Marlena Rój_>, <Person id:13335689[http] name:_Sahibjot Singh_>, <Person id:2074045[http] name:_Josh Skjold_>, <Person id:11033818[http] name:_Agata Slowinska_>, <Person id:9310215[http] name:_Marek Soszka_>, <Person id:9329909[http] name:_Bernadetta Struminska_>, <Person id:2461351[http] name:_Stefano Terrazzino_>, <Person id:10488648[http] name:_Marek Urbanczak_>, <Person id:10209233[http] name:_Roman Walesiak_>, <Person id:9764995[http] name:_Anna Wójcicka_>]
+
+akas = ['365 Days (India, English title)', '365 Days (Philippines, English title)', '365 Days (United States)', '365 Days (Ireland, English title)', '365 Days (Canada, English title)']
+
+bottom 100 rank = 38
+
+production companies = [<Company id:0726975[http] name:_Ekipa_>, <Company id:0776224[http] name:_Future Space_>, <Company id:0407818[http] name:_Next Film_>, <Company id:0015575[http] name:_TVN_>]
+
+distributors = [<Company id:0726978[http] name:_Player.pl_>, <Company id:0407818[http] name:_Next Film_>, <Company id:0144901[http] name:_Netflix_>, <Company id:0144901[http] name:_Netflix_>, <Company id:0144901[http] name:_Netflix_>, <Company id:0144901[http] name:_Netflix_>, <Company id:0144901[http] name:_Netflix_>]
+
+other companies = [<Company id:0730496[http] name:_From Women with Love_>, <Company id:0812521[http] name:_La Femme Erotic_>, <Company id:0820851[http] name:_SPI International_>]
+
+plot = ['Massimo is a member of the Sicilian Mafia family and Laura is a sales director. She does not expect that on a trip to Sicily trying to save her relationship, Massimo will kidnap her and give her 365 days to fall in love with him.', 'Massimo Torricelli, handsome young boss of a Sicilian Mafia family, has no other option but to take over after his father is assassinated. Laura is a sales director in a luxurious hotel in Warsaw. She has a successful career, but her private life lacks passion. She is taking one last shot to save her relationship. With her boneheaded boyfriend Martin and some other friends, she takes a trip to Sicily. She does not expect that Massimo, the most dangerous man on the island, will get in her way, kidnap her, hold her captive, and give her 365 days--to fall in love with him.—Netflix', "Despite Laura's successful career, she was always ignored by her boring boyfriend; this neglect leads her to make her own sexual fantasies. One day she wakes up to find herself in a huge mansion with a very handsome, very rich man named Massimo. She is surprised when he tells her that he saw her five years earlier: his father was shot to death and the bullet went through his body and she was the last girl he saw before he almost died; since then he searched for her all over the world, to no avail until he saw her at the airport. Massimo asks Laura to stay with him for 365 days to fall in love with him, but she refuses because he is a stranger and he kidnapped her. But he tells her that if she will not fall in love with him, he will set her free. Laura has no choice but to stay with him. She tries not to fall in love with him, but he is a temptation and a very dangerous man.—judytrinidadmanaid"]
+
+synopsis = ['After a meeting between the Torricelli Sicilian Mafia crime family and black market dealers, Massimo Torricelli (Michele Morrone) watches a beautiful woman on a beach. His father, leader of the Sicilian Mafia family, is suddenly shot dead, injuring Massimo as well.Five years laterMassimo is now a ruthless and violent leader having taken over the Torricelli crime family. In Warsaw, Laura Biel (Anna Maria Sieklucka), a fiery brunette executive, is unhappy in her relationship with her boyfriend Martin, who rebuffs her when she tries to initiate sex. Laura celebrates her 29th birthday in Italy with friends but after Martin embarrasses her, she goes for a walk and runs into Massimo, who suddenly kidnaps her.At his villa, Massimo reveals to Laura that she was the woman at the beach five years ago and that when he was injured, all he could think about was her. After searching for years and finally spotting her at the airport, he had to have her and intends to keep her as a prisoner for 365 days (one year) until she falls in love with him, promising a life of endless luxury. When she tries to escape, he threatens her family, shows her photographs of Martin\'s infidelity, and tells her a breakup letter was delivered to Martin on her behalf. He reassures her that he will not touch her without her consent, as he touches her without her consent. With no means of escaping, Laura gives in.Over the next two months as they spend more time together, a vengeful and angry Laura provokes him by wearing lingerie and revealing dresses. However, she slowly starts to get him to open up about his personal life. At a hotel in Rome, she teases him again and he cuffs her to the bed. She is forced to watch Massimo receive oral sex from another woman. Afterward, he caresses Laura\'s body and she appears to be giving in. However, he stops, releases her, and orders her to get dressed for a club.At the club, Laura flaunts herself for Massimo and his friends, angering him. When she begins to flirt with a man from the rival mafia family, the man gropes her against her will. Massimo and the others draw their weapons while Laura is taken out of the club.The following morning, Laura awakens on a yacht to Massimo and his fellow mafioso, Mario, arguing. During the night, Massimo shot the man\'s hand, who had groped Laura, inciting a mafia war between the two families. Mario insists that Massimo has to get rid of Laura, but he refuses. Laura attempts to apologize, but Massimo blames her for the incident. As they argue, Laura falls into the water and completely panics and thinks shes going to die by drowning, which affects her heart condition. Then Massimo jumps in to save her. When she awakens, he admits he was scared she might not make it and does not want to lose her. At that moment she falls in love with him as a montage illustrates by the various sex scenes on the yacht.Massimo allows Laura to visit her family in Warsaw. He tells her he loves her and will join her after finishing up business. In Warsaw, Laura waits for Massimo for days with no contact. She reconnects with her best friend Olga and they go clubbing. She runs into Martin, who says he has been looking for her to apologize and explain the photographs. He attempts to convince her to reconcile and follows her back to her apartment, where Massimo is unexpectedly waiting. He tells Martin to go. Angry at being abandoned, Laura slaps Massimo. While having sex, she opens his shirt to see wounds from the mafia war. She confesses to him that she loves him. The following morning, Massimo proposes and she accepts. However, she asks him to keep his "occupation" a secret from her parents.Back in Italy, Mario informs Massimo of rising tensions. One day, Laura mentions feeling unwell but brushes off seeing a doctor. They discuss their upcoming wedding that her family is not allowed to attend, as she does not want them to discover what Massimo does. However, Massimo allows Olga to come as Laura\'s bridesmaid. When Olga visits, Laura reveals she is pregnant. Olga urges her to tell Massimo about the pregnancy. Meanwhile, Mario receives a phone call from a Torricelli informant that the rival mafia family is about to kill Laura. Laura\'s car enters a tunnel but does not come out the other side. Mario rushes to find Massimo just as Laura\'s call suddenly ends. Realizing the implications, Massimo breaks down, as a police car blares at the entrance of the tunnel.']
+
+canonical title = 365 Days
+
+long imdb title = 365 Days (2020)
+
+long imdb canonical title = 365 Days (2020)
+
+smart canonical title = 365 Days
+
+smart long imdb canonical title = 365 Days (2020)
+
+full-size cover url = https://m.media-amazon.com/images/M/MV5BMDdhYzNkOWQtYWNlNi00NDdjLWJlZDMtMjJjZDYyNjAxM2U1XkEyXkFqcGdeQXVyMTQyMTMwOTk0.jpg
+

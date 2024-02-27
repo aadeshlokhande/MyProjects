@@ -1,0 +1,10 @@
+Summary
+The Excel WEEKDAY function takes a date and returns a number between 1-7 representing the day of week. By default, WEEKDAY returns 1 for Sunday and 7 for Saturday, but this is configurable. You can use the WEEKDAY function inside other formulas to check the day of week.
+Purpose 
+Get the day of the week as a number
+Return value 
+A number between 0 and 7.
+Arguments 
+serial_number - The date for which you want to get the day of week.return_type - [optional] A number representing day of week mapping scheme. Default is 1.
+Syntax 
+=WEEKDAY(serial_number, [return_type])

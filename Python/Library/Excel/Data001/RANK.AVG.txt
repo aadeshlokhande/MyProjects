@@ -1,0 +1,236 @@
+Excel RANK.AVG function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RANK.AVG Function 
+Previous 
+Next 
+ 
+Excel 2010
+Statistical
+RANK.AVG Function
+Related functions 
+SMALL
+LARGE
+RANK
+Summary
+The Excel RANK.AVG function returns the rank of a number against a list of other other numeric values. When values contain duplicates, the RANK.AVG function will assign an average rank to each set of duplicates.
+Purpose 
+Rank a number against a range of numbers
+Return value 
+A number that indicates rank.
+Arguments 
+number - The number to rank.ref - An array that contains the numbers to rank against.order - [optional] Rank ascending or descending. Default is zero.
+Syntax 
+=RANK.AVG(number, ref, [order])
+Usage notes 
+The Excel RANK.AVG function assigns a rank to a numeric value when compared to a list of other numeric values. It is not necessary to sort the values in the list before using RANK.AVG.
+In the example shown, the formula in D5 is:
+=RANK.AVG(C5,points)
+where "points" is the named range C5:C12.
+Controlling rank order
+The rank function has two modes of operation, controlled by the order argument. To rank values where the largest value is ranked #1, set order to zero (0), or omit the order argument. To rank values so that the smallest value receives rank #1, set order to 1.
+For example, with the values 1-5 in the range A1:A5:
+=RANK.AVG(1,A1:A5,0) // descending, returns 5
+=RANK.AVG(1,A1:A5,1) // ascending, returns 1
+Set order to zero (0) when you want to rank something like top sales where the largest sales numbers should get the best rank, and set order to one (1) to rank something like race results where the shortest (fastest) times should rank highest.
+Duplicates
+When values to rank contain duplicates, the RANK.AVG function will assign the average rank to each set of duplicates. To assign the same rank to duplicates, see the RANK.EQ function.
+Notes
+If order is 0 or omitted, the largest value is ranked #1. 
+If order is 1, the smallest value is ranked #1.
+It is not necessary to sort the values in the list before using the RANK.AVG function.
+In the event of a tie (i.e. the list contains duplicates) RANK.AVG will assign the average rank value to each set of duplicates.
+Some documentation suggests ref can be an array, but it appears ref must be a range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SMALL FunctionLARGE FunctionRANK Function 
+ Links Microsoft RANK.AVG function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel RANK.AVG function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RANK.AVG Function 
+Previous 
+Next 
+ 
+Excel 2010
+Statistical
+RANK.AVG Function
+Related functions 
+SMALL
+LARGE
+RANK
+Summary
+The Excel RANK.AVG function returns the rank of a number against a list of other other numeric values. When values contain duplicates, the RANK.AVG function will assign an average rank to each set of duplicates.
+Purpose 
+Rank a number against a range of numbers
+Return value 
+A number that indicates rank.
+Arguments 
+number - The number to rank.ref - An array that contains the numbers to rank against.order - [optional] Rank ascending or descending. Default is zero.
+Syntax 
+=RANK.AVG(number, ref, [order])
+Usage notes 
+The Excel RANK.AVG function assigns a rank to a numeric value when compared to a list of other numeric values. It is not necessary to sort the values in the list before using RANK.AVG.
+In the example shown, the formula in D5 is:
+=RANK.AVG(C5,points)
+where "points" is the named range C5:C12.
+Controlling rank order
+The rank function has two modes of operation, controlled by the order argument. To rank values where the largest value is ranked #1, set order to zero (0), or omit the order argument. To rank values so that the smallest value receives rank #1, set order to 1.
+For example, with the values 1-5 in the range A1:A5:
+=RANK.AVG(1,A1:A5,0) // descending, returns 5
+=RANK.AVG(1,A1:A5,1) // ascending, returns 1
+Set order to zero (0) when you want to rank something like top sales where the largest sales numbers should get the best rank, and set order to one (1) to rank something like race results where the shortest (fastest) times should rank highest.
+Duplicates
+When values to rank contain duplicates, the RANK.AVG function will assign the average rank to each set of duplicates. To assign the same rank to duplicates, see the RANK.EQ function.
+Notes
+If order is 0 or omitted, the largest value is ranked #1. 
+If order is 1, the smallest value is ranked #1.
+It is not necessary to sort the values in the list before using the RANK.AVG function.
+In the event of a tie (i.e. the list contains duplicates) RANK.AVG will assign the average rank value to each set of duplicates.
+Some documentation suggests ref can be an array, but it appears ref must be a range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SMALL FunctionLARGE FunctionRANK Function 
+ Links Microsoft RANK.AVG function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

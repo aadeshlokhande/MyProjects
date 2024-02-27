@@ -1,0 +1,10 @@
+Summary
+The Excel UNICODE function returns a number (code point) corresponding to a Unicode character. Unicode is computing standard for the unified encoding, representation, and handling of text in most of the world's writing systems. 
+Purpose 
+Get number from Unicode character
+Return value 
+Unicode code point in decimal notation
+Arguments 
+text - Unicode character to convert to number.
+Syntax 
+=UNICODE(text)

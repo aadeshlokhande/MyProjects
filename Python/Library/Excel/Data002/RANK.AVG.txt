@@ -1,0 +1,10 @@
+Summary
+The Excel RANK.AVG function returns the rank of a number against a list of other other numeric values. When values contain duplicates, the RANK.AVG function will assign an average rank to each set of duplicates.
+Purpose 
+Rank a number against a range of numbers
+Return value 
+A number that indicates rank.
+Arguments 
+number - The number to rank.ref - An array that contains the numbers to rank against.order - [optional] Rank ascending or descending. Default is zero.
+Syntax 
+=RANK.AVG(number, ref, [order])

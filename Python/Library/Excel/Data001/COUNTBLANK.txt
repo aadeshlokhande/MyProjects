@@ -1,0 +1,276 @@
+Excel COUNTBLANK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUNTBLANK Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+COUNTBLANK Function
+Related functions 
+COUNTA
+COUNT
+ISBLANK
+Summary
+The Excel COUNTBLANK function returns a count of empty cells in a range. Cells that contain text, numbers, errors, spaces, etc. are not counted. Formulas that return empty strings ("") are counted as blank.
+Purpose 
+Count cells that are blank
+Return value 
+A number representing blank cells
+Arguments 
+range - The range in which to count blank cells.
+Syntax 
+=COUNTBLANK(range)
+Usage notes 
+The COUNTBLANK function returns a count of empty cells in a range. Cells that contain text, numbers, errors, spaces, etc. are not counted. Formulas that return an empty string ("") are counted as blank. COUNTBLANK takes just one argument, range, which must be a cell range.
+Examples
+In the example shown, the formula in cell E6 is:
+=COUNTBLANK(B5:B15) // returns 3
+COUNTBLANK returns 3 since there are 3 blank cells in the range. Note that cell B12 is not included because it contains a space character (" "). Cell B13 contains a formula that returns an empty string:
+="" // formula in B13
+COUNTBLANK considers B13 blank and includes it in the count.
+Formulas that return empty strings
+The IF function is often used to return empty strings. For example, if A1 contains 21, this formula in B1 will return an empty string:
+=IF(A1>30,"Overdue","")
+The idea is that that cell B1 should be empty unless the value in A1 is greater than 30. The COUNTBLANK function will indeed count B1 as empty when the value in A1 is less than or equal to 30. However it's worth noting that COUNTA and COUNTIFS will count B1 as not empty in the same case. In other words they will see the empty string ("") returned by IF as not blank.
+Invisible characters
+Some cells look empty, but actually contain invisible characters. To check which cells are blank use Go To > Special > Blanks:
+Select a range
+Open Go To dialog (Control + G)
+Press "Special"
+Select "Blanks"
+Functions for counting
+To count numbers only, use the COUNT function.
+To count numbers and text, use the COUNTA function.
+To count with one condition, use the COUNTIF function
+To count with multiple conditions, use the COUNTIFS function.
+To count empty cells, use the COUNTBLANK function.
+Notes
+Cells that contain text, numbers, errors, etc. are not counted.
+Cells with formulas that return an empty string ("") are counted.
+Cells that contain only a single quote (') are counted.
+Cells that contain zero are not counted.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Return blank if 
+Only calculate if not blank 
+Highlight rows with blank cells 
+Count cells that are blank 
+Count cells that are not blank 
+Videos
+  
+Formulas to query a table 
+ Functions COUNTA FunctionCOUNT FunctionISBLANK Function 
+ Links Microsoft COUNTBLANK function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel COUNTBLANK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUNTBLANK Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+COUNTBLANK Function
+Related functions 
+COUNTA
+COUNT
+ISBLANK
+Summary
+The Excel COUNTBLANK function returns a count of empty cells in a range. Cells that contain text, numbers, errors, spaces, etc. are not counted. Formulas that return empty strings ("") are counted as blank.
+Purpose 
+Count cells that are blank
+Return value 
+A number representing blank cells
+Arguments 
+range - The range in which to count blank cells.
+Syntax 
+=COUNTBLANK(range)
+Usage notes 
+The COUNTBLANK function returns a count of empty cells in a range. Cells that contain text, numbers, errors, spaces, etc. are not counted. Formulas that return an empty string ("") are counted as blank. COUNTBLANK takes just one argument, range, which must be a cell range.
+Examples
+In the example shown, the formula in cell E6 is:
+=COUNTBLANK(B5:B15) // returns 3
+COUNTBLANK returns 3 since there are 3 blank cells in the range. Note that cell B12 is not included because it contains a space character (" "). Cell B13 contains a formula that returns an empty string:
+="" // formula in B13
+COUNTBLANK considers B13 blank and includes it in the count.
+Formulas that return empty strings
+The IF function is often used to return empty strings. For example, if A1 contains 21, this formula in B1 will return an empty string:
+=IF(A1>30,"Overdue","")
+The idea is that that cell B1 should be empty unless the value in A1 is greater than 30. The COUNTBLANK function will indeed count B1 as empty when the value in A1 is less than or equal to 30. However it's worth noting that COUNTA and COUNTIFS will count B1 as not empty in the same case. In other words they will see the empty string ("") returned by IF as not blank.
+Invisible characters
+Some cells look empty, but actually contain invisible characters. To check which cells are blank use Go To > Special > Blanks:
+Select a range
+Open Go To dialog (Control + G)
+Press "Special"
+Select "Blanks"
+Functions for counting
+To count numbers only, use the COUNT function.
+To count numbers and text, use the COUNTA function.
+To count with one condition, use the COUNTIF function
+To count with multiple conditions, use the COUNTIFS function.
+To count empty cells, use the COUNTBLANK function.
+Notes
+Cells that contain text, numbers, errors, etc. are not counted.
+Cells with formulas that return an empty string ("") are counted.
+Cells that contain only a single quote (') are counted.
+Cells that contain zero are not counted.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Return blank if 
+Only calculate if not blank 
+Highlight rows with blank cells 
+Count cells that are blank 
+Count cells that are not blank 
+Videos
+  
+Formulas to query a table 
+ Functions COUNTA FunctionCOUNT FunctionISBLANK Function 
+ Links Microsoft COUNTBLANK function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

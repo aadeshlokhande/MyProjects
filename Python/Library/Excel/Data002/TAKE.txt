@@ -1,0 +1,10 @@
+Summary
+The Excel TAKE function returns a subset of a given array. The number of rows and columns to return is provided by separate rows and columns arguments. Rows and columns can be extracted from the start or end of the given array.
+Purpose 
+Get a subset of an array
+Return value 
+A subset of a given array
+Arguments 
+array - The source array or range.rows - [optional] Number of rows to return as an integer.col - [optional] Number of columns to return as an integer.
+Syntax 
+=TAKE(array, [rows], [col])

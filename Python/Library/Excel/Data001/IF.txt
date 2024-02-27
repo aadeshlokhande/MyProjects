@@ -1,0 +1,432 @@
+Excel IF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+IF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+IF Function
+Related functions 
+IFS
+SWITCH
+AND
+OR
+COUNTIF
+SUMIF
+Summary
+The Excel IF function runs a logical test and returns one value for a TRUE result, and another for a FALSE result. For example, to "pass" scores above 70: =IF(A1>70,"Pass","Fail"). More than one condition can be tested by nesting IF functions. The IF function can be combined with logical functions like AND and OR to extend the logical test.
+Purpose 
+Test for a specific condition
+Return value 
+The values you supply for TRUE or FALSE
+Arguments 
+logical_test - A value or logical expression that can be evaluated as TRUE or FALSE.value_if_true - [optional] The value to return when logical_test evaluates to TRUE.value_if_false - [optional] The value to return when logical_test evaluates to FALSE.
+Syntax 
+=IF(logical_test, [value_if_true], [value_if_false])
+Usage notes 
+The IF function runs a logical test and returns one value for a TRUE result, and another value for a FALSE result. The result from IF can be a value, a cell reference, or even another formula. By combining the IF function with other logical functions like AND and OR, you can test more than one condition at a time.
+Syntax
+The generic syntax for the IF function looks like this:
+=IF(logical_test,[value_if_true],[value_if_false])
+The first argument, logical_test, is typically an expression that returns either TRUE or FALSE. The second argument, value_if_true, is the value to return when logical_test is TRUE. The last argument, value_if_false, is the value to return when logical_test is FALSE. Both value_if_true and value_if_false are optional, but you must provide one or the other. For example, if cell A1 contains 80, then:
+=IF(A1>75,TRUE) // returns TRUE
+=IF(A1>75,"OK") // returns "OK"
+=IF(A1>85,"OK") // returns FALSE
+=IF(A1>75,10,0) // returns 10
+=IF(A1>85,10,0) // returns 0
+=IF(A1>75,"Yes","No") // returns "Yes"
+=IF(A1>85,"Yes","No") // returns "No"
+Notice that text values like "OK", "Yes", "No", etc. must be enclosed in double quotes (""). However, numeric values should not be enclosed in quotes.
+Logical tests
+The IF function supports logical operators (>,<,<>,=) when creating logical tests. Most commonly, the logical_test in IF is a complete logical expression that will evaluate to TRUE or FALSE. The table below shows some common examples:
+Goal
+Logical test
+If A1 is greater than 75
+A1>75
+If A1 equals 100
+A1=100
+If A1 is less than or equal to 100
+A1<=100
+If A1 equals "Red"
+A1="red"
+If A1 is not equal to "Red"
+A1<>"red"
+If A1 is less than B1
+A1<B1
+If A1 is empty
+A1=""
+If A1 is not empty
+A1<>""
+If A1 is less than current date
+A1<TODAY()
+Notice text values must be enclosed in double quotes (""), but numbers do not. The IF function does not support wildcards, but you can combine IF with COUNTIF to get basic wildcard functionality. To test for substrings in a cell, you can use the IF function with the SEARCH function.
+Pass or Fail example
+In the worksheet shown above, we want to assign either "Pass" or "Fail" based on a test score. A passing score is 70 or higher. The formula in D6, copied down, is:
+=IF(C5>=70,"Pass","Fail")
+Translation: If the value in C5 is greater than or equal to 70, return "Pass". Otherwise, return "Fail".
+Note that the logical flow of this formula can be reversed. This formula returns the same result:
+=IF(C5<70,"Fail","Pass")
+Translation: If the value in C5 is less than 70, return "Fail". Otherwise, return "Pass".
+Both formulas above, when copied down, will return correct results.
+Note: If you are new to the idea of formula criteria, this article explains many examples.
+Assign points based on color
+In the worksheet below, we want to assign points based on the color in column B. If the color is "red", the result should be 100. If the color is "blue", the result should be 125. This requires that we use a formula based on two IF functions, one nested inside the other. The formula in C5, copied down, is:
+=IF(B5="red",100,IF(B5="blue",125))
+Translation: IF the value in B5 is "red", return 100. Else, if the value in B5 is "blue", return 125.
+There are three things to notice in this example:
+The formula will return FALSE if the value in B5 is anything except "red" or "blue"
+The text values "red" and "blue" must be enclosed in double quotes ("")
+The IF function is not case-sensitive and will match "red", "Red", "RED", or "rEd".
+This is a simple example of a nested IFs formula. See below for a more complex example.
+Return another formula
+The IF function can return another formula as a result. For example, the formula below will return A1*5% when A1 is less than 100, and A1*7% when A1 is greater than or equal to 100:
+=IF(A1<100,A1*5%,A1*7%)
+Nested IF statements
+The IF function can be "nested". A "nested IF" refers to a formula where at least one IF function is nested inside another in order to test for more conditions and return more possible results. Each IF statement needs to be carefully "nested" inside another so that the logic is correct. For example, the following formula can be used to assign a grade rather than a pass / fail result:
+=IF(C6<70,"F",IF(C6<75,"D",IF(C6<85,"C",IF(C6<95,"B","A"))))
+Video: How to create a formula with nested IFs
+Up to 64 IF functions can be nested. However, in general, you should consider other functions, like VLOOKUP or XLOOKUP for more complex scenarios, because they can handle more conditions in a more streamlined fashion. For a more details see this article on nested IFs.
+Note: the newer IFS function is designed to handle multiple conditions without nesting. However, a lookup function like VLOOKUP or XLOOKUP is usually a better approach unless the logic for each condition is custom.
+Video: Why VLOOKUP is better than nested IFs.
+IF with AND, OR, NOT
+The IF function can be combined with the AND function and the OR function. For example, to return "OK" when A1 is between 7 and 10, you can use a formula like this:
+=IF(AND(A1>7,A1<10),"OK","")
+Translation: if A1 is greater than 7 and less than 10, return "OK". Otherwise, return nothing ("").
+To return B1+10 when A1 is "red" or "blue" you can use the OR function like this:
+=IF(OR(A1="red",A1="blue"),B1+10,B1)
+Translation: if A1 is red or blue, return B1+10, otherwise return B1.
+=IF(NOT(A1="red"),B1+10,B1)
+Translation: if A1 is NOT red, return B1+10, otherwise return B1.
+IF cell contains specific text
+Because the IF function does not support wildcards, it is not obvious how to configure IF to check for a specific substring in a cell. A common approach is to combine the ISNUMBER function and the SEARCH function to create a logical test like this:
+=ISNUMBER(SEARCH(substring,A1)) // returns TRUE or FALSE
+For example, to check for the substring "xyz" in cell A1, you can use a formula like this:
+=IF(ISNUMBER(SEARCH("xyz",A1)),"Yes","No")
+Read a detailed explanation here.
+More information
+Read more about nested IFs
+Learn how to use VLOOKUP instead of nested IFs (video)
+50 Examples of formula criteria
+Notes
+The IF function is not case-sensitive.
+To count values conditionally, use the COUNTIF or the COUNTIFS functions.
+To sum values conditionally, use the SUMIF or the SUMIFS functions.
+If any of the arguments to IF are supplied as arrays, the IF function will evaluate every element of the array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by group 
+Longest winning streak 
+Approximate match with multiple criteria 
+Minimum value if 
+Two-way approximate match multiple criteria 
+Time since start in day ranges 
+Rank values by month 
+Average if with filter 
+Large with criteria 
+If this AND that OR that 
+Videos
+  
+How to build a search box with conditional formatting 
+How to check and debug a formula with F9 
+How to step through complex formulas using Evaluate 
+How to make a nested IF formula easier to read 
+How to trap errors in formulas 
+Why VLOOKUP is better than nested IFs 
+How to replace nested IFs with VLOOKUP 
+How to group values with VLOOKUP 
+How to create a formula with nested IFs 
+If this OR that 
+ Functions IFS FunctionSWITCH FunctionAND FunctionOR FunctionCOUNTIF FunctionSUMIF Function 
+ Articles 19 tips for nested IF formulasHow to use formula criteria (50 examples) 
+ Links Microsoft IF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel IF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+IF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+IF Function
+Related functions 
+IFS
+SWITCH
+AND
+OR
+COUNTIF
+SUMIF
+Summary
+The Excel IF function runs a logical test and returns one value for a TRUE result, and another for a FALSE result. For example, to "pass" scores above 70: =IF(A1>70,"Pass","Fail"). More than one condition can be tested by nesting IF functions. The IF function can be combined with logical functions like AND and OR to extend the logical test.
+Purpose 
+Test for a specific condition
+Return value 
+The values you supply for TRUE or FALSE
+Arguments 
+logical_test - A value or logical expression that can be evaluated as TRUE or FALSE.value_if_true - [optional] The value to return when logical_test evaluates to TRUE.value_if_false - [optional] The value to return when logical_test evaluates to FALSE.
+Syntax 
+=IF(logical_test, [value_if_true], [value_if_false])
+Usage notes 
+The IF function runs a logical test and returns one value for a TRUE result, and another value for a FALSE result. The result from IF can be a value, a cell reference, or even another formula. By combining the IF function with other logical functions like AND and OR, you can test more than one condition at a time.
+Syntax
+The generic syntax for the IF function looks like this:
+=IF(logical_test,[value_if_true],[value_if_false])
+The first argument, logical_test, is typically an expression that returns either TRUE or FALSE. The second argument, value_if_true, is the value to return when logical_test is TRUE. The last argument, value_if_false, is the value to return when logical_test is FALSE. Both value_if_true and value_if_false are optional, but you must provide one or the other. For example, if cell A1 contains 80, then:
+=IF(A1>75,TRUE) // returns TRUE
+=IF(A1>75,"OK") // returns "OK"
+=IF(A1>85,"OK") // returns FALSE
+=IF(A1>75,10,0) // returns 10
+=IF(A1>85,10,0) // returns 0
+=IF(A1>75,"Yes","No") // returns "Yes"
+=IF(A1>85,"Yes","No") // returns "No"
+Notice that text values like "OK", "Yes", "No", etc. must be enclosed in double quotes (""). However, numeric values should not be enclosed in quotes.
+Logical tests
+The IF function supports logical operators (>,<,<>,=) when creating logical tests. Most commonly, the logical_test in IF is a complete logical expression that will evaluate to TRUE or FALSE. The table below shows some common examples:
+Goal
+Logical test
+If A1 is greater than 75
+A1>75
+If A1 equals 100
+A1=100
+If A1 is less than or equal to 100
+A1<=100
+If A1 equals "Red"
+A1="red"
+If A1 is not equal to "Red"
+A1<>"red"
+If A1 is less than B1
+A1<B1
+If A1 is empty
+A1=""
+If A1 is not empty
+A1<>""
+If A1 is less than current date
+A1<TODAY()
+Notice text values must be enclosed in double quotes (""), but numbers do not. The IF function does not support wildcards, but you can combine IF with COUNTIF to get basic wildcard functionality. To test for substrings in a cell, you can use the IF function with the SEARCH function.
+Pass or Fail example
+In the worksheet shown above, we want to assign either "Pass" or "Fail" based on a test score. A passing score is 70 or higher. The formula in D6, copied down, is:
+=IF(C5>=70,"Pass","Fail")
+Translation: If the value in C5 is greater than or equal to 70, return "Pass". Otherwise, return "Fail".
+Note that the logical flow of this formula can be reversed. This formula returns the same result:
+=IF(C5<70,"Fail","Pass")
+Translation: If the value in C5 is less than 70, return "Fail". Otherwise, return "Pass".
+Both formulas above, when copied down, will return correct results.
+Note: If you are new to the idea of formula criteria, this article explains many examples.
+Assign points based on color
+In the worksheet below, we want to assign points based on the color in column B. If the color is "red", the result should be 100. If the color is "blue", the result should be 125. This requires that we use a formula based on two IF functions, one nested inside the other. The formula in C5, copied down, is:
+=IF(B5="red",100,IF(B5="blue",125))
+Translation: IF the value in B5 is "red", return 100. Else, if the value in B5 is "blue", return 125.
+There are three things to notice in this example:
+The formula will return FALSE if the value in B5 is anything except "red" or "blue"
+The text values "red" and "blue" must be enclosed in double quotes ("")
+The IF function is not case-sensitive and will match "red", "Red", "RED", or "rEd".
+This is a simple example of a nested IFs formula. See below for a more complex example.
+Return another formula
+The IF function can return another formula as a result. For example, the formula below will return A1*5% when A1 is less than 100, and A1*7% when A1 is greater than or equal to 100:
+=IF(A1<100,A1*5%,A1*7%)
+Nested IF statements
+The IF function can be "nested". A "nested IF" refers to a formula where at least one IF function is nested inside another in order to test for more conditions and return more possible results. Each IF statement needs to be carefully "nested" inside another so that the logic is correct. For example, the following formula can be used to assign a grade rather than a pass / fail result:
+=IF(C6<70,"F",IF(C6<75,"D",IF(C6<85,"C",IF(C6<95,"B","A"))))
+Video: How to create a formula with nested IFs
+Up to 64 IF functions can be nested. However, in general, you should consider other functions, like VLOOKUP or XLOOKUP for more complex scenarios, because they can handle more conditions in a more streamlined fashion. For a more details see this article on nested IFs.
+Note: the newer IFS function is designed to handle multiple conditions without nesting. However, a lookup function like VLOOKUP or XLOOKUP is usually a better approach unless the logic for each condition is custom.
+Video: Why VLOOKUP is better than nested IFs.
+IF with AND, OR, NOT
+The IF function can be combined with the AND function and the OR function. For example, to return "OK" when A1 is between 7 and 10, you can use a formula like this:
+=IF(AND(A1>7,A1<10),"OK","")
+Translation: if A1 is greater than 7 and less than 10, return "OK". Otherwise, return nothing ("").
+To return B1+10 when A1 is "red" or "blue" you can use the OR function like this:
+=IF(OR(A1="red",A1="blue"),B1+10,B1)
+Translation: if A1 is red or blue, return B1+10, otherwise return B1.
+=IF(NOT(A1="red"),B1+10,B1)
+Translation: if A1 is NOT red, return B1+10, otherwise return B1.
+IF cell contains specific text
+Because the IF function does not support wildcards, it is not obvious how to configure IF to check for a specific substring in a cell. A common approach is to combine the ISNUMBER function and the SEARCH function to create a logical test like this:
+=ISNUMBER(SEARCH(substring,A1)) // returns TRUE or FALSE
+For example, to check for the substring "xyz" in cell A1, you can use a formula like this:
+=IF(ISNUMBER(SEARCH("xyz",A1)),"Yes","No")
+Read a detailed explanation here.
+More information
+Read more about nested IFs
+Learn how to use VLOOKUP instead of nested IFs (video)
+50 Examples of formula criteria
+Notes
+The IF function is not case-sensitive.
+To count values conditionally, use the COUNTIF or the COUNTIFS functions.
+To sum values conditionally, use the SUMIF or the SUMIFS functions.
+If any of the arguments to IF are supplied as arrays, the IF function will evaluate every element of the array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by group 
+Longest winning streak 
+Approximate match with multiple criteria 
+Minimum value if 
+Two-way approximate match multiple criteria 
+Time since start in day ranges 
+Rank values by month 
+Average if with filter 
+Large with criteria 
+If this AND that OR that 
+Videos
+  
+How to build a search box with conditional formatting 
+How to check and debug a formula with F9 
+How to step through complex formulas using Evaluate 
+How to make a nested IF formula easier to read 
+How to trap errors in formulas 
+Why VLOOKUP is better than nested IFs 
+How to replace nested IFs with VLOOKUP 
+How to group values with VLOOKUP 
+How to create a formula with nested IFs 
+If this OR that 
+ Functions IFS FunctionSWITCH FunctionAND FunctionOR FunctionCOUNTIF FunctionSUMIF Function 
+ Articles 19 tips for nested IF formulasHow to use formula criteria (50 examples) 
+ Links Microsoft IF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

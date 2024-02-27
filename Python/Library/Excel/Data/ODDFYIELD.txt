@@ -1,0 +1,674 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel ODDFYIELD function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+ODDFYIELD Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+ODDFYIELD Function
+Related functions 
+
+YIELD
+YIELDDISC
+YIELDMAT
+ODDFYIELD
+ODDLYIELD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel ODDFYIELD function returns the yield of a security with an odd (irregular) first period.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get yield security with odd first period
+
+
+
+Return value 
+
+Yield as percentage
+
+
+
+Arguments 
+
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.fd - First coupon date.rate - Annual coupon rate of security.pr - Price of security.redem - Redemption value per $100 face value.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+
+
+
+Syntax 
+
+=ODDFYIELD(sd, md, id, fd, rate, pr, redem, freq, [basis])
+
+
+
+Usage notes 
+
+Some bonds have an irregular first or last period, so interest payments don't fit a normal schedule. To calculate the yield of a bond with an irregular first period, you can use the ODDFYIELD function. The ODDFYIELD Function returns the yield (as a percentage) of a security with a short or long first period.
+Example
+In the example shown, we want to calculate the yield of a bond with a settlement date of 1-Feb-2019. The bond matures on 15-Feb-2022, and pays a coupon rate of 5%, with the first coupon paid on 15-Feb-2019. Payments are semi-annual, the day count basis is US 30/360, and the redemption value is $100. In the example shown, the formula in F5 is:
+
+=ODDFYIELD(C10,C12,C9,C11,C7,C5,C6,C13,C14)
+
+With these inputs, the ODDFYIELD function returns a yield of 6.10%, with the percentage number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, the DATE function is the best option. To illustrate, the formula below has all values hardcoded, with the DATE function used for each of the four required dates:
+
+=ODDFYIELD(DATE(2019,2,1),DATE(2022,2,15),DATE(2018,12,1),DATE(2019,2,15),0.05,97,100,2,0)
+
+Basis
+The basis argument controls how days are counted. The ODDFYIELD function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+
+
+
+Basis
+Day count
+
+
+
+
+0 or omitted
+US (NASD) 30/360
+
+
+1
+Actual/actual
+
+
+2
+Actual/360
+
+
+3
+Actual/365
+
+
+4
+European 30/360
+
+
+
+Notes
+
+In Excel, dates are serial numbers. 
+All dates, plus frequency and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ODDFYIELD returns #VALUE!
+ODDFYIELD returns #NUM when:
+		
+(maturity > first_coupon > settlement > issue) is NOT true
+Rate < 0 or pr <= 0
+Basis is out-of-range
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions YIELD FunctionYIELDDISC FunctionYIELDMAT FunctionODDFYIELD FunctionODDLYIELD Function 
+ Links Microsoft ODDFYIELD function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel ODDFYIELD function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ODDFYIELD Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+ODDFYIELD Function
+Related functions 
+YIELD
+YIELDDISC
+YIELDMAT
+ODDFYIELD
+ODDLYIELD
+Summary
+The Excel ODDFYIELD function returns the yield of a security with an odd (irregular) first period.
+Purpose 
+Get yield security with odd first period
+Return value 
+Yield as percentage
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.fd - First coupon date.rate - Annual coupon rate of security.pr - Price of security.redem - Redemption value per $100 face value.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=ODDFYIELD(sd, md, id, fd, rate, pr, redem, freq, [basis])
+Usage notes 
+Some bonds have an irregular first or last period, so interest payments don't fit a normal schedule. To calculate the yield of a bond with an irregular first period, you can use the ODDFYIELD function. The ODDFYIELD Function returns the yield (as a percentage) of a security with a short or long first period.
+Example
+In the example shown, we want to calculate the yield of a bond with a settlement date of 1-Feb-2019. The bond matures on 15-Feb-2022, and pays a coupon rate of 5%, with the first coupon paid on 15-Feb-2019. Payments are semi-annual, the day count basis is US 30/360, and the redemption value is $100. In the example shown, the formula in F5 is:
+=ODDFYIELD(C10,C12,C9,C11,C7,C5,C6,C13,C14)
+With these inputs, the ODDFYIELD function returns a yield of 6.10%, with the percentage number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, the DATE function is the best option. To illustrate, the formula below has all values hardcoded, with the DATE function used for each of the four required dates:
+=ODDFYIELD(DATE(2019,2,1),DATE(2022,2,15),DATE(2018,12,1),DATE(2019,2,15),0.05,97,100,2,0)
+Basis
+The basis argument controls how days are counted. The ODDFYIELD function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, plus frequency and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ODDFYIELD returns #VALUE!
+ODDFYIELD returns #NUM when:
+		
+(maturity > first_coupon > settlement > issue) is NOT true
+Rate < 0 or pr <= 0
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions YIELD FunctionYIELDDISC FunctionYIELDMAT FunctionODDFYIELD FunctionODDLYIELD Function 
+ Links Microsoft ODDFYIELD function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

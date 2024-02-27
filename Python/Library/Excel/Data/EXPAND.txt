@@ -1,0 +1,628 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel EXPAND function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+EXPAND Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+EXPAND Function
+Related functions 
+
+DROP
+TAKE
+CHOOSEROWS
+CHOOSECOLS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The EXPAND function expands an array by adding rows and columns, which are supplied as separate arguments. The numbers given for rows and columns represent the dimensions of the final array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Expand array by adding rows or columns
+
+
+
+Return value 
+
+Expanded array
+
+
+
+Arguments 
+
+array - The array to expand.rows - [optional] The final number of rows. Default is total rows.columns - [optional] The final number of columns. Default is total columns.pad_with - [optional] Value to use for new cells. Default is #N/A.
+
+
+
+Syntax 
+
+=EXPAND(array, [rows], [columns], [pad_with])
+
+
+
+Usage notes 
+
+The EXPAND function expands an array by adding rows and columns, which are supplied as separate arguments. The values given for rows and columns represent the dimensions of the final array, not the number of rows or columns to add.
+The EXPAND function takes four arguments: array, rows, columns, and pad_with. Array is required, along with at least one value for rows or columns. Array can be a range or an array from another formula. Rows and columns must be positive numbers that are at least the same size as the given array. If not provided, both rows and columns will default to the dimensions of array.
+Basic usage
+To expand an array to be 5 rows by 4 columns, you can use EXPAND like this:
+
+=EXPAND(array,5,4) // expand to 5 x 4
+
+By default, any new cells created will be filled with #N/A errors. To expand an array to be 10 rows by 3 columns, and fill new cells with "x":
+
+=EXPAND(array,10,3,"x") // expand to 10 x 3, fill with "x"
+
+Note that the numbers given for rows and columns represent final dimensions, not new rows and columns.
+Default and custom padding
+In the example below, we are adding 2 rows to an existing array with 5 rows. The result is an array with 7 rows. The formula in F3 is:
+
+=EXPAND(B3:D7,7) // default padding
+
+
+Notice that by default, EXPAND fills the new empty cells with the #N/A error. In the screen, the formula in F3 has been modified to provide zero (0) for the pad_with argument:
+
+=EXPAND(B3:D7,7,,0) // pad with 0
+
+
+Notice the new cells now contain zero. Also notice that because we are not providing a value for columns, we need to add another comma after rows, in order to place the zero in the right location as the pad_with argument.
+Notes
+
+If rows is less than the row count in array, EXPAND will return a #VALUE! error.
+If columns is less than the column count in array, EXPAND will return a #VALUE! error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions DROP FunctionTAKE FunctionCHOOSEROWS FunctionCHOOSECOLS Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel EXPAND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+EXPAND Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+EXPAND Function
+Related functions 
+DROP
+TAKE
+CHOOSEROWS
+CHOOSECOLS
+Summary
+The EXPAND function expands an array by adding rows and columns, which are supplied as separate arguments. The numbers given for rows and columns represent the dimensions of the final array.
+Purpose 
+Expand array by adding rows or columns
+Return value 
+Expanded array
+Arguments 
+array - The array to expand.rows - [optional] The final number of rows. Default is total rows.columns - [optional] The final number of columns. Default is total columns.pad_with - [optional] Value to use for new cells. Default is #N/A.
+Syntax 
+=EXPAND(array, [rows], [columns], [pad_with])
+Usage notes 
+The EXPAND function expands an array by adding rows and columns, which are supplied as separate arguments. The values given for rows and columns represent the dimensions of the final array, not the number of rows or columns to add.
+The EXPAND function takes four arguments: array, rows, columns, and pad_with. Array is required, along with at least one value for rows or columns. Array can be a range or an array from another formula. Rows and columns must be positive numbers that are at least the same size as the given array. If not provided, both rows and columns will default to the dimensions of array.
+Basic usage
+To expand an array to be 5 rows by 4 columns, you can use EXPAND like this:
+=EXPAND(array,5,4) // expand to 5 x 4
+By default, any new cells created will be filled with #N/A errors. To expand an array to be 10 rows by 3 columns, and fill new cells with "x":
+=EXPAND(array,10,3,"x") // expand to 10 x 3, fill with "x"
+Note that the numbers given for rows and columns represent final dimensions, not new rows and columns.
+Default and custom padding
+In the example below, we are adding 2 rows to an existing array with 5 rows. The result is an array with 7 rows. The formula in F3 is:
+=EXPAND(B3:D7,7) // default padding
+Notice that by default, EXPAND fills the new empty cells with the #N/A error. In the screen, the formula in F3 has been modified to provide zero (0) for the pad_with argument:
+=EXPAND(B3:D7,7,,0) // pad with 0
+Notice the new cells now contain zero. Also notice that because we are not providing a value for columns, we need to add another comma after rows, in order to place the zero in the right location as the pad_with argument.
+Notes
+If rows is less than the row count in array, EXPAND will return a #VALUE! error.
+If columns is less than the column count in array, EXPAND will return a #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DROP FunctionTAKE FunctionCHOOSEROWS FunctionCHOOSECOLS Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,228 @@
+Excel LOG function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LOG Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+LOG Function
+Related functions 
+LOG10
+Summary
+The Excel LOG function returns the logarithm of a given number, using a supplied base. The base argument defaults to 10 if not supplied.
+Purpose 
+Get the logarithm of a number
+Return value 
+The logarithm
+Arguments 
+number - Number for which you want the logarithm.base - [optional] Base of the logarithm. Defaults to 10.
+Syntax 
+=LOG(number, [base])
+Usage notes 
+The LOG function returns the logarithm of a given number, using the provided base.
+The LOG function takes two arguments, number and base. The value provided for number should be a positive real number. The base argument represents the base of the logarithm. Base is optional and defaults to 10 if not provided.
+Examples
+The logarithm of 16 with base 2 (the power to which 2 must be raised to equal 16) is 4:
+=LOG(16, 2) // returns 4
+The logarithm of 100 with base 10 (the power to which 10 must be raised to equal 100) is 2:
+=LOG(100,10) // returns 2
+Because the base argument defaults to 10, the formulas below are equivalent:
+=LOG(100,10) // returns 2
+=LOG(100) // returns 2
+The LOG10 function also returns the base 10 logarithm of a number:
+=LOG10(100) // returns 2
+=LOG10(1000) // returns 3
+Notes
+If number or base are not numeric, LOG returns #VALUE!
+The LOG10 function also returns the base 10 logarithm of a number.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions LOG10 Function 
+ Links Microsoft LOG function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel LOG function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LOG Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+LOG Function
+Related functions 
+LOG10
+Summary
+The Excel LOG function returns the logarithm of a given number, using a supplied base. The base argument defaults to 10 if not supplied.
+Purpose 
+Get the logarithm of a number
+Return value 
+The logarithm
+Arguments 
+number - Number for which you want the logarithm.base - [optional] Base of the logarithm. Defaults to 10.
+Syntax 
+=LOG(number, [base])
+Usage notes 
+The LOG function returns the logarithm of a given number, using the provided base.
+The LOG function takes two arguments, number and base. The value provided for number should be a positive real number. The base argument represents the base of the logarithm. Base is optional and defaults to 10 if not provided.
+Examples
+The logarithm of 16 with base 2 (the power to which 2 must be raised to equal 16) is 4:
+=LOG(16, 2) // returns 4
+The logarithm of 100 with base 10 (the power to which 10 must be raised to equal 100) is 2:
+=LOG(100,10) // returns 2
+Because the base argument defaults to 10, the formulas below are equivalent:
+=LOG(100,10) // returns 2
+=LOG(100) // returns 2
+The LOG10 function also returns the base 10 logarithm of a number:
+=LOG10(100) // returns 2
+=LOG10(1000) // returns 3
+Notes
+If number or base are not numeric, LOG returns #VALUE!
+The LOG10 function also returns the base 10 logarithm of a number.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions LOG10 Function 
+ Links Microsoft LOG function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

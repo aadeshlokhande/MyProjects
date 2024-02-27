@@ -1,0 +1,10 @@
+Summary
+The Excel PRICEMAT function returns the price per $100 face value of a security that pays interest at maturity.
+Purpose 
+Get price per $100 interest at maturity
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.rate - Security interest rate at date of issue.yld - Annual yield of the security.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=PRICEMAT(sd, md, id, rate, yld, [basis])

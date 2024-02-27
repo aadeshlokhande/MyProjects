@@ -1,0 +1,677 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel COLUMN function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+COLUMN Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+COLUMN Function
+Related functions 
+
+ROW
+COLUMNS
+ROWS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel COLUMN function returns the column number for a reference. For example, COLUMN(C5) returns 3, since C is the third column in the spreadsheet. When no reference is provided, COLUMN returns the column number of the cell which contains the formula.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the column number of a reference.
+
+
+
+Return value 
+
+A number representing the column.
+
+
+
+Arguments 
+
+reference - [optional] A reference to a cell or range of cells.
+
+
+
+Syntax 
+
+=COLUMN([reference])
+
+
+
+Usage notes 
+
+The COLUMN function returns the column number of a reference. For example, COLUMN(C5) returns 3, since C is the third column in the spreadsheet. COLUMN takes just one argument, called reference, which can be empty, a cell reference, or a range. When no reference is provided, COLUMN returns the column number of the cell which contains the formula.
+Examples
+With a single cell reference, COLUMN returns the associated column number:
+
+=COLUMN(A1) // returns 1
+=COLUMN(C1) // returns 3
+
+When a reference is not provided, COLUMN returns the column number of the cell the formula resides in. For example, if the following formula is entered in cell D6, the result is 4:
+
+=COLUMN() // returns 4 in D6
+
+When COLUMN is given a range, it returns the column numbers for that range:
+
+=COLUMN(E4:G6) // returns {5,6,7}
+
+In Excel 365, which supports dynamic array formulas, the result is an array {5,6,7} that spills horizontally into three cells, starting with the cell the formula resides in. In earlier Excel versions, the first item of the array (5) will display in one cell only.
+To get Excel 365 to return a single value, you can use the implicit intersection operator (@):
+
+=@COLUMN(E4:G6) // returns 5
+
+ This @ symbol disables array behavior and tells Excel you want a single value.
+Notes
+
+Reference can be a single cell address or a range of cells.
+Reference is optional and will default to the cell in which the COLUMN function exists.
+Reference cannot include multiple references or addresses.
+To get row numbers, see the ROW function.
+To count columns, see the COLUMNS function.
+To lookup a column number, see the MATCH function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Index and match on multiple columns 
+
+Get address of named range or table 
+
+Address of last cell in range 
+
+Count columns that contain specific values 
+
+Copy value from every nth column 
+
+Max of every nth column 
+
+Fixed value every N columns 
+
+Count rows with at least n matching values 
+
+Get relative column numbers in range 
+
+Count rows that contain specific values 
+
+
+
+Videos
+  
+How to create zebra stripes with conditional formatting 
+
+
+ Functions ROW FunctionCOLUMNS FunctionROWS Function 
+ Links Microsoft COLUMN function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel COLUMN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COLUMN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+COLUMN Function
+Related functions 
+ROW
+COLUMNS
+ROWS
+Summary
+The Excel COLUMN function returns the column number for a reference. For example, COLUMN(C5) returns 3, since C is the third column in the spreadsheet. When no reference is provided, COLUMN returns the column number of the cell which contains the formula.
+Purpose 
+Get the column number of a reference.
+Return value 
+A number representing the column.
+Arguments 
+reference - [optional] A reference to a cell or range of cells.
+Syntax 
+=COLUMN([reference])
+Usage notes 
+The COLUMN function returns the column number of a reference. For example, COLUMN(C5) returns 3, since C is the third column in the spreadsheet. COLUMN takes just one argument, called reference, which can be empty, a cell reference, or a range. When no reference is provided, COLUMN returns the column number of the cell which contains the formula.
+Examples
+With a single cell reference, COLUMN returns the associated column number:
+=COLUMN(A1) // returns 1
+=COLUMN(C1) // returns 3
+When a reference is not provided, COLUMN returns the column number of the cell the formula resides in. For example, if the following formula is entered in cell D6, the result is 4:
+=COLUMN() // returns 4 in D6
+When COLUMN is given a range, it returns the column numbers for that range:
+=COLUMN(E4:G6) // returns {5,6,7}
+In Excel 365, which supports dynamic array formulas, the result is an array {5,6,7} that spills horizontally into three cells, starting with the cell the formula resides in. In earlier Excel versions, the first item of the array (5) will display in one cell only.
+To get Excel 365 to return a single value, you can use the implicit intersection operator (@):
+=@COLUMN(E4:G6) // returns 5
+ This @ symbol disables array behavior and tells Excel you want a single value.
+Notes
+Reference can be a single cell address or a range of cells.
+Reference is optional and will default to the cell in which the COLUMN function exists.
+Reference cannot include multiple references or addresses.
+To get row numbers, see the ROW function.
+To count columns, see the COLUMNS function.
+To lookup a column number, see the MATCH function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Index and match on multiple columns 
+Get address of named range or table 
+Address of last cell in range 
+Count columns that contain specific values 
+Copy value from every nth column 
+Max of every nth column 
+Fixed value every N columns 
+Count rows with at least n matching values 
+Get relative column numbers in range 
+Count rows that contain specific values 
+Videos
+  
+How to create zebra stripes with conditional formatting 
+ Functions ROW FunctionCOLUMNS FunctionROWS Function 
+ Links Microsoft COLUMN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

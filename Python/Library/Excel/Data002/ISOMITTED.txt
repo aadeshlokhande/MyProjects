@@ -1,0 +1,10 @@
+Summary
+The Excel ISOMITTED function is a helper function for LAMBDA functions to allow optional arguments. Inside a LAMBDA function, ISOMITTED will return TRUE when an argument has not been provided.
+Purpose 
+Check for optional arguments in LAMBDAs
+Return value 
+TRUE or FALSE
+Arguments 
+argument - The argument to test for.
+Syntax 
+=ISOMITTED(argument)

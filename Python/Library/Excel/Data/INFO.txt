@@ -1,0 +1,659 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel INFO function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+INFO Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Information
+
+
+INFO Function
+Related functions 
+
+CELL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel INFO function returns information about the current environment, including platform, Excel version, number of worksheets in a workbook, and so on. To use the INFO function, supply the type of information you want as text. There are seven types of information available, summarized in the table below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get information about current environment
+
+
+
+Return value 
+
+The information requested
+
+
+
+Arguments 
+
+type_text - The information type to return as text.
+
+
+
+Syntax 
+
+=INFO(type_text)
+
+
+
+Usage notes 
+
+The INFO function can retrieve information about the current environment, including the operating system, the operating system version, Excel version, and so on. INFO takes one argument, type_text, which is a text value indicating the type of information to be returned.
+Examples
+To use the INFO function, supply the type of information you want as text. For example, to retrieve the operating system, use "system":
+
+=INFO("system") // returns "pcdos" or "mac"
+
+To request Excel release information, use "release":
+
+=INFO("release") // returns string like "16.0"
+
+There are seven types of information you can request, summarized in the table below:
+
+
+
+Type
+Information
+
+
+directory
+Path of the current directory or folder
+
+
+numfile
+Number of active worksheets in open workbooks
+
+
+origin
+First visible cell at upper left
+
+
+osversion
+Operating system version
+
+
+recalc
+Recalculation mode
+
+
+release
+Excel version
+
+
+system
+Operating system name
+
+
+
+Note: INFO is a volatile function and will update each time a change is made to the worksheet. This can cause performance problems in larger or more complicated workbooks.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Add line break based on OS 
+
+
+ Functions CELL Function 
+ Links Microsoft INFO function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel INFO function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+INFO Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+INFO Function
+Related functions 
+CELL
+Summary
+The Excel INFO function returns information about the current environment, including platform, Excel version, number of worksheets in a workbook, and so on. To use the INFO function, supply the type of information you want as text. There are seven types of information available, summarized in the table below.
+Purpose 
+Get information about current environment
+Return value 
+The information requested
+Arguments 
+type_text - The information type to return as text.
+Syntax 
+=INFO(type_text)
+Usage notes 
+The INFO function can retrieve information about the current environment, including the operating system, the operating system version, Excel version, and so on. INFO takes one argument, type_text, which is a text value indicating the type of information to be returned.
+Examples
+To use the INFO function, supply the type of information you want as text. For example, to retrieve the operating system, use "system":
+=INFO("system") // returns "pcdos" or "mac"
+To request Excel release information, use "release":
+=INFO("release") // returns string like "16.0"
+There are seven types of information you can request, summarized in the table below:
+Type
+Information
+directory
+Path of the current directory or folder
+numfile
+Number of active worksheets in open workbooks
+origin
+First visible cell at upper left
+osversion
+Operating system version
+recalc
+Recalculation mode
+release
+Excel version
+system
+Operating system name
+Note: INFO is a volatile function and will update each time a change is made to the worksheet. This can cause performance problems in larger or more complicated workbooks.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Add line break based on OS 
+ Functions CELL Function 
+ Links Microsoft INFO function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

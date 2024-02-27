@@ -1,0 +1,807 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel AVERAGEIFS function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+AVERAGEIFS Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2007
+
+
+
+
+Statistical
+
+
+AVERAGEIFS Function
+Related functions 
+
+AVERAGE
+AVERAGEIF
+MODE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel AVERAGEIFS function calculates the average of numbers in a range that meet one or more criteria. The criteria used for AVERAGEIFS can include logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Average cells that match multiple criteria
+
+
+
+Return value 
+
+The average of the cells that meet all criteria
+
+
+
+Arguments 
+
+avg_rng - The range to average.range1 - The first range to evaulate.criteria1 - The criteria to use on range1.range2 - [optional] The second range to evaluate.criteria2 - [optional] The criteria to use on range2.
+
+
+
+Syntax 
+
+=AVERAGEIFS(avg_rng, range1, criteria1, [range2], [criteria2], ...)
+
+
+
+Usage notes 
+
+The AVERAGEIFS function calculates the average of cells in a range that meet one or more conditions, referred to as criteria. To apply criteria, the AVERAGEIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. AVERAGEIFS can be used to average cells based on dates, text values, and numbers. 
+Syntax
+The syntax for the AVERAGEIFS function depends on the criteria being evaluated. Each separate condition will require a range and a criteria. The generic syntax for AVERAGEIFS looks like this:
+
+=AVERAGEIFS(avg_range,range1,criteria1) // 1 condition
+=AVERAGEIFS(avg_range,range1,criteria1,range2,criteria2) // 2 conditions
+The first argument, avg_range, is the range of cells to average, which should contain numeric values. The second argument, range1, is the range to which the first condition should be applied. The third argument, criteria1, contains the condition that should be applied to range1, along with any logical operators. Additional conditions are applied by providing additional range/criteria arguments. When using AVERAGEIFS, keep the following in mind:
+
+Only values that meet all conditions will be included in the final result.
+All ranges must be the same size or AVERAGEIFS will return a #VALUE! error.
+AVERAGEIFS will not include empty cells in the average, even when criteria match.
+AVERAGEIFS will return a #DIV/0! error if no cells meet criteria.
+
+Applying criteria
+The AVERAGEIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. Because AVERAGEIFS is in a group of eight functions that split logical criteria into two parts, the syntax is a bit tricky. Each condition requires a separate range and criteria, and operators need to be enclosed in double quotes (""). The table below shows some common examples:
+
+
+
+Target
+Criteria
+
+
+
+
+Cells greater than 75
+">75"
+
+
+Cells equal to 100
+100 or "100"
+
+
+Cells less than or equal to 100
+"<=100"
+
+
+Cells equal to "Red"
+"red"
+
+
+Cells not equal to "Red"
+"<>red"
+
+
+Cells that are blank ""
+""
+
+
+Cells that are not blank
+"<>"
+
+
+Cells that begin with "X"
+"x*"
+
+
+Cells less than A1
+"<"&A1
+
+
+Cells less than today
+"<"&TODAY()
+
+
+
+Notice the last two examples use concatenation with the ampersand (&) character. When a criteria argument includes a value from another cell, or the result of a formula, logical operators like "<" must be joined with concatenation. This is because Excel needs to evaluate cell references and formulas first in order to get a value, before that value can be joined with an operator.
+Examples
+In the example shown, the formulas in H5:H7 are:
+
+=AVERAGEIFS(C5:C15,C5:C15,">0")
+=AVERAGEIFS(C5:C15,C5:C15,">0",C5:C15,"<500000")
+=AVERAGEIFS(C5:C15,D5:D15,">=2",E5:E15,">1")
+
+These formulas return the average price of properties where:
+
+prices are greater than zero
+prices are greater than zero and less than $500,000
+properties have at least 2 bedrooms and more than 1 bathroom
+
+Double quotes ("") in criteria
+In general, text values in criteria are enclosed in double quotes (""), and numbers are not. However, when a logical operator is included with a number, the number and operator must be enclosed in quotes. Note the difference in the two examples below. Because the second formula uses the greater than or equal to operator (>=), the operator and number are both enclosed in double quotes.
+
+=AVERAGEIFS(C5:C15,D5:D15,2) // 2 bedrooms
+=AVERAGEIFS(C5:C15,D5:D15,">=2") // 2+ bedrooms
+
+Double quotes are also used for text values. For example, to average values in B1:B10 when values in A1:A10 equal "red", you can use a formula like this:
+
+=AVERAGEIFS(B1:B10,A1:A10,"red")
+
+Multiple criteria
+Enter criteria in pairs [range, criteria]. For example, to average values in A1:A10, where B1:B10 = "A", and C1:C10 > 5, use:
+
+=AVERAGEIFS(A1:A10,B1:B10,"A",C1:C10,">5")
+
+Value from another cell
+A value from another cell can be included in criteria using concatenation. In the example below, AVERAGEIFS will return the average of numbers in A1:A10 that are less than the value in cell B1. Notice the less than operator (which is text) is enclosed in quotes.
+
+=AVERAGEIFS(A1:A10,A1:A10,"<"&B1) // average values less than  B1
+
+Wildcards
+The wildcard characters question mark (?), asterisk(*), or tilde (~) can be used in criteria. A question mark (?) matches any one character and an asterisk (*) matches zero or more characters of any kind.  For example, to average values in B1:B10 when values in A1:A10 contain the text "red", you can use a formula like this:
+
+=AVERAGEIFS(B1:B10,A1:A10,"*red*")
+
+The tilde (~) is an escape character to allow you to find literal wildcards. For example, to match a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+Note: the order of arguments is different between AVERAGEIFS and AVERAGEIF. The range to average is always the first argument in AVERAGEIFS.
+Notes
+
+All ranges must be the same size or AVERAGEIFS will return a #VALUE! error.
+Only values that meet all conditions will be included in the final result.
+AVERAGEIFS will not include empty cells in the average, even when criteria match.
+TRUE and FALSE values ignored when calculating an average.
+AVERAGEIFS will return a #DIV/0! error if no cells meet criteria.
+AVERAGEIFS requires a range, you can't substitute an array.
+Logical operators and text values should be enclosed in double quotes ("").
+AVERAGEIFS supports wildcards but is not case-sensitive.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Average call time per month 
+
+Dynamic two-way average 
+
+Average with multiple criteria 
+
+Average salary by department 
+
+Average if not blank 
+
+Average by month 
+
+Basic average example 
+
+Average numbers ignore zero 
+
+Average by group 
+
+Average if with filter 
+
+
+ Functions AVERAGE FunctionAVERAGEIF FunctionMODE Function 
+ Articles Excel's RACON functions 
+ Links Microsoft AVERAGEIFS function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel AVERAGEIFS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AVERAGEIFS Function 
+Previous 
+Next 
+ 
+Excel 2007
+Statistical
+AVERAGEIFS Function
+Related functions 
+AVERAGE
+AVERAGEIF
+MODE
+Summary
+The Excel AVERAGEIFS function calculates the average of numbers in a range that meet one or more criteria. The criteria used for AVERAGEIFS can include logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Average cells that match multiple criteria
+Return value 
+The average of the cells that meet all criteria
+Arguments 
+avg_rng - The range to average.range1 - The first range to evaulate.criteria1 - The criteria to use on range1.range2 - [optional] The second range to evaluate.criteria2 - [optional] The criteria to use on range2.
+Syntax 
+=AVERAGEIFS(avg_rng, range1, criteria1, [range2], [criteria2], ...)
+Usage notes 
+The AVERAGEIFS function calculates the average of cells in a range that meet one or more conditions, referred to as criteria. To apply criteria, the AVERAGEIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. AVERAGEIFS can be used to average cells based on dates, text values, and numbers. 
+Syntax
+The syntax for the AVERAGEIFS function depends on the criteria being evaluated. Each separate condition will require a range and a criteria. The generic syntax for AVERAGEIFS looks like this:
+=AVERAGEIFS(avg_range,range1,criteria1) // 1 condition
+=AVERAGEIFS(avg_range,range1,criteria1,range2,criteria2) // 2 conditions
+The first argument, avg_range, is the range of cells to average, which should contain numeric values. The second argument, range1, is the range to which the first condition should be applied. The third argument, criteria1, contains the condition that should be applied to range1, along with any logical operators. Additional conditions are applied by providing additional range/criteria arguments. When using AVERAGEIFS, keep the following in mind:
+Only values that meet all conditions will be included in the final result.
+All ranges must be the same size or AVERAGEIFS will return a #VALUE! error.
+AVERAGEIFS will not include empty cells in the average, even when criteria match.
+AVERAGEIFS will return a #DIV/0! error if no cells meet criteria.
+Applying criteria
+The AVERAGEIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. Because AVERAGEIFS is in a group of eight functions that split logical criteria into two parts, the syntax is a bit tricky. Each condition requires a separate range and criteria, and operators need to be enclosed in double quotes (""). The table below shows some common examples:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples use concatenation with the ampersand (&) character. When a criteria argument includes a value from another cell, or the result of a formula, logical operators like "<" must be joined with concatenation. This is because Excel needs to evaluate cell references and formulas first in order to get a value, before that value can be joined with an operator.
+Examples
+In the example shown, the formulas in H5:H7 are:
+=AVERAGEIFS(C5:C15,C5:C15,">0")
+=AVERAGEIFS(C5:C15,C5:C15,">0",C5:C15,"<500000")
+=AVERAGEIFS(C5:C15,D5:D15,">=2",E5:E15,">1")
+These formulas return the average price of properties where:
+prices are greater than zero
+prices are greater than zero and less than $500,000
+properties have at least 2 bedrooms and more than 1 bathroom
+Double quotes ("") in criteria
+In general, text values in criteria are enclosed in double quotes (""), and numbers are not. However, when a logical operator is included with a number, the number and operator must be enclosed in quotes. Note the difference in the two examples below. Because the second formula uses the greater than or equal to operator (>=), the operator and number are both enclosed in double quotes.
+=AVERAGEIFS(C5:C15,D5:D15,2) // 2 bedrooms
+=AVERAGEIFS(C5:C15,D5:D15,">=2") // 2+ bedrooms
+Double quotes are also used for text values. For example, to average values in B1:B10 when values in A1:A10 equal "red", you can use a formula like this:
+=AVERAGEIFS(B1:B10,A1:A10,"red")
+Multiple criteria
+Enter criteria in pairs [range, criteria]. For example, to average values in A1:A10, where B1:B10 = "A", and C1:C10 > 5, use:
+=AVERAGEIFS(A1:A10,B1:B10,"A",C1:C10,">5")
+Value from another cell
+A value from another cell can be included in criteria using concatenation. In the example below, AVERAGEIFS will return the average of numbers in A1:A10 that are less than the value in cell B1. Notice the less than operator (which is text) is enclosed in quotes.
+=AVERAGEIFS(A1:A10,A1:A10,"<"&B1) // average values less than  B1
+Wildcards
+The wildcard characters question mark (?), asterisk(*), or tilde (~) can be used in criteria. A question mark (?) matches any one character and an asterisk (*) matches zero or more characters of any kind.  For example, to average values in B1:B10 when values in A1:A10 contain the text "red", you can use a formula like this:
+=AVERAGEIFS(B1:B10,A1:A10,"*red*")
+The tilde (~) is an escape character to allow you to find literal wildcards. For example, to match a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+Note: the order of arguments is different between AVERAGEIFS and AVERAGEIF. The range to average is always the first argument in AVERAGEIFS.
+Notes
+All ranges must be the same size or AVERAGEIFS will return a #VALUE! error.
+Only values that meet all conditions will be included in the final result.
+AVERAGEIFS will not include empty cells in the average, even when criteria match.
+TRUE and FALSE values ignored when calculating an average.
+AVERAGEIFS will return a #DIV/0! error if no cells meet criteria.
+AVERAGEIFS requires a range, you can't substitute an array.
+Logical operators and text values should be enclosed in double quotes ("").
+AVERAGEIFS supports wildcards but is not case-sensitive.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Average call time per month 
+Dynamic two-way average 
+Average with multiple criteria 
+Average salary by department 
+Average if not blank 
+Average by month 
+Basic average example 
+Average numbers ignore zero 
+Average by group 
+Average if with filter 
+ Functions AVERAGE FunctionAVERAGEIF FunctionMODE Function 
+ Articles Excel's RACON functions 
+ Links Microsoft AVERAGEIFS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

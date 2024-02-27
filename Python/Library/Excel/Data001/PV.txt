@@ -1,0 +1,290 @@
+Excel PV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PV Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel PV function is a financial function that returns the present value of an investment. You can use the PV function to get the value in today's dollars of a series of future payments, assuming periodic, constant payments and a constant interest rate.
+Purpose 
+Get the present value of an investment
+Return value 
+Present value
+Arguments 
+rate - The interest rate per period.nper - The number of payment periods.pmt - The payment made each period.fv - [optional] Future value. If omitted, defaults to zero.type - [optional] Payment type, 0 = end of period, 1 = beginning of period. Default is 0.
+Syntax 
+=PV(rate, nper, pmt, [fv], [type])
+Usage notes 
+The PV function returns the value in today's dollars of a series of future payments, assuming periodic, constant payments and a constant interest rate. You can use the PV function to calculate the present value of a loan or investment when the interest rate and cash flows are constant. The PV function takes five separate arguments, three of which are required as explained below.
+rate (required) - the interest rate per period. For example, if the annual interest rate is 6% and periods are one month, then the interest rate is =6%/12 = 0.5% (0.005). You can enter rate as 6%/12 as a reminder of how it is derived.
+nper (required) - The total number of payment periods in the annuity. For example, a 5-year car loan with monthly payments has 60 periods. You can enter nper as 5*12 to note how the number was determined.
+pmt (required) - The payment made each period. This number cannot change over the life of the annuity. In annuity functions, cash paid out is represented by a negative number. Note: If pmt is not provided, the optional fv argument must be supplied.
+fv (optional) - The future value. This is the cash balance required after all payments have been made. When fv is omitted, it defaults to zero, and pmt must be supplied. 
+type (optional) - type is a boolean that controls when when payments are due. Supply 0 for payments due at the end of the period (regular annuities) and 1 for payments due at the end of the period (annuities due). Type defaults to 0 (end of period).
+Examples
+The PV function can be used to calculate the present value of a loan, when the interest rate, payment, and number of periods are known. For example, the present value of a 5-year loan with an annual interest rate of 4.5% and monthly payments of $93.22 is approximately $5,000:
+=PV(4.5%/12,5*12,-93.22) // returns 5000.26
+In the worksheet shown above, the formula in C10 is:
+=PV(C5/C8,C7,C6)
+Present value of annuity
+To calculate the present value of an annuity that pays 10,000 per year for 25 years, with an annual interest rate of 7%:
+=PV(7%,25,10000) // returns -116,535.832
+To returns a positive present value, enter payment as a negative number:
+=PV(7%,25,-10000) // returns 116,535.832
+Also see: Present value of an annuity.
+Investment goal
+To calculate the initial investment required to reach $15,000 in 10 years with an annual interest rate of 5%:
+=PV(5%,10,0,15000) // returns -9,208.70
+Enter future value as a negative number to get a positive result:
+=PV(5%,10,0,-15000) // returns 9,208.70
+PV versus NPV
+Both the PV function and the NPV function calculate present value, but there are differences in the way they operate:
+The PV function can only be used when cash flows are constant and don't change. The NPV function can be used to calculate the present value of uneven cash flows spaced evenly in time.
+The PV function has a type argument to handle regular annuities and annuities due. The NPV function always assumes a regular annuity, where payments are due at the end of the period.
+Notes
+A stream of cash flows that includes the same amount of cash outflow (or inflow) each period is called an annuity. For example, a car loan or a mortgage is an annuity. When each period's interest rate is the same, an annuity can be valued using the PV function.
+In annuity functions, cash you pay out (such as a deposit to savings) is represented by a negative number; cash you receive, such as a dividend check, is represented by a positive number. For a $2,500 deposit to a bank, pmt  would be -2500 if you are the depositor, and 2500 if you are the bank.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Future value of annuity 
+Bond valuation example 
+Payment for annuity 
+Calculate periods for annuity 
+Present value of annuity 
+Calculate original loan amount 
+Future value vs. Present value 
+Estimate mortgage payment 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft PV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel PV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PV Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel PV function is a financial function that returns the present value of an investment. You can use the PV function to get the value in today's dollars of a series of future payments, assuming periodic, constant payments and a constant interest rate.
+Purpose 
+Get the present value of an investment
+Return value 
+Present value
+Arguments 
+rate - The interest rate per period.nper - The number of payment periods.pmt - The payment made each period.fv - [optional] Future value. If omitted, defaults to zero.type - [optional] Payment type, 0 = end of period, 1 = beginning of period. Default is 0.
+Syntax 
+=PV(rate, nper, pmt, [fv], [type])
+Usage notes 
+The PV function returns the value in today's dollars of a series of future payments, assuming periodic, constant payments and a constant interest rate. You can use the PV function to calculate the present value of a loan or investment when the interest rate and cash flows are constant. The PV function takes five separate arguments, three of which are required as explained below.
+rate (required) - the interest rate per period. For example, if the annual interest rate is 6% and periods are one month, then the interest rate is =6%/12 = 0.5% (0.005). You can enter rate as 6%/12 as a reminder of how it is derived.
+nper (required) - The total number of payment periods in the annuity. For example, a 5-year car loan with monthly payments has 60 periods. You can enter nper as 5*12 to note how the number was determined.
+pmt (required) - The payment made each period. This number cannot change over the life of the annuity. In annuity functions, cash paid out is represented by a negative number. Note: If pmt is not provided, the optional fv argument must be supplied.
+fv (optional) - The future value. This is the cash balance required after all payments have been made. When fv is omitted, it defaults to zero, and pmt must be supplied. 
+type (optional) - type is a boolean that controls when when payments are due. Supply 0 for payments due at the end of the period (regular annuities) and 1 for payments due at the end of the period (annuities due). Type defaults to 0 (end of period).
+Examples
+The PV function can be used to calculate the present value of a loan, when the interest rate, payment, and number of periods are known. For example, the present value of a 5-year loan with an annual interest rate of 4.5% and monthly payments of $93.22 is approximately $5,000:
+=PV(4.5%/12,5*12,-93.22) // returns 5000.26
+In the worksheet shown above, the formula in C10 is:
+=PV(C5/C8,C7,C6)
+Present value of annuity
+To calculate the present value of an annuity that pays 10,000 per year for 25 years, with an annual interest rate of 7%:
+=PV(7%,25,10000) // returns -116,535.832
+To returns a positive present value, enter payment as a negative number:
+=PV(7%,25,-10000) // returns 116,535.832
+Also see: Present value of an annuity.
+Investment goal
+To calculate the initial investment required to reach $15,000 in 10 years with an annual interest rate of 5%:
+=PV(5%,10,0,15000) // returns -9,208.70
+Enter future value as a negative number to get a positive result:
+=PV(5%,10,0,-15000) // returns 9,208.70
+PV versus NPV
+Both the PV function and the NPV function calculate present value, but there are differences in the way they operate:
+The PV function can only be used when cash flows are constant and don't change. The NPV function can be used to calculate the present value of uneven cash flows spaced evenly in time.
+The PV function has a type argument to handle regular annuities and annuities due. The NPV function always assumes a regular annuity, where payments are due at the end of the period.
+Notes
+A stream of cash flows that includes the same amount of cash outflow (or inflow) each period is called an annuity. For example, a car loan or a mortgage is an annuity. When each period's interest rate is the same, an annuity can be valued using the PV function.
+In annuity functions, cash you pay out (such as a deposit to savings) is represented by a negative number; cash you receive, such as a dividend check, is represented by a positive number. For a $2,500 deposit to a bank, pmt  would be -2500 if you are the depositor, and 2500 if you are the bank.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Future value of annuity 
+Bond valuation example 
+Payment for annuity 
+Calculate periods for annuity 
+Present value of annuity 
+Calculate original loan amount 
+Future value vs. Present value 
+Estimate mortgage payment 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft PV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

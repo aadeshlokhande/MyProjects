@@ -1,0 +1,10 @@
+Summary
+The Excel TOCOL function transforms an array into a single column. By default, TOCOL will scan values by row, but TOCOL can also scan values by column.
+Purpose 
+Transform array to single column
+Return value 
+A single column of values
+Arguments 
+array - The array to transform.ignore - Setting to ignore blanks and errors.scan_by_column - Scan array by column. TRUE=column, FALSE=row (default=TRUE).
+Syntax 
+=TOCOL(array, ignore, scan_by_column)

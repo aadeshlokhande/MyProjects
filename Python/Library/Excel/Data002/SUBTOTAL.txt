@@ -1,0 +1,10 @@
+Summary
+The Excel SUBTOTAL function is designed to run a given calculation on a range of cells while ignoring cells that should not be included. SUBTOTAL can return a SUM, AVERAGE, COUNT, MAX, and others (see complete list below), and SUBTOTAL function can either include or exclude values in hidden rows.
+Purpose 
+Get a subtotal in a list or database
+Return value 
+A number representing a specific kind of subtotal
+Arguments 
+function_num - A number that specifies which function to use in calculating subtotals within a list. See table below for full list.ref1 - A named range or reference to subtotal.ref2 - [optional] A named range or reference to subtotal.
+Syntax 
+=SUBTOTAL(function_num, ref1, [ref2], ...)

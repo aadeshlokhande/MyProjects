@@ -1,0 +1,272 @@
+Excel DECIMAL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DECIMAL Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+DECIMAL Function
+Related functions 
+BASE
+Summary
+The Excel DECIMAL function converts a number in a given base into its decimal number equivalent. For example, the DECIMAL function can convert the binary number 1101 into the decimal number 13.
+Purpose 
+Convert a number in a different base to a decimal number
+Return value 
+Decimal number
+Arguments 
+number - A text string representing a number.radix - The base of the number to be converted, an integer between 2-36.
+Syntax 
+=DECIMAL(number, radix)
+Usage notes 
+The DECIMAL function converts a number in a known base into its decimal number equivalent. For example, the DECIMAL function can convert the binary number 1101 into the decimal number 13. The number provided to DECIMAL should be a text string.
+The DECIMAL function takes two arguments: number and radix. Number should be the text representation of a number in a known base. Radix is the number of digits used to represent numbers (i.e. the base) and should be an integer between 2 and 36. The characters given in number need to conform to the numbering system specified with radix. 
+Examples
+In the hexadecimal number system, the number 255 is represented as "FF". To convert the text string "FF" to the decimal number 255, you can use the DECIMAL function like this:
+=DECIMAL("FF",16) // returns 255
+To convert the binary number 1101 to its decimal number equivalent, 13, use DECIMAL like this:
+=DECIMAL("1101",2) // returns 13
+In the example shown, the numbers in column B are in different bases, and the base is given in column C. The formula in column D5 is:
+=DECIMAL(B5,C5) // returns 3
+As the formula is copied down, the DECIMAL function converts each number in column B to its decimal equivalent using the base specified in column C for the radix argument. The decimal numbers in column D are the output from DECIMAL.
+BASE function
+The BASE function performs the opposite conversion as the DECIMAL function:
+=BASE(100,2) // returns "1100100"
+=DECIMAL("1100100",2) // returns 100
+See more on the BASE function here.
+Number system characters
+Different bases use different alphanumeric characters to represent numbers. The table below shows the characters uses for binary, octal, decimal, and hexadecimal number systems.
+Name
+Base
+Alphanumeric characters
+binary
+2
+0 - 1
+octal
+8
+0 - 7
+decimal
+10
+0 - 9
+hexadecimal
+16
+0 - 9 and A - F
+Notes
+The number argument should be provided as a text string.
+The result from DECIMAL is a numeric value.
+If number is negative, DECIMAL returns a #NUM! error.
+if number contains a decimal value,  DECIMAL returns a #NUM! error.
+If number is out-of-range for the given base, DECIMAL returns a #NUM! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions BASE Function 
+ Links Microsoft DECIMAL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DECIMAL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DECIMAL Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+DECIMAL Function
+Related functions 
+BASE
+Summary
+The Excel DECIMAL function converts a number in a given base into its decimal number equivalent. For example, the DECIMAL function can convert the binary number 1101 into the decimal number 13.
+Purpose 
+Convert a number in a different base to a decimal number
+Return value 
+Decimal number
+Arguments 
+number - A text string representing a number.radix - The base of the number to be converted, an integer between 2-36.
+Syntax 
+=DECIMAL(number, radix)
+Usage notes 
+The DECIMAL function converts a number in a known base into its decimal number equivalent. For example, the DECIMAL function can convert the binary number 1101 into the decimal number 13. The number provided to DECIMAL should be a text string.
+The DECIMAL function takes two arguments: number and radix. Number should be the text representation of a number in a known base. Radix is the number of digits used to represent numbers (i.e. the base) and should be an integer between 2 and 36. The characters given in number need to conform to the numbering system specified with radix. 
+Examples
+In the hexadecimal number system, the number 255 is represented as "FF". To convert the text string "FF" to the decimal number 255, you can use the DECIMAL function like this:
+=DECIMAL("FF",16) // returns 255
+To convert the binary number 1101 to its decimal number equivalent, 13, use DECIMAL like this:
+=DECIMAL("1101",2) // returns 13
+In the example shown, the numbers in column B are in different bases, and the base is given in column C. The formula in column D5 is:
+=DECIMAL(B5,C5) // returns 3
+As the formula is copied down, the DECIMAL function converts each number in column B to its decimal equivalent using the base specified in column C for the radix argument. The decimal numbers in column D are the output from DECIMAL.
+BASE function
+The BASE function performs the opposite conversion as the DECIMAL function:
+=BASE(100,2) // returns "1100100"
+=DECIMAL("1100100",2) // returns 100
+See more on the BASE function here.
+Number system characters
+Different bases use different alphanumeric characters to represent numbers. The table below shows the characters uses for binary, octal, decimal, and hexadecimal number systems.
+Name
+Base
+Alphanumeric characters
+binary
+2
+0 - 1
+octal
+8
+0 - 7
+decimal
+10
+0 - 9
+hexadecimal
+16
+0 - 9 and A - F
+Notes
+The number argument should be provided as a text string.
+The result from DECIMAL is a numeric value.
+If number is negative, DECIMAL returns a #NUM! error.
+if number contains a decimal value,  DECIMAL returns a #NUM! error.
+If number is out-of-range for the given base, DECIMAL returns a #NUM! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions BASE Function 
+ Links Microsoft DECIMAL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

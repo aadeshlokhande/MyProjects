@@ -1,0 +1,202 @@
+Excel DEC2HEX function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DEC2HEX Function 
+Previous 
+Next 
+ 
+Excel 2003
+Engineering
+DEC2HEX Function
+Related functions 
+DECIMAL
+Summary
+The Excel DEC2HEX function converts a decimal number to its hexadecimal equivalent.
+Purpose 
+Converts a decimal number to hexadecimal
+Return value 
+Hexadecimal number
+Arguments 
+number - The decimal number you want to convert to hexadecimal.places - [optional] Pads the resulting number with zeros up to the specified number of digits. If omitted returns the least number of characters required to represent the number.
+Syntax 
+=DEC2HEX(number, [places])
+Usage notes 
+The input must be a valid decimal number within the range [ -2^39, 2^39 - 1 ].
+Negative Values
+Excel internally represents Hexadecimal numbers in binary using 40 bits. The first bit indicates whether the number is positive or negative. The remaining bits indicate the magnitude of the number. Negative numbers are internally represented in binary using two's complement notation. Two's complement notation, when converted to hexadecimal, starts at the highest 10 digit hexadecimal number and goes backwards.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DECIMAL Function 
+ Links Microsoft DEC2HEX function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DEC2HEX function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DEC2HEX Function 
+Previous 
+Next 
+ 
+Excel 2003
+Engineering
+DEC2HEX Function
+Related functions 
+DECIMAL
+Summary
+The Excel DEC2HEX function converts a decimal number to its hexadecimal equivalent.
+Purpose 
+Converts a decimal number to hexadecimal
+Return value 
+Hexadecimal number
+Arguments 
+number - The decimal number you want to convert to hexadecimal.places - [optional] Pads the resulting number with zeros up to the specified number of digits. If omitted returns the least number of characters required to represent the number.
+Syntax 
+=DEC2HEX(number, [places])
+Usage notes 
+The input must be a valid decimal number within the range [ -2^39, 2^39 - 1 ].
+Negative Values
+Excel internally represents Hexadecimal numbers in binary using 40 bits. The first bit indicates whether the number is positive or negative. The remaining bits indicate the magnitude of the number. Negative numbers are internally represented in binary using two's complement notation. Two's complement notation, when converted to hexadecimal, starts at the highest 10 digit hexadecimal number and goes backwards.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DECIMAL Function 
+ Links Microsoft DEC2HEX function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

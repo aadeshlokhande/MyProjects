@@ -1,0 +1,242 @@
+Excel DAYS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DAYS Function 
+Previous 
+Next 
+ 
+Excel 2013
+Date and time
+DAYS Function
+Related functions 
+YEARFRAC
+DAYS360
+NETWORKDAYS
+NETWORKDAYS.INTL
+Summary
+The Excel DAYS function returns the number of days between two dates. With a start date in A1 and end date in B1, =DAYS(B1,A1) will return the days between the two dates.
+Purpose 
+Count days between dates
+Return value 
+A number representing days.
+Arguments 
+end_date - The end date.start_date - The start date.
+Syntax 
+=DAYS(end_date, start_date)
+Usage notes 
+The DAYS function returns the number of days between two dates. Both dates must be valid Excel dates or text values that can be coerced to dates. The DAYS function only works with whole numbers, fractional time values that might be part of a date are ignored. If start and end dates are reversed, DAYS returns a negative number. The DAYS function returns all days between two dates, to calculate working days between dates, see the NETWORKDAYS function.
+Examples
+With a start date in A1 and end date in A2:
+=DAYS(A2,A1)
+Will return the same result as:
+=A2-A1
+Unlike the simple formula above, the DAYS function can also handle dates in text format, as long as the date is recognized by Excel. For example:
+=DAYS("7/15/2016","7/1/2016") // returns 14
+The DAYS function returns the number of days between two dates. For example:
+=DAYS("1-Mar-21","2-Mar-21") // returns 1
+To include the end date in the count, add 1 to the result:
+=DAYS("1-Mar-21","2-Mar-21")+1 // returns 2
+Storing and parsing text values that represent dates should be avoided, because it can introduce errors and parsing problems. Working with native Excel dates (which are numbers) is a better approach. To create a numeric date from scratch in a formula, use the DATE function.
+Notes
+The DAYS function only works with whole numbers and ignores time.
+If dates are not recognized, DAYS returns the #VALUE! error.
+If dates are out of range, DAYS returns the #NUM! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get days between dates 
+ Functions YEARFRAC FunctionDAYS360 FunctionNETWORKDAYS FunctionNETWORKDAYS.INTL Function 
+ Links Microsoft DAYS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DAYS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DAYS Function 
+Previous 
+Next 
+ 
+Excel 2013
+Date and time
+DAYS Function
+Related functions 
+YEARFRAC
+DAYS360
+NETWORKDAYS
+NETWORKDAYS.INTL
+Summary
+The Excel DAYS function returns the number of days between two dates. With a start date in A1 and end date in B1, =DAYS(B1,A1) will return the days between the two dates.
+Purpose 
+Count days between dates
+Return value 
+A number representing days.
+Arguments 
+end_date - The end date.start_date - The start date.
+Syntax 
+=DAYS(end_date, start_date)
+Usage notes 
+The DAYS function returns the number of days between two dates. Both dates must be valid Excel dates or text values that can be coerced to dates. The DAYS function only works with whole numbers, fractional time values that might be part of a date are ignored. If start and end dates are reversed, DAYS returns a negative number. The DAYS function returns all days between two dates, to calculate working days between dates, see the NETWORKDAYS function.
+Examples
+With a start date in A1 and end date in A2:
+=DAYS(A2,A1)
+Will return the same result as:
+=A2-A1
+Unlike the simple formula above, the DAYS function can also handle dates in text format, as long as the date is recognized by Excel. For example:
+=DAYS("7/15/2016","7/1/2016") // returns 14
+The DAYS function returns the number of days between two dates. For example:
+=DAYS("1-Mar-21","2-Mar-21") // returns 1
+To include the end date in the count, add 1 to the result:
+=DAYS("1-Mar-21","2-Mar-21")+1 // returns 2
+Storing and parsing text values that represent dates should be avoided, because it can introduce errors and parsing problems. Working with native Excel dates (which are numbers) is a better approach. To create a numeric date from scratch in a formula, use the DATE function.
+Notes
+The DAYS function only works with whole numbers and ignores time.
+If dates are not recognized, DAYS returns the #VALUE! error.
+If dates are out of range, DAYS returns the #NUM! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get days between dates 
+ Functions YEARFRAC FunctionDAYS360 FunctionNETWORKDAYS FunctionNETWORKDAYS.INTL Function 
+ Links Microsoft DAYS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,646 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel ISLOGICAL function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+ISLOGICAL Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Information
+
+
+ISLOGICAL Function
+Related functions 
+
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISFORMULA
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel ISLOGICAL function returns TRUE when a cell contains the logical values TRUE or FALSE, and returns FALSE for cells that contain any other value, including empty cells. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Test if a value is logical
+
+
+
+Return value 
+
+A logical value (TRUE or FALSE)
+
+
+
+Arguments 
+
+value - The value to test as logical.
+
+
+
+Syntax 
+
+=ISLOGICAL(value)
+
+
+
+Usage notes 
+
+The ISLOGICAL function returns TRUE when a cell contains the logical values TRUE or FALSE, and returns FALSE for cells that contain any other value, including empty cells. 
+The ISLOGICAL function takes one argument, value, which can be a cell reference, a formula, or a hardcoded value. When value is TRUE or FALSE, the ISLOGICAL function will return TRUE. If value is any other value, ISLOGICAL will return FALSE.
+Examples
+The ISLOGICAL function returns TRUE if value is TRUE or FALSE:
+
+=ISLOGICAL(TRUE) // returns TRUE
+=ISLOGICAL(FALSE) // returns TRUE
+
+If value is a formula, ISLOGICAL checks the result of the formula:
+
+=ISLOGICAL(100>50) // returns TRUE
+=ISLOGICAL(2+2) // returns FALSE
+=ISLOGICAL(A1=B1) // returns TRUE
+
+Note that 1 and 0 (zero) are not evaluated as TRUE and FALSE.
+
+=ISLOGICAL(1) // returns FALSE
+=ISLOGICAL(0) // returns FALSE
+
+Count logicals
+To count cells in a range that contain logicals, you can use the SUMPRODUCT function like this:
+
+=SUMPRODUCT(--ISLOGICAL(range))
+
+The double negative coerces the TRUE and FALSE results from ISLOGICAL into 1s and 0s and SUMPRODUCT sums the result.
+Notes
+
+Only the logical values TRUE and FALSE return TRUE
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions ISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISFORMULA FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISLOGICAL function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel ISLOGICAL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISLOGICAL Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISLOGICAL Function
+Related functions 
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISFORMULA
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+Summary
+The Excel ISLOGICAL function returns TRUE when a cell contains the logical values TRUE or FALSE, and returns FALSE for cells that contain any other value, including empty cells. 
+Purpose 
+Test if a value is logical
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The value to test as logical.
+Syntax 
+=ISLOGICAL(value)
+Usage notes 
+The ISLOGICAL function returns TRUE when a cell contains the logical values TRUE or FALSE, and returns FALSE for cells that contain any other value, including empty cells. 
+The ISLOGICAL function takes one argument, value, which can be a cell reference, a formula, or a hardcoded value. When value is TRUE or FALSE, the ISLOGICAL function will return TRUE. If value is any other value, ISLOGICAL will return FALSE.
+Examples
+The ISLOGICAL function returns TRUE if value is TRUE or FALSE:
+=ISLOGICAL(TRUE) // returns TRUE
+=ISLOGICAL(FALSE) // returns TRUE
+If value is a formula, ISLOGICAL checks the result of the formula:
+=ISLOGICAL(100>50) // returns TRUE
+=ISLOGICAL(2+2) // returns FALSE
+=ISLOGICAL(A1=B1) // returns TRUE
+Note that 1 and 0 (zero) are not evaluated as TRUE and FALSE.
+=ISLOGICAL(1) // returns FALSE
+=ISLOGICAL(0) // returns FALSE
+Count logicals
+To count cells in a range that contain logicals, you can use the SUMPRODUCT function like this:
+=SUMPRODUCT(--ISLOGICAL(range))
+The double negative coerces the TRUE and FALSE results from ISLOGICAL into 1s and 0s and SUMPRODUCT sums the result.
+Notes
+Only the logical values TRUE and FALSE return TRUE
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions ISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISFORMULA FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISLOGICAL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

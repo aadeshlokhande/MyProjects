@@ -1,0 +1,10 @@
+Summary
+The Excel SYD function returns the "sum-of-years" depreciation for an asset in a given period. The calculated depreciation is based on initial asset cost, salvage value, and the number of periods over which the asset is depreciated.
+Purpose 
+Depreciation - sum-of-years
+Return value 
+Depreciation in given period
+Arguments 
+cost - Initial cost of asset.salvage - Asset value at the end of the depreciation.life - Periods over which asset is depreciated.period - Period to calculation depreciation for.
+Syntax 
+=SYD(cost, salvage, life, period)

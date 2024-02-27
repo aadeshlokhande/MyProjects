@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel HEX2DEC function converts a hexadecimal number to its decimal equivalent.', 'Purpose' : 'Converts a hexadecimal number to decimal', 'Return value' : 'Decimal number', 'Arguments' : 'number - The hexadecimal number you want to convert to decimal.', 'Syntax' : '=HEX2DEC(number)' }

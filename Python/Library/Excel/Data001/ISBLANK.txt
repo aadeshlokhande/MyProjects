@@ -1,0 +1,318 @@
+Excel ISBLANK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISBLANK Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISBLANK Function
+Related functions 
+ISERR
+ISERROR
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+Summary
+The Excel ISBLANK function returns TRUE when a cell is empty, and FALSE when a cell is not empty. For example, if A1 contains "apple", ISBLANK(A1) returns FALSE.
+Purpose 
+Test if a cell is empty
+Return value 
+A logical value  (TRUE or FALSE)
+Arguments 
+value - The value to check.
+Syntax 
+=ISBLANK(value)
+Usage notes 
+The ISBLANK function returns TRUE when a cell is empty, and FALSE when a cell is not empty. For example, if A1 contains "apple", ISBLANK(A1) returns FALSE. Use the ISBLANK function to test if a cell is empty or not. ISBLANK function takes one argument, value, which is a cell reference like A1.
+The word "blank" is somewhat misleading in Excel, because a cell that contains only space will look blank but not be empty. In general, it is best to think of ISBLANK to mean "is empty" since it will return FALSE when a cell looks blank but is not empty. 
+Examples
+If cell A1 contains nothing at all, the ISBLANK function will return TRUE:
+=ISBLANK(A1) // returns TRUE
+If cell A1 contains any value, or any formula, the ISBLANK function will return FALSE:
+=ISBLANK(A1) // returns false
+Is not blank
+To test if a cell is not blank, nest ISBLANK inside the NOT function like this:
+=NOT(ISBLANK(A1)) // test not blank
+The above formula will return TRUE when a cell is not empty, and FALSE when a cell is empty.
+Empty string syntax
+Many formulas will use an abbreviated syntax to test for empty cells, instead of the ISBLANK function. This syntax uses an empty string ("") with Excel's math operators "=" or "<>". For example, to test if A1 is empty, you can use:
+=A1="" // TRUE if A1 is empty
+To test if A1 is not empty:
+=A1<>"" // TRUE if A1 is not empty
+This syntax can be used interchangeably with ISBLANK. For example, inside the IF function:
+=IF(ISBLANK(A1),result1,result2) // if A1 is empty
+is equivalent to:
+=IF(A1="",result1,result2) // if A1 is empty
+Likewise, the formula:
+=IF(NOT(ISBLANK(A1)),result1,result2)
+is the same, as:
+=IF(A1<>"",result1,result2)
+Both will return result1 when A1 is not empty, and result2 when A1 is empty.
+Empty strings
+If a cell contains any formula, the ISBLANK function and the alternatives above will return FALSE, even if the formula returns an empty string (""). This can cause problems when the goal is to count or process blank cells that include empty strings.
+One workaround is to use the LEN function to test for a length of zero. For example, the formula below will return TRUE if A1 is empty or contains a formula that returns an empty string:
+=LEN(A1)=0 // TRUE if empty
+So, inside the IF function, you can use LEN like this:
+=IF(LEN(A1)=0,result1,result2) // if A1 is empty
+You can use this same approach to count cells that are not blank.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+If cell is blank 
+Calculate days open 
+Return blank if 
+Count line breaks in cell 
+Add row numbers and skip blanks 
+Check register balance 
+If cell is not blank 
+Highlight blank cells 
+Get first non-blank value in a list 
+If not blank multiple cells 
+Videos
+  
+How to build a search box with conditional formatting 
+How to trap errors in formulas 
+How to fill in missing data part 2 
+How to join values with the ampersand 
+How to join cell values with CONCATENATE 
+ Functions ISERR FunctionISERROR FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISBLANK function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ISBLANK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISBLANK Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISBLANK Function
+Related functions 
+ISERR
+ISERROR
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+Summary
+The Excel ISBLANK function returns TRUE when a cell is empty, and FALSE when a cell is not empty. For example, if A1 contains "apple", ISBLANK(A1) returns FALSE.
+Purpose 
+Test if a cell is empty
+Return value 
+A logical value  (TRUE or FALSE)
+Arguments 
+value - The value to check.
+Syntax 
+=ISBLANK(value)
+Usage notes 
+The ISBLANK function returns TRUE when a cell is empty, and FALSE when a cell is not empty. For example, if A1 contains "apple", ISBLANK(A1) returns FALSE. Use the ISBLANK function to test if a cell is empty or not. ISBLANK function takes one argument, value, which is a cell reference like A1.
+The word "blank" is somewhat misleading in Excel, because a cell that contains only space will look blank but not be empty. In general, it is best to think of ISBLANK to mean "is empty" since it will return FALSE when a cell looks blank but is not empty. 
+Examples
+If cell A1 contains nothing at all, the ISBLANK function will return TRUE:
+=ISBLANK(A1) // returns TRUE
+If cell A1 contains any value, or any formula, the ISBLANK function will return FALSE:
+=ISBLANK(A1) // returns false
+Is not blank
+To test if a cell is not blank, nest ISBLANK inside the NOT function like this:
+=NOT(ISBLANK(A1)) // test not blank
+The above formula will return TRUE when a cell is not empty, and FALSE when a cell is empty.
+Empty string syntax
+Many formulas will use an abbreviated syntax to test for empty cells, instead of the ISBLANK function. This syntax uses an empty string ("") with Excel's math operators "=" or "<>". For example, to test if A1 is empty, you can use:
+=A1="" // TRUE if A1 is empty
+To test if A1 is not empty:
+=A1<>"" // TRUE if A1 is not empty
+This syntax can be used interchangeably with ISBLANK. For example, inside the IF function:
+=IF(ISBLANK(A1),result1,result2) // if A1 is empty
+is equivalent to:
+=IF(A1="",result1,result2) // if A1 is empty
+Likewise, the formula:
+=IF(NOT(ISBLANK(A1)),result1,result2)
+is the same, as:
+=IF(A1<>"",result1,result2)
+Both will return result1 when A1 is not empty, and result2 when A1 is empty.
+Empty strings
+If a cell contains any formula, the ISBLANK function and the alternatives above will return FALSE, even if the formula returns an empty string (""). This can cause problems when the goal is to count or process blank cells that include empty strings.
+One workaround is to use the LEN function to test for a length of zero. For example, the formula below will return TRUE if A1 is empty or contains a formula that returns an empty string:
+=LEN(A1)=0 // TRUE if empty
+So, inside the IF function, you can use LEN like this:
+=IF(LEN(A1)=0,result1,result2) // if A1 is empty
+You can use this same approach to count cells that are not blank.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+If cell is blank 
+Calculate days open 
+Return blank if 
+Count line breaks in cell 
+Add row numbers and skip blanks 
+Check register balance 
+If cell is not blank 
+Highlight blank cells 
+Get first non-blank value in a list 
+If not blank multiple cells 
+Videos
+  
+How to build a search box with conditional formatting 
+How to trap errors in formulas 
+How to fill in missing data part 2 
+How to join values with the ampersand 
+How to join cell values with CONCATENATE 
+ Functions ISERR FunctionISERROR FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISBLANK function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

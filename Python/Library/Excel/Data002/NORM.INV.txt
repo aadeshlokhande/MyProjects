@@ -1,0 +1,10 @@
+Summary
+The Excel NORM.INV function returns the inverse of the normal cumulative distribution for the specified mean and standard deviation. Given the probability of an event occurring below a threshold value, the function returns the threshold value associated with the probability.
+Purpose 
+Get the inverse of normal cumulative distribution
+Return value 
+The threshold value associated with a probability
+Arguments 
+probability - The probability of an event occurring below a threshold.mean - The mean of the distribution.standard_dev - The standard deviation of the distribution.
+Syntax 
+=NORM.INV(probability, mean, standard_dev)

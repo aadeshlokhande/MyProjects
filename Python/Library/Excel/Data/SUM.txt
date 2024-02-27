@@ -1,0 +1,716 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel SUM function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+SUM Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+SUM Function
+Related functions 
+
+SUMIF
+SUMIFS
+SUMPRODUCT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel SUM function returns the sum of values supplied. These values can be numbers, cell references, ranges, arrays, and constants, in any combination. SUM can handle up to 255 individual arguments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Add numbers together
+
+
+
+Return value 
+
+The sum of values supplied.
+
+
+
+Arguments 
+
+number1 - The first value to sum.number2 - [optional] The second value to sum.number3 - [optional] The third value to sum.
+
+
+
+Syntax 
+
+=SUM(number1, [number2], [number3], ...)
+
+
+
+Usage notes 
+
+The SUM function returns the sum of values supplied. These values can be numbers, cell references, ranges, arrays, and constants, in any combination. SUM can handle up to 255 individual arguments.
+The SUM function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. All numbers in the arguments provided are summed. The SUM function automatically ignores empty cells and text values, which makes SUM useful for summing cells that may contain text values.
+The SUM function will sum hardcoded values and numbers that result from formulas. If you need to sum a range and ignore existing subtotals, see the SUBTOTAL function.
+Examples
+Typically, the SUM function is used with ranges. For example:
+
+=SUM(A1:A9) // sum 9 cells in A1:A9
+=SUM(A1:F1) // sum 6 cells in A1:F1
+=SUM(A1:A100) // sum 100 cells in A1:A100
+
+Values in all arguments are summed together, so the following formulas are equivalent:
+
+=SUM(A1:A5)
+=SUM(A1,A2,A3,A4,A5)
+=SUM(A1:A3,A4:A5)
+
+In the example shown, the formula in D12 is:
+
+=SUM(D6:D10) // returns 9.05
+
+References do not need to be next to one another. For example:
+
+=SUM(A1,F13,E100)
+
+Sum with text values
+The SUM function automatically ignores text values without returning an error. This can be useful in situations like this, where the first formula would otherwise throw an error.
+Keyboard shortcut
+Excel provides a keyboard shortcut to automatically sum a range of cells above. You can see a demonstration in this video.
+Notes
+
+SUM automatically ignores empty cells and cells with text values.
+If arguments contain errors, SUM will return an error.
+The AGGREGATE function can sum while ignoring errors.
+SUM can handle up to 255 total arguments.
+Arguments can be supplied as constants, ranges, named ranges, or cell references.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum top n values with criteria 
+
+Sum matching columns and rows 
+
+Sum every n rows 
+
+Lookup and sum column 
+
+Score quiz answers with key 
+
+Sum last n rows 
+
+Sum across multiple worksheets 
+
+LAMBDA contains one of many 
+
+Sum time 
+
+Sum entire column 
+
+
+
+Videos
+  
+What is a function? 
+
+How to edit a formula 
+
+How to use relative references - example 2 
+
+How to use text formatting in Excel 
+
+How to add a calculated field to a pivot table 
+
+Examples of flagged errors in formulas 
+
+Excel formula error codes 
+
+How to trace a formula error 
+
+How to use the SUMIFs function 
+
+How to use the SUM function 
+
+
+ Functions SUMIF FunctionSUMIFS FunctionSUMPRODUCT Function 
+ Links Microsoft SUM function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel SUM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+SUM Function
+Related functions 
+SUMIF
+SUMIFS
+SUMPRODUCT
+Summary
+The Excel SUM function returns the sum of values supplied. These values can be numbers, cell references, ranges, arrays, and constants, in any combination. SUM can handle up to 255 individual arguments.
+Purpose 
+Add numbers together
+Return value 
+The sum of values supplied.
+Arguments 
+number1 - The first value to sum.number2 - [optional] The second value to sum.number3 - [optional] The third value to sum.
+Syntax 
+=SUM(number1, [number2], [number3], ...)
+Usage notes 
+The SUM function returns the sum of values supplied. These values can be numbers, cell references, ranges, arrays, and constants, in any combination. SUM can handle up to 255 individual arguments.
+The SUM function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. All numbers in the arguments provided are summed. The SUM function automatically ignores empty cells and text values, which makes SUM useful for summing cells that may contain text values.
+The SUM function will sum hardcoded values and numbers that result from formulas. If you need to sum a range and ignore existing subtotals, see the SUBTOTAL function.
+Examples
+Typically, the SUM function is used with ranges. For example:
+=SUM(A1:A9) // sum 9 cells in A1:A9
+=SUM(A1:F1) // sum 6 cells in A1:F1
+=SUM(A1:A100) // sum 100 cells in A1:A100
+Values in all arguments are summed together, so the following formulas are equivalent:
+=SUM(A1:A5)
+=SUM(A1,A2,A3,A4,A5)
+=SUM(A1:A3,A4:A5)
+In the example shown, the formula in D12 is:
+=SUM(D6:D10) // returns 9.05
+References do not need to be next to one another. For example:
+=SUM(A1,F13,E100)
+Sum with text values
+The SUM function automatically ignores text values without returning an error. This can be useful in situations like this, where the first formula would otherwise throw an error.
+Keyboard shortcut
+Excel provides a keyboard shortcut to automatically sum a range of cells above. You can see a demonstration in this video.
+Notes
+SUM automatically ignores empty cells and cells with text values.
+If arguments contain errors, SUM will return an error.
+The AGGREGATE function can sum while ignoring errors.
+SUM can handle up to 255 total arguments.
+Arguments can be supplied as constants, ranges, named ranges, or cell references.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum top n values with criteria 
+Sum matching columns and rows 
+Sum every n rows 
+Lookup and sum column 
+Score quiz answers with key 
+Sum last n rows 
+Sum across multiple worksheets 
+LAMBDA contains one of many 
+Sum time 
+Sum entire column 
+Videos
+  
+What is a function? 
+How to edit a formula 
+How to use relative references - example 2 
+How to use text formatting in Excel 
+How to add a calculated field to a pivot table 
+Examples of flagged errors in formulas 
+Excel formula error codes 
+How to trace a formula error 
+How to use the SUMIFs function 
+How to use the SUM function 
+ Functions SUMIF FunctionSUMIFS FunctionSUMPRODUCT Function 
+ Links Microsoft SUM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

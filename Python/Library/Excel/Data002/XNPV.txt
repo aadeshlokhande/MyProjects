@@ -1,0 +1,10 @@
+Summary
+The Excel XNPV function is a financial function that calculates the net present value (NPV) of an investment using a discount rate and a series of cash flows that occur at irregular intervals.
+Purpose 
+Calculate net present value for irregular cash flows
+Return value 
+Net present value
+Arguments 
+rate - Discount rate to apply to the cash flows.values - Values representing cash flows.dates - Dates that correspond to cash flows, in any order.
+Syntax 
+=XNPV(rate, values, dates)

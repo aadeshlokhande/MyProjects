@@ -1,0 +1,10 @@
+Summary
+The Excel TIME function is a built-in function that allows you to create a time with individual hour, minute, and second components. The TIME function is useful when you want to assemble a proper time inside another formula.
+Purpose 
+Create a time with hours, minutes, and seconds
+Return value 
+A decimal number representing a particular time in Excel.
+Arguments 
+hour - The hour for the time you wish to create.minute - The minute for the time you wish to create.second - The second for the time you wish to create.
+Syntax 
+=TIME(hour, minute, second)

@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel CODE function returns a numeric code for a given character.  For example, CODE("a") returns the code 97.', 'Purpose' : 'Get the code for a character', 'Return value' : 'A numeric code representing a character.', 'Arguments' : 'text - The text for which you want a numeric code.', 'Syntax' : '=CODE(text)' }

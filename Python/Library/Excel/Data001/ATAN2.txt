@@ -1,0 +1,218 @@
+Excel ATAN2 function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ATAN2 Function 
+Previous 
+Next 
+ 
+Excel 2003
+Trigonometry
+ATAN2 Function
+Related functions 
+ATAN
+Summary
+The Excel ATAN2 function returns the arctangent from x- and y-coordinates. In geometric terms, the function returns the radian angle corresponding to the input point.
+Purpose 
+Get arctangent from x- and y-coordinates
+Return value 
+The angle in radians of the point.
+Arguments 
+x_num - The x coordinate of the input point.y_num - The y coordinate of the input point.
+Syntax 
+=ATAN2(x_num, y_num)
+Usage notes 
+The Excel ATAN2 function returns the arctangent from the x and y coordinates of a point. In geometric terms, the function returns the radian angle corresponding to the coordinates of the input point. If you imagine a ray starting from the origin of the coordinate system and extending outwards, every point along the ray will return the same angle value. A circle of radius one demonstrates all possible return values for the function.
+For negative y-values the function returns a negative angle. An angle is measured from the positive x-axis direction with the positive direction in the counter-clockwise direction and the negative direction in the clockwise direction.
+Convert Output to Degrees
+To convert the output of the ATAN2 function from radians to degrees the formula is:
+=ATAN2(x,y)*180/PI() // Returns angle in degrees
+Alternatively, the degrees formula can be used to convert the angle to degrees.
+=DEGREES(ATAN2(x,y))// Returns angle in degrees
+Difference Between ATAN and ATAN2
+For points in the first and fourth quadrant, the ATAN2 function returns identical output to the ATAN function. This relationship is expressed in the formula below:
+= ATAN2(x,y) = ATAN(y/x)
+For points in the second and third quadrant, the ATAN function returns the angle relative to the negative x-direction axis.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions ATAN Function 
+ Links Microsoft ATAN2 function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ATAN2 function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ATAN2 Function 
+Previous 
+Next 
+ 
+Excel 2003
+Trigonometry
+ATAN2 Function
+Related functions 
+ATAN
+Summary
+The Excel ATAN2 function returns the arctangent from x- and y-coordinates. In geometric terms, the function returns the radian angle corresponding to the input point.
+Purpose 
+Get arctangent from x- and y-coordinates
+Return value 
+The angle in radians of the point.
+Arguments 
+x_num - The x coordinate of the input point.y_num - The y coordinate of the input point.
+Syntax 
+=ATAN2(x_num, y_num)
+Usage notes 
+The Excel ATAN2 function returns the arctangent from the x and y coordinates of a point. In geometric terms, the function returns the radian angle corresponding to the coordinates of the input point. If you imagine a ray starting from the origin of the coordinate system and extending outwards, every point along the ray will return the same angle value. A circle of radius one demonstrates all possible return values for the function.
+For negative y-values the function returns a negative angle. An angle is measured from the positive x-axis direction with the positive direction in the counter-clockwise direction and the negative direction in the clockwise direction.
+Convert Output to Degrees
+To convert the output of the ATAN2 function from radians to degrees the formula is:
+=ATAN2(x,y)*180/PI() // Returns angle in degrees
+Alternatively, the degrees formula can be used to convert the angle to degrees.
+=DEGREES(ATAN2(x,y))// Returns angle in degrees
+Difference Between ATAN and ATAN2
+For points in the first and fourth quadrant, the ATAN2 function returns identical output to the ATAN function. This relationship is expressed in the formula below:
+= ATAN2(x,y) = ATAN(y/x)
+For points in the second and third quadrant, the ATAN function returns the angle relative to the negative x-direction axis.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions ATAN Function 
+ Links Microsoft ATAN2 function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

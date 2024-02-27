@@ -1,0 +1,10 @@
+Summary
+The Excel FORECAST.ETS function predicts a value based on existing values that follow a seasonal trend. FORECAST.ETS can be used to predict numeric values like sales, inventory, expenses, etc. with a seasonal pattern.
+Purpose 
+Predict value with a seasonal trend
+Return value 
+Predicted value
+Arguments 
+target_date - The time or period for the prediction (x value).values - Existing or historical values (y values).timeline - Numeric timeline values (x values).seasonality - [optional] Seasonality calculation (0 = no seasonality, 1 = automatic, n = season length in timeline units).data_completion - [optional] Missing data treatment (0 = treat as zero, 1 = average). Default is 1.aggregation - [optional] Aggregation behavior. Default is 1 (AVERAGE). See other options below.
+Syntax 
+=FORECAST.ETS(target_date, values, timeline, [seasonality], [data_completion], [aggregation])

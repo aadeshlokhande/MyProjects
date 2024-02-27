@@ -1,0 +1,10 @@
+Summary
+The Excel CHOOSEROWS function returns specific rows from an array or range. The rows to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a row in the given array.
+Purpose 
+Return specific rows from an array
+Return value 
+Extracted rows in a single array
+Arguments 
+array - The array to extract rows from.row_num1 - The numeric index of the first row to return.row_num2 - [optional] The numeric index of the second row to return.
+Syntax 
+=CHOOSEROWS(array, row_num1, [row_num2], ...)

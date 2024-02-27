@@ -1,0 +1,638 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MEDIAN function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MEDIAN Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+MEDIAN Function
+Related functions 
+
+AVERAGE
+MODE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MEDIAN function returns the median (middle number) in the supplied set of data. For example, =MEDIAN(1,2,3,4,5) returns 3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the median of a group of numbers
+
+
+
+Return value 
+
+A number representing the median.
+
+
+
+Arguments 
+
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+
+
+
+Syntax 
+
+=MEDIAN(number1, [number2], ...)
+
+
+
+Usage notes 
+
+The MEDIAN function returns the median (middle number) in a set of data. The calculation performed by MEDIAN varies according to the number of numeric values provided. When the number is odd, MEDIAN returns the middle number in the group. When the number is even, MEDIAN returns the average of the two numbers in the middle. 
+The MEDIAN function takes multiple arguments in the form number1, number2, number3, etc. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MEDIAN ignores empty cells, text values, and the logical values TRUE and FALSE. The MEDIAN function will accept up to 255 separate arguments. 
+Examples
+When the number of values provided is odd, MEDIAN returns the middle number:
+
+=MEDIAN(1,2,3,4,5) // returns 3
+=MEDIAN(1,4,5,7,11) // returns 5
+
+When the number of values provided is even, MEDIAN returns the average of the two middle numbers:
+
+=MEDIAN(1,2,3,4,5,6) // returns 3.5
+=MEDIAN(1,2,4,6,8,9) // returns 9
+
+In the worksheet shown above, the formulas in H5 and H6 are:
+
+=MEDIAN(B5:B16) // returns 83.5
+=MEDIAN(D5:D16) // returns 80
+
+Note that MEDIAN ignores the empty cell in D5:D16 and returns the middle number in the eleven values provided.
+Notes
+
+When the count of numbers is odd, MEDIAN returns the middle number.
+When the count of numbers is even, MEDIAN returns the average of the two middle numbers.
+MEDIAN ignores empty cells, the logical values TRUE and FALSE, and text.
+MEDIAN returns a #NUM! error if no numeric values are provided.
+Arguments can be numbers, names, arrays, or references, up to 255 total.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Conditional median with criteria 
+
+Cap percentage between 0 and 100 
+
+
+ Functions AVERAGE FunctionMODE Function 
+ Links Microsoft MEDIAN function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MEDIAN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MEDIAN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+MEDIAN Function
+Related functions 
+AVERAGE
+MODE
+Summary
+The Excel MEDIAN function returns the median (middle number) in the supplied set of data. For example, =MEDIAN(1,2,3,4,5) returns 3.
+Purpose 
+Get the median of a group of numbers
+Return value 
+A number representing the median.
+Arguments 
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+Syntax 
+=MEDIAN(number1, [number2], ...)
+Usage notes 
+The MEDIAN function returns the median (middle number) in a set of data. The calculation performed by MEDIAN varies according to the number of numeric values provided. When the number is odd, MEDIAN returns the middle number in the group. When the number is even, MEDIAN returns the average of the two numbers in the middle. 
+The MEDIAN function takes multiple arguments in the form number1, number2, number3, etc. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MEDIAN ignores empty cells, text values, and the logical values TRUE and FALSE. The MEDIAN function will accept up to 255 separate arguments. 
+Examples
+When the number of values provided is odd, MEDIAN returns the middle number:
+=MEDIAN(1,2,3,4,5) // returns 3
+=MEDIAN(1,4,5,7,11) // returns 5
+When the number of values provided is even, MEDIAN returns the average of the two middle numbers:
+=MEDIAN(1,2,3,4,5,6) // returns 3.5
+=MEDIAN(1,2,4,6,8,9) // returns 9
+In the worksheet shown above, the formulas in H5 and H6 are:
+=MEDIAN(B5:B16) // returns 83.5
+=MEDIAN(D5:D16) // returns 80
+Note that MEDIAN ignores the empty cell in D5:D16 and returns the middle number in the eleven values provided.
+Notes
+When the count of numbers is odd, MEDIAN returns the middle number.
+When the count of numbers is even, MEDIAN returns the average of the two middle numbers.
+MEDIAN ignores empty cells, the logical values TRUE and FALSE, and text.
+MEDIAN returns a #NUM! error if no numeric values are provided.
+Arguments can be numbers, names, arrays, or references, up to 255 total.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Conditional median with criteria 
+Cap percentage between 0 and 100 
+ Functions AVERAGE FunctionMODE Function 
+ Links Microsoft MEDIAN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

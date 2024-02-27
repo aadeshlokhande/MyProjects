@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel LOG10 function returns the base 10 logarithm of a number. For example, LOG10(100) returns 2, and LOG10(1000) returns 3.', 'Purpose' : 'Get the base-10 logarithm of a number', 'Return value' : 'The logarithm', 'Arguments' : 'number - Number for which you want the logarithm.', 'Syntax' : '=LOG10(number)' }

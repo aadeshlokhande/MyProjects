@@ -1,0 +1,272 @@
+Excel SMALL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SMALL Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+SMALL Function
+Related functions 
+LARGE
+RANK
+MIN
+Summary
+The Excel SMALL function returns a numeric value based on its position in a list when sorted by value in ascending order. In other words, SMALL can return the "nth smallest" value (1st smallest value, 2nd smallest value, 3rd smallest value, etc.) from a set of numeric data.
+Purpose 
+Get nth smallest value
+Return value 
+The nth smallest value in the array.
+Arguments 
+array - An array or range of numeric values.k - Position as an integer, where 1 corresponds to the smallest value.
+Syntax 
+=SMALL(array, k)
+Usage notes 
+The SMALL function returns a numeric value based on its position in a list when sorted by value in ascending order. In other words, SMALL can return the "nth smallest" value (1st smallest value, 2nd smallest value, 3rd smallest value, etc.) from a set of numeric data.
+The SMALL function takes two arguments, array and k. Array is an array or range of numeric values. The argument k represents position or rank. For example, to return the smallest value in array, provide 1 for k. To return the fifth smallest value in array, provide 5 for k.
+To get nth largest values, see the LARGE function.
+Examples
+In the formula below, the SMALL function returns the third smallest value in a list of five numbers provided in an array constant:
+=SMALL({29,14,33,19,17},3) // returns 19
+Note values do not need to be sorted. To retrieve the 1st, 2nd, and 3rd smallest values in a range:
+=SMALL(range,1) // 1st smallest value
+=SMALL(range,2) // 2nd smallest value
+=SMALL(range,3) // 3rd smallest value
+In the example shown, the formulas in G5, G6, and G7 are, respectively:
+=SMALL(D5:D16,1) // returns 66
+=SMALL(D5:D16,2) // returns 69
+=SMALL(D5:D16,3) // returns 71
+See below for more advanced formulas based on the SMALL function.
+Notes
+SMALL ignores empty cells, text values, and TRUE and FALSE values.
+If array contains no numeric values, SMALL returns a #NUM! error.
+To determine the rank of a number in a data set, use the RANK function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Biggest gainers and losers 
+Get nth match with INDEX / MATCH 
+Sum bottom n values with criteria 
+Sort numbers ascending or descending 
+Highlight bottom values 
+Break ties with helper column and COUNTIF 
+nth smallest value with criteria 
+Find lowest n values 
+Extract multiple matches into separate columns 
+nth smallest value 
+Videos
+  
+How to calculate maximum and minimum values 
+How to get nth values with SMALL and LARGE 
+How to show top or bottom n results 
+ Functions LARGE FunctionRANK FunctionMIN Function 
+ Links Microsoft SMALL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SMALL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SMALL Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+SMALL Function
+Related functions 
+LARGE
+RANK
+MIN
+Summary
+The Excel SMALL function returns a numeric value based on its position in a list when sorted by value in ascending order. In other words, SMALL can return the "nth smallest" value (1st smallest value, 2nd smallest value, 3rd smallest value, etc.) from a set of numeric data.
+Purpose 
+Get nth smallest value
+Return value 
+The nth smallest value in the array.
+Arguments 
+array - An array or range of numeric values.k - Position as an integer, where 1 corresponds to the smallest value.
+Syntax 
+=SMALL(array, k)
+Usage notes 
+The SMALL function returns a numeric value based on its position in a list when sorted by value in ascending order. In other words, SMALL can return the "nth smallest" value (1st smallest value, 2nd smallest value, 3rd smallest value, etc.) from a set of numeric data.
+The SMALL function takes two arguments, array and k. Array is an array or range of numeric values. The argument k represents position or rank. For example, to return the smallest value in array, provide 1 for k. To return the fifth smallest value in array, provide 5 for k.
+To get nth largest values, see the LARGE function.
+Examples
+In the formula below, the SMALL function returns the third smallest value in a list of five numbers provided in an array constant:
+=SMALL({29,14,33,19,17},3) // returns 19
+Note values do not need to be sorted. To retrieve the 1st, 2nd, and 3rd smallest values in a range:
+=SMALL(range,1) // 1st smallest value
+=SMALL(range,2) // 2nd smallest value
+=SMALL(range,3) // 3rd smallest value
+In the example shown, the formulas in G5, G6, and G7 are, respectively:
+=SMALL(D5:D16,1) // returns 66
+=SMALL(D5:D16,2) // returns 69
+=SMALL(D5:D16,3) // returns 71
+See below for more advanced formulas based on the SMALL function.
+Notes
+SMALL ignores empty cells, text values, and TRUE and FALSE values.
+If array contains no numeric values, SMALL returns a #NUM! error.
+To determine the rank of a number in a data set, use the RANK function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Biggest gainers and losers 
+Get nth match with INDEX / MATCH 
+Sum bottom n values with criteria 
+Sort numbers ascending or descending 
+Highlight bottom values 
+Break ties with helper column and COUNTIF 
+nth smallest value with criteria 
+Find lowest n values 
+Extract multiple matches into separate columns 
+nth smallest value 
+Videos
+  
+How to calculate maximum and minimum values 
+How to get nth values with SMALL and LARGE 
+How to show top or bottom n results 
+ Functions LARGE FunctionRANK FunctionMIN Function 
+ Links Microsoft SMALL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

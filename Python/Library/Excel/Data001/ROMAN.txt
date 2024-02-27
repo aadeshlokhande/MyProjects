@@ -1,0 +1,276 @@
+Excel ROMAN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ROMAN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+ROMAN Function
+Related functions 
+ARABIC
+Summary
+The Excel ROMAN function converts a number to a Roman numeral as text. For example, the formula =ROMAN(4) returns IV.
+Purpose 
+Converts numbers to Roman numerals
+Return value 
+A Roman numeral in text
+Arguments 
+number - Number (in Arabic numeral) you want to convert to Roman numeral.form - [optional] The type of Roman numeral you want.
+Syntax 
+=ROMAN(number, [form])
+Usage notes 
+The ROMAN function converts a number to a Roman numeral. For example:
+=ROMAN(4) // returns "IV"
+=ROMAN(9) // returns "IX"
+=ROMAN(99) // returns "XCIX"
+=ROMAN(100) // returns "C"
+ROMAN takes two arguments: number and form. Number should be a whole number between 1 and 3999. The form argument controls the convention used for Roman numbers. The argument is optional and the default is zero (0), which results in classic non-abbreviated Roman numbers. Other possible values are 1-4, which specify progressively more concise output. For example:
+=ROMAN(1999,0) // returns "MCMXCIX"
+=ROMAN(1999,2) // returns "MXMIX"
+=ROMAN(1999,4) // returns "MIM"
+See more form samples below.
+Roman numbers
+The table below lists available Roman numbers with their equivalent Arabic number value.
+Symbol
+Value
+I
+1
+V
+5
+X
+10
+L
+50
+C
+100
+D
+500
+M
+1000
+The ROMAN function converts Arabic numbers to Roman numbers. Use the ARABIC function to convert Roman numbers to Arabic numbers.
+Abbreviated syntax
+The ROMAN function can output Roman numbers in a more abbreviated syntax, controlled with the form argument. The screen below shows how different values for form affect output.
+Notes
+Number should be a positive number between 1 and 3999.
+Number should be a whole number; decimal values are ignored.
+If number is negative or out of range, ROMAN returns #VALUE!
+The ROMAN function performs the opposite conversion as the ARABIC function.
+The form argument controls Roman numeral abbreviation. Valid inputs are 0-4.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum Roman numbers 
+ Functions ARABIC Function 
+ Links Microsoft ROMAN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ROMAN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ROMAN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+ROMAN Function
+Related functions 
+ARABIC
+Summary
+The Excel ROMAN function converts a number to a Roman numeral as text. For example, the formula =ROMAN(4) returns IV.
+Purpose 
+Converts numbers to Roman numerals
+Return value 
+A Roman numeral in text
+Arguments 
+number - Number (in Arabic numeral) you want to convert to Roman numeral.form - [optional] The type of Roman numeral you want.
+Syntax 
+=ROMAN(number, [form])
+Usage notes 
+The ROMAN function converts a number to a Roman numeral. For example:
+=ROMAN(4) // returns "IV"
+=ROMAN(9) // returns "IX"
+=ROMAN(99) // returns "XCIX"
+=ROMAN(100) // returns "C"
+ROMAN takes two arguments: number and form. Number should be a whole number between 1 and 3999. The form argument controls the convention used for Roman numbers. The argument is optional and the default is zero (0), which results in classic non-abbreviated Roman numbers. Other possible values are 1-4, which specify progressively more concise output. For example:
+=ROMAN(1999,0) // returns "MCMXCIX"
+=ROMAN(1999,2) // returns "MXMIX"
+=ROMAN(1999,4) // returns "MIM"
+See more form samples below.
+Roman numbers
+The table below lists available Roman numbers with their equivalent Arabic number value.
+Symbol
+Value
+I
+1
+V
+5
+X
+10
+L
+50
+C
+100
+D
+500
+M
+1000
+The ROMAN function converts Arabic numbers to Roman numbers. Use the ARABIC function to convert Roman numbers to Arabic numbers.
+Abbreviated syntax
+The ROMAN function can output Roman numbers in a more abbreviated syntax, controlled with the form argument. The screen below shows how different values for form affect output.
+Notes
+Number should be a positive number between 1 and 3999.
+Number should be a whole number; decimal values are ignored.
+If number is negative or out of range, ROMAN returns #VALUE!
+The ROMAN function performs the opposite conversion as the ARABIC function.
+The form argument controls Roman numeral abbreviation. Valid inputs are 0-4.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum Roman numbers 
+ Functions ARABIC Function 
+ Links Microsoft ROMAN function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

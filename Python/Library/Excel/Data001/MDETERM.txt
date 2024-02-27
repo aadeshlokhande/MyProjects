@@ -1,0 +1,232 @@
+Excel MDETERM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MDETERM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+MDETERM Function
+Related functions 
+MMULT
+MUNIT
+MINVERSE
+Summary
+The Excel MDETERM function returns the matrix determinant of a given array. The input array must contain numbers only and be a square matrix, with equal rows and columns. The result is a number representing the matrix determinant.
+Purpose 
+Get matrix determinant of given array
+Return value 
+A number representing the matrix determinant
+Arguments 
+array - A square array of numbers only.
+Syntax 
+=MDETERM(array)
+Usage notes 
+The MDETERM function returns the matrix determinant of a given array, which must be a square matrix containing numbers only, and no empty values. In mathematics, the matrix determinant is a scalar value (single value) that is a function of the entries in a square matrix. The determinant is a special number that can help characterize some properties of the matrix. For example, if the determinant is zero, the matrix will not have an inverse.
+The MDETERM function takes just one argument, array, which can be provided as a range or an array constant. Array must be a square matrix with the same numbers of rows and columns.
+Examples
+To get the matrix determinant for the 2 x 2 array shown in B7:C8, the formula in E7 is:
+=MDETERM(B7:C8) // returns -1
+The equivalent formula with an array constant is:
+=MDETERM({4,3;3,2}) // returns -1
+To get the matrix determinant for the 3 x 3 array shown in I7:K9, the formula in M7 is:
+=MDETERM(I7:K9) // returns 1
+The equivalent formula with an array constant is:
+=MDETERM({1,0,5;2,1,6;3,4,0}) // returns 1
+Notes
+The array argument must be a square matrix with an equal number of rows and columns
+The array argument can be provided as a range or array constant like {4,3;3,2}
+Empty cells or text in array will cause MDETERM to return a #VALUE! error
+MDETERM returns a #VALUE! if array does not have an equal number of rows and columns
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MMULT FunctionMUNIT FunctionMINVERSE Function 
+ Links Microsoft MDETERM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel MDETERM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MDETERM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+MDETERM Function
+Related functions 
+MMULT
+MUNIT
+MINVERSE
+Summary
+The Excel MDETERM function returns the matrix determinant of a given array. The input array must contain numbers only and be a square matrix, with equal rows and columns. The result is a number representing the matrix determinant.
+Purpose 
+Get matrix determinant of given array
+Return value 
+A number representing the matrix determinant
+Arguments 
+array - A square array of numbers only.
+Syntax 
+=MDETERM(array)
+Usage notes 
+The MDETERM function returns the matrix determinant of a given array, which must be a square matrix containing numbers only, and no empty values. In mathematics, the matrix determinant is a scalar value (single value) that is a function of the entries in a square matrix. The determinant is a special number that can help characterize some properties of the matrix. For example, if the determinant is zero, the matrix will not have an inverse.
+The MDETERM function takes just one argument, array, which can be provided as a range or an array constant. Array must be a square matrix with the same numbers of rows and columns.
+Examples
+To get the matrix determinant for the 2 x 2 array shown in B7:C8, the formula in E7 is:
+=MDETERM(B7:C8) // returns -1
+The equivalent formula with an array constant is:
+=MDETERM({4,3;3,2}) // returns -1
+To get the matrix determinant for the 3 x 3 array shown in I7:K9, the formula in M7 is:
+=MDETERM(I7:K9) // returns 1
+The equivalent formula with an array constant is:
+=MDETERM({1,0,5;2,1,6;3,4,0}) // returns 1
+Notes
+The array argument must be a square matrix with an equal number of rows and columns
+The array argument can be provided as a range or array constant like {4,3;3,2}
+Empty cells or text in array will cause MDETERM to return a #VALUE! error
+MDETERM returns a #VALUE! if array does not have an equal number of rows and columns
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MMULT FunctionMUNIT FunctionMINVERSE Function 
+ Links Microsoft MDETERM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

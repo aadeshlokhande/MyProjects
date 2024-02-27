@@ -1,0 +1,10 @@
+Summary
+The Excel LOWER function converts a text string to all lowercase letters. Numbers, punctuation, and spaces are not affected.
+Purpose 
+Convert text to lower case
+Return value 
+Text in lower case.
+Arguments 
+text - The text that should be converted to lower case.
+Syntax 
+=LOWER(text)

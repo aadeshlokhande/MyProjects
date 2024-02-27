@@ -1,0 +1,10 @@
+Summary
+The Excel BIN2OCT function converts a binary number to its octal equivalent.
+Purpose 
+Converts a binary number to octal
+Return value 
+Octal number
+Arguments 
+number - The binary number you want to convert to octal.places - [optional] If omitted uses the least number of characters required to represent the number, otherwise pads the result with zeros up to the specified number of places.
+Syntax 
+=BIN2OCT(number, [places])

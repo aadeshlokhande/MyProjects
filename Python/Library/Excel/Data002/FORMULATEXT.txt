@@ -1,0 +1,10 @@
+Summary
+The Excel FORMULATEXT function returns a formula as a text string from a given reference. You can use FORMULATEXT to extract the formula as text from a cell. If you use FORMULATEXT on a cell that doesn't contain a formula, it returns #N/A.
+Purpose 
+Get the formula in a cell
+Return value 
+The formula as text
+Arguments 
+reference - Reference to cell or cell range.
+Syntax 
+=FORMULATEXT(reference)

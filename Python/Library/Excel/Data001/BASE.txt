@@ -1,0 +1,248 @@
+Excel BASE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+BASE Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+BASE Function
+Related functions 
+DEC2BIN
+DEC2OCT
+DEC2HEX
+DECIMAL
+Summary
+The Excel BASE function converts a number to the text representation of the same number in a given base, where base is provided as the radix argument.
+Purpose 
+Convert number to another base.
+Return value 
+The text representation of the converted number.
+Arguments 
+number - The number to convert to a given base.radix - The base to convert to.min_length - [optional] The minimum string length to return, achieved by padding with zeros.
+Syntax 
+=BASE(number, radix, [min_length])
+Usage notes 
+The BASE function converts a number to a given base and returns the result as a text string. Base is specified with the radix argument. 
+The BASE function takes three arguments: number, radix, and min_length. Number should be an integer between 1 and 2^53. If number is negative, BASE returns a #NUM! error. The radix argument is used to specify base. Radix represents the number of digits used to represent numbers and should be an integer between 2 and 36. The optional min_length argument is the minimum string length that BASE should return. When min_length is provided, BASE will pad the output with zeros as needed to achieve the length specified.
+Examples
+The radix argument specifies base and the output from the BASE function is a text string. For example, the formulas below convert the number 13 into text representations of 13 in base 2 (binary), base 10 (decimal), and base 16 (hexadecimal):
+=BASE(13,2) // returns "1101"
+=BASE(13,10) // returns "13"
+=BASE(13,16) // returns "D"
+In the worksheet shown, the input numbers are being converted to three different representations: base 2 (binary), base 10 (decimal), and base 16 (hexadecimal). The formulas in D5, E5, and F5 are:
+=BASE(B5,2) // base 2
+=BASE(B5,10) // base 10
+=BASE(B5,16) // base 16
+The function also offers an optional argument min_length which will pad the returned string with zeros when its length is less than the given value. For example, the formulas below require a minimum length of 4:
+=BASE(3,2,4) // returns "0011" as text
+=BASE(10,16,4) // returns "000A" as text
+DECIMAL function
+The DECIMAL function performs the opposite conversion as the BASE function:
+=BASE(100,2) // returns "1100100"
+=DECIMAL("1100100",2) // returns 100
+See more on the DECIMAL function here.
+Notes
+The result from BASE is a text string.
+If number is negative, BASE returns a #NUM! error.
+BASE expects integers; decimal values are ignored.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DEC2BIN FunctionDEC2OCT FunctionDEC2HEX FunctionDECIMAL Function 
+ Links Microsoft BASE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel BASE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+BASE Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+BASE Function
+Related functions 
+DEC2BIN
+DEC2OCT
+DEC2HEX
+DECIMAL
+Summary
+The Excel BASE function converts a number to the text representation of the same number in a given base, where base is provided as the radix argument.
+Purpose 
+Convert number to another base.
+Return value 
+The text representation of the converted number.
+Arguments 
+number - The number to convert to a given base.radix - The base to convert to.min_length - [optional] The minimum string length to return, achieved by padding with zeros.
+Syntax 
+=BASE(number, radix, [min_length])
+Usage notes 
+The BASE function converts a number to a given base and returns the result as a text string. Base is specified with the radix argument. 
+The BASE function takes three arguments: number, radix, and min_length. Number should be an integer between 1 and 2^53. If number is negative, BASE returns a #NUM! error. The radix argument is used to specify base. Radix represents the number of digits used to represent numbers and should be an integer between 2 and 36. The optional min_length argument is the minimum string length that BASE should return. When min_length is provided, BASE will pad the output with zeros as needed to achieve the length specified.
+Examples
+The radix argument specifies base and the output from the BASE function is a text string. For example, the formulas below convert the number 13 into text representations of 13 in base 2 (binary), base 10 (decimal), and base 16 (hexadecimal):
+=BASE(13,2) // returns "1101"
+=BASE(13,10) // returns "13"
+=BASE(13,16) // returns "D"
+In the worksheet shown, the input numbers are being converted to three different representations: base 2 (binary), base 10 (decimal), and base 16 (hexadecimal). The formulas in D5, E5, and F5 are:
+=BASE(B5,2) // base 2
+=BASE(B5,10) // base 10
+=BASE(B5,16) // base 16
+The function also offers an optional argument min_length which will pad the returned string with zeros when its length is less than the given value. For example, the formulas below require a minimum length of 4:
+=BASE(3,2,4) // returns "0011" as text
+=BASE(10,16,4) // returns "000A" as text
+DECIMAL function
+The DECIMAL function performs the opposite conversion as the BASE function:
+=BASE(100,2) // returns "1100100"
+=DECIMAL("1100100",2) // returns 100
+See more on the DECIMAL function here.
+Notes
+The result from BASE is a text string.
+If number is negative, BASE returns a #NUM! error.
+BASE expects integers; decimal values are ignored.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DEC2BIN FunctionDEC2OCT FunctionDEC2HEX FunctionDECIMAL Function 
+ Links Microsoft BASE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

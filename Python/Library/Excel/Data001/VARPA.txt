@@ -1,0 +1,276 @@
+Excel VARPA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VARPA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+VARPA Function
+Related functions 
+STDEVP
+STDEV
+STDEV.S
+VAR.P
+VAR.S
+VAR
+VARA
+Summary
+The Excel VARPA function computes the variance of a population of data. Unlike the VARP function, the VARPA function evaluates text values and logicals in references.
+Purpose 
+Get variation of a population
+Return value 
+Computed variance
+Arguments 
+number1 - First number or reference.number2 - [optional] Second number or reference.
+Syntax 
+=VARPA(number1, [number2], ...)
+Usage notes 
+The VARPA function calculates the variance for data that represents an entire population. Variance provides a general idea of the spread of data. The difference between the VARPA function and the VARP function is in how these functions handle logical values and numbers as text. The VARP function will ignore text values and logicals when the appear in references, while the VARPA function will evaluate text as zero, TRUE as 1, and FALSE as zero. Note that both VARP and VARPA will evaluate logical values, and numbers as text when they are hardcoded directly as arguments.
+Example
+In the example shown, the formula in F5 is:
+=VARPA(C5:C10)
+Note that the VARP function ignores the "NA" text in C8, while VARPA includes this in the variance estimate as zero.
+Variation functions in Excel
+The table below summarizes the variation functions available in Excel.
+Name
+Data set
+Text and logicals
+VAR
+Sample
+Ignored
+VARP
+Population
+Ignored
+VAR.S
+Sample
+Ignored
+VAR.P
+Population
+Ignored
+VARA
+Sample
+Evaluated
+VARPA
+Population
+Evaluated
+Notes
+VARPA assumes data represents the entire population. If data represents a sample, use VARA or VAR.S
+VARPA evaluates text values and logicals in references, unlike VARP.
+Arguments can either be numbers or names, arrays, or references that contain numbers.
+Arguments can be hard-coded values instead of references.
+To ignore logical values and/or text in references, use VARP or VAR.P
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions STDEVP FunctionSTDEV FunctionSTDEV.S FunctionVAR.P FunctionVAR.S FunctionVAR FunctionVARA Function 
+ Links Microsoft VARPA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel VARPA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VARPA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+VARPA Function
+Related functions 
+STDEVP
+STDEV
+STDEV.S
+VAR.P
+VAR.S
+VAR
+VARA
+Summary
+The Excel VARPA function computes the variance of a population of data. Unlike the VARP function, the VARPA function evaluates text values and logicals in references.
+Purpose 
+Get variation of a population
+Return value 
+Computed variance
+Arguments 
+number1 - First number or reference.number2 - [optional] Second number or reference.
+Syntax 
+=VARPA(number1, [number2], ...)
+Usage notes 
+The VARPA function calculates the variance for data that represents an entire population. Variance provides a general idea of the spread of data. The difference between the VARPA function and the VARP function is in how these functions handle logical values and numbers as text. The VARP function will ignore text values and logicals when the appear in references, while the VARPA function will evaluate text as zero, TRUE as 1, and FALSE as zero. Note that both VARP and VARPA will evaluate logical values, and numbers as text when they are hardcoded directly as arguments.
+Example
+In the example shown, the formula in F5 is:
+=VARPA(C5:C10)
+Note that the VARP function ignores the "NA" text in C8, while VARPA includes this in the variance estimate as zero.
+Variation functions in Excel
+The table below summarizes the variation functions available in Excel.
+Name
+Data set
+Text and logicals
+VAR
+Sample
+Ignored
+VARP
+Population
+Ignored
+VAR.S
+Sample
+Ignored
+VAR.P
+Population
+Ignored
+VARA
+Sample
+Evaluated
+VARPA
+Population
+Evaluated
+Notes
+VARPA assumes data represents the entire population. If data represents a sample, use VARA or VAR.S
+VARPA evaluates text values and logicals in references, unlike VARP.
+Arguments can either be numbers or names, arrays, or references that contain numbers.
+Arguments can be hard-coded values instead of references.
+To ignore logical values and/or text in references, use VARP or VAR.P
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions STDEVP FunctionSTDEV FunctionSTDEV.S FunctionVAR.P FunctionVAR.S FunctionVAR FunctionVARA Function 
+ Links Microsoft VARPA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

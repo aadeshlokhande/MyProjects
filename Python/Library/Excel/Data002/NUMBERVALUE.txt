@@ -1,0 +1,10 @@
+Summary
+The Excel NUMBERVALUE function converts a number in text format to numeric value, using specified decimal and group separators. This function can be used to convert locale-specific values into locale-independent values.
+Purpose 
+Convert text to number with custom separators
+Return value 
+Numeric value
+Arguments 
+text - The text to convert to a number.decimal_separator - [optional] The character for decimal values.group_separator - [optional] The character for grouping by thousands.
+Syntax 
+=NUMBERVALUE(text, [decimal_separator], [group_separator])

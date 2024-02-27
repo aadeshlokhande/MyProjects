@@ -1,0 +1,10 @@
+Summary
+The Excel YIELDDISC function returns the annual yield for a discounted security, such as a Treasury bill, that is issued at a discount but that matures at face value.
+Purpose 
+Get annual yield for discounted security
+Return value 
+Yield as percentage
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.pr - Price of security.redemption - Redemption value per $100 face value.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=YIELDDISC(sd, md, pr, redemption, [basis])

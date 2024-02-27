@@ -1,0 +1,226 @@
+Excel UNICHAR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+UNICHAR Function 
+Previous 
+Next 
+ 
+Excel 2013
+Text
+UNICHAR Function
+Related functions 
+UNICHAR
+CHAR
+UNICODE
+CODE
+Summary
+The Excel UNICHAR function returns a Unicode character based on a given number.
+Purpose 
+Get Unicode character by number
+Return value 
+Unicode character
+Arguments 
+number - Code point for a Unicode character in decimal.
+Syntax 
+=UNICHAR(number)
+Usage notes 
+The UNICHAR function returns the Unicode character at a given code point, provided as a number.  Unicode is a computing standard for the unified encoding, representation, and handling of text in most of the world's writing systems. 
+Like ASCII, Unicode is a character set. However, Unicode is a very large character set, because Unicode is a superset of other character sets. Whereas ASCII contains 128 characters, Unicode 11.0 (June 2018) contains 137,439 characters covering 146 modern and historic scripts.
+Unicode can be implemented in different encodings, for example, UTF-8, UTF-16, etc. UTF-8 dominates the web. It is estimated that over 90% of websites use UTF-8. The first 128 Unicode code points are the ASCII characters.
+Example
+The Euro symbol (€) is code point 8364 in decimal notation. The following formula will return the Euro character:
+=UNICHAR(8364) // returns euro sign "€"
+You can use UNICHAR to insert special characters into a formula, like a checkmark when a task is complete.
+Reverse CHAR
+The UNICODE function performs the opposite conversion, returning the code point for a given Unicode character.
+Notes
+If number is out-of-range, UNICHAR returns #VALUE!
+If number is not a recognized number, UNICHAR returns #VALUE!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions UNICHAR FunctionCHAR FunctionUNICODE FunctionCODE Function 
+ Links Microsoft UNICHAR function documentationList of unicode characters (wikipedia) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel UNICHAR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+UNICHAR Function 
+Previous 
+Next 
+ 
+Excel 2013
+Text
+UNICHAR Function
+Related functions 
+UNICHAR
+CHAR
+UNICODE
+CODE
+Summary
+The Excel UNICHAR function returns a Unicode character based on a given number.
+Purpose 
+Get Unicode character by number
+Return value 
+Unicode character
+Arguments 
+number - Code point for a Unicode character in decimal.
+Syntax 
+=UNICHAR(number)
+Usage notes 
+The UNICHAR function returns the Unicode character at a given code point, provided as a number.  Unicode is a computing standard for the unified encoding, representation, and handling of text in most of the world's writing systems. 
+Like ASCII, Unicode is a character set. However, Unicode is a very large character set, because Unicode is a superset of other character sets. Whereas ASCII contains 128 characters, Unicode 11.0 (June 2018) contains 137,439 characters covering 146 modern and historic scripts.
+Unicode can be implemented in different encodings, for example, UTF-8, UTF-16, etc. UTF-8 dominates the web. It is estimated that over 90% of websites use UTF-8. The first 128 Unicode code points are the ASCII characters.
+Example
+The Euro symbol (€) is code point 8364 in decimal notation. The following formula will return the Euro character:
+=UNICHAR(8364) // returns euro sign "€"
+You can use UNICHAR to insert special characters into a formula, like a checkmark when a task is complete.
+Reverse CHAR
+The UNICODE function performs the opposite conversion, returning the code point for a given Unicode character.
+Notes
+If number is out-of-range, UNICHAR returns #VALUE!
+If number is not a recognized number, UNICHAR returns #VALUE!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions UNICHAR FunctionCHAR FunctionUNICODE FunctionCODE Function 
+ Links Microsoft UNICHAR function documentationList of unicode characters (wikipedia) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

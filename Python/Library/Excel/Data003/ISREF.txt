@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel ISREF returns TRUE when a cell contains a reference and FALSE if not. You can use the ISREF function to check for a reference in a formula.', 'Purpose' : 'Test for a reference', 'Return value' : 'A logical value  (TRUE or FALSE)', 'Arguments' : 'value - The value to check.', 'Syntax' : '=ISREF(value)' }

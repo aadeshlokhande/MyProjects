@@ -1,0 +1,216 @@
+Excel MIRR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MIRR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+MIRR Function
+Related functions 
+PV
+NPV
+IRR
+Summary
+The Excel MIRR function is a financial function that returns the modified internal rate of return (MIRR) for a series of cash flows, taking into account both discount rate and reinvestment rate for future cash flows.
+Purpose 
+Calculate modified internal rate of return
+Return value 
+Calculated return as percentage
+Arguments 
+values - Array or reference to cells that contain cash flows.finance_rate - Required rate of return (discount rate) as percentage.reinvest_rate - Interest rate received on cash flows reinvested as percentage.
+Syntax 
+=MIRR(values, finance_rate, reinvest_rate)
+Usage notes 
+The standard Internal rate of return function (IRR) assumes all cash flows are reinvested at the same rate as the IRR. The modified internal rate of return function (MIRR) accepts both the cost of investment (discount rate) and a reinvestment rate for cash flows received.
+In the example shown, the formula in F6 is:
+=MIRR(B5:B11,F4,F4)
+In this example, we assume that the reinvestment rate is the same as the cost of capital, so we set both the finance_rate and reinvest_rate to the value in F4, which is 10%.
+Notes
+The values array must contain at least one positive value and one negative value.
+Values should be in chronological order.
+MIRR assumes cash flows at regular periods.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PV FunctionNPV FunctionIRR Function 
+ Links Microsoft MIRR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel MIRR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MIRR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+MIRR Function
+Related functions 
+PV
+NPV
+IRR
+Summary
+The Excel MIRR function is a financial function that returns the modified internal rate of return (MIRR) for a series of cash flows, taking into account both discount rate and reinvestment rate for future cash flows.
+Purpose 
+Calculate modified internal rate of return
+Return value 
+Calculated return as percentage
+Arguments 
+values - Array or reference to cells that contain cash flows.finance_rate - Required rate of return (discount rate) as percentage.reinvest_rate - Interest rate received on cash flows reinvested as percentage.
+Syntax 
+=MIRR(values, finance_rate, reinvest_rate)
+Usage notes 
+The standard Internal rate of return function (IRR) assumes all cash flows are reinvested at the same rate as the IRR. The modified internal rate of return function (MIRR) accepts both the cost of investment (discount rate) and a reinvestment rate for cash flows received.
+In the example shown, the formula in F6 is:
+=MIRR(B5:B11,F4,F4)
+In this example, we assume that the reinvestment rate is the same as the cost of capital, so we set both the finance_rate and reinvest_rate to the value in F4, which is 10%.
+Notes
+The values array must contain at least one positive value and one negative value.
+Values should be in chronological order.
+MIRR assumes cash flows at regular periods.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PV FunctionNPV FunctionIRR Function 
+ Links Microsoft MIRR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

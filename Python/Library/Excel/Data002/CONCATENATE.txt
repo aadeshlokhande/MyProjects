@@ -1,0 +1,10 @@
+Summary
+The Excel CONCATENATE function concatenates (joins) join up to 30 values together and returns the result as text. In Excel 2019 and later, the CONCAT and TEXTJOIN functions are better, more flexible alternatives.
+Purpose 
+Join text together
+Return value 
+Text joined together.
+Arguments 
+text1 - The first text value to join together.text2 - The second text value to join together.text3 - [optional] The third text value to join together.
+Syntax 
+=CONCATENATE(text1, text2, [text3], ...)

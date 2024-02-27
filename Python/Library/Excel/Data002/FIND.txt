@@ -1,0 +1,10 @@
+Summary
+The Excel FIND function returns the position (as a number) of one text string inside another. When the text is not found, FIND returns a #VALUE error.
+Purpose 
+Get location substring in a string
+Return value 
+A number representing the location of substring
+Arguments 
+find_text - The substring to find.within_text - The text to search within.start_num - [optional] The starting position in the text to search. Optional, defaults to 1.
+Syntax 
+=FIND(find_text, within_text, [start_num])

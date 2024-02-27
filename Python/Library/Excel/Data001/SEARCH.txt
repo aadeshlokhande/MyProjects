@@ -1,0 +1,332 @@
+Excel SEARCH function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SEARCH Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+SEARCH Function
+Related functions 
+FIND
+REPLACE
+SUBSTITUTE
+Summary
+The Excel SEARCH function returns the location of one text string inside another. SEARCH returns the position of find_text inside within_text as a number. SEARCH supports wildcards, and is not case-sensitive.
+Purpose 
+Get the location of substring in a string
+Return value 
+A number representing the location of substring
+Arguments 
+find_text - The substring to find.within_text - The text to search within.start_num - [optional] Starting position. Optional, defaults to 1.
+Syntax 
+=SEARCH(find_text, within_text, [start_num])
+Usage notes 
+The SEARCH function returns the position (as a number) of one text string inside another. If there is more than one occurrence of the search string, SEARCH returns the position of the first occurrence. SEARCH is not case-sensitive but does support wildcards. Use the FIND function to perform a case-sensitive find. When SEARCH does not find anything, it returns a #VALUE! error. Note that when find_text is empty, SEARCH will return 1. This can cause a false positive when find_text is an empty cell.
+Basic Example
+The SEARCH function is designed to look inside a text string for a specific substring. If SEARCH finds the substring, it returns a position of the substring in the text as a number. If the substring is not found, SEARCH returns a #VALUE error. For example:
+=SEARCH("p","apple") // returns 2
+=SEARCH("z","apple") // returns #VALUE!
+Note that text values entered directly into SEARCH must be enclosed in double-quotes ("").
+TRUE or FALSE result
+To force a TRUE or FALSE result, nest SEARCH inside the ISNUMBER function. ISNUMBER returns TRUE for numbers and FALSE for anything else. If SEARCH finds the substring, it returns the position as a number, and ISNUMBER returns TRUE:
+=ISNUMBER(SEARCH("p","apple")) // returns TRUE
+=ISNUMBER(SEARCH("z","apple")) // returns FALSE
+If SEARCH doesn't find the substring, it returns an error, and ISNUMBER returns FALSE. 
+Start number
+The SEARCH function has an optional argument called start_num, that controls where SEARCH should begin looking for a substring. To find the first match of "the", you can omit start_num, which defaults to 1:
+=SEARCH("the","The cat in the hat") // returns 1
+To start searching at character 4, enter 4 for start_num:
+=SEARCH("the","The cat in the hat",4) // returns 12
+Wildcards
+Although SEARCH is not case-sensitive, it does support wildcards (*?~). For example, the question mark (?) wildcard matches any one character. The formula below looks for a 3-character substring beginning with "x" and ending in "y":
+=ISNUMBER(SEARCH("x?z","xyz")) // TRUE
+=ISNUMBER(SEARCH("x?z","xbz")) // TRUE
+=ISNUMBER(SEARCH("x?z","xyy")) // FALSE
+The asterisk (*) wildcard is not as useful in the SEARCH function because SEARCH already looks for a substring. For example, it might seem like the following formula will test for a value that ends with "z":
+=SEARCH("*z",text)
+However, because SEARCH automatically looks for a substring, the following formulas all return 1 as a result, even though the text in the first formula is the only text that ends with "z":
+=SEARCH("*z","XYZ") // returns 1
+=SEARCH("*z","XYZXY") // returns 1
+=SEARCH("*z","XYZXY123") // returns 1
+=SEARCH("x*z","XYZXY123") // returns 1
+However, it is possible to use the asterisk (*) wildcard like this: 
+=SEARCH("x*2*b","AAAXYZ123ABCZZZ") // returns 4
+=SEARCH("x*2*b","NXYZ12563JKLB") // returns 2
+Here we are looking for "x", "2", and "b" in that order, with any number of characters in between. Finally, use the tilde (~) as an escape character to indicate that the next character is a literal like this:
+=SEARCH("~*","apple*") // returns 6
+=SEARCH("~?","apple?") // returns 6
+=SEARCH("~~","apple~") // returns 6
+The above formulas use SEARCH to find a literal asterisk (*), question mark (?) , and tilde (~) in that order.
+If cell contains
+To return a custom result with the SEARCH function, use the IF function like this:
+=IF(ISNUMBER(SEARCH(substring,A1)), "Yes", "No")
+Instead of returning TRUE or FALSE, the formula above will return "Yes" if substring is found and "No" if not.
+Notes
+SEARCH returns the position of the first find_text in within_text.
+Start_num is optional and defaults to 1.
+Use the FIND function for a case-sensitive search.
+SEARCH allows the wildcard characters question mark (?) and asterisk (*), in find_text.
+	
+? matches any single character and
+* matches any sequence of characters.
+To find a literal ? or *, use a tilde (~) before the character, i.e. ~* and ~?.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count cells that do not contain many strings 
+Filter text contains 
+Extract all partial matches 
+Get last match cell contains 
+Lookup last file revision 
+Highlight cells that contain 
+LAMBDA contains one of many 
+FILTER with partial match 
+Data validation must not contain 
+Count keywords cell contains 
+Videos
+  
+How to build a search box with conditional formatting 
+How to find text with a formula 
+How to extract a first name with a helper column 
+ Functions FIND FunctionREPLACE FunctionSUBSTITUTE Function 
+ Links Microsoft SEARCH function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SEARCH function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SEARCH Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+SEARCH Function
+Related functions 
+FIND
+REPLACE
+SUBSTITUTE
+Summary
+The Excel SEARCH function returns the location of one text string inside another. SEARCH returns the position of find_text inside within_text as a number. SEARCH supports wildcards, and is not case-sensitive.
+Purpose 
+Get the location of substring in a string
+Return value 
+A number representing the location of substring
+Arguments 
+find_text - The substring to find.within_text - The text to search within.start_num - [optional] Starting position. Optional, defaults to 1.
+Syntax 
+=SEARCH(find_text, within_text, [start_num])
+Usage notes 
+The SEARCH function returns the position (as a number) of one text string inside another. If there is more than one occurrence of the search string, SEARCH returns the position of the first occurrence. SEARCH is not case-sensitive but does support wildcards. Use the FIND function to perform a case-sensitive find. When SEARCH does not find anything, it returns a #VALUE! error. Note that when find_text is empty, SEARCH will return 1. This can cause a false positive when find_text is an empty cell.
+Basic Example
+The SEARCH function is designed to look inside a text string for a specific substring. If SEARCH finds the substring, it returns a position of the substring in the text as a number. If the substring is not found, SEARCH returns a #VALUE error. For example:
+=SEARCH("p","apple") // returns 2
+=SEARCH("z","apple") // returns #VALUE!
+Note that text values entered directly into SEARCH must be enclosed in double-quotes ("").
+TRUE or FALSE result
+To force a TRUE or FALSE result, nest SEARCH inside the ISNUMBER function. ISNUMBER returns TRUE for numbers and FALSE for anything else. If SEARCH finds the substring, it returns the position as a number, and ISNUMBER returns TRUE:
+=ISNUMBER(SEARCH("p","apple")) // returns TRUE
+=ISNUMBER(SEARCH("z","apple")) // returns FALSE
+If SEARCH doesn't find the substring, it returns an error, and ISNUMBER returns FALSE. 
+Start number
+The SEARCH function has an optional argument called start_num, that controls where SEARCH should begin looking for a substring. To find the first match of "the", you can omit start_num, which defaults to 1:
+=SEARCH("the","The cat in the hat") // returns 1
+To start searching at character 4, enter 4 for start_num:
+=SEARCH("the","The cat in the hat",4) // returns 12
+Wildcards
+Although SEARCH is not case-sensitive, it does support wildcards (*?~). For example, the question mark (?) wildcard matches any one character. The formula below looks for a 3-character substring beginning with "x" and ending in "y":
+=ISNUMBER(SEARCH("x?z","xyz")) // TRUE
+=ISNUMBER(SEARCH("x?z","xbz")) // TRUE
+=ISNUMBER(SEARCH("x?z","xyy")) // FALSE
+The asterisk (*) wildcard is not as useful in the SEARCH function because SEARCH already looks for a substring. For example, it might seem like the following formula will test for a value that ends with "z":
+=SEARCH("*z",text)
+However, because SEARCH automatically looks for a substring, the following formulas all return 1 as a result, even though the text in the first formula is the only text that ends with "z":
+=SEARCH("*z","XYZ") // returns 1
+=SEARCH("*z","XYZXY") // returns 1
+=SEARCH("*z","XYZXY123") // returns 1
+=SEARCH("x*z","XYZXY123") // returns 1
+However, it is possible to use the asterisk (*) wildcard like this: 
+=SEARCH("x*2*b","AAAXYZ123ABCZZZ") // returns 4
+=SEARCH("x*2*b","NXYZ12563JKLB") // returns 2
+Here we are looking for "x", "2", and "b" in that order, with any number of characters in between. Finally, use the tilde (~) as an escape character to indicate that the next character is a literal like this:
+=SEARCH("~*","apple*") // returns 6
+=SEARCH("~?","apple?") // returns 6
+=SEARCH("~~","apple~") // returns 6
+The above formulas use SEARCH to find a literal asterisk (*), question mark (?) , and tilde (~) in that order.
+If cell contains
+To return a custom result with the SEARCH function, use the IF function like this:
+=IF(ISNUMBER(SEARCH(substring,A1)), "Yes", "No")
+Instead of returning TRUE or FALSE, the formula above will return "Yes" if substring is found and "No" if not.
+Notes
+SEARCH returns the position of the first find_text in within_text.
+Start_num is optional and defaults to 1.
+Use the FIND function for a case-sensitive search.
+SEARCH allows the wildcard characters question mark (?) and asterisk (*), in find_text.
+	
+? matches any single character and
+* matches any sequence of characters.
+To find a literal ? or *, use a tilde (~) before the character, i.e. ~* and ~?.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count cells that do not contain many strings 
+Filter text contains 
+Extract all partial matches 
+Get last match cell contains 
+Lookup last file revision 
+Highlight cells that contain 
+LAMBDA contains one of many 
+FILTER with partial match 
+Data validation must not contain 
+Count keywords cell contains 
+Videos
+  
+How to build a search box with conditional formatting 
+How to find text with a formula 
+How to extract a first name with a helper column 
+ Functions FIND FunctionREPLACE FunctionSUBSTITUTE Function 
+ Links Microsoft SEARCH function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

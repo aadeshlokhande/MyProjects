@@ -1,0 +1,821 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MATCH function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MATCH Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+MATCH Function
+Related functions 
+
+INDEX
+VLOOKUP
+LOOKUP
+HLOOKUP
+XMATCH
+XLOOKUP
+FILTER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+MATCH is an Excel function used to locate the position of a lookup value in a row, column, or table. MATCH supports approximate and exact matching, and wildcards (* ?) for partial matches. Often, MATCH is combined with the INDEX function to retrieve a value at a matched position.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the position of an item in an array
+
+
+
+Return value 
+
+A number representing a position in lookup_array.
+
+
+
+Arguments 
+
+lookup_value - The value to match in lookup_array.lookup_array - A range of cells or an array reference.match_type - [optional] 1 = exact or next smallest (default), 0 = exact match, -1 = exact or next largest.
+
+
+
+Syntax 
+
+=MATCH(lookup_value, lookup_array, [match_type])
+
+
+
+Usage notes 
+
+The MATCH function is used to determine the position of a value in a range or array. For example, in the screenshot above, the formula in cell E6 is configured to get the position of the value in cell D6. The MATCH function returns 5 because the lookup value ("peach") is in the 5th position in the range B6:B14:
+
+=MATCH(D6,B6:B14,0) // returns 5
+
+The MATCH function can perform exact and approximate matches and supports wildcards (* ?) for partial matches. There are 3 separate match modes (set by the match_type argument), as described below. 
+Note: the MATCH function will always returns the first match. If you need to return the last match (reverse search) see the XMATCH function. If you want to return all matches, see the FILTER function.
+MATCH only supports one-dimensional arrays or ranges, either vertical and horizontal. However, you can use MATCH to locate values in a two-dimensional range or table by giving MATCH the single column (or row) that contains the lookup value. You can even use MATCH twice in a single formula to find a matching row and column at the same time.
+Frequently, the MATCH function is combined with the INDEX function in order to retrieve a value at a certain (matched) position. In other words, MATCH figures out the position, and INDEX returns the value at that position. For a detailed explanation, see How to use INDEX and MATCH.
+Below are simple examples of how the MATCH function can be used to return the position of values in a range. Further down the page are more advanced examples of how MATCH can be used to solve real-world problems.
+Match type information
+Match type is optional. If not provided, match type defaults to 1 (exact or next smallest). When match type is 1 or -1, it is sometimes referred to as "approximate match". However, keep in mind that MATCH will find an exact match with all match types, as noted in the table below:
+
+
+
+Match type
+Behavior
+Details
+
+
+
+
+1
+Approximate
+MATCH finds the largest value less than or equal to lookup value. Lookup array must be sorted in ascending order.
+
+
+0
+Exact
+MATCH finds the first value equal to lookup value. Lookup array does not need to be sorted.
+
+
+-1
+Approximate
+MATCH finds the smallest value greater than or equal to lookup value. Lookup array must be sorted in descending order.
+
+
+
+Approximate
+When match type is omitted, it defaults to 1 with behavior as explained above.
+
+
+
+Caution: Be sure to set match type to zero (0) if you need an exact match. The default setting of 1 can cause MATCH to return results that "look normal" but are in fact incorrect. Explicitly providing a value for match_type, is a good reminder of what behavior is expected.
+Exact match
+When match type is set to zero, MATCH performs an exact match. In the example below, the formula in E3 is:
+
+=MATCH(E2,B3:B11,0) // returns 4
+
+
+In the formula above, the lookup value comes from cell E2. If the lookup value is hardcoded into the formula, it must be enclosed in double quotes ("") , since it is a text value:
+
+=MATCH("Mars",B3:B11,0)
+
+Note: MATCH is not case-sensitive, so "Mars" and "mars" will both return 4.
+Approximate match
+When match type is set to 1, MATCH will perform an approximate match on values sorted A-Z, finding the largest value less than or equal to the lookup value. In the example shown below, the formula in E3 is:
+
+=MATCH(E2,B3:B11,1) // returns 5
+
+
+Wildcard match
+When match type is set to zero (0), MATCH can perform a match using wildcards. In the example shown below, the formula in E3 is:
+
+=MATCH(E2,B3:B11,0) // returns 6
+
+This is equivalent to:
+
+=MATCH("pq*",B3:B11,0)
+
+
+INDEX and MATCH
+The MATCH function is commonly used together with the INDEX function. The resulting formula is called "INDEX and MATCH".  For example, in the screen below, INDEX and MATCH are used to return the cost of a code entered in cell F4. The formula in F5 is:
+
+=INDEX(C5:C12,MATCH(F4,B5:B12,0)) // returns 150
+
+
+In this example, MATCH is set up to perform an exact match. The MATCH function locates the code ABX-075 and returns its position (7) directly to the INDEX function as the row number. The INDEX function then returns the 7th value from the range C5:C12 as a final result. The formula is solved like this:
+
+=INDEX(C5:C12,MATCH(F4,B5:B12,0))
+=INDEX(C5:C12,7)
+=150
+
+See below for more examples of the MATCH function. For more details on INDEX with MATCH, see:  How to use INDEX and MATCH.
+Case-sensitive match
+The MATCH function is not case-sensitive. However, MATCH can be configured to perform a case-sensitive match when combined with the EXACT function in a generic formula like this:
+
+=MATCH(TRUE,EXACT(lookup_value,array),0))
+
+The EXACT function compares every value in array with the lookup_value in a case-sensitive manner. This formula is explained in with an INDEX and MATCH example here.
+Notes
+
+MATCH is not case-sensitive.
+MATCH returns the #N/A error if no match is found.
+MATCH only works with text up to 255 characters in length.
+In case of duplicates, MATCH returns the first match.
+If match_type is -1 or 1, the lookup_array must be sorted as noted above.
+If match_type is 0, the lookup_value can contain the wildcards.
+The MATCH function is frequently used together with the INDEX function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Basic INDEX MATCH approximate 
+
+SUMIFS vs other lookup formulas 
+
+Lookup lowest Monday tide 
+
+Most frequently occurring text 
+
+Two-way approximate match multiple criteria 
+
+Basic INDEX MATCH exact 
+
+Get information corresponding to max value 
+
+Random number weighted probability 
+
+Name of nth largest value 
+
+Match first occurrence does not contain 
+
+
+
+Videos
+  
+Excel formula error codes 
+
+How to use the MATCH Function for exact matches 
+
+How to use MATCH to find approximate matches 
+
+How to look things up with INDEX and MATCH 
+
+How to do a two-way lookup with INDEX and MATCH 
+
+How to save a formula that's not finished 
+
+Two-way lookup with INDEX and MATCH approximate 
+
+How to highlight approximate match lookups 
+
+Introduction to structured references 
+
+How to use VLOOKUP with a table 
+
+
+ Functions INDEX FunctionVLOOKUP FunctionLOOKUP FunctionHLOOKUP FunctionXMATCH FunctionXLOOKUP FunctionFILTER Function 
+ Articles How to use INDEX and MATCH 
+ Links Microsoft MATCH function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MATCH function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MATCH Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+MATCH Function
+Related functions 
+INDEX
+VLOOKUP
+LOOKUP
+HLOOKUP
+XMATCH
+XLOOKUP
+FILTER
+Summary
+MATCH is an Excel function used to locate the position of a lookup value in a row, column, or table. MATCH supports approximate and exact matching, and wildcards (* ?) for partial matches. Often, MATCH is combined with the INDEX function to retrieve a value at a matched position.
+Purpose 
+Get the position of an item in an array
+Return value 
+A number representing a position in lookup_array.
+Arguments 
+lookup_value - The value to match in lookup_array.lookup_array - A range of cells or an array reference.match_type - [optional] 1 = exact or next smallest (default), 0 = exact match, -1 = exact or next largest.
+Syntax 
+=MATCH(lookup_value, lookup_array, [match_type])
+Usage notes 
+The MATCH function is used to determine the position of a value in a range or array. For example, in the screenshot above, the formula in cell E6 is configured to get the position of the value in cell D6. The MATCH function returns 5 because the lookup value ("peach") is in the 5th position in the range B6:B14:
+=MATCH(D6,B6:B14,0) // returns 5
+The MATCH function can perform exact and approximate matches and supports wildcards (* ?) for partial matches. There are 3 separate match modes (set by the match_type argument), as described below. 
+Note: the MATCH function will always returns the first match. If you need to return the last match (reverse search) see the XMATCH function. If you want to return all matches, see the FILTER function.
+MATCH only supports one-dimensional arrays or ranges, either vertical and horizontal. However, you can use MATCH to locate values in a two-dimensional range or table by giving MATCH the single column (or row) that contains the lookup value. You can even use MATCH twice in a single formula to find a matching row and column at the same time.
+Frequently, the MATCH function is combined with the INDEX function in order to retrieve a value at a certain (matched) position. In other words, MATCH figures out the position, and INDEX returns the value at that position. For a detailed explanation, see How to use INDEX and MATCH.
+Below are simple examples of how the MATCH function can be used to return the position of values in a range. Further down the page are more advanced examples of how MATCH can be used to solve real-world problems.
+Match type information
+Match type is optional. If not provided, match type defaults to 1 (exact or next smallest). When match type is 1 or -1, it is sometimes referred to as "approximate match". However, keep in mind that MATCH will find an exact match with all match types, as noted in the table below:
+Match type
+Behavior
+Details
+1
+Approximate
+MATCH finds the largest value less than or equal to lookup value. Lookup array must be sorted in ascending order.
+0
+Exact
+MATCH finds the first value equal to lookup value. Lookup array does not need to be sorted.
+-1
+Approximate
+MATCH finds the smallest value greater than or equal to lookup value. Lookup array must be sorted in descending order.
+Approximate
+When match type is omitted, it defaults to 1 with behavior as explained above.
+Caution: Be sure to set match type to zero (0) if you need an exact match. The default setting of 1 can cause MATCH to return results that "look normal" but are in fact incorrect. Explicitly providing a value for match_type, is a good reminder of what behavior is expected.
+Exact match
+When match type is set to zero, MATCH performs an exact match. In the example below, the formula in E3 is:
+=MATCH(E2,B3:B11,0) // returns 4
+In the formula above, the lookup value comes from cell E2. If the lookup value is hardcoded into the formula, it must be enclosed in double quotes ("") , since it is a text value:
+=MATCH("Mars",B3:B11,0)
+Note: MATCH is not case-sensitive, so "Mars" and "mars" will both return 4.
+Approximate match
+When match type is set to 1, MATCH will perform an approximate match on values sorted A-Z, finding the largest value less than or equal to the lookup value. In the example shown below, the formula in E3 is:
+=MATCH(E2,B3:B11,1) // returns 5
+Wildcard match
+When match type is set to zero (0), MATCH can perform a match using wildcards. In the example shown below, the formula in E3 is:
+=MATCH(E2,B3:B11,0) // returns 6
+This is equivalent to:
+=MATCH("pq*",B3:B11,0)
+INDEX and MATCH
+The MATCH function is commonly used together with the INDEX function. The resulting formula is called "INDEX and MATCH".  For example, in the screen below, INDEX and MATCH are used to return the cost of a code entered in cell F4. The formula in F5 is:
+=INDEX(C5:C12,MATCH(F4,B5:B12,0)) // returns 150
+In this example, MATCH is set up to perform an exact match. The MATCH function locates the code ABX-075 and returns its position (7) directly to the INDEX function as the row number. The INDEX function then returns the 7th value from the range C5:C12 as a final result. The formula is solved like this:
+=INDEX(C5:C12,MATCH(F4,B5:B12,0))
+=INDEX(C5:C12,7)
+=150
+See below for more examples of the MATCH function. For more details on INDEX with MATCH, see:  How to use INDEX and MATCH.
+Case-sensitive match
+The MATCH function is not case-sensitive. However, MATCH can be configured to perform a case-sensitive match when combined with the EXACT function in a generic formula like this:
+=MATCH(TRUE,EXACT(lookup_value,array),0))
+The EXACT function compares every value in array with the lookup_value in a case-sensitive manner. This formula is explained in with an INDEX and MATCH example here.
+Notes
+MATCH is not case-sensitive.
+MATCH returns the #N/A error if no match is found.
+MATCH only works with text up to 255 characters in length.
+In case of duplicates, MATCH returns the first match.
+If match_type is -1 or 1, the lookup_array must be sorted as noted above.
+If match_type is 0, the lookup_value can contain the wildcards.
+The MATCH function is frequently used together with the INDEX function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Basic INDEX MATCH approximate 
+SUMIFS vs other lookup formulas 
+Lookup lowest Monday tide 
+Most frequently occurring text 
+Two-way approximate match multiple criteria 
+Basic INDEX MATCH exact 
+Get information corresponding to max value 
+Random number weighted probability 
+Name of nth largest value 
+Match first occurrence does not contain 
+Videos
+  
+Excel formula error codes 
+How to use the MATCH Function for exact matches 
+How to use MATCH to find approximate matches 
+How to look things up with INDEX and MATCH 
+How to do a two-way lookup with INDEX and MATCH 
+How to save a formula that's not finished 
+Two-way lookup with INDEX and MATCH approximate 
+How to highlight approximate match lookups 
+Introduction to structured references 
+How to use VLOOKUP with a table 
+ Functions INDEX FunctionVLOOKUP FunctionLOOKUP FunctionHLOOKUP FunctionXMATCH FunctionXLOOKUP FunctionFILTER Function 
+ Articles How to use INDEX and MATCH 
+ Links Microsoft MATCH function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

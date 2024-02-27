@@ -1,0 +1,10 @@
+Summary
+The Excel DAY function returns the day of the month as a number between 1 to 31 from a given date. You can use the DAY function to extract a day number from a date into a cell. You can also use the DAY function to extract and feed a day value into another function, like the DATE function.
+Purpose 
+Get the day as a number (1-31) from a date
+Return value 
+A number (1-31) representing the day component in a date.
+Arguments 
+date - A valid Excel date.
+Syntax 
+=DAY(date)

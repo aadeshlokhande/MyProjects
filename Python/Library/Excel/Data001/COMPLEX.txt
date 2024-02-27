@@ -1,0 +1,218 @@
+Excel COMPLEX function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COMPLEX Function 
+Previous 
+Next 
+ 
+Excel 2003
+Engineering
+COMPLEX Function
+Related functions 
+IMREAL
+IMAGINARY
+Summary
+The Excel COMPLEX function creates a complex number with given real and imaginary coefficients. COMPLEX returns a text result in the form x + yi or x + yj.
+Purpose 
+Convert coefficients to complex number
+Return value 
+Complex number as text
+Arguments 
+real_num - The real number.i_num - The imaginary number.suffix - [optional] The suffix, either "i" or "j".
+Syntax 
+=COMPLEX(real_num, i_num, [suffix])
+Usage notes 
+A complex number has two parts: a real number and an imaginary number. The COMPLEX function converts real and imaginary coefficients into a complex number of the form x + yi or x + yj, where x represents the real number and y represents the imaginary number. For example:
+=COMPLEX(5,3) // returns 5+3i
+To use the "j" instead of "i":
+=COMPLEX(5,3,"j") // returns 5+3j
+In the example shown, the formula in E6 is:
+=COMPLEX(B6,C6)
+Notes:
+If omitted, suffix defaults to "i".
+suffix must be lowercase "i" or "j"; other values result in a #VALUE error.
+If real_num or i_num are nonnumeric, COMPLEX returns the #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions IMREAL FunctionIMAGINARY Function 
+ Links Microsoft COMPLEX function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel COMPLEX function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COMPLEX Function 
+Previous 
+Next 
+ 
+Excel 2003
+Engineering
+COMPLEX Function
+Related functions 
+IMREAL
+IMAGINARY
+Summary
+The Excel COMPLEX function creates a complex number with given real and imaginary coefficients. COMPLEX returns a text result in the form x + yi or x + yj.
+Purpose 
+Convert coefficients to complex number
+Return value 
+Complex number as text
+Arguments 
+real_num - The real number.i_num - The imaginary number.suffix - [optional] The suffix, either "i" or "j".
+Syntax 
+=COMPLEX(real_num, i_num, [suffix])
+Usage notes 
+A complex number has two parts: a real number and an imaginary number. The COMPLEX function converts real and imaginary coefficients into a complex number of the form x + yi or x + yj, where x represents the real number and y represents the imaginary number. For example:
+=COMPLEX(5,3) // returns 5+3i
+To use the "j" instead of "i":
+=COMPLEX(5,3,"j") // returns 5+3j
+In the example shown, the formula in E6 is:
+=COMPLEX(B6,C6)
+Notes:
+If omitted, suffix defaults to "i".
+suffix must be lowercase "i" or "j"; other values result in a #VALUE error.
+If real_num or i_num are nonnumeric, COMPLEX returns the #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions IMREAL FunctionIMAGINARY Function 
+ Links Microsoft COMPLEX function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

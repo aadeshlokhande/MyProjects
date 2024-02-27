@@ -1,0 +1,232 @@
+Excel XIRR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+XIRR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+XIRR Function
+Related functions 
+PV
+NPV
+IRR
+MIRR
+XNPV
+Summary
+The Excel XIRR function is a financial function that returns the internal rate of return (IRR) for a series of cash flows that occur at irregular intervals. The XIRR function uses iteration to arrive at a result.
+Purpose 
+Calculate internal rate of return for irregular cash flows
+Return value 
+Calculated internal rate of return
+Arguments 
+values - Array or reference to cells that contain cash flows.dates - Dates that correspond to cash flows, in any order.guess - [optional] An estimate for expected IRR. Default is 0.1 (10%).
+Syntax 
+=XIRR(values, dates, [guess])
+Usage notes 
+The XIRR function calculates the internal rate of return for a series of cash flows that occur at irregular intervals. Payments are expressed as negative values and income as positive values.  If the first value is a cost or payment, it must be a negative value. Subsequent payments are discounted based on a 365-day year. To calculate the internal rate of return for a series of regular, periodic cash flows, use the IRR function.
+XIRR is related to the XNPV function. The rate returned by XIRR is the interest rate when XNPV = 0. The XIRR function uses iteration to arrive at a result. Starting with guess (which defaults to 0.1 if not provided) XIRR iterates through a calculation until the result is accurate to 0.000001 percent. If no result is found after 100 tries, XIRR returns the #NUM! error.
+The XIRR function takes three arguments: values, dates, and guess. Values represent a series of cash flows. The first value is optional and corresponds to a cost at the beginning of the investment. If the first value is a cost or payment, it must be a entered as a negative number. Values must include at least one positive and one negative value, or XIRR will return a #NUM! error. If values contains any non-numeric values, XIRR returns a #VALUE! error.
+The dates argument represents a schedule of dates that correspond to values. The values supplied for dates must be valid Excel dates. Dates do not need to be entered in chronological order. Typically, dates is supplied as a range. If any date is not recognized as a date, XIRR returns a #VALUE! error.
+The guess argument is optional and represents the seed value to start with for the iterative calculation used by XIRR. If not provided, guess defaults to 10% (0.10). Typically, you can safely omit guess. If XIRR returns #NUM!, and values contains at least one positive and one negative value, try different percentages for guess between 0 and 1.
+Example
+In the example shown, dates are in the values are in the range B5:B10, and dates are in the range C5:C10. The formula in cell F4 is:
+=XIRR(B5:B10,C5:C10)  // returns .0788
+The result returned by XIRR is .0788, displayed as 8% when the percentage number format is applied.
+Notes
+The values array must contain at least one positive value and one negative value.
+Dates must be valid Excel dates that correspond to values
+Dates do not need to be in chronological order.
+XIRR is related to the XNPV function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PV FunctionNPV FunctionIRR FunctionMIRR FunctionXNPV Function 
+ Links Microsoft XIRR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel XIRR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+XIRR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+XIRR Function
+Related functions 
+PV
+NPV
+IRR
+MIRR
+XNPV
+Summary
+The Excel XIRR function is a financial function that returns the internal rate of return (IRR) for a series of cash flows that occur at irregular intervals. The XIRR function uses iteration to arrive at a result.
+Purpose 
+Calculate internal rate of return for irregular cash flows
+Return value 
+Calculated internal rate of return
+Arguments 
+values - Array or reference to cells that contain cash flows.dates - Dates that correspond to cash flows, in any order.guess - [optional] An estimate for expected IRR. Default is 0.1 (10%).
+Syntax 
+=XIRR(values, dates, [guess])
+Usage notes 
+The XIRR function calculates the internal rate of return for a series of cash flows that occur at irregular intervals. Payments are expressed as negative values and income as positive values.  If the first value is a cost or payment, it must be a negative value. Subsequent payments are discounted based on a 365-day year. To calculate the internal rate of return for a series of regular, periodic cash flows, use the IRR function.
+XIRR is related to the XNPV function. The rate returned by XIRR is the interest rate when XNPV = 0. The XIRR function uses iteration to arrive at a result. Starting with guess (which defaults to 0.1 if not provided) XIRR iterates through a calculation until the result is accurate to 0.000001 percent. If no result is found after 100 tries, XIRR returns the #NUM! error.
+The XIRR function takes three arguments: values, dates, and guess. Values represent a series of cash flows. The first value is optional and corresponds to a cost at the beginning of the investment. If the first value is a cost or payment, it must be a entered as a negative number. Values must include at least one positive and one negative value, or XIRR will return a #NUM! error. If values contains any non-numeric values, XIRR returns a #VALUE! error.
+The dates argument represents a schedule of dates that correspond to values. The values supplied for dates must be valid Excel dates. Dates do not need to be entered in chronological order. Typically, dates is supplied as a range. If any date is not recognized as a date, XIRR returns a #VALUE! error.
+The guess argument is optional and represents the seed value to start with for the iterative calculation used by XIRR. If not provided, guess defaults to 10% (0.10). Typically, you can safely omit guess. If XIRR returns #NUM!, and values contains at least one positive and one negative value, try different percentages for guess between 0 and 1.
+Example
+In the example shown, dates are in the values are in the range B5:B10, and dates are in the range C5:C10. The formula in cell F4 is:
+=XIRR(B5:B10,C5:C10)  // returns .0788
+The result returned by XIRR is .0788, displayed as 8% when the percentage number format is applied.
+Notes
+The values array must contain at least one positive value and one negative value.
+Dates must be valid Excel dates that correspond to values
+Dates do not need to be in chronological order.
+XIRR is related to the XNPV function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PV FunctionNPV FunctionIRR FunctionMIRR FunctionXNPV Function 
+ Links Microsoft XIRR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

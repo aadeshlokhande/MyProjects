@@ -1,0 +1,88 @@
+
+Receipt Ref : BILL - 7005860		 08/02/2024
+Customer Name	:	AADESH
+Items				Cost of Items
+Chicken Lollipop			360.0
+Chicken Hotdog				0.0
+Chicken Burger				0.0
+Chicken Roll				0.0
+Chicken 65					0.0
+Chicken Crispy				0.0
+Chicken Chilli				0.0
+Chicken Samosa				0.0
+Veg Puff					0.0
+Veg Hotdog					0.0
+Veg Burger					0.0
+Veg Roll					70.0
+Veg Manchurian				0.0
+Veg Crispy					0.0
+Veg Noodles					160.0
+Veg Samosa					20.0
+Paid Tax				93.3 Rs
+Service Charge				12 Rs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Cost				
+
+
+
+Receipt Ref : BILL - 86785351		 08/02/2024
+Customer Name	:	NILESH
+Items				Cost of Items
+Chicken Hotdog				80.0
+Veg Burger					135.0
+Paid Tax				34.05 Rs
+Service Charge				12 Rs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Cost				
+
+
+
+Receipt Ref : BILL - 87062763		 08/02/2024
+Customer Name	:	AS
+Items				Cost of Items
+Chicken Lollipop			0.0
+Chicken Hotdog				0.0
+Chicken Burger				0.0
+Chicken Roll				0.0
+Chicken 65					0.0
+Chicken Crispy				0.0
+Chicken Chilli				0.0
+Chicken Samosa				0.0
+Veg Puff					0.0
+Veg Hotdog					0.0
+Veg Burger					0.0
+Veg Roll					35.0
+Veg Manchurian				0.0
+Veg Crispy					0.0
+Veg Noodles					0.0
+Veg Samosa					0.0
+Paid Tax				8.459999999999999 Rs
+Service Charge				12 Rs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Cost				
+
+
+
+Receipt Ref : BILL - 89315980		 08/02/2024
+Customer Name	:	AS
+Items				Cost of Items
+Chicken Lollipop			0.0
+Chicken Hotdog				0.0
+Chicken Burger				0.0
+Chicken Roll				0.0
+Chicken 65					0.0
+Chicken Crispy				0.0
+Chicken Chilli				0.0
+Chicken Samosa				0.0
+Veg Puff					0.0
+Veg Hotdog					0.0
+Veg Burger					0.0
+Veg Roll					70.0
+Veg Manchurian				0.0
+Veg Crispy					0.0
+Veg Noodles					0.0
+Veg Samosa					0.0
+Paid Tax				14.76 Rs
+Service Charge				12 Rs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Cost				96.76

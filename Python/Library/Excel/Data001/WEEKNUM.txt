@@ -1,0 +1,278 @@
+Excel WEEKNUM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+WEEKNUM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+WEEKNUM Function
+Related functions 
+ISOWEEKNUM
+Summary
+The Excel WEEKNUM function takes a date and returns a week number (1-54) that corresponds to the week of year. The WEEKNUM function starts counting on the week that contains January 1. By default, weeks begin on Sunday, but this can be changed.
+Purpose 
+Get the week number for a given date
+Return value 
+A number between 1 and 54.
+Arguments 
+serial_num - A valid Excel date in serial number format.return_type - [optional] The day the week begins. Default is 1.
+Syntax 
+=WEEKNUM(serial_num, [return_type])
+Usage notes 
+The WEEKNUM function takes a date and returns a number between 1 and 54 that corresponds to the week of the year. By default, the WEEKNUM function starts counting on the week that contains January 1 and increments week numbers on Sunday.
+The WEEKNUM function accepts two arguments, serial_num and return_type. The serial_num argument must have a valid Excel date. The return_type argument controls what day of the week begins a new week number. Return_type is optional and defaults to 1, which sets new week numbers to start on Sunday. When return_type is set to 2, week numbers begin on Monday. 
+With a return_type of 1-17, week number 1 in a given year is assigned to the week that contains January 1. With return_type 21, week 1 is the week containing the first Thursday of the year, following ISO 8601. The table below summarizes return_type options.
+Return_type
+Week begins
+1 (default)
+Sunday
+2
+Monday
+11
+Monday
+12
+Tuesday
+13
+Wednesday
+14
+Thursday
+15
+Friday
+16
+Saturday
+17
+Sunday
+21
+Monday (see note above)
+Example #1 - basic usage
+The formulas below return the week number for the last day of 2020 and the first day of 2021:
+=WEEKNUM("31-Dec-2020") // returns 53
+=WEEKNUM("1-Jan-2021") // returns 1
+Example #2 - return type
+The return_type argument controls what day of week begins a new week number. By default, return_type is 1, and numbers increment on Sunday. When return_type is provided as 2, week numbers begin on Monday. For example, January 3, 2021 is a Sunday and, WEEKNUM will return 2, since new numbers start on Sundays:
+=WEEKNUM("3-Jan-2021") // returns 2
+However, when return_type is set to 2, WEEKNUM will return 1 and start week 2 on Monday:
+=WEEKNUM("3-Jan-2021",2) // returns 1
+=WEEKNUM("4-Jan-2021",2) // returns 2
+Note: the examples above show dates as text values for readability, but working native Excel dates is more reliable. To create a date from scratch in a formula, use the DATE function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by week number 
+Get week number from date 
+Pad week numbers with zeros 
+ Functions ISOWEEKNUM Function 
+ Links Microsoft WEEKNUM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel WEEKNUM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+WEEKNUM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+WEEKNUM Function
+Related functions 
+ISOWEEKNUM
+Summary
+The Excel WEEKNUM function takes a date and returns a week number (1-54) that corresponds to the week of year. The WEEKNUM function starts counting on the week that contains January 1. By default, weeks begin on Sunday, but this can be changed.
+Purpose 
+Get the week number for a given date
+Return value 
+A number between 1 and 54.
+Arguments 
+serial_num - A valid Excel date in serial number format.return_type - [optional] The day the week begins. Default is 1.
+Syntax 
+=WEEKNUM(serial_num, [return_type])
+Usage notes 
+The WEEKNUM function takes a date and returns a number between 1 and 54 that corresponds to the week of the year. By default, the WEEKNUM function starts counting on the week that contains January 1 and increments week numbers on Sunday.
+The WEEKNUM function accepts two arguments, serial_num and return_type. The serial_num argument must have a valid Excel date. The return_type argument controls what day of the week begins a new week number. Return_type is optional and defaults to 1, which sets new week numbers to start on Sunday. When return_type is set to 2, week numbers begin on Monday. 
+With a return_type of 1-17, week number 1 in a given year is assigned to the week that contains January 1. With return_type 21, week 1 is the week containing the first Thursday of the year, following ISO 8601. The table below summarizes return_type options.
+Return_type
+Week begins
+1 (default)
+Sunday
+2
+Monday
+11
+Monday
+12
+Tuesday
+13
+Wednesday
+14
+Thursday
+15
+Friday
+16
+Saturday
+17
+Sunday
+21
+Monday (see note above)
+Example #1 - basic usage
+The formulas below return the week number for the last day of 2020 and the first day of 2021:
+=WEEKNUM("31-Dec-2020") // returns 53
+=WEEKNUM("1-Jan-2021") // returns 1
+Example #2 - return type
+The return_type argument controls what day of week begins a new week number. By default, return_type is 1, and numbers increment on Sunday. When return_type is provided as 2, week numbers begin on Monday. For example, January 3, 2021 is a Sunday and, WEEKNUM will return 2, since new numbers start on Sundays:
+=WEEKNUM("3-Jan-2021") // returns 2
+However, when return_type is set to 2, WEEKNUM will return 1 and start week 2 on Monday:
+=WEEKNUM("3-Jan-2021",2) // returns 1
+=WEEKNUM("4-Jan-2021",2) // returns 2
+Note: the examples above show dates as text values for readability, but working native Excel dates is more reliable. To create a date from scratch in a formula, use the DATE function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by week number 
+Get week number from date 
+Pad week numbers with zeros 
+ Functions ISOWEEKNUM Function 
+ Links Microsoft WEEKNUM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

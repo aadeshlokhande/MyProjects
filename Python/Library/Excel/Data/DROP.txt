@@ -1,0 +1,675 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel DROP function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+DROP Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+DROP Function
+Related functions 
+
+TAKE
+EXPAND
+CHOOSEROWS
+CHOOSECOLS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel DROP function returns a subset of a given array by "dropping" rows and columns. The number of rows and columns to remove is provided by separate rows and columns arguments. Rows and columns can be dropped from the start or end of the given array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Remove portion of an array
+
+
+
+Return value 
+
+The remaining array
+
+
+
+Arguments 
+
+array - The source array or range.rows - [optional] Number of rows to drop.col - [optional] Number of columns to drop.
+
+
+
+Syntax 
+
+=DROP(array, [rows], [col])
+
+
+
+Usage notes 
+
+The DROP function returns a subset of a given array by "dropping" rows and columns. The number of rows and columns to remove is provided by separate rows and columns arguments. Rows and columns can be dropped from the start or end of the given array. When positive numbers are provided for rows or columns, DROP removes values from the start or top of the array. Negative numbers remove values from the end or bottom of the array.
+The DROP function takes three arguments: array, rows, and columns. Array is required, along with at least one value for rows or columns. Array can be a range or an in-memory array from another formula. Rows and columns can be negative or positive. Positive numbers remove values from the start of the array; negative numbers remove values from the end of the array. Both rows and columns default to zero: if no value is supplied, DROP will return all rows/columns in the result.
+Basic usage
+To use DROP, provide an array or range, and numbers for rows and/or columns:
+
+=DROP(array,3) // drop first 3 rows
+=DROP(array,,3) // drop first 3 columns
+=DROP(array,3,2) // drop first 3 rows and 2 columns
+
+Notice in the second example above, no value is provided for rows.
+Drop from start
+To remove rows or columns from the start of a range or array, provide positive numbers for rows and columns. In the worksheet below, the formula in F3 is:
+
+=DROP(B3:D11,6) // drop first 6 rows
+
+The DROP function removes the first 6 rows from B3:D11 and returns the resulting array.
+The second formula in F8 is:
+
+=DROP(B3:D11,5,1) // drop first 5 rows and column 1
+
+The DROP function removes the first 5 rows and column 1 from B3:D11 and returns the result.
+
+Notice that if a value for rows or columns is not provided, DROP returns all rows or columns. For example, in the first formula above, a value for columns is not provided and DROP returns all 3 columns as a result. In other words, rows and columns both default to zero.
+Drop from end
+To remove values from the end of an array, provide negative numbers for rows and columns. In the worksheet below, the formula in cell F3 is:
+
+=DROP(B3:D11,-6)
+
+With a negative 6 for rows, DROP removes the last 6 rows from B3:D11.
+The formula in F8 is:
+
+=DROP(B3:D11,-5,-1)
+
+With a negative 5 for rows and a negative 1 for columns, DROP removes the last 5 rows and the last 1 column from B3:D11 and returns the resulting array to cell F8.
+
+Notice in the first example, no value for columns is given and DROP returns all columns as a result.
+DROP vs. TAKE
+The DROP and TAKE functions both return a subset of an array, but they work in opposite ways. While the DROP function removes specific rows or columns from an array, the TAKE function extracts specific rows or columns from an array:
+
+=DROP(array,1) // remove first row
+=TAKE(array,1) // get first row
+
+Which function to use depends on the situation.
+Notes
+
+Rows and columns are both optional, but at least one must be provided.
+If rows or columns is zero, DROP returns all rows/columns.
+If rows > total rows, DROP returns a #VALUE! error
+If columns > total columns, DROP returns a #VALUE! error
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Count numbers by range 
+
+
+ Functions TAKE FunctionEXPAND FunctionCHOOSEROWS FunctionCHOOSECOLS Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel DROP function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DROP Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+DROP Function
+Related functions 
+TAKE
+EXPAND
+CHOOSEROWS
+CHOOSECOLS
+Summary
+The Excel DROP function returns a subset of a given array by "dropping" rows and columns. The number of rows and columns to remove is provided by separate rows and columns arguments. Rows and columns can be dropped from the start or end of the given array.
+Purpose 
+Remove portion of an array
+Return value 
+The remaining array
+Arguments 
+array - The source array or range.rows - [optional] Number of rows to drop.col - [optional] Number of columns to drop.
+Syntax 
+=DROP(array, [rows], [col])
+Usage notes 
+The DROP function returns a subset of a given array by "dropping" rows and columns. The number of rows and columns to remove is provided by separate rows and columns arguments. Rows and columns can be dropped from the start or end of the given array. When positive numbers are provided for rows or columns, DROP removes values from the start or top of the array. Negative numbers remove values from the end or bottom of the array.
+The DROP function takes three arguments: array, rows, and columns. Array is required, along with at least one value for rows or columns. Array can be a range or an in-memory array from another formula. Rows and columns can be negative or positive. Positive numbers remove values from the start of the array; negative numbers remove values from the end of the array. Both rows and columns default to zero: if no value is supplied, DROP will return all rows/columns in the result.
+Basic usage
+To use DROP, provide an array or range, and numbers for rows and/or columns:
+=DROP(array,3) // drop first 3 rows
+=DROP(array,,3) // drop first 3 columns
+=DROP(array,3,2) // drop first 3 rows and 2 columns
+Notice in the second example above, no value is provided for rows.
+Drop from start
+To remove rows or columns from the start of a range or array, provide positive numbers for rows and columns. In the worksheet below, the formula in F3 is:
+=DROP(B3:D11,6) // drop first 6 rows
+The DROP function removes the first 6 rows from B3:D11 and returns the resulting array.
+The second formula in F8 is:
+=DROP(B3:D11,5,1) // drop first 5 rows and column 1
+The DROP function removes the first 5 rows and column 1 from B3:D11 and returns the result.
+Notice that if a value for rows or columns is not provided, DROP returns all rows or columns. For example, in the first formula above, a value for columns is not provided and DROP returns all 3 columns as a result. In other words, rows and columns both default to zero.
+Drop from end
+To remove values from the end of an array, provide negative numbers for rows and columns. In the worksheet below, the formula in cell F3 is:
+=DROP(B3:D11,-6)
+With a negative 6 for rows, DROP removes the last 6 rows from B3:D11.
+The formula in F8 is:
+=DROP(B3:D11,-5,-1)
+With a negative 5 for rows and a negative 1 for columns, DROP removes the last 5 rows and the last 1 column from B3:D11 and returns the resulting array to cell F8.
+Notice in the first example, no value for columns is given and DROP returns all columns as a result.
+DROP vs. TAKE
+The DROP and TAKE functions both return a subset of an array, but they work in opposite ways. While the DROP function removes specific rows or columns from an array, the TAKE function extracts specific rows or columns from an array:
+=DROP(array,1) // remove first row
+=TAKE(array,1) // get first row
+Which function to use depends on the situation.
+Notes
+Rows and columns are both optional, but at least one must be provided.
+If rows or columns is zero, DROP returns all rows/columns.
+If rows > total rows, DROP returns a #VALUE! error
+If columns > total columns, DROP returns a #VALUE! error
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count numbers by range 
+ Functions TAKE FunctionEXPAND FunctionCHOOSEROWS FunctionCHOOSECOLS Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

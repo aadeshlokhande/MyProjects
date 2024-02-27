@@ -1,0 +1,624 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel INTERCEPT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+INTERCEPT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+INTERCEPT Function
+Related functions 
+
+SLOPE
+LINEST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel INTERCEPT function returns the point at which a regression line will intersect the y-axis based on known x and y values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get intercept of linear regression line
+
+
+
+Return value 
+
+y-axis intercept value
+
+
+
+Arguments 
+
+known_ys - An array or range of numeric data points (dependent values).known_xs - An array or range of numeric data points (independent values).
+
+
+
+Syntax 
+
+=INTERCEPT(known_ys, known_xs)
+
+
+
+Usage notes 
+
+The INTERCEPT function returns the point at which a line will intersect the y-axis based on known x and y values. The intercept point is based on a regression line plotted with known x and y values. A regression line is a line that best fits that known data points. Use the INTERCEPT function to calculate the value of a dependent variable when the independent variable is zero (0).
+The INTERCEPT function takes two arguments, known_ys and known_xs, which should be a range or array of numeric values. The known_ys represent dependent values and known_xs represent independent values. Both arguments must contain the same number values, or INTERCEPT will return #N/A.
+Example
+Values can be entered directly in INTERCEPT as array constants:
+
+=INTERCEPT({2;0},{-1;1}) // returns 1
+
+Typically, values are supplied as ranges. In the example shown, the formula in E5 is:
+
+=INTERCEPT(C5:C9,B5:B9) // returns 2
+
+This formula returns 2, based on known_ys in C5:C9, and known_xs in B5:B9.
+Equation
+The equation for the intercept of the regression line (a) is:
+
+where b is the slope. The formula used by Excel to calculate slope is the same one used by the SLOPE function:
+
+In the example shown, the intercept formula can be manually created like this:
+
+=AVERAGE(C5:C9)-SLOPE(C5:C9,B5:B9)*AVERAGE(B5:B9)
+
+This formula returns the same result as that returned by the INTERCEPT function.
+Notes
+
+If there is only one set of points, INTERCEPT will return #DIV/0!
+If the count of known_ys is different from known_xs, INTERCEPT returns #N/A
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions SLOPE FunctionLINEST Function 
+ Links Microsoft INTERCEPT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel INTERCEPT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+INTERCEPT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+INTERCEPT Function
+Related functions 
+SLOPE
+LINEST
+Summary
+The Excel INTERCEPT function returns the point at which a regression line will intersect the y-axis based on known x and y values.
+Purpose 
+Get intercept of linear regression line
+Return value 
+y-axis intercept value
+Arguments 
+known_ys - An array or range of numeric data points (dependent values).known_xs - An array or range of numeric data points (independent values).
+Syntax 
+=INTERCEPT(known_ys, known_xs)
+Usage notes 
+The INTERCEPT function returns the point at which a line will intersect the y-axis based on known x and y values. The intercept point is based on a regression line plotted with known x and y values. A regression line is a line that best fits that known data points. Use the INTERCEPT function to calculate the value of a dependent variable when the independent variable is zero (0).
+The INTERCEPT function takes two arguments, known_ys and known_xs, which should be a range or array of numeric values. The known_ys represent dependent values and known_xs represent independent values. Both arguments must contain the same number values, or INTERCEPT will return #N/A.
+Example
+Values can be entered directly in INTERCEPT as array constants:
+=INTERCEPT({2;0},{-1;1}) // returns 1
+Typically, values are supplied as ranges. In the example shown, the formula in E5 is:
+=INTERCEPT(C5:C9,B5:B9) // returns 2
+This formula returns 2, based on known_ys in C5:C9, and known_xs in B5:B9.
+Equation
+The equation for the intercept of the regression line (a) is:
+where b is the slope. The formula used by Excel to calculate slope is the same one used by the SLOPE function:
+In the example shown, the intercept formula can be manually created like this:
+=AVERAGE(C5:C9)-SLOPE(C5:C9,B5:B9)*AVERAGE(B5:B9)
+This formula returns the same result as that returned by the INTERCEPT function.
+Notes
+If there is only one set of points, INTERCEPT will return #DIV/0!
+If the count of known_ys is different from known_xs, INTERCEPT returns #N/A
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SLOPE FunctionLINEST Function 
+ Links Microsoft INTERCEPT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

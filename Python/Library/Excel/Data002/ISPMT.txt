@@ -1,0 +1,10 @@
+Summary
+The Excel ISPMT function calculates the interest paid during a given period of an investment where principal payments are equal. The given period is specified as a zero-based number instead of a 1-based number.
+Purpose 
+Get interest paid for specific period
+Return value 
+Interest amount in given period
+Arguments 
+rate - Interest rate.per - Period (starts with zero, not 1).nper - Number of periods.pv - Present value.
+Syntax 
+=ISPMT(rate, per, nper, pv)

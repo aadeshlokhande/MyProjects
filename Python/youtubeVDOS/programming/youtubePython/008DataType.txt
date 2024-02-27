@@ -1,0 +1,31 @@
+Python is a dynamically-typed language, which means that you don't need to specify the data type of a variable when you create it. Instead, Python automatically infers the data type based on the value you assign to the variable.
+
+Python has several built-in data types that you can use to represent different kinds of data. Here are some of the most commonly used data types in Python:
+
+Numeric types: These are used to represent numbers. There are three types of numeric types in Python: integers (int), floating-point numbers (float), and complex numbers (complex).
+
+Strings: These are used to represent text data. Strings are enclosed in quotes (either single or double quotes) and can contain letters, digits, and special characters.
+
+Booleans: These are used to represent True or False values, and are used in logical expressions and control structures.
+
+Lists: These are used to represent a collection of items that can be of any data type. Lists are ordered and mutable, which means that you can add, remove, or modify items in a list.
+
+Tuples: These are similar to lists, but are immutable, which means that you can't modify them after they're created.
+
+Dictionaries: These are used to represent a collection of key-value pairs, where each key is associated with a value. Dictionaries are unordered and mutable.
+
+Sets: These are used to represent a collection of unique items. Sets are unordered and mutable.
+
+You can use the type() function to determine the data type of a variable or value. For example:
+
+python
+Copy code
+x = 5
+y = "Hello"
+z = [1, 2, 3]
+
+print(type(x))  # Output: <class 'int'>
+print(type(y))  # Output: <class 'str'>
+print(type(z))  # Output: <class 'list'>
+
+Knowing the data type of a variable is important, because it determines what operations can be performed on the variable. For example, you can add two integers together, but you can't add an integer and a string.

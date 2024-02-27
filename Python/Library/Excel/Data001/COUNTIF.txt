@@ -1,0 +1,414 @@
+Excel COUNTIF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUNTIF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+COUNTIF Function
+Related functions 
+COUNTIF
+COUNTIFS
+COUNT
+COUNTA
+Summary
+COUNTIF is an Excel function to count cells in a range that meet a single condition. COUNTIF can be used to count cells that contain dates, numbers, and text. The criteria used in COUNTIF supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Count cells that match criteria
+Return value 
+A number representing cells counted.
+Arguments 
+range - The range of cells to count.criteria - The criteria that controls which cells should be counted.
+Syntax 
+=COUNTIF(range, criteria)
+Usage notes 
+The COUNTIF function counts cells in a range that meet a given condition, referred to as criteria. COUNTIF is a common, widely used function in Excel, and can be used to count cells that contain dates, numbers, and text. Note that COUNTIF can only apply a single condition. To count cells with multiple criteria, see the COUNTIFS function.
+Syntax
+The generic syntax for COUNTIF looks like this:
+=COUNTIF(range,criteria)
+The COUNTIF function takes two arguments, range and criteria. Range is the range of cells to apply a condition to. Criteria is the condition to apply, along with any logical operators that are needed.
+Applying criteria
+The COUNTIF function supports logical operators (>,<,<>,<=,>=) and wildcards (*,?) for partial matching. The tricky part about using the COUNTIF function is the syntax used to apply criteria. COUNTIFS is in a group of eight functions that split logical criteria into two parts, range and criteria. Because of this design, each condition requires a separate range and criteria argument, and operators in the criteria must be enclosed in double quotes (""). The table below shows examples of the syntax needed for common criteria:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples involve concatenation with the ampersand (&) character.  Any time you are using a value from another cell, or using the result of a formula in criteria with a logical operator like "<", you will need to concatenate. This is because Excel needs to evaluate cell references and formulas first to get a value, before that value can be joined to an operator.
+Basic example
+In the worksheet shown above, the following formulas are used in cells G5, G6, and G7:
+=COUNTIF(D5:D12,">100") // count sales over 100
+=COUNTIF(B5:B12,"jim") // count name = "jim"
+=COUNTIF(C5:C12,"ca") // count state = "ca"
+Notice COUNTIF is not case-sensitive, "CA" and "ca" are treated the same.
+Double quotes ("") in criteria
+In general, text values need to be enclosed in double quotes (""), and numbers do not. However, when a logical operator is included with a number, the number and operator must be enclosed in quotes, as seen in the second example below:
+=COUNTIF(A1:A10,100) // count cells equal to 100
+=COUNTIF(A1:A10,">32") // count cells greater than 32
+=COUNTIF(A1:A10,"jim") // count cells equal to "jim"
+Value from another cell
+A value from another cell can be included in criteria using concatenation. In the example below, COUNTIF will return the count of values in A1:A10 that are less than the value in cell B1. Notice the less than operator (which is text) is enclosed in quotes.
+=COUNTIF(A1:A10,"<"&B1) // count cells less than  B1
+Not equal to
+To construct "not equal to" criteria, use the "<>" operator surrounded by double quotes (""). For example, the formula below will count cells not equal to "red" in the range A1:A10:
+=COUNTIF(A1:A10,"<>red") // not "red"
+Blank cells
+COUNTIF can count cells that are blank or not blank. The formulas below count blank and not blank cells in the range A1:A10:
+=COUNTIF(A1:A10,"<>") // not blank
+=COUNTIF(A1:A10,"") // blank
+Note: be aware that COUNTIF treats formulas that return an empty string ("") as not blank. See this example for some workarounds to this problem.
+Dates
+The easiest way to use COUNTIF with dates is to refer to a valid date in another cell with a cell reference. For example, to count cells in A1:A10 that contain a date greater than the date in B1, you can use a formula like this:
+=COUNTIF(A1:A10, ">"&B1) // count dates greater than A1
+Notice we must concatenate an operator to the date in B1. To use more advanced date criteria (i.e. all dates in a given month, or all dates between two dates) you'll want to switch to the COUNTIFS function, which can handle multiple criteria.
+The safest way to hardcode a date into COUNTIF is to use the DATE function. This ensures Excel will understand the date. To count cells in A1:A10 that contain a date less than April 1, 2020, you can use a formula like this
+=COUNTIF(A1:A10,"<"&DATE(2020,4,1)) // dates less than 1-Apr-2020
+Wildcards
+The wildcard characters question mark (?), asterisk(*), or tilde (~) can be used in criteria. A question mark (?) matches any one character and an asterisk (*) matches zero or more characters of any kind. For example, to count cells in A1:A5 that contain the text "apple" anywhere, you can use a formula like this:
+=COUNTIF(A1:A5,"*apple*") // cells that contain "apple"
+To count cells in A1:A5 that contain any 3 text characters, you can use:
+=COUNTIF(A1:A5,"???") // cells that contain any 3 characters
+The tilde (~) is an escape character to match literal wildcards. For example, to count a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+OR logic
+The COUNTIF function is designed to apply just one condition. However, to count cells that contain "this OR that", you can use an array constant and the SUM function like this:
+=SUM(COUNTIF(range,{"red","blue"})) // red or blue
+The formula above will count cells in range that contain "red" or "blue". Essentially, COUNTIF returns two counts in an array (one for "red" and one for "blue") and the SUM function returns the sum. For more information, see this example.
+Limitations
+The COUNTIF function has some limitations you should be aware of:
+COUNTIF only supports a single condition. If you need to count cells using multiple criteria, use the COUNTIFS function.
+COUNTIF requires an actual range for the range argument; you can't provide an array. This means you can't alter values in range before applying criteria.
+COUNTIF is not case-sensitive. Use the EXACT function for case-sensitive counts.
+COUNTIFS has other quirks explained in this article.
+The most common way to work around the limitations above is to use the SUMPRODUCT function. In the current version of Excel, another option is to use the newer BYROW and BYCOL functions.
+Notes
+Text strings in criteria must be enclosed in double quotes (""), i.e. "apple", ">32", "app*"
+Cell references in criteria are not enclosed in quotes, i.e. "<"&A1
+The wildcard characters ? and * can be used in criteria. A question mark matches any one character and an asterisk matches any sequence of characters (zero or more).
+To match a literal question mark(?) or asterisk (*), use a tilde (~) like (~?, ~*).
+COUNTIF requires a range, you can't substitute an array.
+COUNTIF returns incorrect results when used to match strings longer than 255 characters.
+COUNTIF will return a #VALUE error when referencing another workbook that is closed.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Highlight cells that end with 
+Count unique numeric values in a range 
+Highlight cells that begin with 
+Value exists in a range 
+Basic text sort formula 
+Count cells not between two numbers 
+Must pass 4 out of 6 subjects 
+Count cells that contain either x or y 
+Count long numbers 
+Count cells that contain text 
+Videos
+  
+How to create a dynamic named range with a Table 
+How to use the COUNTIF function 
+How to compare two lists and highlight differences 
+How to find missing values with COUNTIF 
+How to build a simple summary table 
+How to plot survey data in a bar chart 
+Formulas to query a table 
+List duplicate values with FILTER 
+ Functions COUNTIF FunctionCOUNTIFS FunctionCOUNT FunctionCOUNTA Function 
+ Articles Excel's RACON functions 
+ Links Microsoft COUNTIF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel COUNTIF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUNTIF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+COUNTIF Function
+Related functions 
+COUNTIF
+COUNTIFS
+COUNT
+COUNTA
+Summary
+COUNTIF is an Excel function to count cells in a range that meet a single condition. COUNTIF can be used to count cells that contain dates, numbers, and text. The criteria used in COUNTIF supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Count cells that match criteria
+Return value 
+A number representing cells counted.
+Arguments 
+range - The range of cells to count.criteria - The criteria that controls which cells should be counted.
+Syntax 
+=COUNTIF(range, criteria)
+Usage notes 
+The COUNTIF function counts cells in a range that meet a given condition, referred to as criteria. COUNTIF is a common, widely used function in Excel, and can be used to count cells that contain dates, numbers, and text. Note that COUNTIF can only apply a single condition. To count cells with multiple criteria, see the COUNTIFS function.
+Syntax
+The generic syntax for COUNTIF looks like this:
+=COUNTIF(range,criteria)
+The COUNTIF function takes two arguments, range and criteria. Range is the range of cells to apply a condition to. Criteria is the condition to apply, along with any logical operators that are needed.
+Applying criteria
+The COUNTIF function supports logical operators (>,<,<>,<=,>=) and wildcards (*,?) for partial matching. The tricky part about using the COUNTIF function is the syntax used to apply criteria. COUNTIFS is in a group of eight functions that split logical criteria into two parts, range and criteria. Because of this design, each condition requires a separate range and criteria argument, and operators in the criteria must be enclosed in double quotes (""). The table below shows examples of the syntax needed for common criteria:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples involve concatenation with the ampersand (&) character.  Any time you are using a value from another cell, or using the result of a formula in criteria with a logical operator like "<", you will need to concatenate. This is because Excel needs to evaluate cell references and formulas first to get a value, before that value can be joined to an operator.
+Basic example
+In the worksheet shown above, the following formulas are used in cells G5, G6, and G7:
+=COUNTIF(D5:D12,">100") // count sales over 100
+=COUNTIF(B5:B12,"jim") // count name = "jim"
+=COUNTIF(C5:C12,"ca") // count state = "ca"
+Notice COUNTIF is not case-sensitive, "CA" and "ca" are treated the same.
+Double quotes ("") in criteria
+In general, text values need to be enclosed in double quotes (""), and numbers do not. However, when a logical operator is included with a number, the number and operator must be enclosed in quotes, as seen in the second example below:
+=COUNTIF(A1:A10,100) // count cells equal to 100
+=COUNTIF(A1:A10,">32") // count cells greater than 32
+=COUNTIF(A1:A10,"jim") // count cells equal to "jim"
+Value from another cell
+A value from another cell can be included in criteria using concatenation. In the example below, COUNTIF will return the count of values in A1:A10 that are less than the value in cell B1. Notice the less than operator (which is text) is enclosed in quotes.
+=COUNTIF(A1:A10,"<"&B1) // count cells less than  B1
+Not equal to
+To construct "not equal to" criteria, use the "<>" operator surrounded by double quotes (""). For example, the formula below will count cells not equal to "red" in the range A1:A10:
+=COUNTIF(A1:A10,"<>red") // not "red"
+Blank cells
+COUNTIF can count cells that are blank or not blank. The formulas below count blank and not blank cells in the range A1:A10:
+=COUNTIF(A1:A10,"<>") // not blank
+=COUNTIF(A1:A10,"") // blank
+Note: be aware that COUNTIF treats formulas that return an empty string ("") as not blank. See this example for some workarounds to this problem.
+Dates
+The easiest way to use COUNTIF with dates is to refer to a valid date in another cell with a cell reference. For example, to count cells in A1:A10 that contain a date greater than the date in B1, you can use a formula like this:
+=COUNTIF(A1:A10, ">"&B1) // count dates greater than A1
+Notice we must concatenate an operator to the date in B1. To use more advanced date criteria (i.e. all dates in a given month, or all dates between two dates) you'll want to switch to the COUNTIFS function, which can handle multiple criteria.
+The safest way to hardcode a date into COUNTIF is to use the DATE function. This ensures Excel will understand the date. To count cells in A1:A10 that contain a date less than April 1, 2020, you can use a formula like this
+=COUNTIF(A1:A10,"<"&DATE(2020,4,1)) // dates less than 1-Apr-2020
+Wildcards
+The wildcard characters question mark (?), asterisk(*), or tilde (~) can be used in criteria. A question mark (?) matches any one character and an asterisk (*) matches zero or more characters of any kind. For example, to count cells in A1:A5 that contain the text "apple" anywhere, you can use a formula like this:
+=COUNTIF(A1:A5,"*apple*") // cells that contain "apple"
+To count cells in A1:A5 that contain any 3 text characters, you can use:
+=COUNTIF(A1:A5,"???") // cells that contain any 3 characters
+The tilde (~) is an escape character to match literal wildcards. For example, to count a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+OR logic
+The COUNTIF function is designed to apply just one condition. However, to count cells that contain "this OR that", you can use an array constant and the SUM function like this:
+=SUM(COUNTIF(range,{"red","blue"})) // red or blue
+The formula above will count cells in range that contain "red" or "blue". Essentially, COUNTIF returns two counts in an array (one for "red" and one for "blue") and the SUM function returns the sum. For more information, see this example.
+Limitations
+The COUNTIF function has some limitations you should be aware of:
+COUNTIF only supports a single condition. If you need to count cells using multiple criteria, use the COUNTIFS function.
+COUNTIF requires an actual range for the range argument; you can't provide an array. This means you can't alter values in range before applying criteria.
+COUNTIF is not case-sensitive. Use the EXACT function for case-sensitive counts.
+COUNTIFS has other quirks explained in this article.
+The most common way to work around the limitations above is to use the SUMPRODUCT function. In the current version of Excel, another option is to use the newer BYROW and BYCOL functions.
+Notes
+Text strings in criteria must be enclosed in double quotes (""), i.e. "apple", ">32", "app*"
+Cell references in criteria are not enclosed in quotes, i.e. "<"&A1
+The wildcard characters ? and * can be used in criteria. A question mark matches any one character and an asterisk matches any sequence of characters (zero or more).
+To match a literal question mark(?) or asterisk (*), use a tilde (~) like (~?, ~*).
+COUNTIF requires a range, you can't substitute an array.
+COUNTIF returns incorrect results when used to match strings longer than 255 characters.
+COUNTIF will return a #VALUE error when referencing another workbook that is closed.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Highlight cells that end with 
+Count unique numeric values in a range 
+Highlight cells that begin with 
+Value exists in a range 
+Basic text sort formula 
+Count cells not between two numbers 
+Must pass 4 out of 6 subjects 
+Count cells that contain either x or y 
+Count long numbers 
+Count cells that contain text 
+Videos
+  
+How to create a dynamic named range with a Table 
+How to use the COUNTIF function 
+How to compare two lists and highlight differences 
+How to find missing values with COUNTIF 
+How to build a simple summary table 
+How to plot survey data in a bar chart 
+Formulas to query a table 
+List duplicate values with FILTER 
+ Functions COUNTIF FunctionCOUNTIFS FunctionCOUNT FunctionCOUNTA Function 
+ Articles Excel's RACON functions 
+ Links Microsoft COUNTIF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

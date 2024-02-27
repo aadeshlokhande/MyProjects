@@ -1,0 +1,10 @@
+Summary
+The Excel QUARTILE.EXC function returns the quartile for a given set of data. QUARTILE.EXC can return, first quartile, second quartile, and third quartile.
+Purpose 
+Get the quartile in a data set
+Return value 
+Value for requested quartile
+Arguments 
+array - A reference containing data to analyze.quart - The quartile value to return, 1-3.
+Syntax 
+=QUARTILE.EXC(array, quart)

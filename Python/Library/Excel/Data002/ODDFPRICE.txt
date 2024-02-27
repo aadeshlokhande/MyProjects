@@ -1,0 +1,10 @@
+Summary
+The Excel ODDFPRICE function returns the price per $100 face value of a security with an odd (irregular) first period.
+Purpose 
+Get price per $100 odd first period
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.fd - First coupon date.rate - Annual coupon rate of security.yld - Annual required rate of return.redem - Redemption value per $100 face value.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=ODDFPRICE(sd, md, id, fd, rate, yld, redem, freq, [basis])

@@ -1,0 +1,274 @@
+Excel ISTEXT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISTEXT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISTEXT Function
+Related functions 
+ISNONTEXT
+ISNUMBER
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISLOGICAL
+ISFORMULA
+ISNA
+ISNONTEXT
+ISODD
+ISREF
+Summary
+The Excel ISTEXT function returns TRUE when a cell contains a text value, and FALSE if the cell contains any other value. You can use the ISTEXT function to check if a cell contains a text value, or a numeric value entered as text.
+Purpose 
+Test for a text value
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The value to check.
+Syntax 
+=ISTEXT(value)
+Usage notes 
+The ISTEXT function returns TRUE when a cell contains a text value, and FALSE if the cell contains any other value, or is empty. You can use the ISTEXT function to check if a cell contains a text value, or a numeric value entered as text.
+The ISTEXT function takes one argument, value, which can be a cell reference, a formula, or a hardcoded value. Typically, value is entered as a cell reference like A1. When value is text, the ISTEXT function will return TRUE. If value is any other value, ISTEXT will return FALSE.
+Examples
+The ISTEXT function returns TRUE if value is text:
+=ISTEXT("apple") // returns TRUE
+=ISTEXT(100) // returns FALSE
+If cell A1 contains the number 100, ISTEXT returns FALSE:
+=ISTEXT(A1) // returns FALSE
+If a cell contains a formula, ISTEXT checks the result of the formula:
+=ISTEXT(10 &" apples") // returns TRUE
+=ISTEXT(2+2) // returns FALSE
+=ISTEXT(A1&B1) // returns TRUE
+Note: the ampersand (&) is the concatenation operator in Excel. When values are concatenated, the result is text.
+Count text values
+To count cells in a range that contain text, you can use the SUMPRODUCT function like this:
+=SUMPRODUCT(--ISTEXT(range))
+The double negative coerces the TRUE and FALSE results from ISTEXT into 1s and 0s and SUMPRODUCT sums the result.
+Notes
+Dates and times are numbers, not text.
+The ISNONTEXT function tests for non-text values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Data validation allow text only 
+Count cells that contain text 
+VLOOKUP with numbers and text 
+Videos
+  
+What is text in Excel  
+ Functions ISNONTEXT FunctionISNUMBER FunctionISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISLOGICAL FunctionISFORMULA FunctionISNA FunctionISNONTEXT FunctionISODD FunctionISREF Function 
+ Links Microsoft ISTEXT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ISTEXT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISTEXT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISTEXT Function
+Related functions 
+ISNONTEXT
+ISNUMBER
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISLOGICAL
+ISFORMULA
+ISNA
+ISNONTEXT
+ISODD
+ISREF
+Summary
+The Excel ISTEXT function returns TRUE when a cell contains a text value, and FALSE if the cell contains any other value. You can use the ISTEXT function to check if a cell contains a text value, or a numeric value entered as text.
+Purpose 
+Test for a text value
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The value to check.
+Syntax 
+=ISTEXT(value)
+Usage notes 
+The ISTEXT function returns TRUE when a cell contains a text value, and FALSE if the cell contains any other value, or is empty. You can use the ISTEXT function to check if a cell contains a text value, or a numeric value entered as text.
+The ISTEXT function takes one argument, value, which can be a cell reference, a formula, or a hardcoded value. Typically, value is entered as a cell reference like A1. When value is text, the ISTEXT function will return TRUE. If value is any other value, ISTEXT will return FALSE.
+Examples
+The ISTEXT function returns TRUE if value is text:
+=ISTEXT("apple") // returns TRUE
+=ISTEXT(100) // returns FALSE
+If cell A1 contains the number 100, ISTEXT returns FALSE:
+=ISTEXT(A1) // returns FALSE
+If a cell contains a formula, ISTEXT checks the result of the formula:
+=ISTEXT(10 &" apples") // returns TRUE
+=ISTEXT(2+2) // returns FALSE
+=ISTEXT(A1&B1) // returns TRUE
+Note: the ampersand (&) is the concatenation operator in Excel. When values are concatenated, the result is text.
+Count text values
+To count cells in a range that contain text, you can use the SUMPRODUCT function like this:
+=SUMPRODUCT(--ISTEXT(range))
+The double negative coerces the TRUE and FALSE results from ISTEXT into 1s and 0s and SUMPRODUCT sums the result.
+Notes
+Dates and times are numbers, not text.
+The ISNONTEXT function tests for non-text values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Data validation allow text only 
+Count cells that contain text 
+VLOOKUP with numbers and text 
+Videos
+  
+What is text in Excel  
+ Functions ISNONTEXT FunctionISNUMBER FunctionISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISLOGICAL FunctionISFORMULA FunctionISNA FunctionISNONTEXT FunctionISODD FunctionISREF Function 
+ Links Microsoft ISTEXT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

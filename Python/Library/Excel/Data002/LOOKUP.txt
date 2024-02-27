@@ -1,0 +1,10 @@
+Summary
+The Excel LOOKUP function performs an approximate match lookup in a one-column or one-row range, and returns the corresponding value from another one-column or one-row range. LOOKUP's default behavior makes it useful for solving certain problems in Excel.
+Purpose 
+Look up a value in a one-column range
+Return value 
+A value in the result vector.
+Arguments 
+lookup_value - The value to search for.lookup_vector - The one-row, or one-column range to search.result_vector - [optional] The one-row, or one-column range of results.
+Syntax 
+=LOOKUP(lookup_value, lookup_vector, [result_vector])

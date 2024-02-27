@@ -1,0 +1,10 @@
+Summary
+The Excel FORECAST.ETS.STAT function returns a particular statistical value relating related to time series forecasting with the FORECAST.ETS function. The statistic_type argument determines which statistic is returned by FORECAST.ETS.STAT.
+Purpose 
+Get statistical value related to forecasting
+Return value 
+Requested statistic
+Arguments 
+values - Existing or historical values (y values).timeline - Numeric timeline values (x values).statistic_type - The statistic to return, a numeric value between 1 and 8 (see table below).seasonality - [optional] Seasonality calculation (0 = no seasonality, 1 = automatic, n = season length in timeline units).data_completion - [optional] Missing data treatment (0 = treat as zero, 1 = average). Default is 1.aggregation - [optional] Aggregation behavior. Default is 1 (AVERAGE). See other options below.
+Syntax 
+=FORECAST.ETS.STAT(values, timeline, statistic_type, [seasonality], [data_completion], [aggregation])

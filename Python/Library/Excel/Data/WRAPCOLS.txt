@@ -1,0 +1,637 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel WRAPCOLS function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+WRAPCOLS Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+WRAPCOLS Function
+Related functions 
+
+WRAPROWS
+TOROW
+TOCOL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel WRAPCOLS function converts a one-dimensional array into a two-dimensional array by wrapping values into separate columns. The length of each column is given as the wrap_count argument: when the count is reached, WRAPCOLS starts a new column.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Wrap array into columns
+
+
+
+Return value 
+
+Array wrapped by column
+
+
+
+Arguments 
+
+vector - The array or range to wrap.wrap_count - Max values in each column.pad_with - [optional] Value to use for unfilled places.
+
+
+
+Syntax 
+
+=WRAPCOLS(vector, wrap_count, [pad_with])
+
+
+
+Usage notes 
+
+The WRAPCOLS function converts a one-dimensional array into a two-dimensional array by wrapping values into separate columns. The length of each column is given as the wrap_count argument: when the count is reached, WRAPCOLS starts a new column.
+The WRAPCOLS function takes three arguments: vector, wrap_count, and pad_with. Vector and wrap_count are both required. Vector must be a one-dimensional array or range. Wrap_count is a number that represents the length of each column. The final argument, pad_with, is an optional value to use if there are empty spots in the last column. If no value is supplied for pad_with, WRAPCOLS will return an #N/A error after all values in vector have been used. You can override this behavior by providing a custom value for the pad_with argument.
+Basic usage
+WRAPCOLS outputs values "by column", working top to bottom, left to right. When wrap_count has been reached, WRAPCOLS starts a new column. In the worksheet below, the goal is to wrap the range C2:J2 into columns that each contain 4 values. The formula in B5 is:
+
+=WRAPCOLS(C2:J2,4)
+
+
+Notice WRAPCOLS outputs values by column, top to bottom, and each column contains 4 rows.
+Wrap count
+Wrap_count represents the maximum number of values in each column. Once the count has been reached, WRAPCOLS starts a new column. In the screen below, you can see how this works. The formula in D3 uses a wrap_count of 3:
+
+=WRAPCOLS(B3:B14,4)
+
+The formula in D10 uses a wrap_count of 4:
+
+=WRAPCOLS(B3:B14,3)
+
+
+Notice values are output top to bottom.
+Padding
+If no value is supplied for pad_with, WRAPCOLS will return an #N/A error after all values in the source array have been accounted for. You will see these errors appear in the last column when the total number of items in the source array is not evenly divisible by the wrap_count. You can override this behavior by providing a custom value for the pad_with argument. The formula in D3 shows default behavior. No value for pad_with has been provided:
+
+=WRAPCOLS(B3:B12,4)
+
+The input range contains only 10 cells, which is not evenly divisible by a wrap_count of 4. As a result, the last 2 cells return #N/A. The formula in D10 supplied "x" for pad_with:
+
+=WRAPCOLS(B3:B12,4,"x")
+
+
+Notice the  #N/A errors have been replaced by "x" in the resulting array.
+Notes
+
+WRAPCOLS will return a #VALUE! error if vector is not a one-dimensional array or range.
+Wrap_count indicates the size of each column not the number of columns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions WRAPROWS FunctionTOROW FunctionTOCOL Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel WRAPCOLS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+WRAPCOLS Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+WRAPCOLS Function
+Related functions 
+WRAPROWS
+TOROW
+TOCOL
+Summary
+The Excel WRAPCOLS function converts a one-dimensional array into a two-dimensional array by wrapping values into separate columns. The length of each column is given as the wrap_count argument: when the count is reached, WRAPCOLS starts a new column.
+Purpose 
+Wrap array into columns
+Return value 
+Array wrapped by column
+Arguments 
+vector - The array or range to wrap.wrap_count - Max values in each column.pad_with - [optional] Value to use for unfilled places.
+Syntax 
+=WRAPCOLS(vector, wrap_count, [pad_with])
+Usage notes 
+The WRAPCOLS function converts a one-dimensional array into a two-dimensional array by wrapping values into separate columns. The length of each column is given as the wrap_count argument: when the count is reached, WRAPCOLS starts a new column.
+The WRAPCOLS function takes three arguments: vector, wrap_count, and pad_with. Vector and wrap_count are both required. Vector must be a one-dimensional array or range. Wrap_count is a number that represents the length of each column. The final argument, pad_with, is an optional value to use if there are empty spots in the last column. If no value is supplied for pad_with, WRAPCOLS will return an #N/A error after all values in vector have been used. You can override this behavior by providing a custom value for the pad_with argument.
+Basic usage
+WRAPCOLS outputs values "by column", working top to bottom, left to right. When wrap_count has been reached, WRAPCOLS starts a new column. In the worksheet below, the goal is to wrap the range C2:J2 into columns that each contain 4 values. The formula in B5 is:
+=WRAPCOLS(C2:J2,4)
+Notice WRAPCOLS outputs values by column, top to bottom, and each column contains 4 rows.
+Wrap count
+Wrap_count represents the maximum number of values in each column. Once the count has been reached, WRAPCOLS starts a new column. In the screen below, you can see how this works. The formula in D3 uses a wrap_count of 3:
+=WRAPCOLS(B3:B14,4)
+The formula in D10 uses a wrap_count of 4:
+=WRAPCOLS(B3:B14,3)
+Notice values are output top to bottom.
+Padding
+If no value is supplied for pad_with, WRAPCOLS will return an #N/A error after all values in the source array have been accounted for. You will see these errors appear in the last column when the total number of items in the source array is not evenly divisible by the wrap_count. You can override this behavior by providing a custom value for the pad_with argument. The formula in D3 shows default behavior. No value for pad_with has been provided:
+=WRAPCOLS(B3:B12,4)
+The input range contains only 10 cells, which is not evenly divisible by a wrap_count of 4. As a result, the last 2 cells return #N/A. The formula in D10 supplied "x" for pad_with:
+=WRAPCOLS(B3:B12,4,"x")
+Notice the  #N/A errors have been replaced by "x" in the resulting array.
+Notes
+WRAPCOLS will return a #VALUE! error if vector is not a one-dimensional array or range.
+Wrap_count indicates the size of each column not the number of columns.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions WRAPROWS FunctionTOROW FunctionTOCOL Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

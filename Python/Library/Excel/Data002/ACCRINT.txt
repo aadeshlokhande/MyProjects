@@ -1,0 +1,10 @@
+Summary
+The Excel ACCRINT function returns the accrued interest for a security that pays periodic interest
+Purpose 
+Get accrued interest periodic
+Return value 
+Accrued interest
+Arguments 
+id - Issue date of the security.fd - First interest date of security.sd - Settlement date of security.rate - Interest rate of security.par - Par value of security.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).calc - [optional] Calculation method (see below, default = TRUE).
+Syntax 
+=ACCRINT(id, fd, sd, rate, par, freq, [basis], [calc])

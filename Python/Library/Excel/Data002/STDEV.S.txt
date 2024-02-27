@@ -1,0 +1,10 @@
+Summary
+The Excel STDEV.S function calculates the standard deviation for a sample set of data. STDEV.S replaces the older STDEV function, with the same behavior.
+Purpose 
+Get the standard deviation in a sample
+Return value 
+Estimated standard deviation
+Arguments 
+number1 - First number or reference in the sample.number2 - [optional] Second number or reference.
+Syntax 
+=STDEV.S(number1, [number2], ...)

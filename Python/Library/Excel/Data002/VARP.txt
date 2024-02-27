@@ -1,0 +1,10 @@
+Summary
+The Excel VARP function calculates the variance of an entire population of data. If data represents a sample, use the VAR function or the newer VAR.S function. VARP ignores text values and logicals in references.
+Purpose 
+Get variation of a population
+Return value 
+Computed variance
+Arguments 
+number1 - First number or reference.number2 - [optional] Second number or reference.
+Syntax 
+=VARP(number1, [number2], ...)

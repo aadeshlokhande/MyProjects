@@ -1,0 +1,10 @@
+Summary
+The Excel IMREAL function returns the real coefficient of a complex number in the form x + yi or x + yj. 
+Purpose 
+Get real coefficient of complex number
+Return value 
+Real coefficient as number
+Arguments 
+inumber - A complex number.
+Syntax 
+=IMREAL(inumber)

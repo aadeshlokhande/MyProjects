@@ -1,0 +1,10 @@
+Summary
+The Excel CONVERT function converts a number in one measurement system to another. For example, you can use CONVERT to convert feet into meters, pounds into kilograms, Fahrenheit to Celsius, gallons into liters, and for many other unit conversions.
+Purpose 
+Convert measurement units
+Return value 
+A number in the new measurement system
+Arguments 
+number - The numeric value to convert.from_unit - The starting units for number.to_unit - The ending units for the result.
+Syntax 
+=CONVERT(number, from_unit, to_unit)

@@ -1,0 +1,10 @@
+Summary
+The Excel FLOOR function rounds a given number down to the nearest specified multiple. FLOOR works like the MROUND function, but FLOOR always rounds down.
+Purpose 
+Round a number down to the nearest specified multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - The multiple to use when rounding.
+Syntax 
+=FLOOR(number, significance)

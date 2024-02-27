@@ -1,0 +1,10 @@
+Summary
+The Excel MROUND function returns a number rounded to a given multiple. MROUND will round a number up or down, depending on the nearest multiple.
+Purpose 
+Round a number to the nearest specified multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - The multiple to use when rounding.
+Syntax 
+=MROUND(number, significance)

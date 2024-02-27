@@ -1,0 +1,679 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel COLUMNS function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+COLUMNS Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+COLUMNS Function
+Related functions 
+
+ROWS
+ROW
+COLUMN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel COLUMNS function returns the count of columns in a given reference. For example, COLUMNS(A1:C3) returns 3, since the range A1:C3 contains 3 columns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the number of columns in an array or reference.
+
+
+
+Return value 
+
+Number of columns
+
+
+
+Arguments 
+
+array - A reference to a range of cells.
+
+
+
+Syntax 
+
+=COLUMNS(array)
+
+
+
+Usage notes 
+
+The COLUMNS function returns the count of columns in a given reference as a number. For example, COLUMNS(A1:C3) returns 3, since the range A1:C3 contains 3 columns. COLUMNS takes just one argument, called array, which should be a range or array.
+Examples
+Use the COLUMNS function to get the column count for a given reference or range. For example, there are 6 columns in the range A1:F1 so the formula below returns 6:
+
+=COLUMNS(A1:F1) // returns 6
+
+The range A1:Z100 contains 26 columns, so the formula below returns 100: 
+
+=COLUMNS(A1:Z100) // returns 26
+
+You can also use the COLUMNS function to get a column count for an array constant:
+
+=COLUMNS({1,2,3,4,5}) // returns 5
+
+Although there is no built-in function to count the number of cells in a range, you can use the COLUMNS function together with the ROWS function like this:
+
+=COLUMNS(range)*ROWS(range) // total cells
+=COLUMNS(A1:Z100)*ROWS(A1:Z100) // returns 2600
+
+More details here.
+Notes
+
+Array can be a range or a reference to a single contiguous group of cells.
+Array can be an array constant or an array created by another formula.
+To count rows, see the ROW function.
+To get column numbers, see the COLUMN function.
+To lookup a column number, see the MATCH function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Address of last cell in range 
+
+Combine ranges 
+
+Sum last n columns 
+
+XLOOKUP match any column 
+
+Extract multiple matches into separate columns 
+
+Count table columns 
+
+Get relative column numbers in range 
+
+Last column number in range 
+
+Total columns in range 
+
+Total cells in a range 
+
+
+
+Videos
+  
+How Excel Table ranges work 
+
+Formulas to query a table 
+
+Introduction to structured references 
+
+
+ Functions ROWS FunctionROW FunctionCOLUMN Function 
+ Links Microsoft COLUMNS function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel COLUMNS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COLUMNS Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+COLUMNS Function
+Related functions 
+ROWS
+ROW
+COLUMN
+Summary
+The Excel COLUMNS function returns the count of columns in a given reference. For example, COLUMNS(A1:C3) returns 3, since the range A1:C3 contains 3 columns.
+Purpose 
+Get the number of columns in an array or reference.
+Return value 
+Number of columns
+Arguments 
+array - A reference to a range of cells.
+Syntax 
+=COLUMNS(array)
+Usage notes 
+The COLUMNS function returns the count of columns in a given reference as a number. For example, COLUMNS(A1:C3) returns 3, since the range A1:C3 contains 3 columns. COLUMNS takes just one argument, called array, which should be a range or array.
+Examples
+Use the COLUMNS function to get the column count for a given reference or range. For example, there are 6 columns in the range A1:F1 so the formula below returns 6:
+=COLUMNS(A1:F1) // returns 6
+The range A1:Z100 contains 26 columns, so the formula below returns 100: 
+=COLUMNS(A1:Z100) // returns 26
+You can also use the COLUMNS function to get a column count for an array constant:
+=COLUMNS({1,2,3,4,5}) // returns 5
+Although there is no built-in function to count the number of cells in a range, you can use the COLUMNS function together with the ROWS function like this:
+=COLUMNS(range)*ROWS(range) // total cells
+=COLUMNS(A1:Z100)*ROWS(A1:Z100) // returns 2600
+More details here.
+Notes
+Array can be a range or a reference to a single contiguous group of cells.
+Array can be an array constant or an array created by another formula.
+To count rows, see the ROW function.
+To get column numbers, see the COLUMN function.
+To lookup a column number, see the MATCH function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Address of last cell in range 
+Combine ranges 
+Sum last n columns 
+XLOOKUP match any column 
+Extract multiple matches into separate columns 
+Count table columns 
+Get relative column numbers in range 
+Last column number in range 
+Total columns in range 
+Total cells in a range 
+Videos
+  
+How Excel Table ranges work 
+Formulas to query a table 
+Introduction to structured references 
+ Functions ROWS FunctionROW FunctionCOLUMN Function 
+ Links Microsoft COLUMNS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,612 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel VALUETOTEXT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+VALUETOTEXT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+VALUETOTEXT Function
+Related functions 
+
+ARRAYTOTEXT
+TEXT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel VALUETOTEXT function converts a value to text. By default, text values pass though unaffected. However, in strict mode, text values are enclosed in double quotes (""). Numeric values are converted to text in all cases and number formatting is lost.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Converts a value to a text string
+
+
+
+Return value 
+
+Value as a text string
+
+
+
+Arguments 
+
+value - The value to convert to text.format - [optional] Output format. 0 = concise (default), and 1 = strict.
+
+
+
+Syntax 
+
+=VALUETOTEXT(value, [format])
+
+
+
+Usage notes 
+
+The VALUETOTEXT function converts a value to a text string. By default, text values pass though unaffected. However, in strict mode, text values are enclosed in double quotes (""). VALUETOTEXT will always remove number formatting applied to numeric values regardless of format.
+The VALUETOTEXT function takes two arguments: value and format. Value is the value to convert to text. The format argument controls the structure of the output. By default, format is zero and VALUETOTEXT will output a "concise" format text value, essentially the normal format that Excel will use to display any text value. When format is set to 1 (strict format), text values will be enclosed in double quotes ("").
+Note: the ARRAYTOTEXT function performs the same kind of text conversion on arrays.
+With numeric values
+With the value 100 in cell A1:
+
+=VALUETOTEXT(A1) // returns "100"
+=VALUETOTEXT(A1,0) // returns "100"
+=VALUETOTEXT(A1,1) // returns "100"
+
+In all cases, 100 is returned as a normal text string, and you will not see double quotes ("") in the output on a worksheet. However, you will see the output aligned left in cells with the General number format applied, since text values appear aligned left in Excel by default. If any number formatting (i.e. currency, percentage, etc.) has been applied to cell A1, it will be lost in the conversion.
+With a text values
+With the text "apple" in cell A1:
+
+=VALUETOTEXT(A1) // returns "apple"
+=VALUETOTEXT(A1,0) // returns "apple"
+=VALUETOTEXT(A1,1) // returns ""apple""
+
+Notice in the first two examples above, the text "apple" passes through unchanged. In the third example, where format is set to 1 (strict), double quotes are added to the text and will display on the worksheet.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions ARRAYTOTEXT FunctionTEXT Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel VALUETOTEXT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VALUETOTEXT Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+VALUETOTEXT Function
+Related functions 
+ARRAYTOTEXT
+TEXT
+Summary
+The Excel VALUETOTEXT function converts a value to text. By default, text values pass though unaffected. However, in strict mode, text values are enclosed in double quotes (""). Numeric values are converted to text in all cases and number formatting is lost.
+Purpose 
+Converts a value to a text string
+Return value 
+Value as a text string
+Arguments 
+value - The value to convert to text.format - [optional] Output format. 0 = concise (default), and 1 = strict.
+Syntax 
+=VALUETOTEXT(value, [format])
+Usage notes 
+The VALUETOTEXT function converts a value to a text string. By default, text values pass though unaffected. However, in strict mode, text values are enclosed in double quotes (""). VALUETOTEXT will always remove number formatting applied to numeric values regardless of format.
+The VALUETOTEXT function takes two arguments: value and format. Value is the value to convert to text. The format argument controls the structure of the output. By default, format is zero and VALUETOTEXT will output a "concise" format text value, essentially the normal format that Excel will use to display any text value. When format is set to 1 (strict format), text values will be enclosed in double quotes ("").
+Note: the ARRAYTOTEXT function performs the same kind of text conversion on arrays.
+With numeric values
+With the value 100 in cell A1:
+=VALUETOTEXT(A1) // returns "100"
+=VALUETOTEXT(A1,0) // returns "100"
+=VALUETOTEXT(A1,1) // returns "100"
+In all cases, 100 is returned as a normal text string, and you will not see double quotes ("") in the output on a worksheet. However, you will see the output aligned left in cells with the General number format applied, since text values appear aligned left in Excel by default. If any number formatting (i.e. currency, percentage, etc.) has been applied to cell A1, it will be lost in the conversion.
+With a text values
+With the text "apple" in cell A1:
+=VALUETOTEXT(A1) // returns "apple"
+=VALUETOTEXT(A1,0) // returns "apple"
+=VALUETOTEXT(A1,1) // returns ""apple""
+Notice in the first two examples above, the text "apple" passes through unchanged. In the third example, where format is set to 1 (strict), double quotes are added to the text and will display on the worksheet.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions ARRAYTOTEXT FunctionTEXT Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

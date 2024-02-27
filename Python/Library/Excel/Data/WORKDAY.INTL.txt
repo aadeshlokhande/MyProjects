@@ -1,0 +1,772 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel WORKDAY.INTL function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+WORKDAY.INTL Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2010
+
+
+
+
+Date and time
+
+
+WORKDAY.INTL Function
+Related functions 
+
+EDATE
+NETWORKDAYS
+NETWORKDAYS.INTL
+WORKDAY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel WORKDAY.INTL function takes a date and returns the nearest working n days in the future or past, based on an offset value you provide. Unlike the WORKDAY function, WORKDAY.INTL allows you to customize which days are considered weekends (non-working days). You can use WORKDAY.INTL function to calculate completion dates, ship dates, etc. that take into account non-working days.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get date n working days in future or past
+
+
+
+Return value 
+
+Next or previous working date based on inputs
+
+
+
+Arguments 
+
+start_date - The start date.days - The end date.weekend - [optional] Setting for which days of the week should be considered weekends.holidays - [optional] A list of one or more dates that should be considered non-work days.
+
+
+
+Syntax 
+
+=WORKDAY.INTL(start_date, days, [weekend], [holidays])
+
+
+
+Usage notes 
+
+The WORKDAY.INTL function calculates the "nearest" working day n days in the past or future, taking into non-working days. WORKDAY.INTL can be used to calculate due dates, delivery dates, and other dates that must exclude non-working days. Use a positive number as days for future dates and a negative number for past dates. This function is more robust than the WORKDAY function because it lets you customize which days of the week are considered weekends.
+The WORKDAY.INTL function takes four arguments: start_date, days, weekend, and holidays. Start_date must be a valid Excel date. The days argument is the number of days in the future or past to move from start_date, taking into account non-working days. Use a positive number for days to move forward in time, and a negative number to move back.
+The weekend argument is optional and controls which day(s) of the week should be considered weekends, and therefore non-working days. By default, WORKDAY.INTL will treat Saturday and Sunday as non-working days. See below for details on how to configure weekend to treat different days of the week as non-working days.
+Holidays is an optional argument to specify non-working days. Holidays should be provided as a range that contains valid Excel dates. If holidays are not provided, WORKDAY.INTL will treat only Saturdays and Sundays as non-working days, unless the weekend argument has been set differently.
+Note: WORKDAY.INTL does not include the start date as a work day. 
+Example #1 - basic usage
+With the start_date in A1, days set to 1, and holidays in C1:C3:
+
+=WORKDAY.INTL(A1,1) // default - Sat and Sun excluded
+=WORKDAY.INTL(A1,1,11) // exclude Sun only
+=WORKDAY.INTL(A1,1,11,C1:C3) // exclude Sun + dates in C1:C3
+
+In the last two examples above, we use the numeric code 11 to set weekends to Mondays only. See the table below for the full list of available codes.
+Example #2 - Weekend mask
+Another (easier) way to specify weekend days is to use a 7-character "mask" to indicate weekends with ones and zeros.  In this scheme, a text string of 7 ones and zeros are provided to indicate weekends, were the first character is Monday, and the last character is Sunday. Use one (1) to indicate weekend, and zero (0) to indicate a working day. This method is more flexible, since it allows you to designate any day(s) of the week as a weekend (i.e. non-working days). For example:
+
+=WORKDAY.INTL(A1,3,"0000000") // no weekends
+=WORKDAY.INTL(A1,3,"1000000") // weekend = Mon
+=WORKDAY.INTL(A1,3,"1100000") // weekend = Mon+Tue
+=WORKDAY.INTL(A1,3,"1110000") // weekend = Mon+Tue+Wed
+=WORKDAY.INTL(A1,3,"1010000") // weekend = Mon+Wed
+
+Weekend codes
+Use any of the codes below for the weekend argument to select a "fixed" weekend option.
+
+
+
+Code
+Weekend days
+
+
+1 (default)
+Saturday, Sunday
+
+
+2
+Sunday, Monday
+
+
+3
+Monday, Tuesday
+
+
+4
+Tuesday, Wednesday
+
+
+5
+Wednesday, Thursday
+
+
+6
+Thursday, Friday
+
+
+7
+Friday, Saturday
+
+
+11
+Sunday only
+
+
+12
+Monday only
+
+
+13
+Tuesday only
+
+
+14
+Wednesday only
+
+
+15
+Thursday only
+
+
+16
+Friday only
+
+
+17
+Saturday only
+
+
+
+Notes
+
+If start_date is invalid, WORKDAY.INTL returns the #NUM! error.
+If start_date + day is invalid, WORKDAY.INTL returns the #NUM! error.
+If any holiday is invalid, WORKDAY.INTL returns the #NUM! error.
+If weekend is invalid, WORKDAY.INTL returns the #VALUE! error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Get project start date 
+
+Sequence of days 
+
+Add days exclude certain days of week 
+
+Date is workday 
+
+Series of dates by custom days 
+
+Next working day 
+
+Next business day 6 months in future 
+
+Series of dates by weekends 
+
+Add workdays to date custom weekends 
+
+Get project midpoint 
+
+
+ Functions EDATE FunctionNETWORKDAYS FunctionNETWORKDAYS.INTL FunctionWORKDAY Function 
+ Articles How to calculate due dates with WORKDAY 
+ Links Microsoft WORKDAY.INTL function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel WORKDAY.INTL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+WORKDAY.INTL Function 
+Previous 
+Next 
+ 
+Excel 2010
+Date and time
+WORKDAY.INTL Function
+Related functions 
+EDATE
+NETWORKDAYS
+NETWORKDAYS.INTL
+WORKDAY
+Summary
+The Excel WORKDAY.INTL function takes a date and returns the nearest working n days in the future or past, based on an offset value you provide. Unlike the WORKDAY function, WORKDAY.INTL allows you to customize which days are considered weekends (non-working days). You can use WORKDAY.INTL function to calculate completion dates, ship dates, etc. that take into account non-working days.
+Purpose 
+Get date n working days in future or past
+Return value 
+Next or previous working date based on inputs
+Arguments 
+start_date - The start date.days - The end date.weekend - [optional] Setting for which days of the week should be considered weekends.holidays - [optional] A list of one or more dates that should be considered non-work days.
+Syntax 
+=WORKDAY.INTL(start_date, days, [weekend], [holidays])
+Usage notes 
+The WORKDAY.INTL function calculates the "nearest" working day n days in the past or future, taking into non-working days. WORKDAY.INTL can be used to calculate due dates, delivery dates, and other dates that must exclude non-working days. Use a positive number as days for future dates and a negative number for past dates. This function is more robust than the WORKDAY function because it lets you customize which days of the week are considered weekends.
+The WORKDAY.INTL function takes four arguments: start_date, days, weekend, and holidays. Start_date must be a valid Excel date. The days argument is the number of days in the future or past to move from start_date, taking into account non-working days. Use a positive number for days to move forward in time, and a negative number to move back.
+The weekend argument is optional and controls which day(s) of the week should be considered weekends, and therefore non-working days. By default, WORKDAY.INTL will treat Saturday and Sunday as non-working days. See below for details on how to configure weekend to treat different days of the week as non-working days.
+Holidays is an optional argument to specify non-working days. Holidays should be provided as a range that contains valid Excel dates. If holidays are not provided, WORKDAY.INTL will treat only Saturdays and Sundays as non-working days, unless the weekend argument has been set differently.
+Note: WORKDAY.INTL does not include the start date as a work day. 
+Example #1 - basic usage
+With the start_date in A1, days set to 1, and holidays in C1:C3:
+=WORKDAY.INTL(A1,1) // default - Sat and Sun excluded
+=WORKDAY.INTL(A1,1,11) // exclude Sun only
+=WORKDAY.INTL(A1,1,11,C1:C3) // exclude Sun + dates in C1:C3
+In the last two examples above, we use the numeric code 11 to set weekends to Mondays only. See the table below for the full list of available codes.
+Example #2 - Weekend mask
+Another (easier) way to specify weekend days is to use a 7-character "mask" to indicate weekends with ones and zeros.  In this scheme, a text string of 7 ones and zeros are provided to indicate weekends, were the first character is Monday, and the last character is Sunday. Use one (1) to indicate weekend, and zero (0) to indicate a working day. This method is more flexible, since it allows you to designate any day(s) of the week as a weekend (i.e. non-working days). For example:
+=WORKDAY.INTL(A1,3,"0000000") // no weekends
+=WORKDAY.INTL(A1,3,"1000000") // weekend = Mon
+=WORKDAY.INTL(A1,3,"1100000") // weekend = Mon+Tue
+=WORKDAY.INTL(A1,3,"1110000") // weekend = Mon+Tue+Wed
+=WORKDAY.INTL(A1,3,"1010000") // weekend = Mon+Wed
+Weekend codes
+Use any of the codes below for the weekend argument to select a "fixed" weekend option.
+Code
+Weekend days
+1 (default)
+Saturday, Sunday
+2
+Sunday, Monday
+3
+Monday, Tuesday
+4
+Tuesday, Wednesday
+5
+Wednesday, Thursday
+6
+Thursday, Friday
+7
+Friday, Saturday
+11
+Sunday only
+12
+Monday only
+13
+Tuesday only
+14
+Wednesday only
+15
+Thursday only
+16
+Friday only
+17
+Saturday only
+Notes
+If start_date is invalid, WORKDAY.INTL returns the #NUM! error.
+If start_date + day is invalid, WORKDAY.INTL returns the #NUM! error.
+If any holiday is invalid, WORKDAY.INTL returns the #NUM! error.
+If weekend is invalid, WORKDAY.INTL returns the #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get project start date 
+Sequence of days 
+Add days exclude certain days of week 
+Date is workday 
+Series of dates by custom days 
+Next working day 
+Next business day 6 months in future 
+Series of dates by weekends 
+Add workdays to date custom weekends 
+Get project midpoint 
+ Functions EDATE FunctionNETWORKDAYS FunctionNETWORKDAYS.INTL FunctionWORKDAY Function 
+ Articles How to calculate due dates with WORKDAY 
+ Links Microsoft WORKDAY.INTL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

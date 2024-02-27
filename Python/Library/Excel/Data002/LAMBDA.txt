@@ -1,0 +1,10 @@
+Summary
+The Excel LAMBDA function provides a way create custom functions that can be reused throughout a workbook, without VBA or macros.
+Purpose 
+Create custom function
+Return value 
+As defined by formula
+Arguments 
+parameter - An input value for the function.calculation - The calculation to perform as the result of the function. Must be last argument.
+Syntax 
+=LAMBDA(parameter, ..., calculation)

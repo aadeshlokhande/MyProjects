@@ -1,0 +1,278 @@
+Excel LINEST function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LINEST Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+LINEST Function
+Related functions 
+SLOPE
+INTERCEPT
+Summary
+The Excel LINEST function returns statistics for a best fit straight line through supplied x and y values. The values returned by LINEST include slope, intercept, standard error values, and more. To find the best fit of a line to the data, LINEST uses the "least squares" method.
+Purpose 
+Get parameters of linear trend
+Return value 
+Array of values
+Arguments 
+known_ys - An array or range of dependent y values values.known_xs - [optional] An array or range of independent x values.const - [optional] Boolean - normal or force the constant b to equal 0. Default is TRUE = normal calculation.stats - [optional] Boolean - return additional statistics. Default is FALSE = slope and intercept only.
+Syntax 
+=LINEST(known_ys, [known_xs], [const], [stats])
+Usage notes 
+The LINEST function returns statistics for a best fit straight line through supplied x and y values. The values returned by LINEST include slope, intercept, standard error values, and more, up to 10 different statistics in total. To find the best fit of a line to the data, the LINEST function uses the "least squares" method, the standard approach in regression analysis.
+The LINEST function returns more than one value at a time in an array. In its most basic form, LINEST returns just intercept and slope. Optionally, LINEST can also return 10 separate statistics for the regression analysis as shown in the worksheet above. In Excel 365, which supports dynamic arrays, the array of values will spill into cells in the worksheet automatically. In other versions of Excel, you must enter the LINEST as a multi-cell array formula to see all values.
+Available Statistics
+The table below shows the statistics that can be returned by the LINEST function. Note the first two, slope and intercept are returned by default. The other statistics are returned by setting the stats argument to TRUE. When all statistics are returned, they are delivered in a 2D array, 5 rows by 2 columns. In the worksheet shown above, the range F4:G8 shows the order in which statistics are returned.
+Statistic
+Description
+slope
+Slope coefficient
+intercept
+Intercept constant
+se
+Standard error of slope
+seb
+Standard error of intercept
+r2
+Coefficient of determination
+sey
+Standard error of y estimate
+F
+F statistic (F-observed value)
+df
+Degrees of freedom
+ssreg
+Regression sum of squares
+ssresid
+Residual sum of squares
+Examples
+By default, LINEST returns just two statistics, slope and intercept. For example:
+=LINEST({1.8;5.3;8.2;12;13.5},{1;3;5;7;8}) // default
+returns a 1 row by 2 column array like this:
+{1.6726,0.1317}
+Setting the stats argument to TRUE or 1 will cause LINEST to return all 10 statistics:
+=LINEST({1.8;5.3;8.2;12;13.5},{1;3;5;7;8},TRUE,TRUE) // more stats
+The result is an array with 5 rows and 2 columns:
+{1.6726,0.1317;
+0.0371,0.2017;
+0.9985,0.2124;
+2034.443,3;
+91.7567,0.1353}
+Note: values above have been rounded to make them easier to read.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SLOPE FunctionINTERCEPT Function 
+ Links Microsoft LINEST function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel LINEST function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LINEST Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+LINEST Function
+Related functions 
+SLOPE
+INTERCEPT
+Summary
+The Excel LINEST function returns statistics for a best fit straight line through supplied x and y values. The values returned by LINEST include slope, intercept, standard error values, and more. To find the best fit of a line to the data, LINEST uses the "least squares" method.
+Purpose 
+Get parameters of linear trend
+Return value 
+Array of values
+Arguments 
+known_ys - An array or range of dependent y values values.known_xs - [optional] An array or range of independent x values.const - [optional] Boolean - normal or force the constant b to equal 0. Default is TRUE = normal calculation.stats - [optional] Boolean - return additional statistics. Default is FALSE = slope and intercept only.
+Syntax 
+=LINEST(known_ys, [known_xs], [const], [stats])
+Usage notes 
+The LINEST function returns statistics for a best fit straight line through supplied x and y values. The values returned by LINEST include slope, intercept, standard error values, and more, up to 10 different statistics in total. To find the best fit of a line to the data, the LINEST function uses the "least squares" method, the standard approach in regression analysis.
+The LINEST function returns more than one value at a time in an array. In its most basic form, LINEST returns just intercept and slope. Optionally, LINEST can also return 10 separate statistics for the regression analysis as shown in the worksheet above. In Excel 365, which supports dynamic arrays, the array of values will spill into cells in the worksheet automatically. In other versions of Excel, you must enter the LINEST as a multi-cell array formula to see all values.
+Available Statistics
+The table below shows the statistics that can be returned by the LINEST function. Note the first two, slope and intercept are returned by default. The other statistics are returned by setting the stats argument to TRUE. When all statistics are returned, they are delivered in a 2D array, 5 rows by 2 columns. In the worksheet shown above, the range F4:G8 shows the order in which statistics are returned.
+Statistic
+Description
+slope
+Slope coefficient
+intercept
+Intercept constant
+se
+Standard error of slope
+seb
+Standard error of intercept
+r2
+Coefficient of determination
+sey
+Standard error of y estimate
+F
+F statistic (F-observed value)
+df
+Degrees of freedom
+ssreg
+Regression sum of squares
+ssresid
+Residual sum of squares
+Examples
+By default, LINEST returns just two statistics, slope and intercept. For example:
+=LINEST({1.8;5.3;8.2;12;13.5},{1;3;5;7;8}) // default
+returns a 1 row by 2 column array like this:
+{1.6726,0.1317}
+Setting the stats argument to TRUE or 1 will cause LINEST to return all 10 statistics:
+=LINEST({1.8;5.3;8.2;12;13.5},{1;3;5;7;8},TRUE,TRUE) // more stats
+The result is an array with 5 rows and 2 columns:
+{1.6726,0.1317;
+0.0371,0.2017;
+0.9985,0.2124;
+2034.443,3;
+91.7567,0.1353}
+Note: values above have been rounded to make them easier to read.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SLOPE FunctionINTERCEPT Function 
+ Links Microsoft LINEST function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

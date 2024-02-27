@@ -1,0 +1,10 @@
+Summary
+The Excel IMAGINARY function returns the imaginary coefficient of a complex number given in the form x + yi or x + yj.
+Purpose 
+Get imaginary coefficient of complex number
+Return value 
+Imaginary coefficient as number
+Arguments 
+inumber - A complex number.
+Syntax 
+=IMAGINARY(inumber)

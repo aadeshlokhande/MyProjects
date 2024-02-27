@@ -1,0 +1,236 @@
+Excel PRODUCT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PRODUCT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+PRODUCT Function
+Related functions 
+SUM
+SUMPRODUCT
+Summary
+The Excel PRODUCT function returns the product of numbers provided as arguments. The PRODUCT function is helpful when multiplying many cells together. The formula =PRODUCT(A1:A3) is the same as =A1*A2*A3.
+Purpose 
+Get the product of supplied numbers
+Return value 
+Product of supplied numbers
+Arguments 
+number1 - The first number or range to multiply.number2 - [optional] The second number or range to multiply.
+Syntax 
+=PRODUCT(number1, [number2], ...)
+Usage notes 
+The Excel PRODUCT function returns the product of numbers provided as arguments. Because it can accept a range of cells as an argument, PRODUCT is useful when multiplying many cells together
+The PRODUCT function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. All numbers in the arguments provided are multiplied together. Empty cells and text values are ignored.
+Examples
+The PRODUCT function returns the product of supplied arguments:
+=PRODUCT(3,8) // returns 24
+=PRODUCT(3,8,4) // returns 96
+PRODUCT multiplies all numeric values together, so the following formulas are equivalent:
+=PRODUCT(A1:A5)
+=PRODUCT(A1,A2,A3,A4,A5)
+=PRODUCT(A1:A2,A3:A5)
+PRODUCT ignores text values and empty cells. The formulas below will return the same result with all cells have numeric values:
+=PRODUCT(A1:A5)
+=A1*A2*A3*A4*A5
+However, the second formula will return zero (0) if any cells are empty, and a #VALUE! error if any cells contain text.
+Notes
+Numbers can be supplied individually or in ranges.
+PRODUCT can accept up to 255 arguments total.
+Only numbers in the array or reference are multiplied.
+Empty cells, logical values, and text in the array or reference are ignored.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SUM FunctionSUMPRODUCT Function 
+ Links Microsoft PRODUCT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel PRODUCT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PRODUCT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+PRODUCT Function
+Related functions 
+SUM
+SUMPRODUCT
+Summary
+The Excel PRODUCT function returns the product of numbers provided as arguments. The PRODUCT function is helpful when multiplying many cells together. The formula =PRODUCT(A1:A3) is the same as =A1*A2*A3.
+Purpose 
+Get the product of supplied numbers
+Return value 
+Product of supplied numbers
+Arguments 
+number1 - The first number or range to multiply.number2 - [optional] The second number or range to multiply.
+Syntax 
+=PRODUCT(number1, [number2], ...)
+Usage notes 
+The Excel PRODUCT function returns the product of numbers provided as arguments. Because it can accept a range of cells as an argument, PRODUCT is useful when multiplying many cells together
+The PRODUCT function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. All numbers in the arguments provided are multiplied together. Empty cells and text values are ignored.
+Examples
+The PRODUCT function returns the product of supplied arguments:
+=PRODUCT(3,8) // returns 24
+=PRODUCT(3,8,4) // returns 96
+PRODUCT multiplies all numeric values together, so the following formulas are equivalent:
+=PRODUCT(A1:A5)
+=PRODUCT(A1,A2,A3,A4,A5)
+=PRODUCT(A1:A2,A3:A5)
+PRODUCT ignores text values and empty cells. The formulas below will return the same result with all cells have numeric values:
+=PRODUCT(A1:A5)
+=A1*A2*A3*A4*A5
+However, the second formula will return zero (0) if any cells are empty, and a #VALUE! error if any cells contain text.
+Notes
+Numbers can be supplied individually or in ranges.
+PRODUCT can accept up to 255 arguments total.
+Only numbers in the array or reference are multiplied.
+Empty cells, logical values, and text in the array or reference are ignored.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SUM FunctionSUMPRODUCT Function 
+ Links Microsoft PRODUCT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

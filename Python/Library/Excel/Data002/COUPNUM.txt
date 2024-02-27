@@ -1,0 +1,10 @@
+Summary
+The Excel COUPNUM function returns the number of coupons, or interest payments, payable between the settlement date and maturity date.
+Purpose 
+Get number of coupons payable
+Return value 
+Number of coupons payable
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.frequency - Number of coupon payments per year (annual = 1, semi-annual = 2, quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=COUPNUM(settlement, maturity, frequency, [basis])

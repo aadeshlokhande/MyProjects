@@ -1,0 +1,661 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel YEAR function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+YEAR Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+YEAR Function
+Related functions 
+
+YEAR
+MONTH
+DAY
+DATE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel YEAR function returns the year component of a date as a 4-digit number. You can use the YEAR function to extract a year number from a date into a cell or to extract and feed a year value into another formula, like the DATE function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the year from a date
+
+
+
+Return value 
+
+Year as 4-digit number
+
+
+
+Arguments 
+
+date - A valid Excel date.
+
+
+
+Syntax 
+
+=YEAR(date)
+
+
+
+Usage notes 
+
+The YEAR function extracts the year from a given date as a 4-digit number. For example:
+
+=YEAR("23-Aug-2012") // returns 2012
+=YEAR("11-May-2019") // returns 2019
+
+You can use the YEAR function to extract a month number from a date into a cell, or to feed a month number into another function like the DATE function:
+
+=DATE(YEAR(A1),1,1) // first of same year
+
+See below for more examples of formulas that use the DATE function.
+Note: dates are serial numbers in Excel, and begin on January 1, 1900. Dates before 1900 are not supported. To display date values in a human-readable date format, apply the number format of your choice.
+Notes
+
+Date must be a valid Excel date.
+YEAR will return a #VALUE error on text values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Sum by fiscal year 
+
+Sequence of years 
+
+Series of dates by year 
+
+Data validation allow weekday only 
+
+Count dates in given year 
+
+Convert date to Julian format 
+
+Get fiscal year from date 
+
+Get nth day of year 
+
+Data validation date in specific year 
+
+Year is a leap year 
+
+
+
+Videos
+  
+How to calculate years and months between dates  
+
+How to create date and time series with formulas 
+
+How to work with dates 
+
+
+ Functions YEAR FunctionMONTH FunctionDAY FunctionDATE Function 
+ Links Microsoft YEAR function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel YEAR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+YEAR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+YEAR Function
+Related functions 
+YEAR
+MONTH
+DAY
+DATE
+Summary
+The Excel YEAR function returns the year component of a date as a 4-digit number. You can use the YEAR function to extract a year number from a date into a cell or to extract and feed a year value into another formula, like the DATE function.
+Purpose 
+Get the year from a date
+Return value 
+Year as 4-digit number
+Arguments 
+date - A valid Excel date.
+Syntax 
+=YEAR(date)
+Usage notes 
+The YEAR function extracts the year from a given date as a 4-digit number. For example:
+=YEAR("23-Aug-2012") // returns 2012
+=YEAR("11-May-2019") // returns 2019
+You can use the YEAR function to extract a month number from a date into a cell, or to feed a month number into another function like the DATE function:
+=DATE(YEAR(A1),1,1) // first of same year
+See below for more examples of formulas that use the DATE function.
+Note: dates are serial numbers in Excel, and begin on January 1, 1900. Dates before 1900 are not supported. To display date values in a human-readable date format, apply the number format of your choice.
+Notes
+Date must be a valid Excel date.
+YEAR will return a #VALUE error on text values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by fiscal year 
+Sequence of years 
+Series of dates by year 
+Data validation allow weekday only 
+Count dates in given year 
+Convert date to Julian format 
+Get fiscal year from date 
+Get nth day of year 
+Data validation date in specific year 
+Year is a leap year 
+Videos
+  
+How to calculate years and months between dates  
+How to create date and time series with formulas 
+How to work with dates 
+ Functions YEAR FunctionMONTH FunctionDAY FunctionDATE Function 
+ Links Microsoft YEAR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

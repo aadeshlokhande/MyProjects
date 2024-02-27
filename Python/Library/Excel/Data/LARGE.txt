@@ -1,0 +1,679 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel LARGE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+LARGE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+LARGE Function
+Related functions 
+
+MAX
+SMALL
+RANK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel LARGE function returns a numeric value based on its position in a list when sorted by value in descending order. In other words, LARGE can retrieve the "nth largest" value – 1st largest value, 2nd largest value, 3rd largest value, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get nth largest value
+
+
+
+Return value 
+
+The nth largest value in an array.
+
+
+
+Arguments 
+
+array - An array or range of numeric values.k - Position as an integer, where 1 corresponds to the largest value.
+
+
+
+Syntax 
+
+=LARGE(array, k)
+
+
+
+Usage notes 
+
+The LARGE function returns a numeric value based on its position in a list when sorted by value. In other words, LARGE returns the "nth largest" value in the list where 1 corresponds to the largest value, 2 corresponds to the second largest value, etc. For example, the LARGE function is useful when you want to retrieve first, second, or third highest scores for a test. 
+The LARGE function takes two arguments, array and k. Array is an array or range of numeric values. The argument k represents position or rank. For example, to return the largest value in array, provide 1 for k. To return the fifth largest value in array, provide 5 for k.
+To get nth smallest values, see the SMALL function.
+Examples
+In the formula below, the LARGE function returns the third largest value in a list of five numbers provided in an array constant:
+
+=LARGE({29,14,33,19,17},3) // returns 19
+
+Note values do not need to be sorted. To retrieve the 1st, 2nd, and 3rd largest values in a range:
+
+=LARGE(range,1) // 1st largest value
+=LARGE(range,2) // 2nd largest value
+=LARGE(range,3) // 3rd largest value
+
+In the example shown, the formulas in G5, G6, and G7 are, respectively:
+
+=LARGE(D5:D16,1) // returns 92
+=LARGE(D5:D16,2) // returns 89
+=LARGE(D5:D16,3) // returns 86
+
+See below for more advanced formulas based on the LARGE function.
+Notes
+
+LARGE ignores empty cells, text values, and TRUE and FALSE values.
+If array contains no numeric values, LARGE returns a #NUM! error.
+To determine the rank of a number in a data set, use the RANK function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+FILTER on top n values with criteria 
+
+nth largest value 
+
+Name of nth largest value 
+
+FILTER on top n values 
+
+Large with criteria 
+
+Name of nth largest value with criteria 
+
+nth largest value with criteria 
+
+Rank values by month 
+
+Highlight top values 
+
+Maximum value 
+
+
+
+Videos
+  
+How to calculate maximum and minimum values 
+
+How to get nth values with SMALL and LARGE 
+
+How to show top or bottom n results 
+
+
+ Functions MAX FunctionSMALL FunctionRANK Function 
+ Links Microsoft LARGE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel LARGE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LARGE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+LARGE Function
+Related functions 
+MAX
+SMALL
+RANK
+Summary
+The Excel LARGE function returns a numeric value based on its position in a list when sorted by value in descending order. In other words, LARGE can retrieve the "nth largest" value – 1st largest value, 2nd largest value, 3rd largest value, etc.
+Purpose 
+Get nth largest value
+Return value 
+The nth largest value in an array.
+Arguments 
+array - An array or range of numeric values.k - Position as an integer, where 1 corresponds to the largest value.
+Syntax 
+=LARGE(array, k)
+Usage notes 
+The LARGE function returns a numeric value based on its position in a list when sorted by value. In other words, LARGE returns the "nth largest" value in the list where 1 corresponds to the largest value, 2 corresponds to the second largest value, etc. For example, the LARGE function is useful when you want to retrieve first, second, or third highest scores for a test. 
+The LARGE function takes two arguments, array and k. Array is an array or range of numeric values. The argument k represents position or rank. For example, to return the largest value in array, provide 1 for k. To return the fifth largest value in array, provide 5 for k.
+To get nth smallest values, see the SMALL function.
+Examples
+In the formula below, the LARGE function returns the third largest value in a list of five numbers provided in an array constant:
+=LARGE({29,14,33,19,17},3) // returns 19
+Note values do not need to be sorted. To retrieve the 1st, 2nd, and 3rd largest values in a range:
+=LARGE(range,1) // 1st largest value
+=LARGE(range,2) // 2nd largest value
+=LARGE(range,3) // 3rd largest value
+In the example shown, the formulas in G5, G6, and G7 are, respectively:
+=LARGE(D5:D16,1) // returns 92
+=LARGE(D5:D16,2) // returns 89
+=LARGE(D5:D16,3) // returns 86
+See below for more advanced formulas based on the LARGE function.
+Notes
+LARGE ignores empty cells, text values, and TRUE and FALSE values.
+If array contains no numeric values, LARGE returns a #NUM! error.
+To determine the rank of a number in a data set, use the RANK function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+FILTER on top n values with criteria 
+nth largest value 
+Name of nth largest value 
+FILTER on top n values 
+Large with criteria 
+Name of nth largest value with criteria 
+nth largest value with criteria 
+Rank values by month 
+Highlight top values 
+Maximum value 
+Videos
+  
+How to calculate maximum and minimum values 
+How to get nth values with SMALL and LARGE 
+How to show top or bottom n results 
+ Functions MAX FunctionSMALL FunctionRANK Function 
+ Links Microsoft LARGE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

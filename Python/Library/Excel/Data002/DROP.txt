@@ -1,0 +1,10 @@
+Summary
+The Excel DROP function returns a subset of a given array by "dropping" rows and columns. The number of rows and columns to remove is provided by separate rows and columns arguments. Rows and columns can be dropped from the start or end of the given array.
+Purpose 
+Remove portion of an array
+Return value 
+The remaining array
+Arguments 
+array - The source array or range.rows - [optional] Number of rows to drop.col - [optional] Number of columns to drop.
+Syntax 
+=DROP(array, [rows], [col])

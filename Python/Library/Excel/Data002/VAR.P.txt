@@ -1,0 +1,10 @@
+Summary
+The Excel VAR.P function returns the variance in an entire population.  If data represents a sample of the population, use the VAR.S function.
+Purpose 
+Get variation of population
+Return value 
+Computed variance
+Arguments 
+number1 - First number or reference.number2 - [optional] Second number or reference.
+Syntax 
+=VAR.P(number1, [number2], ...)

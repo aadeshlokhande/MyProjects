@@ -1,0 +1,10 @@
+Summary
+The Excel REPT function repeats characters a given number of times. For example, =REPT("x",5) returns "xxxxx".
+Purpose 
+Repeat text as specified
+Return value 
+The repeated text.
+Arguments 
+text - The text to repeat.number_times - The number of times to repeat text.
+Syntax 
+=REPT(text, number_times)

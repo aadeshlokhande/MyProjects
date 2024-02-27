@@ -1,0 +1,10 @@
+Summary
+The Excel VSTACK function combines arrays vertically into a single array. Each subsequent array is appended to the bottom of the previous array.
+Purpose 
+Combine ranges or arrays vertically
+Return value 
+A single combined range or array
+Arguments 
+array1 - The first array or range to combine.array2 - [optional] The second array or range to combine.
+Syntax 
+=VSTACK(array1, [array2], ...)

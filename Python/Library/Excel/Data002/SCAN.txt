@@ -1,0 +1,10 @@
+Summary
+The SCAN function applies a custom LAMBDA function to each element in a given array and returns an array that contains the intermediate values created during the scan. SCAN can be used to generate running totals and other calculations that show intermediate results. 
+Purpose 
+Scan array and return intermediate results
+Return value 
+An array of results
+Arguments 
+initial_value - [optional] The initial value of the accumulator.array - The array to be scanned.lambda - The custom LAMBDA function to apply.
+Syntax 
+=SCAN([initial_value], array, lambda)

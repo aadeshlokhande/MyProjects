@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel ISLOGICAL function returns TRUE when a cell contains the logical values TRUE or FALSE, and returns FALSE for cells that contain any other value, including empty cells. ', 'Purpose' : 'Test if a value is logical', 'Return value' : 'A logical value (TRUE or FALSE)', 'Arguments' : 'value - The value to test as logical.', 'Syntax' : '=ISLOGICAL(value)' }

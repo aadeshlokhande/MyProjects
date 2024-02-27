@@ -1,0 +1,10 @@
+Summary
+The Excel CEILING function rounds a given number up to the nearest specified multiple. CEILING works like the MROUND function, but CEILING always rounds up.
+Purpose 
+Round a number up to nearest multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - The multiple to use when rounding.
+Syntax 
+=CEILING(number, significance)

@@ -1,0 +1,282 @@
+Excel OR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+OR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+OR Function
+Related functions 
+AND
+IF
+XOR
+NOT
+Summary
+The Excel OR function returns TRUE if any given argument evaluates to TRUE, and returns FALSE if all supplied arguments evaluate to FALSE. For example, to test A1 for either "x" or "y", use =OR(A1="x",A1="y"). The OR function can be used as the logical test inside the IF function to avoid nested IFs, and can be combined with the AND function.
+Purpose 
+Test multiple conditions with OR
+Return value 
+TRUE if any arguments evaluate TRUE; FALSE if not.
+Arguments 
+logical1 - The first condition or logical value to evaluate.logical2 - [optional] The second condition or logical value to evaluate.
+Syntax 
+=OR(logical1, [logical2], ...)
+Usage notes 
+The OR function returns TRUE if any given argument evaluates to TRUE, and returns FALSE only if all supplied arguments evaluate to FALSE. The OR function can be used as the logical test inside the IF function to avoid nested IFs, and can be combined with the AND function.
+The OR function is used to check more than one logical condition at the same time, up to 255 conditions, supplied as arguments. Each argument (logical1, logical2, etc.) must be an expression that returns TRUE or FALSE or a value that can be evaluated as TRUE or FALSE. The arguments provided to the OR function can be constants, cell references, arrays, or logical expressions. 
+The purpose of the OR function is to evaluate more than one logical test at the same time and return TRUE if any result is TRUE. For example, if A1 contains the number 50, then:
+=OR(A1>0,A1>75,A1>100) // returns TRUE
+=OR(A1<0,A1=25,A1>100) // returns FALSE
+The OR function will evaluate all values supplied and return TRUE if any value evaluates to TRUE. If all logicals evaluate to FALSE, the OR function will return FALSE. Note: Excel will evaluate any number except zero (0) as TRUE.
+Both the AND function and the OR function will aggregate results to a single value. This means they can't be used in array operations that need to deliver an array of results. To work around this limitation, you can use Boolean logic. For more information, see: Array formulas with AND and OR logic.
+Examples
+For example, to test if the value in A1 OR the value in B1 is greater than 75, use the following formula:
+=OR(A1>75,B1>75)
+OR can be used to extend the functionality of functions like the IF function. Using the above example, you can supply OR as the logical_test for an IF function like so:
+=IF(OR(A1>75,B1>75), "Pass", "Fail")
+This formula will return "Pass" if the value in A1 is greater than 75 OR the value in B1 is greater than 75.
+Array form
+If you enter OR as an array formula, you can test all values in a range against a condition. For example, this array formula will return TRUE if any cell in A1:A100 is greater than 15:
+=OR(A1:A100>15)
+Note: In Legacy Excel, this is an array formula and must be entered with control + shift + enter.
+Notes
+Each logical condition must evaluate to TRUE or FALSE, or be arrays or references that contain logical values.
+Text values or empty cells supplied as arguments are ignored.
+The OR function will return #VALUE if no logical values are found
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+If NOT this or that 
+Gantt chart time schedule 
+Highlight approximate match lookup conditional formatting 
+MAP with AND and OR logic 
+If cell is x or y and z 
+Only calculate if not blank 
+Highlight row and column intersection exact match 
+If cell is this OR that 
+Range contains duplicates 
+Highlight dates that are weekends 
+Videos
+  
+If this OR that 
+How to highlight rows using multiple criteria 
+Conditional formatting with two variable inputs 
+How to highlight approximate match lookups 
+ Functions AND FunctionIF FunctionXOR FunctionNOT Function 
+ Articles How to use formula criteria (50 examples) 
+ Links Microsoft OR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel OR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+OR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+OR Function
+Related functions 
+AND
+IF
+XOR
+NOT
+Summary
+The Excel OR function returns TRUE if any given argument evaluates to TRUE, and returns FALSE if all supplied arguments evaluate to FALSE. For example, to test A1 for either "x" or "y", use =OR(A1="x",A1="y"). The OR function can be used as the logical test inside the IF function to avoid nested IFs, and can be combined with the AND function.
+Purpose 
+Test multiple conditions with OR
+Return value 
+TRUE if any arguments evaluate TRUE; FALSE if not.
+Arguments 
+logical1 - The first condition or logical value to evaluate.logical2 - [optional] The second condition or logical value to evaluate.
+Syntax 
+=OR(logical1, [logical2], ...)
+Usage notes 
+The OR function returns TRUE if any given argument evaluates to TRUE, and returns FALSE only if all supplied arguments evaluate to FALSE. The OR function can be used as the logical test inside the IF function to avoid nested IFs, and can be combined with the AND function.
+The OR function is used to check more than one logical condition at the same time, up to 255 conditions, supplied as arguments. Each argument (logical1, logical2, etc.) must be an expression that returns TRUE or FALSE or a value that can be evaluated as TRUE or FALSE. The arguments provided to the OR function can be constants, cell references, arrays, or logical expressions. 
+The purpose of the OR function is to evaluate more than one logical test at the same time and return TRUE if any result is TRUE. For example, if A1 contains the number 50, then:
+=OR(A1>0,A1>75,A1>100) // returns TRUE
+=OR(A1<0,A1=25,A1>100) // returns FALSE
+The OR function will evaluate all values supplied and return TRUE if any value evaluates to TRUE. If all logicals evaluate to FALSE, the OR function will return FALSE. Note: Excel will evaluate any number except zero (0) as TRUE.
+Both the AND function and the OR function will aggregate results to a single value. This means they can't be used in array operations that need to deliver an array of results. To work around this limitation, you can use Boolean logic. For more information, see: Array formulas with AND and OR logic.
+Examples
+For example, to test if the value in A1 OR the value in B1 is greater than 75, use the following formula:
+=OR(A1>75,B1>75)
+OR can be used to extend the functionality of functions like the IF function. Using the above example, you can supply OR as the logical_test for an IF function like so:
+=IF(OR(A1>75,B1>75), "Pass", "Fail")
+This formula will return "Pass" if the value in A1 is greater than 75 OR the value in B1 is greater than 75.
+Array form
+If you enter OR as an array formula, you can test all values in a range against a condition. For example, this array formula will return TRUE if any cell in A1:A100 is greater than 15:
+=OR(A1:A100>15)
+Note: In Legacy Excel, this is an array formula and must be entered with control + shift + enter.
+Notes
+Each logical condition must evaluate to TRUE or FALSE, or be arrays or references that contain logical values.
+Text values or empty cells supplied as arguments are ignored.
+The OR function will return #VALUE if no logical values are found
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+If NOT this or that 
+Gantt chart time schedule 
+Highlight approximate match lookup conditional formatting 
+MAP with AND and OR logic 
+If cell is x or y and z 
+Only calculate if not blank 
+Highlight row and column intersection exact match 
+If cell is this OR that 
+Range contains duplicates 
+Highlight dates that are weekends 
+Videos
+  
+If this OR that 
+How to highlight rows using multiple criteria 
+Conditional formatting with two variable inputs 
+How to highlight approximate match lookups 
+ Functions AND FunctionIF FunctionXOR FunctionNOT Function 
+ Articles How to use formula criteria (50 examples) 
+ Links Microsoft OR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

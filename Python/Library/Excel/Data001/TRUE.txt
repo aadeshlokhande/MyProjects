@@ -1,0 +1,214 @@
+Excel TRUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRUE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+TRUE Function
+Related functions 
+FALSE
+IF
+Summary
+The Excel TRUE function returns the Boolean value TRUE. The TRUE function is classified as a "compatibility function", needed only for compatibility with other spreadsheet applications. There is no need to use TRUE() if you are creating a spreadsheet in Excel.
+Purpose 
+Generate the logical value TRUE
+Return value 
+The logical value TRUE
+Arguments 
+Syntax 
+=TRUE()
+Usage notes 
+The TRUE function returns the Boolean value TRUE. In other words, the two formulas below based on the IF function are functionally equivalent:
+=IF(A1>65,TRUE())
+=IF(A1>65,TRUE)
+Both formulas return TRUE if the value in A1 is greater than 65.
+The TRUE function is provided for compatibility with other spreadsheet applications and there is no need to use it if you are creating a spreadsheet in Excel. To return TRUE as a result in a formula, just enter TRUE directly into a cell or formula. 
+Note that logical expressions will automatically generate TRUE and FALSE results. For example, the formula below will TRUE or FALSE:
+=A1>90
+To test a condition and return different results based on whether the results are TRUE or FALSE, see the examples on this page.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions FALSE FunctionIF Function 
+ Articles How to use formula criteria (50 examples) 
+ Links Microsoft TRUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel TRUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRUE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+TRUE Function
+Related functions 
+FALSE
+IF
+Summary
+The Excel TRUE function returns the Boolean value TRUE. The TRUE function is classified as a "compatibility function", needed only for compatibility with other spreadsheet applications. There is no need to use TRUE() if you are creating a spreadsheet in Excel.
+Purpose 
+Generate the logical value TRUE
+Return value 
+The logical value TRUE
+Arguments 
+Syntax 
+=TRUE()
+Usage notes 
+The TRUE function returns the Boolean value TRUE. In other words, the two formulas below based on the IF function are functionally equivalent:
+=IF(A1>65,TRUE())
+=IF(A1>65,TRUE)
+Both formulas return TRUE if the value in A1 is greater than 65.
+The TRUE function is provided for compatibility with other spreadsheet applications and there is no need to use it if you are creating a spreadsheet in Excel. To return TRUE as a result in a formula, just enter TRUE directly into a cell or formula. 
+Note that logical expressions will automatically generate TRUE and FALSE results. For example, the formula below will TRUE or FALSE:
+=A1>90
+To test a condition and return different results based on whether the results are TRUE or FALSE, see the examples on this page.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions FALSE FunctionIF Function 
+ Articles How to use formula criteria (50 examples) 
+ Links Microsoft TRUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

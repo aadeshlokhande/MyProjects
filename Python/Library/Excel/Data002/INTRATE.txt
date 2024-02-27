@@ -1,0 +1,10 @@
+Summary
+The Excel INTRATE function returns the interest rate for a fully invested security.
+Purpose 
+Get interest rate for fully invested security
+Return value 
+Interest rate as percentage
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.investment - The amount originally invested.redemption - The amount received at maturity.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=INTRATE(settlement, maturity, investment, redemption, [basis])

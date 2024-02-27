@@ -1,0 +1,10 @@
+Summary
+The Excel COMBINA function returns the number of combinations with repetitions allowed. To count combinations that do not allow repetitions, use the COMBIN function.
+Purpose 
+Get number of combinations with repetitions
+Return value 
+Number of combinations as an integer
+Arguments 
+number - The total number of items.number_chosen - The number of items in each combination.
+Syntax 
+=COMBINA(number, number_chosen)

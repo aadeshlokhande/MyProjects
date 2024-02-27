@@ -1,0 +1,290 @@
+Excel YEARFRAC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+YEARFRAC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+YEARFRAC Function
+Related functions 
+DAYS360
+DATEDIF
+Summary
+The Excel YEARFRAC function returns a decimal value that represents fractional years between two dates. You can use YEARFRAC to do things like calculate age with a birthdate.
+Purpose 
+Get the fraction of a year between two dates
+Return value 
+A decimal number
+Arguments 
+start_date - The start date.end_date - The end date.basis - [optional] The type of day count basis to use (see below).
+Syntax 
+=YEARFRAC(start_date, end_date, [basis])
+Usage notes 
+YEARFRAC calculates a decimal number representing the fraction of a year between two dates. Excel uses whole days between two dates to work out the fraction of a year as a decimal value. For example:
+=YEARFRAC("1-Jan-2018","1-Jan-2019") // returns 1
+=YEARFRAC("1-Jan-2018","1-Jul-2019") // returns 1.5
+The YEARFRAC function has an optional argument called "basis" that controls how days are counted when computing fractional years. The default behavior is to count days between two dates based on a 360-day year, where all 12 months are considered to have 30 days. The table below summarizes available options:
+Basis
+Calculation
+Notes
+0 (default)
+30/360
+US convention
+1
+actual/actual
+ 
+2
+actual/360
+ 
+3
+actual/365
+ 
+4
+30/360
+European convention
+Note that basis 0 (the default) and basis 4 both operate based on a 360 day year, but they handle the last day of the month differently. With the US convention, when the start date is the last day of the month, it is set to the 30th day of the same month. When the end date is the last day of the month, and the start date < 30, the end date is set to the 1st of the next month, otherwise the end date is set to the 30th of the same month.
+With the European convention, start dates and end dates equal to the 31st of a month are set to the 30th of the same month.
+Examples
+With a start date in A1, and an end date in B1, the YEARFRAC will return years between to two dates as a fractional number:
+=YEARFRAC(A1,B1) // years between two dates 
+To get a whole number only (not rounded), you can use the INT function like this:
+=INT(YEARFRAC(A1,B1)) // whole number only, discard decimal
+To get current age based on a birthdate, you can use a formula like this:
+=INT(YEARFRAC(birthdate,TODAY())) // age from birthdate
+Note: this formula can sometimes return incorrect results. See this example for more details.
+To get the percentage of the current year complete, you can use YEARFRAC like this:
+=YEARFRAC(DATE(YEAR(TODAY()),1,1),TODAY()) // % year complete
+Full explanation here.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate retirement date 
+Get percent of year complete 
+Get age from birthday 
+Calculate years between dates 
+Videos
+  
+How to check and debug a formula with F9 
+How to step through complex formulas using Evaluate 
+How to calculate years and months between dates  
+ Functions DAYS360 FunctionDATEDIF Function 
+ Links Microsoft YEARFRAC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel YEARFRAC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+YEARFRAC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+YEARFRAC Function
+Related functions 
+DAYS360
+DATEDIF
+Summary
+The Excel YEARFRAC function returns a decimal value that represents fractional years between two dates. You can use YEARFRAC to do things like calculate age with a birthdate.
+Purpose 
+Get the fraction of a year between two dates
+Return value 
+A decimal number
+Arguments 
+start_date - The start date.end_date - The end date.basis - [optional] The type of day count basis to use (see below).
+Syntax 
+=YEARFRAC(start_date, end_date, [basis])
+Usage notes 
+YEARFRAC calculates a decimal number representing the fraction of a year between two dates. Excel uses whole days between two dates to work out the fraction of a year as a decimal value. For example:
+=YEARFRAC("1-Jan-2018","1-Jan-2019") // returns 1
+=YEARFRAC("1-Jan-2018","1-Jul-2019") // returns 1.5
+The YEARFRAC function has an optional argument called "basis" that controls how days are counted when computing fractional years. The default behavior is to count days between two dates based on a 360-day year, where all 12 months are considered to have 30 days. The table below summarizes available options:
+Basis
+Calculation
+Notes
+0 (default)
+30/360
+US convention
+1
+actual/actual
+ 
+2
+actual/360
+ 
+3
+actual/365
+ 
+4
+30/360
+European convention
+Note that basis 0 (the default) and basis 4 both operate based on a 360 day year, but they handle the last day of the month differently. With the US convention, when the start date is the last day of the month, it is set to the 30th day of the same month. When the end date is the last day of the month, and the start date < 30, the end date is set to the 1st of the next month, otherwise the end date is set to the 30th of the same month.
+With the European convention, start dates and end dates equal to the 31st of a month are set to the 30th of the same month.
+Examples
+With a start date in A1, and an end date in B1, the YEARFRAC will return years between to two dates as a fractional number:
+=YEARFRAC(A1,B1) // years between two dates 
+To get a whole number only (not rounded), you can use the INT function like this:
+=INT(YEARFRAC(A1,B1)) // whole number only, discard decimal
+To get current age based on a birthdate, you can use a formula like this:
+=INT(YEARFRAC(birthdate,TODAY())) // age from birthdate
+Note: this formula can sometimes return incorrect results. See this example for more details.
+To get the percentage of the current year complete, you can use YEARFRAC like this:
+=YEARFRAC(DATE(YEAR(TODAY()),1,1),TODAY()) // % year complete
+Full explanation here.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate retirement date 
+Get percent of year complete 
+Get age from birthday 
+Calculate years between dates 
+Videos
+  
+How to check and debug a formula with F9 
+How to step through complex formulas using Evaluate 
+How to calculate years and months between dates  
+ Functions DAYS360 FunctionDATEDIF Function 
+ Links Microsoft YEARFRAC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

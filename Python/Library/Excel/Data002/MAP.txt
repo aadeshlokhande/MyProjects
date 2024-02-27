@@ -1,0 +1,10 @@
+Summary
+The Excel MAP function "maps" a custom LAMBDA function to each value in a supplied array. The LAMBDA is applied to each value, and the result from MAP is an array of results with the same dimensions as the original array.
+Purpose 
+Map array to custom function
+Return value 
+Array of results
+Arguments 
+array1 - The array to be mapped.array2 - [optional] Additional arrays required by the LAMBDA.lambda - The custom LAMBDA function to apply.
+Syntax 
+=MAP(array1, [array2], ..., lambda)

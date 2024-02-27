@@ -1,0 +1,10 @@
+Summary
+The Excel DMAX function returns the maximum value in a field, from a set of records that match criteria. Use the DMIN function to get the minimum value.
+Purpose 
+Get max from matching records
+Return value 
+The maximum value in a given field
+Arguments 
+database - Database range including headers.field - Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DMAX(database, field, criteria)

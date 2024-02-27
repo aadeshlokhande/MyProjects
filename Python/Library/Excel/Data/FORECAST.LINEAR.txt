@@ -1,0 +1,620 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FORECAST.LINEAR function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FORECAST.LINEAR Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2016
+
+
+
+
+Statistical
+
+
+FORECAST.LINEAR Function
+Related functions 
+
+FORECAST
+FORECAST.LINEAR
+FORECAST.ETS
+FORECAST.ETS.CONFINT
+FORECAST.ETS.SEASONALITY
+FORECAST.ETS.STAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.
+Note: Starting with Excel 2016, the FORECAST function was replaced with the FORECAST.LINEAR function. Microsoft recommends replacing FORECAST with FORECAST.LINEAR, since FORECAST will eventually be deprecated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Predict value along a linear trend
+
+
+
+Return value 
+
+Predicted value
+
+
+
+Arguments 
+
+x - The x value data point to use to calculate a prediction.known_ys - The dependent array or range of data (y values).kown_xs - The independent array or range of data (x values).
+
+
+
+Syntax 
+
+=FORECAST.LINEAR(x, known_ys, kown_xs)
+
+
+
+Usage notes 
+
+The FORECAST.LINEAR function predicts a value based on existing values along a linear trend. FORECAST.LINEAR calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, test scores, expenses, measurements, etc.
+Note: Starting with Excel 2016, the FORECAST function was replaced with the FORECAST.LINEAR function. Microsoft recommends replacing FORECAST with FORECAST.LINEAR, since FORECAST will eventually be deprecated.
+In statistics, linear regression is an approach for modeling the relationship between a dependent variable (y values) and an independent variable (x values). FORECAST.LINEAR uses this approach to calculate a y value for a given x value based on existing x and y values. In other words, for a given value x, FORECAST.LINEAR returns a predicted value based on the linear regression relationship between x values and y values.
+Example
+In the example shown above, the formula in cell D13 is:
+
+=FORECAST.LINEAR(B13,sales,periods)
+
+where sales (C5:C12) and periods (B5:B12) are named ranges. With these inputs, the FORECAST.LINEAR function returns 1505.36 in cell D13. As the formula is copied down the table, FORECAST.LINEAR returns predicted values in D13:D16, using values in column B for x.
+The chart to the right shows this data plotted in a scatter plot.
+Note: Although FORECAST calculates future value predictions, it can also be used to interpolate and even predict the past. Mark at Excel Off The Grid has a detailed explanation here.
+Notes
+
+If x is not numeric, FORECAST.LINEAR returns a #VALUE! error.
+If known_ys and known_xs are not the same size, FORECAST.LINEAR will #N/A.
+If the variance of known_x values is zero, FORECAST.LINEAR will return #DIV/0!.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions FORECAST FunctionFORECAST.LINEAR FunctionFORECAST.ETS FunctionFORECAST.ETS.CONFINT FunctionFORECAST.ETS.SEASONALITY FunctionFORECAST.ETS.STAT Function 
+ Links Microsoft FORECAST.LINEAR function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FORECAST.LINEAR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FORECAST.LINEAR Function 
+Previous 
+Next 
+ 
+Excel 2016
+Statistical
+FORECAST.LINEAR Function
+Related functions 
+FORECAST
+FORECAST.LINEAR
+FORECAST.ETS
+FORECAST.ETS.CONFINT
+FORECAST.ETS.SEASONALITY
+FORECAST.ETS.STAT
+Summary
+The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.
+Note: Starting with Excel 2016, the FORECAST function was replaced with the FORECAST.LINEAR function. Microsoft recommends replacing FORECAST with FORECAST.LINEAR, since FORECAST will eventually be deprecated.
+Purpose 
+Predict value along a linear trend
+Return value 
+Predicted value
+Arguments 
+x - The x value data point to use to calculate a prediction.known_ys - The dependent array or range of data (y values).kown_xs - The independent array or range of data (x values).
+Syntax 
+=FORECAST.LINEAR(x, known_ys, kown_xs)
+Usage notes 
+The FORECAST.LINEAR function predicts a value based on existing values along a linear trend. FORECAST.LINEAR calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, test scores, expenses, measurements, etc.
+Note: Starting with Excel 2016, the FORECAST function was replaced with the FORECAST.LINEAR function. Microsoft recommends replacing FORECAST with FORECAST.LINEAR, since FORECAST will eventually be deprecated.
+In statistics, linear regression is an approach for modeling the relationship between a dependent variable (y values) and an independent variable (x values). FORECAST.LINEAR uses this approach to calculate a y value for a given x value based on existing x and y values. In other words, for a given value x, FORECAST.LINEAR returns a predicted value based on the linear regression relationship between x values and y values.
+Example
+In the example shown above, the formula in cell D13 is:
+=FORECAST.LINEAR(B13,sales,periods)
+where sales (C5:C12) and periods (B5:B12) are named ranges. With these inputs, the FORECAST.LINEAR function returns 1505.36 in cell D13. As the formula is copied down the table, FORECAST.LINEAR returns predicted values in D13:D16, using values in column B for x.
+The chart to the right shows this data plotted in a scatter plot.
+Note: Although FORECAST calculates future value predictions, it can also be used to interpolate and even predict the past. Mark at Excel Off The Grid has a detailed explanation here.
+Notes
+If x is not numeric, FORECAST.LINEAR returns a #VALUE! error.
+If known_ys and known_xs are not the same size, FORECAST.LINEAR will #N/A.
+If the variance of known_x values is zero, FORECAST.LINEAR will return #DIV/0!.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions FORECAST FunctionFORECAST.LINEAR FunctionFORECAST.ETS FunctionFORECAST.ETS.CONFINT FunctionFORECAST.ETS.SEASONALITY FunctionFORECAST.ETS.STAT Function 
+ Links Microsoft FORECAST.LINEAR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

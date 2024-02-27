@@ -1,0 +1,282 @@
+Excel ROWS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ROWS Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+ROWS Function
+Related functions 
+ROW
+COLUMN
+COLUMNS
+Summary
+The Excel ROWS function returns the count of rows in a given reference. For example, ROWS(A1:A3) returns 3, since the range A1:A3 contains 3 rows.
+Purpose 
+Get the number of rows in an array or reference.
+Return value 
+Number of rows
+Arguments 
+array - A reference to a cell or range of cells.
+Syntax 
+=ROWS(array)
+Usage notes 
+The ROWS function returns the count of rows in a given reference as a number. For example, =ROWS(A1:A5) returns 5, since the range A1:A5 contains 5 rows. ROWS takes just one argument, called array, which can be a range or array.
+Examples
+Use the ROWS function to get the row count for a given reference or range. For example, there are 10 rows in the range A1:F10 so the formula below returns 10:
+=ROWS(A1:F10) // returns 10
+The range A1:Z100 contains 100 rows, so the formula below returns 100: 
+=ROWS(A1:Z100) // returns 100
+You can also use the ROWS function to get a row count for an array constant:
+=ROWS({1;2;3;4;5}) // returns 5
+Although there is no built-in function to count the number of cells in a range, you can use the ROWS function together with the COLUMNS function like this:
+=COLUMNS(range)*ROWS(range) // total cells
+=COLUMNS(A1:Z100)*ROWS(A1:Z100) // returns 2600
+More details here.
+Notes
+Array can be a range or a reference to a single contiguous group of cells.
+Array can be an array constant or an array created by another formula.
+To count columns, see the COLUMNS function.
+To get row numbers, see the ROW function.
+To lookup a row number, see the MATCH function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Last n rows 
+Last row number in range 
+Display sorted values with helper column 
+Random sort 
+Random value from list or table 
+Dynamic date list 
+Get relative row numbers in range 
+Average last N values in a table 
+Address of last cell in range 
+First column number in range 
+Videos
+  
+How to create a dynamic named range with a Table 
+What is a dynamic named range 
+How to create a named range 
+How to count items in a filtered list 
+How Excel Table ranges work 
+How to remove an Excel Table 
+Formulas to query a table 
+Introduction to structured references 
+How to perform a random sort 
+ Functions ROW FunctionCOLUMN FunctionCOLUMNS Function 
+ Links Microsoft ROWS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ROWS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ROWS Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+ROWS Function
+Related functions 
+ROW
+COLUMN
+COLUMNS
+Summary
+The Excel ROWS function returns the count of rows in a given reference. For example, ROWS(A1:A3) returns 3, since the range A1:A3 contains 3 rows.
+Purpose 
+Get the number of rows in an array or reference.
+Return value 
+Number of rows
+Arguments 
+array - A reference to a cell or range of cells.
+Syntax 
+=ROWS(array)
+Usage notes 
+The ROWS function returns the count of rows in a given reference as a number. For example, =ROWS(A1:A5) returns 5, since the range A1:A5 contains 5 rows. ROWS takes just one argument, called array, which can be a range or array.
+Examples
+Use the ROWS function to get the row count for a given reference or range. For example, there are 10 rows in the range A1:F10 so the formula below returns 10:
+=ROWS(A1:F10) // returns 10
+The range A1:Z100 contains 100 rows, so the formula below returns 100: 
+=ROWS(A1:Z100) // returns 100
+You can also use the ROWS function to get a row count for an array constant:
+=ROWS({1;2;3;4;5}) // returns 5
+Although there is no built-in function to count the number of cells in a range, you can use the ROWS function together with the COLUMNS function like this:
+=COLUMNS(range)*ROWS(range) // total cells
+=COLUMNS(A1:Z100)*ROWS(A1:Z100) // returns 2600
+More details here.
+Notes
+Array can be a range or a reference to a single contiguous group of cells.
+Array can be an array constant or an array created by another formula.
+To count columns, see the COLUMNS function.
+To get row numbers, see the ROW function.
+To lookup a row number, see the MATCH function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Last n rows 
+Last row number in range 
+Display sorted values with helper column 
+Random sort 
+Random value from list or table 
+Dynamic date list 
+Get relative row numbers in range 
+Average last N values in a table 
+Address of last cell in range 
+First column number in range 
+Videos
+  
+How to create a dynamic named range with a Table 
+What is a dynamic named range 
+How to create a named range 
+How to count items in a filtered list 
+How Excel Table ranges work 
+How to remove an Excel Table 
+Formulas to query a table 
+Introduction to structured references 
+How to perform a random sort 
+ Functions ROW FunctionCOLUMN FunctionCOLUMNS Function 
+ Links Microsoft ROWS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

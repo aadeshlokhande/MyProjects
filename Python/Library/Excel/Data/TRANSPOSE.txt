@@ -1,0 +1,681 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel TRANSPOSE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+TRANSPOSE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+TRANSPOSE Function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel TRANSPOSE function "flips" the orientation of a given range or array: TRANSPOSE flips a vertical range to a horizontal range, and flips a horizontal range to a vertical range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Flip the orientation of a range of cells
+
+
+
+Return value 
+
+An array in a new orientation.
+
+
+
+Arguments 
+
+array - The array or range of cells to transpose.
+
+
+
+Syntax 
+
+=TRANSPOSE(array)
+
+
+
+Usage notes 
+
+The TRANSPOSE function converts a vertical range of cells to a horizontal range of cells, or a horizontal range of cells to a vertical range of cells. In other words, TRANSPOSE "flips" the orientation of a given range or array:
+
+When given a vertical range, TRANSPOSE converts it to a horizontal range
+When given a horizontal range, TRANSPOSE converts it to a vertical range
+
+When array is transposed, the first row becomes the first column of the new array, the second row becomes the second column of the new array, the third row becomes the third column of the new array, and so on.
+TRANSPOSE can be used with both ranges and arrays. Transposed ranges are dynamic. If data in the source range changes, TRANSPOSE will immediately update data in the target range.
+Examples
+When given a vertical array, TRANSPOSE returns a horizontal array:
+
+=TRANSPOSE({"a";"b";"c"}) // returns {"a","b","c"}
+
+To transpose the vertical range A1:A5 into a horizontal array:
+
+=TRANSPOSE(A1:A5) // vertical to horizontal
+
+To transpose the horizontal range A1:E1 to a vertical array:
+
+=TRANSPOSE(A1:E1) // vertical to horizontal
+
+In the example shown above, the formulas in I5 and F12 are:
+
+=TRANSPOSE(B5:F6) // formula in I5
+=TRANSPOSE(B12:C16) // formula in F12
+
+Note: TRANSPOSE does not carry over formatting. In the example shown, the target ranges have been formatted in a separate step.
+TRANSPOSE with other functions
+TRANSPOSE can be used to "catch" and transpose the output from another function. The formula below changes the result from XLOOKUP from a horizontal configuration to a vertical configuration:
+
+=TRANSPOSE((XLOOKUP(value,lookup_range,return_range))
+
+Read more: XLOOKUP wildcard example.
+Excel 365
+In Excel 365, which supports dynamic array formulas, no special syntax is required, TRANSPOSE simply works and results spill into destination cells automatically. However, in other versions of of Excel, TRANSPOSE must be entered as a multi-cell array formula with control + shift + enter:
+
+First select the target range, which should have the same number of rows as the source range has columns, and the same number of columns as the source range has rows.
+Enter the TRANSPOSE function, and select the source range as the array argument.
+Confirm the formula as an array formula with control + shift + enter.
+
+Paste special
+The TRANSPOSE function makes sense when you need a dynamic solution that will continue to update when source data changes. However if you only need a one-time conversion, you can use Paste Special with the Transpose option. This video covers the basics of Paste Special.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Dynamic two-way average 
+
+Get column totals 
+
+Count rows that contain specific values 
+
+Unwrap column into fields 
+
+Text split to array 
+
+Get row totals 
+
+Sort and extract unique values 
+
+LAMBDA split text to array 
+
+Count rows with at least n matching values 
+
+Filter horizontal data 
+
+
+
+Videos
+  
+Two-way summary with dynamic arrays 
+
+
+ Links Microsoft TRANSPOSE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel TRANSPOSE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRANSPOSE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+TRANSPOSE Function 
+Summary
+The Excel TRANSPOSE function "flips" the orientation of a given range or array: TRANSPOSE flips a vertical range to a horizontal range, and flips a horizontal range to a vertical range.
+Purpose 
+Flip the orientation of a range of cells
+Return value 
+An array in a new orientation.
+Arguments 
+array - The array or range of cells to transpose.
+Syntax 
+=TRANSPOSE(array)
+Usage notes 
+The TRANSPOSE function converts a vertical range of cells to a horizontal range of cells, or a horizontal range of cells to a vertical range of cells. In other words, TRANSPOSE "flips" the orientation of a given range or array:
+When given a vertical range, TRANSPOSE converts it to a horizontal range
+When given a horizontal range, TRANSPOSE converts it to a vertical range
+When array is transposed, the first row becomes the first column of the new array, the second row becomes the second column of the new array, the third row becomes the third column of the new array, and so on.
+TRANSPOSE can be used with both ranges and arrays. Transposed ranges are dynamic. If data in the source range changes, TRANSPOSE will immediately update data in the target range.
+Examples
+When given a vertical array, TRANSPOSE returns a horizontal array:
+=TRANSPOSE({"a";"b";"c"}) // returns {"a","b","c"}
+To transpose the vertical range A1:A5 into a horizontal array:
+=TRANSPOSE(A1:A5) // vertical to horizontal
+To transpose the horizontal range A1:E1 to a vertical array:
+=TRANSPOSE(A1:E1) // vertical to horizontal
+In the example shown above, the formulas in I5 and F12 are:
+=TRANSPOSE(B5:F6) // formula in I5
+=TRANSPOSE(B12:C16) // formula in F12
+Note: TRANSPOSE does not carry over formatting. In the example shown, the target ranges have been formatted in a separate step.
+TRANSPOSE with other functions
+TRANSPOSE can be used to "catch" and transpose the output from another function. The formula below changes the result from XLOOKUP from a horizontal configuration to a vertical configuration:
+=TRANSPOSE((XLOOKUP(value,lookup_range,return_range))
+Read more: XLOOKUP wildcard example.
+Excel 365
+In Excel 365, which supports dynamic array formulas, no special syntax is required, TRANSPOSE simply works and results spill into destination cells automatically. However, in other versions of of Excel, TRANSPOSE must be entered as a multi-cell array formula with control + shift + enter:
+First select the target range, which should have the same number of rows as the source range has columns, and the same number of columns as the source range has rows.
+Enter the TRANSPOSE function, and select the source range as the array argument.
+Confirm the formula as an array formula with control + shift + enter.
+Paste special
+The TRANSPOSE function makes sense when you need a dynamic solution that will continue to update when source data changes. However if you only need a one-time conversion, you can use Paste Special with the Transpose option. This video covers the basics of Paste Special.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Dynamic two-way average 
+Get column totals 
+Count rows that contain specific values 
+Unwrap column into fields 
+Text split to array 
+Get row totals 
+Sort and extract unique values 
+LAMBDA split text to array 
+Count rows with at least n matching values 
+Filter horizontal data 
+Videos
+  
+Two-way summary with dynamic arrays 
+ Links Microsoft TRANSPOSE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

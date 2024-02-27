@@ -1,0 +1,10 @@
+Summary
+The Excel BITAND function returns a decimal number representing the bitwise AND of two numbers.
+Purpose 
+Returns a 'Bitwise And' of two numbers
+Return value 
+Decimal Number
+Arguments 
+number1 - A positive decimal number.number2 - A positive decimal number.
+Syntax 
+=BITAND(number1, number2)

@@ -1,0 +1,10 @@
+Summary
+The Excel MODE.MULT function returns an array of the most frequently occurring numbers in a numeric data set. For example, =MODE.MULT(1,2,3,3,4,5,5) returns {3;5}, because there are two modes, 3 and 5.
+Purpose 
+Get most frequently occurring numbers
+Return value 
+Numbers representing mode(s)
+Arguments 
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+Syntax 
+=MODE.MULT(number1, [number2], ...)

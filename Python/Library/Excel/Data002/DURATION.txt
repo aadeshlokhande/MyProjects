@@ -1,0 +1,10 @@
+Summary
+The Excel DURATION function returns the annual duration of a security with periodic interest payments, calculated with the Macauley duration formula.
+Purpose 
+Get annual duration with periodic interest
+Return value 
+Duration in years
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.coupon - The security's annual coupon rate.yld - The security's annual yield.freq - Number of coupon payments per year (annual = 1, semi-annual = 2, quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=DURATION(settlement, maturity, coupon, yld, freq, [basis])

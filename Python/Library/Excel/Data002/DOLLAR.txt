@@ -1,0 +1,10 @@
+Summary
+The Excel DOLLAR function converts a number to text using the Currency number format. The TEXT function can do the same thing, and is much more versatile.
+Purpose 
+Convert a number to text in currency format
+Return value 
+A number as text in currency format.
+Arguments 
+number - The number to convert.decimals - The number of digits to the right of the decimal point. Default is 2.
+Syntax 
+=DOLLAR(number, decimals)

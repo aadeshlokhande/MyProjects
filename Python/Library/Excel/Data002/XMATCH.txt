@@ -1,0 +1,10 @@
+Summary
+The Excel XMATCH function performs a lookup and returns a position in vertical or horizontal ranges. It is a more robust and flexible successor to the MATCH function. XMATCH supports approximate and exact matching, reverse search, and wildcards (* ?) for partial matches. 
+Purpose 
+Get the position of an item in a list or table
+Return value 
+Numeric position in lookup array
+Arguments 
+lookup_value - The lookup value.lookup_array - The array or range to search.match_mode - [optional] 0 = exact match (default), -1 = exact match or next smallest, 1 = exact match or next larger, 2 = wildcard match.search_mode - [optional] 1 = search from first (default), -1 = search from last, 2 = binary search ascending, -2 = binary search descending.
+Syntax 
+=XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])

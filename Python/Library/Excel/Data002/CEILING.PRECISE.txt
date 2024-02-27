@@ -1,0 +1,10 @@
+Summary
+The Excel CEILING.PRECISE function rounds a number up to a given multiple. CEILING.PRECISE defaults to a multiple of 1, and always rounds negative numbers toward zero.
+Purpose 
+Round a number up to nearest multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - [optional] Multiple to use when rounding. Default is 1.
+Syntax 
+=CEILING.PRECISE(number, [significance])

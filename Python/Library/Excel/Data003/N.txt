@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel N function returns a number when given a value. The N function can be used to convert TRUE and FALSE to 1 and 0 respectively. When given a text value, the N function returns zero.', 'Purpose' : 'Convert a value to a number', 'Return value' : 'A number or error code', 'Arguments' : 'value - The value to convert to a number.', 'Syntax' : '=N(value)' }

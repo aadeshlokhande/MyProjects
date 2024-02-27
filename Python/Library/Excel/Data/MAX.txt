@@ -1,0 +1,728 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MAX function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MAX Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+MAX Function
+Related functions 
+
+MAXIFS
+LARGE
+MIN
+RANK
+MAXA
+AGGREGATE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MAX function returns the largest numeric value in the data provided. MAX ignores empty cells, the logical values TRUE and FALSE, and text values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the largest value
+
+
+
+Return value 
+
+The largest value in supplied data
+
+
+
+Arguments 
+
+number1 - Number, reference to numeric value, or range that contains numeric values.number2 - [optional] Number, reference to numeric value, or range that contains numeric values.
+
+
+
+Syntax 
+
+=MAX(number1, [number2], ...)
+
+
+
+Usage notes 
+
+The MAX function returns the largest numeric value in the data provided. The MAX function can be used to return the largest value from any type of numeric data. For example, MAX can return the slowest time in a race, the latest date, the largest percentage, the highest temperature, or the top sales number. 
+The MAX function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MAX ignores empty cells, text values, and the logical values TRUE and FALSE.
+Basic Example
+The MAX function returns the largest numeric value in supplied data:
+
+=MAX(12,17,25,11,23) // returns 25
+
+When given a range, MAX returns the smallest value in the range:
+
+=MAX(A1:A10) // maximum value in A1:A10
+Mixed arguments
+The MAX function can accept a mix of arguments:
+
+=MAX(5,10)
+=MAX(A1,A2,A3)
+=MAX(A1:A10,100)
+=MAX(A1:A10,C1:C10)
+
+Logical values
+The MAX function will ignore logical values and numbers entered as text that appear on the worksheet. However, if such values are provided directly as arguments, MAX will use them:
+
+=MAX(-1,TRUE) // returns 1
+=MAX(-1,TRUE,"3") // returns 3
+
+Errors
+When MAX encounters an error in a range, it will return an error. To calculate a maximum value while ignoring errors, you can use the AGGREGATE function, which can be configured to ignore errors. See a detailed example here.
+Other functions
+Excel provides other functions that deal with maximum values and rank:
+
+To calculate the maximum value with criteria, use the MAXIFS function.
+To retrieve the nth largest value in a data set, use the LARGE function.
+To determine the rank of a number in a set of data, use the RANK function.
+
+Notes
+
+Arguments can be provided as numbers, names, arrays, or references.
+MAX accepts up to 255 arguments. If arguments contain no numbers, MAX returns 0.
+MAX ignores empty cells, text values, and TRUE and FALSE in references.
+MAX will evaluate numbers as text and logical values supplied directly as arguments.
+To include logical values in a reference, see the MAXA function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Basic array formula example 
+
+Maximum change 
+
+Find longest string with criteria 
+
+nth largest without duplicates 
+
+Count consecutive monthly orders 
+
+Maximum value 
+
+XLOOKUP latest by date 
+
+Cap percentage between 0 and 100 
+
+First in last out times 
+
+Find longest string in column 
+
+
+
+Videos
+  
+What is a dynamic named range 
+
+How to calculate maximum and minimum values 
+
+How to apply a named range to an existing formula 
+
+How to create a named range 
+
+Create a dynamic reference to a worksheet 
+
+How to build a simple dynamic chart 
+
+Formulas to query a table 
+
+Structured reference syntax examples 
+
+3 basic array formulas 
+
+
+ Functions MAXIFS FunctionLARGE FunctionMIN FunctionRANK FunctionMAXA FunctionAGGREGATE Function 
+ Links Microsoft MAX function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MAX function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MAX Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+MAX Function
+Related functions 
+MAXIFS
+LARGE
+MIN
+RANK
+MAXA
+AGGREGATE
+Summary
+The Excel MAX function returns the largest numeric value in the data provided. MAX ignores empty cells, the logical values TRUE and FALSE, and text values.
+Purpose 
+Get the largest value
+Return value 
+The largest value in supplied data
+Arguments 
+number1 - Number, reference to numeric value, or range that contains numeric values.number2 - [optional] Number, reference to numeric value, or range that contains numeric values.
+Syntax 
+=MAX(number1, [number2], ...)
+Usage notes 
+The MAX function returns the largest numeric value in the data provided. The MAX function can be used to return the largest value from any type of numeric data. For example, MAX can return the slowest time in a race, the latest date, the largest percentage, the highest temperature, or the top sales number. 
+The MAX function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MAX ignores empty cells, text values, and the logical values TRUE and FALSE.
+Basic Example
+The MAX function returns the largest numeric value in supplied data:
+=MAX(12,17,25,11,23) // returns 25
+When given a range, MAX returns the smallest value in the range:
+=MAX(A1:A10) // maximum value in A1:A10
+Mixed arguments
+The MAX function can accept a mix of arguments:
+=MAX(5,10)
+=MAX(A1,A2,A3)
+=MAX(A1:A10,100)
+=MAX(A1:A10,C1:C10)
+Logical values
+The MAX function will ignore logical values and numbers entered as text that appear on the worksheet. However, if such values are provided directly as arguments, MAX will use them:
+=MAX(-1,TRUE) // returns 1
+=MAX(-1,TRUE,"3") // returns 3
+Errors
+When MAX encounters an error in a range, it will return an error. To calculate a maximum value while ignoring errors, you can use the AGGREGATE function, which can be configured to ignore errors. See a detailed example here.
+Other functions
+Excel provides other functions that deal with maximum values and rank:
+To calculate the maximum value with criteria, use the MAXIFS function.
+To retrieve the nth largest value in a data set, use the LARGE function.
+To determine the rank of a number in a set of data, use the RANK function.
+Notes
+Arguments can be provided as numbers, names, arrays, or references.
+MAX accepts up to 255 arguments. If arguments contain no numbers, MAX returns 0.
+MAX ignores empty cells, text values, and TRUE and FALSE in references.
+MAX will evaluate numbers as text and logical values supplied directly as arguments.
+To include logical values in a reference, see the MAXA function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Basic array formula example 
+Maximum change 
+Find longest string with criteria 
+nth largest without duplicates 
+Count consecutive monthly orders 
+Maximum value 
+XLOOKUP latest by date 
+Cap percentage between 0 and 100 
+First in last out times 
+Find longest string in column 
+Videos
+  
+What is a dynamic named range 
+How to calculate maximum and minimum values 
+How to apply a named range to an existing formula 
+How to create a named range 
+Create a dynamic reference to a worksheet 
+How to build a simple dynamic chart 
+Formulas to query a table 
+Structured reference syntax examples 
+3 basic array formulas 
+ Functions MAXIFS FunctionLARGE FunctionMIN FunctionRANK FunctionMAXA FunctionAGGREGATE Function 
+ Links Microsoft MAX function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

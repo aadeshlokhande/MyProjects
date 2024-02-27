@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.', 'Purpose' : 'Purpose ', 'Return value' : 'Return value ', 'Arguments' : 'Arguments ', 'Syntax' : 'Syntax ' }

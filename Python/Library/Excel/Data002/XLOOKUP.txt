@@ -1,0 +1,10 @@
+Summary
+The Excel XLOOKUP function is a modern and flexible replacement for older functions like VLOOKUP, HLOOKUP, and LOOKUP.  XLOOKUP supports approximate and exact matching, wildcards (* ?) for partial matches, and lookups in vertical or horizontal ranges.
+Purpose 
+Lookup values in range or array
+Return value 
+Matching value(s) from return array
+Arguments 
+lookup - The lookup value.lookup_array - The array or range to search.return_array - The array or range to return.not_found - [optional] Value to return if no match found.match_mode - [optional] 0 = exact match (default), -1 = exact match or next smallest, 1 = exact match or next larger, 2 = wildcard match.search_mode - [optional] 1 = search from first (default), -1 = search from last, 2 = binary search ascending, -2 = binary search descending.
+Syntax 
+=XLOOKUP(lookup, lookup_array, return_array, [not_found], [match_mode], [search_mode])

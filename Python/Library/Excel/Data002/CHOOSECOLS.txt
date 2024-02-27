@@ -1,0 +1,10 @@
+Summary
+The Excel CHOOSECOLS function returns specific columns from an array or range. The columns to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a column in the given array.
+Purpose 
+Return specific columns from an array
+Return value 
+Extracted columns in a single array
+Arguments 
+array - The array to extract columns from.col_num1 - The numeric index of the first column to return.col_num2 - [optional] The numeric index of the second column to return.
+Syntax 
+=CHOOSECOLS(array, col_num1, [col_num2], ...)

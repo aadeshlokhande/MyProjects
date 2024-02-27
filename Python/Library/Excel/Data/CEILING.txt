@@ -1,0 +1,724 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel CEILING function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+CEILING Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+CEILING Function
+Related functions 
+
+MROUND
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+CEILING
+EVEN
+ODD
+INT
+TRUNC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel CEILING function rounds a given number up to the nearest specified multiple. CEILING works like the MROUND function, but CEILING always rounds up.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Round a number up to nearest multiple
+
+
+
+Return value 
+
+A rounded number.
+
+
+
+Arguments 
+
+number - The number that should be rounded.significance - The multiple to use when rounding.
+
+
+
+Syntax 
+
+=CEILING(number, significance)
+
+
+
+Usage notes 
+
+The Excel CEILING function rounds a number up to a given multiple. The multiple to use for rounding is provided as the significance argument. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The CEILING function takes two arguments, number, and significance. Number is the numeric value to round up. The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but CEILING can also understand time entered as text like "0:15". See the example below.
+CEILING works like the MROUND function, which also rounds to a given multiple. However, unlike MROUND, which rounds to the nearest multiple, the CEILING function rounds up to the next multiple.
+Note: the CEILING function is officially listed as a compatibility function, replaced by CEILING.MATH and CEILING.PRECISE.
+Examples
+The formulas below show how CEILING rounds up values to a given multiple:
+
+=CEILING(10,3) // returns 12
+=CEILING(36,7) // returns 42
+=CEILING(309,25) // returns 325
+=CEILING(610,100) // returns 700
+=CEILING(-5.4,1) // returns -5
+
+To round a number in A1 up to the nearest multiple of 5, you can use a formula like this:
+
+=CEILING(A1,5)
+
+Round pricing up to end with .99
+CEILING can be useful to set pricing after currency conversion or discounts are applied. For example, the formula below will round a value in A1 up to the next whole dollar, then subtract 1 cent, to return a price like $2.99, $5.99, $49.99, etc.
+
+=CEILING(A1,1) - 0.01
+
+
+Round time up to nearest 15 minutes
+CEILING understands time formats and can be used to round time up to a given multiple. For example, to round a time in A1 up to the nearest 15 minutes, you can use CEILING like this:
+
+=CEILING(A1,"0:15") // round up to nearest 15 min
+
+Other rounding functions
+Excel provides a number of functions for rounding:
+
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+
+Notes
+
+CEILING works like the MROUND function, but CEILING always rounds up.
+If number is an exact multiple of significance, no rounding occurs.
+If number and significance are both negative, CEILING rounds down, away from zero.
+If number is negative, and significance is positive, CEILING rounds up, towards zero.
+For more control over how CEILING rounds negative numbers, see the CEILING.MATH function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Round to nearest 5 
+
+Shade alternating groups of n rows 
+
+Round by bundle size 
+
+Next biweekly payday from date 
+
+Round a number up to next half 
+
+Round a number up to nearest multiple 
+
+Round time to nearest 15 minutes 
+
+Round price to end in .45 or .95 
+
+Running count group by n size 
+
+Randomly assign people to groups 
+
+
+
+Videos
+  
+Shade groups of rows with conditional formatting 
+
+
+ Functions MROUND FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionCEILING FunctionEVEN FunctionODD FunctionINT FunctionTRUNC Function 
+ Links Microsoft CEILING function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel CEILING function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CEILING Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+CEILING Function
+Related functions 
+MROUND
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+CEILING
+EVEN
+ODD
+INT
+TRUNC
+Summary
+The Excel CEILING function rounds a given number up to the nearest specified multiple. CEILING works like the MROUND function, but CEILING always rounds up.
+Purpose 
+Round a number up to nearest multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - The multiple to use when rounding.
+Syntax 
+=CEILING(number, significance)
+Usage notes 
+The Excel CEILING function rounds a number up to a given multiple. The multiple to use for rounding is provided as the significance argument. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The CEILING function takes two arguments, number, and significance. Number is the numeric value to round up. The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but CEILING can also understand time entered as text like "0:15". See the example below.
+CEILING works like the MROUND function, which also rounds to a given multiple. However, unlike MROUND, which rounds to the nearest multiple, the CEILING function rounds up to the next multiple.
+Note: the CEILING function is officially listed as a compatibility function, replaced by CEILING.MATH and CEILING.PRECISE.
+Examples
+The formulas below show how CEILING rounds up values to a given multiple:
+=CEILING(10,3) // returns 12
+=CEILING(36,7) // returns 42
+=CEILING(309,25) // returns 325
+=CEILING(610,100) // returns 700
+=CEILING(-5.4,1) // returns -5
+To round a number in A1 up to the nearest multiple of 5, you can use a formula like this:
+=CEILING(A1,5)
+Round pricing up to end with .99
+CEILING can be useful to set pricing after currency conversion or discounts are applied. For example, the formula below will round a value in A1 up to the next whole dollar, then subtract 1 cent, to return a price like $2.99, $5.99, $49.99, etc.
+=CEILING(A1,1) - 0.01
+Round time up to nearest 15 minutes
+CEILING understands time formats and can be used to round time up to a given multiple. For example, to round a time in A1 up to the nearest 15 minutes, you can use CEILING like this:
+=CEILING(A1,"0:15") // round up to nearest 15 min
+Other rounding functions
+Excel provides a number of functions for rounding:
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+Notes
+CEILING works like the MROUND function, but CEILING always rounds up.
+If number is an exact multiple of significance, no rounding occurs.
+If number and significance are both negative, CEILING rounds down, away from zero.
+If number is negative, and significance is positive, CEILING rounds up, towards zero.
+For more control over how CEILING rounds negative numbers, see the CEILING.MATH function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Round to nearest 5 
+Shade alternating groups of n rows 
+Round by bundle size 
+Next biweekly payday from date 
+Round a number up to next half 
+Round a number up to nearest multiple 
+Round time to nearest 15 minutes 
+Round price to end in .45 or .95 
+Running count group by n size 
+Randomly assign people to groups 
+Videos
+  
+Shade groups of rows with conditional formatting 
+ Functions MROUND FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionCEILING FunctionEVEN FunctionODD FunctionINT FunctionTRUNC Function 
+ Links Microsoft CEILING function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

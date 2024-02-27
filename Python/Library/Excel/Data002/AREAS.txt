@@ -1,0 +1,10 @@
+Summary
+The Excel AREAS function returns the number of areas in a given reference. For example, =AREAS((A1:C1,A2:C2)) returns 2. Multiple references must be enclosed in an extra set of parentheses.
+Purpose�
+Get the number of areas in a reference.
+Return value�
+A number representing number of areas.
+Arguments�
+reference - Reference(s) to a cell or range of cells.
+Syntax�
+=AREAS(reference)

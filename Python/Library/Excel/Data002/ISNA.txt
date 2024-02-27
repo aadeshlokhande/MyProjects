@@ -1,0 +1,10 @@
+Summary
+The Excel ISNA function returns TRUE when a cell contains the #N/A error and FALSE for any other value, or any other error type. You can use the ISNA function with the IF function test for #N/A and display a friendly message if the error occurs.
+Purpose 
+Test for the #N/A error
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The value to check if #N/A.
+Syntax 
+=ISNA(value)

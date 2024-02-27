@@ -1,0 +1,10 @@
+Summary
+The Excel FIELDVALUE function extracts a given field value from a data type. The field is specified by name and provided as a text value.
+Purpose 
+Extract field value from a data type
+Return value 
+Field value for given data type
+Arguments 
+value - The data type with field values.field_name - The field name provided as a text value.
+Syntax 
+=FIELDVALUE(value, field_name)

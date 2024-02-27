@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel DEGREES function converts angles (expressed in radians) to degrees. For example, the formula =DEGREES(PI()) returns 180.', 'Purpose' : 'Converts radians to degrees', 'Return value' : 'Degrees', 'Arguments' : 'angle - Angle in radians that you want to convert to degrees.', 'Syntax' : '=DEGREES(angle)' }

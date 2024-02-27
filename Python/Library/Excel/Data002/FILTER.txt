@@ -1,0 +1,10 @@
+Summary
+The Excel FILTER function filters a range of data based on supplied criteria, and extracts matching records.
+Purpose 
+Filters range with given criteria
+Return value 
+Array of filtered values
+Arguments 
+array - Range or array to filter.include - Boolean array, supplied as criteria.if_empty - [optional] Value to return when no results are returned.
+Syntax 
+=FILTER(array, include, [if_empty])

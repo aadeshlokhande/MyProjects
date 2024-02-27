@@ -1,0 +1,15 @@
+Operator
+Description
+Example 
+++
+Increment (add one)
+x++; (post-increment)
+--
+Decrement (subtract one)
+y--; (post-decrement)
+++x
+Pre-increment
+++x; (increment before use)
+--y
+Pre-decrement
+--y; (decrement before use)

@@ -1,0 +1,274 @@
+Excel STDEV.S function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STDEV.S Function 
+Previous 
+Next 
+ 
+Excel 2010
+Statistical
+STDEV.S Function
+Related functions 
+STDEV
+STDEVP
+STDEV.P
+STDEV
+Summary
+The Excel STDEV.S function calculates the standard deviation for a sample set of data. STDEV.S replaces the older STDEV function, with the same behavior.
+Purpose 
+Get the standard deviation in a sample
+Return value 
+Estimated standard deviation
+Arguments 
+number1 - First number or reference in the sample.number2 - [optional] Second number or reference.
+Syntax 
+=STDEV.S(number1, [number2], ...)
+Usage notes 
+The STDEV.S function calculates the standard deviation in a sample set of data. Standard deviation is a measure of how much variance there is in a set of numbers compared to the average (mean) of the numbers. The STDEV.S function is meant to estimate standard deviation in a sample. If data represents an entire population, use the STDEV.P function.
+Note: STDEV.S replaces the older STDEV function, but has identical behavior. Although STDEV still exists for backwards compatibility, Microsoft recommends that people use the newer STDEV.S function instead.
+Standard Deviation functions in Excel
+The table below summarizes the standard deviation functions provided by Excel.
+Name
+Data set
+Text and logicals
+STDEV
+Sample
+Ignored
+STDEVP
+Population
+Ignored
+STDEV.S
+Sample
+Ignored
+STDEV.P
+Population
+Ignored
+STDEVA
+Sample
+Evaluated
+STDEVPA
+Population
+Evaluated
+Notes:
+STDEV.S calculates standard deviation using the "n-1" method.
+STDEV.S assumes data is a sample only. When data represents an  entire population, use the STDEV.P function.
+Numbers are supplied as arguments. They can be supplied as actual numbers, ranges, arrays, or references that contain numbers.
+STDEV.S ignores empty cells, logical values, and text that appears in supplied reference(s).
+STDEV.S will evaluate text and logical values hardcoded as function arguments.
+To evaluate logical values and/or numbers as text in a reference, see the STDEVA function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Standard deviation calculation 
+Coefficient of variation 
+ Functions STDEV FunctionSTDEVP FunctionSTDEV.P FunctionSTDEV Function 
+ Links Microsoft STDEV.S function documentationStandard deviation (wikipedia) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel STDEV.S function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STDEV.S Function 
+Previous 
+Next 
+ 
+Excel 2010
+Statistical
+STDEV.S Function
+Related functions 
+STDEV
+STDEVP
+STDEV.P
+STDEV
+Summary
+The Excel STDEV.S function calculates the standard deviation for a sample set of data. STDEV.S replaces the older STDEV function, with the same behavior.
+Purpose 
+Get the standard deviation in a sample
+Return value 
+Estimated standard deviation
+Arguments 
+number1 - First number or reference in the sample.number2 - [optional] Second number or reference.
+Syntax 
+=STDEV.S(number1, [number2], ...)
+Usage notes 
+The STDEV.S function calculates the standard deviation in a sample set of data. Standard deviation is a measure of how much variance there is in a set of numbers compared to the average (mean) of the numbers. The STDEV.S function is meant to estimate standard deviation in a sample. If data represents an entire population, use the STDEV.P function.
+Note: STDEV.S replaces the older STDEV function, but has identical behavior. Although STDEV still exists for backwards compatibility, Microsoft recommends that people use the newer STDEV.S function instead.
+Standard Deviation functions in Excel
+The table below summarizes the standard deviation functions provided by Excel.
+Name
+Data set
+Text and logicals
+STDEV
+Sample
+Ignored
+STDEVP
+Population
+Ignored
+STDEV.S
+Sample
+Ignored
+STDEV.P
+Population
+Ignored
+STDEVA
+Sample
+Evaluated
+STDEVPA
+Population
+Evaluated
+Notes:
+STDEV.S calculates standard deviation using the "n-1" method.
+STDEV.S assumes data is a sample only. When data represents an  entire population, use the STDEV.P function.
+Numbers are supplied as arguments. They can be supplied as actual numbers, ranges, arrays, or references that contain numbers.
+STDEV.S ignores empty cells, logical values, and text that appears in supplied reference(s).
+STDEV.S will evaluate text and logical values hardcoded as function arguments.
+To evaluate logical values and/or numbers as text in a reference, see the STDEVA function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Standard deviation calculation 
+Coefficient of variation 
+ Functions STDEV FunctionSTDEVP FunctionSTDEV.P FunctionSTDEV Function 
+ Links Microsoft STDEV.S function documentationStandard deviation (wikipedia) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

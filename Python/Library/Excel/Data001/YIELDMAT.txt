@@ -1,0 +1,262 @@
+Excel YIELDMAT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+YIELDMAT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+YIELDMAT Function
+Related functions 
+YIELD
+YIELDDISC
+YIELDMAT
+ODDFYIELD
+ODDLYIELD
+Summary
+The Excel YIELDMAT function returns the annual yield of a security that pays interest at maturity.
+Purpose 
+Get annual yield of security interest at maturity
+Return value 
+Yield as percentage
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.rate - Interest rate of security.pr - Price per $100 face value.basis - [optional] Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).
+Syntax 
+=YIELDMAT(sd, md, id, rate, pr, [basis])
+Usage notes 
+The YIELDMAT function returns the annual yield of a security that pays interest at maturity. In the example shown, the formula in F5 is:
+=YIELDMAT(C9,C7,C8,C6,C5,C10)
+with these inputs, the YIELDMAT function returns 0.081 which, or 8.10% when formatted with the percentage number format.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. If you want to enter valid dates directly inside a function, the DATE function is the best approach.
+Basis
+The basis argument controls how days are counted. The PRICE function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+Settlement, maturity issue, and basis are truncated to integers
+If settlement, maturity, or issue dates are not valid, YIELDMAT returns #VALUE!
+YIELDMAT returns #NUM! if any of the following are true:
+		
+rate < 0
+pr <= 0
+settlement >= maturity
+Basis is not 0-4
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions YIELD FunctionYIELDDISC FunctionYIELDMAT FunctionODDFYIELD FunctionODDLYIELD Function 
+ Links Microsoft YIELDMAT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel YIELDMAT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+YIELDMAT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+YIELDMAT Function
+Related functions 
+YIELD
+YIELDDISC
+YIELDMAT
+ODDFYIELD
+ODDLYIELD
+Summary
+The Excel YIELDMAT function returns the annual yield of a security that pays interest at maturity.
+Purpose 
+Get annual yield of security interest at maturity
+Return value 
+Yield as percentage
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.rate - Interest rate of security.pr - Price per $100 face value.basis - [optional] Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).
+Syntax 
+=YIELDMAT(sd, md, id, rate, pr, [basis])
+Usage notes 
+The YIELDMAT function returns the annual yield of a security that pays interest at maturity. In the example shown, the formula in F5 is:
+=YIELDMAT(C9,C7,C8,C6,C5,C10)
+with these inputs, the YIELDMAT function returns 0.081 which, or 8.10% when formatted with the percentage number format.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. If you want to enter valid dates directly inside a function, the DATE function is the best approach.
+Basis
+The basis argument controls how days are counted. The PRICE function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+Settlement, maturity issue, and basis are truncated to integers
+If settlement, maturity, or issue dates are not valid, YIELDMAT returns #VALUE!
+YIELDMAT returns #NUM! if any of the following are true:
+		
+rate < 0
+pr <= 0
+settlement >= maturity
+Basis is not 0-4
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions YIELD FunctionYIELDDISC FunctionYIELDMAT FunctionODDFYIELD FunctionODDLYIELD Function 
+ Links Microsoft YIELDMAT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

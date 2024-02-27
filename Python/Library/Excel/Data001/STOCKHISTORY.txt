@@ -1,0 +1,318 @@
+Excel STOCKHISTORY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STOCKHISTORY Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+STOCKHISTORY Function 
+Summary
+The Excel STOCKHISTORY function retrieves historical stock price information based on a given symbol and date range. The primary purpose of STOCKHISTORY is to get the history of a financial instrument over time. The result is an array of values that spill onto the worksheet into multiple cells.
+Purpose 
+Retrieve stock price information
+Return value 
+Array of stock price information
+Arguments 
+stock - A ticker symbol in double quotes ("MSFT", "AAPL", "GOOG", etc.).start_date - The start date for data to be retrieved.end_date - [optional] The end date for data to be retrieved. Default is start_date.interval - [optional] Time interval. Daily = 0, weekly = 1, monthly = 2. Default is 0.headers - [optional] No header = 0, basic header = 1,  instrument + header = 2. Default is 1.properties - [optional] Additional data to retrieve. Default is Date and Close. See below.
+Syntax 
+=STOCKHISTORY(stock, start_date, [end_date], [interval], [headers], [properties], ...)
+Usage notes 
+The STOCKHISTORY function retrieves historical stock price information based on a given symbol and date range. The main purpose of STOCKHISTORY is to get the history of a financial instrument over time. Although the name suggests that STOCKHISTORY is meant to work only with stocks, STOCKHISTORY can also work with bonds, index funds, mutual funds, bonds, and currency pairs. STOCKHISTORY retrieves multiple results. The result is an array of values that spill onto the worksheet into multiple cells.
+The STOCKHISTORY function accepts five primary arguments, and six additional property arguments to retrieve additional information. Stock and start_date are the only required arguments. Each argument is described in detail below. Additional properties are described in the table here.
+Note: The safest way to provide the start_date and end_date, is as a reference to a cell that contains a valid date, or with the DATE function. This is because dates input as text values can sometimes be misinterpreted.
+Primary arguments
+Stock - the ticker symbol used to retrieve historical prices. Stock should be supplied as a text value in double quotes ("") when hardcoded, for example, "MSFT", "GOOG", "AAPL", "TSLA", etc. Results are retrieved from the default exchange for the instrument. To request information from a specific exchange, prefix the symbol with a 4-character ISO market identifier code (MIC), followed by a colon. For example, to refer to Microsoft Corporation on the Nasdaq Stock Market, use "XNAS:MSFT". To refer to Microsoft Corporation on Austria's Wiener Boerse exchange, use "XWBO:MSFT". You can find a full list of supported exchanges here.
+Start_date - The date at which to start retrieving data. Note that start_date is not necessarily the first date that will appear in results. If interval is set to daily (0), the first date in results will be the first date that the exchange is open and data is available. If interval is set to weekly (1) or monthly (2), the first date will be set to the first date in the period, i.e. first day in the week, or first day of the month.
+End_date - The date at which to stop retrieving data. Like start_date, the actual last date in results may be different from the end_date provided. If interval is set to daily (0) the last date in results will be the last date in the date range that data is available. If interval is set to weekly (1) or monthly (2), the last date will be the last date in the period, i.e. last day in the week, or last day of the month. End_date is optional and will default to start_date if not supplied. 
+Interval - the time period between data points. The available options are Daily (0), Weekly (1), and Monthly (2). Interval is optional and will default to Daily (0) if not provided.
+Headers - the headers argument controls header information that will appear at the top of the data retrieved. The available options are No header (0), Basic header (1), and header with instrument information (2). Headers is optional and will default to basic header (1) when not provided.
+Properties - properties1 - properties5 represent additional information that can be retrieved. See table below for details.
+Properties
+The table below shows the additional information the STOCKHISTORY function can retrieve, which are described as properties. Properties are specified with the numeric code seen in the "Code" column, and can appear in any order.  Note that by default, STOCKHISTORY will retrieve Date and Close.
+Code
+Value
+Description
+0
+Date
+First trading day in the period 
+1
+Close
+Closing price on last trading day in the period 
+2
+Open
+Opening price on the last trading day in the period 
+3
+High
+Highest price in the period 
+4
+Low
+Lowest price in the period 
+5
+Volume
+Volume traded during the period
+Example #1 - Daily results
+To retrieve the daily close price for Apple ("AAPL") for the month of January 2021, the formula in cell B4 is:
+=STOCKHISTORY("AAPL",DATE(2021,1,1),DATE(2021,1,31))
+Interval is not provided and defaults to Daily (0). Headers is not provided and defaults to Date and Close. With this configuration, the STOCKHISTORY function returns 19 results. Note that weekends are excluded and the first date retrieved is January 4, since the exchange was closed January 1-3. Also note the DATE function is used to supply the start and end dates.
+For a more detailed explanation, see this example.
+Example #2 - variable inputs
+In the example below, the inputs for stock, start_date, and end_date are made variable by exposing them on the worksheet in cells F6, F7, and F8. The formula in cell B4 is:
+=STOCKHISTORY(F6,F7,F8,2)
+Note that the fourth argument, interval, is set to 2 which outputs monthly results.
+The result is the close price for Tesla ("TSLA") for the 12 months in 2021. IF the values in F6:F8 are changed, the results from STOCKHISTORY will automatically update.
+Example #3 - additional properties
+The properties returned by STOCKHISTORY can be controlled by customizing and/or reordering numbers starting with the sixth argument (property1). In the example shown below, the formula in cell B4 is:
+=STOCKHISTORY(I6,I7,I8,2,1,0,5,3,4,1)
+The result is monthly stock price information for The 3M Company ("MMM") for the year 2021. The properties requested includes Date (0), Volume (5), High (3), Low (4), and Close (1). Notice these are the last 5 arguments in the function.
+Example #4 - horizontal layout
+By default, STOCKHISTORY returns information in a vertical layout. To display results in a horizontal layout, you can use the TRANSPOSE function. In the example shown below, the formula in C5, copied down, is:
+=TRANSPOSE(STOCKHISTORY(B5,EDATE(TODAY(),-5),TODAY(),2,0,1))
+The result is the trailing monthly close price for each symbol for the past 6 months.
+The EDATE function and the TODAY function are used to create a start date 5 months in the past. The end date is the current date, provided with the TODAY function. For a more detailed explanation, see this example.
+Example #5 - variable exchange
+To request information from a specific exchange, prefix the symbol with a 4-character code, followed by a colon (:). In the worksheet below, the exchange is variable, and entered in cell F5. The formula in cell B4 is:
+=STOCKHISTORY(F5&":"&F6,F7,F8,2)
+The result is the monthly close price for Caterpillar, Inc. on the Wiener-Borse exchange:
+If the value in F5 is changed to "XNYS", STOCKHISTORY will return the monthly close price for Caterpillar on the New York Stock Exchange.
+Example #6 - currency exchange rate
+To get the currency exchange rate for a given currency pair with STOCKHISTORY, enter the two 3-letter codes separated by a colon (:) as the stock argument. For example, to get the monthly currency exchange rate between the US Dollar ("USD") and the Euro ("EUR") for the months of January 2021 through March 2021, you can use STOCKHISTORY like this:
+=STOCKHISTORY("USD:EUR","1-Jan-2021","1-Mar-2021",2)
+The result is an array with three months of rates:
+To reverse the direction of the exchange, just swap the order of the currency pairs:
+=STOCKHISTORY("EUR:USD","1-Jan-2021","1-Mar-2021",2)
+For a more detailed explanation, see this example.
+Notes
+If data is not available for the period requested, STOCKHISTORY returns a #VALUE! error.
+When interval is monthly (2), STOCKHISTORY returns the latest data in a given month.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel STOCKHISTORY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STOCKHISTORY Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+STOCKHISTORY Function 
+Summary
+The Excel STOCKHISTORY function retrieves historical stock price information based on a given symbol and date range. The primary purpose of STOCKHISTORY is to get the history of a financial instrument over time. The result is an array of values that spill onto the worksheet into multiple cells.
+Purpose 
+Retrieve stock price information
+Return value 
+Array of stock price information
+Arguments 
+stock - A ticker symbol in double quotes ("MSFT", "AAPL", "GOOG", etc.).start_date - The start date for data to be retrieved.end_date - [optional] The end date for data to be retrieved. Default is start_date.interval - [optional] Time interval. Daily = 0, weekly = 1, monthly = 2. Default is 0.headers - [optional] No header = 0, basic header = 1,  instrument + header = 2. Default is 1.properties - [optional] Additional data to retrieve. Default is Date and Close. See below.
+Syntax 
+=STOCKHISTORY(stock, start_date, [end_date], [interval], [headers], [properties], ...)
+Usage notes 
+The STOCKHISTORY function retrieves historical stock price information based on a given symbol and date range. The main purpose of STOCKHISTORY is to get the history of a financial instrument over time. Although the name suggests that STOCKHISTORY is meant to work only with stocks, STOCKHISTORY can also work with bonds, index funds, mutual funds, bonds, and currency pairs. STOCKHISTORY retrieves multiple results. The result is an array of values that spill onto the worksheet into multiple cells.
+The STOCKHISTORY function accepts five primary arguments, and six additional property arguments to retrieve additional information. Stock and start_date are the only required arguments. Each argument is described in detail below. Additional properties are described in the table here.
+Note: The safest way to provide the start_date and end_date, is as a reference to a cell that contains a valid date, or with the DATE function. This is because dates input as text values can sometimes be misinterpreted.
+Primary arguments
+Stock - the ticker symbol used to retrieve historical prices. Stock should be supplied as a text value in double quotes ("") when hardcoded, for example, "MSFT", "GOOG", "AAPL", "TSLA", etc. Results are retrieved from the default exchange for the instrument. To request information from a specific exchange, prefix the symbol with a 4-character ISO market identifier code (MIC), followed by a colon. For example, to refer to Microsoft Corporation on the Nasdaq Stock Market, use "XNAS:MSFT". To refer to Microsoft Corporation on Austria's Wiener Boerse exchange, use "XWBO:MSFT". You can find a full list of supported exchanges here.
+Start_date - The date at which to start retrieving data. Note that start_date is not necessarily the first date that will appear in results. If interval is set to daily (0), the first date in results will be the first date that the exchange is open and data is available. If interval is set to weekly (1) or monthly (2), the first date will be set to the first date in the period, i.e. first day in the week, or first day of the month.
+End_date - The date at which to stop retrieving data. Like start_date, the actual last date in results may be different from the end_date provided. If interval is set to daily (0) the last date in results will be the last date in the date range that data is available. If interval is set to weekly (1) or monthly (2), the last date will be the last date in the period, i.e. last day in the week, or last day of the month. End_date is optional and will default to start_date if not supplied. 
+Interval - the time period between data points. The available options are Daily (0), Weekly (1), and Monthly (2). Interval is optional and will default to Daily (0) if not provided.
+Headers - the headers argument controls header information that will appear at the top of the data retrieved. The available options are No header (0), Basic header (1), and header with instrument information (2). Headers is optional and will default to basic header (1) when not provided.
+Properties - properties1 - properties5 represent additional information that can be retrieved. See table below for details.
+Properties
+The table below shows the additional information the STOCKHISTORY function can retrieve, which are described as properties. Properties are specified with the numeric code seen in the "Code" column, and can appear in any order.  Note that by default, STOCKHISTORY will retrieve Date and Close.
+Code
+Value
+Description
+0
+Date
+First trading day in the period 
+1
+Close
+Closing price on last trading day in the period 
+2
+Open
+Opening price on the last trading day in the period 
+3
+High
+Highest price in the period 
+4
+Low
+Lowest price in the period 
+5
+Volume
+Volume traded during the period
+Example #1 - Daily results
+To retrieve the daily close price for Apple ("AAPL") for the month of January 2021, the formula in cell B4 is:
+=STOCKHISTORY("AAPL",DATE(2021,1,1),DATE(2021,1,31))
+Interval is not provided and defaults to Daily (0). Headers is not provided and defaults to Date and Close. With this configuration, the STOCKHISTORY function returns 19 results. Note that weekends are excluded and the first date retrieved is January 4, since the exchange was closed January 1-3. Also note the DATE function is used to supply the start and end dates.
+For a more detailed explanation, see this example.
+Example #2 - variable inputs
+In the example below, the inputs for stock, start_date, and end_date are made variable by exposing them on the worksheet in cells F6, F7, and F8. The formula in cell B4 is:
+=STOCKHISTORY(F6,F7,F8,2)
+Note that the fourth argument, interval, is set to 2 which outputs monthly results.
+The result is the close price for Tesla ("TSLA") for the 12 months in 2021. IF the values in F6:F8 are changed, the results from STOCKHISTORY will automatically update.
+Example #3 - additional properties
+The properties returned by STOCKHISTORY can be controlled by customizing and/or reordering numbers starting with the sixth argument (property1). In the example shown below, the formula in cell B4 is:
+=STOCKHISTORY(I6,I7,I8,2,1,0,5,3,4,1)
+The result is monthly stock price information for The 3M Company ("MMM") for the year 2021. The properties requested includes Date (0), Volume (5), High (3), Low (4), and Close (1). Notice these are the last 5 arguments in the function.
+Example #4 - horizontal layout
+By default, STOCKHISTORY returns information in a vertical layout. To display results in a horizontal layout, you can use the TRANSPOSE function. In the example shown below, the formula in C5, copied down, is:
+=TRANSPOSE(STOCKHISTORY(B5,EDATE(TODAY(),-5),TODAY(),2,0,1))
+The result is the trailing monthly close price for each symbol for the past 6 months.
+The EDATE function and the TODAY function are used to create a start date 5 months in the past. The end date is the current date, provided with the TODAY function. For a more detailed explanation, see this example.
+Example #5 - variable exchange
+To request information from a specific exchange, prefix the symbol with a 4-character code, followed by a colon (:). In the worksheet below, the exchange is variable, and entered in cell F5. The formula in cell B4 is:
+=STOCKHISTORY(F5&":"&F6,F7,F8,2)
+The result is the monthly close price for Caterpillar, Inc. on the Wiener-Borse exchange:
+If the value in F5 is changed to "XNYS", STOCKHISTORY will return the monthly close price for Caterpillar on the New York Stock Exchange.
+Example #6 - currency exchange rate
+To get the currency exchange rate for a given currency pair with STOCKHISTORY, enter the two 3-letter codes separated by a colon (:) as the stock argument. For example, to get the monthly currency exchange rate between the US Dollar ("USD") and the Euro ("EUR") for the months of January 2021 through March 2021, you can use STOCKHISTORY like this:
+=STOCKHISTORY("USD:EUR","1-Jan-2021","1-Mar-2021",2)
+The result is an array with three months of rates:
+To reverse the direction of the exchange, just swap the order of the currency pairs:
+=STOCKHISTORY("EUR:USD","1-Jan-2021","1-Mar-2021",2)
+For a more detailed explanation, see this example.
+Notes
+If data is not available for the period requested, STOCKHISTORY returns a #VALUE! error.
+When interval is monthly (2), STOCKHISTORY returns the latest data in a given month.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

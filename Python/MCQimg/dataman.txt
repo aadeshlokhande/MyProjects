@@ -1,0 +1,27 @@
+1. Which of these in not a core data type?
+a) Lists
+b) Dictionary
+c) Tuples
+d) Class
+
+Answer: d
+Explanation: Class is a user defined data type.
+2. Given a function that does not return any value, What value is thrown by default when executed in shell.
+a) int
+b) bool
+c) void
+d) None
+
+Answer: d
+Explanation: Python shell throws a NoneType object back.
+3. What will be the output of the following Python code?
+>>>str="hello"
+>>>str[:2]
+
+a) he
+b) lo
+c) olleh
+d) hello
+
+Answer: a
+Explanation: We are printing only the 1st two bytes of string and hence the answer is “he”.

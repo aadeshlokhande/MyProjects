@@ -1,0 +1,625 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel SHEET function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+SHEET Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Information
+
+
+SHEET Function
+Related functions 
+
+SHEETS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel SHEET function returns the index number of a sheet in Excel. SHEET will report the sheet number for a cell reference, named range, or Excel Table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get sheet index number
+
+
+
+Return value 
+
+The index number of a given sheet
+
+
+
+Arguments 
+
+value - [optional] The value to check.
+
+
+
+Syntax 
+
+=SHEET([value])
+
+
+
+Usage notes 
+
+The SHEET function returns the index number of a sheet in Excel. You can use the SHEET function to get a numeric index that represents the order of sheets in an Excel workbook, starting with 1 on the left and ending with N on the right, where N is the total number of sheets in the workbook. The SHEET function includes hidden sheets in the numbering sequence.
+The SHEET function takes one argument, value, which should be a reference, a named range, or an Excel Table. Value is optional. When value is omitted, SHEET will return a numeric index for the current sheet (i.e. the sheet the formula exists in).
+Examples
+For example, in a workbook with Sheet1, Sheet2, and Sheet3 running left to right:
+
+=SHEET(Sheet1!A1) // returns 1
+=SHEET(Sheet2!A1) // returns 2
+=SHEET(Sheet3!A1) // returns 3
+
+If Sheet2 is dragged all the way to the left, a reference to A1 on Sheet2 will return 1:
+
+=SHEET(Sheet2!A1) // returns 1
+
+SHEET can report the sheet number for a cell reference, named range, or Excel Table. For example, if a table called "Table1" exists on the third sheet in a workbook the SHEET function will return 3:
+
+=SHEET(Table1) // returns 3
+
+Notes
+
+If the value argument is omitted, SHEET will return the index of the current sheet.
+SHEET includes hidden sheets in the numbering sequence.
+SHEET reports the index of a sheet. The SHEETS function reports the number of sheets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+List sheet index numbers 
+
+
+ Functions SHEETS Function 
+ Links Microsoft SHEET function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel SHEET function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SHEET Function 
+Previous 
+Next 
+ 
+Excel 2013
+Information
+SHEET Function
+Related functions 
+SHEETS
+Summary
+The Excel SHEET function returns the index number of a sheet in Excel. SHEET will report the sheet number for a cell reference, named range, or Excel Table.
+Purpose 
+Get sheet index number
+Return value 
+The index number of a given sheet
+Arguments 
+value - [optional] The value to check.
+Syntax 
+=SHEET([value])
+Usage notes 
+The SHEET function returns the index number of a sheet in Excel. You can use the SHEET function to get a numeric index that represents the order of sheets in an Excel workbook, starting with 1 on the left and ending with N on the right, where N is the total number of sheets in the workbook. The SHEET function includes hidden sheets in the numbering sequence.
+The SHEET function takes one argument, value, which should be a reference, a named range, or an Excel Table. Value is optional. When value is omitted, SHEET will return a numeric index for the current sheet (i.e. the sheet the formula exists in).
+Examples
+For example, in a workbook with Sheet1, Sheet2, and Sheet3 running left to right:
+=SHEET(Sheet1!A1) // returns 1
+=SHEET(Sheet2!A1) // returns 2
+=SHEET(Sheet3!A1) // returns 3
+If Sheet2 is dragged all the way to the left, a reference to A1 on Sheet2 will return 1:
+=SHEET(Sheet2!A1) // returns 1
+SHEET can report the sheet number for a cell reference, named range, or Excel Table. For example, if a table called "Table1" exists on the third sheet in a workbook the SHEET function will return 3:
+=SHEET(Table1) // returns 3
+Notes
+If the value argument is omitted, SHEET will return the index of the current sheet.
+SHEET includes hidden sheets in the numbering sequence.
+SHEET reports the index of a sheet. The SHEETS function reports the number of sheets.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+List sheet index numbers 
+ Functions SHEETS Function 
+ Links Microsoft SHEET function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

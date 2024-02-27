@@ -1,0 +1,10 @@
+Summary
+The Excel POWER function returns a number raised to a given power. The POWER function is an alternative to the exponent operator (^).
+Purpose 
+Raise a number to a power
+Return value 
+Number raised to power
+Arguments 
+number - Number to raise to a power.power - Power to raise number to (the exponent).
+Syntax 
+=POWER(number, power)

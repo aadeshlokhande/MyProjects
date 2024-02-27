@@ -1,0 +1,651 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel HYPERLINK function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+HYPERLINK Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+HYPERLINK Function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel HYPERLINK function returns a hyperlink from a given destination and link text. You can use HYPERLINK to create a clickable hyperlink with a formula. The HYPERLINK function can build links to workbook locations, pages on the internet, or to files on network servers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Create a clickable link.
+
+
+
+Return value 
+
+A clickable hyperlink
+
+
+
+Arguments 
+
+link_location - The path to the file or page to be opened.friendly_name - [optional] The link text to display in a cell.
+
+
+
+Syntax 
+
+=HYPERLINK(link_location, [friendly_name])
+
+
+
+Usage notes 
+
+The HYPERLINK function creates a hyperlink from a given destination and "friendly name", which is simply the link text. You can use HYPERLINK to construct a clickable hyperlink with a formula. The HYPERLINK function can build links to other cells in a workbook, other sheets, named ranges, other workbooks, pages on the internet, or to files on network servers. You can also use HYPERLINK to create email links.
+The HYPERLINK function takes two arguments: link_location and friendly_name. Link_location is the destination or path the link should follow, entered as text. Friendly_name is the text that will be displayed with the link.
+When a user clicks a cell that contains the HYPERLINK function, Excel will open the file or page specified by link_location. Link_location can be a cell reference or named range, a path to a file stored on a local drive, a path a file on a server using Universal Naming Convention (UNC), or an internet path in Uniform Resource Locator (URL) format.
+Example #1 - link to cell
+To link to another cell in the same worksheet, prefix the cell with "#":
+
+=HYPERLINK("#Z100","link to Z100") // cell in same sheet
+
+Example #2 - link to sheet
+To link to another sheet in the same workbook, use "#" with the Sheet name like this
+
+=HYPERLINK("#Sheet2!A1","Sheet2") // sheet2 in same workbook
+
+If the sheet name contains a space, you'll get an invalid reference error with the formula above. In that case, you'll need to enclose the sheet name in single quotes (') like this:
+
+=HYPERLINK("#'Sheet 2'!A1","Sheet 2") // sheet name with space
+
+Example #3 - external link
+To link to https://exceljet.net/ with the text "exceljet":
+
+=HYPERLINK("https://exceljet.net/","exceljet")
+
+Example #4 - email link
+To link to a valid email address in A1, you can concatenate "mailto:" like this:
+
+=HYPERLINK("mailto:"&A1,"email") // link to email address in A1
+
+With two email addresses in A1 and A2, you can create a link like this:
+
+=HYPERLINK("mailto:"&A1&","&B1,"email") // two emails
+
+This formula example explains how to construct a more complete mailto email link with cc, subject, body, etc.
+Notes
+
+Link_location should be supplied as a text string in quotation marks or a cell reference that contains the link path as text.
+If friendly_name is not supplied, the HYPERLINK will display link_location as the friendly_name.
+To select a cell that contains HYPERLINK without following the link, use arrow keys or right-click the cell.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Send email with formula 
+
+Link to multiple sheets 
+
+Hyperlink to first blank cell 
+
+Build hyperlink with VLOOKUP 
+
+Hyperlink to first match 
+
+
+ Links Microsoft HYPERLINK function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel HYPERLINK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+HYPERLINK Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+HYPERLINK Function 
+Summary
+The Excel HYPERLINK function returns a hyperlink from a given destination and link text. You can use HYPERLINK to create a clickable hyperlink with a formula. The HYPERLINK function can build links to workbook locations, pages on the internet, or to files on network servers.
+Purpose 
+Create a clickable link.
+Return value 
+A clickable hyperlink
+Arguments 
+link_location - The path to the file or page to be opened.friendly_name - [optional] The link text to display in a cell.
+Syntax 
+=HYPERLINK(link_location, [friendly_name])
+Usage notes 
+The HYPERLINK function creates a hyperlink from a given destination and "friendly name", which is simply the link text. You can use HYPERLINK to construct a clickable hyperlink with a formula. The HYPERLINK function can build links to other cells in a workbook, other sheets, named ranges, other workbooks, pages on the internet, or to files on network servers. You can also use HYPERLINK to create email links.
+The HYPERLINK function takes two arguments: link_location and friendly_name. Link_location is the destination or path the link should follow, entered as text. Friendly_name is the text that will be displayed with the link.
+When a user clicks a cell that contains the HYPERLINK function, Excel will open the file or page specified by link_location. Link_location can be a cell reference or named range, a path to a file stored on a local drive, a path a file on a server using Universal Naming Convention (UNC), or an internet path in Uniform Resource Locator (URL) format.
+Example #1 - link to cell
+To link to another cell in the same worksheet, prefix the cell with "#":
+=HYPERLINK("#Z100","link to Z100") // cell in same sheet
+Example #2 - link to sheet
+To link to another sheet in the same workbook, use "#" with the Sheet name like this
+=HYPERLINK("#Sheet2!A1","Sheet2") // sheet2 in same workbook
+If the sheet name contains a space, you'll get an invalid reference error with the formula above. In that case, you'll need to enclose the sheet name in single quotes (') like this:
+=HYPERLINK("#'Sheet 2'!A1","Sheet 2") // sheet name with space
+Example #3 - external link
+To link to https://exceljet.net/ with the text "exceljet":
+=HYPERLINK("https://exceljet.net/","exceljet")
+Example #4 - email link
+To link to a valid email address in A1, you can concatenate "mailto:" like this:
+=HYPERLINK("mailto:"&A1,"email") // link to email address in A1
+With two email addresses in A1 and A2, you can create a link like this:
+=HYPERLINK("mailto:"&A1&","&B1,"email") // two emails
+This formula example explains how to construct a more complete mailto email link with cc, subject, body, etc.
+Notes
+Link_location should be supplied as a text string in quotation marks or a cell reference that contains the link path as text.
+If friendly_name is not supplied, the HYPERLINK will display link_location as the friendly_name.
+To select a cell that contains HYPERLINK without following the link, use arrow keys or right-click the cell.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Send email with formula 
+Link to multiple sheets 
+Hyperlink to first blank cell 
+Build hyperlink with VLOOKUP 
+Hyperlink to first match 
+ Links Microsoft HYPERLINK function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

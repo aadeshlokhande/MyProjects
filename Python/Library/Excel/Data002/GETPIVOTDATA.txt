@@ -1,0 +1,10 @@
+Summary
+The Excel GETPIVOTDATA function can retrieve specific data from a pivot table by name based on the structure, instead of cell references.
+Purpose 
+Retrieve data from a pivot table in a formula
+Return value 
+The data requested
+Arguments 
+data_field - The name of the value field to query.pivot_table - A reference to any cell in the pivot table to query.field1, item1 - [optional] A field/item pair.
+Syntax 
+=GETPIVOTDATA(data_field, pivot_table, [field1, item1], ...)

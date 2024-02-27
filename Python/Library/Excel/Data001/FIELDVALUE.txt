@@ -1,0 +1,226 @@
+Excel FIELDVALUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FIELDVALUE Function 
+Previous 
+Next 
+ 
+Excel 365
+Lookup and reference
+FIELDVALUE Function 
+Summary
+The Excel FIELDVALUE function extracts a given field value from a data type. The field is specified by name and provided as a text value.
+Purpose 
+Extract field value from a data type
+Return value 
+Field value for given data type
+Arguments 
+value - The data type with field values.field_name - The field name provided as a text value.
+Syntax 
+=FIELDVALUE(value, field_name)
+Usage notes 
+The Excel FIELDVALUE function extracts a given field value from a Data Type. The field is specified by name and provided as a text value. Use the FIELDVALUE function to retrieve a field value by name from linked data types like Stocks, Geography, Food, Currency, and more.
+Examples
+To retrieve a field value from a linked data type, provide the field name as text in double quotes (""). For example, with a city in cell A1, linked to a Geography data type, you can request population data like this:
+=FIELDVALUE(A1,"city population")
+In the example shown, the formula in cell C5, copied down, is:
+=FIELDVALUE(B5,"city population")
+The result is population data for the 12 cities listed in B5 to B16.
+Alternative syntax
+The FIELDVALUE function is an alternative the "dot" syntax for retrieving a field value from a data type. The two formulas below return the same result:
+=FIELDVALUE(B5,"area")
+=B5.area
+Note square brackets ([]) are required for field names that contain spaces:
+=FIELDVALUE(B5,"city population")
+=B5.[city population]
+When the field name is a single word, the brackets are not required
+Trapping errors
+In column D of the example, FIELDVALUE is used to extract "Area" like this:
+FIELDVALUE(B5,"area")
+This returns a #FIELD! error for cities where area is not available. To trap this error and return an empty string ("") where there are errors, the IFERROR function is used in cell D5 like this:
+=IFERROR(FIELDVALUE(B5,"area"),"")
+As a result, the cells for Cairo, Beijing, Istanbul, and Mexico City display nothing instead of a #FIELD! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel FIELDVALUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FIELDVALUE Function 
+Previous 
+Next 
+ 
+Excel 365
+Lookup and reference
+FIELDVALUE Function 
+Summary
+The Excel FIELDVALUE function extracts a given field value from a data type. The field is specified by name and provided as a text value.
+Purpose 
+Extract field value from a data type
+Return value 
+Field value for given data type
+Arguments 
+value - The data type with field values.field_name - The field name provided as a text value.
+Syntax 
+=FIELDVALUE(value, field_name)
+Usage notes 
+The Excel FIELDVALUE function extracts a given field value from a Data Type. The field is specified by name and provided as a text value. Use the FIELDVALUE function to retrieve a field value by name from linked data types like Stocks, Geography, Food, Currency, and more.
+Examples
+To retrieve a field value from a linked data type, provide the field name as text in double quotes (""). For example, with a city in cell A1, linked to a Geography data type, you can request population data like this:
+=FIELDVALUE(A1,"city population")
+In the example shown, the formula in cell C5, copied down, is:
+=FIELDVALUE(B5,"city population")
+The result is population data for the 12 cities listed in B5 to B16.
+Alternative syntax
+The FIELDVALUE function is an alternative the "dot" syntax for retrieving a field value from a data type. The two formulas below return the same result:
+=FIELDVALUE(B5,"area")
+=B5.area
+Note square brackets ([]) are required for field names that contain spaces:
+=FIELDVALUE(B5,"city population")
+=B5.[city population]
+When the field name is a single word, the brackets are not required
+Trapping errors
+In column D of the example, FIELDVALUE is used to extract "Area" like this:
+FIELDVALUE(B5,"area")
+This returns a #FIELD! error for cities where area is not available. To trap this error and return an empty string ("") where there are errors, the IFERROR function is used in cell D5 like this:
+=IFERROR(FIELDVALUE(B5,"area"),"")
+As a result, the cells for Cairo, Beijing, Istanbul, and Mexico City display nothing instead of a #FIELD! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

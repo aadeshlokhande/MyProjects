@@ -1,0 +1,10 @@
+Summary
+The Excel DMIN function returns the minimum value in a field, from a set of records that match criteria. Use the MAX function to get the maximum value.
+Purpose 
+Get min from matching records
+Return value 
+The minimum value in a given field
+Arguments 
+database - Database range including headers.field - Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DMIN(database, field, criteria)

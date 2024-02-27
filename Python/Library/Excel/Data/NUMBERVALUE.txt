@@ -1,0 +1,640 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel NUMBERVALUE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+NUMBERVALUE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Text
+
+
+NUMBERVALUE Function
+Related functions 
+
+VALUE
+DATEVALUE
+TIMEVALUE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel NUMBERVALUE function converts a number in text format to numeric value, using specified decimal and group separators. This function can be used to convert locale-specific values into locale-independent values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Convert text to number with custom separators
+
+
+
+Return value 
+
+Numeric value
+
+
+
+Arguments 
+
+text - The text to convert to a number.decimal_separator - [optional] The character for decimal values.group_separator - [optional] The character for grouping by thousands.
+
+
+
+Syntax 
+
+=NUMBERVALUE(text, [decimal_separator], [group_separator])
+
+
+
+Usage notes 
+
+The NUMBERVALUE function converts a text value representing a number into a valid numeric using custom decimal and group separators. You can use NUMBERVALUE to translate numbers from a locale-specific text format into a locale-independent number. 
+To perform a numeric conversion, the NUMBERVALUE function uses the custom separators you provide. The decimal_separator is the character used to separate integers from fractional values in the source text. The group_separator is the character used to group text by thousands in the source text. Both separators should be enclosed in double quotes (""). When decimal_separator and group_separator, Excel uses separators for the current locale.
+Examples
+To convert the text string "10,15" to the number 10.15:
+
+=NUMBERVALUE("10,15",",") // returns 10.15
+
+To convert the text value "5%" to a number with no grouping or decimal separator:
+
+=NUMBERVALUE("5%") // returns 0.05
+
+To convert the string "6.000" to the number 6000, where the grouping separator in the source text is a period (.) use:
+
+=NUMBERVALUE("6.000",",",".") // returns 6000
+
+In the example shown, input text is in column B and function output is in column E. Columns C and D are the decimal and group separators used in each row. The formula in E6, copied down, is:
+
+=NUMBERVALUE(B6,C6,D6)
+
+Notice in addition to decimal and group separators, the NUMBERVALUE automatically ignores the extra space in B9 and automatically evaluates the percentage (%) symbol in B11 by dividing by 100.
+Notes
+
+NUMBERVALUE ignores extra space characters.
+Multiple percent symbols are additive.
+If decimal separator and/or group_separators are not provided, NUMBERVALUE uses separators from the current locale.
+NUMBERVALUE uses only the first character provided for decimal and group separators. Additional characters are discarded.
+NUMBERVALUE returns zero (0) if no text value is provided.
+NUMBERVALUE returns the #VALUE error if:
+		
+The decimal separator appears more than once in the source text
+The group separator occurs after the decimal separator
+				 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions VALUE FunctionDATEVALUE FunctionTIMEVALUE Function 
+ Links Microsoft NUMBERVALUE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel NUMBERVALUE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NUMBERVALUE Function 
+Previous 
+Next 
+ 
+Excel 2013
+Text
+NUMBERVALUE Function
+Related functions 
+VALUE
+DATEVALUE
+TIMEVALUE
+Summary
+The Excel NUMBERVALUE function converts a number in text format to numeric value, using specified decimal and group separators. This function can be used to convert locale-specific values into locale-independent values.
+Purpose 
+Convert text to number with custom separators
+Return value 
+Numeric value
+Arguments 
+text - The text to convert to a number.decimal_separator - [optional] The character for decimal values.group_separator - [optional] The character for grouping by thousands.
+Syntax 
+=NUMBERVALUE(text, [decimal_separator], [group_separator])
+Usage notes 
+The NUMBERVALUE function converts a text value representing a number into a valid numeric using custom decimal and group separators. You can use NUMBERVALUE to translate numbers from a locale-specific text format into a locale-independent number. 
+To perform a numeric conversion, the NUMBERVALUE function uses the custom separators you provide. The decimal_separator is the character used to separate integers from fractional values in the source text. The group_separator is the character used to group text by thousands in the source text. Both separators should be enclosed in double quotes (""). When decimal_separator and group_separator, Excel uses separators for the current locale.
+Examples
+To convert the text string "10,15" to the number 10.15:
+=NUMBERVALUE("10,15",",") // returns 10.15
+To convert the text value "5%" to a number with no grouping or decimal separator:
+=NUMBERVALUE("5%") // returns 0.05
+To convert the string "6.000" to the number 6000, where the grouping separator in the source text is a period (.) use:
+=NUMBERVALUE("6.000",",",".") // returns 6000
+In the example shown, input text is in column B and function output is in column E. Columns C and D are the decimal and group separators used in each row. The formula in E6, copied down, is:
+=NUMBERVALUE(B6,C6,D6)
+Notice in addition to decimal and group separators, the NUMBERVALUE automatically ignores the extra space in B9 and automatically evaluates the percentage (%) symbol in B11 by dividing by 100.
+Notes
+NUMBERVALUE ignores extra space characters.
+Multiple percent symbols are additive.
+If decimal separator and/or group_separators are not provided, NUMBERVALUE uses separators from the current locale.
+NUMBERVALUE uses only the first character provided for decimal and group separators. Additional characters are discarded.
+NUMBERVALUE returns zero (0) if no text value is provided.
+NUMBERVALUE returns the #VALUE error if:
+		
+The decimal separator appears more than once in the source text
+The group separator occurs after the decimal separator
+				 
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions VALUE FunctionDATEVALUE FunctionTIMEVALUE Function 
+ Links Microsoft NUMBERVALUE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

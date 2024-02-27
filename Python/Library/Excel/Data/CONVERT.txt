@@ -1,0 +1,1688 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel CONVERT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+CONVERT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Engineering
+
+
+CONVERT Function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel CONVERT function converts a number in one measurement system to another. For example, you can use CONVERT to convert feet into meters, pounds into kilograms, Fahrenheit to Celsius, gallons into liters, and for many other unit conversions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Convert measurement units
+
+
+
+Return value 
+
+A number in the new measurement system
+
+
+
+Arguments 
+
+number - The numeric value to convert.from_unit - The starting units for number.to_unit - The ending units for the result.
+
+
+
+Syntax 
+
+=CONVERT(number, from_unit, to_unit)
+
+
+
+Usage notes 
+
+The CONVERT function converts a number in one measurement system to another. For example, you can use CONVERT to convert feet into meters, pounds into kilograms, gallons into liters, and for many other unit conversions.
+Examples
+The formulas below use the CONVERT function to convert yards to meters, Celsius to Fahrenheit, gallons to liters, and square meters to square yards:
+
+=CONVERT(100,"yd","m") // returns 91.44
+=CONVERT(22,"C","F") // returns 71.6
+=CONVERT(1,"gal","l") // returns 3.79
+=CONVERT(100,"m2","ft2") // returns 1076.39
+
+Measurement units
+The tables below show the units available to the CONVERT function in each category. In all cases, Unit can be used for either from_unit or to_unit in the same category. Note: the CONVERT function is case-sensitive.
+
+Weight, Distance, Time, Pressure, Force, Energy, Power, Magnetism, Temperature, Liquid, Volume, Area, Information, Metric prefixes, Binary prefixes
+
+
+
+
+Weight and mass
+Unit
+
+
+
+
+Gram
+"g"
+
+
+Slug
+"sg"
+
+
+Pound mass (avoirdupois)
+"lbm"
+
+
+U (atomic mass unit)
+"u"
+
+
+Ounce mass (avoirdupois)
+"ozm"
+
+
+Grain
+"grain"
+
+
+U.S. (short) hundredweight
+"cwt" or "shweight"
+
+
+Imperial hundredweight
+"uk_cwt" or "lcwt" ("hweight")
+
+
+Stone
+"stone"
+
+
+Ton
+"ton"
+
+
+Imperial ton
+"uk_ton" or "LTON" ("brton")
+
+
+
+
+
+
+Distance
+Unit
+
+
+
+
+Meter
+"m"
+
+
+Statute mile
+"mi"
+
+
+Nautical mile
+"Nmi"
+
+
+Inch
+"in"
+
+
+Foot
+"ft"
+
+
+Yard
+"yd"
+
+
+Angstrom
+"ang"
+
+
+Ell
+"ell"
+
+
+Light-year
+"ly"
+
+
+Parsec
+"parsec" or "pc"
+
+
+Pica (1/72 inch)
+"Picapt" or "Pica"
+
+
+Pica (1/6 inch)
+"pica"
+
+
+U.S survey mile (statute mile)
+"survey_mi"
+
+
+
+
+
+
+Time
+Unit
+
+
+
+
+Year
+"yr"
+
+
+Day
+"day" or "d"
+
+
+Hour
+"hr"
+
+
+Minute
+"mn" or "min"
+
+
+Second
+"sec" or "s"
+
+
+
+
+
+
+Pressure
+Unit
+
+
+
+
+Pascal
+"Pa" (or "p")
+
+
+Atmosphere
+"atm" (or "at")
+
+
+mm of Mercury
+"mmHg"
+
+
+PSI
+"psi"
+
+
+Torr
+"Torr"
+
+
+
+
+
+
+Force
+Unit
+
+
+
+
+Newton
+"N"
+
+
+Dyne
+"dyn" (or "dy")
+
+
+Pound force
+"lbf"
+
+
+Pond
+"pond"
+
+
+
+
+
+
+Energy
+Unit
+
+
+
+
+Joule
+"J"
+
+
+Erg
+"e"
+
+
+Thermodynamic calorie
+"c"
+
+
+IT calorie
+"cal"
+
+
+Electron volt
+"eV" (or "ev")
+
+
+Horsepower-hour
+"HPh" (or "hh")
+
+
+Watt-hour
+"Wh" (or "wh")
+
+
+Foot-pound
+"flb"
+
+
+BTU
+"BTU" (or "btu")
+
+
+
+
+
+
+Power
+Unit
+
+
+
+
+Horsepower
+"HP" (or "h")
+
+
+Pferdestärke
+"PS"
+
+
+Watt
+"W" (or "w")
+
+
+
+
+
+
+Magnetism
+Unit
+
+
+
+
+Tesla
+"T"
+
+
+Gauss
+"ga"
+
+
+
+
+
+
+Temperature
+Unit
+
+
+
+
+Degree Celsius
+"C" (or "cel")
+
+
+Degree Fahrenheit
+"F" (or "fah")
+
+
+Kelvin
+"K" (or "kel")
+
+
+Degrees Rankine
+"Rank"
+
+
+Degrees Réaumur
+"Reau"
+
+
+
+
+
+
+Liquid measure
+Unit
+
+
+
+
+Teaspoon
+"tsp"
+
+
+Modern teaspoon
+"tspm"
+
+
+Tablespoon
+"tbs"
+
+
+Fluid ounce
+"oz"
+
+
+Cup
+"cup"
+
+
+U.S. pint
+"pt" (or "us_pt")
+
+
+U.K. pint
+"uk_pt"
+
+
+Quart
+"qt"
+
+
+Imperial quart (U.K.)
+"uk_qt"
+
+
+Gallon
+"gal"
+
+
+Imperial gallon (U.K.)
+"uk_gal"
+
+
+Liter
+"l" or "L" ("lt")
+
+
+
+
+
+
+Volume
+Unit
+
+
+
+
+Cubic angstrom
+"ang3" or "ang^3"
+
+
+U.S. oil barrel
+"barrel"
+
+
+U.S. bushel
+"bushel"
+
+
+Cubic feet
+"ft3" or "ft^3"
+
+
+Cubic inch
+"in3" or "in^3"
+
+
+Cubic light-year
+"ly3" or "ly^3"
+
+
+Cubic meter
+"m3" or "m^3"
+
+
+Cubic Mile
+"mi3" or "mi^3"
+
+
+Cubic yard
+"yd3" or "yd^3"
+
+
+Cubic nautical mile
+"Nmi3" or "Nmi^3"
+
+
+Cubic Pica
+"Picapt3", "Picapt^3", "Pica3" or "Pica^3"
+
+
+Gross Registered Ton
+"GRT" ("regton")
+
+
+Measurement ton (freight ton)
+"MTON"
+
+
+
+
+
+
+Area
+Unit
+ 
+
+
+
+
+International acre
+"uk_acre"
+ 
+
+
+U.S. survey/statute acre
+"us_acre"
+ 
+
+
+Square angstrom
+"ang2" or “ang^2"
+ 
+
+
+Are
+"ar"
+ 
+
+
+Square feet
+"ft2" or "ft^2"
+ 
+
+
+Hectare
+"ha"
+ 
+
+
+Square inches
+"in2" or "in^2"
+ 
+
+
+Square light-year
+"ly2" or "ly^2"
+ 
+
+
+Square meters
+"m2" or "m^2"
+ 
+
+
+Morgen
+"Morgen"
+ 
+
+
+Square miles
+"mi2" or "mi^2"
+ 
+
+
+Square nautical miles
+"Nmi2" or "Nmi^2"
+ 
+
+
+Square Pica
+"Picapt2", "Pica2", "Pica^2" or "Picapt^2"
+ 
+
+
+Square yards
+"yd2" or "yd^2"
+ 
+
+
+
+
+
+
+Information
+Unit
+
+
+
+
+Bit
+"bit"
+
+
+Byte
+"byte"
+
+
+
+Metric prefixes
+The prefixes shown in the table below can be used with metric units by prepending the abbreviation to the unit.
+
+
+
+Prefix
+Multiplier
+Abbreviation
+
+
+
+
+yotta
+1E+24
+"Y"
+
+
+zetta
+1E+21
+"Z"
+
+
+exa
+1E+18
+"E"
+
+
+peta
+1E+15
+"P"
+
+
+tera
+1E+12
+"T"
+
+
+giga
+1000000000
+"G"
+
+
+mega
+1000000
+"M"
+
+
+kilo
+1000
+"k"
+
+
+hecto
+100
+"h"
+
+
+dekao
+10
+"da" or "e"
+
+
+deci
+0.1
+"d"
+
+
+centi
+0.01
+"c"
+
+
+milli
+0.001
+"m"
+
+
+micro
+0.000001
+"u"
+
+
+nano
+0.000000001
+"n"
+
+
+pico
+1E-12
+"p"
+
+
+femto
+1E-15
+"f"
+
+
+atto
+1E-18
+"a"
+
+
+zepto
+1E-21
+"z"
+
+
+yocto
+1E-24
+"y"
+
+
+
+Binary prefixes
+The binary unit prefixes below can be used with "bits" and "bytes". 
+
+
+
+Binary Prefix
+Value
+Abbreviation
+Decimal
+
+
+
+
+yobi
+2^80
+"Yi"
+yotta
+
+
+zebi
+2^70
+"Zi"
+zetta
+
+
+exbi
+2^60
+"Ei"
+exa
+
+
+pebi
+2^50
+"Pi"
+peta
+
+
+tebi
+2^40
+"Ti"
+tera
+
+
+gibi
+2^30
+"Gi"
+giga
+
+
+mebi
+2^20
+"Mi"
+mega
+
+
+kibi
+2^10
+"ki"
+kilo
+
+
+
+Notes
+
+The CONVERT function is case-sensitive.
+CONVERT will return the #N/A error when a unit string is not recognized.
+CONVERT will return the #N/A error when units are not compatible.
+CONVERT will return the #VALUE! error when a number is not valid.
+A number of measurement units were added to CONVERT in Excel 2013.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+BMI calculation formula 
+
+Convert pounds to kilograms 
+
+Carry-on baggage Inches to centimeters 
+
+Celsius to Fahrenheit conversion 
+
+
+
+Videos
+  
+How to trace formula relationships  
+
+How to create an Excel Table 
+
+
+ Links Microsoft CONVERT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel CONVERT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CONVERT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Engineering
+CONVERT Function 
+Summary
+The Excel CONVERT function converts a number in one measurement system to another. For example, you can use CONVERT to convert feet into meters, pounds into kilograms, Fahrenheit to Celsius, gallons into liters, and for many other unit conversions.
+Purpose 
+Convert measurement units
+Return value 
+A number in the new measurement system
+Arguments 
+number - The numeric value to convert.from_unit - The starting units for number.to_unit - The ending units for the result.
+Syntax 
+=CONVERT(number, from_unit, to_unit)
+Usage notes 
+The CONVERT function converts a number in one measurement system to another. For example, you can use CONVERT to convert feet into meters, pounds into kilograms, gallons into liters, and for many other unit conversions.
+Examples
+The formulas below use the CONVERT function to convert yards to meters, Celsius to Fahrenheit, gallons to liters, and square meters to square yards:
+=CONVERT(100,"yd","m") // returns 91.44
+=CONVERT(22,"C","F") // returns 71.6
+=CONVERT(1,"gal","l") // returns 3.79
+=CONVERT(100,"m2","ft2") // returns 1076.39
+Measurement units
+The tables below show the units available to the CONVERT function in each category. In all cases, Unit can be used for either from_unit or to_unit in the same category. Note: the CONVERT function is case-sensitive.
+Weight, Distance, Time, Pressure, Force, Energy, Power, Magnetism, Temperature, Liquid, Volume, Area, Information, Metric prefixes, Binary prefixes
+Weight and mass
+Unit
+Gram
+"g"
+Slug
+"sg"
+Pound mass (avoirdupois)
+"lbm"
+U (atomic mass unit)
+"u"
+Ounce mass (avoirdupois)
+"ozm"
+Grain
+"grain"
+U.S. (short) hundredweight
+"cwt" or "shweight"
+Imperial hundredweight
+"uk_cwt" or "lcwt" ("hweight")
+Stone
+"stone"
+Ton
+"ton"
+Imperial ton
+"uk_ton" or "LTON" ("brton")
+Distance
+Unit
+Meter
+"m"
+Statute mile
+"mi"
+Nautical mile
+"Nmi"
+Inch
+"in"
+Foot
+"ft"
+Yard
+"yd"
+Angstrom
+"ang"
+Ell
+"ell"
+Light-year
+"ly"
+Parsec
+"parsec" or "pc"
+Pica (1/72 inch)
+"Picapt" or "Pica"
+Pica (1/6 inch)
+"pica"
+U.S survey mile (statute mile)
+"survey_mi"
+Time
+Unit
+Year
+"yr"
+Day
+"day" or "d"
+Hour
+"hr"
+Minute
+"mn" or "min"
+Second
+"sec" or "s"
+Pressure
+Unit
+Pascal
+"Pa" (or "p")
+Atmosphere
+"atm" (or "at")
+mm of Mercury
+"mmHg"
+PSI
+"psi"
+Torr
+"Torr"
+Force
+Unit
+Newton
+"N"
+Dyne
+"dyn" (or "dy")
+Pound force
+"lbf"
+Pond
+"pond"
+Energy
+Unit
+Joule
+"J"
+Erg
+"e"
+Thermodynamic calorie
+"c"
+IT calorie
+"cal"
+Electron volt
+"eV" (or "ev")
+Horsepower-hour
+"HPh" (or "hh")
+Watt-hour
+"Wh" (or "wh")
+Foot-pound
+"flb"
+BTU
+"BTU" (or "btu")
+Power
+Unit
+Horsepower
+"HP" (or "h")
+Pferdestärke
+"PS"
+Watt
+"W" (or "w")
+Magnetism
+Unit
+Tesla
+"T"
+Gauss
+"ga"
+Temperature
+Unit
+Degree Celsius
+"C" (or "cel")
+Degree Fahrenheit
+"F" (or "fah")
+Kelvin
+"K" (or "kel")
+Degrees Rankine
+"Rank"
+Degrees Réaumur
+"Reau"
+Liquid measure
+Unit
+Teaspoon
+"tsp"
+Modern teaspoon
+"tspm"
+Tablespoon
+"tbs"
+Fluid ounce
+"oz"
+Cup
+"cup"
+U.S. pint
+"pt" (or "us_pt")
+U.K. pint
+"uk_pt"
+Quart
+"qt"
+Imperial quart (U.K.)
+"uk_qt"
+Gallon
+"gal"
+Imperial gallon (U.K.)
+"uk_gal"
+Liter
+"l" or "L" ("lt")
+Volume
+Unit
+Cubic angstrom
+"ang3" or "ang^3"
+U.S. oil barrel
+"barrel"
+U.S. bushel
+"bushel"
+Cubic feet
+"ft3" or "ft^3"
+Cubic inch
+"in3" or "in^3"
+Cubic light-year
+"ly3" or "ly^3"
+Cubic meter
+"m3" or "m^3"
+Cubic Mile
+"mi3" or "mi^3"
+Cubic yard
+"yd3" or "yd^3"
+Cubic nautical mile
+"Nmi3" or "Nmi^3"
+Cubic Pica
+"Picapt3", "Picapt^3", "Pica3" or "Pica^3"
+Gross Registered Ton
+"GRT" ("regton")
+Measurement ton (freight ton)
+"MTON"
+Area
+Unit
+ 
+International acre
+"uk_acre"
+ 
+U.S. survey/statute acre
+"us_acre"
+ 
+Square angstrom
+"ang2" or “ang^2"
+ 
+Are
+"ar"
+ 
+Square feet
+"ft2" or "ft^2"
+ 
+Hectare
+"ha"
+ 
+Square inches
+"in2" or "in^2"
+ 
+Square light-year
+"ly2" or "ly^2"
+ 
+Square meters
+"m2" or "m^2"
+ 
+Morgen
+"Morgen"
+ 
+Square miles
+"mi2" or "mi^2"
+ 
+Square nautical miles
+"Nmi2" or "Nmi^2"
+ 
+Square Pica
+"Picapt2", "Pica2", "Pica^2" or "Picapt^2"
+ 
+Square yards
+"yd2" or "yd^2"
+ 
+Information
+Unit
+Bit
+"bit"
+Byte
+"byte"
+Metric prefixes
+The prefixes shown in the table below can be used with metric units by prepending the abbreviation to the unit.
+Prefix
+Multiplier
+Abbreviation
+yotta
+1E+24
+"Y"
+zetta
+1E+21
+"Z"
+exa
+1E+18
+"E"
+peta
+1E+15
+"P"
+tera
+1E+12
+"T"
+giga
+1000000000
+"G"
+mega
+1000000
+"M"
+kilo
+1000
+"k"
+hecto
+100
+"h"
+dekao
+10
+"da" or "e"
+deci
+0.1
+"d"
+centi
+0.01
+"c"
+milli
+0.001
+"m"
+micro
+0.000001
+"u"
+nano
+0.000000001
+"n"
+pico
+1E-12
+"p"
+femto
+1E-15
+"f"
+atto
+1E-18
+"a"
+zepto
+1E-21
+"z"
+yocto
+1E-24
+"y"
+Binary prefixes
+The binary unit prefixes below can be used with "bits" and "bytes". 
+Binary Prefix
+Value
+Abbreviation
+Decimal
+yobi
+2^80
+"Yi"
+yotta
+zebi
+2^70
+"Zi"
+zetta
+exbi
+2^60
+"Ei"
+exa
+pebi
+2^50
+"Pi"
+peta
+tebi
+2^40
+"Ti"
+tera
+gibi
+2^30
+"Gi"
+giga
+mebi
+2^20
+"Mi"
+mega
+kibi
+2^10
+"ki"
+kilo
+Notes
+The CONVERT function is case-sensitive.
+CONVERT will return the #N/A error when a unit string is not recognized.
+CONVERT will return the #N/A error when units are not compatible.
+CONVERT will return the #VALUE! error when a number is not valid.
+A number of measurement units were added to CONVERT in Excel 2013.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+BMI calculation formula 
+Convert pounds to kilograms 
+Carry-on baggage Inches to centimeters 
+Celsius to Fahrenheit conversion 
+Videos
+  
+How to trace formula relationships  
+How to create an Excel Table 
+ Links Microsoft CONVERT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

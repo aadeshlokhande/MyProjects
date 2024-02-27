@@ -1,0 +1,276 @@
+Excel BYROW function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+BYROW Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+BYROW Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The Excel BYROW function applies a LAMBDA function to each row of a given array and returns one result per row in a single array. In the example shown, data is the named range C5:H9. 
+Note: BYROW is a beta function available only through the Insiders channel of Excel 365.
+Purpose 
+Apply function to row
+Return value 
+One result per row
+Arguments 
+array - The array or array to process.lambda - The lambda function to apply to each row.
+Syntax 
+=BYROW(array, lambda)
+Usage notes 
+The Excel BYROW function applies a LAMBDA function to each row in array and returns one result per row as a single array. The purpose of BYROW is to process data in an array or range in a "by row" fashion. For example, if BYROW is given an array with 10 rows, BYROW will return an array with 10 results. The calculation performed on each column is provided by a custom LAMBDA function.
+The BYROW function takes two arguments: array and lambda. Array is the array or range to process. Lambda is the LAMBDA function that should be run on each row in array. The LAMBDA function must return a single result for each column, or BYROW will return a #CALC! error.
+Examples
+To sum each row in a range, you can use the BYROW function like this:
+=BYROW(range,LAMBDA(row,SUM(row)))
+The BYROW function delivers the contents of range one row at a time to the LAMBDA function, which uses the SUM function to calculate a total for each row. BYROW then delivers the results from the LAMBDA calculation in a single array. If range contains 10 rows, BYROW returns an array that contains 10 sums.
+Worksheet example
+In the worksheet shown above, the BYROW function is used to run 2 separate calculations on data, which is the named range C5:H15. In cell J5, the formula below is used to calculate a sum for each row:
+=BYROW(data,LAMBDA(row,SUM(row)))
+Because there are 11 rows in data, the result is an array with 11 sums like this:
+{432;440;403;455;479;433;426;463;407;431;519}
+The values in this array spill into the range J5:J15. The formulas below are other examples of how BYROW can be used on the same data with formulas that follow the same pattern:
+=BYROW(data,LAMBDA(row,MAX(row))) // max
+=BYROW(data,LAMBDA(row,MIN(row))) // min
+=BYROW(data,LAMBDA(row,AVERAGE(row))) // average
+Count cells over 90
+In cell K5, the formula is a bit more complex. The goal in this case is to count the values in each row greater than 90:
+=BYROW(data,LAMBDA(row,SUM(--(row>90)))) // count >90
+Working from the inside out, a logical expression is used to check all values in row against 90, and the resulting TRUE and FALSE values are coerced to 1s and 0s by the double-negative (--). The SUM function sums the result and returns a count. As before, the LAMBDA is run on each row in the data, so there are 11 results total that spill into the range K5:K15.
+See Boolean operations in array formulas for more information about the logic inside of SUM. 
+Note: the COUNTIF function could be used instead of SUM. Note that COUNTIF requires a range and can't use an in-memory array so there are some situations where COUNTIF isn't an option.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by week 
+Get row totals 
+Count rows that contain specific values 
+Sum by week number 
+Minimum value if 
+Sum by year 
+Maximum value if 
+Sum by quarter 
+Count birthdays by year 
+Sum numbers with text 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel BYROW function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+BYROW Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+BYROW Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The Excel BYROW function applies a LAMBDA function to each row of a given array and returns one result per row in a single array. In the example shown, data is the named range C5:H9. 
+Note: BYROW is a beta function available only through the Insiders channel of Excel 365.
+Purpose 
+Apply function to row
+Return value 
+One result per row
+Arguments 
+array - The array or array to process.lambda - The lambda function to apply to each row.
+Syntax 
+=BYROW(array, lambda)
+Usage notes 
+The Excel BYROW function applies a LAMBDA function to each row in array and returns one result per row as a single array. The purpose of BYROW is to process data in an array or range in a "by row" fashion. For example, if BYROW is given an array with 10 rows, BYROW will return an array with 10 results. The calculation performed on each column is provided by a custom LAMBDA function.
+The BYROW function takes two arguments: array and lambda. Array is the array or range to process. Lambda is the LAMBDA function that should be run on each row in array. The LAMBDA function must return a single result for each column, or BYROW will return a #CALC! error.
+Examples
+To sum each row in a range, you can use the BYROW function like this:
+=BYROW(range,LAMBDA(row,SUM(row)))
+The BYROW function delivers the contents of range one row at a time to the LAMBDA function, which uses the SUM function to calculate a total for each row. BYROW then delivers the results from the LAMBDA calculation in a single array. If range contains 10 rows, BYROW returns an array that contains 10 sums.
+Worksheet example
+In the worksheet shown above, the BYROW function is used to run 2 separate calculations on data, which is the named range C5:H15. In cell J5, the formula below is used to calculate a sum for each row:
+=BYROW(data,LAMBDA(row,SUM(row)))
+Because there are 11 rows in data, the result is an array with 11 sums like this:
+{432;440;403;455;479;433;426;463;407;431;519}
+The values in this array spill into the range J5:J15. The formulas below are other examples of how BYROW can be used on the same data with formulas that follow the same pattern:
+=BYROW(data,LAMBDA(row,MAX(row))) // max
+=BYROW(data,LAMBDA(row,MIN(row))) // min
+=BYROW(data,LAMBDA(row,AVERAGE(row))) // average
+Count cells over 90
+In cell K5, the formula is a bit more complex. The goal in this case is to count the values in each row greater than 90:
+=BYROW(data,LAMBDA(row,SUM(--(row>90)))) // count >90
+Working from the inside out, a logical expression is used to check all values in row against 90, and the resulting TRUE and FALSE values are coerced to 1s and 0s by the double-negative (--). The SUM function sums the result and returns a count. As before, the LAMBDA is run on each row in the data, so there are 11 results total that spill into the range K5:K15.
+See Boolean operations in array formulas for more information about the logic inside of SUM. 
+Note: the COUNTIF function could be used instead of SUM. Note that COUNTIF requires a range and can't use an in-memory array so there are some situations where COUNTIF isn't an option.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by week 
+Get row totals 
+Count rows that contain specific values 
+Sum by week number 
+Minimum value if 
+Sum by year 
+Maximum value if 
+Sum by quarter 
+Count birthdays by year 
+Sum numbers with text 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,10 @@
+Summary
+The XOR function performs what is called "exclusive OR". With two logical statements, XOR returns TRUE if either statement is TRUE, but returns FALSE if both statements are TRUE. If neither is TRUE, XOR also returns FALSE.
+Purpose 
+Perform exclusive OR
+Return value 
+TRUE or FALSE
+Arguments 
+logical1 - An expression, constant, or reference that evaluates to TRUE or FALSE.logical2 - [optional] An expression, constant, or reference that evaluates to TRUE or FALSE.
+Syntax 
+=XOR(logical1, [logical2], ...)

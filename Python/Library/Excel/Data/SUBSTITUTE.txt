@@ -1,0 +1,670 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel SUBSTITUTE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+SUBSTITUTE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Text
+
+
+SUBSTITUTE Function
+Related functions 
+
+REPLACE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel SUBSTITUTE function replaces text in a given string by matching. For example =SUBSTITUTE("952-455-7865","-","") returns "9524557865"; the dash is stripped. SUBSTITUTE is case-sensitive and does not support wildcards.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Replace text based on content
+
+
+
+Return value 
+
+The processed text
+
+
+
+Arguments 
+
+text - The text to change.old_text - The text to replace.new_text - The text to replace with.instance - [optional] The instance to replace. If not supplied, all instances are replaced.
+
+
+
+Syntax 
+
+=SUBSTITUTE(text, old_text, new_text, [instance])
+
+
+
+Usage notes 
+
+The Excel SUBSTITUTE function can replace text by matching. Use the SUBSTITUTE function when you want to replace text based on matching, not position. Optionally, you can specify the instance of found text to replace (i.e. first instance, second instance, etc.).
+SUBSTITUTE is case-sensitive. To replace one or more characters with nothing, enter an empty string ("").
+Examples
+Below are the formulas used in the example shown above:
+
+=SUBSTITUTE(B5,"t","b") // replace all t's with b's
+=SUBSTITUTE(B6,"t","b",1) // replace first t with b
+=SUBSTITUTE(B7,"cat","dog") // replace cat with dog
+=SUBSTITUTE(B8,"&","") // replace # with nothing
+=SUBSTITUTE(B9,"-",", ") // replace hyphen with comma
+
+The SUBSTITUTE function cannot replace more than one string at a time. However, SUBSTITUTE can be nested inside of itself to accomplish the same thing. For example, with the text "a (dog)" in cell A1, the formula below will strip parentheses () from text:
+
+=SUBSTITUTE(SUBSTITUTE(A1,"(",""),")","") // returns "a dog"
+
+This same approach can be used in a more complex formula to normalize telephone numbers.
+Related functions
+Use the REPLACE function to replace text at a known location in a text string. Use the SUBSTITUTE function to replace text by searching when the location is not known. Use FIND or SEARCH to determine the location of specific text.
+Notes
+
+SUBSTITUTE finds and replaces old_text with new_text in a text string.
+Instance limits SUBSTITUTE replacement a particular instance of old_text.
+When instance is omitted, all instances of old_text are replaced with new_text.
+SUBSTITUTE is case-sensitive and does not support wildcards.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Join cells with comma 
+
+Extract word containing specific text 
+
+Extract word that begins with specific character 
+
+Remove text by matching 
+
+Convert feet and inches to inches 
+
+Split dimensions into three parts 
+
+LAMBDA count words 
+
+Count total words in a range 
+
+Remove line breaks 
+
+Normalize text 
+
+
+
+Videos
+  
+How to count characters with the LEN function 
+
+How to build all-in-one formulas 
+
+
+ Functions REPLACE Function 
+ Links Microsoft SUBSTITUTE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel SUBSTITUTE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUBSTITUTE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+SUBSTITUTE Function
+Related functions 
+REPLACE
+Summary
+The Excel SUBSTITUTE function replaces text in a given string by matching. For example =SUBSTITUTE("952-455-7865","-","") returns "9524557865"; the dash is stripped. SUBSTITUTE is case-sensitive and does not support wildcards.
+Purpose 
+Replace text based on content
+Return value 
+The processed text
+Arguments 
+text - The text to change.old_text - The text to replace.new_text - The text to replace with.instance - [optional] The instance to replace. If not supplied, all instances are replaced.
+Syntax 
+=SUBSTITUTE(text, old_text, new_text, [instance])
+Usage notes 
+The Excel SUBSTITUTE function can replace text by matching. Use the SUBSTITUTE function when you want to replace text based on matching, not position. Optionally, you can specify the instance of found text to replace (i.e. first instance, second instance, etc.).
+SUBSTITUTE is case-sensitive. To replace one or more characters with nothing, enter an empty string ("").
+Examples
+Below are the formulas used in the example shown above:
+=SUBSTITUTE(B5,"t","b") // replace all t's with b's
+=SUBSTITUTE(B6,"t","b",1) // replace first t with b
+=SUBSTITUTE(B7,"cat","dog") // replace cat with dog
+=SUBSTITUTE(B8,"&","") // replace # with nothing
+=SUBSTITUTE(B9,"-",", ") // replace hyphen with comma
+The SUBSTITUTE function cannot replace more than one string at a time. However, SUBSTITUTE can be nested inside of itself to accomplish the same thing. For example, with the text "a (dog)" in cell A1, the formula below will strip parentheses () from text:
+=SUBSTITUTE(SUBSTITUTE(A1,"(",""),")","") // returns "a dog"
+This same approach can be used in a more complex formula to normalize telephone numbers.
+Related functions
+Use the REPLACE function to replace text at a known location in a text string. Use the SUBSTITUTE function to replace text by searching when the location is not known. Use FIND or SEARCH to determine the location of specific text.
+Notes
+SUBSTITUTE finds and replaces old_text with new_text in a text string.
+Instance limits SUBSTITUTE replacement a particular instance of old_text.
+When instance is omitted, all instances of old_text are replaced with new_text.
+SUBSTITUTE is case-sensitive and does not support wildcards.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Join cells with comma 
+Extract word containing specific text 
+Extract word that begins with specific character 
+Remove text by matching 
+Convert feet and inches to inches 
+Split dimensions into three parts 
+LAMBDA count words 
+Count total words in a range 
+Remove line breaks 
+Normalize text 
+Videos
+  
+How to count characters with the LEN function 
+How to build all-in-one formulas 
+ Functions REPLACE Function 
+ Links Microsoft SUBSTITUTE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,10 @@
+Summary
+The Excel MMULT function returns the matrix product of two arrays. The result from MMULT is an array that contains the same number of rows as array1 and the same number of columns as array2. 
+Purpose 
+Perform matrix multiplication
+Return value 
+The matrix product of two arrays
+Arguments 
+array1 - The first array to multiply.array2 - The second array to multiply.
+Syntax 
+=MMULT(array1, array2)

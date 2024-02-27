@@ -1,0 +1,274 @@
+Excel DSTDEV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DSTDEV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Database
+DSTDEV Function
+Related functions 
+DCOUNT
+DCOUNTA
+DMAX
+DVARP
+DVAR
+DSTDEVP
+Summary
+The Excel DSTDEV function returns the standard deviation of sample data extracted from records that match the given criteria. If data represents the entire population, use the DSTDEVP function.
+Purpose 
+Get standard deviation of sample in matching records
+Return value 
+The calculated standard deviation
+Arguments 
+database - Database range including headers.field - Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DSTDEV(database, field, criteria)
+Usage notes 
+The Excel DSTDEV function gets the standard deviation of sample data extracted from records matching criteria. Essentially, this function calculates standard deviation on a subset of data, like a "standard deviation IF" formula.
+The database argument is a range of cells that includes field headers, field is the name or index of the field to query, and criteria is a range of cells with headers that match those in database. 
+Using the example above, you can get the standard deviation of heights for the group "Fox" with either of these formulas:
+=DSTDEV(B7:C13,"Height",B4:C5) // field by name
+=DSTDEV(B7:C13,2,B4:C5) // field by index
+The standard deviation for all heights in C8:C13 is calculated in F5 with the STDEV.S function:
+=STDEV.S(C8:C13)
+Criteria options
+The criteria can include a variety of expressions, including some wildcards. The table below shows some examples:
+Criteria
+Behavior
+Red
+Match "red" or "RED"
+Re*
+Begins with "re"
+10
+Equal to 10
+>10
+Greater than 10
+<>
+Not blank
+<>100
+Not 100
+>12/19/2017
+Greater than Dec 19, 2017
+Note: Support for wildcards is not quite the same as with other functions like COUNTIFS, SUMIFS, MATCH, etc. For example, the pattern ??? will match strings with 3 exactly characters in more modern functions, but not in the database functions. If you are using wildcards, test carefully.
+Multi-row criteria
+The criteria range for DSTDEV can include more than one row below the headers. When criteria includes more than one row, each row is joined with OR logic, and the expressions in a given criteria row are joined with AND logic.
+Notes:
+DSTDEV is the mean to calculate variance for a sample. If data represents the entire population, use the DSTDEVP function.
+DSTDEV supports wildcards in criteria.
+Criteria can include more than one row (as explained above).
+The field argument can be supplied as a name in double quotes ("") or as a number representing field index.
+The database and criteria ranges must include matching headers.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DCOUNT FunctionDCOUNTA FunctionDMAX FunctionDVARP FunctionDVAR FunctionDSTDEVP Function 
+ Links Microsoft DSTDEV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DSTDEV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DSTDEV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Database
+DSTDEV Function
+Related functions 
+DCOUNT
+DCOUNTA
+DMAX
+DVARP
+DVAR
+DSTDEVP
+Summary
+The Excel DSTDEV function returns the standard deviation of sample data extracted from records that match the given criteria. If data represents the entire population, use the DSTDEVP function.
+Purpose 
+Get standard deviation of sample in matching records
+Return value 
+The calculated standard deviation
+Arguments 
+database - Database range including headers.field - Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DSTDEV(database, field, criteria)
+Usage notes 
+The Excel DSTDEV function gets the standard deviation of sample data extracted from records matching criteria. Essentially, this function calculates standard deviation on a subset of data, like a "standard deviation IF" formula.
+The database argument is a range of cells that includes field headers, field is the name or index of the field to query, and criteria is a range of cells with headers that match those in database. 
+Using the example above, you can get the standard deviation of heights for the group "Fox" with either of these formulas:
+=DSTDEV(B7:C13,"Height",B4:C5) // field by name
+=DSTDEV(B7:C13,2,B4:C5) // field by index
+The standard deviation for all heights in C8:C13 is calculated in F5 with the STDEV.S function:
+=STDEV.S(C8:C13)
+Criteria options
+The criteria can include a variety of expressions, including some wildcards. The table below shows some examples:
+Criteria
+Behavior
+Red
+Match "red" or "RED"
+Re*
+Begins with "re"
+10
+Equal to 10
+>10
+Greater than 10
+<>
+Not blank
+<>100
+Not 100
+>12/19/2017
+Greater than Dec 19, 2017
+Note: Support for wildcards is not quite the same as with other functions like COUNTIFS, SUMIFS, MATCH, etc. For example, the pattern ??? will match strings with 3 exactly characters in more modern functions, but not in the database functions. If you are using wildcards, test carefully.
+Multi-row criteria
+The criteria range for DSTDEV can include more than one row below the headers. When criteria includes more than one row, each row is joined with OR logic, and the expressions in a given criteria row are joined with AND logic.
+Notes:
+DSTDEV is the mean to calculate variance for a sample. If data represents the entire population, use the DSTDEVP function.
+DSTDEV supports wildcards in criteria.
+Criteria can include more than one row (as explained above).
+The field argument can be supplied as a name in double quotes ("") or as a number representing field index.
+The database and criteria ranges must include matching headers.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions DCOUNT FunctionDCOUNTA FunctionDMAX FunctionDVARP FunctionDVAR FunctionDSTDEVP Function 
+ Links Microsoft DSTDEV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

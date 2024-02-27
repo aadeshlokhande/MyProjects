@@ -1,0 +1,621 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PMT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PMT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+PMT Function
+Related functions 
+
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PMT function is a financial function that returns the periodic payment for a loan. You can use the PMT function to figure out payments for a loan, given the loan amount, number of periods, and interest rate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the periodic payment for a loan
+
+
+
+Return value 
+
+loan payment as a number
+
+
+
+Arguments 
+
+rate - The interest rate for the loan.nper - The total number of payments for the loan.pv - The present value, or total value of all loan payments now.fv - [optional] The future value, or a cash balance you want after the last payment is made. Defaults to 0 (zero).type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.
+
+
+
+Syntax 
+
+=PMT(rate, nper, pv, [fv], [type])
+
+
+
+Usage notes 
+
+The PMT function can be used to figure out the future payments for a loan, assuming constant payments and a constant interest rate.  For example, if you are borrowing $10,000 on a 24 month loan with an annual interest rate of 8 percent, PMT can tell you what your monthly payments be and how much principal and interest you are paying each month.
+Notes:
+
+The payment returned by PMT includes principal and interest but will not include any taxes, reserve payments, or fees.
+Be sure you are consistent with the units you supply for rate and nper. If you make monthly payments on a three-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 3*12 for nper. For annual payments on the same loan, use 12 percent for rate and 3 for nper.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Estimate mortgage payment 
+
+Calculate periods for annuity 
+
+Calculate payment for a loan 
+
+Payment for annuity 
+
+
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft PMT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PMT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PMT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PMT Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel PMT function is a financial function that returns the periodic payment for a loan. You can use the PMT function to figure out payments for a loan, given the loan amount, number of periods, and interest rate.
+Purpose 
+Get the periodic payment for a loan
+Return value 
+loan payment as a number
+Arguments 
+rate - The interest rate for the loan.nper - The total number of payments for the loan.pv - The present value, or total value of all loan payments now.fv - [optional] The future value, or a cash balance you want after the last payment is made. Defaults to 0 (zero).type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.
+Syntax 
+=PMT(rate, nper, pv, [fv], [type])
+Usage notes 
+The PMT function can be used to figure out the future payments for a loan, assuming constant payments and a constant interest rate.  For example, if you are borrowing $10,000 on a 24 month loan with an annual interest rate of 8 percent, PMT can tell you what your monthly payments be and how much principal and interest you are paying each month.
+Notes:
+The payment returned by PMT includes principal and interest but will not include any taxes, reserve payments, or fees.
+Be sure you are consistent with the units you supply for rate and nper. If you make monthly payments on a three-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 3*12 for nper. For annual payments on the same loan, use 12 percent for rate and 3 for nper.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Estimate mortgage payment 
+Calculate periods for annuity 
+Calculate payment for a loan 
+Payment for annuity 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft PMT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

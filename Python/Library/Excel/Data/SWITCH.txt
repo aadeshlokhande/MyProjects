@@ -1,0 +1,620 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel SWITCH function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+SWITCH Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2019
+
+
+
+
+Logical
+
+
+SWITCH Function
+Related functions 
+
+IF
+IFS
+CHOOSE
+VLOOKUP
+MATCH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel SWITCH function compares one value against a list of values, and returns a result corresponding to the first match found. When no match is found, SWITCH can return an optional default value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Match multiple values, return first match
+
+
+
+Return value 
+
+Result corresponding with first match
+
+
+
+Arguments 
+
+expression - The value or expression to match against.val1/result1 - The first value and result pair.val2/result2 - [optional] The second value and result pair.default - [optional] The default value to use when no match is found.
+
+
+
+Syntax 
+
+=SWITCH(expression, val1/result1, [val2/result2], ..., [default])
+
+
+
+Usage notes 
+
+The SWITCH function compares one value against a list of values and returns a result that corresponds to the first match found. You can use the SWITCH function when you want to perform a "self-contained" exact match lookup with several possible results. When no match is found, SWITCH can return an optional default value.
+The first argument in SWITCH is called "expression" and can be a hard-coded constant, a cell reference, or a formula that returns a specific value to match against. Matching values and corresponding results are entered in pairs. SWITCH can handle up to 126 pairs of values and results. The last argument, default, is an optional value to return when there is no match.
+In the example shown, the formula in D5 is:
+
+=SWITCH(C5,1,"Poor",2,"OK",3,"Good","?")
+
+SWITCH only performs an exact match, so you can't include logical operators like greater than (>) or less than (<) in the logic used to determine a match. You can work around this limitation by constructing a formula to match against TRUE like this:
+
+=SWITCH(TRUE,A1>=1000,"Gold",A1>=500,"Silver","Bronze")
+
+However, in a case like this, the IFS function would likely be more straightforward.
+SWITCH versus IFS
+Like the IFS function, the SWITCH function allows you to test more than one condition without nesting multiple IF statements in a single self-contained formula. SWITCH therefore makes it easier to write (and read) a formula with many conditions. One advantage of SWITCH over IFS is that the expression appears just once in the function and does not need to be repeated. However,  SWITCH is limited to exact matching. It is not possible to use operators like greater than (>) or less than (<) with the standard syntax.  In contrast, the IFS function actually requires expressions for each condition, so you can use logical operators as needed.
+Note: The SWITCH function and IFS function are both new in Excel 2019 and Excel 365.
+Notes
+
+Expression can be another formula that returns a specific value.
+SWITCH can handle up to 126 value/result pairs.
+Enter a final argument to set a default result when no match is found.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions IF FunctionIFS FunctionCHOOSE FunctionVLOOKUP FunctionMATCH Function 
+ Links Microsoft SWITCH function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel SWITCH function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SWITCH Function 
+Previous 
+Next 
+ 
+Excel 2019
+Logical
+SWITCH Function
+Related functions 
+IF
+IFS
+CHOOSE
+VLOOKUP
+MATCH
+Summary
+The Excel SWITCH function compares one value against a list of values, and returns a result corresponding to the first match found. When no match is found, SWITCH can return an optional default value.
+Purpose 
+Match multiple values, return first match
+Return value 
+Result corresponding with first match
+Arguments 
+expression - The value or expression to match against.val1/result1 - The first value and result pair.val2/result2 - [optional] The second value and result pair.default - [optional] The default value to use when no match is found.
+Syntax 
+=SWITCH(expression, val1/result1, [val2/result2], ..., [default])
+Usage notes 
+The SWITCH function compares one value against a list of values and returns a result that corresponds to the first match found. You can use the SWITCH function when you want to perform a "self-contained" exact match lookup with several possible results. When no match is found, SWITCH can return an optional default value.
+The first argument in SWITCH is called "expression" and can be a hard-coded constant, a cell reference, or a formula that returns a specific value to match against. Matching values and corresponding results are entered in pairs. SWITCH can handle up to 126 pairs of values and results. The last argument, default, is an optional value to return when there is no match.
+In the example shown, the formula in D5 is:
+=SWITCH(C5,1,"Poor",2,"OK",3,"Good","?")
+SWITCH only performs an exact match, so you can't include logical operators like greater than (>) or less than (<) in the logic used to determine a match. You can work around this limitation by constructing a formula to match against TRUE like this:
+=SWITCH(TRUE,A1>=1000,"Gold",A1>=500,"Silver","Bronze")
+However, in a case like this, the IFS function would likely be more straightforward.
+SWITCH versus IFS
+Like the IFS function, the SWITCH function allows you to test more than one condition without nesting multiple IF statements in a single self-contained formula. SWITCH therefore makes it easier to write (and read) a formula with many conditions. One advantage of SWITCH over IFS is that the expression appears just once in the function and does not need to be repeated. However,  SWITCH is limited to exact matching. It is not possible to use operators like greater than (>) or less than (<) with the standard syntax.  In contrast, the IFS function actually requires expressions for each condition, so you can use logical operators as needed.
+Note: The SWITCH function and IFS function are both new in Excel 2019 and Excel 365.
+Notes
+Expression can be another formula that returns a specific value.
+SWITCH can handle up to 126 value/result pairs.
+Enter a final argument to set a default result when no match is found.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions IF FunctionIFS FunctionCHOOSE FunctionVLOOKUP FunctionMATCH Function 
+ Links Microsoft SWITCH function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

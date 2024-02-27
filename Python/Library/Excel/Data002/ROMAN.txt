@@ -1,0 +1,10 @@
+Summary
+The Excel ROMAN function converts a number to a Roman numeral as text. For example, the formula =ROMAN(4) returns IV.
+Purpose 
+Converts numbers to Roman numerals
+Return value 
+A Roman numeral in text
+Arguments 
+number - Number (in Arabic numeral) you want to convert to Roman numeral.form - [optional] The type of Roman numeral you want.
+Syntax 
+=ROMAN(number, [form])

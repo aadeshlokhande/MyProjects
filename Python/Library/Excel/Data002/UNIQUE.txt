@@ -1,0 +1,10 @@
+Summary
+The Excel UNIQUE function returns a list of unique values in a list or range. Values can be text, numbers, dates, times, etc.
+Purpose 
+Extract unique values from range
+Return value 
+Array of unique values
+Arguments 
+array - Range or array from which to extract unique values.by_col - [optional] How to compare and extract. By row = FALSE (default); by column = TRUE.exactly_once - [optional] TRUE = values that occur once, FALSE= all unique values (default).
+Syntax 
+=UNIQUE(array, [by_col], [exactly_once])

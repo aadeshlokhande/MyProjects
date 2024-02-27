@@ -1,0 +1,755 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel DATEDIF function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+DATEDIF Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+DATEDIF Function
+Related functions 
+
+NETWORKDAYS
+YEARFRAC
+DAYS360
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel DATEDIF function returns the difference between two date values in years, months, or days. The DATEDIF (Date + Dif) function is a "compatibility" function that comes from Lotus 1-2-3. For reasons unknown, it is only documented in Excel 2000, but you can use it in your formulas in all Excel versions since that time.
+Note: Excel won't help you fill out the arguments for DATEDIF like other functions, but it will work when configured correctly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get days, months, or years between two dates
+
+
+
+Return value 
+
+A number representing time between two dates
+
+
+
+Arguments 
+
+start_date - Start date in Excel date serial number format.end_date - End date in Excel date serial number format.unit - The time unit to use (years, months, or days).
+
+
+
+Syntax 
+
+=DATEDIF(start_date, end_date, unit)
+
+
+
+Usage notes 
+
+The DATEDIF (Date + Dif) function is a "compatibility" function that comes from Lotus 1-2-3. For a long time, official documentation on DATEDIF was sparse. Even now (May 2021), Excel will not help you fill in arguments for DATEDIF like other functions. As the late Chip Pearson once wrote in his immortal words: DATEDIF is treated as the drunk cousin of the Formula family. Excel knows it lives a happy and useful life, but will not speak of it in polite conversation. Yet DATEDIF remains a very useful function for certain problems.
+Time units
+The DATEDIF function can calculate the time between a start_date and an end_date in years, months, or days. The time unit is specified with the unit argument, which is supplied as text.  The table below summarizes available unit values and the result for each. Time units can be given in upper or lower case (i.e. "ym" is equivalent to "YM").
+
+
+
+Unit
+Result
+
+
+
+
+"y"
+Difference in complete years
+
+
+"m"
+Difference in complete months
+
+
+"d"
+Difference in days
+
+
+"md"
+Difference in days, ignoring months and years
+
+
+"ym"
+Difference in months, ignoring years
+
+
+"yd"
+Difference in days, ignoring years
+
+
+
+Example 1 - Basic usage
+In the example shown above, column B contains the date January 1, 2016 and column C contains the date March 1, 2018. In column E:
+
+E5=DATEDIF(B5,C5,"y") // returns 2
+E6=DATEDIF(B6,C6,"m") // returns 26
+E7=DATEDIF(B7,C7,"d")// returns 790
+
+Example 2 - Difference in days
+The DATEDIF function can calculate the difference between dates in days in three different ways: (1) total days, (2) days ignoring years, and (3) days ignoring months and years. The screenshot below shows all three methods, with a start date of June 15, 2015, and an end date of September 15, 2021:
+
+The formulas used for these calculations are as follows:
+
+=DATEDIF(B5,C5,"d") // total days
+=DATEDIF(B6,C6,"yd") // days ignoring years
+=DATEDIF(B7,C7,"md") // days ignoring months and years
+
+Note that because Excel dates are just large serial numbers, the first formula does not need DATEDIF and could be written as simply the end date minus the start date:
+
+=C5-B5 // end-start =  total days
+
+Example 3 - Difference in months
+The DATEDIF function can calculate the difference between dates in months in two different ways: (1) total complete months, (2) complete months ignoring years. The screenshot below shows both methods, with a start date of June 15, 2015, and an end date of September 15, 2021:
+
+
+=DATEDIF(B5,C5,"m") // complete months
+=DATEDIF(B6,C6,"ym") // complete months ignoring years
+
+DATEDIF always  rounds months down to the last complete number of months. This means DATEDIF rounds the result down even when it is very close to the next whole month. In addition, DATEDIF may not work as expected when start and end dates are "end of month" dates. This example provides more information and alternatives.
+Example 4 - Difference in years
+The DATEDIF function can calculate the difference between dates in complete years with just one method, shown below:
+
+
+=DATEDIF(B5,C5,"y") // complete years
+=DATEDIF(B6,C6,"y") // complete years
+=YEARFRAC(B7,C7) // fractional  years with YEARFRAC
+
+Notice in row 6 the difference is almost 6 years, but not quite. Because DATEDIF only calculates complete years, the result is still 5. In row 7 we use the YEARFRAC function to calculate a more accurate result.
+Example 5 - Age from birthday
+The DATEDIF function can be used together with the TODAY function to calculate current age from a birth date. With a full birth date in A1, the formula is:
+
+=DATEDIF(A1,TODAY(),"y")
+
+Read a complete explanation here.
+Notes
+
+Excel will not help you fill in the DATEDIF function like other functions.
+DATEDIF will throw a #NUM error if start_date is greater than the end_date. If you are working with a more complex formula where start dates and end dates may be unknown, or out of bounds, you can trap the error with the IFERROR function, or use MIN and MAX to sort out dates.
+Microsoft recommends not using the "MD" value for unit because it "may result in a negative number, a zero, or an inaccurate result". 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Get days, months, and years between dates 
+
+Next anniversary date 
+
+Repeat fixed value every 3 months 
+
+Get days between dates ignoring years 
+
+Get age from birthday 
+
+Get months between dates 
+
+
+
+Videos
+  
+How to calculate years and months between dates  
+
+Excel formula error codes 
+
+
+ Functions NETWORKDAYS FunctionYEARFRAC FunctionDAYS360 Function 
+ Links Microsoft DATEDIF function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel DATEDIF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DATEDIF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DATEDIF Function
+Related functions 
+NETWORKDAYS
+YEARFRAC
+DAYS360
+Summary
+The Excel DATEDIF function returns the difference between two date values in years, months, or days. The DATEDIF (Date + Dif) function is a "compatibility" function that comes from Lotus 1-2-3. For reasons unknown, it is only documented in Excel 2000, but you can use it in your formulas in all Excel versions since that time.
+Note: Excel won't help you fill out the arguments for DATEDIF like other functions, but it will work when configured correctly.
+Purpose 
+Get days, months, or years between two dates
+Return value 
+A number representing time between two dates
+Arguments 
+start_date - Start date in Excel date serial number format.end_date - End date in Excel date serial number format.unit - The time unit to use (years, months, or days).
+Syntax 
+=DATEDIF(start_date, end_date, unit)
+Usage notes 
+The DATEDIF (Date + Dif) function is a "compatibility" function that comes from Lotus 1-2-3. For a long time, official documentation on DATEDIF was sparse. Even now (May 2021), Excel will not help you fill in arguments for DATEDIF like other functions. As the late Chip Pearson once wrote in his immortal words: DATEDIF is treated as the drunk cousin of the Formula family. Excel knows it lives a happy and useful life, but will not speak of it in polite conversation. Yet DATEDIF remains a very useful function for certain problems.
+Time units
+The DATEDIF function can calculate the time between a start_date and an end_date in years, months, or days. The time unit is specified with the unit argument, which is supplied as text.  The table below summarizes available unit values and the result for each. Time units can be given in upper or lower case (i.e. "ym" is equivalent to "YM").
+Unit
+Result
+"y"
+Difference in complete years
+"m"
+Difference in complete months
+"d"
+Difference in days
+"md"
+Difference in days, ignoring months and years
+"ym"
+Difference in months, ignoring years
+"yd"
+Difference in days, ignoring years
+Example 1 - Basic usage
+In the example shown above, column B contains the date January 1, 2016 and column C contains the date March 1, 2018. In column E:
+E5=DATEDIF(B5,C5,"y") // returns 2
+E6=DATEDIF(B6,C6,"m") // returns 26
+E7=DATEDIF(B7,C7,"d")// returns 790
+Example 2 - Difference in days
+The DATEDIF function can calculate the difference between dates in days in three different ways: (1) total days, (2) days ignoring years, and (3) days ignoring months and years. The screenshot below shows all three methods, with a start date of June 15, 2015, and an end date of September 15, 2021:
+The formulas used for these calculations are as follows:
+=DATEDIF(B5,C5,"d") // total days
+=DATEDIF(B6,C6,"yd") // days ignoring years
+=DATEDIF(B7,C7,"md") // days ignoring months and years
+Note that because Excel dates are just large serial numbers, the first formula does not need DATEDIF and could be written as simply the end date minus the start date:
+=C5-B5 // end-start =  total days
+Example 3 - Difference in months
+The DATEDIF function can calculate the difference between dates in months in two different ways: (1) total complete months, (2) complete months ignoring years. The screenshot below shows both methods, with a start date of June 15, 2015, and an end date of September 15, 2021:
+=DATEDIF(B5,C5,"m") // complete months
+=DATEDIF(B6,C6,"ym") // complete months ignoring years
+DATEDIF always  rounds months down to the last complete number of months. This means DATEDIF rounds the result down even when it is very close to the next whole month. In addition, DATEDIF may not work as expected when start and end dates are "end of month" dates. This example provides more information and alternatives.
+Example 4 - Difference in years
+The DATEDIF function can calculate the difference between dates in complete years with just one method, shown below:
+=DATEDIF(B5,C5,"y") // complete years
+=DATEDIF(B6,C6,"y") // complete years
+=YEARFRAC(B7,C7) // fractional  years with YEARFRAC
+Notice in row 6 the difference is almost 6 years, but not quite. Because DATEDIF only calculates complete years, the result is still 5. In row 7 we use the YEARFRAC function to calculate a more accurate result.
+Example 5 - Age from birthday
+The DATEDIF function can be used together with the TODAY function to calculate current age from a birth date. With a full birth date in A1, the formula is:
+=DATEDIF(A1,TODAY(),"y")
+Read a complete explanation here.
+Notes
+Excel will not help you fill in the DATEDIF function like other functions.
+DATEDIF will throw a #NUM error if start_date is greater than the end_date. If you are working with a more complex formula where start dates and end dates may be unknown, or out of bounds, you can trap the error with the IFERROR function, or use MIN and MAX to sort out dates.
+Microsoft recommends not using the "MD" value for unit because it "may result in a negative number, a zero, or an inaccurate result". 
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get days, months, and years between dates 
+Next anniversary date 
+Repeat fixed value every 3 months 
+Get days between dates ignoring years 
+Get age from birthday 
+Get months between dates 
+Videos
+  
+How to calculate years and months between dates  
+Excel formula error codes 
+ Functions NETWORKDAYS FunctionYEARFRAC FunctionDAYS360 Function 
+ Links Microsoft DATEDIF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

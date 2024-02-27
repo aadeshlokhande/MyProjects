@@ -1,0 +1,10 @@
+Summary
+The Excel ISFORMULA function returns TRUE if a cell contains a formula, and FALSE if not. When a cell contains a formula ISFORMULA will return TRUE regardless of the formula's output or error conditions.
+Purpose 
+Test if cell contains a formula
+Return value 
+TRUE or FALSE
+Arguments 
+reference - Reference to cell or cell range.
+Syntax 
+=ISFORMULA(reference)

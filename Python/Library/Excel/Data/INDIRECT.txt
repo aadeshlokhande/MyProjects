@@ -1,0 +1,717 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel INDIRECT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+INDIRECT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+INDIRECT Function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel INDIRECT function returns a valid cell reference from a given text string. INDIRECT is useful when you want to assemble a text value that can be used as a valid reference.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Create a reference from text
+
+
+
+Return value 
+
+A valid worksheet reference.
+
+
+
+Arguments 
+
+ref_text - A reference supplied as text.a1 - [optional] A boolean to indicate A1 or R1C1-style reference. Default is TRUE = A1 style.
+
+
+
+Syntax 
+
+=INDIRECT(ref_text, [a1])
+
+
+
+Usage notes 
+
+The INDIRECT function returns a valid cell reference from a given text string. INDIRECT is useful when you need to build a text value by concatenating separate text strings that can then be interpreted as a valid cell reference.
+INDIRECT is a volatile function, and can cause performance issues in large or complex worksheets.
+INDIRECT takes two arguments, ref_text and a1. Ref_text is the text string to evaluate as a reference. A1 indicates the reference style for the incoming text value. When a1 is TRUE (the default value), the style is "A1". When a1 is FALSE, the style is "R1C1". For example:
+
+=INDIRECT("A1") // returns reference like =A1
+=INDIRECT("R1C1",FALSE) // returns reference like =R1C1
+
+The purpose of INDIRECT may at first seem baffling (i.e. Why use text when you can just provide a proper reference?) but there are many situations where the ability to create a reference from text is useful, including:
+
+A formula that needs a variable sheet name
+A formula that can assemble a cell reference from bits of text
+A fixed reference that will not change even when rows or columns are deleted
+Creating numeric arrays with the ROW function in complex formulas
+
+Note: INDIRECT is a volatile function and can cause performance problems in large or complex worksheets. Use with care.
+Example #1 - Variable worksheet name
+In the example shown above, INDIRECT is set up to use a variable sheet name like this:
+
+=INDIRECT(B5&"!A1") // sheet name in B5 is variable
+
+The formula in B5, copied down, concatenates the text in B5 to the string "!A1" and returns the result to INDIRECT. The INDIRECT function then evaluates the text and converts it into a proper reference. The results in C5:C9 are the values from cell A1 in 5 sheets listed in column B. 
+The formula is dynamic in that responds to the values in column B. In other words, if a different sheet name is entered in column B5, the value from cell A1 in the new sheet is returned. With the same approach, you could allow a user to select a sheet name with a dropdown list, then construct a reference to the selected sheet with INDIRECT.
+Note: sheet names that contain punctuation or space must be enclosed in single quotes ('), as explained in this example. This is not specific to the INDIRECT function; the same limitation is true in all formulas.
+Example #2 - variable lookup table
+In the worksheet below, VLOOKUP is used to get costs for two vendors, A and B. Using the vendor indicated in column F, VLOOKUP automatically uses the correct table:
+
+The formula in G5 is:
+
+=VLOOKUP(E5,INDIRECT("vendor_"&F5),2,0)
+
+Read the full explanation here.
+Example #3 - Fixed reference
+The reference created by INDIRECT will not change even when cells, rows, or columns are inserted or deleted. For example, the formula below will always refer to the first 100 rows of column A, even if rows in that range are deleted or inserted:
+
+=INDIRECT("A1:A100") // will not change
+
+Example #4 - named range
+The INDIRECT function can easily be used with named ranges. In the worksheet below, there are two named ranges: Group1 (B5:B12) and Group2 (C5:C12). When "Group1" or "Group2" is entered in cell F5, the formula in cell F6 sums the appropriate range using INDIRECT like this:
+
+=SUM(INDIRECT(F5))
+
+The value in F5 is text, but INDIRECT converts the text into a valid range.
+
+A specific example of this approach is using named ranges to make dependent dropdown lists.
+Example #5 - Generate numeric array
+A more advanced use of INDIRECT is to create a numeric array with the ROW function like this:
+
+ROW(INDIRECT("1:10")) // create {1;2;3;4;5;6;7;8;9;10}
+
+One use case is explained in this formula, which sums the bottom n values in a range. You may also run into ROW + INDIRECT idea in more complex formulas that need to assemble a numeric array "on-the-fly". One example is this formula, designed to strip numeric characters from a string.
+Notes
+
+References created by INDIRECT are evaluated in real time and the content of the reference is displayed.
+When ref_text is an external reference to another workbook, the workbook must be open.
+a1 is optional. When omitted, a1 is TRUE = A1 style reference.
+When a1 is set to FALSE, INDIRECT will create an R1C1-style reference.
+INDIRECT is a volatile function, and can cause performance issues in large or complex worksheets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Increment cell reference with INDIRECT 
+
+Data validation specific characters only 
+
+Get cell content at given row and column 
+
+Indirect named range different sheet 
+
+Worksheet name exists 
+
+Count day of week between dates 
+
+Count numbers in text string 
+
+Convert string to array 
+
+Dynamic reference to table 
+
+Search multiple worksheets for value 
+
+
+
+Videos
+  
+Create a dynamic reference to a named range 
+
+Create a dynamic reference to a worksheet 
+
+How to find and highlight formulas 
+
+
+ Links Microsoft INDIRECT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel INDIRECT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+INDIRECT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+INDIRECT Function 
+Summary
+The Excel INDIRECT function returns a valid cell reference from a given text string. INDIRECT is useful when you want to assemble a text value that can be used as a valid reference.
+Purpose 
+Create a reference from text
+Return value 
+A valid worksheet reference.
+Arguments 
+ref_text - A reference supplied as text.a1 - [optional] A boolean to indicate A1 or R1C1-style reference. Default is TRUE = A1 style.
+Syntax 
+=INDIRECT(ref_text, [a1])
+Usage notes 
+The INDIRECT function returns a valid cell reference from a given text string. INDIRECT is useful when you need to build a text value by concatenating separate text strings that can then be interpreted as a valid cell reference.
+INDIRECT is a volatile function, and can cause performance issues in large or complex worksheets.
+INDIRECT takes two arguments, ref_text and a1. Ref_text is the text string to evaluate as a reference. A1 indicates the reference style for the incoming text value. When a1 is TRUE (the default value), the style is "A1". When a1 is FALSE, the style is "R1C1". For example:
+=INDIRECT("A1") // returns reference like =A1
+=INDIRECT("R1C1",FALSE) // returns reference like =R1C1
+The purpose of INDIRECT may at first seem baffling (i.e. Why use text when you can just provide a proper reference?) but there are many situations where the ability to create a reference from text is useful, including:
+A formula that needs a variable sheet name
+A formula that can assemble a cell reference from bits of text
+A fixed reference that will not change even when rows or columns are deleted
+Creating numeric arrays with the ROW function in complex formulas
+Note: INDIRECT is a volatile function and can cause performance problems in large or complex worksheets. Use with care.
+Example #1 - Variable worksheet name
+In the example shown above, INDIRECT is set up to use a variable sheet name like this:
+=INDIRECT(B5&"!A1") // sheet name in B5 is variable
+The formula in B5, copied down, concatenates the text in B5 to the string "!A1" and returns the result to INDIRECT. The INDIRECT function then evaluates the text and converts it into a proper reference. The results in C5:C9 are the values from cell A1 in 5 sheets listed in column B. 
+The formula is dynamic in that responds to the values in column B. In other words, if a different sheet name is entered in column B5, the value from cell A1 in the new sheet is returned. With the same approach, you could allow a user to select a sheet name with a dropdown list, then construct a reference to the selected sheet with INDIRECT.
+Note: sheet names that contain punctuation or space must be enclosed in single quotes ('), as explained in this example. This is not specific to the INDIRECT function; the same limitation is true in all formulas.
+Example #2 - variable lookup table
+In the worksheet below, VLOOKUP is used to get costs for two vendors, A and B. Using the vendor indicated in column F, VLOOKUP automatically uses the correct table:
+The formula in G5 is:
+=VLOOKUP(E5,INDIRECT("vendor_"&F5),2,0)
+Read the full explanation here.
+Example #3 - Fixed reference
+The reference created by INDIRECT will not change even when cells, rows, or columns are inserted or deleted. For example, the formula below will always refer to the first 100 rows of column A, even if rows in that range are deleted or inserted:
+=INDIRECT("A1:A100") // will not change
+Example #4 - named range
+The INDIRECT function can easily be used with named ranges. In the worksheet below, there are two named ranges: Group1 (B5:B12) and Group2 (C5:C12). When "Group1" or "Group2" is entered in cell F5, the formula in cell F6 sums the appropriate range using INDIRECT like this:
+=SUM(INDIRECT(F5))
+The value in F5 is text, but INDIRECT converts the text into a valid range.
+A specific example of this approach is using named ranges to make dependent dropdown lists.
+Example #5 - Generate numeric array
+A more advanced use of INDIRECT is to create a numeric array with the ROW function like this:
+ROW(INDIRECT("1:10")) // create {1;2;3;4;5;6;7;8;9;10}
+One use case is explained in this formula, which sums the bottom n values in a range. You may also run into ROW + INDIRECT idea in more complex formulas that need to assemble a numeric array "on-the-fly". One example is this formula, designed to strip numeric characters from a string.
+Notes
+References created by INDIRECT are evaluated in real time and the content of the reference is displayed.
+When ref_text is an external reference to another workbook, the workbook must be open.
+a1 is optional. When omitted, a1 is TRUE = A1 style reference.
+When a1 is set to FALSE, INDIRECT will create an R1C1-style reference.
+INDIRECT is a volatile function, and can cause performance issues in large or complex worksheets.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Increment cell reference with INDIRECT 
+Data validation specific characters only 
+Get cell content at given row and column 
+Indirect named range different sheet 
+Worksheet name exists 
+Count day of week between dates 
+Count numbers in text string 
+Convert string to array 
+Dynamic reference to table 
+Search multiple worksheets for value 
+Videos
+  
+Create a dynamic reference to a named range 
+Create a dynamic reference to a worksheet 
+How to find and highlight formulas 
+ Links Microsoft INDIRECT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

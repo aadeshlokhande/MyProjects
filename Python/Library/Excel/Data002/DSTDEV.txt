@@ -1,0 +1,10 @@
+Summary
+The Excel DSTDEV function returns the standard deviation of sample data extracted from records that match the given criteria. If data represents the entire population, use the DSTDEVP function.
+Purpose 
+Get standard deviation of sample in matching records
+Return value 
+The calculated standard deviation
+Arguments 
+database - Database range including headers.field - Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DSTDEV(database, field, criteria)

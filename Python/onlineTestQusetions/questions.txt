@@ -1,0 +1,163 @@
+
+
+
+
+
+
+
+
+Data Analytics Test | Round 1
+
+Question 1
+
+Single Choice
+
+Report
+
+A team of 6 members participated in a shooting competition. The best marksmen scored 78 points. If he had scored 87 points, the team's average score would have been 77 points. What is the original average of the team?
+
+Options
+
+
+
+72.3
+
+
+
+71.9
+
+
+
+75.5
+
+
+
+79.5
+
+
+Data Analytics Test | Round 1
+
+Question 10
+
+Single Choice
+
+Report
+
+A man takes 12 hours to row 72 kms downstream and 18 hours to row the same distance upstream. Find out the man�s rowing speed in still water and the speed of the current.
+
+Options
+
+
+
+6km/h, 2km/h
+
+
+
+7km/h, 3km/h
+
+
+
+4km/h, �km/h
+
+
+
+5km/h, 1km/h
+
+
+Data Analytics Test | Round 1
+
+Question 11
+
+Single Choice
+
+Report
+
+The normal load of Even's table and Alia's table is 45 kg and the proportion of the heaviness of Even's table and Alia's table is 2 : 3 separately.
+
+
+
+Quantity I : Next month, the heaviness of Even's table expanded by 20% of his unique weight, then, at that point, what might be the new normal (in kg)
+
+
+
+Quantity II : Next month, the heaviness of Alia's table expanded by 5% of her unique weight , then, at that point, what might be the new normal (in kg)
+
+
+
+Options
+
+
+
+Quantity I > Quantity II
+
+
+
+Quantity I < Quantity II
+
+
+
+Quantity I = Quantity II
+
+
+
+None of the above
+
+
+Data Analytics Test | Round 1
+
+Question 12
+
+Single Choice
+
+Report
+
+What is 19% of 47?
+
+Options
+
+
+
+8.93
+
+
+
+4.25
+
+
+
+6.47
+
+
+
+4.63
+
+
+Data Analytics Test | Round 1
+
+Question 13
+
+Single Choice
+
+Report
+
+The length of a kids' room in Mr. Sharma's home is 7 meter and width is 4 meter . How much expense Mr. Sharma needs to pay for the floor by pieces at the pace of Rs. 1000 for each square meter?
+
+Options
+
+
+
+28000
+
+
+
+2800
+
+
+
+280
+
+
+
+2800000
+
+

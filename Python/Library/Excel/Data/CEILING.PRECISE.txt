@@ -1,0 +1,666 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel CEILING.PRECISE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+CEILING.PRECISE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2010
+
+
+
+
+Math
+
+
+CEILING.PRECISE Function
+Related functions 
+
+MROUND
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+CEILING
+EVEN
+ODD
+INT
+TRUNC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel CEILING.PRECISE function rounds a number up to a given multiple. CEILING.PRECISE defaults to a multiple of 1, and always rounds negative numbers toward zero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Round a number up to nearest multiple
+
+
+
+Return value 
+
+A rounded number.
+
+
+
+Arguments 
+
+number - The number that should be rounded.significance - [optional] Multiple to use when rounding. Default is 1.
+
+
+
+Syntax 
+
+=CEILING.PRECISE(number, [significance])
+
+
+
+Usage notes 
+
+The Excel CEILING.PRECISE function rounds a number up to a given multiple, where multiple is provided as the significance argument. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The CEILING.PRECISE function takes two arguments, number and significance. The number argument is the numeric value to round up, and is the only required argument. With no other input, CEILING.PRECISE will round number up to the next integer.
+The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but CEILING.PRECISE can also understand time entered as text like "0:15". The default value of significance is 1.
+Examples
+By default, CEILING.PRECISE rounds up to the next integer, with a significance of 1.
+
+=CEILING.PRECISE(1.25) // returns 2
+=CEILING.PRECISE(8.1) // returns 9
+
+To round to a different multiple, provide a value for significance :
+
+=CEILING.PRECISE(1.25,3) // returns 3
+=CEILING.PRECISE(4.1,3) // returns 6
+=CEILING.PRECISE(4.1,0.5) // returns 4.5
+
+Rounding negative numbers
+By default, positive numbers with decimal portions are rounded up to the nearest integer, and negative numbers with decimal portions are rounded toward zero:
+
+=CEILING.MATH(6.3) // returns 7
+=CEILING.MATH(-6.3) // returns -6
+
+The CEILING.PRECISE function always rounds negative numbers toward zero, and ignores the sign of significance.
+
+=CEILING.PRECISE(-4.1) // returns -4
+=CEILING.PRECISE(-4.1,1) // returns -4
+=CEILING.PRECISE(-4.1,-1) // returns -4
+
+If you need control over rounding of negative values up or down, see the CEILING.MATH function.
+CEILING.PRECISE vs CEILING
+The  CEILING.PRECISE function together with the CEILING.MATH function replace the original CEILING function, which is now classified as a "compatibility function". The behavior is very similar, but CEILING.PRECISE differs from the CEILING function in these key ways:
+
+Defaults to a significance of 1 (i.e. rounds up to nearest integer)
+Always rounds negative numbers toward zero
+Ignores the sign of significance argument (uses the absolute value)
+
+Notes
+
+CEILING.PRECISE always rounds negative numbers toward zero.
+If number is an exact multiple of significance, no rounding occurs.
+To round to the nearest multiple (up or down) see the MROUND function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions MROUND FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionCEILING FunctionEVEN FunctionODD FunctionINT FunctionTRUNC Function 
+ Links Microsoft CEILING.PRECISE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel CEILING.PRECISE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CEILING.PRECISE Function 
+Previous 
+Next 
+ 
+Excel 2010
+Math
+CEILING.PRECISE Function
+Related functions 
+MROUND
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+CEILING
+EVEN
+ODD
+INT
+TRUNC
+Summary
+The Excel CEILING.PRECISE function rounds a number up to a given multiple. CEILING.PRECISE defaults to a multiple of 1, and always rounds negative numbers toward zero.
+Purpose 
+Round a number up to nearest multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - [optional] Multiple to use when rounding. Default is 1.
+Syntax 
+=CEILING.PRECISE(number, [significance])
+Usage notes 
+The Excel CEILING.PRECISE function rounds a number up to a given multiple, where multiple is provided as the significance argument. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The CEILING.PRECISE function takes two arguments, number and significance. The number argument is the numeric value to round up, and is the only required argument. With no other input, CEILING.PRECISE will round number up to the next integer.
+The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but CEILING.PRECISE can also understand time entered as text like "0:15". The default value of significance is 1.
+Examples
+By default, CEILING.PRECISE rounds up to the next integer, with a significance of 1.
+=CEILING.PRECISE(1.25) // returns 2
+=CEILING.PRECISE(8.1) // returns 9
+To round to a different multiple, provide a value for significance :
+=CEILING.PRECISE(1.25,3) // returns 3
+=CEILING.PRECISE(4.1,3) // returns 6
+=CEILING.PRECISE(4.1,0.5) // returns 4.5
+Rounding negative numbers
+By default, positive numbers with decimal portions are rounded up to the nearest integer, and negative numbers with decimal portions are rounded toward zero:
+=CEILING.MATH(6.3) // returns 7
+=CEILING.MATH(-6.3) // returns -6
+The CEILING.PRECISE function always rounds negative numbers toward zero, and ignores the sign of significance.
+=CEILING.PRECISE(-4.1) // returns -4
+=CEILING.PRECISE(-4.1,1) // returns -4
+=CEILING.PRECISE(-4.1,-1) // returns -4
+If you need control over rounding of negative values up or down, see the CEILING.MATH function.
+CEILING.PRECISE vs CEILING
+The  CEILING.PRECISE function together with the CEILING.MATH function replace the original CEILING function, which is now classified as a "compatibility function". The behavior is very similar, but CEILING.PRECISE differs from the CEILING function in these key ways:
+Defaults to a significance of 1 (i.e. rounds up to nearest integer)
+Always rounds negative numbers toward zero
+Ignores the sign of significance argument (uses the absolute value)
+Notes
+CEILING.PRECISE always rounds negative numbers toward zero.
+If number is an exact multiple of significance, no rounding occurs.
+To round to the nearest multiple (up or down) see the MROUND function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MROUND FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionCEILING FunctionEVEN FunctionODD FunctionINT FunctionTRUNC Function 
+ Links Microsoft CEILING.PRECISE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

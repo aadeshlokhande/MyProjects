@@ -1,0 +1,629 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PERCENTILE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PERCENTILE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+PERCENTILE Function
+Related functions 
+
+SMALL
+LARGE
+RANK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PERCENTILE function calculates the "kth percentile" for a set of data. A percentile is a value below which a given percentage of values in a data set fall. You can use PERCENTILE to determine the 90th percentile, the 80th percentile, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get kth percentile
+
+
+
+Return value 
+
+Calculated percentile for k
+
+
+
+Arguments 
+
+array - Data values.k - Number representing kth percentile.
+
+
+
+Syntax 
+
+=PERCENTILE(array, k)
+
+
+
+Usage notes 
+
+The Excel PERCENTILE function calculates the "kth percentile" for a set of data. A percentile is a value below which a given percentage of values in a data set fall. A percentile calculated with .4 as k means 40% percent of values are less than or equal to the calculated result, a percentile calculated with k = .9 means 90% percent of values are less than or equal to the calculated result.
+To use PERCENTILE, provide a range of values and a number between 0 and 1 for the "k" argument, which represents percent. For example:
+
+=PERCENTILE(range,.4) // 40th percentile
+=PERCENTILE(range,.9) // 90th percentile
+
+You can also specify k as a percent using the % character:
+
+=PERCENTILE(range,80%) // 80th percentile
+
+PERCENTILE returns a value greater than or equal to the specified percentile.
+In the example shown, the formula in G5 is:
+
+=PERCENTILE(scores,E5)
+
+where "scores" is the named range C5:C14.
+Note: Microsoft classifies PERCENTILE as a "compatibility function", now replaced by the PERCENTILE.INC function.
+Notes
+
+k can be provided as a decimal (.5) or a percentage (50%)
+k must be between 0 and 1, otherwise PERCENTILE will return the #NUM! error.
+When percentiles fall between values, PERCENTILE will interpolate and return an intermediate value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Percentile IF in table 
+
+
+ Functions SMALL FunctionLARGE FunctionRANK Function 
+ Links Microsoft PERCENTILE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PERCENTILE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PERCENTILE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+PERCENTILE Function
+Related functions 
+SMALL
+LARGE
+RANK
+Summary
+The Excel PERCENTILE function calculates the "kth percentile" for a set of data. A percentile is a value below which a given percentage of values in a data set fall. You can use PERCENTILE to determine the 90th percentile, the 80th percentile, etc.
+Purpose 
+Get kth percentile
+Return value 
+Calculated percentile for k
+Arguments 
+array - Data values.k - Number representing kth percentile.
+Syntax 
+=PERCENTILE(array, k)
+Usage notes 
+The Excel PERCENTILE function calculates the "kth percentile" for a set of data. A percentile is a value below which a given percentage of values in a data set fall. A percentile calculated with .4 as k means 40% percent of values are less than or equal to the calculated result, a percentile calculated with k = .9 means 90% percent of values are less than or equal to the calculated result.
+To use PERCENTILE, provide a range of values and a number between 0 and 1 for the "k" argument, which represents percent. For example:
+=PERCENTILE(range,.4) // 40th percentile
+=PERCENTILE(range,.9) // 90th percentile
+You can also specify k as a percent using the % character:
+=PERCENTILE(range,80%) // 80th percentile
+PERCENTILE returns a value greater than or equal to the specified percentile.
+In the example shown, the formula in G5 is:
+=PERCENTILE(scores,E5)
+where "scores" is the named range C5:C14.
+Note: Microsoft classifies PERCENTILE as a "compatibility function", now replaced by the PERCENTILE.INC function.
+Notes
+k can be provided as a decimal (.5) or a percentage (50%)
+k must be between 0 and 1, otherwise PERCENTILE will return the #NUM! error.
+When percentiles fall between values, PERCENTILE will interpolate and return an intermediate value.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Percentile IF in table 
+ Functions SMALL FunctionLARGE FunctionRANK Function 
+ Links Microsoft PERCENTILE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,642 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel NA function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+NA Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Information
+
+
+NA Function
+Related functions 
+
+ISNA
+IFNA
+ISERR
+IFERROR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel NA function returns the #N/A error. #N/A means "not available" or "no value available". You can use the NA function to display the #N/A error when information is missing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Create an #N/A error
+
+
+
+Return value 
+
+The #N/A error
+
+
+
+Arguments 
+
+
+
+
+
+Syntax 
+
+=NA()
+
+
+
+Usage notes 
+
+The NA function returns the #N/A error. #N/A means "not available" or "no value available". You can use the NA function to display the #N/A error when information is missing. Note that if you use the NA function this way, other formulas that depend on cells that contain the #N/A error will also display #N/A, unless you specifically trap and manage the error. The NA function takes no arguments.
+Examples
+The NA function returns the #N/A error:
+
+=NA() // returns #N/A
+
+You can use the NA function in other formulas. For example, in the formula below, the IF function is configured to test if cell A1 is empty. If so, IF returns NA(), which returns the #N/A error. If A1 is not empty, IF returns A1*B1: 
+
+=IF(A1="",NA(),A1*B1) // #N/A if A1 is empty
+
+You can use the NA function to indicate missing information. In the worksheet shown above, cells C9 and C13 contain the NA function:
+
+=NA()
+
+This indicates that cost is not available. In cell D5, the formula copied down is:
+
+=B5*C5 // qty * cost
+
+In cells D9 and D13, the formula returns #N/A because C9 and C13 contain errors. In cell D15 the SUMIF function is used to sum values in column D while ignoring the #N/A error:
+
+=SUMIF(D5:D13,"<>#N/A") // ignore #N/A
+
+If the SUM function was used instead, it would return #N/A:
+
+=SUM(D5:D13) // would return #N/A
+
+Notes
+
+When other formulas refer to cells that contain #N/A, they also return #N/A.
+NA takes no arguments, but you must provide empty parentheses.
+You can also enter the value #N/A directly into a cell as text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Faster VLOOKUP with 2 VLOOKUPS 
+
+
+ Functions ISNA FunctionIFNA FunctionISERR FunctionIFERROR Function 
+ Links Microsoft NA function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel NA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+NA Function
+Related functions 
+ISNA
+IFNA
+ISERR
+IFERROR
+Summary
+The Excel NA function returns the #N/A error. #N/A means "not available" or "no value available". You can use the NA function to display the #N/A error when information is missing.
+Purpose 
+Create an #N/A error
+Return value 
+The #N/A error
+Arguments 
+Syntax 
+=NA()
+Usage notes 
+The NA function returns the #N/A error. #N/A means "not available" or "no value available". You can use the NA function to display the #N/A error when information is missing. Note that if you use the NA function this way, other formulas that depend on cells that contain the #N/A error will also display #N/A, unless you specifically trap and manage the error. The NA function takes no arguments.
+Examples
+The NA function returns the #N/A error:
+=NA() // returns #N/A
+You can use the NA function in other formulas. For example, in the formula below, the IF function is configured to test if cell A1 is empty. If so, IF returns NA(), which returns the #N/A error. If A1 is not empty, IF returns A1*B1: 
+=IF(A1="",NA(),A1*B1) // #N/A if A1 is empty
+You can use the NA function to indicate missing information. In the worksheet shown above, cells C9 and C13 contain the NA function:
+=NA()
+This indicates that cost is not available. In cell D5, the formula copied down is:
+=B5*C5 // qty * cost
+In cells D9 and D13, the formula returns #N/A because C9 and C13 contain errors. In cell D15 the SUMIF function is used to sum values in column D while ignoring the #N/A error:
+=SUMIF(D5:D13,"<>#N/A") // ignore #N/A
+If the SUM function was used instead, it would return #N/A:
+=SUM(D5:D13) // would return #N/A
+Notes
+When other formulas refer to cells that contain #N/A, they also return #N/A.
+NA takes no arguments, but you must provide empty parentheses.
+You can also enter the value #N/A directly into a cell as text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Faster VLOOKUP with 2 VLOOKUPS 
+ Functions ISNA FunctionIFNA FunctionISERR FunctionIFERROR Function 
+ Links Microsoft NA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,270 @@
+Excel RIGHT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RIGHT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+RIGHT Function
+Related functions 
+LEFT
+MID
+LEN
+Summary
+The Excel RIGHT function extracts a given number of characters from the right side of a supplied text string. For example, RIGHT("apple",3) returns "ple".
+Purpose 
+Extract text from the right of a string
+Return value 
+One or more characters.
+Arguments 
+text - The text from which to extract characters on the right.num_chars - [optional] The number of characters to extract, starting on the right. Optional, default = 1.
+Syntax 
+=RIGHT(text, [num_chars])
+Usage notes 
+The RIGHT function extracts a given number of characters from the right side of a supplied text string. The second argument, called num_chars, specifies the number of characters to extract. If num_chars is not provided, it defaults to 1. If num_chars is greater than the number of characters available, RIGHT returns the entire text string.
+Examples
+In the example below, we extract the state code "OR" (Oregon) from the string "Portland, OR"
+=RIGHT("Portland, OR",2) // returns "OR"
+If the optional argument num_chars is not provided, it defaults to 1:
+=RIGHT("ABC") // returns "C"
+If num_chars exceeds the string length, LEFT returns the entire string:
+=RIGHT("apple",100) // returns "apple"
+When LEFT is used on a numeric value, the result is text:
+=RIGHT(1200,3) // returns "200" as text
+The RIGHT function is often combined with other functions like LEN and FIND to extract text in more complex formulas. For example, to extract text in cell A1 to the right of a specific character (char), use RIGHT with the FIND and LEN functions like this:
+=RIGHT(A1,LEN(A1)-FIND(char,A1)) // text to right char
+FIND returns the position of the character, and RIGHT returns the text to the right of that position.  Full explanation here.
+Related functions
+The RIGHT function is used to extract text from the right side of a text string. Use the LEFT function to extract text starting from the left side of the text, and the MID function to extract from the middle of the text. The LEN function returns the length of text as a count of characters.
+Notes
+num_chars is optional and defaults to 1.
+RIGHT will extract digits from numbers as well as text.
+Number formatting is not counted or extracted.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Parse time string to time 
+Get page from URL 
+Increment a number in a text string 
+Split text string at specific character 
+Convert text to date 
+Convert text date dd/mm/yy to mm/dd/yy 
+Remove trailing slash from url 
+Get last line in cell 
+Convert text to numbers 
+Get top level domain (TLD) 
+Videos
+  
+How to extract text with LEFT and RIGHT 
+How to combine functions in a formula 
+ Functions LEFT FunctionMID FunctionLEN Function 
+ Links Microsoft RIGHT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel RIGHT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RIGHT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+RIGHT Function
+Related functions 
+LEFT
+MID
+LEN
+Summary
+The Excel RIGHT function extracts a given number of characters from the right side of a supplied text string. For example, RIGHT("apple",3) returns "ple".
+Purpose 
+Extract text from the right of a string
+Return value 
+One or more characters.
+Arguments 
+text - The text from which to extract characters on the right.num_chars - [optional] The number of characters to extract, starting on the right. Optional, default = 1.
+Syntax 
+=RIGHT(text, [num_chars])
+Usage notes 
+The RIGHT function extracts a given number of characters from the right side of a supplied text string. The second argument, called num_chars, specifies the number of characters to extract. If num_chars is not provided, it defaults to 1. If num_chars is greater than the number of characters available, RIGHT returns the entire text string.
+Examples
+In the example below, we extract the state code "OR" (Oregon) from the string "Portland, OR"
+=RIGHT("Portland, OR",2) // returns "OR"
+If the optional argument num_chars is not provided, it defaults to 1:
+=RIGHT("ABC") // returns "C"
+If num_chars exceeds the string length, LEFT returns the entire string:
+=RIGHT("apple",100) // returns "apple"
+When LEFT is used on a numeric value, the result is text:
+=RIGHT(1200,3) // returns "200" as text
+The RIGHT function is often combined with other functions like LEN and FIND to extract text in more complex formulas. For example, to extract text in cell A1 to the right of a specific character (char), use RIGHT with the FIND and LEN functions like this:
+=RIGHT(A1,LEN(A1)-FIND(char,A1)) // text to right char
+FIND returns the position of the character, and RIGHT returns the text to the right of that position.  Full explanation here.
+Related functions
+The RIGHT function is used to extract text from the right side of a text string. Use the LEFT function to extract text starting from the left side of the text, and the MID function to extract from the middle of the text. The LEN function returns the length of text as a count of characters.
+Notes
+num_chars is optional and defaults to 1.
+RIGHT will extract digits from numbers as well as text.
+Number formatting is not counted or extracted.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Parse time string to time 
+Get page from URL 
+Increment a number in a text string 
+Split text string at specific character 
+Convert text to date 
+Convert text date dd/mm/yy to mm/dd/yy 
+Remove trailing slash from url 
+Get last line in cell 
+Convert text to numbers 
+Get top level domain (TLD) 
+Videos
+  
+How to extract text with LEFT and RIGHT 
+How to combine functions in a formula 
+ Functions LEFT FunctionMID FunctionLEN Function 
+ Links Microsoft RIGHT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

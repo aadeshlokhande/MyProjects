@@ -1,0 +1,272 @@
+Excel RANDARRAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RANDARRAY Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+RANDARRAY Function
+Related functions 
+RAND
+RANDBETWEEN
+Summary
+The Excel RANDARRAY function generates an array of random numbers between two values. The size or the array is is specified by rows and columns arguments. The generated values can be either decimals or whole numbers.
+Purpose 
+Get array of random numbers
+Return value 
+Array of random values
+Arguments 
+rows - [optional] Row count. Default = 1.columns - [optional] Column count. Default = 1.min - [optional] Minimum value. Default = 0.max - [optional] Maximum value. Default = 1.integer - [optional] Whole numbers. Boolean, TRUE or FALSE. Default = FALSE.
+Syntax 
+=RANDARRAY([rows], [columns], [min], [max], [integer])
+Usage notes 
+The RANDARRAY function generates an array of random numbers between two values. The size or the array is determined by rows and columns arguments. By default, RANDARRAY returns an array of random numbers between 0 and 1. However, RANDARRAY will generate whole numbers when the integer argument is set to TRUE. When RANDARRAY returns multiple results in a worksheet, results will spill into adjacent cells.
+RANDARRAY is a volatile function, and can cause performance issues in large or complex worksheets.
+The RANDARRAY function takes five arguments, none of which are required: rows, columns, min, max, and integer. By default, rows, columns, and max default to 1, while min defaults to zero and integer defaults to FALSE. Without any arguments, RANDARRAY will return a decimal value between 0 and 1:
+RANDARRAY() // returns number like 0.098419132
+Use rows and columns to control the number of values returned:
+=RANDARRAY(10,1) //  10 random values in rows
+=RANDARRAY(1,10) //  10 random values in columns
+Use min and max to set a lower and upper threshold for values. For example, to generate 3 random decimal values in rows between 1 and 5:
+=RANDARRAY(3,1,1,5) // 3 decimal between 1-5
+Set integers to TRUE to return whole numbers. For example, to generate 3 random whole numbers in rows between 1 and 100:
+=RANDARRAY(3,1,1,100,TRUE) // 3 whole numbers between 1-100
+Examples
+In the example shown, RANDARRAY is used to generate 50 values in a range of 10 rows by 5 columns. The formula in B4 is:
+=RANDARRAY(10,5)
+To return a random array of integers, 5 rows by 2 columns,  between 1 and 10, you can use a formula like this:
+=RANDARRAY(5,2,1,10,TRUE)
+Random text
+To generate a random letter between A-Z you can use the CHAR function with RANDARRAY:
+=CHAR(RANDARRAY(1,1,65,90,TRUE))
+You can also generate random text strings with RANDARRAY.
+Random dates
+To generate 5 random dates in the next year, you can use a formula that combines RANDARRAY with the EDATE and TODAY functions:
+=RANDARRAY(5,1,TODAY(),EDATE(TODAY(),12),TRUE)
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Random numbers without duplicates 
+Generate random text strings 
+Random sort 
+Random list of names 
+Videos
+  
+New dynamic array functions in Excel 
+How to perform a random sort 
+How to generate random dates 
+How to generate random times 
+How to generate random text values 
+ Functions RAND FunctionRANDBETWEEN Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft RANDARRAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel RANDARRAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RANDARRAY Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+RANDARRAY Function
+Related functions 
+RAND
+RANDBETWEEN
+Summary
+The Excel RANDARRAY function generates an array of random numbers between two values. The size or the array is is specified by rows and columns arguments. The generated values can be either decimals or whole numbers.
+Purpose 
+Get array of random numbers
+Return value 
+Array of random values
+Arguments 
+rows - [optional] Row count. Default = 1.columns - [optional] Column count. Default = 1.min - [optional] Minimum value. Default = 0.max - [optional] Maximum value. Default = 1.integer - [optional] Whole numbers. Boolean, TRUE or FALSE. Default = FALSE.
+Syntax 
+=RANDARRAY([rows], [columns], [min], [max], [integer])
+Usage notes 
+The RANDARRAY function generates an array of random numbers between two values. The size or the array is determined by rows and columns arguments. By default, RANDARRAY returns an array of random numbers between 0 and 1. However, RANDARRAY will generate whole numbers when the integer argument is set to TRUE. When RANDARRAY returns multiple results in a worksheet, results will spill into adjacent cells.
+RANDARRAY is a volatile function, and can cause performance issues in large or complex worksheets.
+The RANDARRAY function takes five arguments, none of which are required: rows, columns, min, max, and integer. By default, rows, columns, and max default to 1, while min defaults to zero and integer defaults to FALSE. Without any arguments, RANDARRAY will return a decimal value between 0 and 1:
+RANDARRAY() // returns number like 0.098419132
+Use rows and columns to control the number of values returned:
+=RANDARRAY(10,1) //  10 random values in rows
+=RANDARRAY(1,10) //  10 random values in columns
+Use min and max to set a lower and upper threshold for values. For example, to generate 3 random decimal values in rows between 1 and 5:
+=RANDARRAY(3,1,1,5) // 3 decimal between 1-5
+Set integers to TRUE to return whole numbers. For example, to generate 3 random whole numbers in rows between 1 and 100:
+=RANDARRAY(3,1,1,100,TRUE) // 3 whole numbers between 1-100
+Examples
+In the example shown, RANDARRAY is used to generate 50 values in a range of 10 rows by 5 columns. The formula in B4 is:
+=RANDARRAY(10,5)
+To return a random array of integers, 5 rows by 2 columns,  between 1 and 10, you can use a formula like this:
+=RANDARRAY(5,2,1,10,TRUE)
+Random text
+To generate a random letter between A-Z you can use the CHAR function with RANDARRAY:
+=CHAR(RANDARRAY(1,1,65,90,TRUE))
+You can also generate random text strings with RANDARRAY.
+Random dates
+To generate 5 random dates in the next year, you can use a formula that combines RANDARRAY with the EDATE and TODAY functions:
+=RANDARRAY(5,1,TODAY(),EDATE(TODAY(),12),TRUE)
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Random numbers without duplicates 
+Generate random text strings 
+Random sort 
+Random list of names 
+Videos
+  
+New dynamic array functions in Excel 
+How to perform a random sort 
+How to generate random dates 
+How to generate random times 
+How to generate random text values 
+ Functions RAND FunctionRANDBETWEEN Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft RANDARRAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

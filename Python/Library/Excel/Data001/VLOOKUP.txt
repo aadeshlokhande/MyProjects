@@ -1,0 +1,456 @@
+Excel VLOOKUP function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VLOOKUP Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+VLOOKUP Function
+Related functions 
+HLOOKUP
+LOOKUP
+INDEX
+MATCH
+XLOOKUP
+XMATCH
+FILTER
+ Download Worksheet (52.62 KB)
+Summary
+VLOOKUP is an Excel function to look up data in a table organized vertically. VLOOKUP supports approximate and exact matching, and wildcards (* ?) for partial matches. Lookup values must appear in the first column of the table passed into VLOOKUP.
+Purpose 
+Lookup a value in a table by matching on the first column
+Return value 
+The matched value from a table.
+Arguments 
+lookup_value - The value to look for in the first column of a table.table_array - The table from which to retrieve a value.column_index_num - The column in the table from which to retrieve a value.range_lookup - [optional] TRUE = approximate match (default). FALSE = exact match.
+Syntax 
+=VLOOKUP(lookup_value, table_array, column_index_num, [range_lookup])
+Usage notes 
+VLOOKUP is an Excel function to get data from a table organized vertically. Lookup values must appear in the first column of the table passed into VLOOKUP.  VLOOKUP supports approximate and exact matching, and wildcards (* ?) for partial matches. 
+Vertical data | Column Numbers | Only looks right | Matching Modes | Exact Match | Approximate Match | First Match | Wildcard Match | Two-way Lookup | Multiple Criteria | #N/A Errors | Videos
+Introduction
+VLOOKUP is probably the most famous function in Excel, for reasons both good and bad. On the good side, VLOOKUP is easy to use and does something very useful. For new users in particular, it is immensely satisfying to watch VLOOKUP scan a table, find a match, and return a correct result. Using VLOOKUP successfully is a rite of passage for many Excel users.
+On the bad side, VLOOKUP is limited and has dangerous defaults. Unlike INDEX and MATCH (or XLOOKUP), VLOOKUP needs a complete table with lookup values in the first column. This makes it hard to use VLOOKUP with multiple criteria. In addition, VLOOKUP's default matching behavior makes it easy to get incorrect results. Fear not. The key to using VLOOKUP successfully is mastering the basics. Read on for a complete overview.
+Arguments
+VLOOKUP takes four arguments: lookup_value, table_array, column_index_num, and range_lookup. Lookup_value is the value to look for, and table_array is the range of vertical data to look inside. The first column of table_array must contain the lookup values to search. The column_index_num argument is the column number of the value to retrieve, where the first column of table_array is column 1. Finally, range_lookup controls match behavior. If range_lookup is TRUE, VLOOKUP will perform an approximate match. If range_lookup is FALSE, VLOOKUP will perform an exact match. Important: range_lookup is optional and defaults to TRUE, so VLOOKUP will perform an approximate match by default. See below for more information on matching.
+V is for vertical
+The purpose of VLOOKUP is to look up information in a table like this:
+With the Order number in column B as the lookup_value, VLOOKUP can get the Cust. ID, Amount, Name, and State for any order. For example, to get the name for order 1004, the formula is:
+=VLOOKUP(1004,B5:F9,4,FALSE) // returns "Sue Martin"
+To look up horizontal data, you can use HLOOKUP, INDEX and MATCH, or XLOOKUP.
+Video: How to use VLOOKUP
+VLOOKUP is based on column numbers
+When you use VLOOKUP, imagine that every column in the table_array is numbered, starting from the left. To get a value from a given column, provide the number for column_index_num. For example, the column index to retrieve the first name below is 2:
+By changing only column_index_num, you can look up columns 2, 3, and 4:
+=VLOOKUP(H3,B4:E13,2,FALSE) // first name
+=VLOOKUP(H3,B4:E13,3,FALSE) // last name
+=VLOOKUP(H3,B4:E13,4,FALSE) // email address
+Note: normally, we would use an absolute reference for H3 ($H$3) and B4:E13 ($B$4:$E$13) to prevent these from changing when the formula is copied. Above, the references are relative to make them easier to read.
+VLOOKUP only looks right
+VLOOKUP can only look to the right. In other words, you can only retrieve data to the right of the column that holds lookup values:
+To lookup values to the left, see INDEX and MATCH, or XLOOKUP.
+Match modes
+VLOOKUP has two modes of matching, exact and approximate, controlled by the fourth argument, range_lookup. The word "range" in this case refers to "range of values" – when range_lookup is TRUE, VLOOKUP will match a range of values rather than an exact value. A good example of this is using VLOOKUP to calculate grades. When range_lookup is FALSE, VLOOKUP performs an exact match, as in the example above.
+Important: range_lookup is optional defaults to TRUE. This means approximate match is the default behavior, which can be dangerous. Set range_lookup to FALSE to force exact matching:
+=VLOOKUP(value,table,col_index) // approximate match (default)
+=VLOOKUP(value,table,col_index,TRUE) // approximate match
+=VLOOKUP(value,table,col_index,FALSE) // exact match
+Tip: always supply a value for range_lookup as a reminder of expected behavior.
+Note: You can also supply zero (0) for an exact match, and 1 for approximate match.
+Exact match example
+In most cases, you'll probably want to use VLOOKUP in exact match mode. This makes sense when you have a unique key to use as a lookup value, for example, the movie title in this data:
+The formula in H6 to find Year, based on an exact match of movie title, is:
+=VLOOKUP(H4,B5:E9,2,FALSE) // FALSE = exact match
+Video: How to use VLOOKUP for exact match
+Approximate match example
+When you want the best match, not necessarily an exact match, you'll want to use approximate mode. For example, below we want to look up a commission rate in the table G5:H10. The lookup values come from column C. In this example, we need to use VLOOKUP in approximate match mode, because in most cases an exact match will never be found. The VLOOKUP formula in D5 is configured to perform an approximate match by setting the last argument to TRUE:
+=VLOOKUP(C5,$G$5:$H$10,2,TRUE) // TRUE = approximate match
+VLOOKUP will scan values in column G for the lookup value. If an exact match is found, VLOOKUP will use it. If not, VLOOKUP will "step back" and match the previous row. This means table_array must be sorted in ascending order by lookup value to use approximate match.
+Caution: If range_lookup is omitted or TRUE and table_array is not sorted by the first column in ascending order, VLOOKUP may return incorrect or unexpected results.
+Video: How to use VLOOKUP for approximate match
+First match only
+In the case of duplicate matching values, VLOOKUP will find the first match. In the screen below, VLOOKUP is configured to find the price for the color "Green". There are three rows with the color Green, and VLOOKUP returns the price in the first row, $17. The formula in cell F5 is:
+=VLOOKUP(E5,B5:C11,2,FALSE) // returns 17
+Tip: To retrieve multiple matches with a lookup operation, see the FILTER function.
+Wildcard match
+The VLOOKUP function supports wildcards, which makes it possible to perform a partial match on a lookup value. For instance, you can use VLOOKUP to retrieve information from a table with a partial lookup_value and wildcard. To use wildcards with VLOOKUP, you must use exact match mode by providing FALSE for range_lookup. In the screen below, the formula in H7 retrieves the first name, "Michael", after typing "Aya" into cell H4. Notice the asterisk (*) wildcard is concatenated to the lookup value inside the VLOOKUP formula:
+=VLOOKUP($H$4&"*",$B$5:$E$104,2,FALSE)
+Read a more detailed explanation here.
+Video: How to use VLOOKUP for wildcard matches
+Two-way lookup
+Inside the VLOOKUP function, column_index_num is normally hard-coded as a static number. However, you can create a dynamic column index by using the MATCH function to locate the needed column. This technique allows you to create a dynamic two-way lookup, matching on both rows and columns. In the screen below, VLOOKUP is configured to perform a lookup based on Name and Month like this:
+=VLOOKUP(H4,B5:E13,MATCH(H5,B4:E4,0),0)
+For more details, see this example.
+Note: In general, INDEX and MATCH is a more flexible way to perform two-way lookups.
+Multiple criteria
+The VLOOKUP function does not handle multiple criteria natively. However, you can use a helper column to join multiple fields together, and use these fields like multiple criteria inside VLOOKUP.  In the example below, Column B is a helper column that concatenates first and last names together with this formula:
+=C5&D5 // helper column
+VLOOKUP is configured to do the same thing to create a lookup value. The formula in H6 is:
+=VLOOKUP(H4&H5,B5:E13,4,0)
+For details, see this example. For a more advanced, flexible approach, see this example.
+Note: INDEX and MATCH and XLOOKUP are better for lookups based on multiple criteria.
+VLOOKUP and #N/A errors
+If you use VLOOKUP you will inevitably run into the #N/A error. The #N/A error means "not found". For example, in the screen below, the lookup value "Toy Story 2" does not exist in the lookup table, and all three VLOOKUP formulas return #N/A:
+The #N/A error is useful because tells you something is wrong. The reason for #N/A might be:
+The lookup value does not exist in the table
+The lookup value is misspelled, or contains extra space
+Match mode is exact, but should be approximate
+The table range is not entered correctly
+You are copying VLOOKUP, and the table reference is not locked
+To "trap" the NA error and return a different value, you can use the IFNA function like this:
+The formula in H6 is:
+=IFNA(VLOOKUP(H4,B5:E9,2,FALSE),"Not found")
+The message can be customized as desired. To return nothing (i.e. to display a blank result) when VLOOKUP returns #N/A you can use an empty string ("") like this:
+=IFNA(VLOOKUP(H4,B5:E9,2,FALSE),"") // no message
+You can also use the IFERROR function to trap VLOOKUP #N/A errors. However, be careful with IFERROR, because it will catch any error, not just the #N/A error. Read more: VLOOKUP without #N/A errors 
+Video: What to do when VLOOKUP returns #N/A
+More about VLOOKUP
+VLOOKUP with multiple criteria (basic)
+VLOOKUP with multiple criteria (advanced)
+How to use VLOOKUP to merge tables
+23 tips for using VLOOKUP
+More VLOOKUP examples and videos
+Other notes
+VLOOKUP performs an approximate match by default.
+VLOOKUP is not case-sensitive.
+Range_lookup controls the match mode. FALSE = exact, TRUE = approximate (default).
+If range_lookup is omitted or TRUE or 1: 
+	
+VLOOKUP will match the nearest value less than the lookup_value.
+VLOOKUP will still use an exact match if one exists.
+The column 1 of table_array must be sorted in ascending order.
+If range_lookup is FALSE or zero:
+	
+VLOOKUP performs an exact match.
+Column 1 of table_array does not need to be sorted.
+ exceljet vlookup function.xlsx
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Build hyperlink with VLOOKUP 
+Lookup with variable sheet name 
+VLOOKUP with variable table array 
+VLOOKUP with 2 lookup tables 
+Abbreviate state names 
+Detailed LET function example 
+Group numbers with VLOOKUP 
+Left lookup with VLOOKUP 
+VLOOKUP override output 
+Calculate grades with VLOOKUP 
+Videos
+  
+How to group a pivot table by day of week 
+Excel formula error codes 
+Why VLOOKUP is better than nested IFs 
+What to do when VLOOKUP returns NA 
+How to use VLOOKUP for wildcard matches 
+How to use VLOOKUP for approximate matches 
+How to use VLOOKUP 
+How to troubleshoot VLOOKUP approximate match  
+How to replace nested IFs with VLOOKUP 
+How to group values with VLOOKUP 
+ Functions HLOOKUP FunctionLOOKUP FunctionINDEX FunctionMATCH FunctionXLOOKUP FunctionXMATCH FunctionFILTER Function 
+ Articles 23 things you should know about VLOOKUPDanger: beware VLOOKUP defaults 
+ Links Microsoft VLOOKUP function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel VLOOKUP function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VLOOKUP Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+VLOOKUP Function
+Related functions 
+HLOOKUP
+LOOKUP
+INDEX
+MATCH
+XLOOKUP
+XMATCH
+FILTER
+ Download Worksheet (52.62 KB)
+Summary
+VLOOKUP is an Excel function to look up data in a table organized vertically. VLOOKUP supports approximate and exact matching, and wildcards (* ?) for partial matches. Lookup values must appear in the first column of the table passed into VLOOKUP.
+Purpose 
+Lookup a value in a table by matching on the first column
+Return value 
+The matched value from a table.
+Arguments 
+lookup_value - The value to look for in the first column of a table.table_array - The table from which to retrieve a value.column_index_num - The column in the table from which to retrieve a value.range_lookup - [optional] TRUE = approximate match (default). FALSE = exact match.
+Syntax 
+=VLOOKUP(lookup_value, table_array, column_index_num, [range_lookup])
+Usage notes 
+VLOOKUP is an Excel function to get data from a table organized vertically. Lookup values must appear in the first column of the table passed into VLOOKUP.  VLOOKUP supports approximate and exact matching, and wildcards (* ?) for partial matches. 
+Vertical data | Column Numbers | Only looks right | Matching Modes | Exact Match | Approximate Match | First Match | Wildcard Match | Two-way Lookup | Multiple Criteria | #N/A Errors | Videos
+Introduction
+VLOOKUP is probably the most famous function in Excel, for reasons both good and bad. On the good side, VLOOKUP is easy to use and does something very useful. For new users in particular, it is immensely satisfying to watch VLOOKUP scan a table, find a match, and return a correct result. Using VLOOKUP successfully is a rite of passage for many Excel users.
+On the bad side, VLOOKUP is limited and has dangerous defaults. Unlike INDEX and MATCH (or XLOOKUP), VLOOKUP needs a complete table with lookup values in the first column. This makes it hard to use VLOOKUP with multiple criteria. In addition, VLOOKUP's default matching behavior makes it easy to get incorrect results. Fear not. The key to using VLOOKUP successfully is mastering the basics. Read on for a complete overview.
+Arguments
+VLOOKUP takes four arguments: lookup_value, table_array, column_index_num, and range_lookup. Lookup_value is the value to look for, and table_array is the range of vertical data to look inside. The first column of table_array must contain the lookup values to search. The column_index_num argument is the column number of the value to retrieve, where the first column of table_array is column 1. Finally, range_lookup controls match behavior. If range_lookup is TRUE, VLOOKUP will perform an approximate match. If range_lookup is FALSE, VLOOKUP will perform an exact match. Important: range_lookup is optional and defaults to TRUE, so VLOOKUP will perform an approximate match by default. See below for more information on matching.
+V is for vertical
+The purpose of VLOOKUP is to look up information in a table like this:
+With the Order number in column B as the lookup_value, VLOOKUP can get the Cust. ID, Amount, Name, and State for any order. For example, to get the name for order 1004, the formula is:
+=VLOOKUP(1004,B5:F9,4,FALSE) // returns "Sue Martin"
+To look up horizontal data, you can use HLOOKUP, INDEX and MATCH, or XLOOKUP.
+Video: How to use VLOOKUP
+VLOOKUP is based on column numbers
+When you use VLOOKUP, imagine that every column in the table_array is numbered, starting from the left. To get a value from a given column, provide the number for column_index_num. For example, the column index to retrieve the first name below is 2:
+By changing only column_index_num, you can look up columns 2, 3, and 4:
+=VLOOKUP(H3,B4:E13,2,FALSE) // first name
+=VLOOKUP(H3,B4:E13,3,FALSE) // last name
+=VLOOKUP(H3,B4:E13,4,FALSE) // email address
+Note: normally, we would use an absolute reference for H3 ($H$3) and B4:E13 ($B$4:$E$13) to prevent these from changing when the formula is copied. Above, the references are relative to make them easier to read.
+VLOOKUP only looks right
+VLOOKUP can only look to the right. In other words, you can only retrieve data to the right of the column that holds lookup values:
+To lookup values to the left, see INDEX and MATCH, or XLOOKUP.
+Match modes
+VLOOKUP has two modes of matching, exact and approximate, controlled by the fourth argument, range_lookup. The word "range" in this case refers to "range of values" – when range_lookup is TRUE, VLOOKUP will match a range of values rather than an exact value. A good example of this is using VLOOKUP to calculate grades. When range_lookup is FALSE, VLOOKUP performs an exact match, as in the example above.
+Important: range_lookup is optional defaults to TRUE. This means approximate match is the default behavior, which can be dangerous. Set range_lookup to FALSE to force exact matching:
+=VLOOKUP(value,table,col_index) // approximate match (default)
+=VLOOKUP(value,table,col_index,TRUE) // approximate match
+=VLOOKUP(value,table,col_index,FALSE) // exact match
+Tip: always supply a value for range_lookup as a reminder of expected behavior.
+Note: You can also supply zero (0) for an exact match, and 1 for approximate match.
+Exact match example
+In most cases, you'll probably want to use VLOOKUP in exact match mode. This makes sense when you have a unique key to use as a lookup value, for example, the movie title in this data:
+The formula in H6 to find Year, based on an exact match of movie title, is:
+=VLOOKUP(H4,B5:E9,2,FALSE) // FALSE = exact match
+Video: How to use VLOOKUP for exact match
+Approximate match example
+When you want the best match, not necessarily an exact match, you'll want to use approximate mode. For example, below we want to look up a commission rate in the table G5:H10. The lookup values come from column C. In this example, we need to use VLOOKUP in approximate match mode, because in most cases an exact match will never be found. The VLOOKUP formula in D5 is configured to perform an approximate match by setting the last argument to TRUE:
+=VLOOKUP(C5,$G$5:$H$10,2,TRUE) // TRUE = approximate match
+VLOOKUP will scan values in column G for the lookup value. If an exact match is found, VLOOKUP will use it. If not, VLOOKUP will "step back" and match the previous row. This means table_array must be sorted in ascending order by lookup value to use approximate match.
+Caution: If range_lookup is omitted or TRUE and table_array is not sorted by the first column in ascending order, VLOOKUP may return incorrect or unexpected results.
+Video: How to use VLOOKUP for approximate match
+First match only
+In the case of duplicate matching values, VLOOKUP will find the first match. In the screen below, VLOOKUP is configured to find the price for the color "Green". There are three rows with the color Green, and VLOOKUP returns the price in the first row, $17. The formula in cell F5 is:
+=VLOOKUP(E5,B5:C11,2,FALSE) // returns 17
+Tip: To retrieve multiple matches with a lookup operation, see the FILTER function.
+Wildcard match
+The VLOOKUP function supports wildcards, which makes it possible to perform a partial match on a lookup value. For instance, you can use VLOOKUP to retrieve information from a table with a partial lookup_value and wildcard. To use wildcards with VLOOKUP, you must use exact match mode by providing FALSE for range_lookup. In the screen below, the formula in H7 retrieves the first name, "Michael", after typing "Aya" into cell H4. Notice the asterisk (*) wildcard is concatenated to the lookup value inside the VLOOKUP formula:
+=VLOOKUP($H$4&"*",$B$5:$E$104,2,FALSE)
+Read a more detailed explanation here.
+Video: How to use VLOOKUP for wildcard matches
+Two-way lookup
+Inside the VLOOKUP function, column_index_num is normally hard-coded as a static number. However, you can create a dynamic column index by using the MATCH function to locate the needed column. This technique allows you to create a dynamic two-way lookup, matching on both rows and columns. In the screen below, VLOOKUP is configured to perform a lookup based on Name and Month like this:
+=VLOOKUP(H4,B5:E13,MATCH(H5,B4:E4,0),0)
+For more details, see this example.
+Note: In general, INDEX and MATCH is a more flexible way to perform two-way lookups.
+Multiple criteria
+The VLOOKUP function does not handle multiple criteria natively. However, you can use a helper column to join multiple fields together, and use these fields like multiple criteria inside VLOOKUP.  In the example below, Column B is a helper column that concatenates first and last names together with this formula:
+=C5&D5 // helper column
+VLOOKUP is configured to do the same thing to create a lookup value. The formula in H6 is:
+=VLOOKUP(H4&H5,B5:E13,4,0)
+For details, see this example. For a more advanced, flexible approach, see this example.
+Note: INDEX and MATCH and XLOOKUP are better for lookups based on multiple criteria.
+VLOOKUP and #N/A errors
+If you use VLOOKUP you will inevitably run into the #N/A error. The #N/A error means "not found". For example, in the screen below, the lookup value "Toy Story 2" does not exist in the lookup table, and all three VLOOKUP formulas return #N/A:
+The #N/A error is useful because tells you something is wrong. The reason for #N/A might be:
+The lookup value does not exist in the table
+The lookup value is misspelled, or contains extra space
+Match mode is exact, but should be approximate
+The table range is not entered correctly
+You are copying VLOOKUP, and the table reference is not locked
+To "trap" the NA error and return a different value, you can use the IFNA function like this:
+The formula in H6 is:
+=IFNA(VLOOKUP(H4,B5:E9,2,FALSE),"Not found")
+The message can be customized as desired. To return nothing (i.e. to display a blank result) when VLOOKUP returns #N/A you can use an empty string ("") like this:
+=IFNA(VLOOKUP(H4,B5:E9,2,FALSE),"") // no message
+You can also use the IFERROR function to trap VLOOKUP #N/A errors. However, be careful with IFERROR, because it will catch any error, not just the #N/A error. Read more: VLOOKUP without #N/A errors 
+Video: What to do when VLOOKUP returns #N/A
+More about VLOOKUP
+VLOOKUP with multiple criteria (basic)
+VLOOKUP with multiple criteria (advanced)
+How to use VLOOKUP to merge tables
+23 tips for using VLOOKUP
+More VLOOKUP examples and videos
+Other notes
+VLOOKUP performs an approximate match by default.
+VLOOKUP is not case-sensitive.
+Range_lookup controls the match mode. FALSE = exact, TRUE = approximate (default).
+If range_lookup is omitted or TRUE or 1: 
+	
+VLOOKUP will match the nearest value less than the lookup_value.
+VLOOKUP will still use an exact match if one exists.
+The column 1 of table_array must be sorted in ascending order.
+If range_lookup is FALSE or zero:
+	
+VLOOKUP performs an exact match.
+Column 1 of table_array does not need to be sorted.
+ exceljet vlookup function.xlsx
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Build hyperlink with VLOOKUP 
+Lookup with variable sheet name 
+VLOOKUP with variable table array 
+VLOOKUP with 2 lookup tables 
+Abbreviate state names 
+Detailed LET function example 
+Group numbers with VLOOKUP 
+Left lookup with VLOOKUP 
+VLOOKUP override output 
+Calculate grades with VLOOKUP 
+Videos
+  
+How to group a pivot table by day of week 
+Excel formula error codes 
+Why VLOOKUP is better than nested IFs 
+What to do when VLOOKUP returns NA 
+How to use VLOOKUP for wildcard matches 
+How to use VLOOKUP for approximate matches 
+How to use VLOOKUP 
+How to troubleshoot VLOOKUP approximate match  
+How to replace nested IFs with VLOOKUP 
+How to group values with VLOOKUP 
+ Functions HLOOKUP FunctionLOOKUP FunctionINDEX FunctionMATCH FunctionXLOOKUP FunctionXMATCH FunctionFILTER Function 
+ Articles 23 things you should know about VLOOKUPDanger: beware VLOOKUP defaults 
+ Links Microsoft VLOOKUP function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

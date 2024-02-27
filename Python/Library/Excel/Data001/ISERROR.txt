@@ -1,0 +1,278 @@
+Excel ISERROR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISERROR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISERROR Function
+Related functions 
+ISERR
+ERROR.TYPE
+ISBLANK
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+Summary
+The Excel ISERROR function returns TRUE for any error type excel generates, including #N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL! You can use ISERROR together with the IF function to test for errors and display a custom message, or run a different calculation when an error occurs.
+Purpose 
+Test for any error
+Return value 
+A logical value  (TRUE or FALSE)
+Arguments 
+value - The value to check for any error.
+Syntax 
+=ISERROR(value)
+Usage notes 
+The ISERROR function returns TRUE for any type of error, including #N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, #NULL!, #CALC!, and #SPILL! errors. You can use ISERROR together with the IF function to test for errors and display a custom message, or run a different calculation when an error occurs. The ISERROR function takes one argument, value, which is typically a cell reference. 
+Examples
+ISERROR will return TRUE if A1 contains an error:
+=ISERROR(A1) // TRUE if A1 contains an error
+You can use the ISERROR function together with the IF function to test for an error and display a custom message if found:
+=IF(ISERROR(A1),"custom message") 
+To trap an error and perform a different calculation, the IFERROR function is a cleaner approach.
+Other error functions
+Excel provides a number of error-related functions, each with a different behavior:
+The ISERR function returns TRUE for any error type except the #N/A error.
+The ISERROR function returns TRUE for any error.
+The ISNA function returns TRUE for #N/A errors only.
+The ERROR.TYPE function returns the numeric code for a given error.
+The IFERROR function traps errors and provides an alternative result.
+The IFNA function traps #N/A errors and provides an alternative result.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Match first error 
+How to fix the #CALC! error 
+How to fix the #NAME? error 
+Lookup last file revision 
+How to fix the #SPILL! error 
+How to fix the #DIV/0! error 
+Count cells that do not contain errors 
+Get first word 
+Count cells that contain errors 
+How to fix the #NULL! error 
+Videos
+  
+How to trap errors in formulas 
+ Functions ISERR FunctionERROR.TYPE FunctionISBLANK FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISERROR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ISERROR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISERROR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISERROR Function
+Related functions 
+ISERR
+ERROR.TYPE
+ISBLANK
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISREF
+ISTEXT
+Summary
+The Excel ISERROR function returns TRUE for any error type excel generates, including #N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL! You can use ISERROR together with the IF function to test for errors and display a custom message, or run a different calculation when an error occurs.
+Purpose 
+Test for any error
+Return value 
+A logical value  (TRUE or FALSE)
+Arguments 
+value - The value to check for any error.
+Syntax 
+=ISERROR(value)
+Usage notes 
+The ISERROR function returns TRUE for any type of error, including #N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, #NULL!, #CALC!, and #SPILL! errors. You can use ISERROR together with the IF function to test for errors and display a custom message, or run a different calculation when an error occurs. The ISERROR function takes one argument, value, which is typically a cell reference. 
+Examples
+ISERROR will return TRUE if A1 contains an error:
+=ISERROR(A1) // TRUE if A1 contains an error
+You can use the ISERROR function together with the IF function to test for an error and display a custom message if found:
+=IF(ISERROR(A1),"custom message") 
+To trap an error and perform a different calculation, the IFERROR function is a cleaner approach.
+Other error functions
+Excel provides a number of error-related functions, each with a different behavior:
+The ISERR function returns TRUE for any error type except the #N/A error.
+The ISERROR function returns TRUE for any error.
+The ISNA function returns TRUE for #N/A errors only.
+The ERROR.TYPE function returns the numeric code for a given error.
+The IFERROR function traps errors and provides an alternative result.
+The IFNA function traps #N/A errors and provides an alternative result.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Match first error 
+How to fix the #CALC! error 
+How to fix the #NAME? error 
+Lookup last file revision 
+How to fix the #SPILL! error 
+How to fix the #DIV/0! error 
+Count cells that do not contain errors 
+Get first word 
+Count cells that contain errors 
+How to fix the #NULL! error 
+Videos
+  
+How to trap errors in formulas 
+ Functions ISERR FunctionERROR.TYPE FunctionISBLANK FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISREF FunctionISTEXT Function 
+ Links Microsoft ISERROR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,610 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel SHEETS function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+SHEETS Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Information
+
+
+SHEETS Function
+Related functions 
+
+SHEET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel SHEETS function returns the total number of sheets in a given reference. When no arguments are supplied SHEETS returns the total number of sheets in the workbook.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get number of sheets in a reference
+
+
+
+Return value 
+
+Sheet count
+
+
+
+Arguments 
+
+reference - [optional] A valid Excel reference.
+
+
+
+Syntax 
+
+=SHEETS([reference])
+
+
+
+Usage notes 
+
+The SHEETS function returns the total number of sheets in a given reference. SHEETS takes one argument, reference, which should be a cell reference, or a 3D reference. When no references are supplied SHEETS returns the total number of sheets in the workbook. The SHEETS function includes hidden sheets.
+Examples
+For example, in a workbook that contains 5 sheets, the following formula will return 5:
+
+=SHEETS()
+
+SHEETS can be used to report the sheet count in 3D references as well. For example, in a workbook with three sheets (Sheet1 through Sheet3) in numeric order, the formulas below return results as shown:
+
+=SHEETS(Sheet1:Sheet1!A1) // returns 1
+=SHEETS(Sheet1:Sheet2!A1) // returns 2
+=SHEETS(Sheet1:Sheet3!A1) // returns 3
+
+Notes
+
+If the reference is omitted, SHEETS returns the total sheets in a workbook.
+SHEETS includes hidden sheets in the count.
+SHEETS will report sheet count in 3D references.
+The SHEET function returns the index of a sheet. SHEETS returns a count.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions SHEET Function 
+ Links Microsoft SHEETS function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel SHEETS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SHEETS Function 
+Previous 
+Next 
+ 
+Excel 2013
+Information
+SHEETS Function
+Related functions 
+SHEET
+Summary
+The Excel SHEETS function returns the total number of sheets in a given reference. When no arguments are supplied SHEETS returns the total number of sheets in the workbook.
+Purpose 
+Get number of sheets in a reference
+Return value 
+Sheet count
+Arguments 
+reference - [optional] A valid Excel reference.
+Syntax 
+=SHEETS([reference])
+Usage notes 
+The SHEETS function returns the total number of sheets in a given reference. SHEETS takes one argument, reference, which should be a cell reference, or a 3D reference. When no references are supplied SHEETS returns the total number of sheets in the workbook. The SHEETS function includes hidden sheets.
+Examples
+For example, in a workbook that contains 5 sheets, the following formula will return 5:
+=SHEETS()
+SHEETS can be used to report the sheet count in 3D references as well. For example, in a workbook with three sheets (Sheet1 through Sheet3) in numeric order, the formulas below return results as shown:
+=SHEETS(Sheet1:Sheet1!A1) // returns 1
+=SHEETS(Sheet1:Sheet2!A1) // returns 2
+=SHEETS(Sheet1:Sheet3!A1) // returns 3
+Notes
+If the reference is omitted, SHEETS returns the total sheets in a workbook.
+SHEETS includes hidden sheets in the count.
+SHEETS will report sheet count in 3D references.
+The SHEET function returns the index of a sheet. SHEETS returns a count.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SHEET Function 
+ Links Microsoft SHEETS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

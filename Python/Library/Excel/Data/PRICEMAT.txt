@@ -1,0 +1,661 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PRICEMAT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PRICEMAT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+PRICEMAT Function
+Related functions 
+
+PRICE
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PRICEMAT function returns the price per $100 face value of a security that pays interest at maturity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get price per $100 interest at maturity
+
+
+
+Return value 
+
+Bond price
+
+
+
+Arguments 
+
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.rate - Security interest rate at date of issue.yld - Annual yield of the security.basis - [optional] Day count basis (see below, default =0).
+
+
+
+Syntax 
+
+=PRICEMAT(sd, md, id, rate, yld, [basis])
+
+
+
+Usage notes 
+
+The Excel PRICEMAT function returns the price per $100 face value of a security that pays interest at maturity.  In the example shown, the formula in F5 is:
+
+=PRICEMAT(C5,C6,C7,C8,C9,C10)
+
+with these inputs, PRICEMAT returns a price for the bond of $93.09.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function.
+Basis
+The basis argument controls how days are counted. The PRICEMAT function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+
+
+
+Basis
+Day count
+
+
+
+
+0 or omitted
+US (NASD) 30/360
+
+
+1
+Actual/actual
+
+
+2
+Actual/360
+
+
+3
+Actual/365
+
+
+4
+European 30/360
+
+
+
+Notes
+
+In Excel, dates are serial numbers. 
+settlement, maturity, issue, and basis are truncated to integers.
+If any date is not valid, PRICEMAT returns #VALUE!
+rate and yield must be positive or PRICEMAT returns the #NUM!
+If basis is out-of-range, PRICEMAT returns #NUM!
+If maturity date is not later than settlement date, PRICEMAT returns #NUM!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions PRICE FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft PRICEMAT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PRICEMAT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PRICEMAT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+PRICEMAT Function
+Related functions 
+PRICE
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+Summary
+The Excel PRICEMAT function returns the price per $100 face value of a security that pays interest at maturity.
+Purpose 
+Get price per $100 interest at maturity
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Issue date of the security.rate - Security interest rate at date of issue.yld - Annual yield of the security.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=PRICEMAT(sd, md, id, rate, yld, [basis])
+Usage notes 
+The Excel PRICEMAT function returns the price per $100 face value of a security that pays interest at maturity.  In the example shown, the formula in F5 is:
+=PRICEMAT(C5,C6,C7,C8,C9,C10)
+with these inputs, PRICEMAT returns a price for the bond of $93.09.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function.
+Basis
+The basis argument controls how days are counted. The PRICEMAT function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+settlement, maturity, issue, and basis are truncated to integers.
+If any date is not valid, PRICEMAT returns #VALUE!
+rate and yield must be positive or PRICEMAT returns the #NUM!
+If basis is out-of-range, PRICEMAT returns #NUM!
+If maturity date is not later than settlement date, PRICEMAT returns #NUM!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PRICE FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft PRICEMAT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

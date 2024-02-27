@@ -1,0 +1,10 @@
+Summary
+The Excel IMSUM function returns the sum of two or more complex numbers. The complex numbers must be in the form x + yi or x + yj. Use the COMPLEX function to create a complex number from real and imaginary parts.
+Purpose 
+Get sum of complex numbers
+Return value 
+Sum of complex numbers as text
+Arguments 
+inumber1 - Complex number 1.inumber2 - [optional] Complex number 2.
+Syntax 
+=IMSUM(inumber1, [inumber2], ...)

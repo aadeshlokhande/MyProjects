@@ -1,0 +1,10 @@
+Summary
+The Excel YEAR function returns the year component of a date as a 4-digit number. You can use the YEAR function to extract a year number from a date into a cell or to extract and feed a year value into another formula, like the DATE function.
+Purpose 
+Get the year from a date
+Return value 
+Year as 4-digit number
+Arguments 
+date - A valid Excel date.
+Syntax 
+=YEAR(date)

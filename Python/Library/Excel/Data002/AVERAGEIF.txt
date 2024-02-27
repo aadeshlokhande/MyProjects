@@ -1,0 +1,10 @@
+Summary
+The Excel AVERAGEIF function calculates the average of numbers in a range that meet supplied criteria. AVERAGEIF criteria can include logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Get the average of numbers that meet criteria.
+Return value 
+A number representing the average.
+Arguments 
+range - One or more cells, including numbers or names, arrays, or references.criteria - A number, expression, cell reference, or text.average_range - [optional] The cells to average. When omitted, range is used.
+Syntax 
+=AVERAGEIF(range, criteria, [average_range])

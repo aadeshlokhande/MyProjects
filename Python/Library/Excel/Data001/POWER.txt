@@ -1,0 +1,260 @@
+Excel POWER function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+POWER Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+POWER Function
+Related functions 
+SQRT
+LOG
+Summary
+The Excel POWER function returns a number raised to a given power. The POWER function is an alternative to the exponent operator (^).
+Purpose 
+Raise a number to a power
+Return value 
+Number raised to power
+Arguments 
+number - Number to raise to a power.power - Power to raise number to (the exponent).
+Syntax 
+=POWER(number, power)
+Usage notes 
+The POWER function returns a number raised to a given power. POWER is an alternative to the exponent operator (^) in a math equation.
+The POWER function takes two arguments: number and power. Number should be a numeric value, provided as a hardcoded constant or as a cell reference. The power argument functions as the exponent, indicating the power to which number should be raised.
+Examples
+To raise 2 to the 3rd power, you can use POWER like this:
+=POWER(2,3) // returns 8
+To raise 2 to the 8th power:
+=POWER(2,8) // returns 256
+To cube the value in cell A1:
+=POWER(A1,3) // cube A1
+Fractional exponents
+To use the power function with a fractional exponent, enter the fraction directly as the power argument:
+=POWER(27,1/3) // returns 3
+=POWER(81,1/4) // returns 3
+=POWER(256,1/8) // returns 2
+Exponent operator
+In Excel, exponentiation can also be handled with the exponent (^) operator, so:
+=2^2=POWER(2,2)=4
+=2^3=POWER(2,3)=8
+=2^4=POWER(2,4)=16
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+BMI calculation formula 
+Surface area of a sphere 
+Area of a circle 
+Surface area of a cone 
+Volume of a sphere 
+nth root of number 
+Square root of number 
+Cube root of number 
+Volume of a cone 
+Surface area of a cylinder 
+ Functions SQRT FunctionLOG Function 
+ Links Microsoft POWER function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel POWER function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+POWER Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+POWER Function
+Related functions 
+SQRT
+LOG
+Summary
+The Excel POWER function returns a number raised to a given power. The POWER function is an alternative to the exponent operator (^).
+Purpose 
+Raise a number to a power
+Return value 
+Number raised to power
+Arguments 
+number - Number to raise to a power.power - Power to raise number to (the exponent).
+Syntax 
+=POWER(number, power)
+Usage notes 
+The POWER function returns a number raised to a given power. POWER is an alternative to the exponent operator (^) in a math equation.
+The POWER function takes two arguments: number and power. Number should be a numeric value, provided as a hardcoded constant or as a cell reference. The power argument functions as the exponent, indicating the power to which number should be raised.
+Examples
+To raise 2 to the 3rd power, you can use POWER like this:
+=POWER(2,3) // returns 8
+To raise 2 to the 8th power:
+=POWER(2,8) // returns 256
+To cube the value in cell A1:
+=POWER(A1,3) // cube A1
+Fractional exponents
+To use the power function with a fractional exponent, enter the fraction directly as the power argument:
+=POWER(27,1/3) // returns 3
+=POWER(81,1/4) // returns 3
+=POWER(256,1/8) // returns 2
+Exponent operator
+In Excel, exponentiation can also be handled with the exponent (^) operator, so:
+=2^2=POWER(2,2)=4
+=2^3=POWER(2,3)=8
+=2^4=POWER(2,4)=16
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+BMI calculation formula 
+Surface area of a sphere 
+Area of a circle 
+Surface area of a cone 
+Volume of a sphere 
+nth root of number 
+Square root of number 
+Cube root of number 
+Volume of a cone 
+Surface area of a cylinder 
+ Functions SQRT FunctionLOG Function 
+ Links Microsoft POWER function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

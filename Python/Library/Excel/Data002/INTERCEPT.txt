@@ -1,0 +1,10 @@
+Summary
+The Excel INTERCEPT function returns the point at which a regression line will intersect the y-axis based on known x and y values.
+Purpose 
+Get intercept of linear regression line
+Return value 
+y-axis intercept value
+Arguments 
+known_ys - An array or range of numeric data points (dependent values).known_xs - An array or range of numeric data points (independent values).
+Syntax 
+=INTERCEPT(known_ys, known_xs)

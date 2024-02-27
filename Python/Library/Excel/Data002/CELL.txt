@@ -1,0 +1,10 @@
+Summary
+The Excel CELL function returns information about a cell in a worksheet. The type of information to be returned is specified as info_type. CELL can get things like address and filename, as well as detailed info about the formatting used in the cell. See below for a full list of information available.
+Purpose 
+Get information about a cell
+Return value 
+A text value
+Arguments 
+info_type - The type of information to return about the reference.reference - [optional] The reference from which to extract information.
+Syntax 
+=CELL(info_type, [reference])

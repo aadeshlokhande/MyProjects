@@ -1,0 +1,11 @@
+Summary
+The Excel DATEDIF function returns the difference between two date values in years, months, or days. The DATEDIF (Date + Dif) function is a "compatibility" function that comes from Lotus 1-2-3. For reasons unknown, it is only documented in Excel 2000, but you can use it in your formulas in all Excel versions since that time.
+Note: Excel won't help you fill out the arguments for DATEDIF like other functions, but it will work when configured correctly.
+Purpose 
+Get days, months, or years between two dates
+Return value 
+A number representing time between two dates
+Arguments 
+start_date - Start date in Excel date serial number format.end_date - End date in Excel date serial number format.unit - The time unit to use (years, months, or days).
+Syntax 
+=DATEDIF(start_date, end_date, unit)

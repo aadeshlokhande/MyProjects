@@ -1,0 +1,266 @@
+Excel ODDLPRICE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ODDLPRICE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+ODDLPRICE Function
+Related functions 
+PRICE
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+Summary
+The Excel ODDLPRICE function returns the price per $100 face value of a security with an odd (irregular) last period.
+Purpose 
+Get price per $100 face value with odd last period
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Last interest date of security.rate - Interest rate of security.yld - Annual required rate of return.redem - Redemption value per $100 face value.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=ODDLPRICE(sd, md, id, rate, yld, redem, freq, [basis])
+Usage notes 
+Some bonds have an irregular first or last period, so interest payments don't fit a normal schedule. To calculate the price of a bond with an irregular last period, you can use the ODDLPRICE function. The ODDLPRICE Function returns the price per $100 face value of a security having a short or long last period.
+Example
+Assume we need to calculate the price per $100 face value of a bond with a last interest date of 15-Oct-2017 and a settlement date of 5-Feb-2018. The bond matures on 15-Jun-2018, and pays a coupon rate of 5% with a required return of 6%. Payments are semi-annual, the day count basis is US 30/360, and the redemption value is $100. In the example shown, the formula in F5 is:
+=ODDLPRICE(C8,C10,C9,C6,C7,C5,C11,C12)
+With these inputs, the ODDLPRICE function returns 99.61, with currency number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, the DATE function is the best option. To illustrate, the formula below has all values hardcoded. The DATE function is used to supply each of the three required dates:
+=ODDLPRICE(DATE(2018,2,5),DATE(2018,6,15),DATE(2017,10,15),0.05,0.06,100,2,0)
+Basis
+The basis argument controls how days are counted. The ODDLPRICE function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, plus frequency and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ODDLPRICE returns #VALUE!
+ODDLPRICE returns #NUM when:
+		
+(maturity > settlement > last_interest) is NOT true
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PRICE FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft ODDLPRICE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ODDLPRICE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ODDLPRICE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+ODDLPRICE Function
+Related functions 
+PRICE
+PRICEDISC
+PRICEMAT
+ODDFPRICE
+ODDLPRICE
+TBILLPRICE
+Summary
+The Excel ODDLPRICE function returns the price per $100 face value of a security with an odd (irregular) last period.
+Purpose 
+Get price per $100 face value with odd last period
+Return value 
+Bond price
+Arguments 
+sd - Settlement date of the security.md - Maturity date of the security.id - Last interest date of security.rate - Interest rate of security.yld - Annual required rate of return.redem - Redemption value per $100 face value.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=ODDLPRICE(sd, md, id, rate, yld, redem, freq, [basis])
+Usage notes 
+Some bonds have an irregular first or last period, so interest payments don't fit a normal schedule. To calculate the price of a bond with an irregular last period, you can use the ODDLPRICE function. The ODDLPRICE Function returns the price per $100 face value of a security having a short or long last period.
+Example
+Assume we need to calculate the price per $100 face value of a bond with a last interest date of 15-Oct-2017 and a settlement date of 5-Feb-2018. The bond matures on 15-Jun-2018, and pays a coupon rate of 5% with a required return of 6%. Payments are semi-annual, the day count basis is US 30/360, and the redemption value is $100. In the example shown, the formula in F5 is:
+=ODDLPRICE(C8,C10,C9,C6,C7,C5,C11,C12)
+With these inputs, the ODDLPRICE function returns 99.61, with currency number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, the DATE function is the best option. To illustrate, the formula below has all values hardcoded. The DATE function is used to supply each of the three required dates:
+=ODDLPRICE(DATE(2018,2,5),DATE(2018,6,15),DATE(2017,10,15),0.05,0.06,100,2,0)
+Basis
+The basis argument controls how days are counted. The ODDLPRICE function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on Wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, plus frequency and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ODDLPRICE returns #VALUE!
+ODDLPRICE returns #NUM when:
+		
+(maturity > settlement > last_interest) is NOT true
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions PRICE FunctionPRICEDISC FunctionPRICEMAT FunctionODDFPRICE FunctionODDLPRICE FunctionTBILLPRICE Function 
+ Links Microsoft ODDLPRICE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

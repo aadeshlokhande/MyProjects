@@ -1,0 +1,10 @@
+Summary
+The Excel ARABIC function converts a Roman numeral as text to an Arabic numeral. For example, the formula =ARABIC("VII") returns 7.
+Purpose 
+Converts a Roman numerals to an Arabic numerals
+Return value 
+A number (in Arabic numeral)
+Arguments 
+roman_text - The Roman numeral in text that you want to convert.
+Syntax 
+=ARABIC(roman_text)

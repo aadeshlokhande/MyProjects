@@ -1,0 +1,286 @@
+Excel LET function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LET Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+LET Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The Excel LET function lets you define named variables in a formula. There are two primary reasons you might want to do this: (1) to improve performance by eliminating redundant calculations and (2) to make more complex formulas easier to read and write.
+Purpose 
+Assign variables inside formula
+Return value 
+Normal formula result
+Arguments 
+name1 - First name to assign. Must begin with a letter.value1 - The value or calculation to assign to name 1.name2/value2 - [optional] Second name and value. Entered as a pair of arguments.result - A calculation or a variable previously calculated.
+Syntax 
+=LET(name1, value1, [name2/value2], ..., result)
+Usage notes 
+The LET function lets you define named variables in a formula. There are two primary reasons you might want to do this: (1) to improve performance by eliminating redundant calculations and (2) to make more complex formulas easier to read and write. Once a variable is named, it can be assigned a static value or a value based on a calculation. The formula can then refer to a variable by name as many times as needed, while the value of the variable is defined in one place only.
+Example 1 | Example 2 | Example 3 | Example 4 | More examples
+Variables are named and assigned values in pairs, separated by commas (name1,value1, name2,value2, etc). LET can handle up to 126 name/value pairs, but only the first name/value pair is required. The scope of each variable is the current LET function, and nested functions below. The final result is a calculation or a variable previously calculated. The result from LET always appears as the last argument to the function. 
+The names used in LET must begin with a letter and are not case-sensitive. You can use names that contain numbers like "count1", "count2", etc., but names like "ct1" and "ct2" will fail because Excel will interpret the names as a cell reference. Space characters and punctuation symbols are not allowed in names, but the underscore character (_) can be used.
+The LET function is often combined with the LAMBDA function as a way to make a complex formula easier to use. LAMBDA provides a way to name a formula and re-use it in a worksheet like a custom function. Example here.
+Key Benefits
+The LET function provides three key benefits:
+Clarity - naming variables used in a formula can make a complex formula much easier to read and understand.
+Simplification - naming and defining variables in just one place helps eliminate redundancy and the errors that arise from having the same code in more than one place.
+Performance - elimination of redundant code means less calculation time overall since expensive calculations only need to occur once.
+Example #1
+Below is the general form of the LET function with one variable:
+=LET(x,10,x+1) // returns 11
+With a second variable:
+=LET(x,10,y,5,x+y) // returns 15
+After x and y have been declared and assigned values, the calculation provided in the 5th argument returns 15.
+Example #2
+A chief benefit of the LET function is simplification by eliminating redundancy. For example, the screenshot above shows a formula that uses the SEQUENCE function to generate all dates between May 1, 2020 and May 15, 2020, which are then filtered by the FILTER function to include only weekdays. The formula in E5 is:
+=LET(dates,SEQUENCE(C5-C4+1,1,C4,1),FILTER(dates,WEEKDAY(dates,2)<6))
+The first argument declares the variable dates and the second argument assigns the output from SEQUENCE to dates:
+=LET(dates,SEQUENCE(C5-C4+1,1,C4,1)
+Notice the start and end dates come from cells C4 and C5, respectively. Once dates has been assigned a value, it can be used in the final calculation, which is based on the FILTER function:
+FILTER(dates,WEEKDAY(dates,2)<6)) // filter out weekends
+Notice dates is used twice in this snippet: once by FILTER, once by the WEEKDAY function. In the first instance, the raw dates from SEQUENCE are passed into the FILTER function as the array to filter. In the second instance, the dates from SEQUENCE are passed into the WEEKDAY function, which checks tests for weekdays (i.e. not Sat or Sun). The result from WEEKDAY is the logic used to filter the original dates.
+Without the LET function, SEQUENCE would need to appear twice in the formula, both times with the same (redundant) configuration. The LET function allows the SEQUENCE function to appear and be configured just once in the formula.
+For a more complex example of how the LET function can be used to eliminate redundancy in a formula, see this example.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count birthdays by year 
+Sum numbers with text 
+Detailed LET function example 
+LAMBDA contains which things 
+Two-way summary count 
+XLOOKUP return blank if blank 
+Count unique dates ignore time 
+Combine ranges 
+LAMBDA append range horizontal 
+Strip numeric characters from cell 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ Links Microsoft LET function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel LET function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+LET Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+LET Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The Excel LET function lets you define named variables in a formula. There are two primary reasons you might want to do this: (1) to improve performance by eliminating redundant calculations and (2) to make more complex formulas easier to read and write.
+Purpose 
+Assign variables inside formula
+Return value 
+Normal formula result
+Arguments 
+name1 - First name to assign. Must begin with a letter.value1 - The value or calculation to assign to name 1.name2/value2 - [optional] Second name and value. Entered as a pair of arguments.result - A calculation or a variable previously calculated.
+Syntax 
+=LET(name1, value1, [name2/value2], ..., result)
+Usage notes 
+The LET function lets you define named variables in a formula. There are two primary reasons you might want to do this: (1) to improve performance by eliminating redundant calculations and (2) to make more complex formulas easier to read and write. Once a variable is named, it can be assigned a static value or a value based on a calculation. The formula can then refer to a variable by name as many times as needed, while the value of the variable is defined in one place only.
+Example 1 | Example 2 | Example 3 | Example 4 | More examples
+Variables are named and assigned values in pairs, separated by commas (name1,value1, name2,value2, etc). LET can handle up to 126 name/value pairs, but only the first name/value pair is required. The scope of each variable is the current LET function, and nested functions below. The final result is a calculation or a variable previously calculated. The result from LET always appears as the last argument to the function. 
+The names used in LET must begin with a letter and are not case-sensitive. You can use names that contain numbers like "count1", "count2", etc., but names like "ct1" and "ct2" will fail because Excel will interpret the names as a cell reference. Space characters and punctuation symbols are not allowed in names, but the underscore character (_) can be used.
+The LET function is often combined with the LAMBDA function as a way to make a complex formula easier to use. LAMBDA provides a way to name a formula and re-use it in a worksheet like a custom function. Example here.
+Key Benefits
+The LET function provides three key benefits:
+Clarity - naming variables used in a formula can make a complex formula much easier to read and understand.
+Simplification - naming and defining variables in just one place helps eliminate redundancy and the errors that arise from having the same code in more than one place.
+Performance - elimination of redundant code means less calculation time overall since expensive calculations only need to occur once.
+Example #1
+Below is the general form of the LET function with one variable:
+=LET(x,10,x+1) // returns 11
+With a second variable:
+=LET(x,10,y,5,x+y) // returns 15
+After x and y have been declared and assigned values, the calculation provided in the 5th argument returns 15.
+Example #2
+A chief benefit of the LET function is simplification by eliminating redundancy. For example, the screenshot above shows a formula that uses the SEQUENCE function to generate all dates between May 1, 2020 and May 15, 2020, which are then filtered by the FILTER function to include only weekdays. The formula in E5 is:
+=LET(dates,SEQUENCE(C5-C4+1,1,C4,1),FILTER(dates,WEEKDAY(dates,2)<6))
+The first argument declares the variable dates and the second argument assigns the output from SEQUENCE to dates:
+=LET(dates,SEQUENCE(C5-C4+1,1,C4,1)
+Notice the start and end dates come from cells C4 and C5, respectively. Once dates has been assigned a value, it can be used in the final calculation, which is based on the FILTER function:
+FILTER(dates,WEEKDAY(dates,2)<6)) // filter out weekends
+Notice dates is used twice in this snippet: once by FILTER, once by the WEEKDAY function. In the first instance, the raw dates from SEQUENCE are passed into the FILTER function as the array to filter. In the second instance, the dates from SEQUENCE are passed into the WEEKDAY function, which checks tests for weekdays (i.e. not Sat or Sun). The result from WEEKDAY is the logic used to filter the original dates.
+Without the LET function, SEQUENCE would need to appear twice in the formula, both times with the same (redundant) configuration. The LET function allows the SEQUENCE function to appear and be configured just once in the formula.
+For a more complex example of how the LET function can be used to eliminate redundancy in a formula, see this example.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count birthdays by year 
+Sum numbers with text 
+Detailed LET function example 
+LAMBDA contains which things 
+Two-way summary count 
+XLOOKUP return blank if blank 
+Count unique dates ignore time 
+Combine ranges 
+LAMBDA append range horizontal 
+Strip numeric characters from cell 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ Links Microsoft LET function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

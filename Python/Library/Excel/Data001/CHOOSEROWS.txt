@@ -1,0 +1,242 @@
+Excel CHOOSEROWS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CHOOSEROWS Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+CHOOSEROWS Function
+Related functions 
+CHOOSECOLS
+TAKE
+DROP
+EXPAND
+Summary
+The Excel CHOOSEROWS function returns specific rows from an array or range. The rows to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a row in the given array.
+Purpose 
+Return specific rows from an array
+Return value 
+Extracted rows in a single array
+Arguments 
+array - The array to extract rows from.row_num1 - The numeric index of the first row to return.row_num2 - [optional] The numeric index of the second row to return.
+Syntax 
+=CHOOSEROWS(array, row_num1, [row_num2], ...)
+Usage notes 
+The Excel CHOOSEROWS function returns specific rows from an array or range. The rows to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a row in the source array. The result from CHOOSEROWS is always a single array that spills onto the worksheet.
+The first argument in the CHOOSEROWS function is array. Array can be a range, or an array from another formula. Additional arguments are in the form row_num1, row_num2, row_num3, etc. Each number represents a specific row to extract from the array, and should be supplied as a whole number.
+Basic usage
+To get rows 1 and 3 from an array, you can use CHOOSEROWS like this:
+=CHOOSEROWS(A1:A5,1,3) // rows 1 and 3
+To get the same two rows in reverse order:
+=CHOOSEROWS(A1:A5,3,1) // rows 3 and 1
+CHOOSEROWS will return a #VALUE! error if a requested row number is out of range:
+=CHOOSEROWS(A1:A5,6) // returns #VALUE!
+With array constants
+Another option for specifying which rows to return is to use an array constant like {1,4,7} as the second argument (row_num1). In the example below, the formula in H3 is:
+=CHOOSEROWS(B3:F9,{1,4,7})
+With the array constant {1,4,7} given as the second argument, CHOOSEROWS returns rows 1, 4, and 7:
+The array constant can be provided in the form {1,2,3} or {1;2;3}.
+With arrays
+As seen above, you can use an array constant as the second argument in CHOOSEROWS to indicate rows. You can also use an array created with a formula. For example, the formula below uses CHOOSEROWS and the SEQUENCE function to reverse the order of rows in an array:
+=CHOOSEROWS(B3:D9,SEQUENCE(ROWS(B3:D9),,ROWS(B3:D9),-1))
+When given a 7-row range or array, SEQUENCE returns {7;6;5;4;3;2;1} to CHOOSEROWS, and CHOOSEROWS returns the 7 rows in reverse order:
+The formula returns all the rows in Array, starting with the last row.
+Notes
+CHOOSEROWS will return a #VALUE error if a row number is out of range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions CHOOSECOLS FunctionTAKE FunctionDROP FunctionEXPAND Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel CHOOSEROWS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CHOOSEROWS Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+CHOOSEROWS Function
+Related functions 
+CHOOSECOLS
+TAKE
+DROP
+EXPAND
+Summary
+The Excel CHOOSEROWS function returns specific rows from an array or range. The rows to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a row in the given array.
+Purpose 
+Return specific rows from an array
+Return value 
+Extracted rows in a single array
+Arguments 
+array - The array to extract rows from.row_num1 - The numeric index of the first row to return.row_num2 - [optional] The numeric index of the second row to return.
+Syntax 
+=CHOOSEROWS(array, row_num1, [row_num2], ...)
+Usage notes 
+The Excel CHOOSEROWS function returns specific rows from an array or range. The rows to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a row in the source array. The result from CHOOSEROWS is always a single array that spills onto the worksheet.
+The first argument in the CHOOSEROWS function is array. Array can be a range, or an array from another formula. Additional arguments are in the form row_num1, row_num2, row_num3, etc. Each number represents a specific row to extract from the array, and should be supplied as a whole number.
+Basic usage
+To get rows 1 and 3 from an array, you can use CHOOSEROWS like this:
+=CHOOSEROWS(A1:A5,1,3) // rows 1 and 3
+To get the same two rows in reverse order:
+=CHOOSEROWS(A1:A5,3,1) // rows 3 and 1
+CHOOSEROWS will return a #VALUE! error if a requested row number is out of range:
+=CHOOSEROWS(A1:A5,6) // returns #VALUE!
+With array constants
+Another option for specifying which rows to return is to use an array constant like {1,4,7} as the second argument (row_num1). In the example below, the formula in H3 is:
+=CHOOSEROWS(B3:F9,{1,4,7})
+With the array constant {1,4,7} given as the second argument, CHOOSEROWS returns rows 1, 4, and 7:
+The array constant can be provided in the form {1,2,3} or {1;2;3}.
+With arrays
+As seen above, you can use an array constant as the second argument in CHOOSEROWS to indicate rows. You can also use an array created with a formula. For example, the formula below uses CHOOSEROWS and the SEQUENCE function to reverse the order of rows in an array:
+=CHOOSEROWS(B3:D9,SEQUENCE(ROWS(B3:D9),,ROWS(B3:D9),-1))
+When given a 7-row range or array, SEQUENCE returns {7;6;5;4;3;2;1} to CHOOSEROWS, and CHOOSEROWS returns the 7 rows in reverse order:
+The formula returns all the rows in Array, starting with the last row.
+Notes
+CHOOSEROWS will return a #VALUE error if a row number is out of range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions CHOOSECOLS FunctionTAKE FunctionDROP FunctionEXPAND Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

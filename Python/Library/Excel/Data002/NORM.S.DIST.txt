@@ -1,0 +1,10 @@
+Summary
+The Excel NORM.S.DIST function returns output for the standard normal cumulative distribution (CDF) and the standard normal probability density function (PDF).
+Purpose 
+Get the standard normal CDF and PDF.
+Return value 
+The standard normal cumulative distribution function
+Arguments 
+z - Numeric z-score value.cumulative - Logical value that determines the form of the function.
+Syntax 
+=NORM.S.DIST(z, cumulative)

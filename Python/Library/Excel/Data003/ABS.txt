@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel ABS function returns the absolute value of a number. ABS converts negative numbers to positive numbers, and positive numbers are unaffected.', 'Purpose' : 'Find the absolute value of a number', 'Return value' : 'A positive number.', 'Arguments' : 'number - The number to get the absolute value of.', 'Syntax' : '=ABS(number)' }

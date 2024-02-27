@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel COLUMNS function returns the count of columns in a given reference. For example, COLUMNS(A1:C3) returns 3, since the range A1:C3 contains 3 columns.', 'Purpose' : 'Get the number of columns in an array or reference.', 'Return value' : 'Number of columns', 'Arguments' : 'array - A reference to a range of cells.', 'Syntax' : '=COLUMNS(array)' }

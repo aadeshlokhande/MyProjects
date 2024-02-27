@@ -1,0 +1,10 @@
+Summary
+The Excel QUOTIENT function returns the integer portion of division without the remainder. Use QUOTIENT to discard the remainder after division.
+Purpose 
+Returns the quotient without a remainder.
+Return value 
+Integer Number
+Arguments 
+numerator - The number to be divided.denominator - The number to divide by.
+Syntax 
+=QUOTIENT(numerator, denominator)

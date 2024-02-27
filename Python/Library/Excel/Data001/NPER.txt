@@ -1,0 +1,226 @@
+Excel NPER function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NPER Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+NPER Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel NPER function is a financial function that returns the number of periods for a loan or investment. You can use the NPER function to get the number of payment periods for a loan, given the amount, the interest rate, and periodic payment amount.
+Purpose 
+Get number of periods for loan or investment
+Return value 
+The number of periods
+Arguments 
+rate - The interest rate per period.pmt - The payment made each period.pv - The present value, or total value of all payments now.fv - [optional] The future value, or a cash balance you want after the last payment is made. Defaults to 0.type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.
+Syntax 
+=NPER(rate, pmt, pv, [fv], [type])
+Usage notes 
+You can use the NPER function to get the number of payment periods for a loan (or an investment), given the amount, the interest rate, and a periodic payment amount.
+Notes
+pmt normally includes principal and interest but not taxes, reserve payments, or fees.
+Be sure you supply rate consistent with periods. For example, if an annual interest rate is 12 percent, use 12%/12 for rate to get NPER to return periods in months.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate payment periods for loan 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft NPER function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel NPER function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NPER Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+NPER Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel NPER function is a financial function that returns the number of periods for a loan or investment. You can use the NPER function to get the number of payment periods for a loan, given the amount, the interest rate, and periodic payment amount.
+Purpose 
+Get number of periods for loan or investment
+Return value 
+The number of periods
+Arguments 
+rate - The interest rate per period.pmt - The payment made each period.pv - The present value, or total value of all payments now.fv - [optional] The future value, or a cash balance you want after the last payment is made. Defaults to 0.type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.
+Syntax 
+=NPER(rate, pmt, pv, [fv], [type])
+Usage notes 
+You can use the NPER function to get the number of payment periods for a loan (or an investment), given the amount, the interest rate, and a periodic payment amount.
+Notes
+pmt normally includes principal and interest but not taxes, reserve payments, or fees.
+Be sure you supply rate consistent with periods. For example, if an annual interest rate is 12 percent, use 12%/12 for rate to get NPER to return periods in months.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate payment periods for loan 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft NPER function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,364 @@
+Excel SUMIFS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUMIFS Function 
+Previous 
+Next 
+ 
+Excel 2007
+Math
+SUMIFS Function
+Related functions 
+SUMIF
+SUMPRODUCT
+Summary
+The SUMIFS function sums cells in a range that meet one or more conditions, referred to as criteria. SUMIFS can apply conditions based on dates, numbers, and text. SUMIFS supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Sum cells in a range that meet criteria
+Return value 
+The sum of cells that meet all criteria
+Arguments 
+sum_range - The range to be summed.range1 - The first range to evaulate.criteria1 - The criteria to use on range1.range2 - [optional] The second range to evaluate.criteria2 - [optional] The criteria to use on range2.
+Syntax 
+=SUMIFS(sum_range, range1, criteria1, [range2], [criteria2], ...)
+Usage notes 
+The SUMIFS function sums cells in a range that meet one or more conditions, referred to as criteria. To apply criteria, the SUMIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. The SUMIFS function is a common, widely used function in Excel, and can be used to sum cells based on dates, text values, and numbers. 
+Syntax
+The syntax for the SUMIFS function depends on the number of conditions needed. Each separate condition will require a range and a criteria. The generic syntax for SUMIFS looks like this:
+=SUMIFS(sum_range,range1,criteria1) // 1 condition
+=SUMIFS(sum_range,range1,criteria1,range2,criteria2) // 2 conditions
+The first argument, sum_range, is the range of cells to sum, which should contain numeric values. The second argument, range1, is the range to which the first condition should be applied. The third argument, criteria1, contains the condition that should be applied to range1, along with any logical operators. Additional conditions are applied by providing additional range/criteria arguments. When using SUMIFS, keep the following in mind:
+To be included in the final result, all conditions must be TRUE.
+All ranges must be the same size or SUMIFS will return a #VALUE! error.
+Criteria should include logical operators (>,<,<>,<=,>=) as needed.
+Each new condition requires a separate range and criteria.
+Applying criteria
+The SUMIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. Because SUMIFS is in a group of eight functions that split logical criteria into two parts, the syntax is a bit tricky. Each condition requires a separate range and criteria, and operators need to be enclosed in double quotes (""). The table below shows some common examples:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples use concatenation with the ampersand (&) character. When a criteria argument includes a value from another cell, or the result of a formula, logical operators like "<" must be joined with concatenation. This is because Excel needs to evaluate cell references and formulas first in order to get a value, before that value can be joined with an operator.
+Basic usage
+With numbers in the range A1:A10, you can use SUMIFS to sum cells greater than 5 like this:
+=SUMIFS(A1:A10,A1:A10,">5")
+If the range B1:B10 contains color names like "red", "blue", and "green", you can use SUMIF to sum numbers in A1:A10 when the color in B1:B10 is "red" like this:
+=SUMIFS(A1:A10,B1:B10,"red")
+Notice A1:A10 remains the sum_range, but range1 and criteria1 have been changed to apply the condition that cells in B1:B10 must be equal to "red". To sum cells in A1:A10 that are greater than 5 only when cells in B1:B10 equal "red", you can use SUMIF like this:
+=SUMIFS(A1:A10,A1:A10,">5",B1:B10,"red")
+SUMIFS is now using five arguments: sum_range is A1:A10, range1 is A1:A10 and criteria1 is ">5", and range2 is B1:B10 and criteria2 is "red".
+Worksheet example
+In the worksheet shown, there are two SUMIFS formulas. In the first example (I5), SUMIFS returns a sum of values in column F where the color in column C is "red". In the second example (I6), SUMIFS sums values in column F when the color is "red" and the state is Texas (TX):
+=SUMIFS(F5:F15,C5:C15,"red") // color="red"
+=SUMIFS(F5:F15,C5:C15,"red",D5:D15,"TX") // color="red", state="TX"
+Notice the equals sign (=) is not required when constructing "is equal to" criteria. Also notice SUMIFS is not case-sensitive; you can use "red" or "Red", and "TX" or "tx". 
+Limitations
+The SUMIFS function has some limitations you should be aware of:
+Conditions in SUMIFS are joined by AND logic. In other words, all conditions must be TRUE in order for a cell to be included in a sum. To sum cells with OR logic, you can use a workaround in simple cases.
+All ranges must be the same size. If you supply ranges that don't match, you'll get a #VALUE error.
+The SUMIFS function requires actual ranges for all range arguments; you can't use an array. This means you can't do things like extract the year from dates inside the SUMIFS function. To alter values that appear in a range argument before applying criteria, the SUMPRODUCT function is a flexible solution.
+SUMIFS is not case-sensitive. To sum values based on a case-sensitive condition, you can use a formula based on the SUMPRODUCT function with the EXACT function.
+SUMIFS has some other quirks, which are detailed in this article.
+The most common way to work around the limitations above is to use the SUMPRODUCT function. In the current version of Excel, another option is to use the newer BYROW and BYCOL functions.
+Notes
+Multiple conditions are applied using AND logic, i.e. condition 1 AND condition 2, etc.
+All ranges must be the same size. If you supply ranges that don't match, you'll get a #VALUE error.
+Non-numeric criteria must be enclosed in double quotes (i.e. "<100",  ">32", "TX").
+Cell references in criteria are not enclosed in quotes, i.e. "<"&A1
+The wildcard characters ? and * can be used in criteria. A question mark (?) matches any one character and an asterisk (*) matches any sequence of characters (zero or more).
+To match a literal question mark(?) or asterisk (*), use a tilde (~) like (~?, ~*).
+SUMIFS requires a range, you can't substitute an array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by week 
+Sum by week number 
+Sum if multiple columns 
+Sum by group 
+Sum time with SUMIFS 
+Sum if cells contain an asterisk 
+Sum by quarter 
+Sum if cells are not equal to 
+Forecast vs actual variance 
+SUMIFS multiple criteria lookup in table 
+Videos
+  
+How to use the SUMIFs function 
+How to build a simple summary table 
+What is a pivot chart 
+How to use SUMIFS with an Excel Table 
+ Functions SUMIF FunctionSUMPRODUCT Function 
+ Articles Excel's RACON functions 
+ Links Microsoft SUMIFS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel SUMIFS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+SUMIFS Function 
+Previous 
+Next 
+ 
+Excel 2007
+Math
+SUMIFS Function
+Related functions 
+SUMIF
+SUMPRODUCT
+Summary
+The SUMIFS function sums cells in a range that meet one or more conditions, referred to as criteria. SUMIFS can apply conditions based on dates, numbers, and text. SUMIFS supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Sum cells in a range that meet criteria
+Return value 
+The sum of cells that meet all criteria
+Arguments 
+sum_range - The range to be summed.range1 - The first range to evaulate.criteria1 - The criteria to use on range1.range2 - [optional] The second range to evaluate.criteria2 - [optional] The criteria to use on range2.
+Syntax 
+=SUMIFS(sum_range, range1, criteria1, [range2], [criteria2], ...)
+Usage notes 
+The SUMIFS function sums cells in a range that meet one or more conditions, referred to as criteria. To apply criteria, the SUMIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. The SUMIFS function is a common, widely used function in Excel, and can be used to sum cells based on dates, text values, and numbers. 
+Syntax
+The syntax for the SUMIFS function depends on the number of conditions needed. Each separate condition will require a range and a criteria. The generic syntax for SUMIFS looks like this:
+=SUMIFS(sum_range,range1,criteria1) // 1 condition
+=SUMIFS(sum_range,range1,criteria1,range2,criteria2) // 2 conditions
+The first argument, sum_range, is the range of cells to sum, which should contain numeric values. The second argument, range1, is the range to which the first condition should be applied. The third argument, criteria1, contains the condition that should be applied to range1, along with any logical operators. Additional conditions are applied by providing additional range/criteria arguments. When using SUMIFS, keep the following in mind:
+To be included in the final result, all conditions must be TRUE.
+All ranges must be the same size or SUMIFS will return a #VALUE! error.
+Criteria should include logical operators (>,<,<>,<=,>=) as needed.
+Each new condition requires a separate range and criteria.
+Applying criteria
+The SUMIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. Because SUMIFS is in a group of eight functions that split logical criteria into two parts, the syntax is a bit tricky. Each condition requires a separate range and criteria, and operators need to be enclosed in double quotes (""). The table below shows some common examples:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples use concatenation with the ampersand (&) character. When a criteria argument includes a value from another cell, or the result of a formula, logical operators like "<" must be joined with concatenation. This is because Excel needs to evaluate cell references and formulas first in order to get a value, before that value can be joined with an operator.
+Basic usage
+With numbers in the range A1:A10, you can use SUMIFS to sum cells greater than 5 like this:
+=SUMIFS(A1:A10,A1:A10,">5")
+If the range B1:B10 contains color names like "red", "blue", and "green", you can use SUMIF to sum numbers in A1:A10 when the color in B1:B10 is "red" like this:
+=SUMIFS(A1:A10,B1:B10,"red")
+Notice A1:A10 remains the sum_range, but range1 and criteria1 have been changed to apply the condition that cells in B1:B10 must be equal to "red". To sum cells in A1:A10 that are greater than 5 only when cells in B1:B10 equal "red", you can use SUMIF like this:
+=SUMIFS(A1:A10,A1:A10,">5",B1:B10,"red")
+SUMIFS is now using five arguments: sum_range is A1:A10, range1 is A1:A10 and criteria1 is ">5", and range2 is B1:B10 and criteria2 is "red".
+Worksheet example
+In the worksheet shown, there are two SUMIFS formulas. In the first example (I5), SUMIFS returns a sum of values in column F where the color in column C is "red". In the second example (I6), SUMIFS sums values in column F when the color is "red" and the state is Texas (TX):
+=SUMIFS(F5:F15,C5:C15,"red") // color="red"
+=SUMIFS(F5:F15,C5:C15,"red",D5:D15,"TX") // color="red", state="TX"
+Notice the equals sign (=) is not required when constructing "is equal to" criteria. Also notice SUMIFS is not case-sensitive; you can use "red" or "Red", and "TX" or "tx". 
+Limitations
+The SUMIFS function has some limitations you should be aware of:
+Conditions in SUMIFS are joined by AND logic. In other words, all conditions must be TRUE in order for a cell to be included in a sum. To sum cells with OR logic, you can use a workaround in simple cases.
+All ranges must be the same size. If you supply ranges that don't match, you'll get a #VALUE error.
+The SUMIFS function requires actual ranges for all range arguments; you can't use an array. This means you can't do things like extract the year from dates inside the SUMIFS function. To alter values that appear in a range argument before applying criteria, the SUMPRODUCT function is a flexible solution.
+SUMIFS is not case-sensitive. To sum values based on a case-sensitive condition, you can use a formula based on the SUMPRODUCT function with the EXACT function.
+SUMIFS has some other quirks, which are detailed in this article.
+The most common way to work around the limitations above is to use the SUMPRODUCT function. In the current version of Excel, another option is to use the newer BYROW and BYCOL functions.
+Notes
+Multiple conditions are applied using AND logic, i.e. condition 1 AND condition 2, etc.
+All ranges must be the same size. If you supply ranges that don't match, you'll get a #VALUE error.
+Non-numeric criteria must be enclosed in double quotes (i.e. "<100",  ">32", "TX").
+Cell references in criteria are not enclosed in quotes, i.e. "<"&A1
+The wildcard characters ? and * can be used in criteria. A question mark (?) matches any one character and an asterisk (*) matches any sequence of characters (zero or more).
+To match a literal question mark(?) or asterisk (*), use a tilde (~) like (~?, ~*).
+SUMIFS requires a range, you can't substitute an array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sum by week 
+Sum by week number 
+Sum if multiple columns 
+Sum by group 
+Sum time with SUMIFS 
+Sum if cells contain an asterisk 
+Sum by quarter 
+Sum if cells are not equal to 
+Forecast vs actual variance 
+SUMIFS multiple criteria lookup in table 
+Videos
+  
+How to use the SUMIFs function 
+How to build a simple summary table 
+What is a pivot chart 
+How to use SUMIFS with an Excel Table 
+ Functions SUMIF FunctionSUMPRODUCT Function 
+ Articles Excel's RACON functions 
+ Links Microsoft SUMIFS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

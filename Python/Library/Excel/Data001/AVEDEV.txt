@@ -1,0 +1,228 @@
+Excel AVEDEV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AVEDEV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+AVEDEV Function
+Related functions 
+AVERAGE
+STDEV
+VAR
+DEVSQ
+Summary
+The Excel AVEDEV function returns the average of the absolute value of deviations from the mean for a given set of data. Average deviation is a measure of variability.
+Purpose 
+Get sum of squared deviations
+Return value 
+Calculated sum
+Arguments 
+number1 - First value or reference.number2 - [optional] Second value or reference.
+Syntax 
+=AVEDEV(number1, [number2], ...)
+Usage notes 
+The Excel AVEDEV function calculates the average of absolute deviations from the mean in a given set of data. 
+Variance and standard deviation functions deal with negative deviations by squaring deviations before they are averaged. AVEDEV handles negative values by working only with absolute values. This average is called the average absolute deviation. It's an easy way to show variability in a data set, but not as common as variance and standard deviation. One advantage of AVEDEV is that units remain unchanged. If values are centimeters, the absolute average deviation is in centimeters as well.
+AVEDEV takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. Empty cells, and cells that contain text or logical values are ignored.
+Examples
+In the example shown, the formula in G5 is:
+=AVEDEV(B5:B10)
+The formulas in C5 and D5 are, respectively:
+=B5-$G$4 // deviation
+=ABS(C5) // absolute deviation
+The value in D12 (2) is simply the average of D5:D10, and agrees with the value returned by AVEDEV in G5.
+Notes
+Arguments can be numbers, names, arrays, or references that contain numbers.
+Empty cells, and cells that contain text or logical values are ignored.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions AVERAGE FunctionSTDEV FunctionVAR FunctionDEVSQ Function 
+ Links Microsoft AVEDEV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel AVEDEV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AVEDEV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+AVEDEV Function
+Related functions 
+AVERAGE
+STDEV
+VAR
+DEVSQ
+Summary
+The Excel AVEDEV function returns the average of the absolute value of deviations from the mean for a given set of data. Average deviation is a measure of variability.
+Purpose 
+Get sum of squared deviations
+Return value 
+Calculated sum
+Arguments 
+number1 - First value or reference.number2 - [optional] Second value or reference.
+Syntax 
+=AVEDEV(number1, [number2], ...)
+Usage notes 
+The Excel AVEDEV function calculates the average of absolute deviations from the mean in a given set of data. 
+Variance and standard deviation functions deal with negative deviations by squaring deviations before they are averaged. AVEDEV handles negative values by working only with absolute values. This average is called the average absolute deviation. It's an easy way to show variability in a data set, but not as common as variance and standard deviation. One advantage of AVEDEV is that units remain unchanged. If values are centimeters, the absolute average deviation is in centimeters as well.
+AVEDEV takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. Empty cells, and cells that contain text or logical values are ignored.
+Examples
+In the example shown, the formula in G5 is:
+=AVEDEV(B5:B10)
+The formulas in C5 and D5 are, respectively:
+=B5-$G$4 // deviation
+=ABS(C5) // absolute deviation
+The value in D12 (2) is simply the average of D5:D10, and agrees with the value returned by AVEDEV in G5.
+Notes
+Arguments can be numbers, names, arrays, or references that contain numbers.
+Empty cells, and cells that contain text or logical values are ignored.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions AVERAGE FunctionSTDEV FunctionVAR FunctionDEVSQ Function 
+ Links Microsoft AVEDEV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

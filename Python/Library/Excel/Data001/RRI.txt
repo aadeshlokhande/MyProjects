@@ -1,0 +1,212 @@
+Excel RRI function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RRI Function 
+Previous 
+Next 
+ 
+Excel 2013
+Financial
+RRI Function
+Related functions 
+GEOMEAN
+Summary
+The Excel RRI function returns an equivalent interest rate for the growth of an investment. You can use RRI to calculate Compound Annual Growth Rate (CAGR) in Excel.
+Purpose 
+Get equivalent interest rate for growth
+Return value 
+Calculated interest rate
+Arguments 
+nper - Number of periods.pv - Present value of investment.fv - Future value of investment.
+Syntax 
+=RRI(nper, pv, fv)
+Usage notes 
+The RRI function returns an equivalent interest rate for the growth of an investment. For example, to use RRI to calculate equivalent annual compound interest for a 1000 investment worth 1200 after five years you can use a formula like this:
+=RRI(5,1000,1200) // returns 0.037137289
+In the example shown, the formula in G6 is:
+=RRI(B11,C6,C11)
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+CAGR formula examples 
+Effective annual interest rate 
+ Functions GEOMEAN Function 
+ Links Microsoft RRI function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel RRI function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RRI Function 
+Previous 
+Next 
+ 
+Excel 2013
+Financial
+RRI Function
+Related functions 
+GEOMEAN
+Summary
+The Excel RRI function returns an equivalent interest rate for the growth of an investment. You can use RRI to calculate Compound Annual Growth Rate (CAGR) in Excel.
+Purpose 
+Get equivalent interest rate for growth
+Return value 
+Calculated interest rate
+Arguments 
+nper - Number of periods.pv - Present value of investment.fv - Future value of investment.
+Syntax 
+=RRI(nper, pv, fv)
+Usage notes 
+The RRI function returns an equivalent interest rate for the growth of an investment. For example, to use RRI to calculate equivalent annual compound interest for a 1000 investment worth 1200 after five years you can use a formula like this:
+=RRI(5,1000,1200) // returns 0.037137289
+In the example shown, the formula in G6 is:
+=RRI(B11,C6,C11)
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+CAGR formula examples 
+Effective annual interest rate 
+ Functions GEOMEAN Function 
+ Links Microsoft RRI function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

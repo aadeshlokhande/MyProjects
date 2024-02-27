@@ -1,0 +1,11 @@
+Summary
+The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.
+Note: Starting with Excel 2016, the FORECAST function was replaced with the FORECAST.LINEAR function. Microsoft recommends replacing FORECAST with FORECAST.LINEAR, since FORECAST will eventually be deprecated.
+Purpose 
+Predict value along a linear trend
+Return value 
+Predicted value
+Arguments 
+x - The x value data point to use to calculate a prediction.known_ys - The dependent array or range of data (y values).kown_xs - The independent array or range of data (x values).
+Syntax 
+=FORECAST.LINEAR(x, known_ys, kown_xs)

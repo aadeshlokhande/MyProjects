@@ -1,0 +1,266 @@
+Excel STDEVPA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STDEVPA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+STDEVPA Function
+Related functions 
+STDEV.S
+STDEVP
+STDEV.P
+Summary
+The Excel STDEVPA function calculates the standard deviation for an entire population. Unlike the STDEVP function, STDEVPA evaluates text and logicals that appear in references. To calculate standard deviation for a sample, use STDEVA or STDEV.S.
+Purpose 
+Get standard deviation for a population
+Return value 
+Calculated standard deviation
+Arguments 
+number1 - First number or reference in the sample.number2 - [optional] Second number or reference.
+Syntax 
+=STDEVPA(number1, [number2], ...)
+Usage notes 
+The STDEVPA function calculates the standard deviation for data that represents an entire population, evaluating text and logicals as numbers as part of the calculation. TEXT is evaluated as zero, TRUE is evaluated as 1, and FALSE is evaluated as zero.
+Standard deviation is a measure of how much variance there is in a set of numbers compared to the average (mean) of the numbers. The STDEVPA function is meant to estimate standard deviation for an entire population. If data represents a sample, use the STDEVA function.
+In the example shown, the formula in E5 is:
+=STDEVPA(B5:B11)
+Standard Deviation functions in Excel
+The table below summarizes the standard deviation functions provided by Excel.
+Name
+Data set
+Text and logicals
+STDEV
+Sample
+Ignored
+STDEVP
+Population
+Ignored
+STDEV.S
+Sample
+Ignored
+STDEV.P
+Population
+Ignored
+STDEVA
+Sample
+Evaluated
+STDEVPA
+Population
+Evaluated
+Notes:
+Only use STDEVPA when you need to evaluate logicals or text in the standard deviation calculation.
+STDEVPA calculates standard deviation using the "n" method.
+STDEVA assumes data is an entire population. When data representations a sample, use STDEVA or STDEV.S
+Numbers are supplied as arguments. They can be supplied as actual numbers, ranges, arrays, or references that contain numbers.
+STDEVPA will evaluate logical values and/or numbers in supplied references. To ignore these values use STDEVP or STDEV.P
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions STDEV.S FunctionSTDEVP FunctionSTDEV.P Function 
+ Links Microsoft STDEVPA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel STDEVPA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+STDEVPA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+STDEVPA Function
+Related functions 
+STDEV.S
+STDEVP
+STDEV.P
+Summary
+The Excel STDEVPA function calculates the standard deviation for an entire population. Unlike the STDEVP function, STDEVPA evaluates text and logicals that appear in references. To calculate standard deviation for a sample, use STDEVA or STDEV.S.
+Purpose 
+Get standard deviation for a population
+Return value 
+Calculated standard deviation
+Arguments 
+number1 - First number or reference in the sample.number2 - [optional] Second number or reference.
+Syntax 
+=STDEVPA(number1, [number2], ...)
+Usage notes 
+The STDEVPA function calculates the standard deviation for data that represents an entire population, evaluating text and logicals as numbers as part of the calculation. TEXT is evaluated as zero, TRUE is evaluated as 1, and FALSE is evaluated as zero.
+Standard deviation is a measure of how much variance there is in a set of numbers compared to the average (mean) of the numbers. The STDEVPA function is meant to estimate standard deviation for an entire population. If data represents a sample, use the STDEVA function.
+In the example shown, the formula in E5 is:
+=STDEVPA(B5:B11)
+Standard Deviation functions in Excel
+The table below summarizes the standard deviation functions provided by Excel.
+Name
+Data set
+Text and logicals
+STDEV
+Sample
+Ignored
+STDEVP
+Population
+Ignored
+STDEV.S
+Sample
+Ignored
+STDEV.P
+Population
+Ignored
+STDEVA
+Sample
+Evaluated
+STDEVPA
+Population
+Evaluated
+Notes:
+Only use STDEVPA when you need to evaluate logicals or text in the standard deviation calculation.
+STDEVPA calculates standard deviation using the "n" method.
+STDEVA assumes data is an entire population. When data representations a sample, use STDEVA or STDEV.S
+Numbers are supplied as arguments. They can be supplied as actual numbers, ranges, arrays, or references that contain numbers.
+STDEVPA will evaluate logical values and/or numbers in supplied references. To ignore these values use STDEVP or STDEV.P
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions STDEV.S FunctionSTDEVP FunctionSTDEV.P Function 
+ Links Microsoft STDEVPA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

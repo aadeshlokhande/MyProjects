@@ -1,0 +1,10 @@
+Summary
+The Excel ENCODEURL function returns a URL-encoded string composed of US-ASCII characters. ENCODEURL is only available in Excel 2013 and later on Windows.
+Purpose 
+Get URL-encoded string
+Return value 
+Encoded text
+Arguments 
+text - The text to be encoded.
+Syntax 
+=ENCODEURL(text)

@@ -1,0 +1,10 @@
+Summary
+The Excel SLOPE function returns the slope of a regression line based on known y values and known x values. A regression line is a "best fit" line based on known data points.
+Purpose 
+Get slope of linear regression line
+Return value 
+Calculated slope as a number
+Arguments 
+known_ys - An array or range of numeric data points (dependent values).known_xs - An array or range of numeric data points (independent values).
+Syntax 
+=SLOPE(known_ys, known_xs)

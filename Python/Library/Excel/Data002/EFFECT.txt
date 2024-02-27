@@ -1,0 +1,10 @@
+Summary
+The Excel EFFECT function returns the effective annual interest rate, given a nominal interest rate and the number of compounding periods per year. Effective annual interest rate is the interest rate actually earned due to compounding. 
+Purpose 
+Get effective annual interest rate
+Return value 
+Effective annual interest rate
+Arguments 
+nominal_rate - The nominal or stated interest rate.npery - Number of compounding periods per year.
+Syntax 
+=EFFECT(nominal_rate, npery)

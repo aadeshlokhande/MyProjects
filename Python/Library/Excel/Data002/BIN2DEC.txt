@@ -1,0 +1,10 @@
+Summary
+The Excel BIN2DEC function converts a binary number to the decimal equivalent. The input number must contain only zeros and ones and be less than 10 characters long, otherwise the function returns the #NUM! error value.
+Purpose 
+Converts a binary number to decimal
+Return value 
+Decimal Number
+Arguments 
+number - The binary number you want to convert to decimal.
+Syntax 
+=BIN2DEC(number)

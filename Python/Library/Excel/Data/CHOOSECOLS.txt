@@ -1,0 +1,647 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel CHOOSECOLS function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+CHOOSECOLS Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 365
+
+
+
+
+Dynamic array
+
+
+CHOOSECOLS Function
+Related functions 
+
+CHOOSEROWS
+TAKE
+DROP
+EXPAND
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel CHOOSECOLS function returns specific columns from an array or range. The columns to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a column in the given array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Return specific columns from an array
+
+
+
+Return value 
+
+Extracted columns in a single array
+
+
+
+Arguments 
+
+array - The array to extract columns from.col_num1 - The numeric index of the first column to return.col_num2 - [optional] The numeric index of the second column to return.
+
+
+
+Syntax 
+
+=CHOOSECOLS(array, col_num1, [col_num2], ...)
+
+
+
+Usage notes 
+
+The Excel CHOOSECOLS function returns specific columns from an array or range. The columns to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a column in the source array. The result from CHOOSECOLS is always a single array that spills onto the worksheet.
+The first argument in the CHOOSECOLS function is array. Array can be a range, or an array from another formula. Additional arguments are in the form col_num1, col_num2, col_num3, etc. Each number represents a specific column to extract from the array, and should be supplied as a whole number.
+Basic usage
+To get columns 1 and 3 from an array, you can use CHOOSECOLS like this:
+
+=CHOOSECOLS(A1:C5,1,3) // columns 1 and 3
+
+To get the same two columns in reverse order:
+
+=CHOOSECOLS(A1:C5,3,1) // columns 3 and 1
+
+CHOOSECOLS will return a #VALUE! error if a requested column number is out of range:
+
+=CHOOSECOLS(A1:C5,4) // returns #VALUE!
+
+With array constants
+Another option for specifying which columns to return is to use an array constant like {1,2,3} as the second argument (col_num1). In the example below, the formula in H3 is:
+
+=CHOOSECOLS(B3:F9,{1,3,5})
+
+With the array constant {1,3,5} given as the second argument, CHOOSECOLS returns columns 1, 3, and 5:
+
+The array constant provided can be in the form {1,2,3} or {1;2;3}.
+With arrays
+As seen above, you can use an array constant as the second argument in CHOOSECOLS to indicate columns. You can also use an array created with a formula. For example, the formula below uses CHOOSECOLS and the SEQUENCE function to reverse the order of columns in an array:
+
+=CHOOSECOLS(array,SEQUENCE(COLUMNS(array),,COLUMNS(array),-1))
+
+When given a 3-column range or array, SEQUENCE returns {3;2;1} to CHOOSECOLS, and CHOOSECOLS returns the 3 columns in reverse order:
+
+The formula returns all the columns in Array, starting with the last column.
+Notes
+
+CHOOSECOLS will return a #VALUE error if a column number is out of range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Max of every nth column 
+
+
+ Functions CHOOSEROWS FunctionTAKE FunctionDROP FunctionEXPAND Function 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel CHOOSECOLS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CHOOSECOLS Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+CHOOSECOLS Function
+Related functions 
+CHOOSEROWS
+TAKE
+DROP
+EXPAND
+Summary
+The Excel CHOOSECOLS function returns specific columns from an array or range. The columns to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a column in the given array.
+Purpose 
+Return specific columns from an array
+Return value 
+Extracted columns in a single array
+Arguments 
+array - The array to extract columns from.col_num1 - The numeric index of the first column to return.col_num2 - [optional] The numeric index of the second column to return.
+Syntax 
+=CHOOSECOLS(array, col_num1, [col_num2], ...)
+Usage notes 
+The Excel CHOOSECOLS function returns specific columns from an array or range. The columns to return are provided as numbers in separate arguments. Each number corresponds to the numeric index of a column in the source array. The result from CHOOSECOLS is always a single array that spills onto the worksheet.
+The first argument in the CHOOSECOLS function is array. Array can be a range, or an array from another formula. Additional arguments are in the form col_num1, col_num2, col_num3, etc. Each number represents a specific column to extract from the array, and should be supplied as a whole number.
+Basic usage
+To get columns 1 and 3 from an array, you can use CHOOSECOLS like this:
+=CHOOSECOLS(A1:C5,1,3) // columns 1 and 3
+To get the same two columns in reverse order:
+=CHOOSECOLS(A1:C5,3,1) // columns 3 and 1
+CHOOSECOLS will return a #VALUE! error if a requested column number is out of range:
+=CHOOSECOLS(A1:C5,4) // returns #VALUE!
+With array constants
+Another option for specifying which columns to return is to use an array constant like {1,2,3} as the second argument (col_num1). In the example below, the formula in H3 is:
+=CHOOSECOLS(B3:F9,{1,3,5})
+With the array constant {1,3,5} given as the second argument, CHOOSECOLS returns columns 1, 3, and 5:
+The array constant provided can be in the form {1,2,3} or {1;2;3}.
+With arrays
+As seen above, you can use an array constant as the second argument in CHOOSECOLS to indicate columns. You can also use an array created with a formula. For example, the formula below uses CHOOSECOLS and the SEQUENCE function to reverse the order of columns in an array:
+=CHOOSECOLS(array,SEQUENCE(COLUMNS(array),,COLUMNS(array),-1))
+When given a 3-column range or array, SEQUENCE returns {3;2;1} to CHOOSECOLS, and CHOOSECOLS returns the 3 columns in reverse order:
+The formula returns all the columns in Array, starting with the last column.
+Notes
+CHOOSECOLS will return a #VALUE error if a column number is out of range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Max of every nth column 
+ Functions CHOOSEROWS FunctionTAKE FunctionDROP FunctionEXPAND Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

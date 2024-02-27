@@ -1,0 +1,622 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FACTDOUBLE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FACTDOUBLE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+FACTDOUBLE Function
+Related functions 
+
+FACT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FACTDOUBLE function returns the double factorial of a number. A double factorial is symbolized by two exclamation marks (!!).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get double factorial of a number
+
+
+
+Return value 
+
+Calculated doublefactorial
+
+
+
+Arguments 
+
+number - A number greater than or equal to -1.
+
+
+
+Syntax 
+
+=FACTDOUBLE(number)
+
+
+
+Usage notes 
+
+The FACTDOUBLE function returns the double factorial of a number. A double factorial is calculated differently for even and odd numbers. For an even number, n, it's the product of all even integers less than or equal to n and greater than or equal to 2. For an odd number, the double factorial is the product of all odd integers less than or equal to n and greater than or equal to 1. The double factorial for both zero and -1 are defined as 1. For numbers less than -1, a double factorial is not defined.
+FACTDOUBLE takes just one argument, number, which should be a positive integer. If number is not an integer, the decimal portion of number will be removed before the factorial is calculated.
+Examples
+For even numbers, the double factorial is the product of all even integers less than or equal to number and greater than or equal to 2. For example, the double factorial of 8 is 384:
+
+=FACTDOUBLE(8)
+=8*6*4*2
+=384
+
+For odd numbers, the double factorial is the product of all odd integers less than or equal to number and greater than or equal to 1. The double factorial of 7 is 105:
+
+=FACTDOUBLE(7)
+=7*5*3*1
+=105
+
+The double factorial for zero and -1 are defined as 1:
+
+=FACTDOUBLE(0) // returns 1
+=FACTDOUBLE(-1) // returns 1
+
+Notes
+
+If number is negative, FACTDOUBLE will return the #NUM! error.
+If number is not an integer it will be truncated to an integer, then solved.
+If number is not numeric, FACTDOUBLE will return the #VALUE! error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions FACT Function 
+ Links Microsoft FACTDOUBLE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FACTDOUBLE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FACTDOUBLE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+FACTDOUBLE Function
+Related functions 
+FACT
+Summary
+The Excel FACTDOUBLE function returns the double factorial of a number. A double factorial is symbolized by two exclamation marks (!!).
+Purpose 
+Get double factorial of a number
+Return value 
+Calculated doublefactorial
+Arguments 
+number - A number greater than or equal to -1.
+Syntax 
+=FACTDOUBLE(number)
+Usage notes 
+The FACTDOUBLE function returns the double factorial of a number. A double factorial is calculated differently for even and odd numbers. For an even number, n, it's the product of all even integers less than or equal to n and greater than or equal to 2. For an odd number, the double factorial is the product of all odd integers less than or equal to n and greater than or equal to 1. The double factorial for both zero and -1 are defined as 1. For numbers less than -1, a double factorial is not defined.
+FACTDOUBLE takes just one argument, number, which should be a positive integer. If number is not an integer, the decimal portion of number will be removed before the factorial is calculated.
+Examples
+For even numbers, the double factorial is the product of all even integers less than or equal to number and greater than or equal to 2. For example, the double factorial of 8 is 384:
+=FACTDOUBLE(8)
+=8*6*4*2
+=384
+For odd numbers, the double factorial is the product of all odd integers less than or equal to number and greater than or equal to 1. The double factorial of 7 is 105:
+=FACTDOUBLE(7)
+=7*5*3*1
+=105
+The double factorial for zero and -1 are defined as 1:
+=FACTDOUBLE(0) // returns 1
+=FACTDOUBLE(-1) // returns 1
+Notes
+If number is negative, FACTDOUBLE will return the #NUM! error.
+If number is not an integer it will be truncated to an integer, then solved.
+If number is not numeric, FACTDOUBLE will return the #VALUE! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions FACT Function 
+ Links Microsoft FACTDOUBLE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

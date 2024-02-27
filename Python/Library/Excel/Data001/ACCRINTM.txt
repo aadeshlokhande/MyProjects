@@ -1,0 +1,262 @@
+Excel ACCRINTM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ACCRINTM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+ACCRINTM Function
+Related functions 
+ACCRINT
+Summary
+The Excel ACCRINTM function returns the accrued interest for a security that pays interest at maturity (i.e. pays interest one time only).
+Purpose 
+Get accrued interest at maturity
+Return value 
+Accrued interest
+Arguments 
+id - Issue date of the security.sd - Settlement date of the security.rate - Annual coupon rate.par - Par value of security.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=ACCRINTM(id, sd, rate, par, [basis])
+Usage notes 
+In finance, bonds prices are quoted "clean". The "clean price" of a bond excludes any interest accrued since the issue date, or most recent coupon payment. The "dirty price" of a bond is the price including accrued interest. The ACCRINTM function can be used to calculate accrued interest for a bond that pays periodic at maturity (i.e. only pays interest one time).
+Date configuration
+By default, ACCRINTM will calculate accrued interest from the issue date to the settlement date. If you want to calculate total interest from the issue date to the maturity date, supply maturity date instead of settlement date.
+Example
+In the example shown, we want to calculate accrued interest for a bond with a 5% coupon rate. The issue date is 5-Apr-2016, the settlement date is 1-Feb-2019, and maturity date is 15-Apr-2026. We want accrued interest from the issue date to the settlement date. The formula in F5 is:
+=ACCRINTM(C7,C8,C6,C5,C10)
+With these inputs, the ACCRINTM function returns $141.11, with currency number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded. The DATE function is used to supply each of the two required dates:
+=ACCRINTM(DATE(2016,4,5),DATE(2019,2,1),0.05,1000,0)
+Basis
+The basis argument controls how days are counted. The ACCRINTM function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ACCRINTM returns #VALUE!
+ACCRINTM returns #NUM when:
+		
+issue date >= settlement date
+rate < 0 or par <= 0
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions ACCRINT Function 
+ Links Microsoft ACCRINTM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ACCRINTM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ACCRINTM Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+ACCRINTM Function
+Related functions 
+ACCRINT
+Summary
+The Excel ACCRINTM function returns the accrued interest for a security that pays interest at maturity (i.e. pays interest one time only).
+Purpose 
+Get accrued interest at maturity
+Return value 
+Accrued interest
+Arguments 
+id - Issue date of the security.sd - Settlement date of the security.rate - Annual coupon rate.par - Par value of security.basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=ACCRINTM(id, sd, rate, par, [basis])
+Usage notes 
+In finance, bonds prices are quoted "clean". The "clean price" of a bond excludes any interest accrued since the issue date, or most recent coupon payment. The "dirty price" of a bond is the price including accrued interest. The ACCRINTM function can be used to calculate accrued interest for a bond that pays periodic at maturity (i.e. only pays interest one time).
+Date configuration
+By default, ACCRINTM will calculate accrued interest from the issue date to the settlement date. If you want to calculate total interest from the issue date to the maturity date, supply maturity date instead of settlement date.
+Example
+In the example shown, we want to calculate accrued interest for a bond with a 5% coupon rate. The issue date is 5-Apr-2016, the settlement date is 1-Feb-2019, and maturity date is 15-Apr-2026. We want accrued interest from the issue date to the settlement date. The formula in F5 is:
+=ACCRINTM(C7,C8,C6,C5,C10)
+With these inputs, the ACCRINTM function returns $141.11, with currency number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded. The DATE function is used to supply each of the two required dates:
+=ACCRINTM(DATE(2016,4,5),DATE(2019,2,1),0.05,1000,0)
+Basis
+The basis argument controls how days are counted. The ACCRINTM function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ACCRINTM returns #VALUE!
+ACCRINTM returns #NUM when:
+		
+issue date >= settlement date
+rate < 0 or par <= 0
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions ACCRINT Function 
+ Links Microsoft ACCRINTM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

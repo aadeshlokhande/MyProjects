@@ -1,0 +1,292 @@
+Excel DATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DATE Function
+Related functions 
+TIME
+YEAR
+MONTH
+DAY
+EDATE
+Summary
+The Excel DATE function creates a valid date from individual year, month, and day components. The DATE function is useful for assembling dates that need to change dynamically based on other values in a worksheet.
+Purpose 
+Create a date with year, month, and day
+Return value 
+A valid Excel date
+Arguments 
+year - Number for year.month - Number for month.day - Number for day.
+Syntax 
+=DATE(year, month, day)
+Usage notes 
+The DATE function creates a date using individual year, month, and day arguments. Each argument is provided as a number, and the result is a serial number that represents a valid Excel date. Apply a date number format to display the output from the DATE function as a date.
+In general, the DATE function is the safest way to create a date in an Excel formula, because year, month, and day values are numeric and unambiguous, in contrast to text representations of dates which can be misinterpreted. 
+Note: to move an existing date forward or backward in time, see the EDATE and EOMONTH.
+Example #1 - hard-coded numbers
+For example, you can use the DATE function to create the dates January 1, 1999, and June 1, 2010 with the following syntax:
+=DATE(1999,1,1) // returns Jan 1, 1999
+=DATE(2010,6,1) // returns Jun 1, 2010
+Example #2 - cell reference
+The DATE function is useful for assembling dates that need to change dynamically based on other inputs in a worksheet. For example, with 2018 in cell A1, the formula below returns the date April 15, 2018:
+=DATE(A1,4,15) // Apr 15, 2018
+If A1 is then changed to 2019, the DATE function will return a date for April 15, 2019.
+Example #3 - with SUMIFS, COUNTIFS
+The DATE function can be used to supply dates as inputs to other functions like SUMIFS or COUNTIFS, since you can easily assemble a date using year, month, and day values that come from a cell reference or formula result. For example, to count dates greater than January 1, 2019 in a worksheet where A1, B1, and C1 contain year, month, and day values (respectively), you can use a formula like this:
+=COUNTIF(range,">"&DATE(A1,B1,C1))
+The result of COUNTIF will update dynamically when A1, B1, or C1 are changed.
+Example #4 - first day of current year
+To return the first day of the current year, you can use the DATE function like this:
+=DATE(YEAR(TODAY()),1,1) // first of year
+This is an example of nesting. The TODAY function returns the current date to the YEAR function. The YEAR function extracts the year and returns the result to the DATE function as the year argument. The month and day arguments are hard-coded as 1. The result is the first day of the current year, a date like "January 1, 2021".
+Note: the DATE function actually returns a serial number and not a formatted date. In Excel's date system, dates are serial numbers. January 1, 1900 is number 1 and later dates are larger numbers. To display date values in a human-readable date format, apply the number format of your choice.
+Notes
+The DATE function returns a serial number that corresponds to an Excel date.
+Excel dates begin in the year 1900. If year is between zero and 1900, Excel will add 1900.
+The DATE function accepts numeric input only and will return #VALUE if given text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Convert Unix time stamp to Excel date 
+Range contains specific date 
+Convert Excel time to Unix time 
+Sum by year 
+Sum if date is greater than 
+Series of dates by year 
+Add years to date 
+Convert text date dd/mm/yy to mm/dd/yy 
+Convert date to Julian format 
+Highlight rows with dates between 
+Videos
+  
+How to create date and time series with formulas 
+How to work with dates 
+How to use the SUMIF function 
+How to use the COUNTIF function 
+How to use function arguments 
+FILTER data between two dates 
+ Functions TIME FunctionYEAR FunctionMONTH FunctionDAY FunctionEDATE Function 
+ Links Microsoft DATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DATE Function
+Related functions 
+TIME
+YEAR
+MONTH
+DAY
+EDATE
+Summary
+The Excel DATE function creates a valid date from individual year, month, and day components. The DATE function is useful for assembling dates that need to change dynamically based on other values in a worksheet.
+Purpose 
+Create a date with year, month, and day
+Return value 
+A valid Excel date
+Arguments 
+year - Number for year.month - Number for month.day - Number for day.
+Syntax 
+=DATE(year, month, day)
+Usage notes 
+The DATE function creates a date using individual year, month, and day arguments. Each argument is provided as a number, and the result is a serial number that represents a valid Excel date. Apply a date number format to display the output from the DATE function as a date.
+In general, the DATE function is the safest way to create a date in an Excel formula, because year, month, and day values are numeric and unambiguous, in contrast to text representations of dates which can be misinterpreted. 
+Note: to move an existing date forward or backward in time, see the EDATE and EOMONTH.
+Example #1 - hard-coded numbers
+For example, you can use the DATE function to create the dates January 1, 1999, and June 1, 2010 with the following syntax:
+=DATE(1999,1,1) // returns Jan 1, 1999
+=DATE(2010,6,1) // returns Jun 1, 2010
+Example #2 - cell reference
+The DATE function is useful for assembling dates that need to change dynamically based on other inputs in a worksheet. For example, with 2018 in cell A1, the formula below returns the date April 15, 2018:
+=DATE(A1,4,15) // Apr 15, 2018
+If A1 is then changed to 2019, the DATE function will return a date for April 15, 2019.
+Example #3 - with SUMIFS, COUNTIFS
+The DATE function can be used to supply dates as inputs to other functions like SUMIFS or COUNTIFS, since you can easily assemble a date using year, month, and day values that come from a cell reference or formula result. For example, to count dates greater than January 1, 2019 in a worksheet where A1, B1, and C1 contain year, month, and day values (respectively), you can use a formula like this:
+=COUNTIF(range,">"&DATE(A1,B1,C1))
+The result of COUNTIF will update dynamically when A1, B1, or C1 are changed.
+Example #4 - first day of current year
+To return the first day of the current year, you can use the DATE function like this:
+=DATE(YEAR(TODAY()),1,1) // first of year
+This is an example of nesting. The TODAY function returns the current date to the YEAR function. The YEAR function extracts the year and returns the result to the DATE function as the year argument. The month and day arguments are hard-coded as 1. The result is the first day of the current year, a date like "January 1, 2021".
+Note: the DATE function actually returns a serial number and not a formatted date. In Excel's date system, dates are serial numbers. January 1, 1900 is number 1 and later dates are larger numbers. To display date values in a human-readable date format, apply the number format of your choice.
+Notes
+The DATE function returns a serial number that corresponds to an Excel date.
+Excel dates begin in the year 1900. If year is between zero and 1900, Excel will add 1900.
+The DATE function accepts numeric input only and will return #VALUE if given text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Convert Unix time stamp to Excel date 
+Range contains specific date 
+Convert Excel time to Unix time 
+Sum by year 
+Sum if date is greater than 
+Series of dates by year 
+Add years to date 
+Convert text date dd/mm/yy to mm/dd/yy 
+Convert date to Julian format 
+Highlight rows with dates between 
+Videos
+  
+How to create date and time series with formulas 
+How to work with dates 
+How to use the SUMIF function 
+How to use the COUNTIF function 
+How to use function arguments 
+FILTER data between two dates 
+ Functions TIME FunctionYEAR FunctionMONTH FunctionDAY FunctionEDATE Function 
+ Links Microsoft DATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

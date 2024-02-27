@@ -1,0 +1,10 @@
+Summary
+The Excel VDB function returns the depreciation of an asset for given period, using the double-declining balance method or another method specified by changing the factor argument. By default, the VDB function will switch to straight line calculation. VDB stands for variable declining balance.
+Purpose 
+Depreciation - double-declining variable
+Return value 
+Depreciation in given period
+Arguments 
+cost - Initial cost of asset.salvage - Asset value at the end of the depreciation.life - Periods over which asset is depreciated.start - Start period.end - End period.factor - [optional] Rate at which the balance declines. If omitted, defaults to 2.no_switch - [optional] Don't switch to straight line. Default is FALSE.
+Syntax 
+=VDB(cost, salvage, life, start, end, [factor], [no_switch])

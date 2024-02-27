@@ -1,0 +1,298 @@
+Excel MUNIT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MUNIT Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+MUNIT Function
+Related functions 
+MMULT
+MINVERSE
+MDETERM
+Summary
+The Excel MUNIT function returns a unit matrix for a given dimension, n, with a size of n x n. This resulting matrix contains ones on the main diagonal and zeros in every other position.
+Purpose 
+Return unit matrix for a given dimension
+Return value 
+Unix matrix of size n x n
+Arguments 
+dimension - An integer for the size of the unit matrix.
+Syntax 
+=MUNIT(dimension)
+Usage notes 
+The MUNIT function returns a unit matrix for a given dimension, n, with a size of n x n. The unit matrix is also called the identity matrix. The MUNIT function takes just one argument, dimension, which should be a positive integer. The resulting matrix contains ones on the main diagonal and zeros in every other position. 
+Examples
+The formula in D5 returns a 3 x 3 unit matrix :
+=MUNIT(3) // 3 x 3
+With 3 given for dimension, the MUNIT function returns a 3 by 3 array like this:
+1
+0
+0
+0
+1
+0
+0
+0
+1
+The formula in J5 returns a 5 x 5 unit matrix. 
+=MUNIT(5) // 5 x 5
+With 5 given for dimension, the MUNIT function returns a 5 by 5 array like this:
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+Array syntax
+The MUNIT function returns an array of values. In Excel 365, where dynamic arrays are native, you can use the MUNIT function without any special handling – MUNIT will return an array of values that spill directly into cells in the worksheet.
+In versions of Excel prior to Excel 365, you need to enter MUNIT enter as a multi-cell array formula to display results directly on the worksheet. To do this, make a selection of the right size, and enter MUNIT with control + shift + enter.
+Notes
+Dimension must be greater than zero.
+If dimension is zero or less than zero, MUNIT will return the #VALUE error.
+A unit matrix is also called an identity matrix.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MMULT FunctionMINVERSE FunctionMDETERM Function 
+ Links Microsoft MUNIT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel MUNIT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MUNIT Function 
+Previous 
+Next 
+ 
+Excel 2013
+Math
+MUNIT Function
+Related functions 
+MMULT
+MINVERSE
+MDETERM
+Summary
+The Excel MUNIT function returns a unit matrix for a given dimension, n, with a size of n x n. This resulting matrix contains ones on the main diagonal and zeros in every other position.
+Purpose 
+Return unit matrix for a given dimension
+Return value 
+Unix matrix of size n x n
+Arguments 
+dimension - An integer for the size of the unit matrix.
+Syntax 
+=MUNIT(dimension)
+Usage notes 
+The MUNIT function returns a unit matrix for a given dimension, n, with a size of n x n. The unit matrix is also called the identity matrix. The MUNIT function takes just one argument, dimension, which should be a positive integer. The resulting matrix contains ones on the main diagonal and zeros in every other position. 
+Examples
+The formula in D5 returns a 3 x 3 unit matrix :
+=MUNIT(3) // 3 x 3
+With 3 given for dimension, the MUNIT function returns a 3 by 3 array like this:
+1
+0
+0
+0
+1
+0
+0
+0
+1
+The formula in J5 returns a 5 x 5 unit matrix. 
+=MUNIT(5) // 5 x 5
+With 5 given for dimension, the MUNIT function returns a 5 by 5 array like this:
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+Array syntax
+The MUNIT function returns an array of values. In Excel 365, where dynamic arrays are native, you can use the MUNIT function without any special handling – MUNIT will return an array of values that spill directly into cells in the worksheet.
+In versions of Excel prior to Excel 365, you need to enter MUNIT enter as a multi-cell array formula to display results directly on the worksheet. To do this, make a selection of the right size, and enter MUNIT with control + shift + enter.
+Notes
+Dimension must be greater than zero.
+If dimension is zero or less than zero, MUNIT will return the #VALUE error.
+A unit matrix is also called an identity matrix.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MMULT FunctionMINVERSE FunctionMDETERM Function 
+ Links Microsoft MUNIT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

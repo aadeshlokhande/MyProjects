@@ -1,0 +1,705 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MOD function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MOD Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+MOD Function
+Related functions 
+
+QUOTIENT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MOD function returns the remainder of two numbers after division.  For example, MOD(10,3) = 1. The result of MOD carries the same sign as the divisor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the remainder from division
+
+
+
+Return value 
+
+The remainder
+
+
+
+Arguments 
+
+number - The number to be divided.divisor - The number to divide with.
+
+
+
+Syntax 
+
+=MOD(number, divisor)
+
+
+
+Usage notes 
+
+The MOD function returns the remainder after division.  For example, MOD(3,2) returns 1, because 2 goes into 3 once, with a remainder of 1. 
+The MOD function takes two arguments: number and divisor. Number is the number to be divided, and divisor is the number used to divide. Both arguments are required. If either argument is not numeric, the MOD function returns #VALUE!.
+Equation
+The result from the MOD function is calculated with an equation like this:
+
+=n-d*INT(n/d)
+
+where n is number, d is divisor, and INT is the INT function. This can create some unexpected results because of the way that the INT function rounds negative numbers down, way from zero:
+
+=MOD(7,3) // returns 1
+=MOD(7,-3) // returns -2
+
+MOD with negative numbers is implemented differently in different languages.
+Examples
+Below are some examples of the MOD function with hardcoded values:
+
+=MOD(12,3) // returns 0
+=MOD(12,5) // returns 2
+=MOD(100,33) // returns 1
+=MOD(6.25,1) // returns 0.25
+
+Negative numbers
+The result from MOD carries the same sign as divisor. If divisor is positive, the result from MOD is positive, if divisor is negative, the result from MOD is negative:
+
+=MOD(-3,2) // returns 1
+=MOD(3,-2) // returns -1
+=MOD(-3,-2) // returns -1
+
+Time from datetime
+The MOD function can be used to extract the time value from an Excel date that includes time (sometimes called a datetime). With a datetime in A1, the formula below returns the time only:
+
+=MOD(A1,1) // return time only
+
+Detailed explanation here.
+Large numbers
+With very large numbers, you may see the MOD function return a #NUM error. In that case, you can try an alternative version based on the INT function:
+
+=number-(INT(number/divisor)*divisor)
+
+Notes
+
+MOD is often seen in formulas that deal with "every nth" value
+MOD is useful for extracting the time from a date
+MOD always returns a result in the same sign as the divisor.
+MOD will return a #DIV/0! error if divisor is zero
+To discard the remainder and keep the integer, see the QUOTIENT function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Count or sum whole numbers only 
+
+Number is whole number 
+
+Basic timesheet formula with breaks 
+
+Rank with ordinal suffix 
+
+Calculate number of hours between two times 
+
+Repeat fixed value every 3 months 
+
+Filter every nth row 
+
+Add decimal hours to time 
+
+Highlight multiples of specific value 
+
+Highlight integers only 
+
+
+
+Videos
+  
+How to create zebra stripes with conditional formatting 
+
+
+ Functions QUOTIENT Function 
+ Articles How to use the MOD function to repeat values 
+ Links Microsoft MOD function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MOD function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MOD Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+MOD Function
+Related functions 
+QUOTIENT
+Summary
+The Excel MOD function returns the remainder of two numbers after division.  For example, MOD(10,3) = 1. The result of MOD carries the same sign as the divisor.
+Purpose 
+Get the remainder from division
+Return value 
+The remainder
+Arguments 
+number - The number to be divided.divisor - The number to divide with.
+Syntax 
+=MOD(number, divisor)
+Usage notes 
+The MOD function returns the remainder after division.  For example, MOD(3,2) returns 1, because 2 goes into 3 once, with a remainder of 1. 
+The MOD function takes two arguments: number and divisor. Number is the number to be divided, and divisor is the number used to divide. Both arguments are required. If either argument is not numeric, the MOD function returns #VALUE!.
+Equation
+The result from the MOD function is calculated with an equation like this:
+=n-d*INT(n/d)
+where n is number, d is divisor, and INT is the INT function. This can create some unexpected results because of the way that the INT function rounds negative numbers down, way from zero:
+=MOD(7,3) // returns 1
+=MOD(7,-3) // returns -2
+MOD with negative numbers is implemented differently in different languages.
+Examples
+Below are some examples of the MOD function with hardcoded values:
+=MOD(12,3) // returns 0
+=MOD(12,5) // returns 2
+=MOD(100,33) // returns 1
+=MOD(6.25,1) // returns 0.25
+Negative numbers
+The result from MOD carries the same sign as divisor. If divisor is positive, the result from MOD is positive, if divisor is negative, the result from MOD is negative:
+=MOD(-3,2) // returns 1
+=MOD(3,-2) // returns -1
+=MOD(-3,-2) // returns -1
+Time from datetime
+The MOD function can be used to extract the time value from an Excel date that includes time (sometimes called a datetime). With a datetime in A1, the formula below returns the time only:
+=MOD(A1,1) // return time only
+Detailed explanation here.
+Large numbers
+With very large numbers, you may see the MOD function return a #NUM error. In that case, you can try an alternative version based on the INT function:
+=number-(INT(number/divisor)*divisor)
+Notes
+MOD is often seen in formulas that deal with "every nth" value
+MOD is useful for extracting the time from a date
+MOD always returns a result in the same sign as the divisor.
+MOD will return a #DIV/0! error if divisor is zero
+To discard the remainder and keep the integer, see the QUOTIENT function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Count or sum whole numbers only 
+Number is whole number 
+Basic timesheet formula with breaks 
+Rank with ordinal suffix 
+Calculate number of hours between two times 
+Repeat fixed value every 3 months 
+Filter every nth row 
+Add decimal hours to time 
+Highlight multiples of specific value 
+Highlight integers only 
+Videos
+  
+How to create zebra stripes with conditional formatting 
+ Functions QUOTIENT Function 
+ Articles How to use the MOD function to repeat values 
+ Links Microsoft MOD function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

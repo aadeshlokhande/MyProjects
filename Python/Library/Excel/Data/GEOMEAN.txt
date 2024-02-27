@@ -1,0 +1,639 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel GEOMEAN function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+GEOMEAN Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+GEOMEAN Function
+Related functions 
+
+AVERAGE
+TRIMMEAN
+HARMEAN
+RRI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel GEOMEAN function returns the geometric mean for a set of numeric values. Geometric mean can be used to calculate average rate of return with variable rates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Calculate geometric mean
+
+
+
+Return value 
+
+Calculated mean
+
+
+
+Arguments 
+
+number1 - First value or reference.number2 - [optional] Second value or reference.
+
+
+
+Syntax 
+
+=GEOMEAN(number1, [number2], ...)
+
+
+
+Usage notes 
+
+The Excel GEOMEAN function calculates the geometric mean. Geometric mean is the average of a set of products — technically, the nth root of n numbers. The general formula for the geometric mean of n numbers is the nth root of their product. The equation looks like this:
+ 
+For example, given two numbers, 4 and 9, the long-hand calculation for the geometric mean is 6:
+
+=(4*9)^(1/2)
+=(36)^(1/2)
+=6
+
+The GEOMEAN function returns the same result:
+
+=GEOMEAN(4,9) // returns 6
+
+By contrast, the arithmetic mean is 6.5:
+
+=(4+9)/2=6.5
+
+The GEOMEAN function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. Often, a single range or array is used instead of multiple arguments, as seen in the example worksheet.
+Examples
+In the example shown, GEOMEAN is used to calculate a compound annual growth rate. To do this we use the growth factor values in column D in the GEOMEAN function, then subtract 1. The formula in G7 is:
+
+=GEOMEAN(D6:D10)-1
+
+Notes
+
+Arguments can be numbers, names, arrays, or references that contain numbers.
+Empty cells, and cells that contain text or logical values are ignored.
+If any provided values are less than or equal to zero, GEOMEAN returns #NUM!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+CAGR formula examples 
+
+
+ Functions AVERAGE FunctionTRIMMEAN FunctionHARMEAN FunctionRRI Function 
+ Links Microsoft GEOMEAN function documentationExplanation of Geometric mean (wikipedia.org) 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel GEOMEAN function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+GEOMEAN Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+GEOMEAN Function
+Related functions 
+AVERAGE
+TRIMMEAN
+HARMEAN
+RRI
+Summary
+The Excel GEOMEAN function returns the geometric mean for a set of numeric values. Geometric mean can be used to calculate average rate of return with variable rates.
+Purpose 
+Calculate geometric mean
+Return value 
+Calculated mean
+Arguments 
+number1 - First value or reference.number2 - [optional] Second value or reference.
+Syntax 
+=GEOMEAN(number1, [number2], ...)
+Usage notes 
+The Excel GEOMEAN function calculates the geometric mean. Geometric mean is the average of a set of products — technically, the nth root of n numbers. The general formula for the geometric mean of n numbers is the nth root of their product. The equation looks like this:
+ 
+For example, given two numbers, 4 and 9, the long-hand calculation for the geometric mean is 6:
+=(4*9)^(1/2)
+=(36)^(1/2)
+=6
+The GEOMEAN function returns the same result:
+=GEOMEAN(4,9) // returns 6
+By contrast, the arithmetic mean is 6.5:
+=(4+9)/2=6.5
+The GEOMEAN function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range. Often, a single range or array is used instead of multiple arguments, as seen in the example worksheet.
+Examples
+In the example shown, GEOMEAN is used to calculate a compound annual growth rate. To do this we use the growth factor values in column D in the GEOMEAN function, then subtract 1. The formula in G7 is:
+=GEOMEAN(D6:D10)-1
+Notes
+Arguments can be numbers, names, arrays, or references that contain numbers.
+Empty cells, and cells that contain text or logical values are ignored.
+If any provided values are less than or equal to zero, GEOMEAN returns #NUM!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+CAGR formula examples 
+ Functions AVERAGE FunctionTRIMMEAN FunctionHARMEAN FunctionRRI Function 
+ Links Microsoft GEOMEAN function documentationExplanation of Geometric mean (wikipedia.org) 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

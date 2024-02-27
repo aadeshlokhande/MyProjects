@@ -1,0 +1,352 @@
+Excel MINIFS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MINIFS Function 
+Previous 
+Next 
+ 
+Excel 2019
+Statistical
+MINIFS Function
+Related functions 
+MAXIFS
+MIN
+MAX
+SMALL
+Summary
+The Excel MINIFS function returns the smallest numeric value that meets one or more criteria in a range of values. MINIFS can be used with criteria based on dates, numbers, text, and other conditions. MINIFS supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Get minimum value with criteria
+Return value 
+Minimim value
+Arguments 
+min_range - Range of values used to determine minimum.range1 - The first range to evaluate.criteria1 - The criteria to use on range1.range2 - [optional] The second range to evaluate.criteria2 - [optional] The criteria to use on range2.
+Syntax 
+=MINIFS(min_range, range1, criteria1, [range2], [criteria2], ...)
+Usage notes 
+The MINIFS function returns the smallest numeric value that meets one or more supplied criteria. The MINIFS function can apply criteria to dates, numbers, and text. MINIFS supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+The MINIFS function takes three required arguments: min_range, range1, and criteria1. With these three arguments, MINIFS returns the minimum number in min_range where corresponding cells in range1 meet the condition set by criteria1. Additional conditions are applied using range/criteria pairs. The second condition is defined by range2 and criteria2, the third condition is range3 and criteria3, and so on. MINIFS can handle up to 126 range/criteria pairs. 
+When using MINIFS, keep the following in mind:
+Each new condition requires a separate range and criteria.
+To be included in the final result, all conditions must be TRUE.
+If no cells meet criteria, MINIFS will return zero (0).
+MINIFS will automatically ignore empty cells that meet criteria.
+MINIFS requires a cell range for range arguments; you can't use an array.
+Criteria
+The MINIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. Because MINIFS is in a group of eight functions that split logical criteria into two parts, the syntax is a bit tricky. Each condition requires a separate range and criteria, and operators need to be enclosed in double quotes (""). The table below shows some common examples:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples use concatenation with the ampersand (&) character. When a criteria argument includes a value from another cell, or the result of a formula, logical operators like "<" must be joined with concatenation. This is because Excel needs to evaluate cell references and formulas first to get a value before that value can be joined to an operator.
+Basic example
+In the worksheet shown above, the formulas in G5 and G6 are:
+=MINIFS(D5:D16,C5:C16,"F") // returns 72
+=MINIFS(D5:D16,C5:C16,"M") // returns 64
+In the first formula, MINIFS returns the minimum value in D5:D16 where C5:C16 is equal to "F" (72). In the second formula, MINIFS returns the minimum value in D5:D16 where C5:C16 is equal to "M" (64).
+Two criteria
+In the example below, the MINIFS function is used with two criteria, one for Gender and one for Group. Note conditions are added in range/criteria pairs. The range E5:E16 is paired with the condition "B".
+The formulas in H5:I6 are:
+=MINIFS(D5:D16,C5:C16,"F",E5:E16,"A") // returns 72
+=MINIFS(D5:D16,C5:C16,"F",E5:E16,"B") // returns 83
+=MINIFS(D5:D16,C5:C16,"M",E5:E16,"A") // returns 65
+=MINIFS(D5:D16,C5:C16,"M",E5:E16,"B") // returns 64
+Other criteria
+To return the minimum value in A1:A100 when cells in B1:B100 are greater than 50:
+=MINIFS(A1:A100,B1:B100,">50")
+To get the minimum value in A1:A100 when cells in B1:B100 are less than or equal to 100, and cells in C1:C100 are greater than zero:
+=MINIFS(A1:A100,B1:B100,"<=100",C1:C100,">0")
+Not equal to
+To construct "not equal to" criteria, use the "<>" operator surrounded by double quotes (""). For example, to return the minimum value in A1:A100 when cells in B1:B100 are not equal to "red":
+=MINIFS(A1:A100,B1:B100,"<>red")
+Value from another cell
+When using a value from another cell in a condition, the cell reference must be concatenated to the operator. For example, to return the minimum value in A1:A100 when cells in B1:B100 are greater than the value in C1:
+=MINIFS(A1:A100,B1:B100,">"&C1)
+Notice the greater than operator (>) is enclosed in quotes (""), but the cell reference (C1) is not.
+Wildcards
+The wildcard characters question mark (?), asterisk(*), or tilde (~) can be used in criteria. A question mark (?) matches any one character, and an asterisk (*) matches zero or more characters. For example, to return the minimum value in A1:A100 when cells in B1:B100 begin with "a":
+=MINIFS(A1:A100,B1:B100,"a*")
+The tilde (~) is an escape character to allow you to find literal wildcards. For example, to match a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+Notes
+Conditions are applied using range/criteria pairs.
+MINIFS will return a #VALUE error if any criteria range is not the same size as min_range.
+If no criteria match, MINIFS will return zero (0).
+MINIFS ignores empty cells that meet criteria.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+First in last out times 
+Get next scheduled event 
+Get earliest and latest project dates 
+Minimum if multiple criteria 
+Minimum value 
+Minimum value if 
+ Functions MAXIFS FunctionMIN FunctionMAX FunctionSMALL Function 
+ Articles Excel's RACON functions 
+ Links Microsoft MINIFS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel MINIFS function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MINIFS Function 
+Previous 
+Next 
+ 
+Excel 2019
+Statistical
+MINIFS Function
+Related functions 
+MAXIFS
+MIN
+MAX
+SMALL
+Summary
+The Excel MINIFS function returns the smallest numeric value that meets one or more criteria in a range of values. MINIFS can be used with criteria based on dates, numbers, text, and other conditions. MINIFS supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+Purpose 
+Get minimum value with criteria
+Return value 
+Minimim value
+Arguments 
+min_range - Range of values used to determine minimum.range1 - The first range to evaluate.criteria1 - The criteria to use on range1.range2 - [optional] The second range to evaluate.criteria2 - [optional] The criteria to use on range2.
+Syntax 
+=MINIFS(min_range, range1, criteria1, [range2], [criteria2], ...)
+Usage notes 
+The MINIFS function returns the smallest numeric value that meets one or more supplied criteria. The MINIFS function can apply criteria to dates, numbers, and text. MINIFS supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching.
+The MINIFS function takes three required arguments: min_range, range1, and criteria1. With these three arguments, MINIFS returns the minimum number in min_range where corresponding cells in range1 meet the condition set by criteria1. Additional conditions are applied using range/criteria pairs. The second condition is defined by range2 and criteria2, the third condition is range3 and criteria3, and so on. MINIFS can handle up to 126 range/criteria pairs. 
+When using MINIFS, keep the following in mind:
+Each new condition requires a separate range and criteria.
+To be included in the final result, all conditions must be TRUE.
+If no cells meet criteria, MINIFS will return zero (0).
+MINIFS will automatically ignore empty cells that meet criteria.
+MINIFS requires a cell range for range arguments; you can't use an array.
+Criteria
+The MINIFS function supports logical operators (>,<,<>,=) and wildcards (*,?) for partial matching. Because MINIFS is in a group of eight functions that split logical criteria into two parts, the syntax is a bit tricky. Each condition requires a separate range and criteria, and operators need to be enclosed in double quotes (""). The table below shows some common examples:
+Target
+Criteria
+Cells greater than 75
+">75"
+Cells equal to 100
+100 or "100"
+Cells less than or equal to 100
+"<=100"
+Cells equal to "Red"
+"red"
+Cells not equal to "Red"
+"<>red"
+Cells that are blank ""
+""
+Cells that are not blank
+"<>"
+Cells that begin with "X"
+"x*"
+Cells less than A1
+"<"&A1
+Cells less than today
+"<"&TODAY()
+Notice the last two examples use concatenation with the ampersand (&) character. When a criteria argument includes a value from another cell, or the result of a formula, logical operators like "<" must be joined with concatenation. This is because Excel needs to evaluate cell references and formulas first to get a value before that value can be joined to an operator.
+Basic example
+In the worksheet shown above, the formulas in G5 and G6 are:
+=MINIFS(D5:D16,C5:C16,"F") // returns 72
+=MINIFS(D5:D16,C5:C16,"M") // returns 64
+In the first formula, MINIFS returns the minimum value in D5:D16 where C5:C16 is equal to "F" (72). In the second formula, MINIFS returns the minimum value in D5:D16 where C5:C16 is equal to "M" (64).
+Two criteria
+In the example below, the MINIFS function is used with two criteria, one for Gender and one for Group. Note conditions are added in range/criteria pairs. The range E5:E16 is paired with the condition "B".
+The formulas in H5:I6 are:
+=MINIFS(D5:D16,C5:C16,"F",E5:E16,"A") // returns 72
+=MINIFS(D5:D16,C5:C16,"F",E5:E16,"B") // returns 83
+=MINIFS(D5:D16,C5:C16,"M",E5:E16,"A") // returns 65
+=MINIFS(D5:D16,C5:C16,"M",E5:E16,"B") // returns 64
+Other criteria
+To return the minimum value in A1:A100 when cells in B1:B100 are greater than 50:
+=MINIFS(A1:A100,B1:B100,">50")
+To get the minimum value in A1:A100 when cells in B1:B100 are less than or equal to 100, and cells in C1:C100 are greater than zero:
+=MINIFS(A1:A100,B1:B100,"<=100",C1:C100,">0")
+Not equal to
+To construct "not equal to" criteria, use the "<>" operator surrounded by double quotes (""). For example, to return the minimum value in A1:A100 when cells in B1:B100 are not equal to "red":
+=MINIFS(A1:A100,B1:B100,"<>red")
+Value from another cell
+When using a value from another cell in a condition, the cell reference must be concatenated to the operator. For example, to return the minimum value in A1:A100 when cells in B1:B100 are greater than the value in C1:
+=MINIFS(A1:A100,B1:B100,">"&C1)
+Notice the greater than operator (>) is enclosed in quotes (""), but the cell reference (C1) is not.
+Wildcards
+The wildcard characters question mark (?), asterisk(*), or tilde (~) can be used in criteria. A question mark (?) matches any one character, and an asterisk (*) matches zero or more characters. For example, to return the minimum value in A1:A100 when cells in B1:B100 begin with "a":
+=MINIFS(A1:A100,B1:B100,"a*")
+The tilde (~) is an escape character to allow you to find literal wildcards. For example, to match a literal question mark (?), asterisk(*), or tilde (~), add a tilde in front of the wildcard (i.e. ~?, ~*, ~~).
+Notes
+Conditions are applied using range/criteria pairs.
+MINIFS will return a #VALUE error if any criteria range is not the same size as min_range.
+If no criteria match, MINIFS will return zero (0).
+MINIFS ignores empty cells that meet criteria.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+First in last out times 
+Get next scheduled event 
+Get earliest and latest project dates 
+Minimum if multiple criteria 
+Minimum value 
+Minimum value if 
+ Functions MAXIFS FunctionMIN FunctionMAX FunctionSMALL Function 
+ Articles Excel's RACON functions 
+ Links Microsoft MINIFS function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

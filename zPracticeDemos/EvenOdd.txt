@@ -1,0 +1,4017 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int aadesh;
+    cout<<"enter a number = ";
+    cin>>aadesh;
+    if(aadesh==0)
+    {
+        cout<<"Even Number";
+    }
+	else if(aadesh==1)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==2)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==3)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==4)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==5)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==6)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==7)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==8)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==9)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==10)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==11)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==12)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==13)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==14)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==15)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==16)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==17)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==18)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==19)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==20)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==21)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==22)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==23)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==24)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==25)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==26)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==27)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==28)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==29)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==30)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==31)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==32)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==33)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==34)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==35)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==36)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==37)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==38)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==39)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==40)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==41)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==42)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==43)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==44)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==45)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==46)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==47)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==48)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==49)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==50)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==51)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==52)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==53)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==54)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==55)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==56)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==57)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==58)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==59)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==60)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==61)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==62)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==63)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==64)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==65)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==66)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==67)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==68)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==69)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==70)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==71)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==72)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==73)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==74)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==75)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==76)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==77)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==78)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==79)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==80)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==81)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==82)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==83)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==84)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==85)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==86)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==87)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==88)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==89)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==90)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==91)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==92)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==93)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==94)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==95)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==96)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==97)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==98)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==99)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==100)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==101)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==102)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==103)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==104)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==105)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==106)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==107)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==108)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==109)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==110)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==111)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==112)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==113)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==114)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==115)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==116)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==117)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==118)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==119)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==120)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==121)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==122)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==123)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==124)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==125)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==126)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==127)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==128)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==129)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==130)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==131)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==132)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==133)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==134)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==135)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==136)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==137)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==138)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==139)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==140)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==141)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==142)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==143)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==144)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==145)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==146)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==147)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==148)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==149)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==150)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==151)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==152)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==153)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==154)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==155)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==156)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==157)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==158)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==159)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==160)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==161)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==162)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==163)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==164)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==165)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==166)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==167)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==168)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==169)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==170)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==171)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==172)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==173)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==174)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==175)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==176)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==177)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==178)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==179)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==180)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==181)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==182)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==183)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==184)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==185)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==186)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==187)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==188)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==189)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==190)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==191)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==192)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==193)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==194)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==195)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==196)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==197)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==198)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==199)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==200)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==201)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==202)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==203)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==204)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==205)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==206)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==207)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==208)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==209)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==210)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==211)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==212)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==213)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==214)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==215)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==216)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==217)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==218)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==219)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==220)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==221)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==222)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==223)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==224)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==225)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==226)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==227)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==228)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==229)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==230)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==231)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==232)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==233)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==234)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==235)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==236)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==237)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==238)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==239)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==240)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==241)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==242)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==243)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==244)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==245)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==246)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==247)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==248)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==249)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==250)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==251)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==252)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==253)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==254)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==255)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==256)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==257)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==258)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==259)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==260)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==261)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==262)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==263)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==264)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==265)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==266)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==267)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==268)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==269)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==270)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==271)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==272)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==273)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==274)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==275)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==276)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==277)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==278)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==279)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==280)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==281)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==282)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==283)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==284)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==285)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==286)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==287)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==288)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==289)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==290)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==291)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==292)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==293)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==294)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==295)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==296)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==297)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==298)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==299)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==300)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==301)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==302)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==303)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==304)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==305)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==306)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==307)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==308)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==309)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==310)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==311)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==312)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==313)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==314)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==315)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==316)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==317)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==318)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==319)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==320)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==321)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==322)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==323)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==324)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==325)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==326)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==327)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==328)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==329)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==330)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==331)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==332)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==333)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==334)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==335)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==336)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==337)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==338)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==339)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==340)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==341)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==342)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==343)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==344)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==345)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==346)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==347)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==348)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==349)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==350)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==351)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==352)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==353)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==354)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==355)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==356)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==357)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==358)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==359)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==360)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==361)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==362)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==363)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==364)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==365)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==366)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==367)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==368)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==369)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==370)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==371)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==372)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==373)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==374)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==375)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==376)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==377)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==378)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==379)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==380)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==381)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==382)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==383)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==384)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==385)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==386)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==387)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==388)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==389)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==390)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==391)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==392)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==393)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==394)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==395)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==396)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==397)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==398)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==399)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==400)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==401)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==402)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==403)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==404)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==405)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==406)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==407)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==408)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==409)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==410)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==411)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==412)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==413)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==414)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==415)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==416)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==417)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==418)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==419)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==420)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==421)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==422)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==423)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==424)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==425)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==426)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==427)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==428)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==429)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==430)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==431)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==432)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==433)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==434)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==435)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==436)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==437)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==438)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==439)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==440)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==441)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==442)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==443)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==444)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==445)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==446)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==447)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==448)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==449)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==450)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==451)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==452)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==453)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==454)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==455)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==456)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==457)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==458)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==459)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==460)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==461)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==462)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==463)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==464)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==465)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==466)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==467)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==468)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==469)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==470)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==471)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==472)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==473)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==474)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==475)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==476)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==477)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==478)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==479)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==480)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==481)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==482)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==483)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==484)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==485)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==486)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==487)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==488)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==489)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==490)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==491)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==492)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==493)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==494)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==495)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==496)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==497)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==498)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==499)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==500)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==501)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==502)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==503)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==504)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==505)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==506)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==507)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==508)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==509)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==510)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==511)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==512)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==513)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==514)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==515)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==516)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==517)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==518)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==519)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==520)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==521)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==522)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==523)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==524)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==525)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==526)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==527)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==528)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==529)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==530)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==531)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==532)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==533)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==534)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==535)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==536)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==537)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==538)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==539)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==540)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==541)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==542)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==543)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==544)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==545)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==546)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==547)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==548)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==549)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==550)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==551)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==552)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==553)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==554)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==555)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==556)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==557)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==558)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==559)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==560)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==561)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==562)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==563)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==564)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==565)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==566)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==567)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==568)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==569)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==570)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==571)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==572)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==573)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==574)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==575)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==576)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==577)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==578)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==579)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==580)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==581)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==582)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==583)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==584)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==585)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==586)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==587)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==588)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==589)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==590)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==591)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==592)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==593)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==594)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==595)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==596)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==597)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==598)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==599)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==600)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==601)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==602)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==603)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==604)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==605)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==606)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==607)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==608)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==609)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==610)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==611)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==612)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==613)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==614)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==615)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==616)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==617)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==618)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==619)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==620)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==621)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==622)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==623)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==624)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==625)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==626)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==627)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==628)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==629)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==630)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==631)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==632)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==633)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==634)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==635)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==636)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==637)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==638)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==639)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==640)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==641)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==642)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==643)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==644)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==645)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==646)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==647)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==648)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==649)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==650)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==651)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==652)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==653)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==654)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==655)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==656)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==657)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==658)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==659)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==660)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==661)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==662)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==663)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==664)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==665)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==666)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==667)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==668)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==669)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==670)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==671)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==672)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==673)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==674)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==675)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==676)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==677)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==678)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==679)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==680)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==681)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==682)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==683)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==684)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==685)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==686)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==687)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==688)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==689)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==690)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==691)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==692)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==693)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==694)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==695)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==696)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==697)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==698)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==699)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==700)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==701)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==702)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==703)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==704)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==705)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==706)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==707)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==708)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==709)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==710)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==711)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==712)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==713)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==714)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==715)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==716)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==717)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==718)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==719)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==720)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==721)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==722)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==723)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==724)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==725)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==726)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==727)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==728)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==729)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==730)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==731)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==732)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==733)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==734)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==735)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==736)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==737)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==738)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==739)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==740)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==741)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==742)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==743)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==744)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==745)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==746)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==747)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==748)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==749)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==750)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==751)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==752)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==753)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==754)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==755)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==756)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==757)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==758)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==759)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==760)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==761)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==762)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==763)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==764)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==765)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==766)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==767)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==768)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==769)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==770)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==771)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==772)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==773)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==774)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==775)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==776)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==777)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==778)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==779)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==780)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==781)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==782)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==783)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==784)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==785)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==786)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==787)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==788)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==789)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==790)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==791)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==792)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==793)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==794)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==795)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==796)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==797)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==798)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==799)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==800)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==801)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==802)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==803)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==804)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==805)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==806)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==807)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==808)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==809)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==810)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==811)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==812)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==813)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==814)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==815)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==816)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==817)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==818)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==819)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==820)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==821)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==822)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==823)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==824)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==825)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==826)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==827)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==828)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==829)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==830)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==831)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==832)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==833)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==834)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==835)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==836)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==837)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==838)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==839)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==840)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==841)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==842)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==843)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==844)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==845)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==846)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==847)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==848)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==849)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==850)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==851)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==852)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==853)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==854)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==855)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==856)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==857)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==858)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==859)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==860)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==861)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==862)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==863)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==864)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==865)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==866)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==867)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==868)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==869)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==870)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==871)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==872)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==873)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==874)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==875)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==876)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==877)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==878)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==879)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==880)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==881)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==882)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==883)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==884)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==885)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==886)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==887)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==888)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==889)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==890)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==891)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==892)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==893)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==894)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==895)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==896)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==897)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==898)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==899)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==900)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==901)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==902)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==903)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==904)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==905)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==906)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==907)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==908)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==909)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==910)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==911)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==912)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==913)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==914)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==915)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==916)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==917)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==918)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==919)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==920)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==921)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==922)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==923)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==924)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==925)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==926)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==927)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==928)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==929)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==930)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==931)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==932)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==933)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==934)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==935)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==936)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==937)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==938)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==939)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==940)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==941)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==942)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==943)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==944)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==945)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==946)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==947)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==948)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==949)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==950)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==951)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==952)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==953)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==954)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==955)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==956)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==957)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==958)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==959)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==960)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==961)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==962)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==963)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==964)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==965)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==966)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==967)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==968)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==969)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==970)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==971)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==972)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==973)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==974)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==975)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==976)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==977)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==978)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==979)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==980)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==981)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==982)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==983)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==984)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==985)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==986)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==987)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==988)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==989)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==990)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==991)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==992)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==993)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==994)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==995)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==996)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==997)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==998)
+	{
+	    cout<<"Even Number";
+	}
+	else if(aadesh==999)
+	{
+	    cout<<"Odd Number";
+	}
+	else if(aadesh==1000)
+	{
+	    cout<<"Even Number";
+	}
+    else
+    {
+        cout<<"Invalid number";
+    }
+    return 0;
+}

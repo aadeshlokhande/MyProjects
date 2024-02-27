@@ -1,0 +1,10 @@
+Summary
+The Excel SECOND function returns the second component of a time as a number between 0-59. For example, with a time of 9:10:15 AM, second will return 15. You can use the SECOND function to extract the second into a cell, or feed the result into another formula, like the TIME function.
+Purpose 
+Get the Second as a number (0-59) from a Time
+Return value 
+A number between 0 and 59
+Arguments 
+serial_number - A valid time in a format Excel recognizes.
+Syntax 
+=SECOND(serial_number)

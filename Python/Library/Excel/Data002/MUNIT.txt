@@ -1,0 +1,10 @@
+Summary
+The Excel MUNIT function returns a unit matrix for a given dimension, n, with a size of n x n. This resulting matrix contains ones on the main diagonal and zeros in every other position.
+Purpose 
+Return unit matrix for a given dimension
+Return value 
+Unix matrix of size n x n
+Arguments 
+dimension - An integer for the size of the unit matrix.
+Syntax 
+=MUNIT(dimension)

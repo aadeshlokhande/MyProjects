@@ -1,0 +1,262 @@
+Excel COUPDAYSNC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUPDAYSNC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+COUPDAYSNC Function
+Related functions 
+COUPNUM
+COUPDAYS
+COUPDAYBS
+COUPDAYSNC
+COUPNCD
+COUPPCD
+Summary
+The Excel COUPDAYSNC function returns the number of days from the settlement date to the next coupon date.
+Purpose 
+Get days from settlement date to next coupon date
+Return value 
+Days to next coupon date
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.frequency - Number of coupon payments per year (annual = 1, semi-annual = 2, quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=COUPDAYSNC(settlement, maturity, frequency, [basis])
+Usage notes 
+Historically, bonds were printed on paper with detachable coupons. The coupons were presented to the bond issuer by the bondholder to collect periodic interest payments.  The Excel COUPDAYSNC function returns the number of days from the settlement date to the next coupon date.
+The settlement date is the date the investor takes possession of a security. The maturity date is the date when the investment ends and the principle plus accrued interest is returned to the investor.  The frequency is the number of interest payments per year. Basis specifies the method used to count days (see below). In the example shown, the formula in F6 is:
+=COUPDAYSNC(C6,C7,C10,C11)
+COUPDAYSNC returns an integer, so use a number format and not a date format to display properly.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly, you can use the DATE function. Below is the formula in F6 reworked with hardcoded values and the DATE function:
+=COUPDAYSNC(DATE(2019,2,15),DATE(2024,1,1),2,0)
+With these inputs, COUPDAYSNC returns the same result as above.
+Basis
+The basis argument controls how days are counted. The COUPDAYSNC function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All arguments are truncated to integers, so for example, time is ignored.
+If settlement or maturity dates are not valid, COUPDAYSNC returns #VALUE!
+If basis is out-of-range , COUPDAYSNC returns #NUM!
+If maturity date is not later than settlement date, COUPDAYSNC returns #NUM!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions COUPNUM FunctionCOUPDAYS FunctionCOUPDAYBS FunctionCOUPDAYSNC FunctionCOUPNCD FunctionCOUPPCD Function 
+ Links Microsoft COUPDAYSNC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel COUPDAYSNC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+COUPDAYSNC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+COUPDAYSNC Function
+Related functions 
+COUPNUM
+COUPDAYS
+COUPDAYBS
+COUPDAYSNC
+COUPNCD
+COUPPCD
+Summary
+The Excel COUPDAYSNC function returns the number of days from the settlement date to the next coupon date.
+Purpose 
+Get days from settlement date to next coupon date
+Return value 
+Days to next coupon date
+Arguments 
+settlement - Settlement date of the security.maturity - Maturity date of the security.frequency - Number of coupon payments per year (annual = 1, semi-annual = 2, quarterly = 4).basis - [optional] Day count basis (see below, default =0).
+Syntax 
+=COUPDAYSNC(settlement, maturity, frequency, [basis])
+Usage notes 
+Historically, bonds were printed on paper with detachable coupons. The coupons were presented to the bond issuer by the bondholder to collect periodic interest payments.  The Excel COUPDAYSNC function returns the number of days from the settlement date to the next coupon date.
+The settlement date is the date the investor takes possession of a security. The maturity date is the date when the investment ends and the principle plus accrued interest is returned to the investor.  The frequency is the number of interest payments per year. Basis specifies the method used to count days (see below). In the example shown, the formula in F6 is:
+=COUPDAYSNC(C6,C7,C10,C11)
+COUPDAYSNC returns an integer, so use a number format and not a date format to display properly.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly, you can use the DATE function. Below is the formula in F6 reworked with hardcoded values and the DATE function:
+=COUPDAYSNC(DATE(2019,2,15),DATE(2024,1,1),2,0)
+With these inputs, COUPDAYSNC returns the same result as above.
+Basis
+The basis argument controls how days are counted. The COUPDAYSNC function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All arguments are truncated to integers, so for example, time is ignored.
+If settlement or maturity dates are not valid, COUPDAYSNC returns #VALUE!
+If basis is out-of-range , COUPDAYSNC returns #NUM!
+If maturity date is not later than settlement date, COUPDAYSNC returns #NUM!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions COUPNUM FunctionCOUPDAYS FunctionCOUPDAYBS FunctionCOUPDAYSNC FunctionCOUPNCD FunctionCOUPPCD Function 
+ Links Microsoft COUPDAYSNC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

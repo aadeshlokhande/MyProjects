@@ -1,0 +1,10 @@
+Summary
+The Excel RANDARRAY function generates an array of random numbers between two values. The size or the array is is specified by rows and columns arguments. The generated values can be either decimals or whole numbers.
+Purpose 
+Get array of random numbers
+Return value 
+Array of random values
+Arguments 
+rows - [optional] Row count. Default = 1.columns - [optional] Column count. Default = 1.min - [optional] Minimum value. Default = 0.max - [optional] Maximum value. Default = 1.integer - [optional] Whole numbers. Boolean, TRUE or FALSE. Default = FALSE.
+Syntax 
+=RANDARRAY([rows], [columns], [min], [max], [integer])

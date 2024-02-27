@@ -1,0 +1,252 @@
+Excel DAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DAY Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DAY Function
+Related functions 
+YEAR
+MONTH
+DAY
+DATE
+Summary
+The Excel DAY function returns the day of the month as a number between 1 to 31 from a given date. You can use the DAY function to extract a day number from a date into a cell. You can also use the DAY function to extract and feed a day value into another function, like the DATE function.
+Purpose 
+Get the day as a number (1-31) from a date
+Return value 
+A number (1-31) representing the day component in a date.
+Arguments 
+date - A valid Excel date.
+Syntax 
+=DAY(date)
+Usage notes 
+The DAY function returns the day value in a given date as a number between 1 to 31 from a given date. For example, with the date January 15, 2019 in cell A1:
+=DAY(A1) // returns 15
+You can use the DAY function to extract a day number from a date into a cell. You can also use the DAY function to extract and feed a day value into another function, like the DATE function. For example, to change the year of a date in cell A1 to 2020, but leave the month and day as-is, you can use a formula like this:
+=DATE(2020,MONTH(A1),DAY(A1))
+See below for more examples of formulas that use the DAY function.
+Note: in Excel's date system, dates are serial numbers. January 1, 1900 is number 1 and later dates are larger numbers. To display date values in a human-readable date format, apply a number format of your choice.
+Notes
+The date argument must be a valid Excel date. 
+The DAY function returns #VALUE! if date is not valid.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get first day of month 
+Add days to date 
+Days in month 
+Add years to date 
+Series of dates by year 
+Get day from date 
+Series of dates by month 
+Happy birthday message 
+Sequence of years 
+Get nth day of week in month 
+Videos
+  
+How to create date and time series with formulas 
+How to work with dates 
+ Functions YEAR FunctionMONTH FunctionDAY FunctionDATE Function 
+ Links Microsoft DAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DAY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DAY Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DAY Function
+Related functions 
+YEAR
+MONTH
+DAY
+DATE
+Summary
+The Excel DAY function returns the day of the month as a number between 1 to 31 from a given date. You can use the DAY function to extract a day number from a date into a cell. You can also use the DAY function to extract and feed a day value into another function, like the DATE function.
+Purpose 
+Get the day as a number (1-31) from a date
+Return value 
+A number (1-31) representing the day component in a date.
+Arguments 
+date - A valid Excel date.
+Syntax 
+=DAY(date)
+Usage notes 
+The DAY function returns the day value in a given date as a number between 1 to 31 from a given date. For example, with the date January 15, 2019 in cell A1:
+=DAY(A1) // returns 15
+You can use the DAY function to extract a day number from a date into a cell. You can also use the DAY function to extract and feed a day value into another function, like the DATE function. For example, to change the year of a date in cell A1 to 2020, but leave the month and day as-is, you can use a formula like this:
+=DATE(2020,MONTH(A1),DAY(A1))
+See below for more examples of formulas that use the DAY function.
+Note: in Excel's date system, dates are serial numbers. January 1, 1900 is number 1 and later dates are larger numbers. To display date values in a human-readable date format, apply a number format of your choice.
+Notes
+The date argument must be a valid Excel date. 
+The DAY function returns #VALUE! if date is not valid.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get first day of month 
+Add days to date 
+Days in month 
+Add years to date 
+Series of dates by year 
+Get day from date 
+Series of dates by month 
+Happy birthday message 
+Sequence of years 
+Get nth day of week in month 
+Videos
+  
+How to create date and time series with formulas 
+How to work with dates 
+ Functions YEAR FunctionMONTH FunctionDAY FunctionDATE Function 
+ Links Microsoft DAY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,10 @@
+Summary
+The Excel CUMPRINC function is a financial function that returns the cumulative principal paid on a loan between a start period and an end period. You can use CUMPRINC to calculate and verify the total principal paid on a loan, or the principal paid between any two payment periods.
+Purpose 
+Get cumulative principal paid on a loan
+Return value 
+The principal amount
+Arguments 
+rate - The interest rate per period.nper - The total number of payments for the loan.pv - The present value, or total value of all payments now.start_period - First payment in calculation.end_period - Last payment in calculation.type - When payments are due. 0 = end of period. 1 = beginning of period.
+Syntax 
+=CUMPRINC(rate, nper, pv, start_period, end_period, type)

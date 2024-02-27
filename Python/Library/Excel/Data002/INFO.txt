@@ -1,0 +1,10 @@
+Summary
+The Excel INFO function returns information about the current environment, including platform, Excel version, number of worksheets in a workbook, and so on. To use the INFO function, supply the type of information you want as text. There are seven types of information available, summarized in the table below.
+Purpose 
+Get information about current environment
+Return value 
+The information requested
+Arguments 
+type_text - The information type to return as text.
+Syntax 
+=INFO(type_text)

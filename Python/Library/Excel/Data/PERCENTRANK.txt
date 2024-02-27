@@ -1,0 +1,618 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel PERCENTRANK function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+PERCENTRANK Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+PERCENTRANK Function
+Related functions 
+
+SMALL
+LARGE
+RANK
+PERCENTILE
+QUARTILE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel PERCENTRANK function returns the rank of a value in a data set as a percentage of the data set. You can use PERCENTRANK to find the relative standing of a value within a data set. Percentile rank is commonly used as a way to interpret standing in standardized tests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get percentile rank, inclusive
+
+
+
+Return value 
+
+Calculated rank as a decimal value
+
+
+
+Arguments 
+
+array - Array of data values.x - Value to rank.significance - [optional] Number of significant digits in result. Defaults to 3.
+
+
+
+Syntax 
+
+=PERCENTRANK(array, x, [significance])
+
+
+
+Usage notes 
+
+The Excel PERCENTRANK shows the relative standing of a value within a data set as a percentage.
+For example, a test score greater than 80% of all test scores is said to be at the 80th percentile. In this case, PERCENTRANK will assign a rank of .80 to the score.
+In the example shown, the formula in C5 is:
+
+=PERCENTRANK(data,B5)
+
+where "data" is the named range C5:C12.
+Note: Microsoft classifies PERCENTRANK as a "compatibility function", now replaced by the PERCENTRANK.INC function.
+Inclusive vs. Exclusive
+Starting with Excel 2010, the PERCENTRANK function has been replaced by two functions: PERCENTRANK.INC and PERCENTRANK.EXC. The INC version represents "inclusive" behavior, and the EXC version represents "exclusive" behavior. Both formulas use the same arguments.
+
+Use the PERCENTRANK.EXC function to determine the percentage rank exclusive of the first and last values in the array.
+Use the PERCENTRANK.INC or PERCENTRANK to find the percentage rank inclusive of the first and last values in the array. 
+
+Notes
+
+If x does not exist in the array, PERCENTRANK interpolates to find the percentage rank.
+When significance is omitted PERCENTRANK returns three significant digits (0.xxx)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions SMALL FunctionLARGE FunctionRANK FunctionPERCENTILE FunctionQUARTILE Function 
+ Links Microsoft PERCENTRANK function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel PERCENTRANK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+PERCENTRANK Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+PERCENTRANK Function
+Related functions 
+SMALL
+LARGE
+RANK
+PERCENTILE
+QUARTILE
+Summary
+The Excel PERCENTRANK function returns the rank of a value in a data set as a percentage of the data set. You can use PERCENTRANK to find the relative standing of a value within a data set. Percentile rank is commonly used as a way to interpret standing in standardized tests.
+Purpose 
+Get percentile rank, inclusive
+Return value 
+Calculated rank as a decimal value
+Arguments 
+array - Array of data values.x - Value to rank.significance - [optional] Number of significant digits in result. Defaults to 3.
+Syntax 
+=PERCENTRANK(array, x, [significance])
+Usage notes 
+The Excel PERCENTRANK shows the relative standing of a value within a data set as a percentage.
+For example, a test score greater than 80% of all test scores is said to be at the 80th percentile. In this case, PERCENTRANK will assign a rank of .80 to the score.
+In the example shown, the formula in C5 is:
+=PERCENTRANK(data,B5)
+where "data" is the named range C5:C12.
+Note: Microsoft classifies PERCENTRANK as a "compatibility function", now replaced by the PERCENTRANK.INC function.
+Inclusive vs. Exclusive
+Starting with Excel 2010, the PERCENTRANK function has been replaced by two functions: PERCENTRANK.INC and PERCENTRANK.EXC. The INC version represents "inclusive" behavior, and the EXC version represents "exclusive" behavior. Both formulas use the same arguments.
+Use the PERCENTRANK.EXC function to determine the percentage rank exclusive of the first and last values in the array.
+Use the PERCENTRANK.INC or PERCENTRANK to find the percentage rank inclusive of the first and last values in the array. 
+Notes
+If x does not exist in the array, PERCENTRANK interpolates to find the percentage rank.
+When significance is omitted PERCENTRANK returns three significant digits (0.xxx)
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions SMALL FunctionLARGE FunctionRANK FunctionPERCENTILE FunctionQUARTILE Function 
+ Links Microsoft PERCENTRANK function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

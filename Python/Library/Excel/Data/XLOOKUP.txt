@@ -1,0 +1,838 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel XLOOKUP function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+XLOOKUP Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2021
+
+
+
+
+Dynamic array
+
+
+XLOOKUP Function
+Related functions 
+
+XMATCH
+FILTER
+VLOOKUP
+INDEX
+MATCH
+LOOKUP
+HLOOKUP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel XLOOKUP function is a modern and flexible replacement for older functions like VLOOKUP, HLOOKUP, and LOOKUP.  XLOOKUP supports approximate and exact matching, wildcards (* ?) for partial matches, and lookups in vertical or horizontal ranges.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Lookup values in range or array
+
+
+
+Return value 
+
+Matching value(s) from return array
+
+
+
+Arguments 
+
+lookup - The lookup value.lookup_array - The array or range to search.return_array - The array or range to return.not_found - [optional] Value to return if no match found.match_mode - [optional] 0 = exact match (default), -1 = exact match or next smallest, 1 = exact match or next larger, 2 = wildcard match.search_mode - [optional] 1 = search from first (default), -1 = search from last, 2 = binary search ascending, -2 = binary search descending.
+
+
+
+Syntax 
+
+=XLOOKUP(lookup, lookup_array, return_array, [not_found], [match_mode], [search_mode])
+
+
+
+Usage notes 
+
+XLOOKUP is a modern replacement for the VLOOKUP function. It is a flexible and versatile function that can be used in a wide variety of situations.
+XLOOKUP can find values in vertical or horizontal ranges, can perform approximate and exact matches, and supports wildcards (* ?) for partial matches. In addition, XLOOKUP can search data starting from the first value or the last value (see match type and search mode details below).  Compared to older functions like VLOOKUP, HLOOKUP, and LOOKUP, XLOOKUP offers several key advantages.
+Not found message
+When XLOOKUP can't find a match, it returns the #N/A error, like other match functions in Excel. Unlike the other match functions, XLOOKUP supports an optional argument called not_found that can be used to override the #N/A error when it would otherwise appear. Typical values for not_found might be "Not found", "No match", "No result", etc. When providing a value for not_found, enclose the text in double quotes (""). 
+Note: Be careful if you supply an empty string ("") for not_found. If no match is found, XLOOKUP will display nothing instead of #N/A. If you want to see the #N/A error when a match isn't found, omit the argument entirely. 
+Match type
+By default, XLOOKUP will perform an exact match. Match behavior is controlled by an optional argument called match_type, which has the following options:
+
+
+
+Match type
+Behavior
+
+
+
+
+0 (default)
+Exact match. Will return #N/A if no match.
+
+
+-1
+Exact match or next smaller item.
+
+
+1
+Exact match or next larger item.
+
+
+2
+Wildcard match (*, ?, ~)
+
+
+
+Search mode
+By default, XLOOKUP will start matching from the first data value. Search behavior is controlled by an optional argument called search_mode, which provides the following options:
+
+
+
+Search mode
+Behavior
+
+
+
+
+1 (default)
+Search from first value
+
+
+-1
+Search from last value (reverse)
+
+
+2
+Binary search values sorted in ascending order
+
+
+-2
+Binary search values sorted in descending order
+
+
+
+Binary searches are very fast, but data must be sorted as required. If data is not sorted properly, a binary search can return invalid results that look perfectly normal.
+Example #1 - basic exact match
+By default, XLOOKUP will perform an exact match. In the example below, XLOOKUP is used to retrieve Sales based on an exact match on Movie. The formula in H5 is:
+
+=XLOOKUP(H4,B5:B9,E5:E9)
+
+
+More detailed explanation here.
+Example #2 - basic approximate match
+To enable an approximate match, provide a value for the match_mode argument. In the example below, XLOOKUP is used to calculate a discount based on quantity, which requires an approximate match. The formula in F5 supplies -1 for match_mode to enable approximate match with "exact match or next smallest" behavior:
+
+=XLOOKUP(E5,B5:B9,C5:C9,,-1)
+
+
+More detailed explanation here.
+Example #3 - multiple values
+XLOOKUP can return more than one value at the same time for the same match. The example below shows how XLOOKUP can be configured to return three matchging values with a single formula. The formula in C5 is:
+
+=XLOOKUP(B5,B8:B15,C8:E15)
+
+
+Notice the return array (C8:E15) includes 3 columns: First, Last, Department. All three values are returned and spill into the range C5:E5.
+Example #4 - two-way lookup
+XLOOKUP can be used to perform a two-way lookup, by nesting one XLOOKUP inside another. In the example below, the "inner" XLOOKUP retrieves an entire row (all values for Glass), which is handed off to the "outer" XLOOKUP as the return array. The outer XLOOKUP finds the appropriate group (B) and returns the corresponding value (17.25) as the final result.
+
+=XLOOKUP(I6,C4:F4,XLOOKUP(I5,B5:B9,C5:F9))
+
+
+More details here.
+Example #5 - not found message
+Like other lookup functions, if XLOOKUP does not find a value, it returns the #N/A error. To display a custom message instead of #N/A, provide a value for the optional "not_found" argument, enclosed in double quotes (""). For example, to display "Not found" when no matching movie is found, based on the worksheet below, use:
+
+=XLOOKUP(H4,B5:B9,E5:E9,"Not found")
+
+
+You can customize this message as you like: "No match", "Movie not found", etc.
+Example #6 - complex criteria
+With the ability to handle arrays natively, XLOOKUP can be used with complex criteria. In the example below, XLOOKUP is matching the first record where: account begins with "x" and region is "east" and month is not April:
+
+=XLOOKUP(1,(LEFT(B5:B16)="x")*(C5:C16="east")*NOT(MONTH(D5:D16)=4),B5:E16)
+
+
+Details: (1) simple example, (2) more complex example.
+XLOOKUP benefits
+XLOOKUP offers several important advantages, especially compared to VLOOKUP:
+
+XLOOKUP can lookup data to the right or left of lookup values
+XLOOKUP can return multiple results (example #3 above)
+XLOOKUP defaults to an exact match (VLOOKUP defaults to approximate)
+XLOOKUP can work with vertical and horizontal data
+XLOOKUP can perform a reverse search (last to first)
+XLOOKUP can return entire rows or columns, not just one value
+XLOOKUP can work with arrays natively to apply complex criteria
+
+Notes
+
+XLOOKUP can work with both vertical and horizontal arrays.
+XLOOKUP will return #N/A if the lookup value is not found.
+The lookup_array must have a dimension compatible with the return_array argument, otherwise XLOOKUP will return #VALUE!
+If XLOOKUP is used between workbooks, both workbooks must be open, otherwise XLOOKUP will return #REF!.
+Like the INDEX function, XLOOKUP returns a reference as a result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+XLOOKUP case-sensitive  
+
+SUMIFS vs other lookup formulas 
+
+Lookup lowest Monday tide 
+
+XLOOKUP latest by date 
+
+XLOOKUP horizontal lookup 
+
+Look up entire column 
+
+Lookup first negative value 
+
+Name of nth largest value 
+
+XLOOKUP return blank if blank 
+
+XLOOKUP date of max value 
+
+
+
+Videos
+  
+Basic XLOOKUP example 
+
+Basic XLOOKUP approximate match 
+
+XLOOKUP with multiple lookup values 
+
+XLOOKUP with boolean logic 
+
+
+ Functions XMATCH FunctionFILTER FunctionVLOOKUP FunctionINDEX FunctionMATCH FunctionLOOKUP FunctionHLOOKUP Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft XLOOKUP function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel XLOOKUP function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+XLOOKUP Function 
+Previous 
+Next 
+ 
+Excel 2021
+Dynamic array
+XLOOKUP Function
+Related functions 
+XMATCH
+FILTER
+VLOOKUP
+INDEX
+MATCH
+LOOKUP
+HLOOKUP
+Summary
+The Excel XLOOKUP function is a modern and flexible replacement for older functions like VLOOKUP, HLOOKUP, and LOOKUP.  XLOOKUP supports approximate and exact matching, wildcards (* ?) for partial matches, and lookups in vertical or horizontal ranges.
+Purpose 
+Lookup values in range or array
+Return value 
+Matching value(s) from return array
+Arguments 
+lookup - The lookup value.lookup_array - The array or range to search.return_array - The array or range to return.not_found - [optional] Value to return if no match found.match_mode - [optional] 0 = exact match (default), -1 = exact match or next smallest, 1 = exact match or next larger, 2 = wildcard match.search_mode - [optional] 1 = search from first (default), -1 = search from last, 2 = binary search ascending, -2 = binary search descending.
+Syntax 
+=XLOOKUP(lookup, lookup_array, return_array, [not_found], [match_mode], [search_mode])
+Usage notes 
+XLOOKUP is a modern replacement for the VLOOKUP function. It is a flexible and versatile function that can be used in a wide variety of situations.
+XLOOKUP can find values in vertical or horizontal ranges, can perform approximate and exact matches, and supports wildcards (* ?) for partial matches. In addition, XLOOKUP can search data starting from the first value or the last value (see match type and search mode details below).  Compared to older functions like VLOOKUP, HLOOKUP, and LOOKUP, XLOOKUP offers several key advantages.
+Not found message
+When XLOOKUP can't find a match, it returns the #N/A error, like other match functions in Excel. Unlike the other match functions, XLOOKUP supports an optional argument called not_found that can be used to override the #N/A error when it would otherwise appear. Typical values for not_found might be "Not found", "No match", "No result", etc. When providing a value for not_found, enclose the text in double quotes (""). 
+Note: Be careful if you supply an empty string ("") for not_found. If no match is found, XLOOKUP will display nothing instead of #N/A. If you want to see the #N/A error when a match isn't found, omit the argument entirely. 
+Match type
+By default, XLOOKUP will perform an exact match. Match behavior is controlled by an optional argument called match_type, which has the following options:
+Match type
+Behavior
+0 (default)
+Exact match. Will return #N/A if no match.
+-1
+Exact match or next smaller item.
+1
+Exact match or next larger item.
+2
+Wildcard match (*, ?, ~)
+Search mode
+By default, XLOOKUP will start matching from the first data value. Search behavior is controlled by an optional argument called search_mode, which provides the following options:
+Search mode
+Behavior
+1 (default)
+Search from first value
+-1
+Search from last value (reverse)
+2
+Binary search values sorted in ascending order
+-2
+Binary search values sorted in descending order
+Binary searches are very fast, but data must be sorted as required. If data is not sorted properly, a binary search can return invalid results that look perfectly normal.
+Example #1 - basic exact match
+By default, XLOOKUP will perform an exact match. In the example below, XLOOKUP is used to retrieve Sales based on an exact match on Movie. The formula in H5 is:
+=XLOOKUP(H4,B5:B9,E5:E9)
+More detailed explanation here.
+Example #2 - basic approximate match
+To enable an approximate match, provide a value for the match_mode argument. In the example below, XLOOKUP is used to calculate a discount based on quantity, which requires an approximate match. The formula in F5 supplies -1 for match_mode to enable approximate match with "exact match or next smallest" behavior:
+=XLOOKUP(E5,B5:B9,C5:C9,,-1)
+More detailed explanation here.
+Example #3 - multiple values
+XLOOKUP can return more than one value at the same time for the same match. The example below shows how XLOOKUP can be configured to return three matchging values with a single formula. The formula in C5 is:
+=XLOOKUP(B5,B8:B15,C8:E15)
+Notice the return array (C8:E15) includes 3 columns: First, Last, Department. All three values are returned and spill into the range C5:E5.
+Example #4 - two-way lookup
+XLOOKUP can be used to perform a two-way lookup, by nesting one XLOOKUP inside another. In the example below, the "inner" XLOOKUP retrieves an entire row (all values for Glass), which is handed off to the "outer" XLOOKUP as the return array. The outer XLOOKUP finds the appropriate group (B) and returns the corresponding value (17.25) as the final result.
+=XLOOKUP(I6,C4:F4,XLOOKUP(I5,B5:B9,C5:F9))
+More details here.
+Example #5 - not found message
+Like other lookup functions, if XLOOKUP does not find a value, it returns the #N/A error. To display a custom message instead of #N/A, provide a value for the optional "not_found" argument, enclosed in double quotes (""). For example, to display "Not found" when no matching movie is found, based on the worksheet below, use:
+=XLOOKUP(H4,B5:B9,E5:E9,"Not found")
+You can customize this message as you like: "No match", "Movie not found", etc.
+Example #6 - complex criteria
+With the ability to handle arrays natively, XLOOKUP can be used with complex criteria. In the example below, XLOOKUP is matching the first record where: account begins with "x" and region is "east" and month is not April:
+=XLOOKUP(1,(LEFT(B5:B16)="x")*(C5:C16="east")*NOT(MONTH(D5:D16)=4),B5:E16)
+Details: (1) simple example, (2) more complex example.
+XLOOKUP benefits
+XLOOKUP offers several important advantages, especially compared to VLOOKUP:
+XLOOKUP can lookup data to the right or left of lookup values
+XLOOKUP can return multiple results (example #3 above)
+XLOOKUP defaults to an exact match (VLOOKUP defaults to approximate)
+XLOOKUP can work with vertical and horizontal data
+XLOOKUP can perform a reverse search (last to first)
+XLOOKUP can return entire rows or columns, not just one value
+XLOOKUP can work with arrays natively to apply complex criteria
+Notes
+XLOOKUP can work with both vertical and horizontal arrays.
+XLOOKUP will return #N/A if the lookup value is not found.
+The lookup_array must have a dimension compatible with the return_array argument, otherwise XLOOKUP will return #VALUE!
+If XLOOKUP is used between workbooks, both workbooks must be open, otherwise XLOOKUP will return #REF!.
+Like the INDEX function, XLOOKUP returns a reference as a result.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+XLOOKUP case-sensitive  
+SUMIFS vs other lookup formulas 
+Lookup lowest Monday tide 
+XLOOKUP latest by date 
+XLOOKUP horizontal lookup 
+Look up entire column 
+Lookup first negative value 
+Name of nth largest value 
+XLOOKUP return blank if blank 
+XLOOKUP date of max value 
+Videos
+  
+Basic XLOOKUP example 
+Basic XLOOKUP approximate match 
+XLOOKUP with multiple lookup values 
+XLOOKUP with boolean logic 
+ Functions XMATCH FunctionFILTER FunctionVLOOKUP FunctionINDEX FunctionMATCH FunctionLOOKUP FunctionHLOOKUP Function 
+ Articles Dynamic array formulas in Excel 
+ Links Microsoft XLOOKUP function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

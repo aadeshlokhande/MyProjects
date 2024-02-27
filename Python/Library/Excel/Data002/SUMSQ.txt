@@ -1,0 +1,10 @@
+Summary
+The Excel SUMSQ function returns the sum of the squares of the values provided. Values can be supplied as constants, cell references, or ranges.
+Purpose 
+Get sum of squares of supplied values
+Return value 
+Calculated sum of squares
+Arguments 
+number1 - The first argument containing numeric values.number2 - [optional] The first argument containing numeric values.
+Syntax 
+=SUMSQ(number1, [number2], ...)

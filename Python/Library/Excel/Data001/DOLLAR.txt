@@ -1,0 +1,230 @@
+Excel DOLLAR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DOLLAR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+DOLLAR Function
+Related functions 
+TEXT
+Summary
+The Excel DOLLAR function converts a number to text using the Currency number format. The TEXT function can do the same thing, and is much more versatile.
+Purpose 
+Convert a number to text in currency format
+Return value 
+A number as text in currency format.
+Arguments 
+number - The number to convert.decimals - The number of digits to the right of the decimal point. Default is 2.
+Syntax 
+=DOLLAR(number, decimals)
+Usage notes 
+The DOLLAR function converts a number to text, formatted as currency. The name of the function and the currency symbol used is based on language settings of the computer.
+It's important to understand that DOLLAR returns text and not a number, so the result cannot be used in a numeric calculation. If the goal is simply to format a number as Currency, applying a standard number format is a better option. Video: How to use number formatting.
+The DOLLAR function takes two arguments, number and decimals. Number is the number to format, decimals controls how the number is rounded and specifies the number of digits to the right of the decimal point. Decimals is optional and defaults to 2. For example:
+=DOLLAR(169.49) // returns "$169.49"
+=DOLLAR(169.49,2) // returns "$169.49"
+=DOLLAR(169.49,0) // returns "$169"
+One use of the DOLLAR function is to concatenate a formatted number to a text string, since number formatting is lost during concatenation. For example, with the number $99.00 in cell A1, formatted as Currency, the following formula does not show Currency:
+="The price is "&A1 // returns "The price is 99"
+With the DOLLAR function, formatting can be maintained:
+="The price is "&DOLLAR(A1) // returns "The price is $99.00"
+DOLLAR vs. TEXT
+The DOLLAR function is a specialized function to apply Currency formatting only. The TEXT function is a generalized function that does the same thing. TEXT can convert numeric values to text in any number format, including currency, date, time, percentage, and so on.
+Notes
+The DOLLAR function converts a number to text using currency number format: $#,##0.00_);($#,##0.00).
+The default for decimals is 2. If decimals is negative, number will be rounded to the left of the decimal point.
+The name of the function and the currency symbol used is based on language settings of the computer.
+The TEXT function is a more flexible way to achieve the same result.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions TEXT Function 
+ Links Microsoft DOLLAR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DOLLAR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DOLLAR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+DOLLAR Function
+Related functions 
+TEXT
+Summary
+The Excel DOLLAR function converts a number to text using the Currency number format. The TEXT function can do the same thing, and is much more versatile.
+Purpose 
+Convert a number to text in currency format
+Return value 
+A number as text in currency format.
+Arguments 
+number - The number to convert.decimals - The number of digits to the right of the decimal point. Default is 2.
+Syntax 
+=DOLLAR(number, decimals)
+Usage notes 
+The DOLLAR function converts a number to text, formatted as currency. The name of the function and the currency symbol used is based on language settings of the computer.
+It's important to understand that DOLLAR returns text and not a number, so the result cannot be used in a numeric calculation. If the goal is simply to format a number as Currency, applying a standard number format is a better option. Video: How to use number formatting.
+The DOLLAR function takes two arguments, number and decimals. Number is the number to format, decimals controls how the number is rounded and specifies the number of digits to the right of the decimal point. Decimals is optional and defaults to 2. For example:
+=DOLLAR(169.49) // returns "$169.49"
+=DOLLAR(169.49,2) // returns "$169.49"
+=DOLLAR(169.49,0) // returns "$169"
+One use of the DOLLAR function is to concatenate a formatted number to a text string, since number formatting is lost during concatenation. For example, with the number $99.00 in cell A1, formatted as Currency, the following formula does not show Currency:
+="The price is "&A1 // returns "The price is 99"
+With the DOLLAR function, formatting can be maintained:
+="The price is "&DOLLAR(A1) // returns "The price is $99.00"
+DOLLAR vs. TEXT
+The DOLLAR function is a specialized function to apply Currency formatting only. The TEXT function is a generalized function that does the same thing. TEXT can convert numeric values to text in any number format, including currency, date, time, percentage, and so on.
+Notes
+The DOLLAR function converts a number to text using currency number format: $#,##0.00_);($#,##0.00).
+The default for decimals is 2. If decimals is negative, number will be rounded to the left of the decimal point.
+The name of the function and the currency symbol used is based on language settings of the computer.
+The TEXT function is a more flexible way to achieve the same result.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions TEXT Function 
+ Links Microsoft DOLLAR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

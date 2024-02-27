@@ -1,0 +1,724 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel FORECAST.ETS.SEASONALITY function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+FORECAST.ETS.SEASONALITY Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2016
+
+
+
+
+Statistical
+
+
+FORECAST.ETS.SEASONALITY Function
+Related functions 
+
+FORECAST
+FORECAST.LINEAR
+FORECAST.ETS
+FORECAST.ETS.CONFINT
+FORECAST.ETS.SEASONALITY
+FORECAST.ETS.STAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel FORECAST.ETS.SEASONALITY function returns the length in time of a seasonal pattern based on existing values and a timeline.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get length of the seasonal pattern
+
+
+
+Return value 
+
+Season length in timeline units
+
+
+
+Arguments 
+
+values - Existing or historical values (y values).timeline - Numeric timeline values (x values).data_completion - [optional] Missing data treatment (0 = treat as zero, 1 = average). Default is 1.aggregation - [optional] Aggregation behavior. Default is 1 (AVERAGE). See other options below.
+
+
+
+Syntax 
+
+=FORECAST.ETS.SEASONALITY(values, timeline, [data_completion], [aggregation])
+
+
+
+Usage notes 
+
+The FORECAST.ETS.SEASONALITY function returns the length in time of a seasonal pattern based on existing values and a timeline. FORECAST.ETS.SEASONALITY can be used to calculate the season length for numeric values like sales, inventory, expenses, etc. exhibit a seasonal pattern. If a pattern cannot be detected, FORECAST.ETS.SEASONALITY returns zero.
+Example
+In the example shown, the formula in cell H16 is:
+
+=FORECAST.ETS.SEASONALITY(C5:C16,B5:B16)
+
+where C5:C16 contains existing values, and B5:B16 contains a timeline. With these inputs, the FORECAST.ETS.SEASONALITY function returns 4. The result is 4 because the values in C5:C16 represent quarterly sales data, and the length of the season is 1 year, which is 4 quarters. 
+The chart to the right shows this data plotted in a scatter plot.
+Argument notes
+The values argument contains the dependent array or range of data, also called y values. These are existing historical values from which a season length will be calculated.
+The timeline argument is the independent array or range of values, also called x values. The timeline, must consist of numeric values with a constant step interval. For example, the timeline could be yearly, quarterly, monthly, daily, etc. The timeline can also be a simple list of numeric periods, as in the example shown.
+The data_completion argument is optional and specifies how FORECAST.ETS.SEASONALITY should handle missing data points. The options are 1 (default) and zero. By default, FORECAST.ETS.SEASONALITY will provide missing data points by averaging neighboring data points. If zero is provided for data_completion, FORECAST.ETS will treat missing data points as zero.
+The aggregation argument is optional, and controls how the function should aggregate data points when the timeline contains duplicate timestamps. The default is 1, which specifies AVERAGE. Other options are given in the table below.
+Note: It is better to perform aggregation before using FORECAST.ETS.SEASONALITY to make results as accurate as possible.
+
+
+
+Value
+Behavior
+
+
+
+
+1 (or omitted)
+AVERAGE
+
+
+2
+COUNT
+
+
+3
+COUNTA
+
+
+4
+MAX
+
+
+5
+MEDIAN
+
+
+6
+MIN
+
+
+7
+SUM
+
+
+
+Errors
+The FORECAST.ETS.SEASONALITY function will return errors as shown below.
+
+
+
+Error
+Cause
+
+
+
+
+#VALUE!
+
+
+seasonality  is not numeric
+data_completion  is not numeric
+aggregation  is not numeric
+
+
+
+
+#N/A
+
+
+values and timeline are not the same size
+
+
+
+
+#NUM
+
+
+Consistent step cannot be determined in timeline
+All timeline values are the same
+The value for data_completion is not 0 or 1
+The value for aggregation is not within 1-7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions FORECAST FunctionFORECAST.LINEAR FunctionFORECAST.ETS FunctionFORECAST.ETS.CONFINT FunctionFORECAST.ETS.SEASONALITY FunctionFORECAST.ETS.STAT Function 
+ Links Microsoft FORECAST.ETS.SEASONALITY function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel FORECAST.ETS.SEASONALITY function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+FORECAST.ETS.SEASONALITY Function 
+Previous 
+Next 
+ 
+Excel 2016
+Statistical
+FORECAST.ETS.SEASONALITY Function
+Related functions 
+FORECAST
+FORECAST.LINEAR
+FORECAST.ETS
+FORECAST.ETS.CONFINT
+FORECAST.ETS.SEASONALITY
+FORECAST.ETS.STAT
+Summary
+The Excel FORECAST.ETS.SEASONALITY function returns the length in time of a seasonal pattern based on existing values and a timeline.
+Purpose 
+Get length of the seasonal pattern
+Return value 
+Season length in timeline units
+Arguments 
+values - Existing or historical values (y values).timeline - Numeric timeline values (x values).data_completion - [optional] Missing data treatment (0 = treat as zero, 1 = average). Default is 1.aggregation - [optional] Aggregation behavior. Default is 1 (AVERAGE). See other options below.
+Syntax 
+=FORECAST.ETS.SEASONALITY(values, timeline, [data_completion], [aggregation])
+Usage notes 
+The FORECAST.ETS.SEASONALITY function returns the length in time of a seasonal pattern based on existing values and a timeline. FORECAST.ETS.SEASONALITY can be used to calculate the season length for numeric values like sales, inventory, expenses, etc. exhibit a seasonal pattern. If a pattern cannot be detected, FORECAST.ETS.SEASONALITY returns zero.
+Example
+In the example shown, the formula in cell H16 is:
+=FORECAST.ETS.SEASONALITY(C5:C16,B5:B16)
+where C5:C16 contains existing values, and B5:B16 contains a timeline. With these inputs, the FORECAST.ETS.SEASONALITY function returns 4. The result is 4 because the values in C5:C16 represent quarterly sales data, and the length of the season is 1 year, which is 4 quarters. 
+The chart to the right shows this data plotted in a scatter plot.
+Argument notes
+The values argument contains the dependent array or range of data, also called y values. These are existing historical values from which a season length will be calculated.
+The timeline argument is the independent array or range of values, also called x values. The timeline, must consist of numeric values with a constant step interval. For example, the timeline could be yearly, quarterly, monthly, daily, etc. The timeline can also be a simple list of numeric periods, as in the example shown.
+The data_completion argument is optional and specifies how FORECAST.ETS.SEASONALITY should handle missing data points. The options are 1 (default) and zero. By default, FORECAST.ETS.SEASONALITY will provide missing data points by averaging neighboring data points. If zero is provided for data_completion, FORECAST.ETS will treat missing data points as zero.
+The aggregation argument is optional, and controls how the function should aggregate data points when the timeline contains duplicate timestamps. The default is 1, which specifies AVERAGE. Other options are given in the table below.
+Note: It is better to perform aggregation before using FORECAST.ETS.SEASONALITY to make results as accurate as possible.
+Value
+Behavior
+1 (or omitted)
+AVERAGE
+2
+COUNT
+3
+COUNTA
+4
+MAX
+5
+MEDIAN
+6
+MIN
+7
+SUM
+Errors
+The FORECAST.ETS.SEASONALITY function will return errors as shown below.
+Error
+Cause
+#VALUE!
+seasonality  is not numeric
+data_completion  is not numeric
+aggregation  is not numeric
+#N/A
+values and timeline are not the same size
+#NUM
+Consistent step cannot be determined in timeline
+All timeline values are the same
+The value for data_completion is not 0 or 1
+The value for aggregation is not within 1-7
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions FORECAST FunctionFORECAST.LINEAR FunctionFORECAST.ETS FunctionFORECAST.ETS.CONFINT FunctionFORECAST.ETS.SEASONALITY FunctionFORECAST.ETS.STAT Function 
+ Links Microsoft FORECAST.ETS.SEASONALITY function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

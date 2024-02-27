@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel COS function returns the cosine of an angle given in radians. To supply an angle to COS in degrees, use the RADIANS function to convert to radians.', 'Purpose' : 'Get the cosine of an angle provided in radians.', 'Return value' : 'The cosine value', 'Arguments' : 'number - The angle in radians for which you want the cosine.', 'Syntax' : '=COS(number)' }

@@ -1,0 +1,630 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MINUTE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MINUTE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+MINUTE Function
+Related functions 
+
+HOUR
+MINUTE
+SECOND
+TIME
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MINUTE function extracts the minute component of a time as a number between 0-59. For example, with a time of 9:45 AM, minute will return 45. You can use the MINUTE function to extract the minute into a cell, or feed the result into another function like the TIME function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get minute as a number (0-59) from time
+
+
+
+Return value 
+
+Number between 0 and 59.
+
+
+
+Arguments 
+
+serial_number - A valid date or time.
+
+
+
+Syntax 
+
+=MINUTE(serial_number)
+
+
+
+Usage notes 
+
+The MINUTE function extracts the minute from a time as a number between 0-59. For example, given a time of "7:45", MINUTE will return 45. The MINUTE function takes just one argument, serial_number, which must be a valid Excel date or a valid Excel time.
+Times can be supplied to the MINUTE function as text (e.g. "7:45 PM") or as decimal numbers (e.g. 0.5, which equals 12:00 PM). To create a time value from scratch with separate hour, minute, and second inputs, use the TIME function.
+The MINUTE function will "reset" to 0 every 60 minutes (like a clock). To work with minute values larger than 60, use a formula to convert time to decimal minutes.
+Examples
+To use the MINUTE function, supply a time value:
+
+=MINUTE("9:45 AM") // returns 45
+=MINUTE("3:10 PM") // returns 10
+
+You can use the MINUTE function to extract the minute into a cell, or feed the result into another function like the TIME function. For example, with the time 5:45 PM in cell A1, you can create a new time that includes 45 minutes like this:
+
+=TIME(7,MINUTE(A1),0) // returns 7:45 PM
+
+Times can be supplied as text (e.g. "7:45 PM") or as decimal numbers (e.g. 0.5, which equals 12:00 PM). In general, it's best to use the TIME function to create time values, because it reduces errors.
+Note: Excel stores dates and times as serial numbers. For example, the date Jan 1, 2000 12:00 PM is equal to the serial number 32526.5 in Excel. To check that Excel is correctly recognizing a date or time, you can temporarily format the date as a number.
+Notes
+
+MINUTE will return the #VALUE error if Excel interprets the given date or time as text.
+Minute values will "rollover" after 60 minutes. You can use a formula to convert time values to decimal minutes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Videos
+  
+How to create date and time series with formulas 
+
+How to work with times  
+
+
+ Functions HOUR FunctionMINUTE FunctionSECOND FunctionTIME Function 
+ Links Microsoft MINUTE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MINUTE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MINUTE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+MINUTE Function
+Related functions 
+HOUR
+MINUTE
+SECOND
+TIME
+Summary
+The Excel MINUTE function extracts the minute component of a time as a number between 0-59. For example, with a time of 9:45 AM, minute will return 45. You can use the MINUTE function to extract the minute into a cell, or feed the result into another function like the TIME function.
+Purpose 
+Get minute as a number (0-59) from time
+Return value 
+Number between 0 and 59.
+Arguments 
+serial_number - A valid date or time.
+Syntax 
+=MINUTE(serial_number)
+Usage notes 
+The MINUTE function extracts the minute from a time as a number between 0-59. For example, given a time of "7:45", MINUTE will return 45. The MINUTE function takes just one argument, serial_number, which must be a valid Excel date or a valid Excel time.
+Times can be supplied to the MINUTE function as text (e.g. "7:45 PM") or as decimal numbers (e.g. 0.5, which equals 12:00 PM). To create a time value from scratch with separate hour, minute, and second inputs, use the TIME function.
+The MINUTE function will "reset" to 0 every 60 minutes (like a clock). To work with minute values larger than 60, use a formula to convert time to decimal minutes.
+Examples
+To use the MINUTE function, supply a time value:
+=MINUTE("9:45 AM") // returns 45
+=MINUTE("3:10 PM") // returns 10
+You can use the MINUTE function to extract the minute into a cell, or feed the result into another function like the TIME function. For example, with the time 5:45 PM in cell A1, you can create a new time that includes 45 minutes like this:
+=TIME(7,MINUTE(A1),0) // returns 7:45 PM
+Times can be supplied as text (e.g. "7:45 PM") or as decimal numbers (e.g. 0.5, which equals 12:00 PM). In general, it's best to use the TIME function to create time values, because it reduces errors.
+Note: Excel stores dates and times as serial numbers. For example, the date Jan 1, 2000 12:00 PM is equal to the serial number 32526.5 in Excel. To check that Excel is correctly recognizing a date or time, you can temporarily format the date as a number.
+Notes
+MINUTE will return the #VALUE error if Excel interprets the given date or time as text.
+Minute values will "rollover" after 60 minutes. You can use a formula to convert time values to decimal minutes.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Videos
+  
+How to create date and time series with formulas 
+How to work with times  
+ Functions HOUR FunctionMINUTE FunctionSECOND FunctionTIME Function 
+ Links Microsoft MINUTE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,10 @@
+Summary
+The Excel SUMX2PY2 function returns the sum of the sum of squares of corresponding values in two arrays. Values can be supplied as constants, cell references, or ranges.
+Purpose 
+Get sum of squares in two arrays
+Return value 
+Calculated sum of sum of squares
+Arguments 
+array_x - The first range or array containing numeric values.array_y - The second range or array containing numeric values.
+Syntax 
+=SUMX2PY2(array_x, array_y)

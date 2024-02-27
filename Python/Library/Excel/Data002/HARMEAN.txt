@@ -1,0 +1,10 @@
+Summary
+The Excel HARMEAN function returns the harmonic mean for a set of numeric values. The harmonic mean is the reciprocal of the arithmetic mean of reciprocals. Harmonic mean can be used to calculate a mean that reduces the impact of large outliers.
+Purpose 
+Calculate harmonic mean
+Return value 
+Calculated mean
+Arguments 
+number1 - First value or reference.number2 - [optional] Second value or reference.
+Syntax 
+=HARMEAN(number1, [number2], ...)

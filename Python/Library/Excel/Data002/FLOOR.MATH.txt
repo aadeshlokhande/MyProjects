@@ -1,0 +1,10 @@
+Summary
+The Excel FLOOR.MATH function rounds a number down to a specified multiple. Unlike the FLOOR function, FLOOR.MATH defaults to a multiple of 1, and provides explicit support for rounding negative numbers.
+Purpose 
+Round number down to nearest multiple
+Return value 
+A rounded number
+Arguments 
+number - The number that should be rounded.significance - [optional] Multiple to use when rounding. Default is 1.mode - [optional] For rounding negative numbers toward or away from zero. Default is 0.
+Syntax 
+=FLOOR.MATH(number, [significance], [mode])

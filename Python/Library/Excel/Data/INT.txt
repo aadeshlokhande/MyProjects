@@ -1,0 +1,702 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel INT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+INT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+INT Function
+Related functions 
+
+TRUNC
+INT
+ROUND
+ROUNDDOWN
+ROUNDUP
+MROUND
+FLOOR
+CEILING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel INT function returns the integer part of a decimal number by rounding down to the integer. Note that negative numbers become more negative. For example, while INT(10.8) returns 10, INT(-10.8) returns -11.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get the integer part of a number by rounding down
+
+
+
+Return value 
+
+The integer part of the number after rounding down
+
+
+
+Arguments 
+
+number - The number from which you want an integer.
+
+
+
+Syntax 
+
+=INT(number)
+
+
+
+Usage notes 
+
+The INT function returns the integer part of a decimal number by rounding down to the integer. It is important to understand that the INT function returns the integer part of a decimal number, after rounding down. One consequence of this behavior is that negative numbers become more negative. For example, while INT(10.8) returns 10, INT(-10.8) returns -11. To return an integer by truncating decimals, see the TRUNC function.
+The INT function takes just one argument, number, which should be a numeric value. INT returns a #VALUE! error if number is not a numeric value. If number is already a whole number, INT has no effect.
+Examples
+When numbers are positive, the INT function rounds down to the next lowest whole number:
+
+=INT(3.25) // returns 3
+=INT(3.99) // returns 3
+=INT(3.01) // returns 3
+
+Notice INT rounds positive numbers down toward zero. With negative numbers, INT rounds down away from zero:
+
+=INT(-3.25) // returns -4
+=INT(-3.99) // returns -4
+=INT(-3.01) // returns -4
+
+INT vs. TRUNC
+INT is similar to the TRUNC function because they both can return the integer part of a number. However, TRUNC simply truncates a number, while INT actually rounds a number down to an integer. With positive numbers, and when TRUNC is using the default of 0 for num_digits,  both functions return the same results. With negative numbers, the results can be different. INT(-3.1) returns -4, because INT rounds down to the lower integer. TRUNC(-3.1) returns -3. If you simply want the integer part of a number, you should use TRUNC.
+Rounding functions in Excel
+Excel provides a number of functions for rounding:
+
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+
+Notes
+
+INT returns a #VALUE! error if number is not a numeric value.
+Use the INT function to get an integer from a number by rounding.
+Use the TRUNC function to return an integer by truncating.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Round a number to n significant digits 
+
+Cash denomination calculator 
+
+Get integer part of a number 
+
+Count unique dates ignore time 
+
+Get days, hours, and minutes between dates 
+
+Extract date from a date and time 
+
+Get age from birthday 
+
+Calculate years between dates 
+
+Remove time from timestamp 
+
+Number is whole number 
+
+
+
+Videos
+  
+How to check and debug a formula with F9 
+
+How to step through complex formulas using Evaluate 
+
+
+ Functions TRUNC FunctionINT FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionMROUND FunctionFLOOR FunctionCEILING Function 
+ Links Microsoft INT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel INT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+INT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+INT Function
+Related functions 
+TRUNC
+INT
+ROUND
+ROUNDDOWN
+ROUNDUP
+MROUND
+FLOOR
+CEILING
+Summary
+The Excel INT function returns the integer part of a decimal number by rounding down to the integer. Note that negative numbers become more negative. For example, while INT(10.8) returns 10, INT(-10.8) returns -11.
+Purpose 
+Get the integer part of a number by rounding down
+Return value 
+The integer part of the number after rounding down
+Arguments 
+number - The number from which you want an integer.
+Syntax 
+=INT(number)
+Usage notes 
+The INT function returns the integer part of a decimal number by rounding down to the integer. It is important to understand that the INT function returns the integer part of a decimal number, after rounding down. One consequence of this behavior is that negative numbers become more negative. For example, while INT(10.8) returns 10, INT(-10.8) returns -11. To return an integer by truncating decimals, see the TRUNC function.
+The INT function takes just one argument, number, which should be a numeric value. INT returns a #VALUE! error if number is not a numeric value. If number is already a whole number, INT has no effect.
+Examples
+When numbers are positive, the INT function rounds down to the next lowest whole number:
+=INT(3.25) // returns 3
+=INT(3.99) // returns 3
+=INT(3.01) // returns 3
+Notice INT rounds positive numbers down toward zero. With negative numbers, INT rounds down away from zero:
+=INT(-3.25) // returns -4
+=INT(-3.99) // returns -4
+=INT(-3.01) // returns -4
+INT vs. TRUNC
+INT is similar to the TRUNC function because they both can return the integer part of a number. However, TRUNC simply truncates a number, while INT actually rounds a number down to an integer. With positive numbers, and when TRUNC is using the default of 0 for num_digits,  both functions return the same results. With negative numbers, the results can be different. INT(-3.1) returns -4, because INT rounds down to the lower integer. TRUNC(-3.1) returns -3. If you simply want the integer part of a number, you should use TRUNC.
+Rounding functions in Excel
+Excel provides a number of functions for rounding:
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+Notes
+INT returns a #VALUE! error if number is not a numeric value.
+Use the INT function to get an integer from a number by rounding.
+Use the TRUNC function to return an integer by truncating.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Round a number to n significant digits 
+Cash denomination calculator 
+Get integer part of a number 
+Count unique dates ignore time 
+Get days, hours, and minutes between dates 
+Extract date from a date and time 
+Get age from birthday 
+Calculate years between dates 
+Remove time from timestamp 
+Number is whole number 
+Videos
+  
+How to check and debug a formula with F9 
+How to step through complex formulas using Evaluate 
+ Functions TRUNC FunctionINT FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionMROUND FunctionFLOOR FunctionCEILING Function 
+ Links Microsoft INT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

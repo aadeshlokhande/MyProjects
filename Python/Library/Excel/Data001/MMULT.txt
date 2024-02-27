@@ -1,0 +1,260 @@
+Excel MMULT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MMULT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+MMULT Function
+Related functions 
+SUMPRODUCT
+MUNIT
+MINVERSE
+MDETERM
+Summary
+The Excel MMULT function returns the matrix product of two arrays. The result from MMULT is an array that contains the same number of rows as array1 and the same number of columns as array2. 
+Purpose 
+Perform matrix multiplication
+Return value 
+The matrix product of two arrays
+Arguments 
+array1 - The first array to multiply.array2 - The second array to multiply.
+Syntax 
+=MMULT(array1, array2)
+Usage notes 
+The MMULT function returns the matrix product of two arrays, sometimes called the "dot product". The result from MMULT is an array that contains the same number of rows as array1 and the same number of columns as array2. The MMULT function appears in certain more advanced formulas that need to process multiple rows or columns. For example, you can use MMULT with XLOOKUP to match a value in any column.
+The MMULT function takes two arguments, array1 and array2, both of which are required. The column count of array1 must equal the row count of array2. For example, you can multiply a 2 x 3 array by a 3 x 2 array to return a 2 x 2 array result. The MMULT function will return a #VALUE! error if array1 columns do not equal array2 rows.
+Note: In Excel 365, which supports dynamic arrays, MMULT spills multiple values on the worksheet. In earlier versions, you will need to enter as a multi-cell array formula with control + shift + enter.
+Example #1 - basic usage
+In the example shown, the MMULT formula is evaluated like this:
+=MMULT(B6:D7,F6:G8)
+=MMULT({0,3,5;5,5,2},{3,4;3,-2;4,-2})
+={29,-16;38,6}
+Example #2 - count rows with specific value
+In this example, the goal is to count rows that contain the number 90. The challenge is that the value might appear in any of several columns, and might appear in more than one column of the same row. The MMULT function is used to condense results from multiple columns into a single 1-column array that can then be summed with the SUM function. The formula in G5 is:
+=SUM(--(MMULT(--(data=90),TRANSPOSE(COLUMN(data)))>0))
+Read a detailed explanation here. See below for more examples.
+Notes
+Arrays must contain numbers only.
+Columns in array1 must equal the rows in array2.
+Array1 and array2 can be provided as cell ranges, array constants, or references.
+MMULT returns #VALUE! if any cells in array1 and array2 are not numbers
+MMULT returns #VALUE! if array1 columns do not equal array2 rows.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sort and extract unique values 
+Get column totals 
+Count cells that do not contain many strings 
+Get row totals 
+Index and match on multiple columns 
+Count rows that contain specific values 
+Count rows with at least n matching values 
+Count columns that contain specific values 
+XLOOKUP match any column 
+ Functions SUMPRODUCT FunctionMUNIT FunctionMINVERSE FunctionMDETERM Function 
+ Links Microsoft MMULT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel MMULT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MMULT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+MMULT Function
+Related functions 
+SUMPRODUCT
+MUNIT
+MINVERSE
+MDETERM
+Summary
+The Excel MMULT function returns the matrix product of two arrays. The result from MMULT is an array that contains the same number of rows as array1 and the same number of columns as array2. 
+Purpose 
+Perform matrix multiplication
+Return value 
+The matrix product of two arrays
+Arguments 
+array1 - The first array to multiply.array2 - The second array to multiply.
+Syntax 
+=MMULT(array1, array2)
+Usage notes 
+The MMULT function returns the matrix product of two arrays, sometimes called the "dot product". The result from MMULT is an array that contains the same number of rows as array1 and the same number of columns as array2. The MMULT function appears in certain more advanced formulas that need to process multiple rows or columns. For example, you can use MMULT with XLOOKUP to match a value in any column.
+The MMULT function takes two arguments, array1 and array2, both of which are required. The column count of array1 must equal the row count of array2. For example, you can multiply a 2 x 3 array by a 3 x 2 array to return a 2 x 2 array result. The MMULT function will return a #VALUE! error if array1 columns do not equal array2 rows.
+Note: In Excel 365, which supports dynamic arrays, MMULT spills multiple values on the worksheet. In earlier versions, you will need to enter as a multi-cell array formula with control + shift + enter.
+Example #1 - basic usage
+In the example shown, the MMULT formula is evaluated like this:
+=MMULT(B6:D7,F6:G8)
+=MMULT({0,3,5;5,5,2},{3,4;3,-2;4,-2})
+={29,-16;38,6}
+Example #2 - count rows with specific value
+In this example, the goal is to count rows that contain the number 90. The challenge is that the value might appear in any of several columns, and might appear in more than one column of the same row. The MMULT function is used to condense results from multiple columns into a single 1-column array that can then be summed with the SUM function. The formula in G5 is:
+=SUM(--(MMULT(--(data=90),TRANSPOSE(COLUMN(data)))>0))
+Read a detailed explanation here. See below for more examples.
+Notes
+Arrays must contain numbers only.
+Columns in array1 must equal the rows in array2.
+Array1 and array2 can be provided as cell ranges, array constants, or references.
+MMULT returns #VALUE! if any cells in array1 and array2 are not numbers
+MMULT returns #VALUE! if array1 columns do not equal array2 rows.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Sort and extract unique values 
+Get column totals 
+Count cells that do not contain many strings 
+Get row totals 
+Index and match on multiple columns 
+Count rows that contain specific values 
+Count rows with at least n matching values 
+Count columns that contain specific values 
+XLOOKUP match any column 
+ Functions SUMPRODUCT FunctionMUNIT FunctionMINVERSE FunctionMDETERM Function 
+ Links Microsoft MMULT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

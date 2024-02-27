@@ -1,0 +1,10 @@
+Summary
+The Excel PERCENTRANK.EXC function returns the relative rank of a value in a data set as a percentage representing how many values are less than or equal to the value. Percentile rank is commonly used as a way to interpret standing in standardized tests.
+Purpose 
+Get percentile rank, exclusive
+Return value 
+Calculated rank as a decimal value
+Arguments 
+array - Array of data values.x - Value to rank.significance - [optional] Number of significant digits in result. Defaults to 3.
+Syntax 
+=PERCENTRANK.EXC(array, x, [significance])

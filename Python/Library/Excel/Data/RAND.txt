@@ -1,0 +1,663 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel RAND function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+RAND Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Math
+
+
+RAND Function
+Related functions 
+
+RANDBETWEEN
+RANDARRAY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel RAND function returns a random number between 0 and 1. For example, =RAND() will generate a number like 0.422245717. RAND recalculates when a worksheet is opened or changed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get a random number between 0 and 1
+
+
+
+Return value 
+
+A number between 1 and 0
+
+
+
+Arguments 
+
+
+
+
+
+Syntax 
+
+=RAND()
+
+
+
+Usage notes 
+
+The RAND function returns a random decimal number between 0 and 1. For example, =RAND() will generate a number like 0.422245717. The RAND function takes no arguments. RAND recalculates when a worksheet is opened or changed.
+RAND is a volatile function, and can cause performance issues in large or complex worksheets.
+Examples
+RAND takes no arguments:
+
+=RAND() // returns number like 0.073979356
+=RAND() // returns number like 0.080313118
+
+Automatic recalculation
+The RAND function will calculate a new result each time a worksheet is edited. To stop random numbers from being updated, copy the cells that contain RAND to the clipboard, then use Paste Special > Values to convert to a static result.
+To get a single random number that doesn't change when the worksheet is calculated, enter =RAND() in the formulas bar and then press F9 to convert the formula into its result.
+Multiple random numbers
+To generate a set of random numbers in multiple cells, select the cells, enter =RAND() and press control + enter. 
+Random number between
+To generate a random number between a and b, you can use a formula like this:
+
+RAND()*(b-a)+a
+
+For example, to generate a random number between 1 and 9:
+
+RAND()*(9-1)+1
+
+The RANDBETWEEN function can generate random integers between to numbers:
+
+=RANDBETWEEN(1,9) // random number between 1-9
+
+Note: In Excel 365, the RANDARRAY function is another way to generate multiple random numbers, and to generate random numbers between two values.
+Notes
+
+The RAND function takes no arguments.
+RAND recalculates whenever a worksheet is opened or changed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Random number weighted probability 
+
+Random times at specific intervals 
+
+Randomly assign people to groups 
+
+
+
+Videos
+  
+How to pick names out of a hat with Excel 
+
+How to generate random values 
+
+How to perform a random sort 
+
+
+ Functions RANDBETWEEN FunctionRANDARRAY Function 
+ Links Microsoft RAND function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel RAND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RAND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+RAND Function
+Related functions 
+RANDBETWEEN
+RANDARRAY
+Summary
+The Excel RAND function returns a random number between 0 and 1. For example, =RAND() will generate a number like 0.422245717. RAND recalculates when a worksheet is opened or changed.
+Purpose 
+Get a random number between 0 and 1
+Return value 
+A number between 1 and 0
+Arguments 
+Syntax 
+=RAND()
+Usage notes 
+The RAND function returns a random decimal number between 0 and 1. For example, =RAND() will generate a number like 0.422245717. The RAND function takes no arguments. RAND recalculates when a worksheet is opened or changed.
+RAND is a volatile function, and can cause performance issues in large or complex worksheets.
+Examples
+RAND takes no arguments:
+=RAND() // returns number like 0.073979356
+=RAND() // returns number like 0.080313118
+Automatic recalculation
+The RAND function will calculate a new result each time a worksheet is edited. To stop random numbers from being updated, copy the cells that contain RAND to the clipboard, then use Paste Special > Values to convert to a static result.
+To get a single random number that doesn't change when the worksheet is calculated, enter =RAND() in the formulas bar and then press F9 to convert the formula into its result.
+Multiple random numbers
+To generate a set of random numbers in multiple cells, select the cells, enter =RAND() and press control + enter. 
+Random number between
+To generate a random number between a and b, you can use a formula like this:
+RAND()*(b-a)+a
+For example, to generate a random number between 1 and 9:
+RAND()*(9-1)+1
+The RANDBETWEEN function can generate random integers between to numbers:
+=RANDBETWEEN(1,9) // random number between 1-9
+Note: In Excel 365, the RANDARRAY function is another way to generate multiple random numbers, and to generate random numbers between two values.
+Notes
+The RAND function takes no arguments.
+RAND recalculates whenever a worksheet is opened or changed.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Random number weighted probability 
+Random times at specific intervals 
+Randomly assign people to groups 
+Videos
+  
+How to pick names out of a hat with Excel 
+How to generate random values 
+How to perform a random sort 
+ Functions RANDBETWEEN FunctionRANDARRAY Function 
+ Links Microsoft RAND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

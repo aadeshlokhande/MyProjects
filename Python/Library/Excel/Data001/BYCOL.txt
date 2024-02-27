@@ -1,0 +1,258 @@
+Excel BYCOL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+BYCOL Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+BYCOL Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The Excel BYCOL function applies a LAMBDA function to each column in a given array and returns one result per column as a single array. In the example shown, data is the named range C5:H9.
+Note: BYCOL is a beta function available only through the Insiders channel of Excel 365.
+Purpose 
+Apply function to column
+Return value 
+One result per column
+Arguments 
+array - The array or array to process.lambda - The lambda function to apply to each column.
+Syntax 
+=BYCOL(array, lambda)
+Usage notes 
+The Excel BYCOL function applies a LAMBDA function to each column in array and returns one result per column as a single array. The purpose of BYCOL is to process data in an array or range in a "by column" fashion. For example, if BYCOL is given an array with 3 columns, BYCOL will return an array with 3 results. The calculation performed on each column is provided by a custom LAMBDA function.
+The BYCOL function takes two arguments: array and lambda. Array is the array or range to process. Lambda is the LAMBDA function that should be run on each column in array. The lambda function must return a single result for each column, or BYCOL will return a #CALC! error.
+Examples
+To sum each column in a range, you can use the BYCOL function like this:
+=BYCOL(range,LAMBDA(column,SUM(column)))
+The BYCOL function delivers the contents of range one column at a time to the LAMBDA function, which uses the SUM function to calculate a total for each column. BYCOL then delivers the results from the LAMBDA calculation in a single array. If range contains 5 columns, BYCOL returns an array that contains 5 sums.
+Worksheet example
+In the worksheet shown above, the BYCOL function is used to run 5 separate calculations on data, which is the named range C5:H5. In cell C11, the formula below is used to calculate a sum for each column:
+=BYCOL(data,LAMBDA(column,SUM(column)))
+Because there are 6 columns in data, the result is an array with 6 sums like this:
+{391,429,347,394,325,363}
+The values in this array spill into the range C11:H11. The other formulas in C12:C14 all follow the same pattern:
+=BYCOL(data,LAMBDA(column,MAX(column))) // max
+=BYCOL(data,LAMBDA(column,MIN(column))) // min
+=BYCOL(data,LAMBDA(column,AVERAGE(column))) // average
+Count cells over 90
+In cell C15, the formula is a bit more complex. The goal is to count cells in each column with a value over 90, and the formula used is:
+=BYCOL(data,LAMBDA(column,SUM(--(column>90)))) // count >90
+In this case, LAMBDA runs a custom calculation based on the SUM function, which is used to count the number of values in each column that are greater than 90. See Boolean operations in array formulas for more information.
+Note: the COUNTIF function could be used instead of SUM, but COUNTIF requires a range and won't work with an array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get column totals 
+Count columns that contain specific values 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel BYCOL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+BYCOL Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+BYCOL Function
+Related functions 
+LAMBDA
+LET
+MAP
+SCAN
+REDUCE
+MAKEARRAY
+BYCOL
+BYROW
+Summary
+The Excel BYCOL function applies a LAMBDA function to each column in a given array and returns one result per column as a single array. In the example shown, data is the named range C5:H9.
+Note: BYCOL is a beta function available only through the Insiders channel of Excel 365.
+Purpose 
+Apply function to column
+Return value 
+One result per column
+Arguments 
+array - The array or array to process.lambda - The lambda function to apply to each column.
+Syntax 
+=BYCOL(array, lambda)
+Usage notes 
+The Excel BYCOL function applies a LAMBDA function to each column in array and returns one result per column as a single array. The purpose of BYCOL is to process data in an array or range in a "by column" fashion. For example, if BYCOL is given an array with 3 columns, BYCOL will return an array with 3 results. The calculation performed on each column is provided by a custom LAMBDA function.
+The BYCOL function takes two arguments: array and lambda. Array is the array or range to process. Lambda is the LAMBDA function that should be run on each column in array. The lambda function must return a single result for each column, or BYCOL will return a #CALC! error.
+Examples
+To sum each column in a range, you can use the BYCOL function like this:
+=BYCOL(range,LAMBDA(column,SUM(column)))
+The BYCOL function delivers the contents of range one column at a time to the LAMBDA function, which uses the SUM function to calculate a total for each column. BYCOL then delivers the results from the LAMBDA calculation in a single array. If range contains 5 columns, BYCOL returns an array that contains 5 sums.
+Worksheet example
+In the worksheet shown above, the BYCOL function is used to run 5 separate calculations on data, which is the named range C5:H5. In cell C11, the formula below is used to calculate a sum for each column:
+=BYCOL(data,LAMBDA(column,SUM(column)))
+Because there are 6 columns in data, the result is an array with 6 sums like this:
+{391,429,347,394,325,363}
+The values in this array spill into the range C11:H11. The other formulas in C12:C14 all follow the same pattern:
+=BYCOL(data,LAMBDA(column,MAX(column))) // max
+=BYCOL(data,LAMBDA(column,MIN(column))) // min
+=BYCOL(data,LAMBDA(column,AVERAGE(column))) // average
+Count cells over 90
+In cell C15, the formula is a bit more complex. The goal is to count cells in each column with a value over 90, and the formula used is:
+=BYCOL(data,LAMBDA(column,SUM(--(column>90)))) // count >90
+In this case, LAMBDA runs a custom calculation based on the SUM function, which is used to count the number of values in each column that are greater than 90. See Boolean operations in array formulas for more information.
+Note: the COUNTIF function could be used instead of SUM, but COUNTIF requires a range and won't work with an array.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get column totals 
+Count columns that contain specific values 
+ Functions LAMBDA FunctionLET FunctionMAP FunctionSCAN FunctionREDUCE FunctionMAKEARRAY FunctionBYCOL FunctionBYROW Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

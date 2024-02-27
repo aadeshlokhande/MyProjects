@@ -1,0 +1,300 @@
+Excel TAKE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TAKE Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+TAKE Function
+Related functions 
+DROP
+CHOOSEROWS
+CHOOSECOLS
+EXPAND
+Summary
+The Excel TAKE function returns a subset of a given array. The number of rows and columns to return is provided by separate rows and columns arguments. Rows and columns can be extracted from the start or end of the given array.
+Purpose 
+Get a subset of an array
+Return value 
+A subset of a given array
+Arguments 
+array - The source array or range.rows - [optional] Number of rows to return as an integer.col - [optional] Number of columns to return as an integer.
+Syntax 
+=TAKE(array, [rows], [col])
+Usage notes 
+The TAKE function returns a subset of a given array. The size of the array returned is determined by separate rows and columns arguments. When positive numbers are provided for rows or columns, TAKE returns values from the start or top of the array. Negative numbers take values from the end or bottom of the array.
+The TAKE function takes three arguments: array, rows, and columns. Array is required, along with at least one value for rows or columns. Array can be a range or an in-memory array from another formula. Rows and columns can be negative or positive integers. Positive numbers take values from the start of the array; negative numbers take values from the end of the array. Both rows and columns default to total rows and columns. If no value is supplied, TAKE will return all rows/columns in the result.
+Basic usage
+To use TAKE, provide an array or range, and a value for rows and/or columns:
+=TAKE(array,3) // get first 3 rows
+=TAKE(array,,3) // get first 3 columns
+=TAKE(array,3,2) // get first 3 rows and 2 columns
+Notice in the second example above, no value is provided for rows.
+Take from start
+To get rows or columns from the start of a range or array, provide positive numbers for rows and columns. In the worksheet below, the formula in F3 is:
+=TAKE(B3:D11,3)
+The TAKE function returns the first 3 rows from B3:D11. The formula in F8 is:
+=TAKE(B3:D11,4,2)
+The TAKE function returns the first 2 columns of the first 4 rows.
+Notice that if a number for rows or columns is not provided, TAKE returns all rows or columns. For example, in the first formula above, a value for columns is not provided and TAKE returns all 3 columns as a result. Also notice that positive numbers for rows or columns take values from the start of the array.
+Take from end
+When negative numbers are provided for rows or columns, the TAKE function returns values from the end of the array. In the worksheet below, the first formula in cell F3 returns the last 3 rows of the range B3:D11:
+=TAKE(B3:D11,-3)
+The formula in F8 returns the last 2 columns of the last 2 rows:
+=TAKE(B3:D11,-4,-2)
+Notice in the first example, no value is provided for columns and TAKE returns all columns.
+Last column or row
+To return the last complete column or row with TAKE, you can use formulas like this:
+=TAKE(array,-1) // last row
+=TAKE(array,,-1) // last column
+Note in the second example the rows argument is simply not provided. Extending these examples, we can get the last 3 rows or columns like this:
+=TAKE(array,-3) // last 3 rows
+=TAKE(array,,-3) // last 3 columns
+TAKE vs. DROP
+The DROP and TAKE functions both return a subset of an array, but they work in opposite ways. While the DROP function removes specific rows or columns from an array, the TAKE function extracts specific rows or columns from an array:
+=DROP(array,1) // remove first row
+=TAKE(array,1) // get first row
+Which function to use depends on the situation.
+Notes
+Rows and columns are both optional, but at least one must be provided.
+If rows or columns is zero, TAKE returns a #VALUE error.
+If rows > total rows, all rows are returned.
+If columns > total columns, all columns are returned.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Average last 3 numeric values 
+Sum first n matching values 
+Get address of named range or table 
+Sum first n rows 
+Average last n columns 
+Average last n rows 
+Sum last n columns 
+Sum last n rows 
+Lookup first negative value 
+10 most common text values 
+ Functions DROP FunctionCHOOSEROWS FunctionCHOOSECOLS FunctionEXPAND Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel TAKE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TAKE Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+TAKE Function
+Related functions 
+DROP
+CHOOSEROWS
+CHOOSECOLS
+EXPAND
+Summary
+The Excel TAKE function returns a subset of a given array. The number of rows and columns to return is provided by separate rows and columns arguments. Rows and columns can be extracted from the start or end of the given array.
+Purpose 
+Get a subset of an array
+Return value 
+A subset of a given array
+Arguments 
+array - The source array or range.rows - [optional] Number of rows to return as an integer.col - [optional] Number of columns to return as an integer.
+Syntax 
+=TAKE(array, [rows], [col])
+Usage notes 
+The TAKE function returns a subset of a given array. The size of the array returned is determined by separate rows and columns arguments. When positive numbers are provided for rows or columns, TAKE returns values from the start or top of the array. Negative numbers take values from the end or bottom of the array.
+The TAKE function takes three arguments: array, rows, and columns. Array is required, along with at least one value for rows or columns. Array can be a range or an in-memory array from another formula. Rows and columns can be negative or positive integers. Positive numbers take values from the start of the array; negative numbers take values from the end of the array. Both rows and columns default to total rows and columns. If no value is supplied, TAKE will return all rows/columns in the result.
+Basic usage
+To use TAKE, provide an array or range, and a value for rows and/or columns:
+=TAKE(array,3) // get first 3 rows
+=TAKE(array,,3) // get first 3 columns
+=TAKE(array,3,2) // get first 3 rows and 2 columns
+Notice in the second example above, no value is provided for rows.
+Take from start
+To get rows or columns from the start of a range or array, provide positive numbers for rows and columns. In the worksheet below, the formula in F3 is:
+=TAKE(B3:D11,3)
+The TAKE function returns the first 3 rows from B3:D11. The formula in F8 is:
+=TAKE(B3:D11,4,2)
+The TAKE function returns the first 2 columns of the first 4 rows.
+Notice that if a number for rows or columns is not provided, TAKE returns all rows or columns. For example, in the first formula above, a value for columns is not provided and TAKE returns all 3 columns as a result. Also notice that positive numbers for rows or columns take values from the start of the array.
+Take from end
+When negative numbers are provided for rows or columns, the TAKE function returns values from the end of the array. In the worksheet below, the first formula in cell F3 returns the last 3 rows of the range B3:D11:
+=TAKE(B3:D11,-3)
+The formula in F8 returns the last 2 columns of the last 2 rows:
+=TAKE(B3:D11,-4,-2)
+Notice in the first example, no value is provided for columns and TAKE returns all columns.
+Last column or row
+To return the last complete column or row with TAKE, you can use formulas like this:
+=TAKE(array,-1) // last row
+=TAKE(array,,-1) // last column
+Note in the second example the rows argument is simply not provided. Extending these examples, we can get the last 3 rows or columns like this:
+=TAKE(array,-3) // last 3 rows
+=TAKE(array,,-3) // last 3 columns
+TAKE vs. DROP
+The DROP and TAKE functions both return a subset of an array, but they work in opposite ways. While the DROP function removes specific rows or columns from an array, the TAKE function extracts specific rows or columns from an array:
+=DROP(array,1) // remove first row
+=TAKE(array,1) // get first row
+Which function to use depends on the situation.
+Notes
+Rows and columns are both optional, but at least one must be provided.
+If rows or columns is zero, TAKE returns a #VALUE error.
+If rows > total rows, all rows are returned.
+If columns > total columns, all columns are returned.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Average last 3 numeric values 
+Sum first n matching values 
+Get address of named range or table 
+Sum first n rows 
+Average last n columns 
+Average last n rows 
+Sum last n columns 
+Sum last n rows 
+Lookup first negative value 
+10 most common text values 
+ Functions DROP FunctionCHOOSEROWS FunctionCHOOSECOLS FunctionEXPAND Function 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

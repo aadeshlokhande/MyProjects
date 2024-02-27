@@ -1,0 +1,675 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel CHOOSE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+CHOOSE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Lookup and reference
+
+
+CHOOSE Function
+Related functions 
+
+IF
+IFS
+SWITCH
+VLOOKUP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel CHOOSE function returns a value from a list using a given position or index. For example, =CHOOSE(2,"red","blue","green") returns "blue", since blue is the 2nd value listed after the index number. The values provided to CHOOSE can include references.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get a value from a list based on position
+
+
+
+Return value 
+
+The value at the given position.
+
+
+
+Arguments 
+
+index_num - The value to choose. A number between 1 and 254.value1 - The first value from which to choose.value2 - [optional] The second value from which to choose.
+
+
+
+Syntax 
+
+=CHOOSE(index_num, value1, [value2], ...)
+
+
+
+Usage notes 
+
+The CHOOSE function returns a value from a list using a given position or index. The values provided to CHOOSE can be hard-coded constants or cell references. The first argument for the CHOOSE function is index_num. This is a number that refers to subsequent values by index or position. The next arguments, value1, value2, value3, etc. are the values from which to choose from. Choose can handle up to 254 values. However, CHOOSE will not retrieve an item from inside range or array constant provided as a value.  For larger sets of data in a table or range,  INDEX and MATCH is a better way to retrieve a value based on position.
+Examples
+The formulas below use CHOOSE to return the 2nd and 3rd values from a list:
+
+CHOOSE(2,"red","blue","green") // returns "blue"
+CHOOSE(3,"red","blue","green") // returns "green"
+
+Above, "blue" is the second value, and "green" is the third value. In the example shown in the screenshot, the formula in cell C5 is:
+
+CHOOSE(B5,"red","blue","green") // returns "red"
+
+CHOOSE will not retrieve values from a range or array constant. For example, the formula below will return a #VALUE error:
+
+=CHOOSE(2,A1:A3)  // returns #VALUE
+
+This happens because the index number is out of range. In this case, the required syntax is:
+
+=CHOOSE(2,A1,A2,A3)
+
+To retrieve the nth item from a range, use INDEX and MATCH. CHOOSE can be used to provide a variable table to a function like VLOOKUP:
+
+=VLOOKUP(value,CHOOSE(index_num,rng1,rng2),2,0) // variable table
+
+Notes
+
+If index_num is out of range, CHOOSE will return #VALUE
+Values can also be references. For example, the address A1, or the ranges A1:10 or B2:B15 can be supplied as values.
+CHOOSE will not retrieve values from a range or array constant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Get previous Sunday 
+
+VLOOKUP with multiple criteria advanced 
+
+Map inputs to arbitrary values 
+
+INDEX with variable array 
+
+VLOOKUP case-sensitive  
+
+Custom weekday abbreviation 
+
+Reverse VLOOKUP example 
+
+Randomly assign data to groups 
+
+Left lookup with VLOOKUP 
+
+Random text values 
+
+
+
+Videos
+  
+How to use the CHOOSE function 
+
+
+ Functions IF FunctionIFS FunctionSWITCH FunctionVLOOKUP Function 
+ Links Microsoft CHOOSE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel CHOOSE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CHOOSE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Lookup and reference
+CHOOSE Function
+Related functions 
+IF
+IFS
+SWITCH
+VLOOKUP
+Summary
+The Excel CHOOSE function returns a value from a list using a given position or index. For example, =CHOOSE(2,"red","blue","green") returns "blue", since blue is the 2nd value listed after the index number. The values provided to CHOOSE can include references.
+Purpose 
+Get a value from a list based on position
+Return value 
+The value at the given position.
+Arguments 
+index_num - The value to choose. A number between 1 and 254.value1 - The first value from which to choose.value2 - [optional] The second value from which to choose.
+Syntax 
+=CHOOSE(index_num, value1, [value2], ...)
+Usage notes 
+The CHOOSE function returns a value from a list using a given position or index. The values provided to CHOOSE can be hard-coded constants or cell references. The first argument for the CHOOSE function is index_num. This is a number that refers to subsequent values by index or position. The next arguments, value1, value2, value3, etc. are the values from which to choose from. Choose can handle up to 254 values. However, CHOOSE will not retrieve an item from inside range or array constant provided as a value.  For larger sets of data in a table or range,  INDEX and MATCH is a better way to retrieve a value based on position.
+Examples
+The formulas below use CHOOSE to return the 2nd and 3rd values from a list:
+CHOOSE(2,"red","blue","green") // returns "blue"
+CHOOSE(3,"red","blue","green") // returns "green"
+Above, "blue" is the second value, and "green" is the third value. In the example shown in the screenshot, the formula in cell C5 is:
+CHOOSE(B5,"red","blue","green") // returns "red"
+CHOOSE will not retrieve values from a range or array constant. For example, the formula below will return a #VALUE error:
+=CHOOSE(2,A1:A3)  // returns #VALUE
+This happens because the index number is out of range. In this case, the required syntax is:
+=CHOOSE(2,A1,A2,A3)
+To retrieve the nth item from a range, use INDEX and MATCH. CHOOSE can be used to provide a variable table to a function like VLOOKUP:
+=VLOOKUP(value,CHOOSE(index_num,rng1,rng2),2,0) // variable table
+Notes
+If index_num is out of range, CHOOSE will return #VALUE
+Values can also be references. For example, the address A1, or the ranges A1:10 or B2:B15 can be supplied as values.
+CHOOSE will not retrieve values from a range or array constant.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get previous Sunday 
+VLOOKUP with multiple criteria advanced 
+Map inputs to arbitrary values 
+INDEX with variable array 
+VLOOKUP case-sensitive  
+Custom weekday abbreviation 
+Reverse VLOOKUP example 
+Randomly assign data to groups 
+Left lookup with VLOOKUP 
+Random text values 
+Videos
+  
+How to use the CHOOSE function 
+ Functions IF FunctionIFS FunctionSWITCH FunctionVLOOKUP Function 
+ Links Microsoft CHOOSE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

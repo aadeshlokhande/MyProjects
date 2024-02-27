@@ -1,0 +1,10 @@
+Summary
+The Excel STANDARDIZE function returns a normalized value (z-score) based on the mean and standard deviation.
+Purpose 
+Calculate a normalized value (z-score)
+Return value 
+Normalized value
+Arguments 
+x - The value to normalize.mean - The arithmetic mean of the distribution.standard_dev - The standard deviation of the distribution.
+Syntax 
+=STANDARDIZE(x, mean, standard_dev)

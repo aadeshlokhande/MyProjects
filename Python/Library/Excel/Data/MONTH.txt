@@ -1,0 +1,689 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MONTH function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MONTH Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Date and time
+
+
+MONTH Function
+Related functions 
+
+YEAR
+MONTH
+DAY
+DATE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MONTH function extracts the month from a given date as number between 1 to 12. You can use the MONTH function to extract a month number from a date into a cell, or to feed a month number into another function like the DATE function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get month as a number (1-12) from a date
+
+
+
+Return value 
+
+A number between 1 and 12.
+
+
+
+Arguments 
+
+serial_number - A valid Excel date.
+
+
+
+Syntax 
+
+=MONTH(serial_number)
+
+
+
+Usage notes 
+
+The MONTH function extracts the month from a given date as a number between 1 to 12. For example, given the date "June 12, 2021", the MONTH function will return 6 for June. MONTH takes just one argument, serial_number, which must be a valid Excel date.
+Dates can be supplied to the MONTH function as text (e.g. "13-Aug-2021") or as native Excel dates, which are large serial numbers. To create a date value from scratch with separate year, month, and day inputs, use the DATE function.
+The MONTH function will "reset" every 12 months (like a calendar). To work with month durations larger than 12, use a formula to calculate months between dates.
+The MONTH function returns a number. If you need the month name, see this example.
+Examples
+To use the MONTH function, supply a date:
+
+=MONTH("23-Aug-2012") // returns 8
+=MONTH("11-May-2019") // returns 5
+
+With the date "September 15, 2017" in cell A1, MONTH returns 9:
+
+=MONTH(A1) // returns 9
+
+You can use the MONTH function to extract a month number from a date into a cell, or to feed a month number into another function like the DATE function. The formula below extracts the month from the date in cell A1 and uses the TODAY and DATE functions to create a date on the first day of the same month in the current year.
+
+=DATE(YEAR(TODAY(),MONTH(A1),1) // same month current year
+
+See below for more examples of formulas that use the MONTH function.
+Note: dates are serial numbers in Excel, and begin on January 1, 1900. Dates before 1900 are not supported. To display date values in a human-readable date format, apply the number format of your choice.
+Notes
+
+MONTH will return #VALUE! if a date is not recognized.
+MONTH will return #NUM! if a date is supplied as a number that is out of range (i.e. -1).
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+XLOOKUP with complex multiple criteria 
+
+Sequence of years 
+
+Date is same month and year 
+
+Sum by fiscal year 
+
+Sum by quarter 
+
+Count birthdays by month 
+
+Filter by date 
+
+Get quarter from date 
+
+Get fiscal year from date 
+
+Series of dates by month 
+
+
+
+Videos
+  
+How to calculate years and months between dates  
+
+How to create date and time series with formulas 
+
+How to work with dates 
+
+Examples of flagged errors in formulas 
+
+Excel formula error codes 
+
+How to use the CHOOSE function 
+
+FILTER with boolean logic 
+
+
+ Functions YEAR FunctionMONTH FunctionDAY FunctionDATE Function 
+ Links Microsoft MONTH function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MONTH function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MONTH Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+MONTH Function
+Related functions 
+YEAR
+MONTH
+DAY
+DATE
+Summary
+The Excel MONTH function extracts the month from a given date as number between 1 to 12. You can use the MONTH function to extract a month number from a date into a cell, or to feed a month number into another function like the DATE function.
+Purpose 
+Get month as a number (1-12) from a date
+Return value 
+A number between 1 and 12.
+Arguments 
+serial_number - A valid Excel date.
+Syntax 
+=MONTH(serial_number)
+Usage notes 
+The MONTH function extracts the month from a given date as a number between 1 to 12. For example, given the date "June 12, 2021", the MONTH function will return 6 for June. MONTH takes just one argument, serial_number, which must be a valid Excel date.
+Dates can be supplied to the MONTH function as text (e.g. "13-Aug-2021") or as native Excel dates, which are large serial numbers. To create a date value from scratch with separate year, month, and day inputs, use the DATE function.
+The MONTH function will "reset" every 12 months (like a calendar). To work with month durations larger than 12, use a formula to calculate months between dates.
+The MONTH function returns a number. If you need the month name, see this example.
+Examples
+To use the MONTH function, supply a date:
+=MONTH("23-Aug-2012") // returns 8
+=MONTH("11-May-2019") // returns 5
+With the date "September 15, 2017" in cell A1, MONTH returns 9:
+=MONTH(A1) // returns 9
+You can use the MONTH function to extract a month number from a date into a cell, or to feed a month number into another function like the DATE function. The formula below extracts the month from the date in cell A1 and uses the TODAY and DATE functions to create a date on the first day of the same month in the current year.
+=DATE(YEAR(TODAY(),MONTH(A1),1) // same month current year
+See below for more examples of formulas that use the MONTH function.
+Note: dates are serial numbers in Excel, and begin on January 1, 1900. Dates before 1900 are not supported. To display date values in a human-readable date format, apply the number format of your choice.
+Notes
+MONTH will return #VALUE! if a date is not recognized.
+MONTH will return #NUM! if a date is supplied as a number that is out of range (i.e. -1).
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+XLOOKUP with complex multiple criteria 
+Sequence of years 
+Date is same month and year 
+Sum by fiscal year 
+Sum by quarter 
+Count birthdays by month 
+Filter by date 
+Get quarter from date 
+Get fiscal year from date 
+Series of dates by month 
+Videos
+  
+How to calculate years and months between dates  
+How to create date and time series with formulas 
+How to work with dates 
+Examples of flagged errors in formulas 
+Excel formula error codes 
+How to use the CHOOSE function 
+FILTER with boolean logic 
+ Functions YEAR FunctionMONTH FunctionDAY FunctionDATE Function 
+ Links Microsoft MONTH function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

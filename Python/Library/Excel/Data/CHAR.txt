@@ -1,0 +1,678 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel CHAR function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+CHAR Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Text
+
+
+CHAR Function
+Related functions 
+
+CHAR
+UNICHAR
+CODE
+UNICODE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel CHAR function returns a character when given a valid character code. CHAR can be used to specify characters that are hard to enter in a formula. For example, CHAR(10) returns a line break, and can be used to add a line break to text in a formula.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get a character from a number
+
+
+
+Return value 
+
+A single character specified by a number.
+
+
+
+Arguments 
+
+number - A number between 1 and 255.
+
+
+
+Syntax 
+
+=CHAR(number)
+
+
+
+Usage notes 
+
+The CHAR function returns a character when given a valid character code. Use the CHAR to translate ASCII code page numbers into actual characters. For example:
+
+=CHAR(65) // returns "A"
+=CHAR(97) // returns "a"
+
+the CHAR function takes just one argument, number, which must be an integer between 0-255. The result from CHAR is a text value.
+The CHAR function was designed to operate in an ASCII/ANSI world, and only understands numbers 0-255. For extended character support on modern Unicode systems, see the UNICHAR function.
+CHAR can be useful when you want to specify characters in formulas or functions that are awkward or impossible to type directly. For example, you can use CHAR(10) to add a line break in a formula like this:
+
+="line 1"&CHAR(10)&"Line 2" // add line break
+
+Notes: Text wrap must be enabled to see the line break take effect. Older versions of Excel on the Mac use character 13 for a line break.
+Reverse CHAR
+To get the numeric code for a character, you can use the CODE function:
+
+=CODE("A") // returns 65
+
+CODE performs the reverse of CHAR, taking a character as text and returning a number.
+ASCII and ANSI
+The numbers returned by the CHAR function come from ASCII. ASCII stands for "American Standard Code for Information Interchange" and is a 7-bit character set that contains characters from 0 to 127.
+The original ASCII specification encodes 128 characters into numbers. These  include the numbers 0 to 9, lowercase a-z, uppercase A-Z, and punctuation. The first 32 characters are non-printing "control codes", most of which are no longer used, with the exception of the carriage return (13), line feed (10), and tab (9).
+ANSI (American National Standards Institute) is a generic term for 8-bit character sets, the default in Windows 95 and Windows NT. ANSI includes the same ASCII codes 0-127, and adds an additional 128 characters (128-255) to handle special characters which can change based on the language being represented.
+Notes
+
+If number is out of range, CHAR returns #VALUE!
+If number is not numeric, CHAR returns #VALUE!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Add line break based on OS 
+
+Basic in cell histogram 
+
+Get last line in cell 
+
+Remove unwanted characters 
+
+Count line breaks in cell 
+
+Double quotes inside a formula 
+
+Add a line break with a formula 
+
+Replace one delimiter with another 
+
+Generate random text strings 
+
+Find nth occurrence of character 
+
+
+
+Videos
+  
+How to use CHAR and CODE functions 
+
+How to concatenate with line breaks 
+
+
+ Functions CHAR FunctionUNICHAR FunctionCODE FunctionUNICODE Function 
+ Links Microsoft CHAR function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel CHAR function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+CHAR Function 
+Previous 
+Next 
+ 
+Excel 2003
+Text
+CHAR Function
+Related functions 
+CHAR
+UNICHAR
+CODE
+UNICODE
+Summary
+The Excel CHAR function returns a character when given a valid character code. CHAR can be used to specify characters that are hard to enter in a formula. For example, CHAR(10) returns a line break, and can be used to add a line break to text in a formula.
+Purpose 
+Get a character from a number
+Return value 
+A single character specified by a number.
+Arguments 
+number - A number between 1 and 255.
+Syntax 
+=CHAR(number)
+Usage notes 
+The CHAR function returns a character when given a valid character code. Use the CHAR to translate ASCII code page numbers into actual characters. For example:
+=CHAR(65) // returns "A"
+=CHAR(97) // returns "a"
+the CHAR function takes just one argument, number, which must be an integer between 0-255. The result from CHAR is a text value.
+The CHAR function was designed to operate in an ASCII/ANSI world, and only understands numbers 0-255. For extended character support on modern Unicode systems, see the UNICHAR function.
+CHAR can be useful when you want to specify characters in formulas or functions that are awkward or impossible to type directly. For example, you can use CHAR(10) to add a line break in a formula like this:
+="line 1"&CHAR(10)&"Line 2" // add line break
+Notes: Text wrap must be enabled to see the line break take effect. Older versions of Excel on the Mac use character 13 for a line break.
+Reverse CHAR
+To get the numeric code for a character, you can use the CODE function:
+=CODE("A") // returns 65
+CODE performs the reverse of CHAR, taking a character as text and returning a number.
+ASCII and ANSI
+The numbers returned by the CHAR function come from ASCII. ASCII stands for "American Standard Code for Information Interchange" and is a 7-bit character set that contains characters from 0 to 127.
+The original ASCII specification encodes 128 characters into numbers. These  include the numbers 0 to 9, lowercase a-z, uppercase A-Z, and punctuation. The first 32 characters are non-printing "control codes", most of which are no longer used, with the exception of the carriage return (13), line feed (10), and tab (9).
+ANSI (American National Standards Institute) is a generic term for 8-bit character sets, the default in Windows 95 and Windows NT. ANSI includes the same ASCII codes 0-127, and adds an additional 128 characters (128-255) to handle special characters which can change based on the language being represented.
+Notes
+If number is out of range, CHAR returns #VALUE!
+If number is not numeric, CHAR returns #VALUE!
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Add line break based on OS 
+Basic in cell histogram 
+Get last line in cell 
+Remove unwanted characters 
+Count line breaks in cell 
+Double quotes inside a formula 
+Add a line break with a formula 
+Replace one delimiter with another 
+Generate random text strings 
+Find nth occurrence of character 
+Videos
+  
+How to use CHAR and CODE functions 
+How to concatenate with line breaks 
+ Functions CHAR FunctionUNICHAR FunctionCODE FunctionUNICODE Function 
+ Links Microsoft CHAR function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,10 @@
+Summary
+The Excel CEILING.MATH function rounds a number up to a specified multiple. Unlike the CEILING function, CEILING.MATH defaults to a multiple of 1, and provides explicit control over rounding direction for negative numbers.
+Purpose 
+Round a number up to nearest multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - [optional] Multiple to use when rounding. Default is 1.mode - [optional] Round negative numbers toward or away from zero. Default is 0.
+Syntax 
+=CEILING.MATH(number, [significance], [mode])

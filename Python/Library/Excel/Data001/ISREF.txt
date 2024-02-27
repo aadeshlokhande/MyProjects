@@ -1,0 +1,258 @@
+Excel ISREF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISREF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISREF Function
+Related functions 
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISTEXT
+Summary
+The Excel ISREF returns TRUE when a cell contains a reference and FALSE if not. You can use the ISREF function to check for a reference in a formula.
+Purpose 
+Test for a reference
+Return value 
+A logical value  (TRUE or FALSE)
+Arguments 
+value - The value to check.
+Syntax 
+=ISREF(value)
+Usage notes 
+The ISREF function returns TRUE to test for a reference in a formula. The ISREF function takes one argument, value, to test. If value is a valid cell reference, range, or named range, ISREF returns TRUE. If value is not a reference, ISREF returns FALSE. ISREF does not evaluate the contents of a reference, just the reference itself.
+Examples
+ISREF returns TRUE when value is a reference and FALSE if not:
+=ISREF(A1) // returns TRUE
+=ISREF(A1:C1) // returns TRUE
+=ISREF(Sheet1!A1) // returns TRUE
+=ISREF("apple") // returns FALSE
+=ISREF(100) // returns FALSE
+=ISREF(ZZZ1) // returns FALSE
+Some functions, like INDEX and OFFSET, can return a reference. As long as the reference is valid, ISREF returns TRUE:
+=ISREF(INDEX(A:A,10)) // returns TRUE
+=ISREF(OFFSET(A1,1,1)) // returns TRUE
+To evaluate a reference as text (i.e. "A1"), use the INDIRECT function:
+=ISREF(INDIRECT("A1")) // returns TRUE
+=ISREF(INDIRECT("ZZZ1")) // returns FALSE
+Notes
+Use the INDIRECT function with ISREF to evaluate a reference as text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Worksheet name exists 
+How to fix the #REF! error 
+ Functions ISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISTEXT Function 
+ Links Microsoft ISREF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel ISREF function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISREF Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+ISREF Function
+Related functions 
+ISBLANK
+ISERR
+ISERROR
+ISEVEN
+ISFORMULA
+ISLOGICAL
+ISNA
+ISNONTEXT
+ISNUMBER
+ISODD
+ISTEXT
+Summary
+The Excel ISREF returns TRUE when a cell contains a reference and FALSE if not. You can use the ISREF function to check for a reference in a formula.
+Purpose 
+Test for a reference
+Return value 
+A logical value  (TRUE or FALSE)
+Arguments 
+value - The value to check.
+Syntax 
+=ISREF(value)
+Usage notes 
+The ISREF function returns TRUE to test for a reference in a formula. The ISREF function takes one argument, value, to test. If value is a valid cell reference, range, or named range, ISREF returns TRUE. If value is not a reference, ISREF returns FALSE. ISREF does not evaluate the contents of a reference, just the reference itself.
+Examples
+ISREF returns TRUE when value is a reference and FALSE if not:
+=ISREF(A1) // returns TRUE
+=ISREF(A1:C1) // returns TRUE
+=ISREF(Sheet1!A1) // returns TRUE
+=ISREF("apple") // returns FALSE
+=ISREF(100) // returns FALSE
+=ISREF(ZZZ1) // returns FALSE
+Some functions, like INDEX and OFFSET, can return a reference. As long as the reference is valid, ISREF returns TRUE:
+=ISREF(INDEX(A:A,10)) // returns TRUE
+=ISREF(OFFSET(A1,1,1)) // returns TRUE
+To evaluate a reference as text (i.e. "A1"), use the INDIRECT function:
+=ISREF(INDIRECT("A1")) // returns TRUE
+=ISREF(INDIRECT("ZZZ1")) // returns FALSE
+Notes
+Use the INDIRECT function with ISREF to evaluate a reference as text.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Worksheet name exists 
+How to fix the #REF! error 
+ Functions ISBLANK FunctionISERR FunctionISERROR FunctionISEVEN FunctionISFORMULA FunctionISLOGICAL FunctionISNA FunctionISNONTEXT FunctionISNUMBER FunctionISODD FunctionISTEXT Function 
+ Links Microsoft ISREF function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,10 @@
+Summary
+The Excel LCM function returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all supplied numbers. For example, =LCM(25,40) returns 200.
+Purpose 
+Get the least common multiple of numbers
+Return value 
+The least common multiple of all numbers
+Arguments 
+number1 - The first number.number2 - [optional] The second number.
+Syntax 
+=LCM(number1, [number2], ...)

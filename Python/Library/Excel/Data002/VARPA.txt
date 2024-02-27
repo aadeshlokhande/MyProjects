@@ -1,0 +1,10 @@
+Summary
+The Excel VARPA function computes the variance of a population of data. Unlike the VARP function, the VARPA function evaluates text values and logicals in references.
+Purpose 
+Get variation of a population
+Return value 
+Computed variance
+Arguments 
+number1 - First number or reference.number2 - [optional] Second number or reference.
+Syntax 
+=VARPA(number1, [number2], ...)

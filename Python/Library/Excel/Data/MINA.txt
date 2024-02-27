@@ -1,0 +1,634 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MINA function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MINA Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+MINA Function
+Related functions 
+
+MIN
+MAX
+MAXA
+SMALL
+RANK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MINA function returns the smallest numeric value in a range of values. The MINA function ignores empty cells, but evaluates the logical values TRUE and FALSE as 1 and 0, and evaluates text as zero when these values appear in a range or cell reference.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Return smallest value.
+
+
+
+Return value 
+
+Smallest numeric value
+
+
+
+Arguments 
+
+value1 - Number, reference to numeric value, or range that contains numeric values.value2 - [optional] Number, reference to numeric value, or range that contains numeric values.
+
+
+
+Syntax 
+
+=MINA(value1, [value2], ...)
+
+
+
+Usage notes 
+
+The MINA function returns the smallest numeric value in a range of values. Like the MIN function, MINA ignores empty cells. However, unlike the MIN function, MINA evaluates the logical values TRUE and FALSE as 1 and 0, and evaluates text as zero when these values appear in a range or cell reference.
+The MINA function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. 
+Examples
+Like the MIN function, the MINA function returns the smallest number in the supplied data:
+
+=MIN(12,17,25,11,23) // returns 11
+=MINA(12,17,25,11,23) // returns 11
+
+MINA can be used with constants, cell references, or ranges:
+
+=MINA(5,10)
+=MINA(A1,A2,A3)
+=MINA(A1:A10)
+
+MINA vs. MIN
+The primary difference between MIN and MINA is that MINA evaluates TRUE and FALSE values as 1 and 0, and text values as zero when these values appear in a range or in a cell reference. You can see this behavior in the range I8:I12 of the example shown. While the MIN function ignores the logical and text values completely, the MINA function includes these values when calculating a minimum value.
+Note that MIN and MINA both evaluate numbers as text when supplied directly as arguments:
+
+=MINA(5,"3") // returns 3
+=MIN(5,"3") // returns 3
+
+Notes
+
+MINA ignores empty cells, but evaluates logical values and text values.
+Arguments can be provided as numbers, names, arrays, or references.
+If arguments contain no numeric values, MINA returns 0.
+To ignore logical values and text, see the MIN function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions MIN FunctionMAX FunctionMAXA FunctionSMALL FunctionRANK Function 
+ Links Microsoft MINA function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MINA function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MINA Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+MINA Function
+Related functions 
+MIN
+MAX
+MAXA
+SMALL
+RANK
+Summary
+The Excel MINA function returns the smallest numeric value in a range of values. The MINA function ignores empty cells, but evaluates the logical values TRUE and FALSE as 1 and 0, and evaluates text as zero when these values appear in a range or cell reference.
+Purpose 
+Return smallest value.
+Return value 
+Smallest numeric value
+Arguments 
+value1 - Number, reference to numeric value, or range that contains numeric values.value2 - [optional] Number, reference to numeric value, or range that contains numeric values.
+Syntax 
+=MINA(value1, [value2], ...)
+Usage notes 
+The MINA function returns the smallest numeric value in a range of values. Like the MIN function, MINA ignores empty cells. However, unlike the MIN function, MINA evaluates the logical values TRUE and FALSE as 1 and 0, and evaluates text as zero when these values appear in a range or cell reference.
+The MINA function takes multiple arguments in the form number1, number2, number3, etc. up to 255 total. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. 
+Examples
+Like the MIN function, the MINA function returns the smallest number in the supplied data:
+=MIN(12,17,25,11,23) // returns 11
+=MINA(12,17,25,11,23) // returns 11
+MINA can be used with constants, cell references, or ranges:
+=MINA(5,10)
+=MINA(A1,A2,A3)
+=MINA(A1:A10)
+MINA vs. MIN
+The primary difference between MIN and MINA is that MINA evaluates TRUE and FALSE values as 1 and 0, and text values as zero when these values appear in a range or in a cell reference. You can see this behavior in the range I8:I12 of the example shown. While the MIN function ignores the logical and text values completely, the MINA function includes these values when calculating a minimum value.
+Note that MIN and MINA both evaluate numbers as text when supplied directly as arguments:
+=MINA(5,"3") // returns 3
+=MIN(5,"3") // returns 3
+Notes
+MINA ignores empty cells, but evaluates logical values and text values.
+Arguments can be provided as numbers, names, arrays, or references.
+If arguments contain no numeric values, MINA returns 0.
+To ignore logical values and text, see the MIN function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions MIN FunctionMAX FunctionMAXA FunctionSMALL FunctionRANK Function 
+ Links Microsoft MINA function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

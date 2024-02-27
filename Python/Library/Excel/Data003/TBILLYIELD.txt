@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel TBILLYIELD function returns the yield for a Treasury bill.', 'Purpose' : 'Get yield for a Treasury bill', 'Return value' : 'Yield as percentage', 'Arguments' : 'settlement - Settlement date of the security.maturity - Maturity date of the security.price - Price per $100.', 'Syntax' : '=TBILLYIELD(settlement, maturity, price)' }

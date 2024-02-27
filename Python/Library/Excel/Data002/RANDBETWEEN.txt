@@ -1,0 +1,10 @@
+Summary
+The Excel RANDBETWEEN function returns a random integer between two given numbers. RANDBETWEEN recalculates each time a worksheet is opened or changed.
+Purpose 
+Get a random integer between two values
+Return value 
+An integer
+Arguments 
+bottom - An integer representing the lower value of the range.top - An integer representing the upper value of the range.
+Syntax 
+=RANDBETWEEN(bottom, top)

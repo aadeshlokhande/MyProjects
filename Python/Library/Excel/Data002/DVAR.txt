@@ -1,0 +1,10 @@
+Summary
+The Excel DVAR function returns the variance of a sample extracted from records that match the given criteria. If data represents the entire population, use the DVARP function.
+Purpose 
+Get sample variance for matching records
+Return value 
+The calculated variance
+Arguments 
+database - Database range including headers.field - Field name or index to count.criteria - Criteria range including headers.
+Syntax 
+=DVAR(database, field, criteria)

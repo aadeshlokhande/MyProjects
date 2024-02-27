@@ -1,0 +1,10 @@
+Summary
+The Excel DEC2BIN function converts a decimal number to its binary equivalent.
+Purpose 
+Converts a decimal number to binary
+Return value 
+Binary number
+Arguments 
+number - The decimal number you want to convert to binary.places - [optional] Pads the resulting binary number with zeros up to the specified number of digits. If omitted returns the least number of characters required to represent the number.
+Syntax 
+=DEC2BIN(number, [places])

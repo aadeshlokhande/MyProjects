@@ -1,0 +1,621 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel ISOWEEKNUM function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+ISOWEEKNUM Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2013
+
+
+
+
+Date and time
+
+
+ISOWEEKNUM Function
+Related functions 
+
+WEEKNUM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel ISOWEEKNUM function takes a date and returns a week number (1-54) that follows ISO standards, where weeks begin on Monday and week number 1 is assigned to the first week in a year that contains a Thursday.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get ISO week number for a given date
+
+
+
+Return value 
+
+A number between 1 and 54.
+
+
+
+Arguments 
+
+date - A valid Excel date in serial number format.
+
+
+
+Syntax 
+
+=ISOWEEKNUM(date)
+
+
+
+Usage notes 
+
+The ISOWEEKNUM function returns a week number based on ISO standards. Under this standard, weeks begin on Monday and the week number 1 is assigned to the first week in a year that contains a Thursday, following ISO 8601.
+ISOWEEKNUM takes just one argument, date, which must be a valid Excel date.
+Examples
+In the example shown, the formula in D5, copied down, is:
+
+=WEEKNUM(B5) // default week number
+
+The formula in E5, copied down the table, is:
+
+=ISOWEEKNUM(C5) // ISO week number
+
+By default the standard WEEKNUM function will start week number 1 on the first day of the year, then increment week numbers on Sundays after that. The ISOWEEKNUM function increments on Mondays, and starts week 1 on the first week that contains a Thursday.
+The WEEKNUM function can also be configured to output an ISO week number, by setting the return_type argument to 21. The formula below will output the same week numbers seen in column E of the example:
+
+=WEEKNUM(B5,21) // ISO week number
+
+Notes
+
+ISOWEEKNUM returns #VALUE! if date is not recognized as a valid date.
+ISOWEEKNUM returns #NUM! if date is out of range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Get week number from date 
+
+
+ Functions WEEKNUM Function 
+ Links Microsoft ISOWEEKNUM function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel ISOWEEKNUM function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ISOWEEKNUM Function 
+Previous 
+Next 
+ 
+Excel 2013
+Date and time
+ISOWEEKNUM Function
+Related functions 
+WEEKNUM
+Summary
+The Excel ISOWEEKNUM function takes a date and returns a week number (1-54) that follows ISO standards, where weeks begin on Monday and week number 1 is assigned to the first week in a year that contains a Thursday.
+Purpose 
+Get ISO week number for a given date
+Return value 
+A number between 1 and 54.
+Arguments 
+date - A valid Excel date in serial number format.
+Syntax 
+=ISOWEEKNUM(date)
+Usage notes 
+The ISOWEEKNUM function returns a week number based on ISO standards. Under this standard, weeks begin on Monday and the week number 1 is assigned to the first week in a year that contains a Thursday, following ISO 8601.
+ISOWEEKNUM takes just one argument, date, which must be a valid Excel date.
+Examples
+In the example shown, the formula in D5, copied down, is:
+=WEEKNUM(B5) // default week number
+The formula in E5, copied down the table, is:
+=ISOWEEKNUM(C5) // ISO week number
+By default the standard WEEKNUM function will start week number 1 on the first day of the year, then increment week numbers on Sundays after that. The ISOWEEKNUM function increments on Mondays, and starts week 1 on the first week that contains a Thursday.
+The WEEKNUM function can also be configured to output an ISO week number, by setting the return_type argument to 21. The formula below will output the same week numbers seen in column E of the example:
+=WEEKNUM(B5,21) // ISO week number
+Notes
+ISOWEEKNUM returns #VALUE! if date is not recognized as a valid date.
+ISOWEEKNUM returns #NUM! if date is out of range.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Get week number from date 
+ Functions WEEKNUM Function 
+ Links Microsoft ISOWEEKNUM function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

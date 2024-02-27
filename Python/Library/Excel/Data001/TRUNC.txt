@@ -1,0 +1,294 @@
+Excel TRUNC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRUNC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+TRUNC Function
+Related functions 
+INT
+TRUNC
+ROUND
+ROUNDDOWN
+ROUNDUP
+MROUND
+CEILING
+FLOOR
+ODD
+EVEN
+Summary
+The Excel TRUNC function returns a truncated number based on an (optional) number of digits. For example, TRUNC(4.9) will return 4, and TRUNC(-3.5) will return -3. The TRUNC function does no rounding, it simply truncates as specified.
+Purpose 
+Truncate a number to a given precision
+Return value 
+A truncated number
+Arguments 
+number - The number to truncate.num_digits - [optional] The precision of the truncation (default is 0).
+Syntax 
+=TRUNC(number, [num_digits])
+Usage notes 
+The TRUNC function returns a truncated number based on an (optional) number of digits. For example, TRUNC(4.9) will return 4, and TRUNC(-3.5) will return -3. The TRUNC function does no rounding, it simply truncates as specified.
+The TRUNC function takes two arguments: number and num_digits. Number is the numeric value to truncate. The num_digits argument is optional and specifies the place at which number should be truncated. Num_digits defaults to zero (0).
+Examples
+By default, TRUNC will return the integer portion of a number:
+=TRUNC(4.9) // returns 4
+=TRUNC(-3.5) // returns -3
+To control the place at which number is truncated, provide a value for num_digits. 
+=TRUNC(3.141593) // returns 3
+=TRUNC(3.141593,0) // returns 3
+=TRUNC(3.141593,1) // returns 3.1
+=TRUNC(3.141593,2) // returns 3.14
+=TRUNC(3.141593,3) // returns 3.141
+When num_digits is negative, the TRUNC function will replace the number at a given place with zero:
+=TRUNC(999.99,0) // returns 999
+=TRUNC(999.99,-1) // returns 990
+=TRUNC(999.99,-2) // returns 900
+TRUNC vs. INT
+The TRUNC function is similar to the INT function because they both can return the integer part of a number. However, TRUNC simply truncates a number, while INT actually rounds a number down to an integer. With positive numbers, and when TRUNC is using the default of 0 for num_digits, both functions return the same results. With negative numbers, the results can be different. INT(-3.1) returns -4, because INT rounds down to the lower integer. TRUNC(-3.1) returns -3. If you simply want the integer part of a number, you should use TRUNC.
+Rounding functions in Excel
+Excel provides a number of functions for rounding:
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Data validation whole percentage only 
+Remove time from timestamp 
+Convert inches to feet and inches 
+Number is whole number 
+Get decimal part of a number 
+Extract date from a date and time 
+Get integer part of a number 
+Videos
+  
+3 basic array formulas 
+ Functions INT FunctionTRUNC FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionMROUND FunctionCEILING FunctionFLOOR FunctionODD FunctionEVEN Function 
+ Links Microsoft TRUNC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel TRUNC function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+TRUNC Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+TRUNC Function
+Related functions 
+INT
+TRUNC
+ROUND
+ROUNDDOWN
+ROUNDUP
+MROUND
+CEILING
+FLOOR
+ODD
+EVEN
+Summary
+The Excel TRUNC function returns a truncated number based on an (optional) number of digits. For example, TRUNC(4.9) will return 4, and TRUNC(-3.5) will return -3. The TRUNC function does no rounding, it simply truncates as specified.
+Purpose 
+Truncate a number to a given precision
+Return value 
+A truncated number
+Arguments 
+number - The number to truncate.num_digits - [optional] The precision of the truncation (default is 0).
+Syntax 
+=TRUNC(number, [num_digits])
+Usage notes 
+The TRUNC function returns a truncated number based on an (optional) number of digits. For example, TRUNC(4.9) will return 4, and TRUNC(-3.5) will return -3. The TRUNC function does no rounding, it simply truncates as specified.
+The TRUNC function takes two arguments: number and num_digits. Number is the numeric value to truncate. The num_digits argument is optional and specifies the place at which number should be truncated. Num_digits defaults to zero (0).
+Examples
+By default, TRUNC will return the integer portion of a number:
+=TRUNC(4.9) // returns 4
+=TRUNC(-3.5) // returns -3
+To control the place at which number is truncated, provide a value for num_digits. 
+=TRUNC(3.141593) // returns 3
+=TRUNC(3.141593,0) // returns 3
+=TRUNC(3.141593,1) // returns 3.1
+=TRUNC(3.141593,2) // returns 3.14
+=TRUNC(3.141593,3) // returns 3.141
+When num_digits is negative, the TRUNC function will replace the number at a given place with zero:
+=TRUNC(999.99,0) // returns 999
+=TRUNC(999.99,-1) // returns 990
+=TRUNC(999.99,-2) // returns 900
+TRUNC vs. INT
+The TRUNC function is similar to the INT function because they both can return the integer part of a number. However, TRUNC simply truncates a number, while INT actually rounds a number down to an integer. With positive numbers, and when TRUNC is using the default of 0 for num_digits, both functions return the same results. With negative numbers, the results can be different. INT(-3.1) returns -4, because INT rounds down to the lower integer. TRUNC(-3.1) returns -3. If you simply want the integer part of a number, you should use TRUNC.
+Rounding functions in Excel
+Excel provides a number of functions for rounding:
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Data validation whole percentage only 
+Remove time from timestamp 
+Convert inches to feet and inches 
+Number is whole number 
+Get decimal part of a number 
+Extract date from a date and time 
+Get integer part of a number 
+Videos
+  
+3 basic array formulas 
+ Functions INT FunctionTRUNC FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionMROUND FunctionCEILING FunctionFLOOR FunctionODD FunctionEVEN Function 
+ Links Microsoft TRUNC function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

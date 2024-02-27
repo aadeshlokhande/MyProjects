@@ -1,0 +1,294 @@
+Excel MROUND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MROUND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+MROUND Function
+Related functions 
+CEILING
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+MROUND
+INT
+TRUNC
+Summary
+The Excel MROUND function returns a number rounded to a given multiple. MROUND will round a number up or down, depending on the nearest multiple.
+Purpose 
+Round a number to the nearest specified multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - The multiple to use when rounding.
+Syntax 
+=MROUND(number, significance)
+Usage notes 
+The MROUND function rounds a number to the nearest given multiple. The multiple to use for rounding is provided as the significance argument. Rounding occurs when the remainder from dividing number by significance is greater than or equal to half the value of significance. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The MROUND function takes two arguments, number and significance. Number is the numeric value to round. The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but MROUND can also understand time entered as text like "0:15" or "0:30". Number and significance must have the same sign, otherwise MROUND will return a #NUM! error.
+Examples
+Below are some examples of MROUND formulas with hardcoded values:
+=MROUND(10,3) // returns 9
+=MROUND(10,4) // returns 12
+=MROUND(119,25) // returns 125
+To round a number in A1 to the nearest multiple of 5, you can use MROUND like this:
+=MROUND(A1,5) // round to nearest 5
+Nearest negative number
+To round negative numbers with MROUND, use a negative sign for significance:
+=MROUND(-10,-3) // returns -9
+=MROUND(-10,-4) // returns -12
+=MROUND(-119,-25) // returns -125
+Nearest .99
+MROUND can be used to round pricing to end with .99.  The formula below will round a value in A1 to the nearest 1 dollar, subtract 1 cent, and return a final price like $2.99, $5.99, $49.99, etc.
+=MROUND(A1,1) - 0.01 // round to nearest .99
+Nearest 15 minutes
+MROUND can be used to round time. To round a time in A1 to the nearest 15 minutes, you can use a formula like this:
+=MROUND(A1,"0:15") // round to nearest 15 min
+Rounding functions in Excel
+Excel provides a number of functions for rounding:
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+Notes
+If a number is already an exact multiple, no rounding occurs.
+Rounding occurs when the remainder from dividing number by significance is greater than or equal to half the value of significance.
+Number and significance must have the same sign.
+MROUND returns #NUM! if number and significance are not the same sign.
+MROUND returns #VALUE! if number or significance is not numeric.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Round to nearest 5 
+Round time to nearest 15 minutes 
+Round a number to nearest multiple 
+Round a price to end in .99 
+ Functions CEILING FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionMROUND FunctionINT FunctionTRUNC Function 
+ Links Microsoft MROUND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel MROUND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MROUND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Math
+MROUND Function
+Related functions 
+CEILING
+FLOOR
+ROUND
+ROUNDDOWN
+ROUNDUP
+MROUND
+INT
+TRUNC
+Summary
+The Excel MROUND function returns a number rounded to a given multiple. MROUND will round a number up or down, depending on the nearest multiple.
+Purpose 
+Round a number to the nearest specified multiple
+Return value 
+A rounded number.
+Arguments 
+number - The number that should be rounded.significance - The multiple to use when rounding.
+Syntax 
+=MROUND(number, significance)
+Usage notes 
+The MROUND function rounds a number to the nearest given multiple. The multiple to use for rounding is provided as the significance argument. Rounding occurs when the remainder from dividing number by significance is greater than or equal to half the value of significance. If the number is already an exact multiple, no rounding occurs and the original number is returned.
+The MROUND function takes two arguments, number and significance. Number is the numeric value to round. The significance argument is the multiple to which number should be rounded. In most cases, significance is provided as a numeric value, but MROUND can also understand time entered as text like "0:15" or "0:30". Number and significance must have the same sign, otherwise MROUND will return a #NUM! error.
+Examples
+Below are some examples of MROUND formulas with hardcoded values:
+=MROUND(10,3) // returns 9
+=MROUND(10,4) // returns 12
+=MROUND(119,25) // returns 125
+To round a number in A1 to the nearest multiple of 5, you can use MROUND like this:
+=MROUND(A1,5) // round to nearest 5
+Nearest negative number
+To round negative numbers with MROUND, use a negative sign for significance:
+=MROUND(-10,-3) // returns -9
+=MROUND(-10,-4) // returns -12
+=MROUND(-119,-25) // returns -125
+Nearest .99
+MROUND can be used to round pricing to end with .99.  The formula below will round a value in A1 to the nearest 1 dollar, subtract 1 cent, and return a final price like $2.99, $5.99, $49.99, etc.
+=MROUND(A1,1) - 0.01 // round to nearest .99
+Nearest 15 minutes
+MROUND can be used to round time. To round a time in A1 to the nearest 15 minutes, you can use a formula like this:
+=MROUND(A1,"0:15") // round to nearest 15 min
+Rounding functions in Excel
+Excel provides a number of functions for rounding:
+To round normally, use the ROUND function.
+To round to the nearest multiple, use the MROUND function.
+To round down to the nearest specified place, use the ROUNDDOWN function.
+To round down to the nearest specified multiple, use the FLOOR function.
+To round up to the nearest specified place, use the ROUNDUP function.
+To round up to the nearest specified multiple, use the CEILING function.
+To round down and return an integer only, use the INT function.
+To truncate decimal places, use the TRUNC function.
+Notes
+If a number is already an exact multiple, no rounding occurs.
+Rounding occurs when the remainder from dividing number by significance is greater than or equal to half the value of significance.
+Number and significance must have the same sign.
+MROUND returns #NUM! if number and significance are not the same sign.
+MROUND returns #VALUE! if number or significance is not numeric.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Round to nearest 5 
+Round time to nearest 15 minutes 
+Round a number to nearest multiple 
+Round a price to end in .99 
+ Functions CEILING FunctionFLOOR FunctionROUND FunctionROUNDDOWN FunctionROUNDUP FunctionMROUND FunctionINT FunctionTRUNC Function 
+ Links Microsoft MROUND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

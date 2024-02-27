@@ -1,0 +1,10 @@
+Summary
+The Excel DEC2OCT function converts a decimal number to its octal equivalent.
+Purpose 
+Converts a decimal number to octal
+Return value 
+Octal number
+Arguments 
+number - The decimal number you want to convert to octal.places - [optional] Pads the resulting octal number with zeros up to the specified number of digits. If omitted returns the least number of characters required to represent the number.
+Syntax 
+=DEC2OCT(number, [places])

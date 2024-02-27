@@ -1,0 +1,9 @@
+Summary
+The Excel NA function returns the #N/A error. #N/A means "not available" or "no value available". You can use the NA function to display the #N/A error when information is missing.
+Purpose 
+Create an #N/A error
+Return value 
+The #N/A error
+Arguments 
+Syntax 
+=NA()

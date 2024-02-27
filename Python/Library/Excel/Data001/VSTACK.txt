@@ -1,0 +1,214 @@
+Excel VSTACK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VSTACK Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+VSTACK Function 
+Summary
+The Excel VSTACK function combines arrays vertically into a single array. Each subsequent array is appended to the bottom of the previous array.
+Purpose 
+Combine ranges or arrays vertically
+Return value 
+A single combined range or array
+Arguments 
+array1 - The first array or range to combine.array2 - [optional] The second array or range to combine.
+Syntax 
+=VSTACK(array1, [array2], ...)
+Usage notes 
+The Excel VSTACK function combines arrays vertically into a single array. Each subsequent array is appended to the bottom of the previous array. The result from VSTACK is a single array that spills onto the worksheet into multiple cells.
+VSTACK works equally well for ranges on a worksheet or in-memory arrays created by a formula. The output from VSTACK is fully dynamic. If data in the given arrays changes, the result from VSTACK will immediately update. VSTACK works well with Excel Tables, as seen in the worksheet above, since Excel Tables automatically expand when new data is added.
+Use VSTACK to combine ranges vertically and HSTACK to combine ranges horizontally.
+Basic usage
+VSTACK stacks ranges or arrays vertically. In the example below, the range B3:B5 is combined with the range B8:B9. Each subsequent range/array is appended to the bottom of the previous range/array. The formula in D3 is:
+=VSTACK(B3:B5,B8:B9) 
+Range with array
+VSTACK can work interchangeably with both arrays and ranges. In the worksheet below, we combine the array constant {"Color","Qty"} with the range B3:C7. The formula in E3 is:
+=VSTACK({"Color","Qty"},B3:C7)
+Arrays of different size
+When VSTACK is used with arrays of different size, the smaller array will be expanded to match the size of the larger array. In other words, the smaller array is "padded" to match the size of the larger array, as seen in the example below. The formula in cell E5 is:
+=VSTACK(B5:C8,B11:B13)
+By default, the cells used for padding will display the #N/A error. One option for trapping these errors is to use the IFERROR function. The formula in H5 is:
+=IFERROR(VSTACK(B5:C8,B11:B13),"")
+In this formula IFERROR is configured to replace errors with an empty string (""), which displays as an empty cell.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel VSTACK function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+VSTACK Function 
+Previous 
+Next 
+ 
+Excel 365
+Dynamic array
+VSTACK Function 
+Summary
+The Excel VSTACK function combines arrays vertically into a single array. Each subsequent array is appended to the bottom of the previous array.
+Purpose 
+Combine ranges or arrays vertically
+Return value 
+A single combined range or array
+Arguments 
+array1 - The first array or range to combine.array2 - [optional] The second array or range to combine.
+Syntax 
+=VSTACK(array1, [array2], ...)
+Usage notes 
+The Excel VSTACK function combines arrays vertically into a single array. Each subsequent array is appended to the bottom of the previous array. The result from VSTACK is a single array that spills onto the worksheet into multiple cells.
+VSTACK works equally well for ranges on a worksheet or in-memory arrays created by a formula. The output from VSTACK is fully dynamic. If data in the given arrays changes, the result from VSTACK will immediately update. VSTACK works well with Excel Tables, as seen in the worksheet above, since Excel Tables automatically expand when new data is added.
+Use VSTACK to combine ranges vertically and HSTACK to combine ranges horizontally.
+Basic usage
+VSTACK stacks ranges or arrays vertically. In the example below, the range B3:B5 is combined with the range B8:B9. Each subsequent range/array is appended to the bottom of the previous range/array. The formula in D3 is:
+=VSTACK(B3:B5,B8:B9) 
+Range with array
+VSTACK can work interchangeably with both arrays and ranges. In the worksheet below, we combine the array constant {"Color","Qty"} with the range B3:C7. The formula in E3 is:
+=VSTACK({"Color","Qty"},B3:C7)
+Arrays of different size
+When VSTACK is used with arrays of different size, the smaller array will be expanded to match the size of the larger array. In other words, the smaller array is "padded" to match the size of the larger array, as seen in the example below. The formula in cell E5 is:
+=VSTACK(B5:C8,B11:B13)
+By default, the cells used for padding will display the #N/A error. One option for trapping these errors is to use the IFERROR function. The formula in H5 is:
+=IFERROR(VSTACK(B5:C8,B11:B13),"")
+In this formula IFERROR is configured to replace errors with an empty string (""), which displays as an empty cell.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

@@ -1,0 +1,282 @@
+Excel AND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+AND Function
+Related functions 
+IF
+OR
+XOR
+NOT
+Summary
+The Excel AND function is a logical function used to require more than one condition at the same time. AND returns either TRUE or FALSE. To test if a number in A1 is greater than zero and less than 10, use =AND(A1>0,A1<10). The AND function can be used as the logical test inside the IF function to avoid extra nested IFs, and can be combined with the OR function.
+Purpose 
+Test multiple conditions with AND
+Return value 
+TRUE if all arguments evaluate TRUE; FALSE if not
+Arguments 
+logical1 - The first condition or logical value to evaluate.logical2 - [optional] The second condition or logical value to evaluate.
+Syntax 
+=AND(logical1, [logical2], ...)
+Usage notes 
+The AND function is used to check more than one logical condition at the same time, up to 255 conditions, supplied as arguments. Each argument (logical1, logical2, etc.) must be an expression that returns TRUE or FALSE or a value that can be evaluated as TRUE or FALSE. The arguments provided to the AND function can be constants, cell references, arrays, or logical expressions. 
+The purpose of the AND function is to evaluate more than one logical test at the same time and return TRUE only if all results are TRUE. For example, if A1 contains the number 50, then:
+=AND(A1>0,A1>10,A1<100) // returns TRUE
+=AND(A1>0,A1>10,A1<30) // returns FALSE
+The AND function will evaluate all values supplied and return TRUE only if all values evaluate to TRUE. If any value evaluates to FALSE, the AND function will return FALSE. Note: Excel will evaluate any number except zero (0) as TRUE.
+Both the AND function and the OR function will aggregate results to a single value. This means they can't be used in array operations that need to deliver an array of results. To work around this limitation, you can use Boolean logic. For more information, see: Array formulas with AND and OR logic.
+Examples
+To test if the value in A1 is greater than 0 and less than 5, you can use AND like this:
+=AND(A1>0,A1<5)
+You can embed the AND function inside the IF function. Using the above example, you can supply AND as the logical_test for the IF function like so:
+=IF(AND(A1>0,A1<5), "Approved", "Denied")
+This formula will return "Approved" only if the value in A1 is greater than 0 and less than 5.
+You can combine the AND function with the OR function. The formula below returns TRUE when A1 > 100 and B1 is "complete" or "pending":
+=AND(A1>100,OR(B1="complete",B1="pending"))
+See below for many more examples of how the AND function can be used.
+Notes
+The AND function is not case-sensitive.
+The AND function does not support wildcards.
+Text values or empty cells supplied as arguments are ignored.
+The AND function will return #VALUE if no logical values are found or created during evaluation.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+If this AND that OR that 
+Multiple cells are equal 
+Split payment across months 
+Data validation allow uppercase only 
+Last n months 
+Data validation require unique number 
+If date is between two dates 
+Highlight dates in the next N days 
+Gantt chart time schedule 
+Nested IF with multiple AND 
+Videos
+  
+How to use a formula with conditional formatting 
+If this OR that 
+How to highlight rows using multiple criteria 
+Conditional formatting with two variable inputs 
+How to highlight approximate match lookups 
+ Functions IF FunctionOR FunctionXOR FunctionNOT Function 
+ Articles How to use formula criteria (50 examples) 
+ Links Microsoft AND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel AND function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+AND Function 
+Previous 
+Next 
+ 
+Excel 2003
+Logical
+AND Function
+Related functions 
+IF
+OR
+XOR
+NOT
+Summary
+The Excel AND function is a logical function used to require more than one condition at the same time. AND returns either TRUE or FALSE. To test if a number in A1 is greater than zero and less than 10, use =AND(A1>0,A1<10). The AND function can be used as the logical test inside the IF function to avoid extra nested IFs, and can be combined with the OR function.
+Purpose 
+Test multiple conditions with AND
+Return value 
+TRUE if all arguments evaluate TRUE; FALSE if not
+Arguments 
+logical1 - The first condition or logical value to evaluate.logical2 - [optional] The second condition or logical value to evaluate.
+Syntax 
+=AND(logical1, [logical2], ...)
+Usage notes 
+The AND function is used to check more than one logical condition at the same time, up to 255 conditions, supplied as arguments. Each argument (logical1, logical2, etc.) must be an expression that returns TRUE or FALSE or a value that can be evaluated as TRUE or FALSE. The arguments provided to the AND function can be constants, cell references, arrays, or logical expressions. 
+The purpose of the AND function is to evaluate more than one logical test at the same time and return TRUE only if all results are TRUE. For example, if A1 contains the number 50, then:
+=AND(A1>0,A1>10,A1<100) // returns TRUE
+=AND(A1>0,A1>10,A1<30) // returns FALSE
+The AND function will evaluate all values supplied and return TRUE only if all values evaluate to TRUE. If any value evaluates to FALSE, the AND function will return FALSE. Note: Excel will evaluate any number except zero (0) as TRUE.
+Both the AND function and the OR function will aggregate results to a single value. This means they can't be used in array operations that need to deliver an array of results. To work around this limitation, you can use Boolean logic. For more information, see: Array formulas with AND and OR logic.
+Examples
+To test if the value in A1 is greater than 0 and less than 5, you can use AND like this:
+=AND(A1>0,A1<5)
+You can embed the AND function inside the IF function. Using the above example, you can supply AND as the logical_test for the IF function like so:
+=IF(AND(A1>0,A1<5), "Approved", "Denied")
+This formula will return "Approved" only if the value in A1 is greater than 0 and less than 5.
+You can combine the AND function with the OR function. The formula below returns TRUE when A1 > 100 and B1 is "complete" or "pending":
+=AND(A1>100,OR(B1="complete",B1="pending"))
+See below for many more examples of how the AND function can be used.
+Notes
+The AND function is not case-sensitive.
+The AND function does not support wildcards.
+Text values or empty cells supplied as arguments are ignored.
+The AND function will return #VALUE if no logical values are found or created during evaluation.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+If this AND that OR that 
+Multiple cells are equal 
+Split payment across months 
+Data validation allow uppercase only 
+Last n months 
+Data validation require unique number 
+If date is between two dates 
+Highlight dates in the next N days 
+Gantt chart time schedule 
+Nested IF with multiple AND 
+Videos
+  
+How to use a formula with conditional formatting 
+If this OR that 
+How to highlight rows using multiple criteria 
+Conditional formatting with two variable inputs 
+How to highlight approximate match lookups 
+ Functions IF FunctionOR FunctionXOR FunctionNOT Function 
+ Articles How to use formula criteria (50 examples) 
+ Links Microsoft AND function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

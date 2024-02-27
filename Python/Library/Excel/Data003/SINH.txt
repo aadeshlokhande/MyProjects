@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel SINH function returns the hyperbolic sine of a number.', 'Purpose' : 'Get hyperbolic sine of a number.', 'Return value' : 'The hyperbolic sine of a number.', 'Arguments' : 'number - The hyperbolic angle.', 'Syntax' : '=SINH(number)' }

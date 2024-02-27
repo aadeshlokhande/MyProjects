@@ -1,0 +1,34 @@
+// ATM
+
+// pin = 1122
+// bal = 12000
+
+// press 1 : withdraw
+    // enter a pin = 1122
+    //     enter your amount = 1000 
+    //         transaction done
+    //         current balance = 11000
+    //     low balance
+    // wrong pin 
+    
+// press 2 : check balance
+    // enter a pin = 1122
+        // current balance = 11000
+    // wrong pin
+
+// press 3 : change pin 
+    // enter a pin = 1122
+    //     enter a new pin = 1234
+    //     confirm your pin = 1234 
+    //         pin changed
+    //     pin doesn't match
+    // wrong pin
+
+// press 4 : deposit
+    // enter a pin = 1122
+    //     enter your amount = 1000 
+    //         transaction done
+    //         current balance = 13000
+    // wrong pin 
+
+// thank for using our service

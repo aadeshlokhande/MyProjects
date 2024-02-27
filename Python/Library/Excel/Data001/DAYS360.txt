@@ -1,0 +1,236 @@
+Excel DAYS360 function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DAYS360 Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DAYS360 Function
+Related functions 
+YEARFRAC
+DAYS
+NETWORKDAYS
+DATEDIF
+Summary
+The Excel DAYS360 function returns the number of days between two dates based on a 360-day year, where all months are assumed to have 30 days. For example, the formula =DAYS360("1-Jan-2021","31-Dec-2021") returns 360 days.
+Purpose 
+Get days between 2 dates in a 360-day year
+Return value 
+A number representing days.
+Arguments 
+start_date - The start date.end_date - The end date.method - [optional] Day count method. FALSE (default) = US method, TRUE = European method.
+Syntax 
+=DAYS360(start_date, end_date, [method])
+Usage notes 
+The DAYS360 function returns the number of days between two dates, based on a year where all months have 30 days. Both dates must be valid Excel dates or text values that can be parsed as dates. The DAYS360 function only works with whole numbers, time values are ignored. 
+Method
+DAYS360 takes an optional argument called method that can be set to either TRUE or FALSE. When method is FALSE (default) DAYS360 uses a US method to compute days. When the start date is the last day of the month, it is treated like the 30th day of that month. When the end date is the last day of the month, and the start date is less than 30, the end date is treated as the 1st of the next month, otherwise the end date is treated like the 30th of the same month.
+If method is set to TRUE, DAYS360 uses a European method to calculate days. In this scheme, start and end dates equal to the 31st of a month are set to the 30th of the same month.
+Examples
+In the formula below, DAYS360 returns 360 days with a start date of January 1, 2021 and an end date of December 31, 2021.
+=DAYS360("1-Jan-2021","31-Dec-2021") // returns 360
+The result of 360 is based on 12 months * 30 days in each month. 
+Note: In general, storing and parsing text values that represent dates is bad form and should be avoided, because it can introduce errors and parsing problems. Working with native Excel dates is a better approach. 
+With a start date of July 1, 2021 in A1, and an end date of December 31, 2021 in B1, the formula below returns 180:
+=DAYS360(A1,B1) // returns 180
+To create a date from scratch in a formula, use the DATE function. The formula below returns 90:
+=DAYS360(DATE(2021,1,1),DATE(2021,4,1)) // returns 90
+Notes
+The DAYS360 function only works with whole numbers and ignores time.
+If dates are not recognized, DAYS360 returns the #VALUE! error.
+If dates are out of range, DAYS360 returns the #NUM! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions YEARFRAC FunctionDAYS FunctionNETWORKDAYS FunctionDATEDIF Function 
+ Links Microsoft DAYS360 function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel DAYS360 function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+DAYS360 Function 
+Previous 
+Next 
+ 
+Excel 2003
+Date and time
+DAYS360 Function
+Related functions 
+YEARFRAC
+DAYS
+NETWORKDAYS
+DATEDIF
+Summary
+The Excel DAYS360 function returns the number of days between two dates based on a 360-day year, where all months are assumed to have 30 days. For example, the formula =DAYS360("1-Jan-2021","31-Dec-2021") returns 360 days.
+Purpose 
+Get days between 2 dates in a 360-day year
+Return value 
+A number representing days.
+Arguments 
+start_date - The start date.end_date - The end date.method - [optional] Day count method. FALSE (default) = US method, TRUE = European method.
+Syntax 
+=DAYS360(start_date, end_date, [method])
+Usage notes 
+The DAYS360 function returns the number of days between two dates, based on a year where all months have 30 days. Both dates must be valid Excel dates or text values that can be parsed as dates. The DAYS360 function only works with whole numbers, time values are ignored. 
+Method
+DAYS360 takes an optional argument called method that can be set to either TRUE or FALSE. When method is FALSE (default) DAYS360 uses a US method to compute days. When the start date is the last day of the month, it is treated like the 30th day of that month. When the end date is the last day of the month, and the start date is less than 30, the end date is treated as the 1st of the next month, otherwise the end date is treated like the 30th of the same month.
+If method is set to TRUE, DAYS360 uses a European method to calculate days. In this scheme, start and end dates equal to the 31st of a month are set to the 30th of the same month.
+Examples
+In the formula below, DAYS360 returns 360 days with a start date of January 1, 2021 and an end date of December 31, 2021.
+=DAYS360("1-Jan-2021","31-Dec-2021") // returns 360
+The result of 360 is based on 12 months * 30 days in each month. 
+Note: In general, storing and parsing text values that represent dates is bad form and should be avoided, because it can introduce errors and parsing problems. Working with native Excel dates is a better approach. 
+With a start date of July 1, 2021 in A1, and an end date of December 31, 2021 in B1, the formula below returns 180:
+=DAYS360(A1,B1) // returns 180
+To create a date from scratch in a formula, use the DATE function. The formula below returns 90:
+=DAYS360(DATE(2021,1,1),DATE(2021,4,1)) // returns 90
+Notes
+The DAYS360 function only works with whole numbers and ignores time.
+If dates are not recognized, DAYS360 returns the #VALUE! error.
+If dates are out of range, DAYS360 returns the #NUM! error.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions YEARFRAC FunctionDAYS FunctionNETWORKDAYS FunctionDATEDIF Function 
+ Links Microsoft DAYS360 function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

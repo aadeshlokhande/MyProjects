@@ -1,0 +1,613 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel NPV function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+NPV Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+NPV Function
+Related functions 
+
+PV
+IRR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel NPV function is a financial function that calculates the net present value (NPV) of an investment using a discount rate and a series of future cash flows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Calculate net present value
+
+
+
+Return value 
+
+Net present value
+
+
+
+Arguments 
+
+rate - Discount rate over one period.value1 - First value(s) representing cash flows.value2 - [optional] Second value(s) representing cash flows.
+
+
+
+Syntax 
+
+=NPV(rate, value1, [value2], ...)
+
+
+
+Usage notes 
+
+NPV calculates the net present value (NPV) of an investment using a discount rate and a series of future cash flows. The discount rate is the rate for one period, assumed to be annual. NPV in Excel is a bit tricky, because of how the function is implemented. Although NPV carries the idea of "net", as in the present value of future cash flows less initial cost, NPV is really just the present value of uneven cash flows.
+As Timothy R. Mayes, author of Financial Analysis with Microsoft Excel, says on his website TVMCalcs.com:
+Net present value is defined as the present value of the expected future cash flows less the initial cost of the investment...the NPV function in spreadsheets doesn't really calculate NPV. Instead, despite the word "net," the NPV function is really just a present value of an uneven cash flow function.
+One simple approach is to exclude the initial investment from the values argument and instead subtract the amount outside the NPV function. 
+In the example shown, the formula in F6 is:
+
+=NPV(F4,C6:C10)+C5
+
+Note the initial investment in C5 is not included as a value, and is instead added to the result of NPV (since the number is negative).
+Notes
+
+values must be equally spaced in time and occur at the end of each period.
+values must be in chronological order.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+NPV formula for net present value 
+
+
+ Functions PV FunctionIRR Function 
+ Links Microsoft NPV function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel NPV function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+NPV Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+NPV Function
+Related functions 
+PV
+IRR
+Summary
+The Excel NPV function is a financial function that calculates the net present value (NPV) of an investment using a discount rate and a series of future cash flows.
+Purpose 
+Calculate net present value
+Return value 
+Net present value
+Arguments 
+rate - Discount rate over one period.value1 - First value(s) representing cash flows.value2 - [optional] Second value(s) representing cash flows.
+Syntax 
+=NPV(rate, value1, [value2], ...)
+Usage notes 
+NPV calculates the net present value (NPV) of an investment using a discount rate and a series of future cash flows. The discount rate is the rate for one period, assumed to be annual. NPV in Excel is a bit tricky, because of how the function is implemented. Although NPV carries the idea of "net", as in the present value of future cash flows less initial cost, NPV is really just the present value of uneven cash flows.
+As Timothy R. Mayes, author of Financial Analysis with Microsoft Excel, says on his website TVMCalcs.com:
+Net present value is defined as the present value of the expected future cash flows less the initial cost of the investment...the NPV function in spreadsheets doesn't really calculate NPV. Instead, despite the word "net," the NPV function is really just a present value of an uneven cash flow function.
+One simple approach is to exclude the initial investment from the values argument and instead subtract the amount outside the NPV function. 
+In the example shown, the formula in F6 is:
+=NPV(F4,C6:C10)+C5
+Note the initial investment in C5 is not included as a value, and is instead added to the result of NPV (since the number is negative).
+Notes
+values must be equally spaced in time and occur at the end of each period.
+values must be in chronological order.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+NPV formula for net present value 
+ Functions PV FunctionIRR Function 
+ Links Microsoft NPV function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

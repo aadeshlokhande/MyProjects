@@ -1,0 +1,10 @@
+Summary
+The Excel PPMT function can be used to calculate the principal portion of a given loan payment. For example, you can use PPMT to get the principal amount of a payment for the first period, the last period, or any period in between.
+Purpose 
+Get principal payment in given period
+Return value 
+The principal payment
+Arguments 
+rate - The interest rate per period.per - The payment period of interest.nper - The total number of payments for the loan.pv - The present value, or total value of all payments now.fv - [optional] The cash balance desired after last payment is made. Defaults to 0.type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.
+Syntax 
+=PPMT(rate, per, nper, pv, [fv], [type])

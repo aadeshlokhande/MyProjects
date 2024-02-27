@@ -1,0 +1,232 @@
+Excel T function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+T Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+T Function
+Related functions 
+N
+Summary
+The Excel T function returns text when given a text value and an empty string ("") for numbers, dates, and the logical values TRUE and FALSE. You can use the T function to remove values that are not text.
+Purpose 
+Filter text values only
+Return value 
+Value as text when text
+Arguments 
+value - The value to return as text.
+Syntax 
+=T(value)
+Usage notes 
+The Excel T function converts numbers, dates, and the logical values TRUE and FALSE into empty strings.  Text values and errors are not converted and pass through unaffected. You can use the T function to remove values that are not text.
+The T function takes one argument, value, which can be a cell reference, a formula result, or a hardcoded value.
+Examples
+The T function returns text when given a text value and an empty string ("") for numbers, dates, and the logical values TRUE and FALSE. For example:
+=T("apple") // returns "apple"
+=T("NASA") // returns "NASA"
+=T(100) // returns ""
+=T(FALSE) // returns ""
+In most cases, the T function is unnecessary, because Excel automatically converts values when needed. The T function is provided for compatibility with other spreadsheet programs.
+Errors are not affected by the T function:
+=T(3/0) // returns #DIV/0!
+=T("#N/A") // returns #N/A
+Notes
+The T function removes numeric values. The N function removes text values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Translate letters to numbers 
+List sheet names with formula 
+ Functions N Function 
+ Links Microsoft T function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel T function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+T Function 
+Previous 
+Next 
+ 
+Excel 2003
+Information
+T Function
+Related functions 
+N
+Summary
+The Excel T function returns text when given a text value and an empty string ("") for numbers, dates, and the logical values TRUE and FALSE. You can use the T function to remove values that are not text.
+Purpose 
+Filter text values only
+Return value 
+Value as text when text
+Arguments 
+value - The value to return as text.
+Syntax 
+=T(value)
+Usage notes 
+The Excel T function converts numbers, dates, and the logical values TRUE and FALSE into empty strings.  Text values and errors are not converted and pass through unaffected. You can use the T function to remove values that are not text.
+The T function takes one argument, value, which can be a cell reference, a formula result, or a hardcoded value.
+Examples
+The T function returns text when given a text value and an empty string ("") for numbers, dates, and the logical values TRUE and FALSE. For example:
+=T("apple") // returns "apple"
+=T("NASA") // returns "NASA"
+=T(100) // returns ""
+=T(FALSE) // returns ""
+In most cases, the T function is unnecessary, because Excel automatically converts values when needed. The T function is provided for compatibility with other spreadsheet programs.
+Errors are not affected by the T function:
+=T(3/0) // returns #DIV/0!
+=T("#N/A") // returns #N/A
+Notes
+The T function removes numeric values. The N function removes text values.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Translate letters to numbers 
+List sheet names with formula 
+ Functions N Function 
+ Links Microsoft T function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

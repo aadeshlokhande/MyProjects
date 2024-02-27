@@ -1,0 +1,9 @@
+Python was created in the late 1980s by Guido van Rossum, a Dutch programmer who was working at the National Research Institute for Mathematics and Computer Science (CWI) in the Netherlands. Guido van Rossum was interested in creating a programming language that would be easy to learn and use, and that would also be suitable for both small and large-scale projects.
+
+In 1991, Guido van Rossum released the first version of Python, which was a successor to a programming language called ABC. The name "Python" was inspired by Guido's love of Monty Python's Flying Circus, a British comedy television show.
+
+Python gained popularity quickly due to its simplicity, ease of use, and ability to integrate with other programming languages. In 2000, Python 2.0 was released with significant improvements to the language, including a garbage collector, Unicode support, and list comprehensions.
+
+In 2008, Python 3.0 was released with several significant changes to the language, including a new print function, syntax changes, and the removal of some features from Python 2. Despite the changes, the transition to Python 3 was slow, and many developers continued to use Python 2 for several years.
+
+Python has become one of the most popular programming languages in the world, with a large and active community of developers. It is widely used in web development, data analysis, scientific computing, machine learning, and many other fields. Today, Python is maintained by the Python Software Foundation, a non-profit organization that supports the development and promotion of the language.

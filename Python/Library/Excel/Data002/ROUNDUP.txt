@@ -1,0 +1,10 @@
+Summary
+The Excel ROUNDUP function returns a number rounded up to a given number of decimal places. Unlike standard rounding, where only numbers less than 5 are rounded down, ROUNDUP rounds all numbers up.
+Purpose 
+Round a number up to a given number of digits
+Return value 
+A rounded number.
+Arguments 
+number - The number to round up.num_digits - The place at which number should be rounded.
+Syntax 
+=ROUNDUP(number, num_digits)

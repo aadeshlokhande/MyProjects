@@ -1,0 +1,643 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MODE function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MODE Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Statistical
+
+
+MODE Function
+Related functions 
+
+AVERAGE
+MEDIAN
+MODE.SNGL
+MODE.MULT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MODE function returns the most frequently occurring number in a numeric data set. For example, =MODE(1,2,4,4,5,5,5,6) returns 5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get most frequently occurring number
+
+
+
+Return value 
+
+A number representing the mode.
+
+
+
+Arguments 
+
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+
+
+
+Syntax 
+
+=MODE(number1, [number2], ...)
+
+
+
+Usage notes 
+
+The MODE function returns the most frequently occurring number in a set of numeric data. If supplied data does not contain any duplicate numbers, the MODE function returns a #N/A error.
+The MODE function takes multiple arguments in the form number1, number2, number3, etc. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MODE ignores empty cells, text values, and the logical values TRUE and FALSE. The MODE function will accept up to 255 separate arguments. 
+Examples
+MODE returns the most frequently occurring number in supplied data. For example,
+
+=MODE(1,2,4,4,5,5,5,6) // returns 5
+=MODE(7,8,9,7,9) // returns 7
+
+If there are no duplicate numbers, the MODE function returns the #N/A error:
+
+=MODE(7,9,6,5,3,1,0) // returns #N/A
+
+In the example shown, the formula in L5, copied down, is:
+
+=MODE(B5:J5)
+
+Note: the MODE function is now classified as a "compatibility function". Microsoft recommends that MODE.SNGL or MODE.MULT be used instead.
+Notes
+
+If supplied data does not contain duplicate numbers, MODE returns #N/A
+MODE ignores empty cells, the logical values TRUE and FALSE, and text.
+Arguments can be numbers, names, arrays, or references.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+
+Formulas
+  
+Conditional mode with criteria 
+
+Most frequent text with criteria 
+
+List most frequently occuring numbers 
+
+Most frequently occurring text 
+
+Most frequently occurring number 
+
+
+ Functions AVERAGE FunctionMEDIAN FunctionMODE.SNGL FunctionMODE.MULT Function 
+ Links Microsoft MODE function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MODE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MODE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Statistical
+MODE Function
+Related functions 
+AVERAGE
+MEDIAN
+MODE.SNGL
+MODE.MULT
+Summary
+The Excel MODE function returns the most frequently occurring number in a numeric data set. For example, =MODE(1,2,4,4,5,5,5,6) returns 5.
+Purpose 
+Get most frequently occurring number
+Return value 
+A number representing the mode.
+Arguments 
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+Syntax 
+=MODE(number1, [number2], ...)
+Usage notes 
+The MODE function returns the most frequently occurring number in a set of numeric data. If supplied data does not contain any duplicate numbers, the MODE function returns a #N/A error.
+The MODE function takes multiple arguments in the form number1, number2, number3, etc. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MODE ignores empty cells, text values, and the logical values TRUE and FALSE. The MODE function will accept up to 255 separate arguments. 
+Examples
+MODE returns the most frequently occurring number in supplied data. For example,
+=MODE(1,2,4,4,5,5,5,6) // returns 5
+=MODE(7,8,9,7,9) // returns 7
+If there are no duplicate numbers, the MODE function returns the #N/A error:
+=MODE(7,9,6,5,3,1,0) // returns #N/A
+In the example shown, the formula in L5, copied down, is:
+=MODE(B5:J5)
+Note: the MODE function is now classified as a "compatibility function". Microsoft recommends that MODE.SNGL or MODE.MULT be used instead.
+Notes
+If supplied data does not contain duplicate numbers, MODE returns #N/A
+MODE ignores empty cells, the logical values TRUE and FALSE, and text.
+Arguments can be numbers, names, arrays, or references.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Conditional mode with criteria 
+Most frequent text with criteria 
+List most frequently occuring numbers 
+Most frequently occurring text 
+Most frequently occurring number 
+ Functions AVERAGE FunctionMEDIAN FunctionMODE.SNGL FunctionMODE.MULT Function 
+ Links Microsoft MODE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

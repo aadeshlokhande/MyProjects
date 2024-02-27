@@ -1,0 +1,10 @@
+Summary
+The Excel MIRR function is a financial function that returns the modified internal rate of return (MIRR) for a series of cash flows, taking into account both discount rate and reinvestment rate for future cash flows.
+Purpose 
+Calculate modified internal rate of return
+Return value 
+Calculated return as percentage
+Arguments 
+values - Array or reference to cells that contain cash flows.finance_rate - Required rate of return (discount rate) as percentage.reinvest_rate - Interest rate received on cash flows reinvested as percentage.
+Syntax 
+=MIRR(values, finance_rate, reinvest_rate)

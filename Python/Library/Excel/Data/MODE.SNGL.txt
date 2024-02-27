@@ -1,0 +1,621 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel MODE.SNGL function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+MODE.SNGL Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2010
+
+
+
+
+Statistical
+
+
+MODE.SNGL Function
+Related functions 
+
+AVERAGE
+MEDIAN
+MODE
+MODE.SNGL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel MODE.SNGL function returns the most frequently occurring number in a numeric data set. For example, =MODE.SNGL(1,2,4,4,5,5,5,6) returns 5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get most frequently occurring number
+
+
+
+Return value 
+
+A number representing the mode.
+
+
+
+Arguments 
+
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+
+
+
+Syntax 
+
+=MODE.SNGL(number1, [number2], ...)
+
+
+
+Usage notes 
+
+The MODE.SNGL function returns the most frequently occurring number in a set of numeric data. If supplied data does not contain any duplicate numbers, the MODE.SNGL function returns a #N/A error.
+The MODE.SNGL function takes multiple arguments in the form number1, number2, number3, etc. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MODE.SNGL ignores empty cells, text values, and the logical values TRUE and FALSE. The MODE function will accept up to 254 separate arguments. 
+Examples
+In the example shown, the formula in D5 is:
+
+=MODE.SNGL(B5:B14) // returns 95
+MODE.SNGL returns the most frequently occurring number in supplied data. For example,
+
+=MODE.SNGL(1,2,4,4,5,5,5,6) // returns 5
+=MODE.SNGL(7,8,9,7,9) // returns 7
+
+If there are no duplicate numbers, the MODE function returns the #N/A error:
+
+=MODE.SNGL(7,9,6,5,3,1,0) // returns #N/A
+
+Note: MODE will return a single value even when there are multiple modes, to return a list of all modes, see the MODE.MULT function
+Notes
+
+If supplied data does not contain duplicate numbers, MODE.SNGL returns #N/A
+MODE.SNGL ignores empty cells, the logical values TRUE and FALSE, and text.
+Arguments can be numbers, names, arrays, or references.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions AVERAGE FunctionMEDIAN FunctionMODE FunctionMODE.SNGL Function 
+ Links Microsoft MODE.SNGL function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel MODE.SNGL function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+MODE.SNGL Function 
+Previous 
+Next 
+ 
+Excel 2010
+Statistical
+MODE.SNGL Function
+Related functions 
+AVERAGE
+MEDIAN
+MODE
+MODE.SNGL
+Summary
+The Excel MODE.SNGL function returns the most frequently occurring number in a numeric data set. For example, =MODE.SNGL(1,2,4,4,5,5,5,6) returns 5.
+Purpose 
+Get most frequently occurring number
+Return value 
+A number representing the mode.
+Arguments 
+number1 - A number or cell reference that refers to numeric values.number2 - [optional] A number or cell reference that refers to numeric values.
+Syntax 
+=MODE.SNGL(number1, [number2], ...)
+Usage notes 
+The MODE.SNGL function returns the most frequently occurring number in a set of numeric data. If supplied data does not contain any duplicate numbers, the MODE.SNGL function returns a #N/A error.
+The MODE.SNGL function takes multiple arguments in the form number1, number2, number3, etc. Arguments can be a hardcoded constant, a cell reference, or a range, in any combination. MODE.SNGL ignores empty cells, text values, and the logical values TRUE and FALSE. The MODE function will accept up to 254 separate arguments. 
+Examples
+In the example shown, the formula in D5 is:
+=MODE.SNGL(B5:B14) // returns 95
+MODE.SNGL returns the most frequently occurring number in supplied data. For example,
+=MODE.SNGL(1,2,4,4,5,5,5,6) // returns 5
+=MODE.SNGL(7,8,9,7,9) // returns 7
+If there are no duplicate numbers, the MODE function returns the #N/A error:
+=MODE.SNGL(7,9,6,5,3,1,0) // returns #N/A
+Note: MODE will return a single value even when there are multiple modes, to return a list of all modes, see the MODE.MULT function
+Notes
+If supplied data does not contain duplicate numbers, MODE.SNGL returns #N/A
+MODE.SNGL ignores empty cells, the logical values TRUE and FALSE, and text.
+Arguments can be numbers, names, arrays, or references.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions AVERAGE FunctionMEDIAN FunctionMODE FunctionMODE.SNGL Function 
+ Links Microsoft MODE.SNGL function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

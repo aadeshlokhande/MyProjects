@@ -1,0 +1,10 @@
+Summary
+The Excel AVERAGEA function returns the average of a set of supplied values. Unlike AVERAGE, AVERAGEA will also evaluate the logical values TRUE and FALSE, and numbers represented as text, whereas AVERAGE ignores these values during calculation
+Purpose 
+Get the average of a group of numbers and text
+Return value 
+A number representing the average.
+Arguments 
+value1 - A value or reference to a value that can be evaluated as a number.value2 - [optional] A value or reference to a value that can be evaluated as a number.
+Syntax 
+=AVERAGEA(value1, [value2], ...)

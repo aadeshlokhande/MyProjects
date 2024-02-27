@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel IMABS function returns the absolute value of a complex number in the form x + yi or x + yj. Use the COMPLEX function to create a complex number from real and imaginary parts.', 'Purpose' : 'Get absolute value of complex number', 'Return value' : 'Absolute value as number', 'Arguments' : 'inumber - A complex number.', 'Syntax' : '=IMABS(inumber)' }

@@ -1,0 +1,10 @@
+Summary
+The Excel ISNUMBER function returns TRUE when a cell contains a number, and FALSE if not. You can use ISNUMBER to check that a cell contains a numeric value, or that the result of another function is a number.
+Purpose 
+Test for numeric value
+Return value 
+A logical value (TRUE or FALSE)
+Arguments 
+value - The value to check.
+Syntax 
+=ISNUMBER(value)

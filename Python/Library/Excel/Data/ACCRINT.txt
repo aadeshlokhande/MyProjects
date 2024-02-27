@@ -1,0 +1,679 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Excel ACCRINT function | Exceljet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+
+Login 
+
+Cart 
+
+
+
+
+
+Exceljet
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles 
+
+
+
+
+
+
+
+
+
+
+
+
+Cart 
+
+Login 
+
+
+Main menu toggle
+
+
+
+
+
+
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+You are here
+
+Home 
+
+›
+
+Functions 
+
+›
+
+ACCRINT Function 
+
+
+
+
+
+
+
+
+Previous 
+
+Next 
+
+
+ 
+
+
+
+
+
+Excel 2003
+
+
+
+
+Financial
+
+
+ACCRINT Function
+Related functions 
+
+ACCRINTM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+
+The Excel ACCRINT function returns the accrued interest for a security that pays periodic interest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose 
+
+Get accrued interest periodic
+
+
+
+Return value 
+
+Accrued interest
+
+
+
+Arguments 
+
+id - Issue date of the security.fd - First interest date of security.sd - Settlement date of security.rate - Interest rate of security.par - Par value of security.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).calc - [optional] Calculation method (see below, default = TRUE).
+
+
+
+Syntax 
+
+=ACCRINT(id, fd, sd, rate, par, freq, [basis], [calc])
+
+
+
+Usage notes 
+
+In finance, bonds prices are quoted "clean". The "clean price" of a bond excludes any interest accrued since the issue date or most recent coupon payment. The "dirty price" of a bond is the price including accrued interest. The ACCRINT function can be used to calculate accrued interest for a security that pays periodic interest, but pay attention to date configuration.
+Date configuration
+By default, ACCRINT will calculate accrued interest from the issue date. If the settlement date is in the first period, this works. However, if the settlement date is not in the first period, you probably don't want total accrued interest from the issue date but rather accrued interest from the last interest date (previous coupon date). As a workaround, based on the article here:
+
+set issue date to the previous coupon date
+set first_interest date to the previous coupon date
+
+Note: According to Microsoft documentation, calc_method controls how total accrued interest is calculated when the date of settlement > first_interest. The default is TRUE, which returns the total accrued interest from issue date to settlement date. Setting calculation method to FALSE is supposed to return accrued interest from first_interest to settlement date. However, I was unable to produce this behavior. In the example below, issue date and first_interest date are set to the previous coupon date (as described above).
+Example
+In the example shown, we want to calculate accrued interest for a bond with a 5% coupon rate. The issue date is 5-Apr-2018, the settlement date is 1-Feb-2019, and the last coupon date is 15-Oct-2018. We want accrued interest from October 15, 2018 to February 1, 2019. The formula in F5 is:
+
+=ACCRINT(C9,C9,C8,C6,C5,C12,C13,TRUE)
+
+With these inputs, the ACCRINT function returns $14.72, with currency number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded. The DATE function is used to supply each of the three required dates:
+
+=ACCRINT(DATE(2018,10,15),DATE(2018,10,15),DATE(2019,2,1),0.05,1000,2,0,TRUE)
+
+Basis
+The basis argument controls how days are counted. The ACCRINT function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+
+
+
+Basis
+Day count
+
+
+
+
+0 or omitted
+US (NASD) 30/360
+
+
+1
+Actual/actual
+
+
+2
+Actual/360
+
+
+3
+Actual/365
+
+
+4
+European 30/360
+
+
+
+Notes
+
+In Excel, dates are serial numbers. 
+All dates, plus frequency and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ACCRINT returns #VALUE!
+ACCRINT returns #NUM when:
+		
+issue date >= settlement date
+rate < 0 or par <= 0
+frequency is not 1, 2, or 4
+Basis is out-of-range
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+
+
+
+
+
+Related Information
+
+
+ Functions ACCRINTM Function 
+ Links Microsoft ACCRINT function documentation 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Download 100+ Important Excel Functions
+Get PDF Guide
+
+
+
+
+Topics
+
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+
+Key Functions
+
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+
+
+
+    More Testimonials  
+
+ 
+
+
+
+
+
+
+
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+Report a problem with this page
+
+Help us improve Exceljet
+
+
+
+    You must have JavaScript enabled to use this form.  
+
+
+
+
+Name 
+
+
+
+Email 
+
+
+
+Problem *
+
+
+
+Your email address is private and not shared.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exceljet
+
+
+                Quick, clean, and to the point              
+
+
+
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+
+About UsAboutTestimonialsTopicsContact 
+
+
+
+    Newsletter Sign-up  
+
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+
+Email
+
+
+HP
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © 2012-2023 Exceljet. Terms of use
+
+
+
+
+Visit our Twitter page
+
+
+
+
+
+
+
+
+
+Excel ACCRINT function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+ACCRINT Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+ACCRINT Function
+Related functions 
+ACCRINTM
+Summary
+The Excel ACCRINT function returns the accrued interest for a security that pays periodic interest
+Purpose 
+Get accrued interest periodic
+Return value 
+Accrued interest
+Arguments 
+id - Issue date of the security.fd - First interest date of security.sd - Settlement date of security.rate - Interest rate of security.par - Par value of security.freq - Coupon payments per year (annual = 1, semiannual = 2; quarterly = 4).basis - [optional] Day count basis (see below, default =0).calc - [optional] Calculation method (see below, default = TRUE).
+Syntax 
+=ACCRINT(id, fd, sd, rate, par, freq, [basis], [calc])
+Usage notes 
+In finance, bonds prices are quoted "clean". The "clean price" of a bond excludes any interest accrued since the issue date or most recent coupon payment. The "dirty price" of a bond is the price including accrued interest. The ACCRINT function can be used to calculate accrued interest for a security that pays periodic interest, but pay attention to date configuration.
+Date configuration
+By default, ACCRINT will calculate accrued interest from the issue date. If the settlement date is in the first period, this works. However, if the settlement date is not in the first period, you probably don't want total accrued interest from the issue date but rather accrued interest from the last interest date (previous coupon date). As a workaround, based on the article here:
+set issue date to the previous coupon date
+set first_interest date to the previous coupon date
+Note: According to Microsoft documentation, calc_method controls how total accrued interest is calculated when the date of settlement > first_interest. The default is TRUE, which returns the total accrued interest from issue date to settlement date. Setting calculation method to FALSE is supposed to return accrued interest from first_interest to settlement date. However, I was unable to produce this behavior. In the example below, issue date and first_interest date are set to the previous coupon date (as described above).
+Example
+In the example shown, we want to calculate accrued interest for a bond with a 5% coupon rate. The issue date is 5-Apr-2018, the settlement date is 1-Feb-2019, and the last coupon date is 15-Oct-2018. We want accrued interest from October 15, 2018 to February 1, 2019. The formula in F5 is:
+=ACCRINT(C9,C9,C8,C6,C5,C12,C13,TRUE)
+With these inputs, the ACCRINT function returns $14.72, with currency number format applied.
+Entering dates
+In Excel, dates are serial numbers. Generally, the best way to enter valid dates is to use cell references, as shown in the example. To enter valid dates directly inside a function, you can use the DATE function. To illustrate, the formula below has all values hardcoded. The DATE function is used to supply each of the three required dates:
+=ACCRINT(DATE(2018,10,15),DATE(2018,10,15),DATE(2019,2,1),0.05,1000,2,0,TRUE)
+Basis
+The basis argument controls how days are counted. The ACCRINT function allows 5 options (0-4) and defaults to zero, which specifies US 30/360 basis. This article on wikipedia provides a detailed explanation of available conventions.
+Basis
+Day count
+0 or omitted
+US (NASD) 30/360
+1
+Actual/actual
+2
+Actual/360
+3
+Actual/365
+4
+European 30/360
+Notes
+In Excel, dates are serial numbers. 
+All dates, plus frequency and basis, are truncated to integers.
+If dates are invalid (i.e. not actually dates) ACCRINT returns #VALUE!
+ACCRINT returns #NUM when:
+		
+issue date >= settlement date
+rate < 0 or par <= 0
+frequency is not 1, 2, or 4
+Basis is out-of-range
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+ Functions ACCRINTM Function 
+ Links Microsoft ACCRINT function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

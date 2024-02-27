@@ -1,0 +1,10 @@
+Summary
+The Excel FORECAST.ETS.SEASONALITY function returns the length in time of a seasonal pattern based on existing values and a timeline.
+Purpose 
+Get length of the seasonal pattern
+Return value 
+Season length in timeline units
+Arguments 
+values - Existing or historical values (y values).timeline - Numeric timeline values (x values).data_completion - [optional] Missing data treatment (0 = treat as zero, 1 = average). Default is 1.aggregation - [optional] Aggregation behavior. Default is 1 (AVERAGE). See other options below.
+Syntax 
+=FORECAST.ETS.SEASONALITY(values, timeline, [data_completion], [aggregation])

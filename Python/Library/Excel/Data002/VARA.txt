@@ -1,0 +1,10 @@
+Summary
+The Excel VARA function estimates the variance of a sample of data. Unlike the VAR function, the VARA function evaluates text values and logicals in references.
+Purpose 
+Get variation of a sample
+Return value 
+Computed variance
+Arguments 
+number1 - First number or reference.number2 - [optional] Second number or reference.
+Syntax 
+=VARA(number1, [number2], ...)

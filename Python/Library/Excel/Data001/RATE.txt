@@ -1,0 +1,252 @@
+Excel RATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+RATE Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel RATE function is a financial function that returns the interest rate per period of an annuity. You can use RATE to calculate the periodic interest rate, then multiply as required to derive the annual interest rate. The RATE function calculates by iteration.
+Purpose 
+Get the interest rate per period of an annuity
+Return value 
+The interest rate per period
+Arguments 
+nper - The total number of payment periods.pmt - The payment made each period.pv - The present value, or total value of all loan payments now.fv - [optional] The future value, or desired cash balance after last payment. Default is 0.type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.guess - [optional] Your guess on the rate. Default is 10%.
+Syntax 
+=RATE(nper, pmt, pv, [fv], [type], [guess])
+Usage notes 
+The RATE function returns the interest rate per period of an annuity. You can use RATE to calculate the periodic interest rate, then multiply as required to derive the annual interest rate. The RATE function calculates by iteration. If the results of RATE do not converge within 20 iterations, RATE returns the #NUM! error value.
+The RATE function takes six separate arguments, three of which are required as explained below.
+nper (required) - The total number of payment periods in the annuity. For example, a 5-year car loan with monthly payments has 60 periods. You can enter nper as 5*12 to show how the number was determined.
+pmt (required) - The payment made each period. This number cannot change over the life of the annuity. In annuity functions, cash paid out is represented by a negative number. Note: If pmt is not provided, the optional fv argument must be supplied.
+pv (optional) - The present value. This is the cash balance required after all payments have been made. 
+fv (optional) - The future value, or a cash balance required after the last payment is made. When fv is omitted, it defaults to zero (0) and pmt must be provided.
+type (optional) - type is a boolean that controls when when payments are due. Use 0 for payments due at the end of the period (regular annuities) and 1 for payments due at the end of the period (annuities due). Type defaults to 0 (end of period).
+guess (optional) - guess is a seed value to use for iteration. When omitted, guess defaults to 10%. Ordinarily, you can safely omit guess. If RATE does not converge, RATE will return a #NUM! error. Try different values for guess between 0 and 1.
+Example
+To calculate the annual interest rate for a $5000 loan with payments of $93.22 per month over 5 years, you can use RATE in a formula like this:
+=RATE(60,-93.22,5000)*12 // returns 4.5%
+In the example shown, the formula in C10 is:
+=RATE(C7,-C6,C5)*C8 // returns 4.5%
+Notice the value for pmt from C6 is entered as a negative value.
+Notes
+You must use consistent values for for guess and nper. If you make monthly payments on a five-year loan at 10 percent annual interest, use 10%/12 for guess and 5*12 for nper. If you make annual payments on the same loan, use 10% for guess and 5 for nper.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate interest rate for loan 
+Annuity solve for interest rate 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft RATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page
+Excel RATE function | Exceljet
+Skip to main content
+Login 
+Cart 
+Exceljet
+TrainingVideosFunctionsFormulasShortcutsArticles 
+Cart 
+Login 
+Main menu toggle
+TrainingVideosFunctionsFormulasShortcutsArticles Login 
+ 
+You are here
+Home 
+›
+Functions 
+›
+RATE Function 
+Previous 
+Next 
+ 
+Excel 2003
+Financial
+RATE Function
+Related functions 
+FV
+PV
+RATE
+NPER
+PMT
+PPMT
+IPMT
+CUMPRINC
+CUMIPMT
+Summary
+The Excel RATE function is a financial function that returns the interest rate per period of an annuity. You can use RATE to calculate the periodic interest rate, then multiply as required to derive the annual interest rate. The RATE function calculates by iteration.
+Purpose 
+Get the interest rate per period of an annuity
+Return value 
+The interest rate per period
+Arguments 
+nper - The total number of payment periods.pmt - The payment made each period.pv - The present value, or total value of all loan payments now.fv - [optional] The future value, or desired cash balance after last payment. Default is 0.type - [optional] When payments are due. 0 = end of period. 1 = beginning of period. Default is 0.guess - [optional] Your guess on the rate. Default is 10%.
+Syntax 
+=RATE(nper, pmt, pv, [fv], [type], [guess])
+Usage notes 
+The RATE function returns the interest rate per period of an annuity. You can use RATE to calculate the periodic interest rate, then multiply as required to derive the annual interest rate. The RATE function calculates by iteration. If the results of RATE do not converge within 20 iterations, RATE returns the #NUM! error value.
+The RATE function takes six separate arguments, three of which are required as explained below.
+nper (required) - The total number of payment periods in the annuity. For example, a 5-year car loan with monthly payments has 60 periods. You can enter nper as 5*12 to show how the number was determined.
+pmt (required) - The payment made each period. This number cannot change over the life of the annuity. In annuity functions, cash paid out is represented by a negative number. Note: If pmt is not provided, the optional fv argument must be supplied.
+pv (optional) - The present value. This is the cash balance required after all payments have been made. 
+fv (optional) - The future value, or a cash balance required after the last payment is made. When fv is omitted, it defaults to zero (0) and pmt must be provided.
+type (optional) - type is a boolean that controls when when payments are due. Use 0 for payments due at the end of the period (regular annuities) and 1 for payments due at the end of the period (annuities due). Type defaults to 0 (end of period).
+guess (optional) - guess is a seed value to use for iteration. When omitted, guess defaults to 10%. Ordinarily, you can safely omit guess. If RATE does not converge, RATE will return a #NUM! error. Try different values for guess between 0 and 1.
+Example
+To calculate the annual interest rate for a $5000 loan with payments of $93.22 per month over 5 years, you can use RATE in a formula like this:
+=RATE(60,-93.22,5000)*12 // returns 4.5%
+In the example shown, the formula in C10 is:
+=RATE(C7,-C6,C5)*C8 // returns 4.5%
+Notice the value for pmt from C6 is entered as a negative value.
+Notes
+You must use consistent values for for guess and nper. If you make monthly payments on a five-year loan at 10 percent annual interest, use 10%/12 for guess and 5*12 for nper. If you make annual payments on the same loan, use 10% for guess and 5 for nper.
+ 
+Author
+Dave Bruns
+Hi - I'm Dave Bruns, and I run Exceljet with my wife, Lisa. Our goal is to help you work faster in Excel. We create short videos, and clear examples of formulas, functions, pivot tables, conditional formatting, and charts.
+Related Information
+Formulas
+  
+Calculate interest rate for loan 
+Annuity solve for interest rate 
+ Functions FV FunctionPV FunctionRATE FunctionNPER FunctionPMT FunctionPPMT FunctionIPMT FunctionCUMPRINC FunctionCUMIPMT Function 
+ Links Microsoft RATE function documentation 
+ 
+Download 100+ Important Excel Functions
+Get PDF Guide
+Topics
+Formula Basics
+Formula Examples
+Conditional Formatting
+Pivot Tables
+Excel Tables
+Excel Charts
+Shortcuts
+More...
+Key Functions
+IF function
+VLOOKUP function
+XLOOKUP function
+FILTER function
+SUMIFS function
+COUNTIFS function
+SUMPRODUCT function
+INDEX and MATCH
+350 Excel Functions
+ Very satisfied with the product! It has made me more efficient at work! 
+ Evan  
+    More Testimonials  
+ 
+Get Training
+Quick, clean, and to the point training
+Learn Excel with high quality video training. Our videos are quick, clean, and to the point, so you can learn Excel in less time, and easily review key topics when needed. Each video comes with its own practice worksheet.
+View Paid Training & Bundles 
+ 
+ 
+ 
+ 
+ 
+ 
+Report a problem with this page
+Help us improve Exceljet
+    You must have JavaScript enabled to use this form.  
+Name 
+Email 
+Problem *
+Your email address is private and not shared.
+ 
+Exceljet
+                Quick, clean, and to the point              
+ResourcesTrainingVideosFunctionsFormulasShortcutsArticles 
+About UsAboutTestimonialsTopicsContact 
+    Newsletter Sign-up  
+    Work faster in Excel. Join more than 100,000 people who get weekly tips from us.
+  
+Email
+HP
+            © 2012-2023 Exceljet. Terms of use
+Visit our Twitter page

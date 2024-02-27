@@ -1,0 +1,1 @@
+{ 'Summary' : 'The Excel BYROW function applies a LAMBDA function to each row of a given array and returns one result per row in a single array. In the example shown, data is the named range C5:H9. ', 'Purpose' : 'Purpose ', 'Return value' : 'Return value ', 'Arguments' : 'Arguments ', 'Syntax' : 'Syntax ' }
