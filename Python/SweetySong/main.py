@@ -7,7 +7,6 @@ msg = "TuHaiToh"
 sleep(3)
 
 for line in songs[msg]:
-    # pg.typewrite(line,0.1)
     pyperclip.copy(f"*{line}*")
-    pg.hotkey("ctrl","v",interval=0.1)
+    pg.hotkey("ctrl","v",interval=0.6)
     pg.press("enter")
