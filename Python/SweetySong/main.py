@@ -3,10 +3,17 @@ from time import sleep
 import pyperclip
 from songs import songs
 
-msg = "TuHaiToh"
+songName = list(songs.keys()) 
+
+for name in songName:
+    print( "Press ",songName.index(name) ,":", name)
+
+choice = int(input("enter your choice = "))
+msg = songName[choice]
+
 sleep(3)
 
 for line in songs[msg]:
     pyperclip.copy(f"*{line}*")
-    pg.hotkey("ctrl","v",interval=0.6)
+    pg.hotkey("ctrl","v",interval=1)
     pg.press("enter")
