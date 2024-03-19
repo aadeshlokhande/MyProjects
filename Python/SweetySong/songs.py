@@ -3,4 +3,25 @@ songs = {
     "tu hai toh" : ["Badle Tere Mahi🔄🌟","La Ke Jo Koi Sari💖","Duniya Bhi De De Agar🌍💕","To Kise Duniya Chahiye","Tu Hai To Mujhe💑🌟","Phir Aur Kya Chahiye💞","Tu Hain To Mujhe💏🌈","Phir Aur Kya Chahiye","Kisi Ki Na Madad🙅‍♂️🙏","Na Dua Chahiye🙅‍♀️🙌","Tu Hain To Mujhe💑🌟","Phir Aur Kya Chahiye","Sun Haniye Jind Janiye👂👫💑","Sau Bar Janam Lu🔄💯","To Bhi Tu Hi🌟❤️","Humdum Har Dafa Chahiye","Tu Hain To Mujhe💖🌟","Phir Aur Kya Chahiye💏❤️","Tu Hain To Mujhe💕🌠","Phir Aur Kya Chahiye😊🎶💕"],
     "abcd" : ["I Love💖 you Pillu","💖A💖","💖B💖","💖C💖","💖D💖","💖E💖","💖F💖","💖G💖","💖H💖","I love💖 you still💕","And you know I always will💖","'Til the end of time⏳","I won't🙅 change my mind🧠","Love💝 you, I'll be here💑","I will never disappear👻","Said forever🤝, I swear🤞","So I will be there👫"],
     "nazm nazm" : ["Tu nazm nazm sa mere","Honthon pe thehar ja","Main khwab khwab sa teri","Aankhon mein jaagun re","❤️❤️❤️❤️❤️","Tu ishq ishq sa mere","Rooh mein aake bas ja","Jis aur teri shehnaai","Uss ore main bhaagun re","❤️❤️❤️❤️❤️","Haath thaam le piya","Karte hain vaada","Ab se tu aarzu","Tu hi hai iraada","❤️❤️❤️❤️❤️","Mera naam le piya","Main teri rubaai","Teri hi tto piche piche","Barsaat aayi, barsaat aayi","❤️❤️❤️❤️❤️","Tu itrr itrr sa mere","Saanson mein bikhar jaa","Main faqeer tere qurbat ka","Tujhse tu maangun re","❤️❤️❤️❤️❤️","Tu ishq ishq sa mere","Rooh mein aake bas ja","Jis aur teri shehnaai","Uss ore main bhaagun re","❤️❤️❤️❤️❤️","Mere dil ke lifaafe mein","Tera khat hai janiya","Tera khat hai janiya","Nacheez ne kaise paa li","Kismat yeh janiya ve","❤️❤️❤️❤️❤️","Oh mere dil ke lifafe mein","Tera khat hai janiya","Tera khat hai janiya","Nacheez ne kaise paa li","Jannat yeh janiya ve","❤️❤️❤️❤️❤️","Tu nazm nazm sa mere","Honthon pe thehar ja","❤️❤️❤️❤️❤️","Main khwaab khwaab sa teri","Aankhon mein jaagun re","❤️❤️❤️❤️❤️","Tu ishq ishq sa mere","Rooh mein aake bas ja","Jis aur teri shehnaai","Uss ore main bhaagun re","❤️❤️❤️❤️❤️","❤️ Â ❤️ Ś❤️","❤️❤️❤️❤️❤️"],
+    "rat nhi samjti" : ["ki bohat masum si ladki hai","ishq ki bat samjti","wah wah bolo..","ki bohat masum si ladki hai","ishq ki bat samjti...","na jane kis din me khoyi rahti hai","meri rat nhi samjti","aur ha, hm, sahi bat hai toh kahti hai..","alfaz samjleti hai.. jazbat nhi samjti"],
+    "unhe bhi pak kr gyi" : ["wo titli k i trh aayi ", "aur zindagi ko bag kr gyi...", "bolo wah wah...", "mere jo napak irade the", "unhe bhi pak kr gyi"],
+    "mai shunya pe savar hu" : ["hu ram  sa tej mai","lanka pati sa gyan hu","kiski kru mai aradhna","sabse jo mai mahan hu","bramhan ka mai sar hu","jal pravah nihar hu ","...","mai shunya pe savar hu","mai shunya pe savar hu"],
+    "batane ki bat toh nhi hai": ["batane ki bat toh nhi hai","pr batane dogi kya","ishq be panah hai tumse","jatane dogi kya","...","tum nadi, tum pahad, tum titli , tum asman ho mera","ek dibbi me sindur rakha hai","lagane dogi kya"],
+    "tere raste me nhi aayenge." : ["bohat mahange the...","ab saste me nhi aayenge...","ja aaj ke bad...","tere raste me nhi aayenge."],
+    "scoty dekhi hai" : ["khwabo ki diwar bhare bazar me tuti dekhi hai...","maine anjan bulet ke bagal me teri scoty dekhi hai"],
+    "usse yad dilana pdta hai" : ["wo rishta mmere liye 2 ka pahada","uske liye 17 ka table hogya hai","bolo wah wah","mujhse bhulaya nhi jata","usse yad dilana pdta hai"],
+    "kabhi kabhi sochta hu ki wo sab kuch btadu tumhe..." : ["kabhi kabhi sochta hu ki wo sab kuch btadu tumhe...","jo bhi duniya ke bare me samj liya hai maine...","fhir sochta hu kya kroge jankr... ","hum dono ke hisse ka samj liya hai maine...","...","aur kuch toh tumhe pahle se malum hai...","jaise ki...","chand pe ek buddi aurat rahti hai...","chidiya chide ke shadi me dhup me barish hoti hai...","aur 24 dec ke rat ko santaclouse sabke ghar me aata hai...","iske alawa jo bate hai unse tumahra kya wasta...","waise bhi pariya aasman ki khabar rakhti hai...","zameen ke lafde me nhi pdti...","tum toh yeh btao ye suit kaha se liya tumne","aur ye ghungru kab lagwaye...","...","kabhi kabhi sochta hu ki wo sab kuch btadu tumhe...","jo bhi duniya ke bare me samj liya hai maine...","fhir sochta hu kya kroge jankr... ","hum dono ke hisse ka samj liya hai maine..."],
+    "chandi sona ek trf...": ["chandi sona ek trf...","tera hona ek trf...","ek trf teri aankhe...","jadu tona ek trf..."],
 }
+
+
+# IT feild ke bare me awareness
+# skill dev
+# kahi ghyaysathi nhi alo
+# compitation
+# job nhi midat
+# yach school che student aho 
+# tr school chya mula sathi kahi kraychi echa ahe 
+
+# shayad unke raste me mujhse behtar log pd gye
+# wo bewafa toh nhi the... but aage jarur bd gye

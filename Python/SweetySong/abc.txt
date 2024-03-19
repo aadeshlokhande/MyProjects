@@ -1,0 +1,553 @@
+1) What is the maximum possible length of an identifier?
+
+a) 16
+b) 32
+c) 64
+d) None of these above
+Show Answer Workspace
+2) Who developed the Python language?
+
+a) Zim Den
+b) Guido van Rossum
+c) Niene Stom
+d) Wick van Rossum
+Show Answer Workspace
+3) In which year was the Python language developed?
+
+a) 1995
+b) 1972
+c) 1981
+d) 1989
+Show Answer Workspace
+4) In which language is Python written?
+
+a) English
+b) PHP
+c) C
+d) All of the above
+Show Answer Workspace
+5) Which one of the following is the correct extension of the Python file?
+
+a) .py
+b) .python
+c) .p
+d) None of these
+Show Answer Workspace
+6) In which year was the Python 3.0 version developed?
+
+a) 2008
+b) 2000
+c) 2010
+d) 2005
+Show Answer Workspace
+7) What do we use to define a block of code in Python language?
+
+a) Key
+b) Brackets
+c) Indentation
+d) None of these
+Show Answer Workspace
+8) Which character is used in Python to make a single line comment?
+
+a) /
+b) //
+c) #
+d) !
+Show Answer Workspace
+9) Which of the following statements is correct regarding the object-oriented programming concept in Python?
+
+a) Classes are real-world entities while objects are not real
+b) Objects are real-world entities while classes are not real
+c) Both objects and classes are real-world entities
+d) All of the above
+Show Answer Workspace
+10) Which of the following statements is correct in this python code?
+
+class Name:  
+    def __init__(javatpoint):  
+        javajavatpoint = java  
+name1=Name("ABC")  
+name2=name1  
+a) It will throw the error as multiple references to the same object is not possible
+b) id(name1) and id(name2) will have same value
+c) Both name1 and name2 will have reference to two different objects of class Name
+d) All of the above
+Show Answer Workspace
+11) What is the method inside the class in python language?
+
+a) Object
+b) Function
+c) Attribute
+d) Argument
+Show Answer Workspace
+12) Which of the following declarations is incorrect?
+
+a) _x = 2
+b) __x = 3
+c) __xyz__ = 5
+d) None of these
+Show Answer Workspace
+13) Why does the name of local variables start with an underscore discouraged?
+
+a) To identify the variable
+b) It confuses the interpreter
+c) It indicates a private variable of a class
+d) None of these
+Show Answer Workspace
+14) Which of the following is not a keyword in Python language?
+
+a) val
+b) raise
+c) try
+d) with
+Show Answer Workspace
+15) Which of the following statements is correct for variable names in Python language?
+
+a) All variable names must begin with an underscore.
+b) Unlimited length
+c) The variable name length is a maximum of 2.
+d) All of the above
+Show Answer Workspace
+16) Which of the following declarations is incorrect in python language?
+
+a) xyzp = 5,000,000
+b) x y z p = 5000 6000 7000 8000
+c) x,y,z,p = 5000, 6000, 7000, 8000
+d) x_y_z_p = 5,000,000
+Show Answer Workspace
+17) Which of the following words cannot be a variable in python language?
+AD
+AD
+
+a) _val
+b) val
+c) try
+d) _try_
+Show Answer Workspace
+18) Which of the following operators is the correct option for power(ab)?
+
+a) a ^ b
+b) a**b
+c) a ^ ^ b
+d) a ^ * b
+Show Answer Workspace
+19) Which of the following precedence order is correct in Python?
+
+a) Parentheses, Exponential, Multiplication, Division, Addition, Subtraction
+b) Multiplication, Division, Addition, Subtraction, Parentheses, Exponential
+c) Division, Multiplication, Addition, Subtraction, Parentheses, Exponential
+d) Exponential, Parentheses, Multiplication, Division, Addition, Subtraction
+Show Answer Workspace
+20) Which one of the following has the same precedence level?
+
+a) Division, Power, Multiplication, Addition and Subtraction
+b) Division and Multiplication
+c) Subtraction and Division
+d) Power and Division
+Show Answer Workspace
+21) Which one of the following has the highest precedence in the expression?
+
+a) Division
+b) Subtraction
+c) Power
+d) Parentheses
+Show Answer Workspace
+22) Which of the following functions is a built-in function in python language?
+AD
+AD
+
+a) val()
+b) print()
+c) print()
+d) None of these
+Show Answer Workspace
+23) Study the following function:
+
+round(4.576)  
+What will be the output of this function?
+
+a) 4
+b) 5
+c) 576
+d) 5
+Show Answer Workspace
+24) Which of the following is correctly evaluated for this function?
+
+pow(x,y,z)  
+a) (x**y) / z
+b) (x / y) * z
+c) (x**y) % z
+d) (x / y) / z
+Show Answer Workspace
+25) Study the following function:
+
+all([2,4,0,6])  
+What will be the output of this function?
+
+a) False
+b) True
+c) 0
+d) Invalid code
+Show Answer Workspace
+26) Study the following program:
+
+x = 1  
+while True:  
+    if x % 5 = = 0:  
+        break  
+    print(x)   
+    x + = 1  
+What will be the output of this code?
+
+a) error
+b) 2 1
+c) 0 3 1
+d) None of these
+Show Answer Workspace
+27) Which one of the following syntaxes is the correct syntax to read from a simple text file stored in ''d:\java.txt''?
+
+a) Infile = open(''d:\\java.txt'', ''r'')
+b) Infile = open(file=''d:\\\java.txt'', ''r'')
+c) Infile = open(''d:\java.txt'',''r'')
+d) Infile = open.file(''d:\\java.txt'',''r'')
+Show Answer Workspace
+28) Study the following code:
+
+x = ['XX', 'YY']  
+for i in a:  
+    i.lower()  
+print(a)  
+What will be the output of this program?
+
+a) ['XX', 'YY']
+b) ['xx', 'yy']
+c) [XX, yy]
+d) None of these
+Show Answer Workspace
+29) Study the following function:
+
+import math  
+abs(math.sqrt(36))  
+What will be the output of this code?
+
+a) Error
+b) -6
+c) 6
+d) 6.0
+Show Answer Workspace
+30) Study the following function:
+
+any([5>8, 6>3, 3>1])  
+What will be the output of this code?
+
+a) False
+b) Ture
+c) Invalid code
+d) None of these
+Show Answer Workspace
+31) Study the following statement:
+
+>>>"a"+"bc"  
+What will be the output of this statement?
+
+a) a+bc
+b) abc
+c) a bc
+d) a
+Show Answer Workspace
+32) Study the following code:
+
+>>>"javatpoint"[5:]  
+What will be the output of this code?
+
+a) javatpoint
+b) java
+c) point
+d) None of these
+Show Answer Workspace
+33) The output to execute string.ascii_letters can also be obtained from:?
+
+a) character
+b) ascii_lowercase_string.digits
+c) lowercase_string.upercase
+d) ascii_lowercase+string.ascii_upercase
+Show Answer Workspace
+34) Study the following statements:
+
+>>> str1 = "javat"  
+>>> str2 = ":"  
+>>> str3 = "point"  
+>>> str1[-1:]  
+What will be the output of this statement?
+
+a) t
+b) j
+c) point
+d) java
+Show Answer Workspace
+35) Study the following code:
+
+>>> print (r"\njavat\npoint")  
+What will be the output of this statement?
+
+java
+a) point
+b) java point
+c) \njavat\npoint
+d) Print the letter r and then javat and then point
+Show Answer Workspace
+36) Study the following statements:
+
+>>> print(0xA + 0xB + 0xC)  
+What will be the output of this statement?
+
+a) 33
+b) 63
+c) 0xA + 0xB + 0xC
+d) None of these
+Show Answer Workspace
+37) Study the following program:
+
+class book:  
+    def __init__(a, b):  
+        a.o1 = b  
+   
+class child(book):  
+    def __init__(a, b):  
+        a.o2 = b  
+   
+obj = page(32)  
+print "%d %d" % (obj.o1, obj.o2)  
+Which of the following is the correct output of this program?
+
+a) 32
+b) 32 32
+c) 32 None
+d) Error is generated
+Show Answer Workspace
+38) Study the following program:
+
+class Std_Name:   
+    def __init__(self, Std_firstName, Std_Phn, Std_lastName):  
+        self.Std_firstName = Std_firstName  
+        self. Std_PhnStd_Phn = Std_Phn  
+        self. Std_lastNameStd_lastName = Std_lastName  
+   
+Std_firstName = "Wick"  
+name = Std_Name(Std_firstName, 'F', "Bob")  
+Std_firstName = "Ann"  
+name.lastName = "Nick"  
+print(name.Std_firstName, name.Std_lastName)  
+What will be the output of this statement?
+
+a) Ann Bob
+b) Ann Nick
+c) Wick Bob
+d) Wick Nick
+Show Answer Workspace
+39) Study the following statements:
+
+>>> print(ord('h') - ord('z'))  
+What will be the output of this statement?
+
+a) 18
+b) -18
+c) 17
+d) -17
+Show Answer Workspace
+40) Study the following program:
+
+x = ['xy', 'yz']  
+for i in a:  
+    i.upper()  
+print(a)  
+Which of the following is correct output of this program?
+
+a) ['xy', 'yz']
+b) ['XY', 'YZ']
+c) [None, None]
+d) None of these
+Show Answer Workspace
+41) Study the following program:
+
+i = 1:  
+while True:  
+    if i%3 == 0:  
+        break  
+    print(i)  
+Which of the following is the correct output of this program?
+
+a) 1 2 3
+b) 3 2 1
+c) 1 2
+d) Invalid syntax
+Show Answer Workspace
+42) Study the following program:
+
+a = 1  
+while True:  
+    if a % 7 = = 0:  
+        break  
+    print(a)  
+    a += 1  
+Which of the following is correct output of this program?
+
+a) 1 2 3 4 5
+b) 1 2 3 4 5 6
+c) 1 2 3 4 5 6 7
+d) Invalid syntax
+Show Answer Workspace
+43) Study the following program:
+
+i = 0  
+while i < 5:  
+    print(i)  
+    i += 1  
+    if i == 3:  
+        break  
+else:  
+    print(0)  
+What will be the output of this statement?
+
+a) 1 2 3
+b) 0 1 2 3
+c) 0 1 2
+d) 3 2 1
+Show Answer Workspace
+44) Study the following program:
+
+i = 0  
+while i < 3:  
+    print(i)  
+    i += 1  
+else:  
+    print(0)  
+What will be the output of this statement?
+
+a) 0 1
+b) 0 1 2
+c) 0 1 2 0
+d) 0 1 2 3
+Show Answer Workspace
+45) Study the following program:
+
+z = "xyz"  
+j = "j"  
+while j in z:  
+    print(j, end=" ")  
+What will be the output of this statement?
+
+a) xyz
+b) No output
+c) x y z
+d) j j j j j j j..
+Show Answer Workspace
+46) Study the following program:
+
+x = 'pqrs'  
+for i in range(len(x)):  
+    x[i].upper()  
+print (x)  
+Which of the following is the correct output of this program?
+
+a) PQRS
+b) pqrs
+c) qrs
+d) None of these
+Show Answer Workspace
+47) Study the following program:
+
+d = {0: 'a', 1: 'b', 2: 'c'}  
+for i in d:  
+    print(i)  
+What will be the output of this statement?
+
+a) a b c
+b) 0 1 2
+c) 0 a   1 b   2 c
+d) None of these above
+Show Answer Workspace
+48) Study the following program:
+
+d = {0, 1, 2}  
+for x in d:  
+    print(x)  
+What will be the output of this statement?
+
+a) {0, 1, 2} {0, 1, 2} {0, 1, 2}
+b) 0 1 2
+c) Syntax_Error
+d) None of these above
+Show Answer Workspace
+49) Which of the following option is not a core data type in the python language?
+
+a) Dictionary
+b) Lists
+c) Class
+d) All of the above
+Show Answer Workspace
+50) What error will occur when you execute the following code?
+
+MANGO = APPLE  
+a) NameError
+b) SyntaxError
+c) TypeError
+d) ValueError
+Show Answer Workspace
+51) Study the following program:
+
+def example(a):  
+    aa = a + '1'  
+     aa = a*1  
+    return a  
+>>>example("javatpoint")  
+What will be the output of this statement?
+
+a) hello2hello2
+b) hello2
+c) Cannot perform mathematical operation on strings
+d) indentationError
+Show Answer Workspace
+52) Which of the following data types is shown below?
+
+L = [2, 54, 'javatpoint', 5]  
+What will be the output of this statement?
+
+a) Dictionary
+b) Tuple
+c) List
+d) Stack
+Show Answer Workspace
+53) What happens when '2' == 2 is executed?
+
+a) False
+b) Ture
+c) ValueError occurs
+d) TypeError occurs
+Show Answer Workspace
+54) Study the following program:
+
+try:  
+    if '2' != 2:  
+        raise "JavaTpoint"  
+    else:  
+        print("JavaTpoint has not exist")  
+except "JavaTpoint":  
+    print ("JavaTpoint has exist")  
+What will be the output of this statement?
+
+a) invalid code
+b) JavaTpoint has not exist
+c) JavaTpoint has exist
+d) none of these above
+Show Answer Workspace
+55) Study the following statement
+
+z = {"x":0, "y":1}  
+Which of the following is the correct statement?
+
+a) x dictionary z is created
+b) x and y are the keys of dictionary z
+c) 0 and 1 are the values of dictionary z
+d) All of the above
+Show Answer Workspace
