@@ -14,6 +14,6 @@ msg = songName[choice]
 sleep(3)
 
 for line in songs[msg]:
-    pyperclip.copy(f"*{line}*")
+    pyperclip.copy(f"{line}")
     pg.hotkey("ctrl","v",interval=1)
     pg.press("enter")

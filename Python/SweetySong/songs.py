@@ -10,10 +10,9 @@ songs = {
     "tere raste me nhi aayenge." : ["bohat mahange the...","ab saste me nhi aayenge...","ja aaj ke bad...","tere raste me nhi aayenge."],
     "scoty dekhi hai" : ["khwabo ki diwar bhare bazar me tuti dekhi hai...","maine anjan bulet ke bagal me teri scoty dekhi hai"],
     "usse yad dilana pdta hai" : ["wo rishta mmere liye 2 ka pahada","uske liye 17 ka table hogya hai","bolo wah wah","mujhse bhulaya nhi jata","usse yad dilana pdta hai"],
-    "kabhi kabhi sochta hu ki wo sab kuch btadu tumhe..." : ["kabhi kabhi sochta hu ki wo sab kuch btadu tumhe...","jo bhi duniya ke bare me samj liya hai maine...","fhir sochta hu kya kroge jankr... ","hum dono ke hisse ka samj liya hai maine...","...","aur kuch toh tumhe pahle se malum hai...","jaise ki...","chand pe ek buddi aurat rahti hai...","chidiya chide ke shadi me dhup me barish hoti hai...","aur 24 dec ke rat ko santaclouse sabke ghar me aata hai...","iske alawa jo bate hai unse tumahra kya wasta...","waise bhi pariya aasman ki khabar rakhti hai...","zameen ke lafde me nhi pdti...","tum toh yeh btao ye suit kaha se liya tumne","aur ye ghungru kab lagwaye...","...","kabhi kabhi sochta hu ki wo sab kuch btadu tumhe...","jo bhi duniya ke bare me samj liya hai maine...","fhir sochta hu kya kroge jankr... ","hum dono ke hisse ka samj liya hai maine..."],
+    "kabhi kabhi sochta hu ki wo sab kuch btadu tumhe..." : ["kabhi kabhi sochta hu ki wo sab kuch btadu tumhe...","jo bhi duniya ke bare me samj liya hai maine...","fhir sochta hu kya kroge jankr... ","hum dono ke hisse ka samj liya hai maine...","...","aur kuch toh tumhe pahle se malum hai...","jaise ki...","chand pe ek buddi aurat rahti hai...","chidiya chide ke shadi me dhup me barish hoti hai...","aur 24 dec ke rat ko santaclouse sabke ghar me aata hai...","iske alawa jo bate hai unse tumahra kya wasta...","waise bhi pariya aasman ki khabar rakhti hai...","zameen ke lafde me nhi pdti...","...","kabhi kabhi sochta hu ki wo sab kuch btadu tumhe...","jo bhi duniya ke bare me samj liya hai maine...","fhir sochta hu kya kroge jankr... ","hum dono ke hisse ka samj liya hai maine..."],
     "chandi sona ek trf...": ["chandi sona ek trf...","tera hona ek trf...","ek trf teri aankhe...","jadu tona ek trf..."],
 }
-
 
 # IT feild ke bare me awareness
 # skill dev
